@@ -134,8 +134,13 @@
 
     <div id="dashboard">
         <div class="header-title">
-            Lộ trình huấn luyện
-            <span class="info-icon" onclick="showInfo()">ℹ️</span>
+            <span>Lộ trình huấn luyện</span>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <div id="user-points-display" style="font-size: 16px; background: #fff3cd; color: #856404; padding: 5px 12px; border-radius: 20px; font-weight: bold; display: none; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                    ⭐ 0 Điểm
+                </div>
+                <span class="info-icon" onclick="showInfo()">ℹ️</span>
+            </div>
         </div>
         <div class="grid-container" id="topic-grid"></div>
     </div>
@@ -203,6 +208,40 @@
         // Biến lưu thông tin người dùng
         let currentUser = null;
 
+	// Biến lưu thông tin người dùng và điểm
+        let currentUser = null;
+        let currentPoints = 0; // Thêm biến lưu điểm hiện tại
+
+        // HÀM 1: Lấy điểm từ Cloud về khi đăng nhập
+        function fetchUserData() {
+            if (!currentUser) return;
+            db.collection("users").doc(currentUser.uid).get().then((doc) => {
+                if (doc.exists && doc.data().points) {
+                    currentPoints = doc.data().points;
+                } else {
+                    currentPoints = 0; // Nếu user mới chưa có điểm
+                }
+                // Hiển thị điểm lên màn hình
+                const pointDisplay = document.getElementById('user-points-display');
+                pointDisplay.style.display = 'block';
+                pointDisplay.innerHTML = `⭐ ${currentPoints} Điểm`;
+            });
+        }
+
+        // HÀM 2: Cộng điểm và bắn lên Cloud
+        function addPoints(pointsToAdd) {
+            if (!currentUser) return;
+            currentPoints += pointsToAdd;
+            
+            // Cập nhật UI ngay lập tức cho mượt
+            document.getElementById('user-points-display').innerHTML = `⭐ ${currentPoints} Điểm`;
+            
+            // Bắn dữ liệu ngầm lên Firestore
+            db.collection("users").doc(currentUser.uid).set({
+                points: currentPoints
+            }, { merge: true }).catch((error) => console.error("Lỗi lưu điểm:", error));
+        }
+
         // Xử lý nút Đăng nhập
         function loginWithGoogle() {
             document.getElementById('login-status').innerText = "Đang kết nối...";
@@ -213,22 +252,79 @@
         }
 
         // Theo dõi trạng thái đăng nhập (Đã login hay chưa?)
+        // Theo dõi trạng thái đăng nhập (Đã login hay chưa?)
         auth.onAuthStateChanged((user) => {
             if (user) {
-                // Đã đăng nhập -> Ẩn màn hình login, hiện Dashboard
+                // Đã đăng nhập -> Ẩn màn hình login
                 currentUser = user;
                 document.getElementById('login-screen').style.display = 'none';
                 
-                // Cập nhật tên người dùng lên thanh tiêu đề cho chuyên nghiệp
+                // Cập nhật tên người dùng lên thanh tiêu đề
                 const headerTitle = document.querySelector('.header-title');
-                if(!headerTitle.innerHTML.includes(user.displayName)) {
-                    headerTitle.innerHTML = `Xin chào, ${user.displayName.split(" ")[0]}! <span class="info-icon" onclick="showInfo()">ℹ️</span>`;
+                if(headerTitle && !headerTitle.innerHTML.includes(user.displayName)) {
+                    // Giữ lại bảng điểm và icon info
+                    headerTitle.innerHTML = `
+                        <span>Xin chào, ${user.displayName.split(" ")[0]}!</span>
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <div id="user-points-display" style="font-size: 16px; background: #fff3cd; color: #856404; padding: 5px 12px; border-radius: 20px; font-weight: bold; display: none; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">⭐ 0 Điểm</div>
+                            <span class="info-icon" onclick="showInfo()">ℹ️</span>
+                        </div>
+                    `;
                 }
+
+                // ĐỒNG BỘ HỒ SƠ LÊN FIRESTORE & KÉO ĐIỂM VỀ
+                db.collection("users").doc(user.uid).set({
+                    name: user.displayName,
+                    email: user.email,
+                    photoURL: user.photoURL,
+                    lastLogin: firebase.firestore.FieldValue.serverTimestamp()
+                }, { merge: true }) 
+                .then(() => {
+                    console.log("✅ Đã đồng bộ hồ sơ lên Firestore!");
+                    fetchUserData(); // Gọi hàm lấy điểm ngay sau khi đăng nhập
+                })
+                .catch((error) => console.error("❌ Lỗi đồng bộ:", error));
+
             } else {
                 // Chưa đăng nhập -> Hiện màn hình login
                 document.getElementById('login-screen').style.display = 'flex';
             }
         });
+
+        // ==========================================
+        // HỆ THỐNG ĐIỂM SỐ & TIẾN ĐỘ (CLOUD PROGRESS)
+        // ==========================================
+        let currentPoints = 0; 
+
+        // Lấy điểm từ Cloud về
+        function fetchUserData() {
+            if (!currentUser) return;
+            db.collection("users").doc(currentUser.uid).get().then((doc) => {
+                if (doc.exists && doc.data().points) {
+                    currentPoints = doc.data().points;
+                } else {
+                    currentPoints = 0;
+                }
+                const pointDisplay = document.getElementById('user-points-display');
+                if(pointDisplay) {
+                    pointDisplay.style.display = 'block';
+                    pointDisplay.innerHTML = `⭐ ${currentPoints} Điểm`;
+                }
+            });
+        }
+
+        // Cộng điểm và bắn dữ liệu lên Cloud
+        function addPoints(pointsToAdd) {
+            if (!currentUser) return;
+            currentPoints += pointsToAdd;
+            
+            const pointDisplay = document.getElementById('user-points-display');
+            if(pointDisplay) pointDisplay.innerHTML = `⭐ ${currentPoints} Điểm`;
+            
+            db.collection("users").doc(currentUser.uid).set({
+                points: currentPoints
+            }, { merge: true }).catch((error) => console.error("Lỗi lưu điểm:", error));
+        }
 
         // 1. Khai báo biến toàn cục (Chỉ khai báo 1 lần duy nhất)
         let appData = {};
@@ -337,6 +433,9 @@
                 }
                 
                 showAnswer(); 
+
+addPoints(10); // Cộng 10 điểm vào tài khoản
+
             } else {
                 statusDiv.innerHTML = `❌ <b>Chưa chuẩn, hãy thử lại!</b><br>Hệ thống nghe được: <i>"${spokenText}"</i>`;
                 statusDiv.style.color = "#c0392b"; 
