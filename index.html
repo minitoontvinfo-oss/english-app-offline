@@ -113,8 +113,24 @@
         .info-icon { cursor: pointer; font-size: 24px; }
 #ai-check-btn { background-color: #6c5ce7; display: none; }
     </style>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
 </head>
 <body>
+
+<div id="login-screen" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background: white; position: fixed; top: 0; left: 0; width: 100%; z-index: 9999;">
+        <div style="font-size: 50px; margin-bottom: 20px;">🏢</div>
+        <h2 style="margin-bottom: 10px; color: var(--primary-color);">Ocean Training Hub</h2>
+        <p style="color: #666; margin-bottom: 30px; text-align: center; max-width: 80%;">Hệ thống huấn luyện nghiệp vụ nội bộ</p>
+        <button onclick="loginWithGoogle()" style="background: white; border: 1px solid #ddd; padding: 15px 30px; border-radius: 25px; font-size: 16px; font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" width="24" height="24" alt="Google">
+            Đăng nhập với Google
+        </button>
+        <p id="login-status" style="margin-top: 15px; color: #666; font-size: 14px;"></p>
+    </div>
+
 
     <div id="dashboard">
         <div class="header-title">
@@ -168,6 +184,52 @@
     </div>
 
     <script>
+
+// BƯỚC 1: DÁN ĐOẠN FIREBASE CONFIG BẠN VỪA COPY TRÊN WEB VÀO ĐÂY
+        const firebaseConfig = {
+            apiKey: "DÁN_CỦA_BẠN_VÀO_ĐÂY",
+            authDomain: "DÁN_CỦA_BẠN_VÀO_ĐÂY",
+            projectId: "DÁN_CỦA_BẠN_VÀO_ĐÂY",
+            storageBucket: "DÁN_CỦA_BẠN_VÀO_ĐÂY",
+            messagingSenderId: "DÁN_CỦA_BẠN_VÀO_ĐÂY",
+            appId: "DÁN_CỦA_BẠN_VÀO_ĐÂY"
+        };
+
+        // Khởi tạo Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+
+        // Biến lưu thông tin người dùng
+        let currentUser = null;
+
+        // Xử lý nút Đăng nhập
+        function loginWithGoogle() {
+            document.getElementById('login-status').innerText = "Đang kết nối...";
+            const provider = new firebase.auth.GoogleAuthProvider();
+            auth.signInWithPopup(provider).catch((error) => {
+                document.getElementById('login-status').innerText = "Lỗi đăng nhập: " + error.message;
+            });
+        }
+
+        // Theo dõi trạng thái đăng nhập (Đã login hay chưa?)
+        auth.onAuthStateChanged((user) => {
+            if (user) {
+                // Đã đăng nhập -> Ẩn màn hình login, hiện Dashboard
+                currentUser = user;
+                document.getElementById('login-screen').style.display = 'none';
+                
+                // Cập nhật tên người dùng lên thanh tiêu đề cho chuyên nghiệp
+                const headerTitle = document.querySelector('.header-title');
+                if(!headerTitle.innerHTML.includes(user.displayName)) {
+                    headerTitle.innerHTML = `Xin chào, ${user.displayName.split(" ")[0]}! <span class="info-icon" onclick="showInfo()">ℹ️</span>`;
+                }
+            } else {
+                // Chưa đăng nhập -> Hiện màn hình login
+                document.getElementById('login-screen').style.display = 'flex';
+            }
+        });
+
         // 1. Khai báo biến toàn cục (Chỉ khai báo 1 lần duy nhất)
         let appData = {};
         let currentLessonIndex = 0;
