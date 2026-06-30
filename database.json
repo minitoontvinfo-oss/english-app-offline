@@ -1,15 +1,33 @@
 {
-    "resort": {
-        "id": "resort", "title": "Ocean Dunes Resort", "icon": "🏨", "color": "#008CBA", "progress": 0,
-        "lessons": [
-            { "q_en": "Excuse me, where is the nearest beach?", "q_vi": "Xin lỗi, bãi biển gần nhất ở hướng nào?", "a_en": "Welcome to Ocean Dunes Resort! The beach is just a two-minute walk from here.", "a_vi": "Chào mừng quý khách đến với Ocean Dunes Resort! Bãi biển chỉ cách đây hai phút đi bộ ạ." },
-            { "q_en": "Can you show me the breakfast time?", "q_vi": "Bạn có thể cho tôi biết giờ ăn sáng không?", "a_en": "Certainly! Breakfast is served at the main restaurant from six thirty to ten.", "a_vi": "Dạ chắc chắn rồi! Bữa sáng được phục vụ tại nhà hàng chính từ 6:30 đến 10:00." }
-        ]
-    },
-    "coffee": {
-        "id": "coffee", "title": "Ocean Coffee", "icon": "☕", "color": "#8D6E63", "progress": 0,
-        "lessons": [
-            { "q_en": "It is very hot today. What do you recommend?", "q_vi": "Hôm nay trời rất nóng. Bạn có gợi ý thức uống nào không?", "a_en": "I highly recommend our signature Coconut Coffee. It is very refreshing!", "a_vi": "Tôi xin gợi ý món Cà phê Dừa đặc trưng của quán. Nó rất thanh mát ạ!" }
-        ]
-    }
+  "resort": {
+    "id": "resort",
+    "title": "Ocean Dunes Resort",
+    "icon": "🏨",
+    "color": "#008CBA",
+    "progress": 0,
+    "lessons": [
+      { "q_en": "Excuse me, where is the nearest beach?", "q_vi": "Xin lỗi, bãi biển gần nhất ở hướng nào?", "a_en": "Welcome to Ocean Dunes Resort! The beach is just a two-minute walk from here.", "a_vi": "Chào mừng quý khách đến với Ocean Dunes Resort! Bãi biển chỉ cách đây hai phút đi bộ ạ." },
+      { "q_en": "Can you show me the breakfast time?", "q_vi": "Bạn có thể cho tôi biết giờ ăn sáng không?", "a_en": "Certainly! Breakfast is served at the main restaurant from six thirty to ten.", "a_vi": "Dạ chắc chắn rồi! Bữa sáng được phục vụ tại nhà hàng chính từ 6:30 đến 10:00." }
+    ]
+  },
+  "coffee": {
+    "id": "coffee",
+    "title": "Ocean Coffee",
+    "icon": "☕",
+    "color": "#8D6E63",
+    "progress": 0,
+    "lessons": [
+      { "q_en": "It is very hot today. What do you recommend?", "q_vi": "Hôm nay trời rất nóng. Bạn có gợi ý thức uống nào không?", "a_en": "I highly recommend our signature Coconut Coffee. It is very refreshing!", "a_vi": "Tôi xin gợi ý món Cà phê Dừa đặc trưng của quán. Nó rất thanh mát ạ!" }
+    ]
+  },
+  "manager": {
+    "id": "manager",
+    "title": "Báo cáo Manager Than Duong",
+    "icon": "📊",
+    "color": "#4CAF50",
+    "progress": 0,
+    "lessons": [
+      { "q_en": "How are the preparations for the Lunar New Year event?", "q_vi": "Công tác chuẩn bị cho sự kiện Tết Nguyên Đán thế nào rồi?", "a_en": "Manager Than Duong, all marketing materials and vouchers are ready for deployment.", "a_vi": "Thưa Manager Than Duong, tất cả các ấn phẩm marketing và voucher đã sẵn sàng triển khai." }
+    ]
+  }
 }
