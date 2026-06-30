@@ -156,39 +156,47 @@
     </div>
 
     <script>
-        // BẮT ĐẦU ĐOẠN MỚI
+        // 1. Khai báo biến toàn cục (Chỉ khai báo 1 lần duy nhất)
         let appData = {};
         let currentLessonIndex = 0;
         let activeTopic = null;
+        const rateSlider = document.getElementById('rate-slider');
+        const rateValue = document.getElementById('rate-value');
+        let recognition; // Biến cho nhận diện giọng nói
 
+        // 2. Load dữ liệu từ database.json
         async function loadDatabase() {
             try {
                 const response = await fetch('database.json');
                 appData = await response.json();
-                renderDashboard(); // Chỉ render khi đã có dữ liệu
+                renderDashboard(); 
             } catch (error) {
                 console.error("Lỗi load database:", error);
-                alert("Không tìm thấy file database.json!");
+                alert("Không tìm thấy file database.json! Hãy đảm bảo bạn đã dùng Live Server hoặc đã upload lên Vercel.");
             }
         }
 
-        loadDatabase(); // Gọi hàm load ngay
-        // KẾT THÚC ĐOẠN MỚI
+        // 3. Khởi chạy App
+        loadDatabase();
 
-        let currentLessonIndex = 0;
-        let activeTopic = null;
-
-        /* TÍNH NĂNG MỚI: Xử lý Tốc độ */
-        const rateSlider = document.getElementById('rate-slider');
-        const rateValue = document.getElementById('rate-value');
-        rateSlider.value = localStorage.getItem('audioRate') || 1.0;
-        rateValue.innerText = rateSlider.value + "x";
-        rateSlider.oninput = () => {
-            rateValue.innerText = rateSlider.value + "x";
-            localStorage.setItem('audioRate', rateSlider.value);
-        };
-
-        
+        // 4. Các hàm giao diện và xử lý
+        function renderDashboard() {
+            const grid = document.getElementById('topic-grid');
+            grid.innerHTML = '';
+            Object.values(appData).forEach(topic => {
+                const card = document.createElement('div');
+                card.className = 'topic-card';
+                card.onclick = () => openTopic(topic.id);
+                card.innerHTML = `
+                    <div class="topic-icon">${topic.icon}</div>
+                    <div class="topic-title">${topic.title}</div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" style="width: ${topic.progress}%; background-color: ${topic.color}"></div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
 
         function openTopic(topicId) {
             activeTopic = appData[topicId];
@@ -206,7 +214,6 @@
             document.documentElement.style.setProperty('--primary-color', '#008CBA');
             window.speechSynthesis.cancel();
             if(recognition) recognition.stop();
-            renderDashboard();
         }
 
         function loadLesson() {
@@ -218,7 +225,6 @@
             
             document.getElementById('a-group').classList.remove('visible');
             document.getElementById('voice-status').style.display = 'none';
-            
             const mainBtn = document.getElementById('main-btn');
             mainBtn.innerText = "Xem gợi ý trả lời";
             mainBtn.onclick = showAnswer;
@@ -241,105 +247,60 @@
             }
         }
 
-        let availableVoices = [];
+        // 5. Cấu hình Audio & Voice
+        rateSlider.value = localStorage.getItem('audioRate') || 1.0;
+        rateValue.innerText = rateSlider.value + "x";
+        rateSlider.oninput = () => {
+            rateValue.innerText = rateSlider.value + "x";
+            localStorage.setItem('audioRate', rateSlider.value);
+        };
+
         function populateVoiceList() {
-            availableVoices = window.speechSynthesis.getVoices();
             const voiceSelect = document.getElementById('voice-select');
             voiceSelect.innerHTML = '';
-            const englishVoices = availableVoices.filter(voice => voice.lang.includes('en'));
-            if (englishVoices.length === 0) {
-                const option = document.createElement('option');
-                option.textContent = "Đang tải giọng đọc...";
-                voiceSelect.appendChild(option);
-                return;
-            }
-            englishVoices.forEach((voice) => {
-                const option = document.createElement('option');
-                option.textContent = `🎤 ${voice.name} (${voice.lang})`;
-                option.value = voice.name;
-                voiceSelect.appendChild(option);
+            window.speechSynthesis.getVoices().filter(v => v.lang.includes('en')).forEach(v => {
+                const opt = document.createElement('option');
+                opt.textContent = `🎤 ${v.name} (${v.lang})`;
+                opt.value = v.name;
+                voiceSelect.appendChild(opt);
             });
         }
         populateVoiceList();
-        if (speechSynthesis.onvoiceschanged !== undefined) {
-            speechSynthesis.onvoiceschanged = populateVoiceList;
-        }
+        if (speechSynthesis.onvoiceschanged !== undefined) speechSynthesis.onvoiceschanged = populateVoiceList;
 
         function playAudio(type) {
-            window.speechSynthesis.cancel(); 
+            window.speechSynthesis.cancel();
             const lesson = activeTopic.lessons[currentLessonIndex];
-            const textToSpeak = type === 'q' ? lesson.q_en : lesson.a_en;
-            const utterance = new SpeechSynthesisUtterance(textToSpeak);
-            
-            const selectedVoiceName = document.getElementById('voice-select').value;
-            const selectedVoice = availableVoices.find(voice => voice.name === selectedVoiceName);
-            if (selectedVoice) utterance.voice = selectedVoice;
-            
-            /* SỬ DỤNG TỐC ĐỘ TỪ SLIDER */
-            utterance.rate = parseFloat(rateSlider.value); 
+            const utterance = new SpeechSynthesisUtterance(type === 'q' ? lesson.q_en : lesson.a_en);
+            utterance.voice = window.speechSynthesis.getVoices().find(v => v.name === document.getElementById('voice-select').value);
+            utterance.rate = parseFloat(rateSlider.value);
             window.speechSynthesis.speak(utterance);
         }
 
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-        let recognition;
-
         if (SpeechRecognition) {
             recognition = new SpeechRecognition();
             recognition.lang = 'en-US';
-            recognition.interimResults = false; 
-            recognition.maxAlternatives = 1;
+            recognition.interimResults = false;
         }
 
         function startRecording() {
-            if (!recognition) {
-                alert("Trình duyệt không hỗ trợ thu âm."); return;
-            }
+            if (!recognition) { alert("Trình duyệt không hỗ trợ thu âm."); return; }
             const micBtn = document.getElementById('mic-btn');
-            const statusDiv = document.getElementById('voice-status');
-            micBtn.classList.add('recording');
-            micBtn.innerText = '🛑';
-            statusDiv.style.display = 'block';
-            statusDiv.innerText = "Đang nghe...";
-
-            try { recognition.start(); } catch (e) { recognition.stop(); }
-
-            recognition.onresult = (event) => {
-                const spokenText = event.results[0][0].transcript;
-                checkPronunciation(spokenText);
-            };
-
-            recognition.onspeechend = () => { recognition.stop(); resetMicBtn(); };
-            recognition.onerror = () => {
-                statusDiv.innerText = "Lỗi Micro.";
-                resetMicBtn();
-            };
+            micBtn.classList.add('recording'); micBtn.innerText = '🛑';
+            recognition.start();
+            recognition.onresult = (e) => checkPronunciation(e.results[0][0].transcript);
+            recognition.onspeechend = () => { recognition.stop(); micBtn.classList.remove('recording'); micBtn.innerText = '🎙️'; };
         }
 
-        function resetMicBtn() {
-            const micBtn = document.getElementById('mic-btn');
-            micBtn.classList.remove('recording');
-            micBtn.innerText = '🎙️';
+        function checkPronunciation(spoken) {
+            const status = document.getElementById('voice-status');
+            status.style.display = 'block';
+            if (spoken.toLowerCase().includes(activeTopic.lessons[currentLessonIndex].a_en.toLowerCase().split(" ")[0])) {
+                status.innerHTML = "✅ Chính xác!"; status.style.color = "#27ae60";
+                showAnswer();
+            } else { status.innerHTML = "❌ Chưa chuẩn, thử lại!"; status.style.color = "#c0392b"; }
         }
-
-        function checkPronunciation(spokenText) {
-            const targetText = activeTopic.lessons[currentLessonIndex].a_en;
-            const cleanSpoken = spokenText.toLowerCase().replace(/[.,?!]/g, "");
-            const cleanTarget = targetText.toLowerCase().replace(/[.,?!]/g, "");
-            const targetWords = cleanTarget.split(" ");
-            let matchCount = 0;
-            targetWords.forEach(word => { if (cleanSpoken.includes(word)) matchCount++; });
-            const matchRate = matchCount / targetWords.length;
-            const statusDiv = document.getElementById('voice-status');
-            
-            if (matchRate >= 0.6) { 
-                statusDiv.innerHTML = `✅ <b>Chính xác!</b>`;
-                showAnswer(); 
-            } else {
-                statusDiv.innerHTML = `❌ <b>Chưa chuẩn, hãy thử lại!</b>`;
-            }
-        }
-
-        renderDashboard();
     </script>
 </body>
 </html>
