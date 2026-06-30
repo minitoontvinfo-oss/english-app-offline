@@ -1,23 +1,47 @@
 {
-  "resort": {
-    "id": "resort",
-    "title": "Ocean Dunes Resort",
+  "resort_reception": {
+    "id": "resort_reception",
+    "title": "Tiền Sảnh & Check-in",
     "icon": "🏨",
     "color": "#008CBA",
     "progress": 0,
     "lessons": [
-      { "q_en": "Question 1", "q_vi": "Câu 1", "a_en": "Answer 1", "a_vi": "Trả lời 1" },
-      { "q_en": "Question 2", "q_vi": "Câu 2", "a_en": "Answer 2", "a_vi": "Trả lời 2" }
+      { "q_en": "Good morning, may I have your passport please?", "q_vi": "Chào buổi sáng, tôi xin phép được kiểm tra hộ chiếu của quý khách ạ?", "a_en": "Certainly, here it is along with the booking confirmation.", "a_vi": "Vâng, đây là hộ chiếu và xác nhận đặt phòng của tôi." },
+      { "q_en": "We require a security deposit of 2 million VND.", "q_vi": "Chúng tôi cần một khoản tiền cọc đảm bảo là 2 triệu VND ạ.", "a_en": "Can I pay by credit card?", "a_vi": "Tôi có thể thanh toán bằng thẻ tín dụng được không?" },
+      { "q_en": "Breakfast is served from 6:30 to 10:00 AM.", "q_vi": "Bữa sáng được phục vụ từ 6:30 đến 10:00 sáng ạ.", "a_en": "Perfect, thank you for the information.", "a_vi": "Tuyệt quá, cảm ơn bạn về thông tin này." }
     ]
   },
-  "coffee": {
-    "id": "coffee",
-    "title": "Ocean Coffee",
+  "ocean_coffee": {
+    "id": "ocean_coffee",
+    "title": "Ocean Coffee - F&B",
     "icon": "☕",
     "color": "#8D6E63",
     "progress": 0,
     "lessons": [
-      { "q_en": "Question 1", "q_vi": "Câu 1", "a_en": "Answer 1", "a_vi": "Trả lời 1" }
+      { "q_en": "Welcome to Ocean Coffee, would you like to sit inside or on the terrace?", "q_vi": "Chào mừng đến Ocean Coffee, quý khách muốn ngồi trong nhà hay ngoài sân hiên ạ?", "a_en": "The terrace sounds lovely, thank you.", "a_vi": "Ngoài sân hiên nghe tuyệt đấy, cảm ơn bạn." },
+      { "q_en": "What is the signature drink here?", "q_vi": "Món đồ uống đặc trưng ở đây là gì vậy?", "a_en": "Our signature drink is the Coconut Coffee, it's very popular.", "a_vi": "Món đặc trưng của quán là Cà phê Dừa, rất được ưa chuộng ạ." }
+    ]
+  },
+  "housekeeping": {
+    "id": "housekeeping",
+    "title": "Buồng phòng & Bảo trì",
+    "icon": "🧹",
+    "color": "#f39c12",
+    "progress": 0,
+    "lessons": [
+      { "q_en": "Housekeeping, may I come in to clean the room?", "q_vi": "Dịch vụ buồng phòng đây ạ, tôi có thể vào dọn phòng được không?", "a_en": "Yes, please come in.", "a_vi": "Vâng, mời vào." },
+      { "q_en": "I am so sorry, I will send our technician to fix the air conditioner right away.", "q_vi": "Tôi rất xin lỗi, tôi sẽ cử nhân viên kỹ thuật đến sửa máy lạnh ngay ạ.", "a_en": "Thank you, I appreciate it.", "a_vi": "Cảm ơn bạn, tôi rất trân trọng điều đó." }
+    ]
+  },
+  "management": {
+    "id": "management",
+    "title": "Báo cáo Manager Than Duong",
+    "icon": "📊",
+    "color": "#4CAF50",
+    "progress": 0,
+    "lessons": [
+      { "q_en": "Manager Than Duong, the event revenue exceeded our target by 15%.", "q_vi": "Thưa Manager Than Duong, doanh thu sự kiện đã vượt chỉ tiêu 15% ạ.", "a_en": "That's excellent work, Huy. Keep up the good performance.", "a_vi": "Kết quả xuất sắc lắm, Huy. Hãy tiếp tục duy trì phong độ này nhé." },
+      { "q_en": "All marketing materials for Lunar New Year are ready.", "q_vi": "Tất cả ấn phẩm marketing cho Tết Nguyên Đán đã sẵn sàng.", "a_en": "Good, let's deploy them by tomorrow morning.", "a_vi": "Tốt, chúng ta hãy triển khai chúng vào sáng mai nhé." }
     ]
   }
 }
