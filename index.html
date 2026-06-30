@@ -7,9 +7,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Hệ Thống Huấn Luyện Giao Tiếp</title>
     <style>
-        /* Biến màu sắc toàn cục - Sẽ thay đổi bằng JS khi chọn chủ đề */
         :root {
-            --primary-color: #008CBA; /* Mặc định */
+            --primary-color: #008CBA; 
             --bg-color: #f0f2f5;
             --text-color: #333;
         }
@@ -35,25 +34,16 @@
         }
 
         .topic-card {
-            background: white;
-            border-radius: 16px;
-            padding: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-            cursor: pointer;
-            transition: transform 0.2s;
+            background: white; border-radius: 16px; padding: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05); cursor: pointer; transition: transform 0.2s;
         }
         .topic-card:active { transform: scale(0.95); }
         
         .topic-icon { font-size: 32px; margin-bottom: 10px; }
         .topic-title { font-size: 16px; font-weight: 700; min-height: 40px; }
         
-        /* Thanh tiến trình mini */
-        .progress-bar-bg {
-            width: 100%; height: 6px; background: #eee; border-radius: 3px; margin-top: 10px; overflow: hidden;
-        }
-        .progress-bar-fill {
-            height: 100%; background: var(--primary-color); border-radius: 3px; width: 0%; transition: width 0.5s;
-        }
+        .progress-bar-bg { width: 100%; height: 6px; background: #eee; border-radius: 3px; margin-top: 10px; overflow: hidden; }
+        .progress-bar-fill { height: 100%; background: var(--primary-color); border-radius: 3px; width: 0%; transition: width 0.5s; }
         .progress-text { font-size: 12px; color: #888; margin-top: 5px; display: flex; justify-content: space-between;}
 
         /* --- UI MÀN HÌNH HỌC --- */
@@ -66,19 +56,28 @@
         .flashcard-container { flex: 1; display: flex; align-items: center; justify-content: center; margin-top: 20px; }
         
         .flashcard {
-            width: 100%; max-width: 400px; height: 350px; 
+            width: 100%; max-width: 400px; min-height: 380px; 
             background: white; border-radius: 20px; 
             box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
-            display: flex; flex-direction: column; justify-content: center; align-items: center; 
-            padding: 30px; text-align: center; position: relative;
+            display: flex; flex-direction: column; justify-content: flex-start; align-items: center; 
+            padding: 30px 20px; text-align: center; position: relative;
+            box-sizing: border-box;
         }
 
-        .question-text { font-size: 22px; font-weight: bold; color: #333; margin-bottom: 20px; }
-        .answer-text { font-size: 20px; color: var(--primary-color); font-weight: 600; opacity: 0; transition: opacity 0.3s; }
-        .answer-text.visible { opacity: 1; }
+        /* STYLES MỚI CHO SONG NGỮ */
+        .q-group { margin-bottom: 20px; width: 100%; }
+        .text-en { font-size: 22px; font-weight: bold; color: #333; margin-bottom: 8px; line-height: 1.3; }
+        .text-vi { font-size: 16px; color: #777; font-style: italic; line-height: 1.4; }
 
-        /* Nút công cụ V1 (Sẽ gắn logic thu âm/phát âm ở V2) */
-        .tools-row { display: flex; gap: 20px; margin-top: 40px; }
+        .a-group { 
+            width: 100%; opacity: 0; transition: opacity 0.3s; 
+            margin-top: 15px; border-top: 1px dashed #ddd; padding-top: 20px;
+        }
+        .a-group.visible { opacity: 1; }
+        .ans-en { font-size: 20px; color: var(--primary-color); font-weight: 600; margin-bottom: 8px; line-height: 1.3; }
+        .ans-vi { font-size: 15px; color: #888; font-style: italic; line-height: 1.4; }
+
+        .tools-row { display: flex; gap: 20px; margin-top: auto; padding-top: 25px; }
         .icon-btn { 
             width: 50px; height: 50px; border-radius: 25px; 
             background: #f0f2f5; display: flex; justify-content: center; align-items: center;
@@ -91,33 +90,39 @@
             background-color: var(--primary-color); color: white; 
             border: none; border-radius: 15px; font-size: 18px; font-weight: bold; cursor: pointer;
         }
-
     </style>
 </head>
 <body>
 
     <div id="dashboard">
         <div class="header-title">Lộ trình huấn luyện</div>
-        <div class="grid-container" id="topic-grid">
-            </div>
+        <div class="grid-container" id="topic-grid"></div>
     </div>
 
     <div id="learning-screen">
         <div class="nav-bar">
             <div class="back-btn" onclick="goBack()">❮ Quay lại</div>
             <div class="learning-title" id="current-topic-title">Chủ đề</div>
-            <div style="width: 60px;"></div> </div>
+            <div style="width: 60px;"></div> 
+        </div>
 
         <div class="flashcard-container">
             <div class="flashcard">
-                <div style="font-size: 40px; margin-bottom: 15px;">💬</div>
+                <div style="font-size: 35px; margin-bottom: 15px;">💬</div>
                 
-                <div class="question-text" id="q-text">Khách phàn nàn: "Phòng của tôi có mùi thuốc lá."</div>
-                <div class="answer-text" id="a-text">I sincerely apologize. I will have housekeeping clean it immediately.</div>
+                <div class="q-group">
+                    <div class="text-en" id="q-en">Question in English</div>
+                    <div class="text-vi" id="q-vi">Câu hỏi tiếng Việt</div>
+                </div>
+                
+                <div class="a-group" id="a-group">
+                    <div class="ans-en" id="a-en">Answer in English</div>
+                    <div class="ans-vi" id="a-vi">Câu trả lời tiếng Việt</div>
+                </div>
                 
                 <div class="tools-row">
-                    <button class="icon-btn" onclick="alert('V2: Phát âm thanh câu hỏi')">🔊</button>
-                    <button class="icon-btn primary" onclick="alert('V2: Bắt đầu thu âm chấm điểm')">🎙️</button>
+                    <button class="icon-btn" onclick="alert('V2: Phát âm câu hỏi')">🔊</button>
+                    <button class="icon-btn primary" onclick="alert('V2: Thu âm')">🎙️</button>
                     <button class="icon-btn" onclick="alert('V2: Nghe mẫu câu trả lời')">🎧</button>
                 </div>
             </div>
@@ -127,30 +132,49 @@
     </div>
 
     <script>
-        // CẤU TRÚC DỮ LIỆU CỐT LÕI (Sẽ kết nối IndexedDB ở V3)
+        // CẤU TRÚC DỮ LIỆU ĐÃ NÂNG CẤP (Thêm q_en, q_vi, a_en, a_vi)
         const appData = {
             resort: {
-                id: 'resort', title: 'Ocean Dunes Resort', icon: '🏨', color: '#008CBA', progress: 45, total: 10, completed: 4,
+                id: 'resort', title: 'Ocean Dunes Resort', icon: '🏨', color: '#008CBA', progress: 50, total: 10, completed: 5,
                 lessons: [
-                    { q: 'Khách hỏi đường ra bãi biển', a: 'Walk straight and turn right at the pool.' },
-                    { q: 'Thông báo giờ ăn sáng', a: 'Breakfast is served from 6 AM to 10 AM.' }
+                    { 
+                        q_en: 'Excuse me, where is the nearest beach?', 
+                        q_vi: 'Xin lỗi, bãi biển gần nhất ở hướng nào?', 
+                        a_en: 'Welcome to Ocean Dunes Resort! The beach is just a 2-minute walk from here.', 
+                        a_vi: 'Chào mừng quý khách đến với Ocean Dunes Resort! Bãi biển chỉ cách đây 2 phút đi bộ ạ.' 
+                    },
+                    { 
+                        q_en: 'Can you show me the breakfast time?', 
+                        q_vi: 'Bạn có thể cho tôi biết giờ ăn sáng không?', 
+                        a_en: 'Certainly! Breakfast is served at the main restaurant from 6:30 AM to 10:00 AM.', 
+                        a_vi: 'Dạ chắc chắn rồi! Bữa sáng được phục vụ tại nhà hàng chính từ 6:30 sáng đến 10:00 sáng.' 
+                    }
                 ]
             },
             coffee: {
-                id: 'coffee', title: 'Ocean Coffee', icon: '☕', color: '#8D6E63', progress: 10, total: 20, completed: 2,
+                id: 'coffee', title: 'Ocean Coffee', icon: '☕', color: '#8D6E63', progress: 30, total: 20, completed: 6,
                 lessons: [
-                    { q: 'Giới thiệu món đặc biệt', a: 'Our signature drink is the Coconut Coffee.' }
+                    { 
+                        q_en: 'It is very hot today. What do you recommend?', 
+                        q_vi: 'Hôm nay trời rất nóng. Bạn có gợi ý thức uống nào không?', 
+                        a_en: 'I highly recommend our signature Coconut Coffee. It is very refreshing!', 
+                        a_vi: 'Tôi xin gợi ý món Cà phê Dừa đặc trưng của quán. Nó rất thanh mát ạ!' 
+                    }
                 ]
             },
             manager: {
                 id: 'manager', title: 'Báo cáo Manager Than Duong', icon: '📊', color: '#4CAF50', progress: 80, total: 5, completed: 4,
                 lessons: [
-                    { q: 'Báo cáo doanh thu sự kiện', a: 'The event revenue exceeded our target by 15%.' }
+                    { 
+                        q_en: 'How are the preparations for the Lunar New Year event?', 
+                        q_vi: 'Công tác chuẩn bị cho sự kiện Tết Nguyên Đán thế nào rồi?', 
+                        a_en: 'Manager Than Duong, all marketing materials and vouchers are ready for deployment.', 
+                        a_vi: 'Thưa Manager Than Duong, tất cả các ấn phẩm marketing và voucher đã sẵn sàng triển khai.' 
+                    }
                 ]
             }
         };
 
-        // RENDER DASHBOARD
         function renderDashboard() {
             const grid = document.getElementById('topic-grid');
             grid.innerHTML = '';
@@ -174,48 +198,43 @@
             });
         }
 
-        // ĐIỀU HƯỚNG VÀ LOGIC MÀN HÌNH HỌC
         let currentLessonIndex = 0;
         let activeTopic = null;
 
         function openTopic(topicId) {
             activeTopic = appData[topicId];
             currentLessonIndex = 0;
-            
-            // Dynamic Theming: Đổi màu UI theo chủ đề
             document.documentElement.style.setProperty('--primary-color', activeTopic.color);
-            
-            // Chuyển màn hình
             document.getElementById('dashboard').style.display = 'none';
             document.getElementById('learning-screen').style.display = 'flex';
             document.getElementById('current-topic-title').innerText = activeTopic.title;
-            
             loadLesson();
         }
 
         function goBack() {
             document.getElementById('learning-screen').style.display = 'none';
             document.getElementById('dashboard').style.display = 'block';
-            
-            // Trả màu về mặc định
             document.documentElement.style.setProperty('--primary-color', '#008CBA');
-            renderDashboard(); // Render lại lỡ có update %
+            renderDashboard();
         }
 
         function loadLesson() {
             const lesson = activeTopic.lessons[currentLessonIndex];
-            document.getElementById('q-text').innerText = lesson.q;
-            document.getElementById('a-text').innerText = lesson.a;
             
-            // Reset trạng thái UI
-            document.getElementById('a-text').classList.remove('visible');
+            // Đẩy dữ liệu song ngữ vào UI
+            document.getElementById('q-en').innerText = lesson.q_en;
+            document.getElementById('q-vi').innerText = lesson.q_vi;
+            document.getElementById('a-en').innerText = lesson.a_en;
+            document.getElementById('a-vi').innerText = lesson.a_vi;
+            
+            document.getElementById('a-group').classList.remove('visible');
             const mainBtn = document.querySelector('.main-action-btn');
             mainBtn.innerText = "Xem gợi ý trả lời";
             mainBtn.onclick = showAnswer;
         }
 
         function showAnswer() {
-            document.getElementById('a-text').classList.add('visible');
+            document.getElementById('a-group').classList.add('visible');
             const mainBtn = document.querySelector('.main-action-btn');
             mainBtn.innerText = "Câu tiếp theo ➔";
             mainBtn.onclick = nextLesson;
@@ -224,14 +243,13 @@
         function nextLesson() {
             currentLessonIndex++;
             if (currentLessonIndex >= activeTopic.lessons.length) {
-                alert("Bạn đã hoàn thành chủ đề này!");
+                alert("Hoàn tất! Hệ thống sẽ cập nhật % tiến độ ở Version 3.");
                 goBack();
             } else {
                 loadLesson();
             }
         }
 
-        // Khởi chạy App
         renderDashboard();
     </script>
 </body>
