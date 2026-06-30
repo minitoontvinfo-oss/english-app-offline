@@ -381,13 +381,15 @@
             recognition.onspeechend = () => { recognition.stop(); micBtn.classList.remove('recording'); micBtn.innerText = '🎙️'; };
         }
 
-        function checkPronunciation(spoken) {
+       function checkPronunciation(spoken) {
             const status = document.getElementById('voice-status');
+            const aiBtn = document.getElementById('ai-check-btn'); // Lấy nút AI
             status.style.display = 'block';
-            if (spoken.toLowerCase().includes(activeTopic.lessons[currentLessonIndex].a_en.toLowerCase().split(" ")[0])) {
-                status.innerHTML = "✅ Chính xác!"; status.style.color = "#27ae60";
-                showAnswer();
-            } else { status.innerHTML = "❌ Chưa chuẩn, thử lại!"; status.style.color = "#c0392b"; }
+            status.setAttribute('data-spoken', spoken);
+            status.innerHTML = `✅ Hệ thống nghe được: "${spoken}"`;
+            
+            // Dòng này cực kỳ quan trọng để hiện nút AI:
+            aiBtn.style.display = 'block'; 
         }
 
 // Hàm quản lý Tab Info
@@ -417,11 +419,28 @@
         // Tìm hàm checkPronunciation(spoken) và thêm dòng này vào cuối hàm:
         // document.getElementById('ai-check-btn').style.display = 'block';
         // document.getElementById('voice-status').setAttribute('data-spoken', spoken);
+
+// Kiểm tra kết nối mạng (trạng thái AI)
+        function updateAIStatus() {
+            const statusIndicator = document.getElementById('ai-status');
+            if (navigator.onLine) {
+                statusIndicator.innerHTML = "AI: 🟢 Online";
+                statusIndicator.style.color = "green";
+            } else {
+                statusIndicator.innerHTML = "AI: 🔴 Offline";
+                statusIndicator.style.color = "red";
+            }
+        }
+        // Theo dõi trạng thái mạng liên tục
+        window.addEventListener('online', updateAIStatus);
+        window.addEventListener('offline', updateAIStatus);
+        updateAIStatus(); // Chạy ngay khi mở app
     </script>
 <div id="info-screen">
         <div class="nav-bar">
             <div class="back-btn" onclick="hideInfo()">❮ Quay lại</div>
             <div class="learning-title">Thông tin Ứng dụng</div>
+	<div id="ai-status" style="font-size: 12px; color: green;">AI: 🟢 Online</div>
         </div>
         <div class="info-content">
             <h3>Phiên bản: <span class="version-tag">V2.3</span></h3>
