@@ -1,0 +1,16 @@
+{
+  "short_name": "AppTiengAnh",
+  "name": "Ứng Dụng Học Tiếng Anh Offline",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3220/3220671.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#f0f2f5",
+  "theme_color": "#008CBA",
+  "display": "standalone",
+  "orientation": "portrait"
+}
