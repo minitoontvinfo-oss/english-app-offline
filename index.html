@@ -111,6 +111,7 @@
         .version-tag { background: var(--primary-color); color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold; }
         #ai-check-btn { background-color: #6c5ce7; display: none; }
         .info-icon { cursor: pointer; font-size: 24px; }
+#ai-check-btn { background-color: #6c5ce7; display: none; }
     </style>
 </head>
 <body>
@@ -163,7 +164,7 @@
         </div>
 
         <button class="main-action-btn" id="main-btn" onclick="showAnswer()">Xem gợi ý trả lời</button>
-	<button class="main-action-btn" id="ai-check-btn" onclick="checkWithAI()">🤖 Chấm điểm chuyên gia (AI)</button>
+	<button class="main-action-btn" id="ai-check-btn" onclick="checkWithAI()" style="background-color: #6c5ce7; display: none;">🤖 Chấm điểm chuyên gia (AI)</button>
     </div>
 
     <script>
@@ -244,12 +245,46 @@
         // Cập nhật hàm checkPronunciation cũ để hiện nút AI
         function checkPronunciation(spokenText) {
             const statusDiv = document.getElementById('voice-status');
+            const aiBtn = document.getElementById('ai-check-btn');
+            
             statusDiv.style.display = 'block';
             
-            // ... (giữ nguyên logic chấm điểm cũ) ...
+            // LƯU LẠI VĂN BẢN VÀO THUỘC TÍNH TẠM ĐỂ HÀM AI SỬ DỤNG
+            statusDiv.setAttribute('data-spoken', spokenText);
             
-            // THÊM: Nếu đã thu âm xong thì hiện nút AI
-            document.getElementById('ai-check-btn').style.display = 'block';
+            const targetText = activeTopic.lessons[currentLessonIndex].a_en;
+            const cleanSpoken = spokenText.toLowerCase().replace(/[.,?!]/g, "");
+            const cleanTarget = targetText.toLowerCase().replace(/[.,?!]/g, "");
+            const targetWords = cleanTarget.split(" ");
+            let matchCount = 0;
+            
+            targetWords.forEach(word => { 
+                if (cleanSpoken.includes(word)) matchCount++; 
+            });
+            
+            const matchRate = matchCount / targetWords.length;
+            
+            if (matchRate >= 0.6) { 
+                statusDiv.innerHTML = `✅ <b>Chính xác!</b><br>Hệ thống nghe được: <i>"${spokenText}"</i>`;
+                statusDiv.style.color = "#27ae60"; 
+                statusDiv.style.backgroundColor = "#e8f8f5";
+                
+                // HIỂN THỊ NÚT AI CHECK KHI ĐÚNG
+                if (aiBtn) {
+                    aiBtn.style.display = 'block';
+                }
+                
+                showAnswer(); 
+            } else {
+                statusDiv.innerHTML = `❌ <b>Chưa chuẩn, hãy thử lại!</b><br>Hệ thống nghe được: <i>"${spokenText}"</i>`;
+                statusDiv.style.color = "#c0392b"; 
+                statusDiv.style.backgroundColor = "#fdedec";
+                
+                // ẨN NÚT AI CHECK NẾU SAI
+                if (aiBtn) {
+                    aiBtn.style.display = 'none';
+                }
+            }
         }
         function openTopic(topicId) {
             activeTopic = appData[topicId];
