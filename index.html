@@ -355,15 +355,13 @@
             }
         }
 
-        // Cập nhật hàm checkPronunciation cũ để hiện nút AI
+        // Hàm chấm điểm phát âm và cộng điểm
         function checkPronunciation(spokenText) {
             const statusDiv = document.getElementById('voice-status');
             const aiBtn = document.getElementById('ai-check-btn');
             
             statusDiv.style.display = 'block';
-            
-            // LƯU LẠI VĂN BẢN VÀO THUỘC TÍNH TẠM ĐỂ HÀM AI SỬ DỤNG
-            statusDiv.setAttribute('data-spoken', spokenText);
+            statusDiv.setAttribute('data-spoken', spokenText); // Lưu text cho tính năng AI
             
             const targetText = activeTopic.lessons[currentLessonIndex].a_en;
             const cleanSpoken = spokenText.toLowerCase().replace(/[.,?!]/g, "");
@@ -378,28 +376,25 @@
             const matchRate = matchCount / targetWords.length;
             
             if (matchRate >= 0.6) { 
+                // Trả lời ĐÚNG
                 statusDiv.innerHTML = `✅ <b>Chính xác!</b><br>Hệ thống nghe được: <i>"${spokenText}"</i>`;
                 statusDiv.style.color = "#27ae60"; 
                 statusDiv.style.backgroundColor = "#e8f8f5";
                 
-                // HIỂN THỊ NÚT AI CHECK KHI ĐÚNG
-                if (aiBtn) {
-                    aiBtn.style.display = 'block';
-                }
-                
+                if (aiBtn) aiBtn.style.display = 'block'; // Hiện nút AI Check
                 showAnswer(); 
-
-addPoints(10); // Cộng 10 điểm vào tài khoản
-
+                
+                // BẮN LỆNH CỘNG 10 ĐIỂM
+                addPoints(10);
+                console.log("Đã kích hoạt cộng 10 điểm cho tài khoản!"); // Báo ra F12 để theo dõi
+                
             } else {
+                // Trả lời SAI
                 statusDiv.innerHTML = `❌ <b>Chưa chuẩn, hãy thử lại!</b><br>Hệ thống nghe được: <i>"${spokenText}"</i>`;
                 statusDiv.style.color = "#c0392b"; 
                 statusDiv.style.backgroundColor = "#fdedec";
                 
-                // ẨN NÚT AI CHECK NẾU SAI
-                if (aiBtn) {
-                    aiBtn.style.display = 'none';
-                }
+                if (aiBtn) aiBtn.style.display = 'none'; // Ẩn nút AI
             }
         }
         function openTopic(topicId) {
