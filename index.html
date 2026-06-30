@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hệ Thống Huấn Luyện Giao Tiếp V2.1</title>
+    <title>Hệ Thống Huấn Luyện Giao Tiếp V2.5</title>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
     <style>
         :root {
             --primary-color: #008CBA; 
@@ -21,7 +26,7 @@
 
         /* --- UI DASHBOARD --- */
         #dashboard { padding: 20px; padding-top: 50px; }
-        .header-title { font-size: 28px; font-weight: 800; margin-bottom: 25px; }
+        .header-title { font-size: 28px; font-weight: 800; margin-bottom: 25px; display: flex; justify-content: space-between; align-items: center; }
         
         .grid-container { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
 
@@ -44,7 +49,6 @@
         .back-btn { font-size: 16px; color: var(--primary-color); font-weight: bold; cursor: pointer; padding: 10px 0; }
         .learning-title { font-size: 18px; font-weight: bold; }
 
-        /* UI Nút chọn giọng đọc & Tốc độ mới */
         .voice-dropdown {
             width: 100%; max-width: 400px; padding: 12px 15px; margin: 0 auto 15px auto;
             border-radius: 12px; border: 1px solid #ddd; font-family: inherit; font-size: 14px;
@@ -100,27 +104,22 @@
         }
 
         .main-action-btn {
-            width: 100%; padding: 18px; margin-bottom: 30px;
+            width: 100%; padding: 18px; margin-bottom: 15px;
             background-color: var(--primary-color); color: white; 
             border: none; border-radius: 15px; font-size: 18px; font-weight: bold; cursor: pointer;
         }
 
-	/* Style cho tính năng Info và AI Check */
+        /* --- UI INFO & BỔ SUNG --- */
         #info-screen { display: none; padding: 20px; height: 100vh; background: var(--bg-color); position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; box-sizing: border-box; }
         .info-content { background: white; padding: 20px; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
         .version-tag { background: var(--primary-color); color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold; }
-        #ai-check-btn { background-color: #6c5ce7; display: none; }
+        #ai-check-btn { background-color: #6c5ce7; display: none; margin-bottom: 30px; }
         .info-icon { cursor: pointer; font-size: 24px; }
-#ai-check-btn { background-color: #6c5ce7; display: none; }
     </style>
-
-<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
 </head>
 <body>
 
-<div id="login-screen" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background: white; position: fixed; top: 0; left: 0; width: 100%; z-index: 9999;">
+    <div id="login-screen" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background: white; position: fixed; top: 0; left: 0; width: 100%; z-index: 9999;">
         <div style="font-size: 50px; margin-bottom: 20px;">🏢</div>
         <h2 style="margin-bottom: 10px; color: var(--primary-color);">Ocean Training Hub</h2>
         <p style="color: #666; margin-bottom: 30px; text-align: center; max-width: 80%;">Hệ thống huấn luyện nghiệp vụ nội bộ</p>
@@ -131,10 +130,9 @@
         <p id="login-status" style="margin-top: 15px; color: #666; font-size: 14px;"></p>
     </div>
 
-
     <div id="dashboard">
         <div class="header-title">
-            <span>Lộ trình huấn luyện</span>
+            <span id="dashboard-welcome">Lộ trình huấn luyện</span>
             <div style="display: flex; align-items: center; gap: 15px;">
                 <div id="user-points-display" style="font-size: 16px; background: #fff3cd; color: #856404; padding: 5px 12px; border-radius: 20px; font-weight: bold; display: none; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
                     ⭐ 0 Điểm
@@ -149,7 +147,13 @@
         <div class="nav-bar">
             <div class="back-btn" onclick="goBack()">❮ Quay lại</div>
             <div class="learning-title" id="current-topic-title">Chủ đề</div>
-            <div style="width: 60px;"></div> 
+            
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <div id="ai-status" style="font-size: 12px; color: green; font-weight: bold;">AI: 🟢 Online</div>
+                <div id="learning-points-display" style="font-size: 14px; background: #fff3cd; color: #856404; padding: 5px 10px; border-radius: 15px; font-weight: bold; display: none; transition: transform 0.2s;">
+                    ⭐ 0
+                </div>
+            </div> 
         </div>
 
         <select id="voice-select" class="voice-dropdown"></select>
@@ -185,12 +189,35 @@
         </div>
 
         <button class="main-action-btn" id="main-btn" onclick="showAnswer()">Xem gợi ý trả lời</button>
-	<button class="main-action-btn" id="ai-check-btn" onclick="checkWithAI()" style="background-color: #6c5ce7; display: none;">🤖 Chấm điểm chuyên gia (AI)</button>
+        <button class="main-action-btn" id="ai-check-btn" onclick="checkWithAI()">🤖 Chấm điểm chuyên gia (AI)</button>
+    </div>
+
+    <div id="info-screen">
+        <div class="nav-bar">
+            <div class="back-btn" onclick="hideInfo()">❮ Quay lại</div>
+            <div class="learning-title">Thông tin Ứng dụng</div>
+            <div style="width: 60px;"></div>
+        </div>
+        <div class="info-content">
+            <h3>Phiên bản: <span class="version-tag">V2.5 (Cloud)</span></h3>
+            <p><strong>Cập nhật:</strong></p>
+            <ul style="color: #555; font-size: 14px; line-height: 1.6;">
+                <li>Tích hợp Đăng nhập Google</li>
+                <li>Lưu trữ điểm số trên Cloud</li>
+                <li>AI Chấm điểm ngữ pháp & thái độ</li>
+                <li>Khóa chống spam cày điểm</li>
+            </ul>
+            <hr style="border: 0; border-top: 1px dashed #ddd; margin: 20px 0;">
+            <button onclick="logoutUser()" style="width: 100%; padding: 12px; background: #e74c3c; color: white; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                🚪 Đăng xuất tài khoản
+            </button>
+        </div>
     </div>
 
     <script>
-
-// BƯỚC 1: DÁN ĐOẠN FIREBASE CONFIG BẠN VỪA COPY TRÊN WEB VÀO ĐÂY
+        // ==========================================
+        // 1. CẤU HÌNH FIREBASE VÀ ĐĂNG NHẬP
+        // ==========================================
         const firebaseConfig = {
             apiKey: "AIzaSyDoBoeAyxWeoYiAQkudVi8ZS3uQJVGvjXc",
             authDomain: "app-learning-english-60a96.firebaseapp.com",
@@ -200,22 +227,16 @@
             appId: "1:248531393253:web:d3afdcbedf576445dd920c"
         };
 
-        // Khởi tạo Firebase
         firebase.initializeApp(firebaseConfig);
         const auth = firebase.auth();
         const db = firebase.firestore();
 
-// ==========================================
-        // HỆ THỐNG ĐĂNG NHẬP & ĐIỂM SỐ CLOUD
-        // ==========================================
         let currentUser = null;
         let currentPoints = 0;
 
-        // 1. Hàm xử lý nút bấm
         function loginWithGoogle() {
             const statusText = document.getElementById('login-status');
             if(statusText) statusText.innerText = "Đang mở cửa sổ đăng nhập...";
-            
             const provider = new firebase.auth.GoogleAuthProvider();
             auth.signInWithPopup(provider).catch((error) => {
                 console.error("Lỗi Google Auth:", error);
@@ -223,26 +244,19 @@
             });
         }
 
-        // 2. Lắng nghe trạng thái Firebase
         auth.onAuthStateChanged((user) => {
             if (user) {
                 currentUser = user;
                 document.getElementById('login-screen').style.display = 'none';
                 
-                // Cập nhật giao diện
-                const headerTitle = document.querySelector('.header-title');
-                if(headerTitle) {
+                // Cập nhật tên
+                const dashboardWelcome = document.getElementById('dashboard-welcome');
+                if (dashboardWelcome) {
                     const firstName = user.displayName ? user.displayName.split(" ")[0] : "Bạn";
-                    headerTitle.innerHTML = `
-                        <span>Xin chào, ${firstName}!</span>
-                        <div style="display: flex; align-items: center; gap: 15px;">
-                            <div id="user-points-display" style="font-size: 16px; background: #fff3cd; color: #856404; padding: 5px 12px; border-radius: 20px; font-weight: bold; display: none; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">⭐ 0 Điểm</div>
-                            <span class="info-icon" onclick="showInfo()">ℹ️</span>
-                        </div>
-                    `;
+                    dashboardWelcome.innerText = `Xin chào, ${firstName}!`;
                 }
 
-                // Lưu hồ sơ lên Cloud
+                // Lưu hồ sơ lên Cloud và Kéo điểm về
                 db.collection("users").doc(user.uid).set({
                     name: user.displayName || "Thành viên Ostock",
                     email: user.email,
@@ -251,60 +265,77 @@
                 }, { merge: true }) 
                 .then(() => fetchUserData())
                 .catch((err) => console.error("Lỗi lưu hồ sơ:", err));
-
             } else {
                 document.getElementById('login-screen').style.display = 'flex';
             }
         });
 
-        // 3. Hàm tải điểm từ Cloud về
+        function logoutUser() {
+            if (confirm("Bạn có chắc chắn muốn đăng xuất không?")) {
+                auth.signOut().then(() => {
+                    document.getElementById('info-screen').style.display = 'none';
+                    currentPoints = 0; 
+                    document.getElementById('user-points-display').style.display = 'none';
+                    document.getElementById('learning-points-display').style.display = 'none';
+                }).catch((error) => alert("Có lỗi khi đăng xuất: " + error.message));
+            }
+        }
+
+        // ==========================================
+        // 2. HỆ THỐNG ĐIỂM SỐ CLOUD
+        // ==========================================
         function fetchUserData() {
             if (!currentUser) return;
             db.collection("users").doc(currentUser.uid).get().then((doc) => {
                 currentPoints = (doc.exists && doc.data().points) ? doc.data().points : 0;
+                
                 const pointDisplay = document.getElementById('user-points-display');
-                if(pointDisplay) {
-                    pointDisplay.style.display = 'block';
-                    pointDisplay.innerHTML = `⭐ ${currentPoints} Điểm`;
-                }
+                const learningPointDisplay = document.getElementById('learning-points-display');
+                
+                if(pointDisplay) { pointDisplay.style.display = 'block'; pointDisplay.innerHTML = `⭐ ${currentPoints} Điểm`; }
+                if(learningPointDisplay) { learningPointDisplay.style.display = 'block'; learningPointDisplay.innerHTML = `⭐ ${currentPoints}`; }
             });
         }
 
-        // 4. Hàm cộng điểm
         function addPoints(pointsToAdd) {
             if (!currentUser) return;
             currentPoints += pointsToAdd;
+            
             const pointDisplay = document.getElementById('user-points-display');
+            const learningPointDisplay = document.getElementById('learning-points-display');
+            
             if(pointDisplay) pointDisplay.innerHTML = `⭐ ${currentPoints} Điểm`;
-            db.collection("users").doc(currentUser.uid).set({
-                points: currentPoints
-            }, { merge: true });
+            if(learningPointDisplay) {
+                learningPointDisplay.innerHTML = `⭐ ${currentPoints}`;
+                learningPointDisplay.style.transform = "scale(1.3)";
+                setTimeout(() => learningPointDisplay.style.transform = "scale(1)", 300);
+            }
+            db.collection("users").doc(currentUser.uid).set({ points: currentPoints }, { merge: true });
         }
 
-        // 1. Khai báo biến toàn cục (Chỉ khai báo 1 lần duy nhất)
+        // ==========================================
+        // 3. LOGIC APP CHÍNH & ÂM THANH
+        // ==========================================
         let appData = {};
         let currentLessonIndex = 0;
         let activeTopic = null;
+        let recognition;
+        let isPointAwarded = false; // Khóa chống spam điểm
+
         const rateSlider = document.getElementById('rate-slider');
         const rateValue = document.getElementById('rate-value');
-        let recognition; // Biến cho nhận diện giọng nói
 
-        // 2. Load dữ liệu từ database.json
         async function loadDatabase() {
             try {
                 const response = await fetch('database.json');
                 appData = await response.json();
                 renderDashboard(); 
             } catch (error) {
-                console.error("Lỗi load database:", error);
-                alert("Không tìm thấy file database.json! Hãy đảm bảo bạn đã dùng Live Server hoặc đã upload lên Vercel.");
+                alert("Không tìm thấy file database.json!");
             }
         }
-
-        // 3. Khởi chạy App
         loadDatabase();
 
-        // 4. Các hàm giao diện và xử lý
         function renderDashboard() {
             const grid = document.getElementById('topic-grid');
             grid.innerHTML = '';
@@ -316,87 +347,13 @@
                     <div class="topic-icon">${topic.icon}</div>
                     <div class="topic-title">${topic.title}</div>
                     <div class="progress-bar-bg">
-                        <div class="progress-bar-fill" style="width: ${topic.progress}%; background-color: ${topic.color}"></div>
+                        <div class="progress-bar-fill" style="width: ${topic.progress || 0}%; background-color: ${topic.color}"></div>
                     </div>
                 `;
                 grid.appendChild(card);
             });
         }
 
-
-	// Hàm mới: AI Grammar & Politeness Scoring
-        async function checkWithAI() {
-            const statusDiv = document.getElementById('voice-status');
-            const currentAnswer = document.getElementById('a-en').innerText;
-            const spokenText = document.getElementById('voice-status').innerText.replace("Hệ thống nghe được: ", "").replace(/"/g, "");
-            
-            if (!spokenText || spokenText.includes("❌") || spokenText.includes("✅")) {
-                alert("Hãy thu âm câu trả lời trước!"); return;
-            }
-
-            statusDiv.innerHTML = "🤖 AI đang phân tích...";
-            const API_KEY = "AIzaSyCa78Q_pzZRLqb0pmG2AqE4B1e-CY7w69k"; // <--- BẠN NHẬP API KEY VÀO ĐÂY
-            
-            try {
-                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        contents: [{ parts: [{ text: `Đánh giá câu trả lời của nhân viên khách sạn. Câu gốc cần nói: "${currentAnswer}". Nhân viên đã nói: "${spokenText}". Hãy chấm điểm ngữ pháp (thang 10), độ lịch sự (thang 10) và gợi ý cách nói chuyên nghiệp hơn bằng tiếng Việt.` }] }]
-                    })
-                });
-                
-                const data = await response.json();
-                const aiResult = data.candidates[0].content.parts[0].text;
-                statusDiv.innerHTML = `<b>Kết quả AI:</b><br>${aiResult.replace(/\n/g, '<br>')}`;
-                statusDiv.style.color = "#333";
-            } catch (err) {
-                statusDiv.innerText = "Lỗi kết nối AI, hãy kiểm tra API Key.";
-            }
-        }
-
-        // Hàm chấm điểm phát âm và cộng điểm
-        function checkPronunciation(spokenText) {
-            const statusDiv = document.getElementById('voice-status');
-            const aiBtn = document.getElementById('ai-check-btn');
-            
-            statusDiv.style.display = 'block';
-            statusDiv.setAttribute('data-spoken', spokenText); // Lưu text cho tính năng AI
-            
-            const targetText = activeTopic.lessons[currentLessonIndex].a_en;
-            const cleanSpoken = spokenText.toLowerCase().replace(/[.,?!]/g, "");
-            const cleanTarget = targetText.toLowerCase().replace(/[.,?!]/g, "");
-            const targetWords = cleanTarget.split(" ");
-            let matchCount = 0;
-            
-            targetWords.forEach(word => { 
-                if (cleanSpoken.includes(word)) matchCount++; 
-            });
-            
-            const matchRate = matchCount / targetWords.length;
-            
-            if (matchRate >= 0.6) { 
-                // Trả lời ĐÚNG
-                statusDiv.innerHTML = `✅ <b>Chính xác!</b><br>Hệ thống nghe được: <i>"${spokenText}"</i>`;
-                statusDiv.style.color = "#27ae60"; 
-                statusDiv.style.backgroundColor = "#e8f8f5";
-                
-                if (aiBtn) aiBtn.style.display = 'block'; // Hiện nút AI Check
-                showAnswer(); 
-                
-                // BẮN LỆNH CỘNG 10 ĐIỂM
-                addPoints(10);
-                console.log("Đã kích hoạt cộng 10 điểm cho tài khoản!"); // Báo ra F12 để theo dõi
-                
-            } else {
-                // Trả lời SAI
-                statusDiv.innerHTML = `❌ <b>Chưa chuẩn, hãy thử lại!</b><br>Hệ thống nghe được: <i>"${spokenText}"</i>`;
-                statusDiv.style.color = "#c0392b"; 
-                statusDiv.style.backgroundColor = "#fdedec";
-                
-                if (aiBtn) aiBtn.style.display = 'none'; // Ẩn nút AI
-            }
-        }
         function openTopic(topicId) {
             activeTopic = appData[topicId];
             currentLessonIndex = 0;
@@ -424,9 +381,13 @@
             
             document.getElementById('a-group').classList.remove('visible');
             document.getElementById('voice-status').style.display = 'none';
+            document.getElementById('ai-check-btn').style.display = 'none'; // Ẩn nút AI
+            
             const mainBtn = document.getElementById('main-btn');
             mainBtn.innerText = "Xem gợi ý trả lời";
             mainBtn.onclick = showAnswer;
+            
+            isPointAwarded = false; // Reset khóa điểm khi qua câu mới
         }
 
         function showAnswer() {
@@ -446,7 +407,6 @@
             }
         }
 
-        // 5. Cấu hình Audio & Voice
         rateSlider.value = localStorage.getItem('audioRate') || 1.0;
         rateValue.innerText = rateSlider.value + "x";
         rateSlider.oninput = () => {
@@ -476,6 +436,9 @@
             window.speechSynthesis.speak(utterance);
         }
 
+        // ==========================================
+        // 4. NHẬN DIỆN GIỌNG NÓI & CHẤM ĐIỂM
+        // ==========================================
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
         if (SpeechRecognition) {
             recognition = new SpeechRecognition();
@@ -492,29 +455,53 @@
             recognition.onspeechend = () => { recognition.stop(); micBtn.classList.remove('recording'); micBtn.innerText = '🎙️'; };
         }
 
-       function checkPronunciation(spoken) {
-            const status = document.getElementById('voice-status');
-            const aiBtn = document.getElementById('ai-check-btn'); // Lấy nút AI
-            status.style.display = 'block';
-            status.setAttribute('data-spoken', spoken);
-            status.innerHTML = `✅ Hệ thống nghe được: "${spoken}"`;
+        function checkPronunciation(spokenText) {
+            const statusDiv = document.getElementById('voice-status');
+            const aiBtn = document.getElementById('ai-check-btn');
             
-            // Dòng này cực kỳ quan trọng để hiện nút AI:
-            aiBtn.style.display = 'block'; 
+            statusDiv.style.display = 'block';
+            statusDiv.setAttribute('data-spoken', spokenText); 
+            
+            const targetText = activeTopic.lessons[currentLessonIndex].a_en;
+            const cleanSpoken = spokenText.toLowerCase().replace(/[.,?!]/g, "");
+            const cleanTarget = targetText.toLowerCase().replace(/[.,?!]/g, "");
+            const targetWords = cleanTarget.split(" ");
+            let matchCount = 0;
+            
+            targetWords.forEach(word => { if (cleanSpoken.includes(word)) matchCount++; });
+            const matchRate = matchCount / targetWords.length;
+            
+            if (matchRate >= 0.6) { 
+                statusDiv.innerHTML = `✅ <b>Chính xác!</b><br>Hệ thống nghe được: <i>"${spokenText}"</i>`;
+                statusDiv.style.color = "#27ae60"; 
+                statusDiv.style.backgroundColor = "#e8f8f5";
+                
+                if (aiBtn) aiBtn.style.display = 'block'; 
+                showAnswer(); 
+                
+                // KIỂM TRA KHÓA: Tránh spam điểm
+                if (!isPointAwarded) {
+                    addPoints(10);
+                    isPointAwarded = true; 
+                }
+            } else {
+                statusDiv.innerHTML = `❌ <b>Chưa chuẩn, hãy thử lại!</b><br>Hệ thống nghe được: <i>"${spokenText}"</i>`;
+                statusDiv.style.color = "#c0392b"; 
+                statusDiv.style.backgroundColor = "#fdedec";
+                if (aiBtn) aiBtn.style.display = 'none'; 
+            }
         }
 
-// Hàm quản lý Tab Info
-        function showInfo() { document.getElementById('info-screen').style.display = 'flex'; }
-        function hideInfo() { document.getElementById('info-screen').style.display = 'none'; }
-
-        // Hàm AI Check
+        // ==========================================
+        // 5. CÁC TIỆN ÍCH KHÁC (AI Check, Info)
+        // ==========================================
         async function checkWithAI() {
             const statusDiv = document.getElementById('voice-status');
             const spokenText = statusDiv.getAttribute('data-spoken');
             if (!spokenText) { alert("Hãy ghi âm trước!"); return; }
             
             statusDiv.innerHTML = "🤖 AI đang phân tích...";
-            const API_KEY = "AIzaSyCa78Q_pzZRLqb0pmG2AqE4B1e-CY7w69k"; // Thay API Key của bạn
+            const API_KEY = "AIzaSyCa78Q_pzZRLqb0pmG2AqE4B1e-CY7w69k"; 
             
             try {
                 const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`, {
@@ -526,37 +513,24 @@
             } catch (err) { statusDiv.innerText = "Lỗi kết nối AI."; }
         }
 
-        // CẬP NHẬT HÀM checkPronunciation cũ của bạn:
-        // Tìm hàm checkPronunciation(spoken) và thêm dòng này vào cuối hàm:
-        // document.getElementById('ai-check-btn').style.display = 'block';
-        // document.getElementById('voice-status').setAttribute('data-spoken', spoken);
+        function showInfo() { document.getElementById('info-screen').style.display = 'flex'; }
+        function hideInfo() { document.getElementById('info-screen').style.display = 'none'; }
 
-// Kiểm tra kết nối mạng (trạng thái AI)
         function updateAIStatus() {
             const statusIndicator = document.getElementById('ai-status');
-            if (navigator.onLine) {
-                statusIndicator.innerHTML = "AI: 🟢 Online";
-                statusIndicator.style.color = "green";
-            } else {
-                statusIndicator.innerHTML = "AI: 🔴 Offline";
-                statusIndicator.style.color = "red";
+            if(statusIndicator) {
+                if (navigator.onLine) {
+                    statusIndicator.innerHTML = "AI: 🟢 Online";
+                    statusIndicator.style.color = "green";
+                } else {
+                    statusIndicator.innerHTML = "AI: 🔴 Offline";
+                    statusIndicator.style.color = "red";
+                }
             }
         }
-        // Theo dõi trạng thái mạng liên tục
         window.addEventListener('online', updateAIStatus);
         window.addEventListener('offline', updateAIStatus);
-        updateAIStatus(); // Chạy ngay khi mở app
+        updateAIStatus(); 
     </script>
-<div id="info-screen">
-        <div class="nav-bar">
-            <div class="back-btn" onclick="hideInfo()">❮ Quay lại</div>
-            <div class="learning-title">Thông tin Ứng dụng</div>
-	<div id="ai-status" style="font-size: 12px; color: green;">AI: 🟢 Online</div>
-        </div>
-        <div class="info-content">
-            <h3>Phiên bản: <span class="version-tag">V2.3</span></h3>
-            <p><strong>Tính năng mới:</strong> AI Chấm điểm chuyên gia & Tab Thông tin.</p>
-        </div>
-    </div>
 </body>
 </html>
