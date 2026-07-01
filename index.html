@@ -301,7 +301,8 @@
 
         const sfxCorrect = new Audio('data:audio/wav;base64,UklGRlIAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YTEAAAAAEB8fICAgISEhIyMjJCQkJSUlJiYmJycnKCgoKSkpKioqKysrLCwsLS0tLi4u');
         const sfxWrong = new Audio('data:audio/wav;base64,UklGRlIAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YTEAAAAAEB8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f'); 
-
+		// Thêm vào ngay dưới chỗ khởi tạo db
+const messaging = firebase.messaging();
         // --- FIREBASE SETUP ---
         const firebaseConfig = { apiKey: "AIzaSyDoBoeAyxWeoYiAQkudVi8ZS3uQJVGvjXc", authDomain: "app-learning-english-60a96.firebaseapp.com", projectId: "app-learning-english-60a96" };
         firebase.initializeApp(firebaseConfig); const auth = firebase.auth(); const db = firebase.firestore();
@@ -325,7 +326,8 @@
                     document.getElementById('top-avatar').src = user.photoURL || '';
                     document.getElementById('p-name').innerText = user.displayName; document.getElementById('p-avatar').src = user.photoURL || '';
                     if(user.email === ADMIN_EMAIL) { document.getElementById('nav-admin').style.display = 'flex'; loadAdminData(); }
-                    
+                    // THÊM DÒNG NÀY VÀO SAU KHI ĐĂNG NHẬP THÀNH CÔNG
+        requestNotificationPermission();
                     myExp = doc.exists && doc.data().points ? doc.data().points : 0;
                     myHearts = doc.exists && doc.data().hearts !== undefined ? doc.data().hearts : 5;
                     myStreak = doc.exists && doc.data().streak ? doc.data().streak : 1;
@@ -468,6 +470,37 @@
                 snap.forEach(doc => { const u=doc.data(); list.innerHTML+=`<div class="admin-item" style="${u.isBlocked?'opacity:0.5':''}"><div style="flex:1; font-size:14px;"><b>${u.name}</b><br><span style="font-size:12px;">⭐ ${u.points||0} | ❤️ ${u.hearts!==undefined?u.hearts:5}</span></div><div><button style="background:#e74c3c; color:white; border:none; padding:5px; border-radius:5px;" onclick="db.collection('users').doc('${doc.id}').update({isBlocked: ${!u.isBlocked}})">🔒</button> <button style="background:#e67e22; color:white; border:none; padding:5px; border-radius:5px;" onclick="db.collection('users').doc('${doc.id}').update({hearts: 5})">+5 ❤️</button> <button style="background:#95a5a6; color:white; border:none; padding:5px; border-radius:5px;" onclick="db.collection('users').doc('${doc.id}').update({points: 0})">🔄</button></div></div>`; });
             });
         }
+		
+		
+		
+		// HÀM XIN QUYỀN VÀ LƯU TOKEN VÀO FIRESTORE
+async function requestNotificationPermission() {
+    try {
+        // 1. Xin quyền người dùng
+        const permission = await Notification.requestPermission();
+        if (permission !== 'granted') {
+            console.log("Người dùng từ chối quyền thông báo.");
+            return;
+        }
+
+        // 2. Lấy Token (Lưu ý: bạn cần thay VAPID_KEY từ Firebase Console)
+        // VAPID_KEY nằm ở: Console -> Project Settings -> Cloud Messaging -> Web Push Certificates
+        const VAPID_KEY = 'BK0XrOrPjyOF_Eg1UbGGKesm_I7_RoWuVfNAexm9bDvMLv4iqlNwsAfLciNGjhpZpbS4HVx-B06KUvsL7JZrIwY'; 
+        
+        const token = await messaging.getToken({ vapidKey: VAPID_KEY });
+        
+        if (token) {
+            // 3. Lưu Token này vào hồ sơ User trên Firestore
+            // Mỗi User sẽ có 1 token, khi Admin cần gửi, chỉ cần lọc ra token này
+            await db.collection("users").doc(currentUser.uid).update({
+                fcmToken: token
+            });
+            console.log("Đã lưu FCM Token thành công:", token);
+        }
+    } catch (error) {
+        console.error("Lỗi xin quyền thông báo:", error);
+    }
+}
     </script>
 </body>
 </html>
