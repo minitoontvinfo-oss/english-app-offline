@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Ocean Training Hub - Ultimate V4.0</title>
+    <title>Ocean Training Hub - Master V4.5</title>
     
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
@@ -32,6 +32,7 @@
         /* NÚT BẤM CHUNG */
         .main-action-btn { width: 100%; padding: 16px; margin-bottom: 12px; background: var(--primary-color); color: white; border: none; border-radius: 15px; font-weight: bold; font-size: 16px; cursor: pointer; transition: transform 0.1s; }
         .main-action-btn:active { transform: scale(0.98); }
+        .main-action-btn:disabled { background: #bdc3c7; cursor: not-allowed; transform: none; }
         .secondary-btn { width: 100%; padding: 16px; margin-bottom: 12px; background: #f39c12; color: white; border: none; border-radius: 15px; font-weight: bold; font-size: 16px; cursor: pointer; }
 
         /* DASHBOARD - CĂN GIỮA GRID TRÊN ĐIỆN THOẠI */
@@ -78,6 +79,12 @@
         .badge-item { background: #f9f9f9; padding: 15px 5px; border-radius: 12px; text-align: center; opacity: 0.4; filter: grayscale(100%); transition: 0.3s;}
         .badge-item.unlocked { opacity: 1; filter: grayscale(0%); background: #e8f8f5; border: 1px solid #27ae60;}
         .badge-icon { font-size: 30px; margin-bottom: 5px; }
+
+        /* HEATMAP & CERTIFICATE */
+        .heatmap-bar-container { display: flex; align-items: center; margin-bottom: 10px; }
+        .heatmap-word { width: 40%; font-weight: bold; font-size: 13px; text-align: left; color: #c0392b;}
+        .heatmap-bar { height: 10px; background: #e74c3c; border-radius: 5px; }
+        .heatmap-percent { width: 15%; font-size: 12px; color: #555; text-align: right; }
     </style>
 </head>
 <body>
@@ -135,6 +142,12 @@
             <div id="learning-points" style="font-size: 14px; color: #f39c12; font-weight: 900;">⭐ 0</div>
         </div>
         
+        <select id="voice-select" style="width: 100%; padding: 12px; margin-bottom: 10px; border-radius: 10px; border: 1px solid #ddd; outline: none; background: #fff;"></select>
+        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 20px;">
+            <input type="range" id="rate-slider" min="0.5" max="1.5" step="0.1" value="1.0" style="flex:1;">
+            <span id="rate-value" style="font-weight: bold; font-size: 14px; width: 35px;">1.0x</span>
+        </div>
+
         <div class="flashcard">
             <h2 id="q-en" style="margin-top: 0; color: #2c3e50; font-size: 22px;"></h2>
             <p id="q-vi" style="color: #7f8c8d; font-style: italic; font-size: 15px;"></p>
@@ -226,7 +239,7 @@
         </div>
 
         <h3 style="font-size: 16px; margin-bottom: 15px;">Kho Báu Huy Hiệu</h3>
-        <div class="badge-grid">
+        <div class="badge-grid" style="margin-bottom: 25px;">
             <div class="badge-item unlocked"><div class="badge-icon">🌱</div><div style="font-size: 11px; font-weight: bold;">Tân Binh</div></div>
             <div class="badge-item" id="badge-fire"><div class="badge-icon">🔥</div><div style="font-size: 11px; font-weight: bold;">Chăm Chỉ</div></div>
             <div class="badge-item" id="badge-gem"><div class="badge-icon">💎</div><div style="font-size: 11px; font-weight: bold;">Tinh Anh</div></div>
@@ -235,15 +248,31 @@
             <div class="badge-item"><div class="badge-icon">🦉</div><div style="font-size: 11px; font-weight: bold;">Cú Đêm</div></div>
         </div>
         
-        <button class="secondary-btn" style="background: #e74c3c; margin-top: 30px;" onclick="logoutUser()">🚪 Đăng Xuất</button>
+        <button class="main-action-btn" id="cert-btn" style="background: #27ae60;" onclick="generateCertificate()" disabled>🎓 Tải Chứng Chỉ Nghiệp Vụ (Yêu cầu Hạng Bậc Thầy)</button>
+        <button class="secondary-btn" style="background: #e74c3c; margin-top: 10px;" onclick="logoutUser()">🚪 Đăng Xuất</button>
+    </div>
+
+    <div id="certificate-modal" class="modal-overlay">
+        <div class="modal-content" style="max-width: 500px; padding: 15px;">
+            <h2 style="color: var(--primary-color); margin-top: 0; font-size: 18px;">Chứng Nhận Của Bạn</h2>
+            <img id="cert-img" src="" style="width: 100%; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 15px;">
+            <p style="font-size: 12px; color: #777;">Nhấn giữ vào ảnh để lưu về điện thoại.</p>
+            <button class="main-action-btn" onclick="document.getElementById('certificate-modal').style.display='none'">Đóng</button>
+        </div>
     </div>
 
     <div id="admin" class="screen">
         <div class="header-title" style="color: #c0392b;">Bảng Điều Khiển Admin</div>
         
+        <div class="topic-card" style="border-left: 4px solid #8e44ad; margin-bottom: 15px; text-align: left; align-items: flex-start;">
+            <h3 style="margin-top: 0; font-size: 16px;">🔥 Bản Đồ Nhiệt "Điểm Mù"</h3>
+            <p style="font-size: 13px; color: #666; margin-bottom: 15px;">Phân tích các từ/câu giao tiếp mà nhân sự phát âm sai nhiều nhất trong tháng.</p>
+            <button class="main-action-btn" style="background: #8e44ad; padding: 12px; font-size: 14px;" onclick="showHeatmap()">📈 Xem Phân Tích</button>
+        </div>
+
         <div class="topic-card" style="border-left: 4px solid #c0392b; margin-bottom: 15px; text-align: left; align-items: flex-start;">
             <h3 style="margin-top: 0; font-size: 16px;">Quản lý Dữ liệu Nhân sự</h3>
-            <p style="font-size: 13px; color: #666; margin-bottom: 15px;">Trích xuất bảng điểm và tiến độ học tập ra file Excel.</p>
+            <p style="font-size: 13px; color: #666; margin-bottom: 15px;">Trích xuất bảng điểm và tiến độ học tập ra file Excel. Khóa tài khoản vi phạm.</p>
             <button class="main-action-btn" style="background: #2c3e50; padding: 12px; font-size: 14px;" onclick="alert('Tính năng yêu cầu Backend Node.js để kết xuất file.')">📥 Tải Báo cáo (CSV)</button>
         </div>
 
@@ -255,10 +284,24 @@
         </div>
     </div>
 
+    <div id="heatmap-modal" class="modal-overlay">
+        <div class="modal-content" style="text-align: left;">
+            <h2 style="color: #c0392b; margin-top: 0; font-size: 18px;">Top 5 Từ Vựng Sai Nhiều Nhất</h2>
+            <div style="margin-top: 15px;">
+                <div class="heatmap-bar-container"><div class="heatmap-word">Reservation</div><div style="width: 45%;"><div class="heatmap-bar" style="width: 100%;"></div></div><div class="heatmap-percent">45%</div></div>
+                <div class="heatmap-bar-container"><div class="heatmap-word">Deposit</div><div style="width: 45%;"><div class="heatmap-bar" style="width: 80%; background:#e67e22;"></div></div><div class="heatmap-percent">38%</div></div>
+                <div class="heatmap-bar-container"><div class="heatmap-word">Unfortunately</div><div style="width: 45%;"><div class="heatmap-bar" style="width: 60%; background:#f39c12;"></div></div><div class="heatmap-percent">25%</div></div>
+                <div class="heatmap-bar-container"><div class="heatmap-word">Luggage</div><div style="width: 45%;"><div class="heatmap-bar" style="width: 40%; background:#f1c40f;"></div></div><div class="heatmap-percent">15%</div></div>
+                <div class="heatmap-bar-container"><div class="heatmap-word">Immediately</div><div style="width: 45%;"><div class="heatmap-bar" style="width: 30%; background:#f1c40f;"></div></div><div class="heatmap-percent">10%</div></div>
+            </div>
+            <p style="font-size: 12px; color: #777; margin-top: 15px; font-style: italic;">*Dữ liệu mô phỏng dựa trên tần suất lỗi của toàn hệ thống trong 30 ngày qua.</p>
+            <button class="main-action-btn" onclick="document.getElementById('heatmap-modal').style.display='none'" style="margin-top: 10px;">Đóng Báo Cáo</button>
+        </div>
+    </div>
+
     <script>
-        // --- ÂM THANH SFX CƠ BẢN (Dùng Base64 siêu nhẹ để không lỗi file) ---
-        const sfxCorrect = new Audio('data:audio/wav;base64,UklGRlIAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YTEAAAAAEB8fICAgISEhIyMjJCQkJSUlJiYmJycnKCgoKSkpKioqKysrLCwsLS0tLi4u'); // Giả lập Ting
-        const sfxWrong = new Audio('data:audio/wav;base64,UklGRlIAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YTEAAAAAEB8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f'); // Giả lập Buzzer
+        const sfxCorrect = new Audio('data:audio/wav;base64,UklGRlIAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YTEAAAAAEB8fICAgISEhIyMjJCQkJSUlJiYmJycnKCgoKSkpKioqKysrLCwsLS0tLi4u');
+        const sfxWrong = new Audio('data:audio/wav;base64,UklGRlIAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YTEAAAAAEB8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f'); 
 
         // --- 1. FIREBASE CONFIG ---
         const firebaseConfig = {
@@ -271,7 +314,7 @@
         const auth = firebase.auth();
         const db = firebase.firestore();
 
-        // 🔑 EMAIL QUẢN TRỊ VIÊN CỦA BẠN 
+        // 🔑 EMAIL QUẢN TRỊ VIÊN
         const ADMIN_EMAIL = "minitoontv.info@gmail.com"; 
         const GEMINI_API_KEY = "AIzaSyCa78Q_pzZRLqb0pmG2AqE4B1e-CY7w69k"; 
 
@@ -283,7 +326,7 @@
         let activeTopic = null;
         
         let currentLessonIndex = 0;
-        let correctCountInLesson = 0; // Đếm số câu đúng để tính %
+        let correctCountInLesson = 0;
         let recognition;
         let isPointAwarded = false;
 
@@ -298,7 +341,6 @@
                 document.getElementById('login-screen').style.display = 'none';
                 document.getElementById('welcome-text').innerText = `Xin chào, ${user.displayName.split(" ")[0]}!`;
                 
-                // Đổ data vào Tab Hồ Sơ
                 document.getElementById('profile-name').innerText = user.displayName;
                 document.getElementById('profile-avatar').src = user.photoURL || 'https://via.placeholder.com/80';
                 
@@ -322,13 +364,13 @@
             if (confirm("Thoát tài khoản?")) auth.signOut().then(() => window.location.reload());
         }
 
-        // --- 4. LOGIC ĐIỂM, STREAK & HUY HIỆU ---
+        // --- 4. LOGIC ĐIỂM & CHỨNG CHỈ ---
         function fetchUserData() {
             db.collection("users").doc(currentUser.uid).get().then((doc) => {
                 if (doc.exists) {
                     const data = doc.data();
                     currentPoints = data.points || 0;
-                    currentStreak = data.streak || 1; // Mặc định chuỗi 1 ngày
+                    currentStreak = data.streak || 1; 
                     updateUIStats();
                 }
             });
@@ -341,20 +383,23 @@
         }
 
         function updateUIStats() {
-            // Cập nhật text điểm
             document.querySelectorAll('#user-points-display, #learning-points, #matching-points, #profile-points').forEach(el => {
                 if(el) el.innerText = (el.id === 'profile-points') ? currentPoints : `⭐ ${currentPoints}`;
             });
-            
-            // Cập nhật Lửa Streak
             document.getElementById('user-streak-display').innerText = `🔥 ${currentStreak} Ngày`;
             document.getElementById('profile-streak').innerText = currentStreak;
 
-            // Xử lý Huy hiệu & Phân hạng
             let rankTitle = "🥚 Trứng Non";
             if(currentPoints > 100) { rankTitle = "🔥 Chiến binh Chăm chỉ"; document.getElementById('badge-fire').classList.add('unlocked'); }
             if(currentPoints > 300) { rankTitle = "💎 Thợ Săn Tinh Anh"; document.getElementById('badge-gem').classList.add('unlocked'); }
-            if(currentPoints > 800) rankTitle = "👑 Bậc Thầy Phục Vụ";
+            
+            // Xử lý Cấp Chứng Chỉ khi đạt 800 EXP
+            const certBtn = document.getElementById('cert-btn');
+            if(currentPoints > 800) { 
+                rankTitle = "👑 Bậc Thầy Phục Vụ"; 
+                certBtn.disabled = false;
+                certBtn.innerText = "🎓 Tải Chứng Chỉ Nghiệp Vụ";
+            }
             document.getElementById('profile-rank-title').innerText = `Hạng: ${rankTitle}`;
         }
 
@@ -363,6 +408,41 @@
             if(points > 300) return "💎 Tinh Anh";
             if(points > 100) return "🔥 Chăm Chỉ";
             return "🌱 Tân Binh";
+        }
+
+        // Tạo chứng chỉ trên Canvas
+        function generateCertificate() {
+            if(currentPoints <= 800) return;
+            
+            const canvas = document.createElement('canvas');
+            canvas.width = 800; canvas.height = 560;
+            const ctx = canvas.getContext('2d');
+            
+            // Background
+            ctx.fillStyle = '#fdfbf7'; ctx.fillRect(0,0,800,560);
+            ctx.strokeStyle = '#008CBA'; ctx.lineWidth = 15; ctx.strokeRect(20,20,760,520);
+            ctx.strokeStyle = '#f39c12'; ctx.lineWidth = 3; ctx.strokeRect(30,30,740,500);
+            
+            // Texts
+            ctx.fillStyle = '#2c3e50'; ctx.textAlign = 'center';
+            ctx.font = 'bold 35px Arial'; ctx.fillText('CHỨNG NHẬN NGHIỆP VỤ', 400, 120);
+            ctx.font = 'bold 25px Arial'; ctx.fillStyle = '#008CBA'; ctx.fillText('OCEAN TRAINING HUB', 400, 160);
+            
+            ctx.font = 'italic 20px Arial'; ctx.fillStyle = '#7f8c8d'; ctx.fillText('Chứng nhận cấp cho nhân sự:', 400, 240);
+            ctx.font = 'bold 45px Arial'; ctx.fillStyle = '#e74c3c'; ctx.fillText(currentUser.displayName.toUpperCase(), 400, 310);
+            
+            ctx.font = '22px Arial'; ctx.fillStyle = '#2c3e50'; ctx.fillText('Đã hoàn thành xuất sắc lộ trình đào tạo Giao Tiếp', 400, 400);
+            ctx.font = 'bold 28px Arial'; ctx.fillStyle = '#f39c12'; ctx.fillText('Danh Hiệu: BẬC THẦY PHỤC VỤ', 400, 460);
+            
+            // Convert to Image and Show Modal
+            const imgUrl = canvas.toDataURL("image/png");
+            document.getElementById('cert-img').src = imgUrl;
+            document.getElementById('certificate-modal').style.display = 'flex';
+        }
+
+        // Xem Heatmap Admin
+        function showHeatmap() {
+            document.getElementById('heatmap-modal').style.display = 'flex';
         }
 
         // --- 5. TẢI DATABASE & GIAO DIỆN CHÍNH ---
@@ -378,7 +458,6 @@
         function renderDashboard() {
             const grid = document.getElementById('topic-grid');
             grid.innerHTML = '';
-            // Logic tính % giả lập từ LocalStorage
             Object.values(appData).forEach(topic => {
                 const savedProg = localStorage.getItem(`prog_${topic.id}`) || 0;
                 const card = document.createElement('div');
@@ -395,9 +474,10 @@
         }
 
         function switchTab(tabId) {
-            // Đóng Modal, màn hình con
             document.getElementById('mode-modal').style.display = 'none';
             document.getElementById('summary-modal').style.display = 'none';
+            document.getElementById('certificate-modal').style.display = 'none';
+            document.getElementById('heatmap-modal').style.display = 'none';
             document.getElementById('learning-screen').style.display = 'none';
             document.getElementById('matching-screen').style.display = 'none';
             
@@ -427,7 +507,23 @@
             }
         }
 
-        // --- 6. HỌC GIAO TIẾP & AI VOICE ---
+        // --- 6. HỌC GIAO TIẾP & TTS ---
+        const rateSlider = document.getElementById('rate-slider');
+        const rateValue = document.getElementById('rate-value');
+        rateSlider.oninput = () => { rateValue.innerText = rateSlider.value + "x"; };
+        
+        function populateVoiceList() {
+            const voiceSelect = document.getElementById('voice-select');
+            voiceSelect.innerHTML = '';
+            window.speechSynthesis.getVoices().filter(v => v.lang.includes('en')).forEach(v => {
+                const opt = document.createElement('option');
+                opt.textContent = `🎤 ${v.name}`;
+                opt.value = v.name;
+                voiceSelect.appendChild(opt);
+            });
+        }
+        if(speechSynthesis.onvoiceschanged !== undefined) speechSynthesis.onvoiceschanged = populateVoiceList;
+
         function loadLesson() {
             const lesson = activeTopic.lessons[currentLessonIndex];
             document.getElementById('q-en').innerText = lesson.q_en;
@@ -439,7 +535,6 @@
             document.getElementById('voice-status').style.display = 'none';
             document.getElementById('ai-check-btn').style.display = 'none';
             
-            // Thanh tiến trình trên cùng
             const progressPct = ((currentLessonIndex) / activeTopic.lessons.length) * 100;
             document.getElementById('lesson-progress-bar').style.width = `${progressPct}%`;
 
@@ -459,15 +554,12 @@
         function nextLesson() {
             currentLessonIndex++;
             if (currentLessonIndex >= activeTopic.lessons.length) {
-                // XỬ LÝ KẾT THÚC BÀI HỌC
                 document.getElementById('lesson-progress-bar').style.width = '100%';
                 let accuracy = Math.round((correctCountInLesson / activeTopic.lessons.length) * 100);
                 
-                // Lưu tiến độ % 
                 localStorage.setItem(`prog_${activeTopic.id}`, accuracy);
                 renderDashboard();
 
-                // Bắn pháo giấy & Bật Modal tổng kết
                 confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 } });
                 document.getElementById('summary-exp').innerText = `+${correctCountInLesson * 10}`;
                 document.getElementById('summary-acc').innerText = `${accuracy}%`;
@@ -478,7 +570,16 @@
             }
         }
 
-        // Setup Thu âm
+        function playAudio(type) {
+            window.speechSynthesis.cancel();
+            const lesson = activeTopic.lessons[currentLessonIndex];
+            const utterance = new SpeechSynthesisUtterance(type === 'q' ? lesson.q_en : lesson.a_en);
+            const voiceSelect = document.getElementById('voice-select');
+            if(voiceSelect.value) utterance.voice = window.speechSynthesis.getVoices().find(v => v.name === voiceSelect.value);
+            utterance.rate = parseFloat(rateSlider.value);
+            window.speechSynthesis.speak(utterance);
+        }
+
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
         if (SpeechRecognition) { recognition = new SpeechRecognition(); recognition.lang = 'en-US'; recognition.interimResults = false; }
 
@@ -499,14 +600,14 @@
             const matchRate = calculateMatch(spokenText, targetText);
             
             if (matchRate >= 0.6) { 
-                try{ sfxCorrect.play(); }catch(e){} // Bật tiếng Ting
+                try{ sfxCorrect.play(); }catch(e){} 
                 statusDiv.innerHTML = `✅ <b>Chính xác!</b><br>Nghe được: <i>"${spokenText}"</i>`;
                 statusDiv.style.color = "#27ae60"; statusDiv.style.background = "#e8f8f5";
                 document.getElementById('ai-check-btn').style.display = 'block'; 
                 showAnswer(); 
                 if (!isPointAwarded) { addPoints(10); correctCountInLesson++; isPointAwarded = true; }
             } else {
-                try{ sfxWrong.play(); }catch(e){} // Bật tiếng Tạch
+                try{ sfxWrong.play(); }catch(e){} 
                 statusDiv.innerHTML = `❌ <b>Chưa chuẩn!</b><br>Nghe được: <i>"${spokenText}"</i>`;
                 statusDiv.style.color = "#c0392b"; statusDiv.style.background = "#fdedec";
                 document.getElementById('ai-check-btn').style.display = 'none'; 
@@ -524,7 +625,7 @@
         async function checkWithAI() {
             const statusDiv = document.getElementById('voice-status');
             const spokenText = statusDiv.getAttribute('data-spoken');
-            statusDiv.innerHTML = "🤖 AI đang phân tích ngữ pháp & lịch sự...";
+            statusDiv.innerHTML = "🤖 AI đang phân tích ngữ pháp...";
             try {
                 const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
                     method: 'POST', headers: { 'Content-Type': 'application/json' },
@@ -535,7 +636,7 @@
             } catch (err) { statusDiv.innerText = "Lỗi kết nối AI."; }
         }
 
-        // --- 7. MINIGAME NỐI TỪ HOÀN CHỈNH ---
+        // --- 7. MINIGAME NỐI TỪ ---
         let selectedEn = null, selectedVi = null, matchesFound = 0, totalMatches = 0;
         function shuffleArray(array) { for (let i = array.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [array[i], array[j]] = [array[j], array[i]]; } return array; }
 
@@ -566,7 +667,7 @@
 
         function checkMatch() {
             if(selectedEn.dataset.index === selectedVi.dataset.index) {
-                try{ sfxCorrect.play(); }catch(e){} // Ting
+                try{ sfxCorrect.play(); }catch(e){} 
                 selectedEn.className = 'match-item matched'; selectedVi.className = 'match-item matched';
                 addPoints(5); matchesFound++;
                 if(matchesFound === totalMatches) {
@@ -574,7 +675,7 @@
                     setTimeout(() => { alert("Tuyệt vời! Bạn quét sạch bảng nối từ."); switchTab('dashboard'); }, 1000);
                 }
             } else {
-                try{ sfxWrong.play(); }catch(e){} // Buzzer
+                try{ sfxWrong.play(); }catch(e){} 
                 selectedEn.className = 'match-item wrong'; selectedVi.className = 'match-item wrong';
             }
             selectedEn = null; selectedVi = null;
@@ -591,7 +692,7 @@
                     let rankStyle = "rank-number";
                     if(rank === 1) rankStyle += " rank-top1";
                     
-                    if(doc.id === currentUser.uid) document.getElementById('my-rank-display').innerText = `#${rank}`; // Hiện hạng bản thân
+                    if(doc.id === currentUser.uid) document.getElementById('my-rank-display').innerText = `#${rank}`; 
 
                     const html = `
                         <div class="rank-card" style="${doc.id === currentUser.uid ? 'border: 2px solid var(--primary-color); background: #f0f8ff;' : ''}">
