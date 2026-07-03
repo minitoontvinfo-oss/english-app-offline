@@ -705,8 +705,6 @@
                 b.appendChild(viItems[i]);
             }
         }
-        }
-        }
         function sm(el) {
             if(el.classList.contains('matched')) return; document.querySelectorAll('.match-item').forEach(e=>e.classList.remove('wrong'));
             if(el.dataset.t==='en') { if(selEn) selEn.classList.remove('selected'); selEn=el; selEn.classList.add('selected'); } else { if(selVi) selVi.classList.remove('selected'); selVi=el; selVi.classList.add('selected'); }
