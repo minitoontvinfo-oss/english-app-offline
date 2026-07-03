@@ -890,21 +890,59 @@
         let mediaRecorder; let audioChunks = [];
         navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => { mediaRecorder = new MediaRecorder(stream); mediaRecorder.ondataavailable = e => audioChunks.push(e.data); mediaRecorder.onstop = () => { const audioBlob = new Blob(audioChunks, { 'type' : 'audio/webm' }); const reader = new FileReader(); reader.readAsDataURL(audioBlob); reader.onloadend = function() { const base64data = reader.result; db.collection('arena_rooms').doc(teamRoomId).update({ lastAudio: base64data, audioSender: currentUser.displayName, audioTime: Date.now() }); }; audioChunks = []; }; }).catch(e => console.log("Mic error:", e));
         function startWalkie() { if(mediaRecorder && mediaRecorder.state === 'inactive') { document.getElementById('walkie-btn').style.background = '#e74c3c'; mediaRecorder.start(); setTimeout(stopWalkie, 4000); } }
-        function stopWalkie() { if(mediaRecorder && mediaRecorder.state === 'recording') { document.getElementById('walkie-btn').style.background = '#e67e22'; mediaRecorder.stop(); } }
+        function stopWalkie() { 
+            if(mediaRecorder && mediaRecorder.state === 'recording') { 
+                document.getElementById('walkie-btn').style.background = '#e67e22'; 
+                mediaRecorder.stop(); 
+                
+                // BỔ SUNG: Tự động bắn thông báo vào khung Chat khi có người dùng Mic
+                if(teamRoomId) {
+                    db.collection('arena_rooms').doc(teamRoomId).collection('chat').add({ 
+                        name: currentUser.displayName, 
+                        msg: "<span style='color:#e67e22; font-style:italic;'>🎙️ (Vừa gửi một đoạn âm thanh)</span>", 
+                        createdAt: Date.now() 
+                    });
+                }
+            } 
+        }
+
+        // Biến chốt chặn tránh việc bị load lại đề thi liên tục làm bung app
+        let isArenaPlaying = false;
 
         function listenToRoom(isHost) {
-            document.getElementById('arena-lobby-screen').style.display = 'block'; document.getElementById('lobby-room-code').innerText = teamRoomId;
-            document.getElementById('btn-start-arena').style.display = isHost ? 'block' : 'none';
+            isArenaPlaying = false; // Reset lại cờ khi mới vào phòng
+            
+            document.getElementById('arena-lobby-screen').style.display = 'block'; 
+            document.getElementById('lobby-room-code').innerText = teamRoomId;
+            document.getElementById('btn-start-arena').style.display = isHost ? 'block' : 'none'; 
+            
+            const txtWaiting = document.getElementById('txt-waiting-host');
+            if(txtWaiting) txtWaiting.style.display = isHost ? 'none' : 'block';
             
             if(unsubTeam) unsubTeam();
             let lastAudioPlayed = 0;
+            
             unsubTeam = db.collection('arena_rooms').doc(teamRoomId).onSnapshot(doc => {
-                if(!doc.exists) return exitTeamArena(); const data = doc.data();
-                const list = document.getElementById('lobby-players-list'); list.innerHTML = '';
-                Object.values(data.players).forEach(p => { list.innerHTML += `<div style="background: var(--card-bg); padding: 5px 10px; border-radius: 20px; white-space:nowrap; border: 1px solid var(--border-color);"><img src="${p.photoURL}" style="width:20px; border-radius:50%; vertical-align:middle;"> <span style="font-size:12px; font-weight:bold;">${p.name.split(" ")[0]}</span></div>`; });
+                if(!doc.exists) return exitTeamArena(); 
+                const data = doc.data();
                 
-                if(data.lastAudio && data.audioTime > lastAudioPlayed && data.audioSender !== currentUser.displayName) { lastAudioPlayed = data.audioTime; const audio = new Audio(data.lastAudio); audio.play(); }
-                if(data.status === 'playing') { document.getElementById('arena-lobby-screen').style.display = 'none'; startArenaQuizEngine(false); }
+                const list = document.getElementById('lobby-players-list'); list.innerHTML = '';
+                Object.values(data.players).forEach(p => { 
+                    list.innerHTML += `<div style="background: var(--card-bg); padding: 5px 10px; border-radius: 20px; white-space:nowrap; border: 1px solid var(--border-color);"><img src="${p.photoURL}" style="width:20px; border-radius:50%; vertical-align:middle;"> <span style="font-size:12px; font-weight:bold;">${p.name.split(" ")[0]}</span></div>`; 
+                });
+                
+                // Phát âm thanh bộ đàm
+                if(data.lastAudio && data.audioTime > lastAudioPlayed && data.audioSender !== currentUser.displayName) { 
+                    lastAudioPlayed = data.audioTime; 
+                    const audio = new Audio(data.lastAudio); audio.play(); 
+                }
+                
+                // FIX LỖI BUNG APP: Chỉ gọi Start Game đúng 1 lần duy nhất nhờ cờ !isArenaPlaying
+                if(data.status === 'playing' && !isArenaPlaying) { 
+                    isArenaPlaying = true;
+                    document.getElementById('arena-lobby-screen').style.display = 'none'; 
+                    startArenaQuizEngine(false); 
+                }
             });
 
             if(unsubChat) unsubChat();
