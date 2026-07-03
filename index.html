@@ -1015,16 +1015,6 @@
             });
             // (Đã xóa lỗi tràn bộ nhớ Firebase rò rỉ tại đây)
         }
-            
-            if(!is1v1 && teamRoomId) {
-                db.collection('arena_rooms').doc(teamRoomId).onSnapshot(d => {
-                    if(d.exists) {
-                        const board = document.getElementById('arena-realtime-ranking'); board.innerHTML='';
-                        Object.values(d.data().players).sort((a,b)=>b.score-a.score).forEach(p => { board.innerHTML += `<div style="background:var(--card-bg); padding:5px 10px; border-radius:15px; border:1px solid var(--primary-color); font-size:12px; font-weight:bold; white-space:nowrap;">${p.name.split(" ")[0]}: <span style="color:#e74c3c">${p.score}</span></div>`; });
-                    }
-                });
-            }
-        }
 
         // --- 14. LEADERBOARD (KHÔI PHỤC) ---
         function loadLeaderboard() {
