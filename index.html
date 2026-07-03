@@ -39,12 +39,33 @@
         .main-action-btn { width: 100%; padding: 15px; margin-bottom: 10px; background: var(--primary-color); color: white; border: none; border-radius: 12px; font-weight: bold; font-size: 15px; cursor: pointer; transition: 0.2s;}
         .main-action-btn:active { transform: scale(0.95); }
         .main-action-btn:disabled { background: #bdc3c7; }
+        .secondary-btn { width: 100%; padding: 15px; margin-bottom: 10px; background: #e74c3c; color: white; border: none; border-radius: 12px; font-weight: bold; font-size: 15px; cursor: pointer; transition: 0.2s;}
+        
         .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; }
         .topic-card { background: var(--card-bg); border-radius: 16px; padding: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.03); cursor: pointer; border: 1px solid var(--border-color); text-align: center; transition: 0.2s;}
         
         .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 2000; align-items: center; justify-content: center; backdrop-filter: blur(5px); }
         .modal-content { background: var(--card-bg); padding: 25px; border-radius: 20px; width: 90%; max-width: 400px; text-align: center; border: 1px solid var(--border-color); max-height: 80vh; overflow-y: auto; position: relative;}
         .floating-screen { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: 950; overflow-y: auto; background: var(--bg-color); padding: 20px; box-sizing: border-box;}
+
+        /* AVATAR FRAMES & STREAK FIRE */
+        .avatar-wrapper { position: relative; display: inline-block; }
+        .avatar-img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border-color); z-index: 2; position: relative; background: white;}
+        .avatar-small { width: 35px; height: 35px; }
+        
+        .streak-fire { position: absolute; bottom: -5px; right: -5px; font-size: 14px; background: rgba(0,0,0,0.7); border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; z-index: 3; box-shadow: 0 0 5px rgba(230,126,34,0.8); color: white; font-weight: bold;}
+        .fire-ring { position: absolute; top: -5px; left: -5px; right: -5px; bottom: -5px; border-radius: 50%; z-index: 1; animation: burn 1.5s infinite alternate; }
+        .fire-lvl-1 { background: linear-gradient(45deg, transparent, rgba(230, 126, 34, 0.4), transparent); }
+        .fire-lvl-2 { background: linear-gradient(45deg, #e67e22, #f1c40f); animation: burn 1s infinite alternate; padding: 3px; top:-8px; left:-8px; right:-8px; bottom:-8px;}
+        .fire-lvl-3 { background: linear-gradient(45deg, #e74c3c, #f1c40f, #e74c3c); animation: burn 0.5s infinite alternate; padding: 5px; top:-10px; left:-10px; right:-10px; bottom:-10px; box-shadow: 0 0 15px #e74c3c;}
+        
+        @keyframes burn { 0% { transform: scale(0.95) rotate(0deg); opacity: 0.8; } 100% { transform: scale(1.05) rotate(5deg); opacity: 1; box-shadow: 0 0 10px #f39c12; } }
+
+        /* Khung Viền Mua Bằng EXP */
+        .frame-none { border-color: var(--primary-color); }
+        .frame-gold { border: 3px solid #f1c40f; box-shadow: 0 0 10px #f1c40f; }
+        .frame-diamond { border: 3px solid #3498db; box-shadow: 0 0 15px #3498db, inset 0 0 5px #3498db; }
+        .frame-legend { border: 4px solid #9b59b6; box-shadow: 0 0 20px #9b59b6; animation: burn 2s infinite alternate; }
 
         /* MATCHING GRID 2x5 */
         .match-grid { display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: 1fr; gap: 10px; margin-top: 20px; max-width: 500px; margin-left: auto; margin-right: auto;}
@@ -67,13 +88,20 @@
         .quiz-option.correct { background: #2ecc71; color: white; border-color: #27ae60; }
         .quiz-option.wrong { background: #e74c3c; color: white; border-color: #c0392b; }
 
-        /* PROGRESS, BADGES & OTHERS */
+        /* PROGRESS & MISC */
         .progress-bar-bg { width: 100%; height: 8px; background: var(--border-color); border-radius: 4px; margin-top: 10px; overflow: hidden; }
         .progress-bar-fill { height: 100%; background: var(--primary-color); border-radius: 4px; width: 0%; transition: 0.5s; }
-        .badges-container { max-height: 350px; overflow-y: auto; padding: 5px; border: 1px solid var(--border-color); border-radius: 10px; background: rgba(0,0,0,0.02); }
+        
+        /* 50 BADGES */
+        .badges-container { max-height: 300px; overflow-y: auto; padding: 5px; }
         .badge-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
-        .badge-item { background: var(--card-bg); padding: 10px 5px; border-radius: 12px; text-align: center; opacity: 0.4; filter: grayscale(100%); transition: 0.3s; border: 1px solid var(--border-color);}
-        .badge-item.unlocked { opacity: 1; filter: grayscale(0%); background: rgba(39, 174, 96, 0.1); border: 1px solid #27ae60; box-shadow: 0 2px 5px rgba(39,174,96,0.2);}
+        .badge-item { background: linear-gradient(135deg, #f5f7fa, #c3cfe2); padding: 10px 5px; border-radius: 12px; text-align: center; opacity: 0.3; filter: grayscale(100%); transition: 0.3s; border: 1px solid #ccc;}
+        .badge-item.unlocked { opacity: 1; filter: grayscale(0%); background: linear-gradient(135deg, #f6d365, #fda085); border: 1px solid #e67e22; box-shadow: 0 2px 5px rgba(230,126,34,0.3);}
+        
+        /* UNBOXING ANIMATION */
+        .chest { font-size: 80px; animation: wobble 0.5s ease-in-out infinite alternate; cursor: pointer; }
+        @keyframes wobble { 0% { transform: rotate(-10deg); } 100% { transform: rotate(10deg); } }
+        
         .ring { animation: ring 1s ease-in-out infinite; }
         @keyframes ring { 0%, 100% { transform: rotate(0deg); } 25% { transform: rotate(15deg); } 75% { transform: rotate(-15deg); } }
         .admin-item { background: var(--card-bg); padding: 12px; border-radius: 12px; border: 1px solid var(--border-color); margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between;}
@@ -97,7 +125,9 @@
 
     <div class="header-bar">
         <div style="display: flex; align-items: center; gap: 10px;">
-            <img id="top-avatar" src="" style="width: 35px; height: 35px; border-radius: 50%; border: 2px solid var(--primary-color);">
+            <div class="avatar-wrapper">
+                <img id="top-avatar" src="" class="avatar-img avatar-small">
+            </div>
             <div>
                 <div id="top-name" style="font-weight: bold; font-size: 14px;">User</div>
                 <div style="font-size: 11px; color: #e74c3c; font-weight: bold;" id="top-hearts">❤️❤️❤️❤️❤️</div>
@@ -127,6 +157,14 @@
             <div style="font-size: 50px; margin: 10px 0;">🔥</div>
             <p>Bạn nhận được <b>Ngọn lửa chuyên cần</b> và <b>+20 EXP</b>. Hãy giữ vững chuỗi này nhé!</p>
             <button class="main-action-btn" style="background: #e67e22;" onclick="claimDaily()">Nhận Thưởng</button>
+        </div>
+    </div>
+
+    <div id="unboxing-modal" class="modal-overlay">
+        <div class="modal-content" style="background: transparent; border: none; box-shadow: none;">
+            <h2 style="color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Mở Khóa Huy Hiệu!</h2>
+            <div class="chest" onclick="openChest()">🎁</div>
+            <p style="color: white; font-size: 12px;">Chạm vào rương để mở</p>
         </div>
     </div>
 
@@ -193,7 +231,7 @@
     <div id="roleplay-screen" class="floating-screen">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
             <div style="font-size: 24px; cursor: pointer; color: #e74c3c;" onclick="exitFloat()">✕</div>
-            <h3 style="margin: 0; color: #8e44ad;">Mô Phỏng Thực Chiến</h3>
+            <h3 style="margin: 0; color: #8e44ad;">Mô Phỏng Khách Hàng</h3>
             <div style="width: 24px;"></div>
         </div>
         <div class="roleplay-chat" id="rp-chat">
@@ -201,7 +239,7 @@
         </div>
         <div style="text-align: center;">
             <button class="main-action-btn" id="rp-mic-btn" style="width: 70px; height: 70px; border-radius: 50%; padding: 0; font-size: 30px; background: #8e44ad; box-shadow: 0 4px 15px rgba(142,68,173,0.4);" onclick="toggleRpRec()">🎙️</button>
-            <div style="font-size: 12px; color: #777; margin-top: 10px;">Bấm Mic để trả lời, bấm lại để chốt</div>
+            <div style="font-size: 12px; color: #777; margin-top: 10px;">Bấm Mic 1 lần thu âm, bấm lại chốt</div>
         </div>
     </div>
 
@@ -245,7 +283,7 @@
         <div style="background: var(--card-bg); padding: 15px; border-radius: 15px; border: 1px solid var(--border-color); text-align: center; margin-bottom: 15px;">
             <div class="chat-box" id="lobby-chat-box"></div>
             <div style="display: flex; gap: 10px; align-items: center; justify-content: center;">
-                <input type="text" id="lobby-chat-input" placeholder="Nhập tin nhắn..." style="flex:1; padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+                <input type="text" id="lobby-chat-input" placeholder="Nhập tin nhắn..." onkeydown="if(event.key==='Enter') sendLobbyChat()" style="flex:1; padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
                 <button style="padding: 10px 15px; border:none; background: var(--primary-color); color:white; border-radius:8px; cursor:pointer;" onclick="sendLobbyChat()">Gửi</button>
             </div>
             <hr style="border:0; border-top:1px dashed var(--border-color); margin: 15px 0;">
@@ -295,21 +333,42 @@
     </div>
 
     <div id="profile" class="screen">
-        <div style="display: flex; justify-content: space-between;">
-            <h2 style="margin:0; color: var(--primary-color);">Hồ Sơ</h2>
+        <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+            <h2 style="margin:0; color: var(--primary-color);">Hồ Sơ Của Tôi</h2>
             <button style="background: none; border: none; font-size: 24px; cursor: pointer;" onclick="toggleDarkMode()">🌓</button>
         </div>
-        <div style="text-align: center; margin: 15px 0;">
-            <img id="p-avatar" src="" style="width: 70px; border-radius: 50%; border: 3px solid var(--primary-color);">
-            <h3 id="p-name" style="margin: 5px 0;">...</h3>
-            <div id="p-title" style="font-size: 12px; font-weight: bold; color: #e67e22; background: rgba(230,126,34,0.1); padding: 5px 15px; border-radius: 20px; display: inline-block;">[🥚 Thực Tập Sinh]</div>
+
+        <div style="background: var(--card-bg); padding: 20px; border-radius: 15px; border: 1px solid var(--border-color); text-align: center; margin-bottom: 15px;">
+            <div class="avatar-wrapper" style="margin-bottom: 15px;">
+                <div id="p-fire-ring" class="fire-ring"></div>
+                <img id="p-avatar" class="avatar-img frame-none" src="">
+                <div class="streak-fire" id="p-streak-icon">🔥1</div>
+            </div>
+            
+            <input type="text" id="edit-name" placeholder="Tên hiển thị..." style="width: 80%; padding: 8px; border-radius: 5px; border: 1px solid #ccc; text-align: center; font-weight: bold; margin-bottom: 10px;">
+            
+            <div style="display: flex; gap: 5px; justify-content: center; margin-bottom: 10px;">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" onclick="setTempAvatar(this.src)" style="width:40px; cursor:pointer; border-radius:50%; border:1px solid #ccc;">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Mia" onclick="setTempAvatar(this.src)" style="width:40px; cursor:pointer; border-radius:50%; border:1px solid #ccc;">
+                <img src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=Bebu" onclick="setTempAvatar(this.src)" style="width:40px; cursor:pointer; border-radius:50%; border:1px solid #ccc;">
+            </div>
+
+            <button class="main-action-btn" style="padding: 10px; background: #27ae60;" onclick="saveProfile()">💾 Lưu Hồ Sơ</button>
+            <div id="p-title" style="font-size: 12px; font-weight: bold; color: #e67e22; background: rgba(230,126,34,0.1); padding: 5px 15px; border-radius: 20px; display: inline-block; margin-top: 10px;">[🥚 Thực Tập Sinh]</div>
         </div>
 
-        <h3 style="font-size: 15px; margin-bottom: 10px;">Tủ Huy Hiệu</h3>
+        <h3 style="font-size: 15px; margin-bottom: 10px;">🎨 Cửa Hàng Khung Viền</h3>
+        <div class="grid-container" style="margin-bottom: 20px;">
+            <div class="topic-card" onclick="buyFrame('frame-gold', 500)" style="border: 2px solid #f1c40f;">Khung Vàng<br><b style="color:#f1c40f">500 EXP</b></div>
+            <div class="topic-card" onclick="buyFrame('frame-diamond', 1000)" style="border: 2px solid #3498db;">Khung Kim Cương<br><b style="color:#3498db">1000 EXP</b></div>
+            <div class="topic-card" onclick="buyFrame('frame-legend', 3000)" style="border: 2px solid #9b59b6; grid-column: span 2;">Khung Huyền Thoại<br><b style="color:#9b59b6">3000 EXP</b></div>
+        </div>
+
+        <h3 style="font-size: 15px; margin-bottom: 10px;">Tủ Huy Hiệu (50 Danh Hiệu)</h3>
         <div class="badges-container"><div class="badge-grid" id="full-badges-grid"></div></div>
         
         <button class="main-action-btn" id="cert-btn" style="background: #27ae60; margin-top: 20px;" onclick="generateCertificate()" disabled>🎓 Tải Chứng Chỉ Bản PDF/Ảnh</button>
-        <button class="secondary-btn" style="background: #e74c3c; width: 100%; padding: 15px; border:none; border-radius: 12px; color:white; font-weight:bold; cursor:pointer;" onclick="logoutUser()">🚪 Đăng Xuất</button>
+        <button class="secondary-btn" style="width: 100%; padding: 15px; border:none; border-radius: 12px; font-weight:bold; cursor:pointer;" onclick="logoutUser()">🚪 Đăng Xuất</button>
     </div>
 
     <div id="certificate-modal" class="modal-overlay">
@@ -393,7 +452,7 @@
 
         // --- 3. GLOBAL VARIABLES ---
         let currentUser = null; let myExp = 0; let myHearts = 5; let myStreak = 1; let myLastLogin = null;
-        let allUsersData = []; let unreadNotifs = 0;
+        let allUsersData = []; let unreadNotifs = 0; let myFrame = 'frame-none';
 
         if(localStorage.getItem('theme') === 'dark') document.body.classList.add('dark-mode');
         function toggleDarkMode() { document.body.classList.toggle('dark-mode'); localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light'); }
@@ -408,10 +467,6 @@
                     
                     currentUser = user; 
                     document.getElementById('login-screen').style.display = 'none';
-                    document.getElementById('top-name').innerText = user.displayName.split(" ")[0];
-                    document.getElementById('top-avatar').src = user.photoURL || 'https://via.placeholder.com/35';
-                    document.getElementById('p-name').innerText = user.displayName; 
-                    document.getElementById('p-avatar').src = user.photoURL || 'https://via.placeholder.com/70';
                     if(user.email === ADMIN_EMAIL) { document.getElementById('nav-admin').style.display = 'flex'; loadAdminData(); }
                     
                     if(messaging) requestNotificationPermission();
@@ -420,6 +475,7 @@
                     myHearts = doc.exists && doc.data().hearts !== undefined ? doc.data().hearts : 5;
                     myStreak = doc.exists && doc.data().streak ? doc.data().streak : 1;
                     myLastLogin = doc.exists && doc.data().lastLogin ? doc.data().lastLogin.toDate() : null;
+                    myFrame = doc.exists && doc.data().frame ? doc.data().frame : 'frame-none';
 
                     checkDailyLogin(); renderDashboard(); build50Badges(); updateUI(); loadLeaderboard(); 
                     listenForGlobalNotifications(); listenToSocialFeed(); listenToPersonalNotifs();
@@ -442,20 +498,18 @@
             db.collection("users").doc(currentUser.uid).update({ streak: myStreak });
         }
 
-        // --- 5. IN-APP NOTIFICATIONS & FEED (FIXED INDEX ERROR) ---
+        // --- 5. IN-APP NOTIFICATIONS & FEED ---
         function toggleNotif() {
             const drop = document.getElementById('notif-dropdown');
             drop.style.display = drop.style.display === 'block' ? 'none' : 'block';
             if (drop.style.display === 'block') { unreadNotifs = 0; document.getElementById('bell-badge-icon').style.display = 'none'; }
         }
 
-        // Lấy thông báo cá nhân, sort bằng Client-side để tránh lỗi Firestore Index
         function listenToPersonalNotifs() {
             db.collection("notifications").where("toUid", "==", currentUser.uid).onSnapshot(snap => {
                 let notifs = [];
                 snap.forEach(doc => notifs.push({id: doc.id, ...doc.data()}));
-                // Sort cục bộ theo thời gian
-                notifs.sort((a,b) => (b.createdAt || 0) - (a.createdAt || 0));
+                notifs.sort((a,b) => (b.createdAt || 0) - (a.createdAt || 0)); // Client sort
                 
                 const drop = document.getElementById('notif-dropdown'); drop.innerHTML = '';
                 let unreadCount = 0;
@@ -521,10 +575,35 @@
             } catch (error) { console.log("FCM Blocked."); }
         }
 
-        // --- 6. HỆ THỐNG 50 HUY HIỆU ---
+        // --- 6. TÙY CHỈNH HỒ SƠ & MUA KHUNG & 50 BADGES ---
+        let tempAvatar = "";
+        function setTempAvatar(src) { tempAvatar = src; document.getElementById('p-avatar').src = src; }
+        
+        function saveProfile() {
+            const newName = document.getElementById('edit-name').value;
+            if(!newName) return alert("Tên không được để trống!");
+            const finalAvatar = tempAvatar || currentUser.photoURL;
+            
+            currentUser.updateProfile({ displayName: newName, photoURL: finalAvatar }).then(() => {
+                db.collection("users").doc(currentUser.uid).update({ name: newName, photoURL: finalAvatar, frame: myFrame });
+                document.getElementById('top-name').innerText = newName;
+                document.getElementById('top-avatar').src = finalAvatar;
+                alert("Đã lưu hồ sơ thành công!");
+            });
+        }
+
+        function buyFrame(frameClass, price) {
+            if(myExp >= price) {
+                if(confirm(`Xác nhận mua khung này với giá ${price} EXP?`)) {
+                    changeExp(-price); myFrame = frameClass; saveProfile(); updateUI();
+                }
+            } else alert("Bạn không đủ EXP để mua khung này!");
+        }
+
+        let currentUnlockedBadges = 0;
         function build50Badges() {
             const container = document.getElementById('full-badges-grid'); container.innerHTML = '';
-            const badgeData = []; 
+            const badgeData = []; let newlyUnlocked = 0;
             for(let i=1; i<=10; i++) badgeData.push({ icon: '🎓', name: `Học giả ${i}`, reqExp: i*150 });
             for(let i=1; i<=10; i++) badgeData.push({ icon: '🔥', name: `Lửa thiêng ${i}`, reqStreak: i*3 });
             for(let i=1; i<=10; i++) badgeData.push({ icon: '⚔️', name: `Đấu Sĩ ${i}`, reqExp: 400+i*60 });
@@ -535,14 +614,33 @@
                 let unlocked = false;
                 if(b.reqExp && myExp >= b.reqExp) unlocked = true;
                 if(b.reqStreak && myStreak >= b.reqStreak) unlocked = true;
+                if(unlocked) newlyUnlocked++;
                 container.innerHTML += `<div class="badge-item ${unlocked ? 'unlocked' : ''}"><div style="font-size: 24px; margin-bottom:5px;">${b.icon}</div><div style="font-size: 10px; font-weight: bold; color: ${unlocked?'#d35400':'#777'};">${b.name}</div></div>`;
             });
+
+            if(currentUnlockedBadges > 0 && newlyUnlocked > currentUnlockedBadges) { document.getElementById('unboxing-modal').style.display = 'flex'; }
+            currentUnlockedBadges = newlyUnlocked;
         }
+        function openChest() { document.getElementById('unboxing-modal').style.display='none'; confetti({ particleCount: 150, spread: 80 }); alert("Tuyệt vời! Bạn vừa mở khóa một Huy hiệu mới!"); }
 
         function updateUI() {
             document.getElementById('top-points').innerText = `⭐ ${myExp}`; document.getElementById('shop-bal').innerText = `⭐ ${myExp}`;
             const heartStr = '❤️'.repeat(myHearts) + '🖤'.repeat(5 - myHearts);
             document.getElementById('top-hearts').innerText = heartStr; document.getElementById('learn-hearts').innerText = heartStr;
+            
+            // Xử lý Lửa chuỗi & Khung Avatar
+            document.getElementById('top-name').innerText = currentUser.displayName.split(" ")[0];
+            document.getElementById('edit-name').value = currentUser.displayName;
+            document.getElementById('p-avatar').src = currentUser.photoURL;
+            document.getElementById('top-avatar').src = currentUser.photoURL;
+            
+            document.getElementById('p-avatar').className = `avatar-img ${myFrame}`;
+            document.getElementById('top-avatar').className = `avatar-img avatar-small ${myFrame}`;
+
+            let fireLvl = myStreak < 5 ? 1 : (myStreak < 15 ? 2 : 3);
+            document.getElementById('p-streak-icon').innerText = `🔥${myStreak}`;
+            document.getElementById('p-fire-ring').className = `fire-ring fire-lvl-${fireLvl}`;
+
             let title = "[🥚 Thực Tập Sinh]"; if(myExp>150) title = "[🔥 Chăm Chỉ]"; if(myExp>400) title = "[💎 Tinh Anh]"; if(myExp>800) { title = "[👑 Huyền Thoại Ocean]"; document.getElementById('cert-btn').disabled = false; }
             document.getElementById('p-title').innerText = title; build50Badges(); 
         }
@@ -553,7 +651,7 @@
         // --- 7. SHOP GACHA ---
         function buyItem(item, price) {
             if(myExp >= price) {
-                if(item==='heart' && myHearts<5) { changeExp(-price); changeHearts(5); alert("Hồi phục Tim thành công!"); addSocialFeed('🛒', `<b>${currentUser.displayName}</b> vừa ghé Ocean Shop nạp máu.`);}
+                if(item==='heart' && myHearts<5) { changeExp(-price); changeHearts(5); alert("Hồi phục Tim thành công!"); addSocialFeed('🛒', `<b>${currentUser.displayName}</b> vừa nạp máu.`);}
                 else if(item==='shield') { changeExp(-price); alert("Đã trang bị Khiên bảo vệ chuỗi!"); }
                 else if(item==='heart') alert("Tim đã đầy!");
             } else alert("Không đủ EXP.");
@@ -645,7 +743,7 @@
             else { try{ sfxWrong.play(); }catch(e){} stDiv.innerHTML = `❌ Sai rồi! Nghe: "${spokenText}"`; changeHearts(-1); }
         }
 
-        // --- 10. SÀN NỐI TỪ CSS GRID (ÉP CHUẨN CỘT ANH - VIỆT) ---
+        // --- 10. SÀN NỐI TỪ CSS GRID (CỘT 1 ANH - CỘT 2 VIỆT) ---
         let selEn=null, selVi=null, mFound=0;
         function shuffle(a) { for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
         
@@ -661,7 +759,7 @@
             });
             
             shuffle(enItems); shuffle(viItems);
-            // Lắp xen kẽ để Grid tự động đẩy vào Cột Trái (Anh) và Cột Phải (Việt)
+            // Ép Grid 2 cột: Cột 1 là EN, Cột 2 là VI
             for(let i=0; i<5; i++) { b.appendChild(enItems[i]); b.appendChild(viItems[i]); }
         }
         function sm(el) {
@@ -675,7 +773,7 @@
             selEn.classList.remove('selected'); selVi.classList.remove('selected'); selEn=null; selVi=null;
         }
 
-        // --- 11. AI ROLEPLAY (CÓ MIC TOGGLE) ---
+        // --- 11. AI ROLEPLAY ---
         let isRpRecording = false;
         function initRP() { document.getElementById('rp-chat').innerHTML = '<div class="bubble bot">Welcome to Ocean Dunes! Can I have your reservation name?</div>'; }
         function toggleRpRec() {
@@ -704,12 +802,9 @@
             document.getElementById('arena-1v1-modal').style.display='flex';
             const listDiv = document.getElementById('arena-1v1-list'); listDiv.innerHTML = '';
             
-            // Client-side sort để tránh index error
             db.collection("users").get().then(snap => {
-                let users = [];
-                snap.forEach(doc => users.push({id: doc.id, ...doc.data()}));
+                let users = []; snap.forEach(doc => users.push({id: doc.id, ...doc.data()}));
                 users.sort((a,b) => (b.points||0) - (a.points||0));
-                
                 users.forEach(u => {
                     if(u.id !== currentUser.uid && !u.isBlocked) {
                         listDiv.innerHTML += `<div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border-bottom: 1px solid var(--border-color);"><div style="display: flex; align-items: center; gap: 10px;"><img src="${u.photoURL||'https://via.placeholder.com/30'}" style="width:30px; border-radius:50%;"><span style="font-size: 14px; font-weight: bold;">${u.name}</span></div><button style="background: #e74c3c; color: white; border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer;" onclick="create1v1Challenge('${u.id}', '${u.name}')">Thách Đấu</button></div>`;
@@ -729,7 +824,7 @@
         }
 
         function acceptChallenge(challengeId, fromUid, fromName, scoreA, bet) {
-            if(myExp < bet) return alert("Bạn không đủ EXP để nhận cược!");
+            if(myExp < bet) return alert(`Bạn cần ${bet} EXP để nhận lời thách đấu này. Hãy cày thêm điểm rồi quay lại đây đấm nó!`);
             changeExp(-bet); document.getElementById('notif-dropdown').style.display = 'none'; document.getElementById('arena-game-screen').style.display = 'block';
             activeChallenge = { type: 'accept', id: challengeId, fromUid: fromUid, fromName: fromName, scoreA: scoreA, bet: bet };
             startArenaQuizEngine(true);
@@ -760,7 +855,7 @@
         function finish1v1Game() {
             if(activeChallenge.type === 'create') {
                 db.collection("notifications").add({ toUid: activeChallenge.toUid, fromUid: currentUser.uid, fromName: currentUser.displayName, title: "⚔️ Lời Thách Đấu Mới!", body: `${currentUser.displayName} thách đấu bạn với ${arenaScore} điểm. Cược: ${activeChallenge.bet} EXP.`, type: 'challenge_received', scoreA: arenaScore, bet: activeChallenge.bet, isRead: false, createdAt: Date.now() });
-                alert(`Bạn ghi được ${arenaScore} điểm. Đã gửi lời thách đấu đến ${activeChallenge.toName}. Chờ đối thủ trả lời!`);
+                alert(`Bạn ghi được ${arenaScore} điểm. Đã gửi lời thách đấu đến ${activeChallenge.toName}.`);
             } else {
                 let winExp = activeChallenge.bet * 2;
                 if(arenaScore > activeChallenge.scoreA) {
@@ -774,28 +869,28 @@
                     alert(`Thua rồi! (${arenaScore} < ${activeChallenge.scoreA}). Mất tiền cược.`);
                 } else {
                     changeExp(activeChallenge.bet); db.collection("users").doc(activeChallenge.fromUid).get().then(doc => { let opExp = doc.data().points || 0; db.collection("users").doc(activeChallenge.fromUid).update({points: opExp + activeChallenge.bet}); });
-                    alert(`Hòa! (${arenaScore} = ${activeChallenge.scoreA}). Hoàn tiền cược.`);
+                    alert(`Hòa! Hoàn tiền cược.`);
                 }
                 db.collection("notifications").doc(activeChallenge.id).update({isRead: true});
             }
             activeChallenge = null;
         }
 
-        // --- 13. ĐẤU ĐỘI (CHAT & BỘ ĐÀM FIXED INDEX) ---
+        // --- 13. ĐẤU ĐỘI (CHAT LOBBY NHẬN DIỆN ENTER) ---
         let teamRoomId = null; let unsubTeam = null; let unsubChat = null;
 
         function createTeamRoom() { teamRoomId = Math.floor(1000 + Math.random() * 9000).toString(); db.collection('arena_rooms').doc(teamRoomId).set({ status: 'waiting', host: currentUser.uid, players: { [currentUser.uid]: { name: currentUser.displayName, score: 0, photoURL: currentUser.photoURL } } }).then(() => listenToRoom(true)); }
         function joinTeamRoom() { const rid = prompt("Nhập mã phòng 4 số:"); if(!rid) return; teamRoomId = rid; db.collection('arena_rooms').doc(teamRoomId).get().then(doc => { if(!doc.exists || doc.data().status !== 'waiting') return alert("Phòng không tồn tại!"); db.collection('arena_rooms').doc(teamRoomId).update({ [`players.${currentUser.uid}`]: { name: currentUser.displayName, score: 0, photoURL: currentUser.photoURL } }).then(() => listenToRoom(false)); }); }
         
         function sendLobbyChat() {
-            const msg = document.getElementById('lobby-chat-input').value; if(!msg || !teamRoomId) return;
-            db.collection('arena_rooms').doc(teamRoomId).collection('chat').add({ name: currentUser.displayName, msg: msg, createdAt: Date.now() }); // Dùng Date.now() để tránh index error
-            document.getElementById('lobby-chat-input').value = '';
+            const input = document.getElementById('lobby-chat-input');
+            const msg = input.value.trim(); if(!msg || !teamRoomId) return;
+            db.collection('arena_rooms').doc(teamRoomId).collection('chat').add({ name: currentUser.displayName, msg: msg, createdAt: Date.now() }); 
+            input.value = '';
         }
 
         let mediaRecorder; let audioChunks = [];
         navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => { mediaRecorder = new MediaRecorder(stream); mediaRecorder.ondataavailable = e => audioChunks.push(e.data); mediaRecorder.onstop = () => { const audioBlob = new Blob(audioChunks, { 'type' : 'audio/webm' }); const reader = new FileReader(); reader.readAsDataURL(audioBlob); reader.onloadend = function() { const base64data = reader.result; db.collection('arena_rooms').doc(teamRoomId).update({ lastAudio: base64data, audioSender: currentUser.displayName, audioTime: Date.now() }); }; audioChunks = []; }; }).catch(e => console.log("Mic error:", e));
-        
         function startWalkie() { if(mediaRecorder && mediaRecorder.state === 'inactive') { document.getElementById('walkie-btn').style.background = '#e74c3c'; mediaRecorder.start(); setTimeout(stopWalkie, 4000); } }
         function stopWalkie() { if(mediaRecorder && mediaRecorder.state === 'recording') { document.getElementById('walkie-btn').style.background = '#e67e22'; mediaRecorder.stop(); } }
 
@@ -817,7 +912,7 @@
             if(unsubChat) unsubChat();
             unsubChat = db.collection('arena_rooms').doc(teamRoomId).collection('chat').onSnapshot(snap => {
                 let msgs = []; snap.forEach(d => msgs.push(d.data()));
-                msgs.sort((a,b) => (a.createdAt||0) - (b.createdAt||0)); // Sort Client-side
+                msgs.sort((a,b) => (a.createdAt||0) - (b.createdAt||0)); 
                 const box = document.getElementById('lobby-chat-box'); box.innerHTML = '';
                 msgs.forEach(d => { box.innerHTML += `<div style="margin-bottom:5px;"><b>${d.name.split(" ")[0]}:</b> ${d.msg}</div>`; });
                 box.scrollTop = box.scrollHeight;
@@ -825,12 +920,11 @@
         }
         function exitTeamArena() { if(unsubTeam) unsubTeam(); if(unsubChat) unsubChat(); if(teamRoomId) db.collection('arena_rooms').doc(teamRoomId).update({ [`players.${currentUser.uid}`]: firebase.firestore.FieldValue.delete() }); exitFloat(); teamRoomId = null; }
         
-        // FIX NÚT BẮT ĐẦU TRẬN ĐẤU ĐỘI
         function startTeamMatch() { 
             db.collection('arena_rooms').doc(teamRoomId).update({ status: 'playing' }).catch(e => alert("Lỗi tải đề: " + e.message)); 
         }
 
-        // Engine Trắc nghiệm Dùng chung
+        // Engine Trắc nghiệm Arena (Cộng 20 đ, không trừ sai)
         function renderArenaQuestion(is1v1) {
             if(qArenaIdx >= arenaQuestions.length) qArenaIdx = 0;
             const q = arenaQuestions[qArenaIdx]; document.getElementById('arena-question-text').innerText = q.q_en;
@@ -849,7 +943,6 @@
                 }; cont.appendChild(btn);
             });
             
-            // Xếp hạng Realtime cho Đội
             if(!is1v1 && teamRoomId) {
                 db.collection('arena_rooms').doc(teamRoomId).onSnapshot(d => {
                     if(d.exists) {
@@ -860,17 +953,14 @@
             }
         }
 
-        // --- 14. LEADERBOARD (KHÔI PHỤC VÀ FIX LỖI INDEX) ---
+        // --- 14. LEADERBOARD ---
         function loadLeaderboard() {
             db.collection("users").onSnapshot(snap => {
                 const list = document.getElementById('leaderboard-list'); if(!list) return; list.innerHTML = ''; 
-                
-                let users = [];
-                snap.forEach(doc => { const d = doc.data(); if(!d.isBlocked) users.push({id: doc.id, ...d}); });
-                users.sort((a,b) => (b.points||0) - (a.points||0)); // Sort Client-side
+                let users = []; snap.forEach(doc => { const d = doc.data(); if(!d.isBlocked) users.push({id: doc.id, ...d}); });
+                users.sort((a,b) => (b.points||0) - (a.points||0)); 
 
                 let rank = 1; let myRank = "-"; let myDataStr = "";
-
                 users.forEach(d => {
                     let isMe = d.id === currentUser.uid; if(isMe) myRank = rank;
                     let rankIcon = rank===1?'🥇':(rank===2?'🥈':(rank===3?'🥉':rank));
@@ -879,7 +969,6 @@
                         <img src="${d.photoURL||'https://via.placeholder.com/35'}" style="width:35px; border-radius:50%; margin-right:10px;">
                         <div style="flex:1;"><b>${d.name}</b><br><span style="font-size:11px; color:#e67e22;">⭐ ${d.points||0} EXP</span></div>
                     </div>`;
-
                     if(isMe) myDataStr = htmlStr;
                     if(rank <= 20) list.innerHTML += htmlStr;
                     rank++;
@@ -902,9 +991,9 @@
                     list.innerHTML += `<div class="admin-item" style="${u.isBlocked?'opacity:0.5':''}">
                         <div style="flex:1; display:flex; align-items:center; gap:10px;"><img src="${u.photoURL||'https://via.placeholder.com/30'}" style="width:30px; border-radius:50%;"><div><b>${u.name}</b><br><span style="font-size:12px; color:var(--primary-color);">⭐ ${u.points||0} | ❤️ ${u.hearts!==undefined?u.hearts:5}</span></div></div>
                         <div style="display:flex; gap:5px;">
-                            <button style="background:#e74c3c; color:white; border:none; padding:8px; border-radius:5px; font-weight:bold; cursor:pointer;" onclick="db.collection('users').doc('${u.id}').update({isBlocked: ${!u.isBlocked}})">🔒</button> 
-                            <button style="background:#e67e22; color:white; border:none; padding:8px; border-radius:5px; font-weight:bold; cursor:pointer;" onclick="db.collection('users').doc('${u.id}').update({hearts: 5})">+5❤️</button> 
-                            <button style="background:#95a5a6; color:white; border:none; padding:8px; border-radius:5px; font-weight:bold; cursor:pointer;" onclick="if(confirm('Xóa EXP?')) db.collection('users').doc('${u.id}').update({points: 0})">🔄</button>
+                            <button style="background:#e74c3c; color:white; border:none; padding:8px; border-radius:5px; cursor:pointer;" onclick="db.collection('users').doc('${u.id}').update({isBlocked: ${!u.isBlocked}})">🔒</button> 
+                            <button style="background:#e67e22; color:white; border:none; padding:8px; border-radius:5px; cursor:pointer;" onclick="db.collection('users').doc('${u.id}').update({hearts: 5})">+❤️</button> 
+                            <button style="background:#95a5a6; color:white; border:none; padding:8px; border-radius:5px; cursor:pointer;" onclick="if(confirm('Xóa EXP?')) db.collection('users').doc('${u.id}').update({points: 0})">🔄</button>
                         </div>
                     </div>`; 
                 });
