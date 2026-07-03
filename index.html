@@ -906,12 +906,10 @@
             } 
         }
 
-        // Biến chốt chặn tránh việc bị load lại đề thi liên tục làm bung app
-        let isArenaPlaying = false;
+        let isArenaPlaying = false; // Cờ chốt chặn chống lặp màn hình
 
         function listenToRoom(isHost) {
-            isArenaPlaying = false; // Reset lại cờ khi mới vào phòng
-            
+            isArenaPlaying = false; // Reset cờ mỗi lần vào phòng mới
             document.getElementById('arena-lobby-screen').style.display = 'block'; 
             document.getElementById('lobby-room-code').innerText = teamRoomId;
             document.getElementById('btn-start-arena').style.display = isHost ? 'block' : 'none'; 
@@ -921,7 +919,6 @@
             
             if(unsubTeam) unsubTeam();
             let lastAudioPlayed = 0;
-            
             unsubTeam = db.collection('arena_rooms').doc(teamRoomId).onSnapshot(doc => {
                 if(!doc.exists) return exitTeamArena(); 
                 const data = doc.data();
@@ -931,17 +928,28 @@
                     list.innerHTML += `<div style="background: var(--card-bg); padding: 5px 10px; border-radius: 20px; white-space:nowrap; border: 1px solid var(--border-color);"><img src="${p.photoURL}" style="width:20px; border-radius:50%; vertical-align:middle;"> <span style="font-size:12px; font-weight:bold;">${p.name.split(" ")[0]}</span></div>`; 
                 });
                 
-                // Phát âm thanh bộ đàm
+                // Kích hoạt loa bộ đàm
                 if(data.lastAudio && data.audioTime > lastAudioPlayed && data.audioSender !== currentUser.displayName) { 
-                    lastAudioPlayed = data.audioTime; 
-                    const audio = new Audio(data.lastAudio); audio.play(); 
+                    lastAudioPlayed = data.audioTime; const audio = new Audio(data.lastAudio); audio.play(); 
                 }
                 
-                // FIX LỖI BUNG APP: Chỉ gọi Start Game đúng 1 lần duy nhất nhờ cờ !isArenaPlaying
-                if(data.status === 'playing' && !isArenaPlaying) { 
-                    isArenaPlaying = true;
-                    document.getElementById('arena-lobby-screen').style.display = 'none'; 
-                    startArenaQuizEngine(false); 
+                // XỬ LÝ FIX BUNG MÀN HÌNH: Ép hiển thị Game Screen
+                if(data.status === 'playing') { 
+                    if (!isArenaPlaying) {
+                        isArenaPlaying = true;
+                        document.getElementById('arena-lobby-screen').style.display = 'none'; 
+                        document.getElementById('arena-game-screen').style.display = 'block'; // Bật màn hình game
+                        startArenaQuizEngine(false, data.questions); // Truyền bộ đề thi chung vào
+                    }
+                    
+                    // Cập nhật Bảng Xếp Hạng liên tục một cách an toàn
+                    const board = document.getElementById('arena-realtime-ranking');
+                    if (board) {
+                        board.innerHTML = '';
+                        Object.values(data.players).sort((a,b)=>b.score-a.score).forEach(p => { 
+                            board.innerHTML += `<div style="background:var(--card-bg); padding:5px 10px; border-radius:15px; border:1px solid var(--primary-color); font-size:12px; font-weight:bold; white-space:nowrap;">${p.name.split(" ")[0]}: <span style="color:#e74c3c">${p.score}</span></div>`; 
+                        });
+                    }
                 }
             });
 
@@ -950,17 +958,43 @@
                 let msgs = []; snap.forEach(d => msgs.push(d.data()));
                 msgs.sort((a,b) => (a.createdAt||0) - (b.createdAt||0)); 
                 const box = document.getElementById('lobby-chat-box'); box.innerHTML = '';
-                msgs.forEach(d => { box.innerHTML += `<div style="margin-bottom:5px;"><b>${d.name.split(" ")[0]}:</b> ${d.msg}</div>`; });
+                msgs.forEach(d => { box.innerHTML += `<div style="margin-bottom:5px;"><b>${d.name.split(" ")[0]}:</b> <span style="${d.msg.includes('🎙️') ? '' : 'color:var(--text-color)'}">${d.msg}</span></div>`; });
                 box.scrollTop = box.scrollHeight;
             });
         }
-        function exitTeamArena() { if(unsubTeam) unsubTeam(); if(unsubChat) unsubChat(); if(teamRoomId) db.collection('arena_rooms').doc(teamRoomId).update({ [`players.${currentUser.uid}`]: firebase.firestore.FieldValue.delete() }); exitFloat(); teamRoomId = null; }
-        
-        function startTeamMatch() { 
-            db.collection('arena_rooms').doc(teamRoomId).update({ status: 'playing' }).catch(e => alert("Lỗi tải đề: " + e.message)); 
+
+        // Cập nhật logic để nhận bộ đề chung
+        function startArenaQuizEngine(is1v1, teamQuestions = null) {
+            if (teamQuestions) {
+                arenaQuestions = teamQuestions; // Đấu đội dùng bộ đề chung của host
+            } else {
+                let allQA = []; Object.values(appData).forEach(t => t.lessons.forEach(l => allQA.push(l))); 
+                arenaQuestions = shuffle(allQA).slice(0, 15); // Đấu đơn tự random
+            }
+            
+            qArenaIdx = 0; arenaScore = 0; let timeLeft = 30; 
+            
+            document.getElementById('arena-game-screen').style.display = 'block';
+            document.getElementById('arena-timer').innerText = `⏱️ ${timeLeft}s`; 
+            document.getElementById('arena-my-score').innerText = `⭐ 0`;
+            
+            if(is1v1) {
+                let txt = activeChallenge.type === 'create' ? `Thách đấu: ${activeChallenge.toName}` : `Đấu lại: ${activeChallenge.fromName} (Kỷ lục: ${activeChallenge.scoreA})`;
+                document.getElementById('arena-realtime-ranking').innerHTML = `<div style="padding:10px; font-weight:bold; color:var(--text-color);">${txt} - Cược: ${activeChallenge.bet}</div>`;
+            }
+
+            if(arenaTimer) clearInterval(arenaTimer);
+            arenaTimer = setInterval(() => {
+                timeLeft--; document.getElementById('arena-timer').innerText = `⏱️ ${timeLeft}s`;
+                if(timeLeft <= 0) { 
+                    clearInterval(arenaTimer); exitFloat();
+                    if(is1v1) finish1v1Game();
+                    else { alert(`Hết giờ! Điểm của bạn: ${arenaScore}`); changeExp(arenaScore); addSocialFeed('🏆', `<b>${currentUser.displayName}</b> kết thúc Đấu Đội với ${arenaScore} điểm!`); exitTeamArena(); }
+                }
+            }, 1000);
+            renderArenaQuestion(is1v1);
         }
 
-        // Engine Trắc nghiệm Arena (Cộng 20 đ, không trừ sai)
         function renderArenaQuestion(is1v1) {
             if(qArenaIdx >= arenaQuestions.length) qArenaIdx = 0;
             const q = arenaQuestions[qArenaIdx]; document.getElementById('arena-question-text').innerText = q.q_en;
@@ -971,13 +1005,16 @@
                 btn.onclick = () => {
                     if(opt === q.a_vi) { 
                         try{ sfxCorrect.play(); }catch(e){} btn.classList.add('correct'); arenaScore += 20; 
-                        if(is1v1) document.getElementById('arena-my-score').innerText = `⭐ ${arenaScore}`;
-                        else { document.getElementById('arena-my-score').innerText = `⭐ ${arenaScore}`; if(teamRoomId) db.collection('arena_rooms').doc(teamRoomId).update({[`players.${currentUser.uid}.score`]: arenaScore}); }
+                        document.getElementById('arena-my-score').innerText = `⭐ ${arenaScore}`; 
+                        // Update điểm thẳng lên Server cho Đội Nhóm
+                        if(!is1v1 && teamRoomId) db.collection('arena_rooms').doc(teamRoomId).update({[`players.${currentUser.uid}.score`]: arenaScore}); 
                     } else { try{ sfxWrong.play(); }catch(e){} btn.classList.add('wrong'); }
                     document.querySelectorAll('.quiz-option').forEach(b=>b.onclick=null);
                     setTimeout(()=>{ qArenaIdx++; renderArenaQuestion(is1v1); }, 500);
                 }; cont.appendChild(btn);
             });
+            // (Đã xóa lỗi tràn bộ nhớ Firebase rò rỉ tại đây)
+        }
             
             if(!is1v1 && teamRoomId) {
                 db.collection('arena_rooms').doc(teamRoomId).onSnapshot(d => {
