@@ -1,15 +1,14 @@
 {
   "topic_hotel_quick": {
     "id": "topic_hotel_quick",
-    "title": "🛎️ Giao Tiếp Nhanh Tại Khách Sạn",
+    "title": "🛎️ Giao Tiếp Khách Sạn",
     "icon": "🏨",
     "color": "#008CBA",
     "lessons": [
       { "type": "vocab", "q_en": "Reservation", "q_vi": "Sự đặt phòng", "a_en": "Reservation", "a_vi": "Sự đặt phòng" },
       { "type": "vocab", "q_en": "Passport", "q_vi": "Hộ chiếu", "a_en": "Passport", "a_vi": "Hộ chiếu" },
       { "type": "sentence", "q_en": "May I have your passport, please?", "q_vi": "Tôi có thể mượn hộ chiếu của quý khách không?", "a_en": "May I have your passport, please?", "a_vi": "Tôi có thể mượn hộ chiếu của quý khách không?" },
-      { "type": "sentence", "q_en": "Here is your room key.", "q_vi": "Đây là chìa khóa phòng của quý khách.", "a_en": "Here is your room key.", "a_vi": "Đây là chìa khóa phòng của quý khách." },
-      { "type": "boss", "q_en": "Welcome to Ocean Dunes! How can I help you?", "q_vi": "(Boss Khách Hàng) Chào mừng quý khách!", "a_en": "I have a reservation.", "a_vi": "Tôi có đặt phòng trước." }
+      { "type": "sentence", "q_en": "Here is your room key.", "q_vi": "Đây là chìa khóa phòng của quý khách.", "a_en": "Here is your room key.", "a_vi": "Đây là chìa khóa phòng của quý khách." }
     ]
   },
   "topic_directions": {
@@ -21,21 +20,19 @@
       { "type": "vocab", "q_en": "Straight", "q_vi": "Đi thẳng", "a_en": "Straight", "a_vi": "Đi thẳng" },
       { "type": "vocab", "q_en": "Turn left", "q_vi": "Rẽ trái", "a_en": "Turn left", "a_vi": "Rẽ trái" },
       { "type": "sentence", "q_en": "Go straight and turn left at the corner.", "q_vi": "Đi thẳng và rẽ trái ở góc đường.", "a_en": "Go straight and turn left at the corner.", "a_vi": "Đi thẳng và rẽ trái ở góc đường." },
-      { "type": "sentence", "q_en": "The pool is on your right.", "q_vi": "Hồ bơi ở bên tay phải của quý khách.", "a_en": "The pool is on your right.", "a_vi": "Hồ bơi ở bên tay phải của quý khách." },
-      { "type": "boss", "q_en": "Excuse me, where is the coffee shop?", "q_vi": "(Boss Lạc Đường) Xin lỗi, quán cafe ở đâu?", "a_en": "It is on the second floor.", "a_vi": "Nó nằm ở tầng hai." }
+      { "type": "sentence", "q_en": "The pool is on your right.", "q_vi": "Hồ bơi ở bên tay phải của quý khách.", "a_en": "The pool is on your right.", "a_vi": "Hồ bơi ở bên tay phải của quý khách." }
     ]
   },
   "topic_meeting": {
     "id": "topic_meeting",
-    "title": "📊 Báo Cáo Trong Cuộc Họp",
+    "title": "📊 Báo Cáo Cuộc Họp",
     "icon": "📈",
     "color": "#8e44ad",
     "lessons": [
       { "type": "vocab", "q_en": "Report", "q_vi": "Báo cáo", "a_en": "Report", "a_vi": "Báo cáo" },
       { "type": "vocab", "q_en": "Revenue", "q_vi": "Doanh thu", "a_en": "Revenue", "a_vi": "Doanh thu" },
       { "type": "sentence", "q_en": "Here is the financial report for this month.", "q_vi": "Đây là báo cáo tài chính tháng này.", "a_en": "Here is the financial report for this month.", "a_vi": "Đây là báo cáo tài chính tháng này." },
-      { "type": "sentence", "q_en": "Our revenue has increased by 10%.", "q_vi": "Doanh thu của chúng ta đã tăng 10%.", "a_en": "Our revenue has increased by 10%.", "a_vi": "Doanh thu của chúng ta đã tăng 10%." },
-      { "type": "boss", "q_en": "What is the main issue this week?", "q_vi": "(Boss Sếp) Vấn đề chính tuần này là gì?", "a_en": "We need to improve customer service.", "a_vi": "Chúng ta cần cải thiện dịch vụ khách hàng." }
+      { "type": "sentence", "q_en": "Our revenue has increased by 10%.", "q_vi": "Doanh thu của chúng ta đã tăng 10%.", "a_en": "Our revenue has increased by 10%.", "a_vi": "Doanh thu của chúng ta đã tăng 10%." }
     ]
   },
   "topic_pickup": {
@@ -47,86 +44,79 @@
       { "type": "vocab", "q_en": "Gorgeous", "q_vi": "Tuyệt đẹp", "a_en": "Gorgeous", "a_vi": "Tuyệt đẹp" },
       { "type": "vocab", "q_en": "Destiny", "q_vi": "Định mệnh", "a_en": "Destiny", "a_vi": "Định mệnh" },
       { "type": "sentence", "q_en": "Are you on the menu? Because you're exactly what I'm craving.", "q_vi": "Em có trong menu không? Vì em chính xác là những gì anh thèm.", "a_en": "Are you on the menu? Because you're exactly what I'm craving.", "a_vi": "Em có trong menu không? Vì em chính xác là những gì anh thèm." },
-      { "type": "sentence", "q_en": "Do you have a map? I keep getting lost in your eyes.", "q_vi": "Em có bản đồ không? Anh cứ bị lạc trong mắt em.", "a_en": "Do you have a map? I keep getting lost in your eyes.", "a_vi": "Em có bản đồ không? Anh cứ bị lạc trong mắt em." },
-      { "type": "boss", "q_en": "Are you a magician?", "q_vi": "(Boss Crush) Anh là ảo thuật gia à?", "a_en": "Because whenever I look at you, everyone else disappears.", "a_vi": "Vì mỗi khi nhìn em, mọi thứ khác đều biến mất." }
+      { "type": "sentence", "q_en": "Do you have a map? I keep getting lost in your eyes.", "q_vi": "Em có bản đồ không? Anh cứ bị lạc trong mắt em.", "a_en": "Do you have a map? I keep getting lost in your eyes.", "a_vi": "Em có bản đồ không? Anh cứ bị lạc trong mắt em." }
     ]
   },
   "topic_fb": {
     "id": "topic_fb",
-    "title": "☕ F&B Nhà Hàng & Cafe",
+    "title": "☕ F&B Nhà Hàng Cafe",
     "icon": "🍹",
     "color": "#d35400",
     "lessons": [
       { "type": "vocab", "q_en": "Beverage", "q_vi": "Đồ uống", "a_en": "Beverage", "a_vi": "Đồ uống" },
       { "type": "vocab", "q_en": "Appetizer", "q_vi": "Món khai vị", "a_en": "Appetizer", "a_vi": "Món khai vị" },
       { "type": "sentence", "q_en": "Would you like to see our menu?", "q_vi": "Quý khách có muốn xem thực đơn không?", "a_en": "Would you like to see our menu?", "a_vi": "Quý khách có muốn xem thực đơn không?" },
-      { "type": "sentence", "q_en": "What would you like to drink?", "q_vi": "Quý khách muốn uống gì?", "a_en": "What would you like to drink?", "a_vi": "Quý khách muốn uống gì?" },
-      { "type": "boss", "q_en": "Can I have the bill, please?", "q_vi": "(Boss Bàn 5) Cho tôi xin hóa đơn.", "a_en": "Yes, I will bring it right away.", "a_vi": "Vâng, tôi sẽ mang ra ngay." }
+      { "type": "sentence", "q_en": "What would you like to drink?", "q_vi": "Quý khách muốn uống gì?", "a_en": "What would you like to drink?", "a_vi": "Quý khách muốn uống gì?" }
     ]
   },
   "topic_housekeeping": {
     "id": "topic_housekeeping",
-    "title": "🛏️ Buồng Phòng & Dịch Vụ",
+    "title": "🛏️ Buồng Phòng",
     "icon": "🧹",
     "color": "#16a085",
     "lessons": [
       { "type": "vocab", "q_en": "Housekeeping", "q_vi": "Dọn phòng", "a_en": "Housekeeping", "a_vi": "Dọn phòng" },
       { "type": "vocab", "q_en": "Towel", "q_vi": "Khăn tắm", "a_en": "Towel", "a_vi": "Khăn tắm" },
       { "type": "sentence", "q_en": "Please make up my room.", "q_vi": "Vui lòng dọn phòng giúp tôi.", "a_en": "Please make up my room.", "a_vi": "Vui lòng dọn phòng giúp tôi." },
-      { "type": "sentence", "q_en": "I need some extra towels.", "q_vi": "Tôi cần thêm vài cái khăn tắm.", "a_en": "I need some extra towels.", "a_vi": "Tôi cần thêm vài cái khăn tắm." },
-      { "type": "boss", "q_en": "The air conditioner is not working.", "q_vi": "(Boss Phàn Nàn) Máy lạnh không hoạt động.", "a_en": "I will send a technician immediately.", "a_vi": "Tôi sẽ cử kỹ thuật viên lên ngay." }
+      { "type": "sentence", "q_en": "I need some extra towels.", "q_vi": "Tôi cần thêm vài cái khăn tắm.", "a_en": "I need some extra towels.", "a_vi": "Tôi cần thêm vài cái khăn tắm." }
     ]
   },
   "topic_it": {
     "id": "topic_it",
-    "title": "💻 IT & Hỗ Trợ Công Nghệ",
+    "title": "💻 IT & Hệ Thống",
     "icon": "🖥️",
     "color": "#2c3e50",
     "lessons": [
       { "type": "vocab", "q_en": "Network", "q_vi": "Mạng", "a_en": "Network", "a_vi": "Mạng" },
       { "type": "vocab", "q_en": "Reboot", "q_vi": "Khởi động lại", "a_en": "Reboot", "a_vi": "Khởi động lại" },
       { "type": "sentence", "q_en": "Please restart your computer.", "q_vi": "Vui lòng khởi động lại máy tính.", "a_en": "Please restart your computer.", "a_vi": "Vui lòng khởi động lại máy tính." },
-      { "type": "sentence", "q_en": "The Wi-Fi password is Ocean2026.", "q_vi": "Mật khẩu Wi-Fi là Ocean2026.", "a_en": "The Wi-Fi password is Ocean2026.", "a_vi": "Mật khẩu Wi-Fi là Ocean2026." },
-      { "type": "boss", "q_en": "I cannot connect to the internet.", "q_vi": "(Boss Sự Cố) Tôi không vào mạng được.", "a_en": "Let me check the router for you.", "a_vi": "Để tôi kiểm tra cục phát mạng cho bạn." }
+      { "type": "sentence", "q_en": "The Wi-Fi password is Ocean2026.", "q_vi": "Mật khẩu Wi-Fi là Ocean2026.", "a_en": "The Wi-Fi password is Ocean2026.", "a_vi": "Mật khẩu Wi-Fi là Ocean2026." }
     ]
   },
   "topic_emergency": {
     "id": "topic_emergency",
-    "title": "🚨 Xử Lý Sự Cố Khẩn Cấp",
+    "title": "🚨 Sự Cố Khẩn Cấp",
     "icon": "🚑",
     "color": "#e74c3c",
     "lessons": [
       { "type": "vocab", "q_en": "Emergency", "q_vi": "Khẩn cấp", "a_en": "Emergency", "a_vi": "Khẩn cấp" },
       { "type": "vocab", "q_en": "Calm down", "q_vi": "Bình tĩnh", "a_en": "Calm down", "a_vi": "Bình tĩnh" },
       { "type": "sentence", "q_en": "Please stay calm.", "q_vi": "Vui lòng giữ bình tĩnh.", "a_en": "Please stay calm.", "a_vi": "Vui lòng giữ bình tĩnh." },
-      { "type": "sentence", "q_en": "We are calling the doctor.", "q_vi": "Chúng tôi đang gọi bác sĩ.", "a_en": "We are calling the doctor.", "a_vi": "Chúng tôi đang gọi bác sĩ." },
-      { "type": "boss", "q_en": "Help! There is a fire!", "q_vi": "(Boss Cháy) Cứu với! Có cháy!", "a_en": "Please use the emergency exit.", "a_vi": "Vui lòng sử dụng lối thoát hiểm." }
+      { "type": "sentence", "q_en": "We are calling the doctor.", "q_vi": "Chúng tôi đang gọi bác sĩ.", "a_en": "We are calling the doctor.", "a_vi": "Chúng tôi đang gọi bác sĩ." }
     ]
   },
   "topic_upselling": {
     "id": "topic_upselling",
-    "title": "💎 Bán Chéo & Giới Thiệu Dịch Vụ",
+    "title": "💎 Bán Chéo Dịch Vụ",
     "icon": "🛍️",
     "color": "#f39c12",
     "lessons": [
       { "type": "vocab", "q_en": "Upgrade", "q_vi": "Nâng cấp", "a_en": "Upgrade", "a_vi": "Nâng cấp" },
       { "type": "vocab", "q_en": "Spa", "q_vi": "Dịch vụ Spa", "a_en": "Spa", "a_vi": "Dịch vụ Spa" },
       { "type": "sentence", "q_en": "Would you like to upgrade to a sea view room?", "q_vi": "Quý khách có muốn nâng cấp lên phòng hướng biển không?", "a_en": "Would you like to upgrade to a sea view room?", "a_vi": "Quý khách có muốn nâng cấp lên phòng hướng biển không?" },
-      { "type": "sentence", "q_en": "We have a special discount for the Spa today.", "q_vi": "Chúng tôi có giảm giá đặc biệt cho Spa hôm nay.", "a_en": "We have a special discount for the Spa today.", "a_vi": "Chúng tôi có giảm giá đặc biệt cho Spa hôm nay." },
-      { "type": "boss", "q_en": "What activities do you have here?", "q_vi": "(Boss Khách Hỏi) Ở đây có hoạt động gì?", "a_en": "You can try our massage service.", "a_vi": "Quý khách có thể thử dịch vụ massage." }
+      { "type": "sentence", "q_en": "We have a special discount for the Spa today.", "q_vi": "Chúng tôi có giảm giá đặc biệt cho Spa hôm nay.", "a_en": "We have a special discount for the Spa today.", "a_vi": "Chúng tôi có giảm giá đặc biệt cho Spa hôm nay." }
     ]
   },
   "topic_checkout": {
     "id": "topic_checkout",
-    "title": "👋 Tiễn Khách & Check-out",
+    "title": "👋 Tiễn Khách Check-out",
     "icon": "🚕",
     "color": "#34495e",
     "lessons": [
       { "type": "vocab", "q_en": "Checkout", "q_vi": "Trả phòng", "a_en": "Checkout", "a_vi": "Trả phòng" },
       { "type": "vocab", "q_en": "Luggage", "q_vi": "Hành lý", "a_en": "Luggage", "a_vi": "Hành lý" },
       { "type": "sentence", "q_en": "How was your stay?", "q_vi": "Kỳ nghỉ của quý khách thế nào?", "a_en": "How was your stay?", "a_vi": "Kỳ nghỉ của quý khách thế nào?" },
-      { "type": "sentence", "q_en": "Do you need a taxi to the airport?", "q_vi": "Quý khách có cần taxi ra sân bay không?", "a_en": "Do you need a taxi to the airport?", "a_vi": "Quý khách có cần taxi ra sân bay không?" },
-      { "type": "boss", "q_en": "I am ready to check out.", "q_vi": "(Boss Check-out) Tôi sẵn sàng trả phòng rồi.", "a_en": "Hope to see you again soon.", "a_vi": "Hy vọng sớm gặp lại quý khách." }
+      { "type": "sentence", "q_en": "Do you need a taxi to the airport?", "q_vi": "Quý khách có cần taxi ra sân bay không?", "a_en": "Do you need a taxi to the airport?", "a_vi": "Quý khách có cần taxi ra sân bay không?" }
     ]
   }
 }
