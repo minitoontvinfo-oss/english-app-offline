@@ -1,0 +1,88 @@
+{
+  "id": "topic_hotel",
+  "title": "🛎️ Giao Tiếp Lễ Tân Resort",
+  "icon": "🏨",
+  "nodes": [
+    {
+      "id": 1,
+      "type": "vocab",
+      "questions": [
+        { "q_en": "Reservation", "a_vi": "Sự đặt phòng" },
+        { "q_en": "Reception", "a_vi": "Quầy lễ tân" },
+        { "q_en": "Available", "a_vi": "Có sẵn / Trống" }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "vocab",
+      "questions": [
+        { "q_en": "Luggage", "a_vi": "Hành lý" },
+        { "q_en": "Passport", "a_vi": "Hộ chiếu" },
+        { "q_en": "Deposit", "a_vi": "Tiền cọc" }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "sentence",
+      "questions": [
+        { "q_en": "Do you have a reservation?", "q_vi": "Khách: Tôi muốn nhận phòng.", "a_en": "Yes, under the name of Smith.", "a_vi": "Quý khách có đặt phòng trước không?" },
+        { "q_en": "May I have your passport, please?", "q_vi": "Khách: Chào bạn.", "a_en": "Here it is.", "a_vi": "Tôi có thể mượn hộ chiếu của quý khách không?" }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "sentence",
+      "questions": [
+        { "q_en": "Could you please fill out this registration form?", "q_vi": "Lễ tân: Cần thủ tục gì nữa không?", "a_en": "Sure, no problem.", "a_vi": "Quý khách vui lòng điền vào phiếu đăng ký này nhé?" },
+        { "q_en": "Here is your room key.", "q_vi": "Lễ tân: Phòng của tôi đâu?", "a_en": "Thank you.", "a_vi": "Đây là chìa khóa phòng của quý khách." }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "boss",
+      "questions": [
+        { "q_en": "Welcome to Ocean Dunes Resort! How can I help you today?", "q_vi": "Boss Khách VIP đến nhận phòng", "a_en": "I have a reservation under the name John.", "a_vi": "Tôi có đặt phòng tên là John." }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "vocab",
+      "questions": [
+        { "q_en": "Upgrade", "a_vi": "Nâng cấp" },
+        { "q_en": "Ocean view", "a_vi": "Hướng biển" },
+        { "q_en": "Complimentary", "a_vi": "Miễn phí (Tặng kèm)" }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "vocab",
+      "questions": [
+        { "q_en": "Breakfast buffet", "a_vi": "Bữa sáng tự chọn" },
+        { "q_en": "Gym facilities", "a_vi": "Khu tập thể hình" },
+        { "q_en": "Wi-Fi password", "a_vi": "Mật khẩu mạng" }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "sentence",
+      "questions": [
+        { "q_en": "Breakfast is served from 6 AM to 10 AM.", "q_vi": "Khách: Ăn sáng lúc mấy giờ?", "a_en": "Where is the restaurant?", "a_vi": "Bữa sáng phục vụ từ 6h đến 10h sáng." },
+        { "q_en": "Would you like some help with your luggage?", "q_vi": "Khách: Hành lý của tôi khá nặng.", "a_en": "Yes, please send it to my room.", "a_vi": "Quý khách có cần giúp chuyển hành lý không?" }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "sentence",
+      "questions": [
+        { "q_en": "The Wi-Fi password is written on your key card.", "q_vi": "Khách: Mật khẩu wifi là gì?", "a_en": "Ah, I see it.", "a_vi": "Mật khẩu Wi-Fi được ghi trên thẻ khóa của quý khách." }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "boss",
+      "questions": [
+        { "q_en": "Excuse me, what time is the checkout?", "q_vi": "Boss Khách hỏi trả phòng", "a_en": "The checkout time is 12 PM.", "a_vi": "Giờ trả phòng là 12h trưa ạ." }
+      ]
+    }
+  ]
+}

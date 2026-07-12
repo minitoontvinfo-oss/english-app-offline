@@ -1,0 +1,7 @@
+[
+  { "id": "topic_hotel", "file": "topic_hotel.json", "title": "🛎️ Giao Tiếp Lễ Tân", "icon": "🏨", "color": "#008CBA" },
+  { "id": "topic_pickup", "file": "topic_pickup.json", "title": "💘 Bí Kíp Cua Gái (Mr. Vương)", "icon": "🌹", "color": "#e84393" },
+  { "id": "topic_fb", "file": "topic_fb.json", "title": "☕ F&B Nhà Hàng & Cafe", "icon": "🍹", "color": "#d35400" },
+  { "id": "topic_directions", "file": "topic_directions.json", "title": "🗺️ Hướng Dẫn Chỉ Đường", "icon": "🧭", "color": "#27ae60" },
+  { "id": "topic_meeting", "file": "topic_meeting.json", "title": "📊 Báo Cáo Cuộc Họp", "icon": "📈", "color": "#8e44ad" }
+]
