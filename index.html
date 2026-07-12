@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
-    <title>Ocean Training Hub - Master V14.5 (Stable Architecture)</title>
+    <title>Ocean Training Hub - Master V15 (Perfect Production)</title>
     
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏢</text></svg>">
     
@@ -40,7 +40,7 @@
         .notif-item.unread { background: rgba(0,140,186,0.08); font-weight: bold; }
 
         /* BUTTONS & CARDS */
-        .main-action-btn { width: 100%; padding: 15px; margin-bottom: 10px; background: var(--primary-color); color: white; border: none; border-radius: 12px; font-weight: bold; font-size: 15px; cursor: pointer; transition: 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1);}
+        .main-action-btn { width: 100%; padding: 15px; margin-bottom: 10px; background: var(--primary-color); color: white; border: none; border-radius: 12px; font-weight: bold; font-size: 15px; cursor: pointer; transition: 0.2s;}
         .main-action-btn:active { transform: scale(0.95); }
         .main-action-btn:disabled { background: #bdc3c7; cursor: not-allowed;}
         .secondary-btn { width: 100%; padding: 15px; margin-bottom: 10px; background: #e74c3c; color: white; border: none; border-radius: 12px; font-weight: bold; font-size: 15px; cursor: pointer; transition: 0.2s;}
@@ -53,46 +53,46 @@
         .modal-content { background: var(--card-bg); padding: 25px; border-radius: 20px; width: 90%; max-width: 400px; text-align: center; border: 1px solid var(--border-color); max-height: 80vh; overflow-y: auto; position: relative;}
         .floating-screen { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: 950; overflow-y: auto; background: var(--bg-color); padding: 20px; box-sizing: border-box;}
 
-        /* AVATAR & KHỐNG CHẾ LỖI AURA (FLEXING) TRÀN MÀN HÌNH */
-        .avatar-wrapper { position: relative; display: inline-block; z-index: 5; margin: 5px; width: fit-content;}
-        .avatar-img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border-color); z-index: 10; position: relative; background: white;}
+        /* AVATAR & KHỐNG CHẾ LỖI AURA TRÀN MÀN HÌNH */
+        .avatar-wrapper { position: relative; display: inline-flex; align-items: center; justify-content: center; z-index: 5; margin: 10px; border-radius: 50%; }
+        .avatar-img { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border-color); z-index: 10; position: relative; background: white;}
         .avatar-small { width: 35px; height: 35px; margin: 0;}
-        .streak-fire { position: absolute; bottom: -5px; right: -5px; font-size: 14px; background: rgba(0,0,0,0.7); border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; z-index: 15; box-shadow: 0 0 5px rgba(230,126,34,0.8); color: white; font-weight: bold;}
+        .streak-fire { position: absolute; bottom: -5px; right: -5px; font-size: 12px; background: rgba(0,0,0,0.7); border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; z-index: 15; box-shadow: 0 0 5px rgba(230,126,34,0.8); color: white; font-weight: bold;}
         
-        /* Sửa lỗi Aura: Bọc kín trong hình tròn nhỏ, không bung ra Box Shadow khổng lồ */
+        /* Sửa Aura: Ôm gọn gàng, không phá layout */
         .aura-none::before { display: none; }
-        .aura-fire::before { content: ''; position: absolute; top:-5px; left:-5px; right:-5px; bottom:-5px; border-radius:50%; background: linear-gradient(45deg, #ff0000, #ff7300, #f1c40f); z-index: 1; animation: spin-aura 2s linear infinite; opacity: 0.8;}
-        .aura-lightning::before { content: ''; position: absolute; top:-4px; left:-4px; right:-4px; bottom:-4px; border-radius:50%; background: conic-gradient(from 0deg, transparent, #00f2fe, #4facfe, transparent); z-index: 1; animation: spin-aura 0.5s linear infinite; }
+        .aura-fire::before { content: ''; position: absolute; inset: -4px; border-radius:50%; background: linear-gradient(45deg, #ff0000, #ff7300, #f1c40f); z-index: 1; animation: spin-aura 2s linear infinite;}
+        .aura-lightning::before { content: ''; position: absolute; inset: -3px; border-radius:50%; background: conic-gradient(from 0deg, transparent, #00f2fe, #4facfe, transparent); z-index: 1; animation: spin-aura 0.5s linear infinite; }
         .aura-dragon { animation: floatUpDown 2.5s ease-in-out infinite; }
-        .aura-dragon::before { content: ''; position: absolute; top:-8px; left:-8px; right:-8px; bottom:-8px; border-radius:50%; border: 3px dashed #f1c40f; z-index: 1; animation: spin-aura 4s linear infinite;}
+        .aura-dragon::before { content: ''; position: absolute; inset: -5px; border-radius:50%; border: 2px dashed #f1c40f; z-index: 1; animation: spin-aura 4s linear infinite;}
         
         @keyframes spin-aura { 100% { transform: rotate(360deg); } }
         @keyframes floatUpDown { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
 
         /* LINH VẬT BAY */
         .pet-container { position: absolute; top: -15px; left: -15px; right: -15px; bottom: -15px; animation: orbit 4s linear infinite; pointer-events: none; z-index: 20; display: none; }
-        .pet-icon { position: absolute; top: 0; left: 50%; transform: translateX(-50%); font-size: 18px; animation: counter-orbit 4s linear infinite; filter: drop-shadow(0 0 2px gold);}
+        .pet-icon { position: absolute; top: 0; left: 50%; transform: translateX(-50%); font-size: 16px; animation: counter-orbit 4s linear infinite; filter: drop-shadow(0 0 2px gold);}
         @keyframes orbit { 100% { transform: rotate(360deg); } }
         @keyframes counter-orbit { 100% { transform: rotate(-360deg); } }
 
         /* DANH XƯNG */
         .name-prefix { font-size: 10px; padding: 2px 6px; border-radius: 5px; margin-right: 5px; display: inline-block; vertical-align: middle; color: white; font-weight: bold;}
         .prefix-none { display: none; }
-        .prefix-devil { background: #8e44ad; box-shadow: 0 0 5px #8e44ad; text-shadow: 0 0 2px #fff;}
-        .prefix-god { background: linear-gradient(45deg, #f1c40f, #e67e22); box-shadow: 0 0 5px #f1c40f; color: #d35400;}
+        .prefix-devil { background: #8e44ad; text-shadow: 0 0 2px #fff;}
+        .prefix-god { background: linear-gradient(45deg, #f1c40f, #e67e22); color: #d35400;}
 
-        /* KHUNG VIỀN MUA BẰNG EXP */
+        /* KHUNG VIỀN */
         .frame-none { border-color: var(--primary-color); }
         .frame-gold { border: 3px solid #f1c40f; }
         .frame-diamond { border: 3px solid #3498db; }
         
-        /* BẢN ĐỒ HỌC TẬP (LEARNING MAP) - SCROLL TỪ TRÊN XUỐNG */
-        .map-container { display: flex; flex-direction: column; align-items: center; padding: 20px 0; gap: 40px; position: relative; margin-bottom: 80px;}
+        /* BẢN ĐỒ HỌC TẬP (LEARNING MAP) - SCROLL TỪ TRÊN XUỐNG MƯỢT MÀ */
+        .map-container { display: flex; flex-direction: column; align-items: center; padding: 30px 0; gap: 40px; position: relative; margin-bottom: 80px;}
         .map-path { position: absolute; width: 6px; background: var(--border-color); top: 30px; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 1; border-radius: 3px;}
-        .map-node { width: 65px; height: 65px; border-radius: 50%; background: #bdc3c7; color: white; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; z-index: 5; border: 4px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.2); position: relative; cursor: pointer; transition: 0.2s;}
+        .map-node { width: 65px; height: 65px; border-radius: 50%; background: #bdc3c7; color: white; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; z-index: 5; border: 4px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.2); position: relative; cursor: pointer; transition: 0.3s;}
         .map-node.locked { filter: grayscale(100%); opacity: 0.6; cursor: not-allowed; }
         .map-node.completed { background: #27ae60; box-shadow: 0 0 10px rgba(39, 174, 96, 0.4);}
-        .map-node.current { background: #f39c12; animation: bounce 1s infinite alternate; transform: scale(1.1); box-shadow: 0 0 15px #f39c12; border-color: #f1c40f;}
+        .map-node.current { background: #f39c12; animation: bounce 1s infinite alternate; transform: scale(1.15); box-shadow: 0 0 15px #f39c12; border-color: #f1c40f;}
         .map-node.boss-node { border-radius: 15px; width: 75px; height: 75px; border-color: #e74c3c; }
         .map-node:nth-child(even) { transform: translateX(35px); }
         .map-node:nth-child(odd) { transform: translateX(-35px); }
@@ -100,20 +100,21 @@
         .map-node.current:nth-child(odd) { transform: translateX(-35px) scale(1.15); }
         @keyframes bounce { 0% { top: 0; } 100% { top: -10px; } }
 
-        /* CÁC CONTAINER NGUYÊN BẢN (ĐÃ FIX SCROLL GỌN GÀNG VÀO Ô) */
-        .feed-container { background: var(--card-bg); border-radius: 15px; padding: 15px; border: 1px solid var(--border-color); margin-bottom: 20px; max-height: 250px; overflow-y: auto; overflow-x: hidden; }
+        /* BẢNG CHỨA DỮ LIỆU ĐƯỢC FIX CUỘN GỌN GÀNG (SCROLL CONTAINER) */
+        .feed-container { background: var(--card-bg); border-radius: 15px; padding: 15px; border: 1px solid var(--border-color); margin-bottom: 20px; max-height: 250px; overflow-y: auto; }
         .feed-item { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 12px; font-size: 13px; border-bottom: 1px dashed var(--border-color); padding-bottom: 8px;}
         
-        .badges-container { max-height: 250px; overflow-y: auto; overflow-x: hidden; padding: 5px; border: 1px solid var(--border-color); border-radius: 10px; background: rgba(0,0,0,0.02);}
+        .badges-container { max-height: 250px; overflow-y: auto; padding: 5px; border: 1px solid var(--border-color); border-radius: 10px; background: rgba(0,0,0,0.02);}
         .badge-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
         .badge-item { background: var(--card-bg); padding: 10px 5px; border-radius: 12px; text-align: center; opacity: 0.3; filter: grayscale(100%); border: 1px solid #ccc;}
-        .badge-item.unlocked { opacity: 1; filter: grayscale(0%); background: linear-gradient(135deg, #fdfbfb, #ebedee); border: 1px solid #f39c12; box-shadow: 0 2px 5px rgba(243,156,18,0.2);}
+        .badge-item.unlocked { opacity: 1; filter: grayscale(0%); background: linear-gradient(135deg, #fdfbfb, #ebedee); border: 1px solid #f39c12;}
         
-        .leaderboard-container { max-height: 400px; overflow-y: auto; overflow-x: hidden; padding: 5px; }
+        .leaderboard-container { max-height: 400px; overflow-y: auto; padding-right: 5px; border: 1px solid var(--border-color); border-radius: 12px; background: var(--card-bg); padding: 10px;}
+        .admin-user-list-container { max-height: 400px; overflow-y: auto; padding-right: 5px; }
 
         /* MATCHING GRID */
         .match-grid { display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: 1fr; gap: 10px; margin-top: 20px; max-width: 500px; margin-left: auto; margin-right: auto;}
-        .match-item { background: var(--card-bg); border: 2px solid var(--border-color); border-radius: 12px; padding: 15px 10px; display: flex; align-items: center; justify-content: center; text-align: center; font-weight: bold; cursor: pointer; transition: 0.2s; font-size: 13px; word-wrap: break-word; color: var(--text-color); min-height: 70px; box-sizing: border-box;}
+        .match-item { background: var(--card-bg); border: 2px solid var(--border-color); border-radius: 12px; padding: 15px 10px; display: flex; align-items: center; justify-content: center; text-align: center; font-weight: bold; cursor: pointer; transition: 0.2s; font-size: 13px; word-wrap: break-word; color: var(--text-color); min-height: 70px;}
         .match-item.selected { border-color: var(--primary-color); background: rgba(0,140,186,0.1); transform: scale(1.05); }
         .match-item.matched { opacity: 0; pointer-events: none; }
         .match-item.wrong { animation: shake 0.4s; border-color: #e74c3c; background: rgba(231,76,60,0.1); }
@@ -138,13 +139,13 @@
         
         .progress-bar-bg { width: 100%; height: 8px; background: var(--border-color); border-radius: 4px; margin-top: 10px; overflow: hidden; }
         .progress-bar-fill { height: 100%; background: var(--primary-color); border-radius: 4px; width: 0%; transition: 0.5s; }
-        .admin-item { background: var(--card-bg); padding: 12px; border-radius: 12px; border: 1px solid var(--border-color); margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between;}
+        .admin-item { background: var(--card-bg); padding: 10px; border-radius: 12px; border: 1px solid var(--border-color); margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between;}
         
         .roleplay-chat { background: var(--card-bg); border-radius: 15px; padding: 15px; border: 1px solid var(--border-color); height: 250px; overflow-y: auto; margin-bottom: 15px; display: flex; flex-direction: column; gap: 10px;}
         .bubble { padding: 10px 15px; border-radius: 15px; max-width: 80%; font-size: 14px;}
         .bubble.bot { background: #eee; align-self: flex-start; color: #333; border-bottom-left-radius: 2px;}
         .bubble.user { background: var(--primary-color); color: white; align-self: flex-end; border-bottom-right-radius: 2px;}
-        .my-pinned-rank { background: var(--primary-color); color: white; padding: 15px; border-radius: 12px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; font-weight: bold; box-shadow: 0 4px 10px rgba(0,140,186,0.3);}
+        .my-pinned-rank { background: var(--primary-color); color: white; padding: 15px; border-radius: 12px; margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between; font-weight: bold;}
         
         .boss-hp-bar { width: 100%; height: 25px; background: #333; border-radius: 15px; overflow: hidden; border: 2px solid #e74c3c; margin-bottom: 10px;}
         .boss-hp-fill { height: 100%; background: linear-gradient(90deg, #c0392b, #e74c3c); width: 100%; transition: width 0.3s; }
@@ -228,14 +229,14 @@
     </div>
 
     <!-- 1. DASHBOARD & FEED -->
-    <div id="dashboard" class="screen active-screen" style="padding-top: 90px;">
+    <div id="dashboard" class="screen active-screen">
         <h3 style="margin: 0 0 10px 0; font-size: 15px;">📰 Bản Tin Nội Bộ</h3>
         <div class="feed-container" id="social-feed">
             <div style="text-align: center; color: #aaa; font-size: 12px;">Đang tải tin tức...</div>
         </div>
         <h3 style="margin: 0 0 15px 0; font-size: 16px;">Lộ trình rèn luyện:</h3>
         <div class="grid-container" id="topic-grid">
-            <div style="text-align: center; color: #999;">Đang đồng bộ dữ liệu từ Cloud...</div>
+            <div style="text-align: center; color: #999;">Đang đồng bộ dữ liệu...</div>
         </div>
     </div>
 
@@ -246,10 +247,7 @@
             <h2 style="margin: 0; color: var(--primary-color); font-size: 16px;" id="map-title">Chủ Đề</h2>
             <div style="width: 24px;"></div>
         </div>
-        <!-- Vùng Scroll Map -->
-        <div class="map-container" id="map-nodes-container">
-            <!-- Nodes được đổ bằng JS -->
-        </div>
+        <div class="map-container" id="map-nodes-container"></div>
     </div>
 
     <!-- MODAL CHỌN CHẾ ĐỘ -->
@@ -307,7 +305,7 @@
         <div class="match-grid" id="match-board"></div>
     </div>
 
-    <!-- 3.5 AI ROLEPLAY MIC TOGGLE (FIXED TEXT LAYOUT) -->
+    <!-- 3.5 AI ROLEPLAY MIC TOGGLE -->
     <div id="roleplay-screen" class="floating-screen">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
             <div style="font-size: 24px; cursor: pointer; color: #e74c3c;" onclick="exitFloat()">✕</div>
@@ -327,7 +325,7 @@
     </div>
 
     <!-- 4. ARENA & BOSS RAID -->
-    <div id="arena" class="screen" style="padding-top: 90px;">
+    <div id="arena" class="screen">
         <h2 style="color: var(--primary-color); margin-top: 0;">Ocean Arena ⚔️</h2>
         
         <div class="arena-card" style="background: linear-gradient(135deg, #c0392b, #8e44ad); border: 2px solid #f1c40f;" onclick="enterBossRaid()">
@@ -352,19 +350,17 @@
         </div>
     </div>
 
-    <!-- MÀN HÌNH ĐÁNH BOSS -->
+    <!-- MÀN HÌNH ĐÁNH BOSS KHỔNG LỒ -->
     <div id="boss-screen" class="floating-screen" style="background: #1e1e1e;">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
             <div style="font-size: 24px; cursor: pointer; color: #e74c3c;" onclick="exitFloat()">✕</div>
             <h3 style="margin: 0; color: #f1c40f;">Chiến Dịch Săn Boss</h3><div style="width: 24px;"></div>
         </div>
-        
         <div style="text-align: center; margin-bottom: 20px;">
             <div style="font-size: 80px; animation: wobble 1s infinite alternate;">🐉</div>
             <div style="color: white; font-weight: bold; margin-bottom: 5px;">Máu Boss: <span id="boss-hp-text">10000</span></div>
             <div class="boss-hp-bar"><div class="boss-hp-fill" id="boss-hp-fill"></div></div>
         </div>
-
         <div style="background: #2c3e50; padding: 20px; border-radius: 15px; text-align: center; margin-bottom: 20px; border: 2px solid #e74c3c;">
             <h2 id="boss-question-text" style="margin: 0; color: white; font-size: 20px;">Question</h2>
         </div>
@@ -374,7 +370,7 @@
     <!-- MODAL 1V1 -->
     <div id="arena-1v1-modal" class="modal-overlay"><div class="modal-content" style="padding: 15px;"><h3 style="margin-top: 0; color: #e74c3c;">Chọn Đối Thủ</h3><div id="arena-1v1-list" style="max-height: 300px; overflow-y: auto;"></div><button class="main-action-btn" style="margin-top: 15px; background: #95a5a6;" onclick="closeModals()">Hủy</button></div></div>
 
-    <!-- LOBBY ĐẤU ĐỘI CÓ BỘ ĐÀM -->
+    <!-- LOBBY ĐẤU ĐỘI -->
     <div id="arena-lobby-screen" class="floating-screen">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
             <div style="font-size: 16px; cursor: pointer; color: #e74c3c; font-weight: bold;" onclick="exitTeamArena()">❮ Rời</div>
@@ -412,16 +408,16 @@
     </div>
 
     <!-- 5. LEADERBOARD -->
-    <div id="leaderboard" class="screen" style="padding-top: 90px;">
+    <div id="leaderboard" class="screen">
         <h2 style="color: var(--primary-color); margin-top: 0;">Bảng Vàng Xếp Hạng 🏆</h2>
         <div id="my-pinned-rank"></div>
         <div class="leaderboard-container" id="leaderboard-list">
-            <div style="text-align: center; color: #888; padding: 20px;">Đang tải dữ liệu...</div>
+            <div style="text-align: center; color: #888; padding: 20px;">Đang tải dữ liệu xếp hạng...</div>
         </div>
     </div>
 
     <!-- 6. MEGA SHOP & GACHA AURA -->
-    <div id="shop" class="screen" style="padding-top: 90px;">
+    <div id="shop" class="screen">
         <h2 style="margin-top:0; color: var(--primary-color);">Ocean Mega Shop 🛒</h2>
         <div style="background: var(--card-bg); padding: 15px; border-radius: 12px; border: 1px solid var(--border-color); display: flex; justify-content: space-between; margin-bottom: 15px;">
             <b>Số dư EXP:</b> <span id="shop-bal" style="font-weight: 900; color: #f39c12;">⭐ 0</span>
@@ -439,7 +435,7 @@
         <div class="grid-container" style="margin-bottom: 10px;">
             <div class="topic-card" onclick="buyAura('aura-fire', 2000)">🔥 Hào Quang Lửa<br><b style="color:#e74c3c">2000 EXP</b></div>
             <div class="topic-card" onclick="buyAura('aura-lightning', 5000)">⚡ Hào Quang Sét<br><b style="color:#3498db">5000 EXP</b></div>
-            <div class="topic-card" onclick="buyAura('aura-dragon', 10000)" style="grid-column: span 2;">🐉 Thần Long Giáng Thế (Bản giới hạn)<br><b style="color:#f1c40f">10000 EXP</b></div>
+            <div class="topic-card" onclick="buyAura('aura-dragon', 10000)" style="grid-column: span 2;">🐉 Thần Long Giáng Thế<br><b style="color:#f1c40f">10000 EXP</b></div>
         </div>
 
         <h3 style="font-size: 14px; margin-bottom: 10px; margin-top:20px; border-bottom: 1px solid #ccc; padding-bottom: 5px;">🐾 Linh Vật Hộ Mệnh (12 Con Giáp)</h3>
@@ -464,7 +460,7 @@
             <div class="topic-card" onclick="buyTitle('prefix-god', '[Chúa Tể]', 5000)"><span class="name-prefix prefix-god">[Chúa Tể]</span><br><b>5000 EXP</b></div>
         </div>
 
-        <h3 style="font-size: 14px; margin-bottom: 10px; margin-top:20px; border-bottom: 1px solid #ccc; padding-bottom: 5px;">💬 Màu Khung Chat (Lobby)</h3>
+        <h3 style="font-size: 14px; margin-bottom: 10px; margin-top:20px; border-bottom: 1px solid #ccc; padding-bottom: 5px;">💬 Màu Khung Chat</h3>
         <div class="grid-container" style="margin-bottom: 10px;">
             <div class="topic-card" onclick="buyChatStyle('chat-style-lava', 2000)"><span class="chat-style-lava">Dung Nham</span><br><b>2000 EXP</b></div>
             <div class="topic-card" onclick="buyChatStyle('chat-style-ocean', 2000)"><span class="chat-style-ocean">Đại Dương</span><br><b>2000 EXP</b></div>
@@ -476,7 +472,7 @@
             <button class="main-action-btn" style="width: auto; padding: 8px 15px; margin: 0; background: white; color: #34495e;">⭐ 50</button>
         </div>
         <div class="topic-card" style="display: flex; justify-content: space-between; margin-bottom: 10px; background: linear-gradient(135deg, #9b59b6, #8e44ad); color: white; align-items: center;" onclick="rollGacha(500)">
-            <div style="text-align: left;"><div style="font-size: 24px;">🎁</div><b>Rương Ma Thuật Tiên Tộc</b><br><span style="font-size: 11px;">Tỉ lệ nổ Hào Quang, Danh Xưng hiếm</span></div>
+            <div style="text-align: left;"><div style="font-size: 24px;">🎁</div><b>Rương Tiên Tộc</b><br><span style="font-size: 11px;">Tỉ lệ nổ Hào Quang, Danh Xưng hiếm</span></div>
             <button class="main-action-btn" style="width: auto; padding: 8px 15px; margin: 0; background: white; color: #8e44ad;">⭐ 500</button>
         </div>
     </div>
@@ -493,7 +489,7 @@
     </div>
 
     <!-- 7. PROFILE & TÙY CHỈNH CÁ NHÂN -->
-    <div id="profile" class="screen" style="padding-top: 90px;">
+    <div id="profile" class="screen">
         <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
             <h2 style="margin:0; color: var(--primary-color);">Hồ Sơ Của Tôi</h2>
             <button style="background: none; border: none; font-size: 24px; cursor: pointer;" onclick="toggleDarkMode()">🌓</button>
@@ -531,7 +527,7 @@
     </div>
 
     <!-- 8. ADMIN TỐI THƯỢNG -->
-    <div id="admin" class="screen" style="padding-top: 90px;">
+    <div id="admin" class="screen">
         <h2 style="color: #c0392b; margin-top: 0;">Trạm Quản Trị Trung Tâm</h2>
         <div style="background: var(--card-bg); padding: 15px; border-radius: 12px; border: 1px solid var(--border-color); margin-bottom: 15px;">
             <h3 style="margin: 0 0 10px 0; font-size: 15px;">📢 Phát Thanh & Bản Tin</h3>
@@ -544,7 +540,7 @@
                 <h3 style="margin: 0; font-size: 15px;">👥 Quản Lý User</h3>
                 <button style="background: #27ae60; color: white; border: none; padding: 5px 10px; border-radius: 5px; font-weight: bold; cursor: pointer;" onclick="exportCSV()">📥 Xuất CSV</button>
             </div>
-            <div id="admin-user-list"></div>
+            <div class="admin-user-list-container" id="admin-user-list"></div>
         </div>
     </div>
 
@@ -553,7 +549,7 @@
     <!-- MÃ NGUỒN JAVASCRIPT MASTER FULL LOGIC      -->
     <!-- ========================================== -->
     <script>
-        // --- NGĂN CHẶN MOBILE BÔI ĐEN CHỮ ---
+        // --- NGĂN MẶC ĐỊNH MOBILE BÔI ĐEN ---
         function preventDrag(e) { e.preventDefault(); }
         let audioUnlocked = false;
         function unlockAudio() { 
@@ -565,37 +561,46 @@
         }
         document.addEventListener('touchstart', unlockAudio); document.addEventListener('click', unlockAudio);
 
-        // --- 1. DATA TỪ DATABASE.JSON (Bản Thực Tế Mở Rộng 100 Ải tự động) ---
-        let appData = {};
-        
-        fetch('main_topics.json') // Load index các file (Giả lập cấu trúc lazy load, dùng file cứng cho dễ test)
-            .catch(e => console.log("Sử dụng database.json chung"));
+        // --- 1. DATA KHỔNG LỒ FALLBACK NỘI BỘ (Chống sập khi lỗi fetch CORS) ---
+        const defaultData = {
+            "topic_hotel_quick": { "id": "topic_hotel_quick", "title": "🛎️ Giao Tiếp Nhanh Lễ Tân", "icon": "🏨", "color": "#008CBA", "nodes": [ { "type": "vocab", "questions": [ { "q_en": "Reservation", "a_vi": "Sự đặt phòng" }, { "q_en": "Passport", "a_vi": "Hộ chiếu" } ] }, { "type": "sentence", "questions": [ { "q_en": "May I have your passport, please?", "q_vi": "Khách: Chào bạn.", "a_en": "Here it is.", "a_vi": "Tôi có thể mượn hộ chiếu của quý khách không?" } ] }, { "type": "boss", "questions": [ { "q_en": "Welcome to Ocean Dunes! How can I help you?", "q_vi": "(Boss Lễ Tân) Chào mừng quý khách!", "a_en": "I have a reservation.", "a_vi": "Tôi có đặt phòng trước." } ] } ] },
+            "topic_directions": { "id": "topic_directions", "title": "🗺️ Chỉ Đường Khách Sạn", "icon": "🧭", "color": "#27ae60", "nodes": [ { "type": "vocab", "questions": [ { "q_en": "Straight", "a_vi": "Đi thẳng" }, { "q_en": "Turn left", "a_vi": "Rẽ trái" } ] }, { "type": "sentence", "questions": [ { "q_en": "Go straight and turn left at the corner.", "q_vi": "Khách: Đi đường nào?", "a_en": "Thank you.", "a_vi": "Đi thẳng và rẽ trái ở góc đường." } ] }, { "type": "boss", "questions": [ { "q_en": "Excuse me, where is the coffee shop?", "q_vi": "(Boss Lạc Đường) Xin lỗi, quán cafe ở đâu?", "a_en": "It is on the second floor.", "a_vi": "Nó nằm ở tầng hai." } ] } ] },
+            "topic_meeting": { "id": "topic_meeting", "title": "📊 Báo Cáo Cuộc Họp", "icon": "📈", "color": "#8e44ad", "nodes": [ { "type": "vocab", "questions": [ { "q_en": "Report", "a_vi": "Báo cáo" }, { "q_en": "Revenue", "a_vi": "Doanh thu" } ] }, { "type": "sentence", "questions": [ { "q_en": "Our revenue has increased by 10%.", "q_vi": "Sếp: Doanh thu sao rồi?", "a_en": "That is great news.", "a_vi": "Doanh thu của chúng ta đã tăng 10%." } ] }, { "type": "boss", "questions": [ { "q_en": "What is the main issue this week?", "q_vi": "(Boss Sếp) Vấn đề chính tuần này là gì?", "a_en": "We need to improve customer service.", "a_vi": "Chúng ta cần cải thiện dịch vụ khách hàng." } ] } ] },
+            "topic_pickup": { "id": "topic_pickup", "title": "💘 Cua gái bằng tiếng anh (Mr. Vương yêu cầu)", "icon": "🌹", "color": "#e84393", "nodes": [ { "type": "vocab", "questions": [ { "q_en": "Gorgeous", "a_vi": "Tuyệt đẹp" }, { "q_en": "Destiny", "a_vi": "Định mệnh" } ] }, { "type": "sentence", "questions": [ { "q_en": "Are you on the menu? Because you're exactly what I'm craving.", "q_vi": "Crush: Anh đang nhìn gì vậy?", "a_en": "You are so sweet.", "a_vi": "Em có trong menu không? Vì em chính xác là những gì anh thèm." } ] }, { "type": "boss", "questions": [ { "q_en": "Are you a magician?", "q_vi": "(Boss Crush) Anh là ảo thuật gia à?", "a_en": "Because whenever I look at you, everyone else disappears.", "a_vi": "Vì mỗi khi nhìn em, mọi thứ khác đều biến mất." } ] } ] },
+            "topic_fb": { "id": "topic_fb", "title": "☕ F&B Nhà Hàng Cafe", "icon": "🍹", "color": "#d35400", "nodes": [ { "type": "vocab", "questions": [ { "q_en": "Beverage", "a_vi": "Đồ uống" }, { "q_en": "Appetizer", "a_vi": "Món khai vị" } ] }, { "type": "sentence", "questions": [ { "q_en": "What would you like to drink?", "q_vi": "Khách đang xem menu", "a_en": "I want a cup of coffee.", "a_vi": "Quý khách muốn uống gì?" } ] }, { "type": "boss", "questions": [ { "q_en": "Can I have the bill, please?", "q_vi": "(Boss Bàn 5) Cho tôi xin hóa đơn.", "a_en": "Yes, I will bring it right away.", "a_vi": "Vâng, tôi sẽ mang ra ngay." } ] } ] },
+            "topic_housekeeping": { "id": "topic_housekeeping", "title": "🛏️ Buồng Phòng", "icon": "🧹", "color": "#16a085", "nodes": [ { "type": "vocab", "questions": [ { "q_en": "Housekeeping", "a_vi": "Dọn phòng" }, { "q_en": "Towel", "a_vi": "Khăn tắm" } ] }, { "type": "sentence", "questions": [ { "q_en": "Please make up my room.", "q_vi": "Lễ tân: Cần tôi giúp gì không?", "a_en": "Sure, right away.", "a_vi": "Vui lòng dọn phòng giúp tôi." } ] }, { "type": "boss", "questions": [ { "q_en": "The air conditioner is not working.", "q_vi": "(Boss Phàn Nàn) Máy lạnh không hoạt động.", "a_en": "I will send a technician immediately.", "a_vi": "Tôi sẽ cử kỹ thuật viên lên ngay." } ] } ] },
+            "topic_it": { "id": "topic_it", "title": "💻 IT & Hệ Thống", "icon": "🖥️", "color": "#2c3e50", "nodes": [ { "type": "vocab", "questions": [ { "q_en": "Network", "a_vi": "Mạng" }, { "q_en": "Reboot", "a_vi": "Khởi động lại" } ] }, { "type": "sentence", "questions": [ { "q_en": "Please restart your computer.", "q_vi": "Nhân viên: Máy tôi bị đơ.", "a_en": "Okay, I will do it.", "a_vi": "Vui lòng khởi động lại máy tính." } ] }, { "type": "boss", "questions": [ { "q_en": "I cannot connect to the internet.", "q_vi": "(Boss Sự Cố) Tôi không vào mạng được.", "a_en": "Let me check the router for you.", "a_vi": "Để tôi kiểm tra cục phát mạng cho bạn." } ] } ] },
+            "topic_emergency": { "id": "topic_emergency", "title": "🚨 Sự Cố Khẩn Cấp", "icon": "🚑", "color": "#e74c3c", "nodes": [ { "type": "vocab", "questions": [ { "q_en": "Emergency", "a_vi": "Khẩn cấp" }, { "q_en": "Calm down", "a_vi": "Bình tĩnh" } ] }, { "type": "sentence", "questions": [ { "q_en": "Please stay calm.", "q_vi": "Khách: Ôi chúa ơi!", "a_en": "Okay, I will.", "a_vi": "Vui lòng giữ bình tĩnh." } ] }, { "type": "boss", "questions": [ { "q_en": "Help! There is a fire!", "q_vi": "(Boss Cháy) Cứu với! Có cháy!", "a_en": "Please use the emergency exit.", "a_vi": "Vui lòng sử dụng lối thoát hiểm." } ] } ] },
+            "topic_upselling": { "id": "topic_upselling", "title": "💎 Bán Chéo Dịch Vụ", "icon": "🛍️", "color": "#f39c12", "nodes": [ { "type": "vocab", "questions": [ { "q_en": "Upgrade", "a_vi": "Nâng cấp" }, { "q_en": "Spa", "a_vi": "Dịch vụ Spa" } ] }, { "type": "sentence", "questions": [ { "q_en": "Would you like to upgrade to a sea view room?", "q_vi": "Khách: Phòng này hơi nhỏ.", "a_en": "How much is it?", "a_vi": "Quý khách có muốn nâng cấp lên phòng hướng biển không?" } ] }, { "type": "boss", "questions": [ { "q_en": "What activities do you have here?", "q_vi": "(Boss Khách Hỏi) Ở đây có hoạt động gì?", "a_en": "You can try our massage service.", "a_vi": "Quý khách có thể thử dịch vụ massage." } ] } ] },
+            "topic_checkout": { "id": "topic_checkout", "title": "👋 Tiễn Khách Check-out", "icon": "🚕", "color": "#34495e", "nodes": [ { "type": "vocab", "questions": [ { "q_en": "Checkout", "a_vi": "Trả phòng" }, { "q_en": "Luggage", "a_vi": "Hành lý" } ] }, { "type": "sentence", "questions": [ { "q_en": "How was your stay?", "q_vi": "Lễ tân giao chìa khóa", "a_en": "It was wonderful.", "a_vi": "Kỳ nghỉ của quý khách thế nào?" } ] }, { "type": "boss", "questions": [ { "q_en": "I am ready to check out.", "q_vi": "(Boss Check-out) Tôi sẵn sàng trả phòng rồi.", "a_en": "Hope to see you again soon.", "a_vi": "Hy vọng sớm gặp lại quý khách." } ] } ] }
+        };
 
-        fetch('database.json')
-            .then(response => response.json())
-            .then(data => { 
-                appData = data; 
-                // THUẬT TOÁN KÉO DÀI 100 Ô (TOP-DOWN)
-                Object.values(appData).forEach(topic => {
-                    if(topic.nodes && topic.nodes.length > 0) {
-                        let originalNodes = [...topic.nodes];
-                        let currentLen = originalNodes.length;
-                        let needed = 100 - currentLen;
-                        
-                        for(let i=0; i<needed; i++) {
-                            // Copy sâu (Deep copy) để tránh lỗi tham chiếu
-                            let clonedNode = JSON.parse(JSON.stringify(originalNodes[i % currentLen]));
-                            clonedNode.id = currentLen + i + 1;
-                            topic.nodes.push(clonedNode);
-                        }
-                        
-                        // Gán ải 10, 20, 30... 100 thành Boss Stage
-                        for(let i=9; i<100; i+=10) { topic.nodes[i].type = 'boss'; }
+        let appData = defaultData; // Gán data nội bộ trước để chống sập
+        
+        function processData() {
+            Object.values(appData).forEach(topic => {
+                if(topic.nodes && topic.nodes.length > 0) {
+                    let originalNodes = [...topic.nodes];
+                    let currentLen = originalNodes.length;
+                    let needed = 100 - currentLen;
+                    
+                    for(let i=0; i<needed; i++) {
+                        let clonedNode = JSON.parse(JSON.stringify(originalNodes[i % currentLen]));
+                        clonedNode.id = currentLen + i + 1;
+                        topic.nodes.push(clonedNode);
                     }
-                });
-                if(currentUser) renderDashboard(); 
-            })
-            .catch(error => console.error("Lỗi tải database.json:", error));
+                    for(let i=9; i<100; i+=10) { topic.nodes[i].type = 'boss'; }
+                }
+            });
+            if(currentUser) renderDashboard();
+        }
+
+        // Tải File nếu có, không có thì xài data nội bộ
+        fetch('database.json')
+            .then(res => res.json())
+            .then(data => { if(Object.keys(data).length > 0) appData = data; processData(); })
+            .catch(e => { console.log("Lỗi hoặc không có server, sử dụng Data Nội bộ."); processData(); });
+
 
         const sfxCorrect = new Audio('data:audio/wav;base64,UklGRlIAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YTEAAAAAEB8fICAgISEhIyMjJCQkJSUlJiYmJycnKCgoKSkpKioqKysrLCwsLS0tLi4u');
         const sfxWrong = new Audio('data:audio/wav;base64,UklGRlIAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YTEAAAAAEB8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f'); 
@@ -802,7 +807,31 @@
         function changeExp(amt) { myExp += amt; db.collection("users").doc(currentUser.uid).update({points: myExp}); updateUI(); }
         function changeHearts(amt) { myHearts += amt; if(myHearts>5) myHearts=5; if(myHearts<0) myHearts=0; db.collection("users").doc(currentUser.uid).update({hearts: myHearts}); updateUI(); if(myHearts===0) { alert("Hết trái tim! Mua thêm trong Shop."); exitFloat(); } }
 
-        // --- 7. BẢN ĐỒ HỌC TẬP (LEARNING MAP) DUOLINGO STYLE - ĐÃ FIX TỪ TRÊN XUỐNG ---
+        // --- 7. SHOP GACHA ---
+        function buyItem(item, price) {
+            if(myExp >= price) {
+                if(item==='heart' && myHearts<5) { changeExp(-price); changeHearts(5); alert("Hồi phục Tim thành công!"); addSocialFeed('🛒', `<b>${currentUser.displayName}</b> vừa ghé Ocean Shop nạp máu.`);}
+                else if(item==='shield') { changeExp(-price); alert("Đã trang bị Khiên bảo vệ chuỗi!"); }
+                else if(item==='heart') alert("Tim đã đầy!");
+            } else alert("Không đủ EXP.");
+        }
+        function rollGacha(cost) {
+            if(myExp >= cost) {
+                changeExp(-cost); const random = Math.random();
+                if(cost === 50) {
+                    if(random < 0.2) { alert("📦 Mở ra +100 EXP!"); changeExp(100); }
+                    else if(random < 0.6) { alert("📦 Mở ra Trái Tim Hồi Sinh!"); changeHearts(3); }
+                    else alert("📦 Hộp rỗng! Chúc may mắn lần sau.");
+                } else {
+                    if(random < 0.1) { alert("🎁 TUYỆT ĐỈNH! Nhận Hào Quang Sét!"); myAura = 'aura-lightning'; saveProfile(); updateUI(); }
+                    else if(random < 0.3) { alert("🎁 Trúng đậm! Nhận +1000 EXP!"); changeExp(1000); }
+                    else if(random < 0.6) { alert("🎁 Nhận được Khung Vàng!"); myFrame = 'frame-gold'; saveProfile(); updateUI(); }
+                    else alert("🎁 Hộp rỗng! Chúc may mắn lần sau.");
+                }
+            } else alert("Không đủ EXP để quay.");
+        }
+
+        // --- 8. BẢN ĐỒ HỌC TẬP (LEARNING MAP) DUOLINGO STYLE - ĐÃ FIX TỪ TRÊN XUỐNG ---
         function renderDashboard() {
             const grid = document.getElementById('topic-grid'); grid.innerHTML = '';
             if(Object.keys(appData).length === 0) return grid.innerHTML = '<div style="color:#888;">Chưa tải được dữ liệu...</div>';
@@ -874,24 +903,25 @@
             if(mode==='roleplay') { document.getElementById('roleplay-screen').style.display='block'; initRP(); }
         }
 
-        // --- 9. FLASHCARD & MIC TOGGLE (CHỐNG BÔI ĐEN VÀ LAYOUT CÂU HỎI Q/A) ---
+        // --- 9. FLASHCARD & MIC TOGGLE (CHỐNG BÔI ĐEN VÀ LAYOUT CÂU HỎI Q/A CHUẨN) ---
         let voices = [];
         function populateVoiceList() { voices = window.speechSynthesis.getVoices(); const voiceSelect = document.getElementById('voice-select'); voiceSelect.innerHTML = ''; voices.forEach((voice, i) => { if(voice.lang.includes('en')) { const option = document.createElement('option'); option.textContent = `${voice.name} (${voice.lang})`; option.value = i; voiceSelect.appendChild(option); } }); }
         populateVoiceList(); if (speechSynthesis.onvoiceschanged !== undefined) { speechSynthesis.onvoiceschanged = populateVoiceList; }
 
         function loadL() {
+            if(!activeNode || !activeNode.questions || activeNode.questions.length === 0) return alert("Dữ liệu bài học đang trống!");
             let l = activeNode.questions[cIdx]; 
             
-            // XỬ LÝ LAYOUT: TỪ VỰNG TRÊN ANH - DƯỚI VIỆT. CÂU DÀI TRÊN Q - DƯỚI A
+            // XỬ LÝ LAYOUT CHUẨN: TỪ VỰNG TRÊN ANH - DƯỚI VIỆT. CÂU DÀI TRÊN Q - DƯỚI A
             if(activeNode.type === 'vocab') {
-                document.getElementById('q-en').innerText = l.q_en; 
+                document.getElementById('q-en').innerText = l.q_en || ""; 
                 document.getElementById('q-vi').innerText = ""; 
-                document.getElementById('a-en').innerText = l.a_vi; 
+                document.getElementById('a-en').innerText = l.a_vi || ""; 
                 document.getElementById('a-vi').innerText = "";
             } else {
-                document.getElementById('q-en').innerText = l.q_en; 
+                document.getElementById('q-en').innerText = l.q_en || ""; 
                 document.getElementById('q-vi').innerText = l.q_vi || ""; 
-                document.getElementById('a-en').innerText = l.a_en; 
+                document.getElementById('a-en').innerText = l.a_en || ""; 
                 document.getElementById('a-vi').innerText = l.a_vi || "";
             }
 
@@ -968,7 +998,7 @@
             let ls = shuffle(pool).slice(0,5); 
             let enItems = []; let viItems = [];
             ls.forEach((l,i) => {
-                let textEn = activeNode.type === 'vocab' ? l.q_en : l.q_en; // Có thể nối câu dài
+                let textEn = activeNode.type === 'vocab' ? l.q_en : l.q_en; 
                 let textVi = activeNode.type === 'vocab' ? l.a_vi : l.a_vi;
                 
                 let dE = document.createElement('div'); dE.className='match-item'; dE.innerText=textEn; dE.dataset.i=i; dE.dataset.t='en'; dE.onclick=()=>sm(dE); enItems.push(dE);
@@ -1001,7 +1031,7 @@
         let isRpRecording = false;
         function initRP() { 
             let l = activeNode.questions[0];
-            document.getElementById('rp-boss-text').innerText = l.q_en;
+            document.getElementById('rp-boss-text').innerText = l.q_en || "Welcome to Ocean Dunes!";
             document.getElementById('rp-chat').innerHTML = `<div class="bubble bot" style="background:transparent; color:#999; font-size:11px;">Gợi ý: ${l.a_en}</div>`; 
         }
         function toggleRpRec() {
@@ -1031,6 +1061,9 @@
         // --- 12. WORLD BOSS RAID ---
         let bossHpUnsub = null; let bossCurrentHp = 10000;
         function enterBossRaid() {
+            let allQA = []; Object.values(appData).forEach(t => { if(t.nodes){ t.nodes.forEach(n => { if(n.questions) n.questions.forEach(q => allQA.push(q)); }); } }); 
+            if(allQA.length === 0) return alert("Dữ liệu đang tải, vui lòng thử lại sau!");
+
             document.getElementById('boss-screen').style.display = 'block';
             if(bossHpUnsub) bossHpUnsub();
             bossHpUnsub = db.collection('world_boss').doc('boss_1').onSnapshot(doc => {
@@ -1042,11 +1075,10 @@
                     if(bossCurrentHp <= 0) { alert("🎉 BOSS ĐÃ BỊ TIÊU DIỆT! Toàn công ty nhận thưởng X2 EXP!"); exitFloat(); }
                 }
             });
-            renderBossQuestion();
+            renderBossQuestion(allQA);
         }
 
-        function renderBossQuestion() {
-            let allQA = []; Object.values(appData).forEach(t => { if(t.nodes){ t.nodes.forEach(n => { n.questions.forEach(q => allQA.push(q)); }); } }); 
+        function renderBossQuestion(allQA) {
             const q = shuffle(allQA)[0]; document.getElementById('boss-question-text').innerText = q.q_en;
             let opts = shuffle(allQA.map(x=> x.a_en || x.a_vi).filter(a=>a!==(q.a_en || q.a_vi))).slice(0,3); opts.push(q.a_en || q.a_vi); opts = shuffle(opts);
             const cont = document.getElementById('boss-options-container'); cont.innerHTML='';
@@ -1057,7 +1089,7 @@
                         try{ sfxCorrect.play(); }catch(e){} btn.classList.add('correct'); changeExp(10);
                         if(bossCurrentHp > 0) db.collection('world_boss').doc('boss_1').update({ hp: firebase.firestore.FieldValue.increment(-50) });
                     } else { try{ sfxWrong.play(); }catch(e){} btn.classList.add('wrong'); }
-                    document.querySelectorAll('.quiz-option').forEach(b=>b.onclick=null); setTimeout(renderBossQuestion, 500);
+                    document.querySelectorAll('.quiz-option').forEach(b=>b.onclick=null); setTimeout(()=>renderBossQuestion(allQA), 500);
                 }; cont.appendChild(btn);
             });
         }
@@ -1140,7 +1172,8 @@
         function exitTeamArena() { if(unsubTeam) unsubTeam(); if(unsubChat) unsubChat(); if(teamRoomId) db.collection('arena_rooms').doc(teamRoomId).update({ [`players.${currentUser.uid}`]: firebase.firestore.FieldValue.delete() }); exitFloat(); teamRoomId = null; }
         
         function startTeamMatch() { 
-            let allQA = []; Object.values(appData).forEach(t => { if(t.nodes){ t.nodes.forEach(n => { n.questions.forEach(q => allQA.push(q)); }); } }); 
+            let allQA = []; Object.values(appData).forEach(t => { if(t.nodes){ t.nodes.forEach(n => { if(n.questions) n.questions.forEach(q => allQA.push(q)); }); } }); 
+            if(allQA.length === 0) return alert("Dữ liệu đang tải, vui lòng thử lại sau!");
             db.collection('arena_rooms').doc(teamRoomId).update({ status: 'playing', questions: shuffle(allQA).slice(0, 15) }).catch(e => alert("Lỗi tải đề!")); 
         }
 
@@ -1148,7 +1181,8 @@
         function startArenaQuizEngine(is1v1, teamQuestions = null) {
             if(teamQuestions) { arenaQuestions = teamQuestions; } 
             else { 
-                let allQA = []; Object.values(appData).forEach(t => { if(t.nodes){ t.nodes.forEach(n => { n.questions.forEach(q => allQA.push(q)); }); } }); 
+                let allQA = []; Object.values(appData).forEach(t => { if(t.nodes){ t.nodes.forEach(n => { if(n.questions) n.questions.forEach(q => allQA.push(q)); }); } }); 
+                if(allQA.length === 0) return alert("Dữ liệu đang tải, vui lòng thử lại sau!");
                 arenaQuestions = shuffle(allQA).slice(0, 15); 
             }
             
@@ -1215,7 +1249,7 @@
             });
         }
 
-        // --- 15. LEADERBOARD CÓ HÀO QUANG VÀ DANH XƯNG CỐ ĐỊNH LAYOUT MỚI NHẤT ---
+        // --- 14. LEADERBOARD CÓ HÀO QUANG VÀ DANH XƯNG ---
         function loadLeaderboard() {
             db.collection("users").onSnapshot(snap => {
                 const list = document.getElementById('leaderboard-list'); if(!list) return; list.innerHTML = ''; 
@@ -1241,7 +1275,7 @@
             });
         }
 
-        // --- 16. ADMIN PANEL ---
+        // --- 15. ADMIN PANEL ---
         function addExpAdmin(uid, name, currentExp) { let amt = prompt(`Cộng EXP cho ${name}:`, "100"); amt = parseInt(amt); if(!isNaN(amt) && amt !== 0) { db.collection('users').doc(uid).update({points: currentExp + amt}); } }
         function clearFeedAdmin() { if(confirm("Xóa toàn bộ lịch sử Bản Tin?")) { db.collection('feed').get().then(snap => { snap.forEach(doc => doc.ref.delete()); alert("Đã xóa sạch Bản Tin!"); }); } }
 
@@ -1271,7 +1305,7 @@
             const link = document.createElement("a"); link.setAttribute("href", encodeURI(csv)); link.setAttribute("download", "Ostock_NhanSu.csv"); document.body.appendChild(link); link.click(); document.body.removeChild(link);
         }
 
-        // --- 17. CHỨNG CHỈ CANVAS ---
+        // --- 16. CHỨNG CHỈ CANVAS ---
         function generateCertificate() {
             if(myExp <= 800) return;
             const canvas = document.createElement('canvas'); canvas.width = 800; canvas.height = 560; const ctx = canvas.getContext('2d');
