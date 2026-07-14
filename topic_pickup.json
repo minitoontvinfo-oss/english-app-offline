@@ -1,0 +1,629 @@
+{
+  "id": "topic_pickup",
+  "title": "💘 Cua gái tiếng anh (Mr. Vương)",
+  "icon": "🌹",
+  "color": "#e84393",
+  "nodes": [
+    {
+      "id": 1,
+      "type": "vocab",
+      "description": "Level 1: Từ vựng Thả thính cơ bản",
+      "questions": [
+        { "q_en": "Gorgeous", "a_vi": "Tuyệt đẹp / Lộng lẫy" },
+        { "q_en": "Handsome", "a_vi": "Đẹp trai" },
+        { "q_en": "Attractive", "a_vi": "Hấp dẫn / Cuốn hút" },
+        { "q_en": "Smile", "a_vi": "Nụ cười" },
+        { "q_en": "Eyes", "a_vi": "Đôi mắt" },
+        { "q_en": "Heart", "a_vi": "Trái tim" },
+        { "q_en": "Crush", "a_vi": "Người thầm thương trộm nhớ" },
+        { "q_en": "Flirt", "a_vi": "Tán tỉnh / Thả thính" },
+        { "q_en": "Date", "a_vi": "Cuộc hẹn hò" },
+        { "q_en": "Compliment", "a_vi": "Lời khen ngợi" },
+        { "q_en": "Charming", "a_vi": "Duyên dáng / Quyến rũ" },
+        { "q_en": "Sweet", "a_vi": "Ngọt ngào" },
+        { "q_en": "Destiny", "a_vi": "Định mệnh" },
+        { "q_en": "Soulmate", "a_vi": "Bạn tâm giao / Tri kỷ" },
+        { "q_en": "Admire", "a_vi": "Chiêm ngưỡng / Ngưỡng mộ" },
+        { "q_en": "Impress", "a_vi": "Gây ấn tượng" },
+        { "q_en": "Spark", "a_vi": "Tia lửa (cảm xúc)" },
+        { "q_en": "Connection", "a_vi": "Sự kết nối / Đồng điệu" },
+        { "q_en": "Chemistry", "a_vi": "Phản ứng hóa học (tình cảm)" },
+        { "q_en": "Jealous", "a_vi": "Ghen tị" }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "vocab",
+      "description": "Level 2: Từ vựng Cảm xúc & Hẹn hò nâng cao",
+      "questions": [
+        { "q_en": "Fascinating", "a_vi": "Lôi cuốn / Hấp dẫn" },
+        { "q_en": "Breathtaking", "a_vi": "Đẹp đến nghẹt thở" },
+        { "q_en": "Mesmerizing", "a_vi": "Mê hoặc / Hút hồn" },
+        { "q_en": "Affection", "a_vi": "Tình cảm / Sự yêu mến" },
+        { "q_en": "Passion", "a_vi": "Sự đam mê" },
+        { "q_en": "Romance", "a_vi": "Sự lãng mạn" },
+        { "q_en": "Intimacy", "a_vi": "Sự thân mật / Gần gũi" },
+        { "q_en": "Irresistible", "a_vi": "Không thể cưỡng lại được" },
+        { "q_en": "Captivate", "a_vi": "Làm say đắm" },
+        { "q_en": "Adorable", "a_vi": "Đáng yêu" },
+        { "q_en": "Magnetic", "a_vi": "Có sức hút (như nam châm)" },
+        { "q_en": "Speechless", "a_vi": "Cạn lời / Không thốt nên lời" },
+        { "q_en": "Butterfly", "a_vi": "Bướm (Cảm giác bồn chồn khi yêu)" },
+        { "q_en": "Goosebumps", "a_vi": "Nổi da gà (vì cảm xúc)" },
+        { "q_en": "Hug", "a_vi": "Cái ôm" },
+        { "q_en": "Kiss", "a_vi": "Nụ hôn" },
+        { "q_en": "Cuddle", "a_vi": "Ôm ấp / Vuốt ve" },
+        { "q_en": "Precious", "a_vi": "Quý giá" },
+        { "q_en": "Cherish", "a_vi": "Trân trọng" },
+        { "q_en": "Forever", "a_vi": "Mãi mãi" }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "sentence",
+      "description": "Level 3: Mẫu câu Mở lời & Thả thính nhẹ nhàng",
+      "questions": [
+        { "q_en": "Hi, do I know you?", "q_vi": "Bắt chuyện ở quán cafe", "a_en": "No, but I would love to.", "a_vi": "Chưa, nhưng anh rất muốn làm quen với em." },
+        { "q_en": "Are you lost?", "q_vi": "Khi Crush thấy bạn nhìn chằm chằm", "a_en": "Yes, I just got lost in your eyes.", "a_vi": "Ừ, anh vừa bị lạc trong ánh mắt của em." },
+        { "q_en": "What do you want?", "q_vi": "Lấy cớ xin số điện thoại", "a_en": "I think there is something wrong with my phone. It doesn't have your number in it.", "a_vi": "Anh nghĩ điện thoại anh bị hỏng rồi. Nó không có số của em trong đó." },
+        { "q_en": "Why are you looking at me?", "q_vi": "Khi Crush thắc mắc", "a_en": "I am just admiring your beautiful smile.", "a_vi": "Anh chỉ đang chiêm ngưỡng nụ cười tuyệt đẹp của em thôi." },
+        { "q_en": "Did you drop something?", "q_vi": "Mượn cớ rớt đồ", "a_en": "Yes, my jaw, when I first saw you.", "a_vi": "Có, hàm của anh đã rớt xuống khi lần đầu nhìn thấy em." },
+        { "q_en": "Nice to meet you.", "q_vi": "Lúc mới làm quen", "a_en": "The pleasure is all mine, gorgeous.", "a_vi": "Đó là vinh hạnh của anh, người đẹp." },
+        { "q_en": "It is so hot today.", "q_vi": "Đánh giá thời tiết", "a_en": "Are you sure it's the weather, or is it just you?", "a_vi": "Em có chắc là do thời tiết không, hay là do em quá nóng bỏng?" },
+        { "q_en": "I am so tired today.", "q_vi": "Khi Crush than mệt", "a_en": "Because you have been running through my mind all day.", "a_vi": "Vì em đã chạy quanh tâm trí anh cả ngày rồi." },
+        { "q_en": "Are you searching for something?", "q_vi": "Hỏi đùa về Google", "a_en": "Is your name Google? Because you have everything I am searching for.", "a_vi": "Em tên là Google à? Vì em có mọi thứ anh đang tìm kiếm." },
+        { "q_en": "Do you need help?", "q_vi": "Khi Crush ngỏ ý giúp", "a_en": "Yes, I need someone to hold my hand.", "a_vi": "Có, anh cần một người nắm tay anh." },
+        { "q_en": "Do you like my dress?", "q_vi": "Khi Crush diện đồ đẹp", "a_en": "It looks amazing, but it would look better if you went on a date with me.", "a_vi": "Nó trông tuyệt lắm, nhưng sẽ tuyệt hơn nếu em đi hẹn hò với anh." },
+        { "q_en": "Can you take a picture of me?", "q_vi": "Khi Crush nhờ chụp ảnh", "a_en": "Only if I can be in the frame with you.", "a_vi": "Chỉ khi anh được ở trong khung hình cùng em thôi." },
+        { "q_en": "Do you believe in magic?", "q_vi": "Nói về phép thuật", "a_en": "I do now, because whenever I look at you, everyone else disappears.", "a_vi": "Bây giờ thì có, vì mỗi khi anh nhìn em, mọi người khác đều biến mất." },
+        { "q_en": "I like sweet things.", "q_vi": "Khi Crush thích đồ ngọt", "a_en": "Then you must really like yourself.", "a_vi": "Vậy chắc hẳn em rất thích bản thân mình." },
+        { "q_en": "Do you have the time?", "q_vi": "Hỏi giờ", "a_en": "I have all the time in the world for you.", "a_vi": "Anh có tất cả thời gian trên thế giới này dành cho em." },
+        { "q_en": "Is there Wi-Fi here?", "q_vi": "Hỏi về mạng Wi-Fi", "a_en": "I don't know, but I'm definitely feeling a connection.", "a_vi": "Anh không biết, nhưng anh chắc chắn đang cảm thấy có một sự kết nối." },
+        { "q_en": "I have to go now.", "q_vi": "Lúc chia tay", "a_en": "Can I borrow a kiss before you leave?", "a_vi": "Anh có thể mượn một nụ hôn trước khi em đi không?" },
+        { "q_en": "Do you have a map?", "q_vi": "Hỏi về bản đồ", "a_en": "I keep getting lost in your eyes.", "a_vi": "Anh cứ bị lạc trong mắt em mãi." },
+        { "q_en": "What should I drink?", "q_vi": "Crush xin lời khuyên đồ uống", "a_en": "Something sweet, just like you.", "a_vi": "Thứ gì đó ngọt ngào, giống hệt như em vậy." },
+        { "q_en": "I have a boyfriend.", "q_vi": "Khi bị từ chối khéo", "a_en": "He is a very lucky guy.", "a_vi": "Anh ta quả là một chàng trai rất may mắn." }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "sentence",
+      "description": "Level 4: Thả thính Trình độ cao & Mời Hẹn hò",
+      "questions": [
+        { "q_en": "Are you free tonight?", "q_vi": "Khi Crush hỏi rảnh không", "a_en": "I would love to take you out for dinner.", "a_vi": "Anh rất muốn đưa em đi ăn tối." },
+        { "q_en": "I just finished a difficult book.", "q_vi": "Khen ngợi sự thông minh", "a_en": "I love how smart and beautiful you are at the same time.", "a_vi": "Anh yêu cái cách em vừa thông minh lại vừa xinh đẹp cùng một lúc." },
+        { "q_en": "You are so funny.", "q_vi": "Khi Crush cười vì trò đùa của bạn", "a_en": "Making you smile is my favorite thing to do.", "a_vi": "Làm em cười là điều anh thích làm nhất." },
+        { "q_en": "What are your plans?", "q_vi": "Nói về tương lai", "a_en": "My only plan is to make you happy.", "a_vi": "Kế hoạch duy nhất của anh là làm cho em hạnh phúc." },
+        { "q_en": "I had a bad day.", "q_vi": "Thể hiện sự quan tâm khi Crush buồn", "a_en": "Let me buy you a coffee to make it better.", "a_vi": "Để anh mua cho em một ly cà phê cho đỡ hơn nhé." },
+        { "q_en": "You are staring at me again.", "q_vi": "Tán tỉnh sâu sắc", "a_en": "I can't help it, you look absolutely breathtaking.", "a_vi": "Anh không thể cưỡng lại được, em trông đẹp đến nghẹt thở." },
+        { "q_en": "What is your favorite hobby?", "q_vi": "Hỏi về sở thích", "a_en": "Right now, my favorite hobby is talking to you.", "a_vi": "Ngay lúc này, sở thích của anh là nói chuyện với em." },
+        { "q_en": "It is getting late.", "q_vi": "Tán tỉnh lúc muộn", "a_en": "I wish this night would never end.", "a_vi": "Anh ước gì đêm nay không bao giờ kết thúc." },
+        { "q_en": "How do I look?", "q_vi": "Khi Crush thử đồ mới", "a_en": "You look like an angel who just fell from heaven.", "a_vi": "Em trông như một thiên thần vừa rơi xuống từ thiên đường." },
+        { "q_en": "I want to watch a movie.", "q_vi": "Mời đi xem phim", "a_en": "Let's go together. It is a date.", "a_vi": "Chúng ta đi cùng nhau nhé. Đó là một buổi hẹn hò." },
+        { "q_en": "My eyes are tired.", "q_vi": "Khen đôi mắt", "a_en": "But they are the most mesmerizing eyes I have ever seen.", "a_vi": "Nhưng chúng là đôi mắt hút hồn nhất mà anh từng thấy." },
+        { "q_en": "I made a mistake.", "q_vi": "Nói về sự hoàn hảo", "a_en": "To me, everything you do is perfect.", "a_vi": "Đối với anh, mọi thứ em làm đều hoàn hảo." },
+        { "q_en": "Stop flirting with me.", "q_vi": "Chọc ghẹo khi bị bóc mẽ", "a_en": "I am not flirting, I am just being extra friendly to someone attractive.", "a_vi": "Anh không thả thính, anh chỉ đang cực kỳ thân thiện với một người hấp dẫn thôi." },
+        { "q_en": "I am not easily impressed.", "q_vi": "Khi Crush lạnh lùng", "a_en": "Challenge accepted. Give me one chance.", "a_vi": "Thử thách được chấp nhận. Cho anh một cơ hội nhé." },
+        { "q_en": "Do you believe in soulmates?", "q_vi": "Hỏi về tình yêu đích thực", "a_en": "I didn't until I met you.", "a_vi": "Anh đã không tin cho đến khi anh gặp em." },
+        { "q_en": "You are very kind.", "q_vi": "Bày tỏ cảm xúc đặc biệt", "a_en": "I am only kind because you are so special to me.", "a_vi": "Anh chỉ tử tế vì em rất đặc biệt với anh." },
+        { "q_en": "Are you serious?", "q_vi": "Khẳng định tình cảm", "a_en": "I have never been more serious in my life.", "a_vi": "Anh chưa bao giờ nghiêm túc hơn thế trong đời." },
+        { "q_en": "My hands are cold.", "q_vi": "Xin nắm tay", "a_en": "Here, let me hold them to keep you warm.", "a_vi": "Đây, để anh nắm lấy chúng cho em ấm nhé." },
+        { "q_en": "I love this song.", "q_vi": "Mời khiêu vũ", "a_en": "May I have this dance with the most beautiful girl in the room?", "a_vi": "Anh có thể khiêu vũ với cô gái xinh đẹp nhất phòng không?" },
+        { "q_en": "I should go to sleep.", "q_vi": "Chốt hạ tin nhắn đêm", "a_en": "Sweet dreams. I will text you tomorrow morning.", "a_vi": "Chúc em ngủ ngon. Anh sẽ nhắn tin cho em vào sáng mai." }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "boss",
+      "description": "Level 5: BOSS Cua Gái (Thực Chiến Bắt Chuyện & Chốt Hẹn Hò Tại Quán Bar)",
+      "questions": [
+        { "q_en": "Hi, this seat is empty. Do you mind if I sit here?", "q_vi": "(Crush Bar) Chào anh, ghế này trống. Anh có phiền nếu tôi ngồi đây không?", "a_en": "Be my guest. It is my lucky day.", "a_vi": "Cứ tự nhiên nhé. Hôm nay quả là ngày may mắn của anh." },
+        { "q_en": "Thanks. It's really crowded in here tonight.", "q_vi": "Cô gái phàn nàn quán đông", "a_en": "Yes, but I only have my eyes on you.", "a_vi": "Ừ, nhưng anh chỉ hướng mắt về phía em thôi." },
+        { "q_en": "Oh, you are a smooth talker, aren't you?", "q_vi": "Cô gái cười và bóc mẽ", "a_en": "I only speak the truth. What is your name?", "a_vi": "Anh chỉ nói sự thật. Tên em là gì?" },
+        { "q_en": "I'm Sarah. And you?", "q_vi": "Crush giới thiệu tên", "a_en": "I'm Vuong. It is a beautiful name for a beautiful lady.", "a_vi": "Anh là Vương. Một cái tên đẹp dành cho một quý cô xinh đẹp." },
+        { "q_en": "Nice to meet you, Vuong. What are you drinking?", "q_vi": "Hỏi đồ uống", "a_en": "I am having a cocktail. Let me buy you a drink.", "a_vi": "Anh đang uống cocktail. Để anh mua cho em một ly nhé." },
+        { "q_en": "That is very sweet of you. I'll have a Margarita.", "q_vi": "Cô gái đồng ý", "a_en": "One Margarita for the lady. So, what do you do for fun, Sarah?", "a_vi": "Một Margarita cho quý cô đây. Vậy, em thường làm gì để giải trí hả Sarah?" },
+        { "q_en": "I love traveling and reading books. How about you?", "q_vi": "Chia sẻ sở thích", "a_en": "I enjoy traveling too. Maybe we can go somewhere together next time.", "a_vi": "Anh cũng thích đi du lịch. Có lẽ lần tới chúng ta có thể đi đâu đó cùng nhau." },
+        { "q_en": "Wow, you move fast. We just met!", "q_vi": "Cô gái bất ngờ vì tiến độ", "a_en": "When you meet someone special, you don't want to waste time.", "a_vi": "Khi em gặp được một người đặc biệt, em sẽ không muốn lãng phí thời gian đâu." },
+        { "q_en": "You are really confident. I like that.", "q_vi": "Khen ngợi sự tự tin", "a_en": "I am glad you like it. Your smile is completely mesmerizing.", "a_vi": "Anh rất vui vì em thích điều đó. Nụ cười của em hoàn toàn mê hoặc anh." },
+        { "q_en": "Thank you. You are not so bad yourself.", "q_vi": "Cô gái khen lại", "a_en": "Just 'not so bad'? I was hoping for 'handsome'.", "a_vi": "Chỉ 'không tệ lắm' thôi sao? Anh đã hy vọng được khen là 'đẹp trai' cơ." },
+        { "q_en": "Haha, okay, you are very handsome. Happy now?", "q_vi": "Trêu đùa lại", "a_en": "Very happy. Especially since I am sitting next to an angel.", "a_vi": "Rất hạnh phúc. Nhất là khi anh đang ngồi cạnh một thiên thần." },
+        { "q_en": "Stop it, you are making me blush.", "q_vi": "Cô gái ngại ngùng đỏ mặt", "a_en": "You look even more adorable when you blush.", "a_vi": "Em trông còn đáng yêu hơn nữa khi em đỏ mặt." },
+        { "q_en": "Are you always this romantic with every girl?", "q_vi": "Hỏi dò sự chung tình", "a_en": "No, I reserve my best lines for someone who steals my breath away.", "a_vi": "Không, anh dành những lời ngọt ngào nhất cho người làm anh nghẹt thở." },
+        { "q_en": "This Margarita is really good. Cheers!", "q_vi": "Nâng ly", "a_en": "Cheers! To a wonderful evening and a beautiful encounter.", "a_vi": "Cạn ly! Chúc cho một buổi tối tuyệt vời và một cuộc gặp gỡ tươi đẹp." },
+        { "q_en": "Do you come to this place often?", "q_vi": "Hỏi về thói quen", "a_en": "Not really. But I think I will come here every day hoping to see you.", "a_vi": "Không hẳn. Nhưng anh nghĩ anh sẽ đến đây mỗi ngày với hy vọng được gặp em." },
+        { "q_en": "You really know how to make a girl feel special.", "q_vi": "Cô gái siêu lòng", "a_en": "You deserve to be treated like a queen, Sarah.", "a_vi": "Em xứng đáng được đối xử như một nữ hoàng, Sarah à." },
+        { "q_en": "It is getting late. I should probably head home.", "q_vi": "Chuẩn bị ra về", "a_en": "Let me walk you to your car to make sure you are safe.", "a_vi": "Để anh đi bộ cùng em ra xe để đảm bảo em được an toàn nhé." },
+        { "q_en": "You don't have to, but I would appreciate it.", "q_vi": "Đồng ý cho đưa về", "a_en": "It is my pleasure. I don't want this night to end.", "a_vi": "Đó là niềm vinh hạnh của anh. Anh không muốn đêm nay kết thúc chút nào." },
+        { "q_en": "We can always meet again.", "q_vi": "Mở đèn xanh", "a_en": "Then give me your number, and I will take you to dinner this weekend.", "a_vi": "Vậy cho anh số của em đi, và anh sẽ đưa em đi ăn tối vào cuối tuần này." },
+        { "q_en": "Here is my number. Call me. Goodnight, Vuong.", "q_vi": "Cho số và chào tạm biệt", "a_en": "Goodnight, Sarah. I will dream about you tonight.", "a_vi": "Ngủ ngon nhé, Sarah. Đêm nay anh sẽ mơ về em." }
+      ]
+    },
+	
+	{
+      "id": 6,
+      "type": "vocab",
+      "description": "Level 6: Từ vựng Nhắn tin & Mạng xã hội",
+      "questions": [
+        {"q_en": "Message", "a_vi": "Tin nhắn"}, {"q_en": "Reply", "a_vi": "Trả lời"}, {"q_en": "Notification", "a_vi": "Thông báo"}, {"q_en": "Online", "a_vi": "Đang trực tuyến"}, {"q_en": "Seen", "a_vi": "Đã xem"}, {"q_en": "Unread", "a_vi": "Chưa đọc"}, {"q_en": "Ignore", "a_vi": "Bỏ qua / Phớt lờ"}, {"q_en": "Ghosting", "a_vi": "Sự bốc hơi (đột nhiên biến mất không nhắn tin)"}, {"q_en": "Profile", "a_vi": "Trang cá nhân"}, {"q_en": "Picture", "a_vi": "Bức ảnh"}, {"q_en": "Comment", "a_vi": "Bình luận"}, {"q_en": "React", "a_vi": "Thả cảm xúc"}, {"q_en": "Tag", "a_vi": "Gắn thẻ"}, {"q_en": "Share", "a_vi": "Chia sẻ"}, {"q_en": "Meme", "a_vi": "Ảnh chế hài hước"}, {"q_en": "Hilarious", "a_vi": "Cực kỳ hài hước"}, {"q_en": "Active", "a_vi": "Đang hoạt động"}, {"q_en": "Status", "a_vi": "Trạng thái"}, {"q_en": "Bio", "a_vi": "Phần tiểu sử"}, {"q_en": "Story", "a_vi": "Tin (biến mất sau 24h)"}
+      ]
+    },
+    {
+      "id": 7,
+      "type": "vocab",
+      "description": "Level 7: Từ vựng Hẹn hò Cafe & Rạp chiếu phim",
+      "questions": [
+        {"q_en": "Ticket", "a_vi": "Vé xem phim"}, {"q_en": "Popcorn", "a_vi": "Bắp rang bơ"}, {"q_en": "Screen", "a_vi": "Màn hình"}, {"q_en": "Horror", "a_vi": "Kinh dị"}, {"q_en": "Comedy", "a_vi": "Hài kịch"}, {"q_en": "Romantic", "a_vi": "Lãng mạn"}, {"q_en": "Sci-fi", "a_vi": "Khoa học viễn tưởng"}, {"q_en": "Trailer", "a_vi": "Đoạn phim quảng cáo"}, {"q_en": "Spoiler", "a_vi": "Kẻ tiết lộ nội dung phim"}, {"q_en": "Row", "a_vi": "Hàng ghế"}, {"q_en": "Seat", "a_vi": "Chỗ ngồi"}, {"q_en": "Espresso", "a_vi": "Cà phê đen đặc"}, {"q_en": "Cappuccino", "a_vi": "Cà phê bọt sữa"}, {"q_en": "Pastry", "a_vi": "Bánh ngọt"}, {"q_en": "Cozy", "a_vi": "Ấm cúng"}, {"q_en": "Atmosphere", "a_vi": "Bầu không khí"}, {"q_en": "Background music", "a_vi": "Nhạc nền"}, {"q_en": "Chat", "a_vi": "Trò chuyện / Tán gẫu"}, {"q_en": "Vibe", "a_vi": "Cảm giác / Rung cảm"}, {"q_en": "Comfortable", "a_vi": "Thoải mái"}
+      ]
+    },
+    {
+      "id": 8,
+      "type": "sentence",
+      "description": "Level 8: Mẫu câu Bắt chuyện qua Tin nhắn (Texting)",
+      "questions": [
+        {"q_en": "Good morning! Hope you have a wonderful day.", "q_vi": "Nhắn tin buổi sáng", "a_en": "Good morning! Hope you have a wonderful day.", "a_vi": "Chào buổi sáng! Chúc em có một ngày tuyệt vời."},
+        {"q_en": "I saw your story. You look amazing in that dress.", "q_vi": "Reply story khen ngợi", "a_en": "I saw your story. You look amazing in that dress.", "a_vi": "Anh thấy story của em. Em mặc chiếc váy đó trông tuyệt lắm."},
+        {"q_en": "What are you doing? I was just thinking about you.", "q_vi": "Bắt chuyện nhẹ nhàng", "a_en": "What are you doing? I was just thinking about you.", "a_vi": "Em đang làm gì đó? Anh vừa mới nghĩ đến em xong."},
+        {"q_en": "This meme reminded me of you.", "q_vi": "Gửi ảnh chế hài hước", "a_en": "This meme reminded me of you.", "a_vi": "Chiếc ảnh chế này làm anh nhớ đến em."},
+        {"q_en": "Have you eaten yet? Don't skip your meals.", "q_vi": "Quan tâm ăn uống", "a_en": "Have you eaten yet? Don't skip your meals.", "a_vi": "Em đã ăn gì chưa? Đừng bỏ bữa nhé."},
+        {"q_en": "I love talking to you. Time flies so fast.", "q_vi": "Thả thính sự cuốn hút", "a_en": "I love talking to you. Time flies so fast.", "a_vi": "Anh thích nói chuyện với em. Thời gian trôi qua nhanh quá."},
+        {"q_en": "You took a while to reply. I missed you.", "q_vi": "Làm nũng khi Crush rep chậm", "a_en": "You took a while to reply. I missed you.", "a_vi": "Em mất một lúc mới trả lời. Anh nhớ em đó."},
+        {"q_en": "Are you busy right now? Can I call you?", "q_vi": "Xin phép gọi điện", "a_en": "Are you busy right now? Can I call you?", "a_vi": "Em có đang bận không? Anh gọi cho em được không?"},
+        {"q_en": "Hearing your voice makes my day better.", "q_vi": "Khen giọng nói", "a_en": "Hearing your voice makes my day better.", "a_vi": "Nghe được giọng của em làm ngày của anh tốt hơn hẳn."},
+        {"q_en": "Stop being so cute, I can't concentrate on my work.", "q_vi": "Trêu đùa sự dễ thương", "a_en": "Stop being so cute, I can't concentrate on my work.", "a_vi": "Đừng đáng yêu như vậy nữa, anh không thể tập trung làm việc được."},
+        {"q_en": "Did you sleep well last night?", "q_vi": "Quan tâm giấc ngủ", "a_en": "Did you sleep well last night?", "a_vi": "Tối qua em ngủ ngon không?"},
+        {"q_en": "I was looking at your pictures. You have a beautiful smile.", "q_vi": "Khen ảnh đại diện", "a_en": "I was looking at your pictures. You have a beautiful smile.", "a_vi": "Anh đang xem ảnh của em. Em có nụ cười đẹp lắm."},
+        {"q_en": "I wish I was there with you right now.", "q_vi": "Thể hiện mong muốn ở cạnh", "a_en": "I wish I was there with you right now.", "a_vi": "Anh ước gì anh đang ở đó cùng em ngay lúc này."},
+        {"q_en": "You always know how to make me laugh.", "q_vi": "Khen ngợi sự hài hước", "a_en": "You always know how to make me laugh.", "a_vi": "Em luôn biết cách làm anh cười."},
+        {"q_en": "Don't stay up too late. It's bad for your health.", "q_vi": "Nhắc nhở đi ngủ sớm", "a_en": "Don't stay up too late. It's bad for your health.", "a_vi": "Đừng thức quá khuya nhé. Không tốt cho sức khỏe của em đâu."},
+        {"q_en": "Goodnight, beautiful. Sweet dreams.", "q_vi": "Chúc ngủ ngon", "a_en": "Goodnight, beautiful. Sweet dreams.", "a_vi": "Ngủ ngon nhé, người đẹp. Chúc em có những giấc mơ ngọt ngào."},
+        {"q_en": "I will text you as soon as I wake up.", "q_vi": "Hứa hẹn sáng mai nhắn", "a_en": "I will text you as soon as I wake up.", "a_vi": "Anh sẽ nhắn tin cho em ngay khi anh thức dậy."},
+        {"q_en": "Why did you leave me on read?", "q_vi": "Trêu khi bị seen không rep", "a_en": "Why did you leave me on read?", "a_vi": "Sao em lại xem mà không trả lời anh vậy?"},
+        {"q_en": "Just kidding, take your time.", "q_vi": "Chữa cháy khi lỡ trêu", "a_en": "Just kidding, take your time.", "a_vi": "Anh đùa thôi, em cứ từ từ làm việc đi."},
+        {"q_en": "You are the last person I think of before going to sleep.", "q_vi": "Câu chốt ngôn tình", "a_en": "You are the last person I think of before going to sleep.", "a_vi": "Em là người cuối cùng anh nghĩ đến trước khi đi ngủ."}
+      ]
+    },
+    {
+      "id": 9,
+      "type": "sentence",
+      "description": "Level 9: Mẫu câu Chốt Hẹn & Giao tiếp ở Rạp phim",
+      "questions": [
+        {"q_en": "Are you free this weekend? Let's hang out.", "q_vi": "Rủ đi chơi cuối tuần", "a_en": "Are you free this weekend? Let's hang out.", "a_vi": "Cuối tuần này em rảnh không? Mình đi chơi nhé."},
+        {"q_en": "There is a new movie coming out. Do you want to see it?", "q_vi": "Rủ đi xem phim", "a_en": "There is a new movie coming out. Do you want to see it?", "a_vi": "Có một bộ phim mới sắp ra mắt. Em có muốn đi xem không?"},
+        {"q_en": "I will pick you up at 7 PM.", "q_vi": "Hẹn giờ đón", "a_en": "I will pick you up at 7 PM.", "a_vi": "Anh sẽ đón em lúc 7 giờ tối."},
+        {"q_en": "Take your time, I am already waiting outside.", "q_vi": "Đợi Crush trang điểm", "a_en": "Take your time, I am already waiting outside.", "a_vi": "Em cứ thong thả nhé, anh đang đợi ở ngoài rồi."},
+        {"q_en": "You look absolutely stunning tonight.", "q_vi": "Khen khi Crush bước ra", "a_en": "You look absolutely stunning tonight.", "a_vi": "Tối nay em trông đẹp rạng ngời luôn đấy."},
+        {"q_en": "Do you prefer sweet or salty popcorn?", "q_vi": "Hỏi vị bắp rang", "a_en": "Do you prefer sweet or salty popcorn?", "a_vi": "Em thích bắp rang vị ngọt hay vị mặn?"},
+        {"q_en": "I got us VIP seats in the back row.", "q_vi": "Khoe mua vé xịn", "a_en": "I got us VIP seats in the back row.", "a_vi": "Anh đã mua vé ghế VIP ở hàng ghế cuối cho chúng ta."},
+        {"q_en": "Are you scared of horror movies?", "q_vi": "Hỏi xem phim ma", "a_en": "Are you scared of horror movies?", "a_vi": "Em có sợ xem phim kinh dị không?"},
+        {"q_en": "Don't worry, you can hold my hand if you get scared.", "q_vi": "Lấy cớ nắm tay", "a_en": "Don't worry, you can hold my hand if you get scared.", "a_vi": "Đừng lo, em có thể nắm tay anh nếu em thấy sợ."},
+        {"q_en": "Is the air conditioner too cold for you?", "q_vi": "Quan tâm nhiệt độ rạp", "a_en": "Is the air conditioner too cold for you?", "a_vi": "Máy lạnh có quá lạnh đối với em không?"},
+        {"q_en": "Here, take my jacket.", "q_vi": "Cởi áo khoác cho Crush", "a_en": "Here, take my jacket.", "a_vi": "Đây, khoác áo của anh vào đi."},
+        {"q_en": "Did you enjoy the movie?", "q_vi": "Hỏi cảm nhận sau phim", "a_en": "Did you enjoy the movie?", "a_vi": "Em xem phim có thấy thích không?"},
+        {"q_en": "Let's go grab a cup of coffee.", "q_vi": "Rủ đi cafe tiếp", "a_en": "Let's go grab a cup of coffee.", "a_vi": "Chúng ta đi làm một ly cà phê nhé."},
+        {"q_en": "This cafe has a really cozy vibe.", "q_vi": "Khen không gian quán", "a_en": "This cafe has a really cozy vibe.", "a_vi": "Quán cà phê này có một không gian thực sự ấm cúng."},
+        {"q_en": "What would you like to drink? It's my treat.", "q_vi": "Hỏi đồ uống và đòi bao", "a_en": "What would you like to drink? It's my treat.", "a_vi": "Em muốn uống gì? Bữa nay để anh mời."},
+        {"q_en": "Do you want to share a slice of cake?", "q_vi": "Mời ăn chung bánh ngọt", "a_en": "Do you want to share a slice of cake?", "a_vi": "Em có muốn ăn chung một lát bánh ngọt không?"},
+        {"q_en": "I really enjoy spending time with you.", "q_vi": "Bày tỏ cảm xúc khi nói chuyện", "a_en": "I really enjoy spending time with you.", "a_vi": "Anh thực sự rất thích dành thời gian ở bên em."},
+        {"q_en": "You have a very fascinating personality.", "q_vi": "Khen ngợi tính cách", "a_en": "You have a very fascinating personality.", "a_vi": "Em có một tính cách vô cùng cuốn hút."},
+        {"q_en": "It is getting late. I should take you home.", "q_vi": "Nhắc giờ về", "a_en": "It is getting late. I should take you home.", "a_vi": "Cũng muộn rồi. Anh nên đưa em về nhà thôi."},
+        {"q_en": "I had a great time today. Let's do this again.", "q_vi": "Chốt hẹn lần sau", "a_en": "I had a great time today. Let's do this again.", "a_vi": "Hôm nay anh đã rất vui. Chúng ta gặp lại vào lần tới nhé."}
+      ]
+    },
+    {
+      "id": 10,
+      "type": "boss",
+      "description": "Level 10: BOSS Hẹn Hò Lần Đầu (Thử thách xem phim kinh dị)",
+      "questions": [
+        { "q_en": "I am so sorry I am late. The traffic was terrible.", "q_vi": "(Boss Crush) Em rất xin lỗi vì đến trễ. Đường kẹt xe quá.", "a_en": "It's completely fine. I would wait forever for you anyway.", "a_vi": "Hoàn toàn không sao đâu em. Dù sao thì anh cũng sẵn lòng đợi em mãi mãi mà." },
+        { "q_en": "You are too sweet. Did you buy the tickets already?", "q_vi": "Crush cười ngại", "a_en": "Yes, I got us two VIP seats right in the middle.", "a_vi": "Rồi em, anh đã mua 2 ghế VIP ngay chính giữa cho chúng ta." },
+        { "q_en": "Great! What movie are we watching?", "q_vi": "Hỏi tên phim", "a_en": "It's the new horror movie. I hope you are not easily scared.", "a_vi": "Đó là bộ phim kinh dị mới ra. Anh hy vọng em không phải người dễ sợ hãi." },
+        { "q_en": "A horror movie? Oh no, I am a big coward!", "q_vi": "Crush tỏ vẻ sợ hãi", "a_en": "Don't worry. I am here to protect you.", "a_vi": "Đừng lo lắng. Có anh ở đây để bảo vệ em rồi." },
+        { "q_en": "Haha, my hero! Let me buy the popcorn then.", "q_vi": "Crush đòi mua bắp rang", "a_en": "No, it's my treat tonight. You just relax.", "a_vi": "Không, tối nay để anh mời. Em cứ thoải mái đi." },
+        { "q_en": "Are you sure? I feel bad letting you pay for everything.", "q_vi": "Crush ngại ngùng", "a_en": "I am sure. But you can buy me a coffee after the movie.", "a_vi": "Anh chắc chắn mà. Nhưng em có thể mua cho anh ly cà phê sau khi xem phim xong." },
+        { "q_en": "Deal! Do you want sweet or cheese popcorn?", "q_vi": "Crush chốt kèo", "a_en": "Let's get a mix of both. And two large Cokes.", "a_vi": "Mình lấy trộn cả hai vị đi. Và hai ly Coca lớn nữa." },
+        { "q_en": "The movie is starting. It's so dark in here.", "q_vi": "Vào rạp phim", "a_en": "Watch your step. Let me hold your hand so you don't trip.", "a_vi": "Cẩn thận bước chân nhé. Để anh nắm tay em cho em khỏi vấp." },
+        { "q_en": "Thank you. Brrr, the AC is freezing.", "q_vi": "Crush than lạnh", "a_en": "I brought my jacket just in case. Here, put it over your shoulders.", "a_vi": "Anh có mang theo áo khoác phòng hờ này. Đây, khoác nó lên vai em đi." },
+        { "q_en": "It smells like your perfume. It's really nice.", "q_vi": "Crush khen mùi áo khoác", "a_en": "I am glad you like it. Now, focus on the movie.", "a_vi": "Anh rất vui vì em thích nó. Giờ thì tập trung xem phim nhé." },
+        { "q_en": "(Jumps) Ah! That jumpscare was terrifying!", "q_vi": "Crush giật mình vì ma", "a_en": "It's okay, hide behind my shoulder. Squeeze my hand if you are scared.", "a_vi": "Không sao đâu, trốn sau vai anh này. Cứ siết chặt tay anh nếu em thấy sợ." },
+        { "q_en": "Your hand is so warm. I feel much safer now.", "q_vi": "Crush thấy yên tâm", "a_en": "I will never let go of your hand, even after the movie ends.", "a_vi": "Anh sẽ không bao giờ buông tay em ra đâu, kể cả khi phim kết thúc." },
+        { "q_en": "That movie was crazy! I couldn't watch half of it.", "q_vi": "Phim hết, đi ra ngoài", "a_en": "I know. You spent most of the time hiding your face in my chest.", "a_vi": "Anh biết mà. Em dành phần lớn thời gian úp mặt vào ngực anh trốn mất tiêu." },
+        { "q_en": "Stop teasing me! I promised you a coffee, right?", "q_vi": "Crush đánh yêu", "a_en": "Yes. Let's go to that cozy cafe across the street.", "a_vi": "Đúng rồi. Mình qua quán cà phê ấm cúng bên kia đường nhé." },
+        { "q_en": "This place has a great vibe. What do you want to drink?", "q_vi": "Vào quán cafe", "a_en": "Just a hot cappuccino. Sitting across from you is already sweet enough.", "a_vi": "Một ly cappuccino nóng là được. Ngồi đối diện em đã đủ ngọt ngào rồi." },
+        { "q_en": "You flirt seamlessly. Have you done this with many girls?", "q_vi": "Crush nghi ngờ độ đào hoa", "a_en": "Honestly? I am usually very quiet. But you make me want to talk.", "a_vi": "Thành thật nhé? Anh bình thường rất ít nói. Nhưng em khiến anh muốn được tâm sự." },
+        { "q_en": "I feel very comfortable talking to you too.", "q_vi": "Crush bật đèn xanh", "a_en": "I am really happy to hear that. I had an amazing night.", "a_vi": "Anh thực sự rất hạnh phúc khi nghe điều đó. Anh đã có một buổi tối tuyệt vời." },
+        { "q_en": "Me too. It's almost 10 PM. I should go home.", "q_vi": "Nhắc giờ về", "a_en": "My car is parked outside. I will drive you home safely.", "a_vi": "Xe anh đậu ở ngoài. Anh sẽ lái xe đưa em về nhà an toàn." },
+        { "q_en": "We are here. Thank you for tonight, Vuong.", "q_vi": "Về tới nhà Crush", "a_en": "The pleasure is mine. Text me when you get inside.", "a_vi": "Đó là niềm vinh hạnh của anh. Vào nhà thì nhắn tin cho anh nhé." },
+        { "q_en": "I will. Goodnight!", "q_vi": "Crush chào tạm biệt", "a_en": "Goodnight, beautiful. See you soon.", "a_vi": "Ngủ ngon nhé người đẹp. Hẹn sớm gặp lại em." }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "vocab",
+      "description": "Level 11: Từ vựng Khen ngợi Ngoại hình & Khí chất",
+      "questions": [
+        {"q_en": "Outfit", "a_vi": "Bộ trang phục"}, {"q_en": "Style", "a_vi": "Phong cách"}, {"q_en": "Elegant", "a_vi": "Thanh lịch / Tao nhã"}, {"q_en": "Stunning", "a_vi": "Tuyệt đẹp / Gây choáng ngợp"}, {"q_en": "Graceful", "a_vi": "Duyên dáng / Uyển chuyển"}, {"q_en": "Fit", "a_vi": "Vừa vặn / Thon gọn"}, {"q_en": "Makeup", "a_vi": "Lớp trang điểm"}, {"q_en": "Lipstick", "a_vi": "Son môi"}, {"q_en": "Perfume", "a_vi": "Nước hoa"}, {"q_en": "Scent", "a_vi": "Mùi hương"}, {"q_en": "Hairstyle", "a_vi": "Kiểu tóc"}, {"q_en": "Radiant", "a_vi": "Rạng rỡ"}, {"q_en": "Glowing", "a_vi": "Tỏa sáng"}, {"q_en": "Flawless", "a_vi": "Không tì vết"}, {"q_en": "Chic", "a_vi": "Sang trọng / Hợp thời trang"}, {"q_en": "Classy", "a_vi": "Đẳng cấp / Quý phái"}, {"q_en": "Trendy", "a_vi": "Thịnh hành / Bắt trend"}, {"q_en": "Fashion", "a_vi": "Thời trang"}, {"q_en": "Taste", "a_vi": "Gu / Sở thích (thẩm mỹ)"}, {"q_en": "Match", "a_vi": "Hợp / Tông xuyệt tông"}
+      ]
+    },
+    {
+      "id": 12,
+      "type": "vocab",
+      "description": "Level 12: Từ vựng Hẹn hò Nhà hàng Sang trọng",
+      "questions": [
+        {"q_en": "Reservation", "a_vi": "Sự đặt bàn trước"}, {"q_en": "Table for two", "a_vi": "Bàn dành cho 2 người"}, {"q_en": "Candlelight", "a_vi": "Ánh nến"}, {"q_en": "Wine", "a_vi": "Rượu vang"}, {"q_en": "Steak", "a_vi": "Bò bít tết"}, {"q_en": "Seafood", "a_vi": "Hải sản"}, {"q_en": "Appetizer", "a_vi": "Món khai vị"}, {"q_en": "Dessert", "a_vi": "Món tráng miệng"}, {"q_en": "Delicious", "a_vi": "Ngon miệng"}, {"q_en": "Spicy", "a_vi": "Cay"}, {"q_en": "Allergic", "a_vi": "Bị dị ứng"}, {"q_en": "Toast", "a_vi": "Sự nâng ly chúc mừng"}, {"q_en": "Cheers", "a_vi": "Cạn ly / Dzô"}, {"q_en": "Bill", "a_vi": "Hóa đơn thanh toán"}, {"q_en": "Treat", "a_vi": "Sự khoản đãi / Mời khách"}, {"q_en": "Gentleman", "a_vi": "Quý ông / Người ga lăng"}, {"q_en": "Polite", "a_vi": "Lịch sự"}, {"q_en": "Manners", "a_vi": "Cử xử / Phép tắc"}, {"q_en": "Tip", "a_vi": "Tiền boa"}, {"q_en": "Review", "a_vi": "Lời nhận xét"}
+      ]
+    },
+    {
+      "id": 13,
+      "type": "sentence",
+      "description": "Level 13: Mẫu câu Khen ngợi tinh tế (Compliments)",
+      "questions": [
+        {"q_en": "That color looks absolutely stunning on you.", "q_vi": "Khen màu áo hợp", "a_en": "That color looks absolutely stunning on you.", "a_vi": "Màu sắc đó trông tuyệt đẹp khi em mặc vào."},
+        {"q_en": "I love your outfit. You have great taste in fashion.", "q_vi": "Khen gu thời trang", "a_en": "I love your outfit. You have great taste in fashion.", "a_vi": "Anh rất thích bộ đồ của em. Em có gu thời trang rất tuyệt."},
+        {"q_en": "Your new hairstyle frames your face perfectly.", "q_vi": "Khen kiểu tóc mới", "a_en": "Your new hairstyle frames your face perfectly.", "a_vi": "Kiểu tóc mới ôm trọn khuôn mặt em một cách hoàn hảo."},
+        {"q_en": "You look very elegant and classy tonight.", "q_vi": "Khen phong cách quý phái", "a_en": "You look very elegant and classy tonight.", "a_vi": "Tối nay em trông rất thanh lịch và đẳng cấp."},
+        {"q_en": "Is that a new perfume? The scent is mesmerizing.", "q_vi": "Khen mùi nước hoa", "a_en": "Is that a new perfume? The scent is mesmerizing.", "a_vi": "Đó là nước hoa mới hả? Mùi hương thật mê hoặc."},
+        {"q_en": "Your lipstick matches your dress perfectly.", "q_vi": "Khen sự tinh tế tông xuyệt tông", "a_en": "Your lipstick matches your dress perfectly.", "a_vi": "Màu son của em cực kỳ tone-sur-tone với chiếc váy."},
+        {"q_en": "You don't need much makeup. You are naturally flawless.", "q_vi": "Khen mặt mộc", "a_en": "You don't need much makeup. You are naturally flawless.", "a_vi": "Em không cần trang điểm nhiều đâu. Em đẹp không tì vết một cách tự nhiên."},
+        {"q_en": "Your skin is glowing! What is your secret?", "q_vi": "Khen làn da", "a_en": "Your skin is glowing! What is your secret?", "a_vi": "Da em đang tỏa sáng kìa! Bí quyết của em là gì vậy?"},
+        {"q_en": "I can't take my eyes off you.", "q_vi": "Bày tỏ sự say đắm", "a_en": "I can't take my eyes off you.", "a_vi": "Anh không thể rời mắt khỏi em được."},
+        {"q_en": "Every time you smile, the whole room lights up.", "q_vi": "Khen nụ cười tỏa nắng", "a_en": "Every time you smile, the whole room lights up.", "a_vi": "Mỗi khi em cười, cả căn phòng như bừng sáng."},
+        {"q_en": "You carry yourself with so much grace.", "q_vi": "Khen khí chất uyển chuyển", "a_en": "You carry yourself with so much grace.", "a_vi": "Em toát lên một khí chất vô cùng duyên dáng."},
+        {"q_en": "I love how confident and chic you are.", "q_vi": "Khen sự tự tin sang chảnh", "a_en": "I love how confident and chic you are.", "a_vi": "Anh thích cái cách em đầy tự tin và sang trọng."},
+        {"q_en": "You are the most attractive woman I have ever met.", "q_vi": "Lời khen tuyệt đối", "a_en": "You are the most attractive woman I have ever met.", "a_vi": "Em là người phụ nữ hấp dẫn nhất mà anh từng gặp."},
+        {"q_en": "Even when you are just wearing casual clothes, you look radiant.", "q_vi": "Khen cả khi mặc đồ bộ", "a_en": "Even when you are just wearing casual clothes, you look radiant.", "a_vi": "Ngay cả khi em chỉ mặc đồ bình thường, em vẫn trông rạng rỡ."},
+        {"q_en": "Your eyes sparkle when you talk about things you love.", "q_vi": "Khen ánh mắt", "a_en": "Your eyes sparkle when you talk about things you love.", "a_vi": "Đôi mắt em lấp lánh khi em nói về những điều em yêu thích."},
+        {"q_en": "You look like a piece of art.", "q_vi": "Khen như một kiệt tác", "a_en": "You look like a piece of art.", "a_vi": "Em trông như một tác phẩm nghệ thuật vậy."},
+        {"q_en": "I feel so lucky to be walking next to you.", "q_vi": "Thể hiện sự tự hào", "a_en": "I feel so lucky to be walking next to you.", "a_vi": "Anh cảm thấy thật may mắn khi được đi dạo cạnh em."},
+        {"q_en": "That necklace highlights your collarbone beautifully.", "q_vi": "Khen phụ kiện tinh tế", "a_en": "That necklace highlights your collarbone beautifully.", "a_vi": "Sợi dây chuyền đó làm tôn lên xương quai xanh của em tuyệt đẹp."},
+        {"q_en": "You always know how to impress me.", "q_vi": "Bị ấn tượng mạnh", "a_en": "You always know how to impress me.", "a_vi": "Em luôn biết cách gây ấn tượng với anh."},
+        {"q_en": "I must be dreaming to be on a date with someone like you.", "q_vi": "Câu chốt ngọt ngào", "a_en": "I must be dreaming to be on a date with someone like you.", "a_vi": "Anh hẳn là đang mơ khi được hẹn hò với một người như em."}
+      ]
+    },
+    {
+      "id": 14,
+      "type": "sentence",
+      "description": "Level 14: Thể hiện sự Ga-lăng ở Nhà hàng",
+      "questions": [
+        {"q_en": "I made a reservation for us under the name Vuong.", "q_vi": "Báo đã đặt bàn", "a_en": "I made a reservation for us under the name Vuong.", "a_vi": "Anh đã đặt bàn trước cho chúng ta dưới tên Vương."},
+        {"q_en": "Please, let me pull the chair out for you.", "q_vi": "Kéo ghế cho Crush", "a_en": "Please, let me pull the chair out for you.", "a_vi": "Xin mời, để anh kéo ghế ra cho em ngồi nhé."},
+        {"q_en": "Take a look at the menu. Order whatever you like.", "q_vi": "Mời Crush chọn món", "a_en": "Take a look at the menu. Order whatever you like.", "a_vi": "Em xem thực đơn đi. Hãy gọi bất cứ món gì em thích."},
+        {"q_en": "Are you allergic to any kind of seafood?", "q_vi": "Hỏi han dị ứng", "a_en": "Are you allergic to any kind of seafood?", "a_vi": "Em có bị dị ứng với loại hải sản nào không?"},
+        {"q_en": "I will have the medium-rare steak. What about you?", "q_vi": "Gọi món của mình và hỏi Crush", "a_en": "I will have the medium-rare steak. What about you?", "a_vi": "Anh sẽ dùng bít tết chín tái. Còn em thì sao?"},
+        {"q_en": "Would you like a glass of red wine to pair with the beef?", "q_vi": "Mời rượu vang", "a_en": "Would you like a glass of red wine to pair with the beef?", "a_vi": "Em có muốn một ly vang đỏ để ăn kèm với thịt bò không?"},
+        {"q_en": "Let's raise our glasses. Here is to a beautiful evening.", "q_vi": "Nâng ly chúc mừng", "a_en": "Let's raise our glasses. Here is to a beautiful evening.", "a_vi": "Hãy cùng nâng ly nào. Chúc cho một buổi tối tươi đẹp."},
+        {"q_en": "Wait, let me pour the wine for you.", "q_vi": "Đòi rót rượu cho Crush", "a_en": "Wait, let me pour the wine for you.", "a_vi": "Khoan đã, để anh rót rượu cho em."},
+        {"q_en": "Is the food too spicy for you?", "q_vi": "Quan tâm khẩu vị", "a_en": "Is the food too spicy for you?", "a_vi": "Thức ăn có quá cay đối với em không?"},
+        {"q_en": "Here, try a piece of my steak. It is delicious.", "q_vi": "Mời ăn thử đồ của mình", "a_en": "Here, try a piece of my steak. It is delicious.", "a_vi": "Đây, ăn thử một miếng bít tết của anh đi. Nó ngon lắm."},
+        {"q_en": "Let me cut the meat into smaller pieces for you.", "q_vi": "Hành động ga lăng cắt thịt", "a_en": "Let me cut the meat into smaller pieces for you.", "a_vi": "Để anh cắt thịt thành những miếng nhỏ hơn cho em nhé."},
+        {"q_en": "You have a little sauce on your cheek. Let me wipe it.", "q_vi": "Lau miệng giúp Crush", "a_en": "You have a little sauce on your cheek. Let me wipe it.", "a_vi": "Em dính một chút nước xốt trên má kìa. Để anh lau cho."},
+        {"q_en": "Did you save some room for dessert?", "q_vi": "Hỏi xem bụng còn chứa được bánh không", "a_en": "Did you save some room for dessert?", "a_vi": "Em còn để dành bụng cho món tráng miệng không?"},
+        {"q_en": "Let's order the chocolate lava cake to share.", "q_vi": "Rủ ăn chung bánh ngọt", "a_en": "Let's order the chocolate lava cake to share.", "a_vi": "Mình gọi bánh sô-cô-la dung nham để ăn chung nhé."},
+        {"q_en": "Excuse me, waiter. Could we have the bill, please?", "q_vi": "Gọi phục vụ tính tiền", "a_en": "Excuse me, waiter. Could we have the bill, please?", "a_vi": "Xin lỗi phục vụ. Cho chúng tôi xin hóa đơn nhé?"},
+        {"q_en": "Put your purse away. It is my treat tonight.", "q_vi": "Không cho Crush trả tiền", "a_en": "Put your purse away. It is my treat tonight.", "a_vi": "Cất ví của em đi. Tối nay để anh mời."},
+        {"q_en": "A gentleman always pays on the first date.", "q_vi": "Khẳng định phong thái quý ông", "a_en": "A gentleman always pays on the first date.", "a_vi": "Một quý ông luôn trả tiền trong buổi hẹn hò đầu tiên."},
+        {"q_en": "Keep the change. The service was excellent.", "q_vi": "Boa tiền cho phục vụ", "a_en": "Keep the change. The service was excellent.", "a_vi": "Giữ lại tiền thối nhé. Dịch vụ tuyệt vời lắm."},
+        {"q_en": "I hope you enjoyed the dinner as much as I did.", "q_vi": "Hỏi thăm cảm nhận Crush", "a_en": "I hope you enjoyed the dinner as much as I did.", "a_vi": "Anh hy vọng em cũng tận hưởng bữa tối nhiều như anh vậy."},
+        {"q_en": "Take my arm. Let's go for a walk along the river.", "q_vi": "Đề nghị khoác tay đi dạo", "a_en": "Take my arm. Let's go for a walk along the river.", "a_vi": "Khoác tay anh đi. Mình cùng đi dạo dọc theo bờ sông nhé."}
+      ]
+    },
+    {
+      "id": 15,
+      "type": "boss",
+      "description": "Level 15: BOSS Ga-Lăng (Bữa Tối Lãng Mạn Tại Nhà Hàng Pháp)",
+      "questions": [
+        {"q_en": "Wow, this place looks so expensive. Are you sure about this?", "q_vi": "(Boss Crush) Wow, chỗ này trông đắt tiền quá. Anh có chắc không vậy?", "a_en": "Only the best for you. I booked a table by the window.", "a_vi": "Chỉ những điều tốt nhất dành cho em thôi. Anh đã đặt một bàn cạnh cửa sổ." },
+        {"q_en": "Thank you. You really didn't have to go all out.", "q_vi": "Crush cảm động", "a_en": "Please, let me pull the chair for you. Have a seat.", "a_vi": "Xin mời, để anh kéo ghế cho em. Ngồi đi em." },
+        {"q_en": "You are such a gentleman. The view here is breathtaking.", "q_vi": "Crush khen ngài quý ông", "a_en": "Not as breathtaking as you. You look stunning in that red dress.", "a_vi": "Không đẹp đến nghẹt thở bằng em đâu. Em trông tuyệt đẹp trong chiếc váy đỏ đó." },
+        {"q_en": "You are making me blush again! What are we eating?", "q_vi": "Đánh trống lảng vì ngại", "a_en": "It's a French restaurant. I highly recommend the Truffle Steak.", "a_vi": "Đây là nhà hàng Pháp. Anh đặc biệt gợi ý món Bít tết nấm Truffle." },
+        {"q_en": "Sounds delicious. But I don't know much about wine.", "q_vi": "Crush bối rối vụ chọn rượu", "a_en": "Don't worry, I will handle it. Waiter, a bottle of Bordeaux, please.", "a_vi": "Đừng lo, anh sẽ lo liệu. Phục vụ, cho một chai vang Bordeaux nhé." },
+        {"q_en": "The ambiance with the candlelight is so romantic.", "q_vi": "Khen không gian lãng mạn", "a_en": "Let's toast. To a flawless evening with a flawless woman.", "a_vi": "Cùng nâng ly nào. Chúc cho một buổi tối hoàn hảo với một người phụ nữ hoàn hảo." },
+        {"q_en": "Cheers! ... Oh, this wine is really smooth.", "q_vi": "Cụm ly và nếm rượu", "a_en": "I am glad you like it. How is your steak cooked?", "a_vi": "Anh rất vui vì em thích nó. Bít tết của em độ chín thế nào?" },
+        {"q_en": "It's perfect. But it's a bit hard to cut.", "q_vi": "Crush loay hoay cắt thịt", "a_en": "Give me your plate. Let me cut it into bite-sized pieces for you.", "a_vi": "Đưa đĩa của em đây. Để anh cắt nó thành những miếng vừa ăn cho em." },
+        {"q_en": "You are spoiling me! I might get used to this.", "q_vi": "Crush thích thú vì được chiều chuộng", "a_en": "I hope you do get used to it. Because I want to do this often.", "a_vi": "Anh hy vọng em sẽ quen với điều đó. Vì anh muốn làm việc này thường xuyên." },
+        {"q_en": "Are you always this charming on dates?", "q_vi": "Hỏi độ sát gái", "a_en": "I haven't been on a date in a long time. You are special.", "a_vi": "Lâu lắm rồi anh mới đi hẹn hò. Em là một người đặc biệt." },
+        {"q_en": "I really enjoy your company. You have great manners.", "q_vi": "Crush khen ngợi tính cách", "a_en": "My parents taught me to always treat a lady with respect.", "a_vi": "Bố mẹ đã dạy anh phải luôn đối xử với một quý cô bằng sự tôn trọng." },
+        { "q_en": "They raised a good man. Oh, I have a little sauce on my chin, don't I?", "q_vi": "Crush dính đồ ăn", "a_en": "Yes, just a little. Stay still, let me wipe it with my napkin.", "a_vi": "Ừ, một chút xíu thôi. Ngồi yên nhé, để anh lau bằng khăn ăn của anh cho." },
+        { "q_en": "Thank you. Should we order dessert? I'm quite full.", "q_vi": "Hỏi vụ ăn tráng miệng", "a_en": "Let's just share a slice of Tiramisu. It's their signature dish.", "a_vi": "Mình chia nhau một lát Tiramisu thôi. Đó là món đặc trưng của họ đấy." },
+        { "q_en": "Okay. Let me split the bill with you tonight.", "q_vi": "Đòi cưa đôi tiền ăn", "a_en": "Absolutely not. Put your purse away. It is my treat.", "a_vi": "Tuyệt đối không. Cất ví của em đi. Bữa nay là anh mời." },
+        { "q_en": "But it's so expensive! Let me pay for the dessert at least.", "q_vi": "Cố gắng trả tiền bánh", "a_en": "No arguments. You can buy the tickets for our next movie date.", "a_vi": "Không tranh cãi nhé. Em có thể mua vé cho buổi hẹn xem phim tiếp theo của chúng ta." },
+        { "q_en": "Haha, so there is a next date?", "q_vi": "Crush bắt thóp", "a_en": "Only if you say yes. Will you go out with me again?", "a_vi": "Chỉ khi em nói đồng ý thôi. Em sẽ đi chơi với anh lần nữa chứ?" },
+        { "q_en": "Yes, I would love to. I had an amazing time.", "q_vi": "Crush chốt hạ đồng ý", "a_en": "The night is not over yet. Take my arm, let's walk in the park.", "a_vi": "Đêm nay vẫn chưa kết thúc đâu. Khoác tay anh đi, mình cùng dạo công viên nhé." },
+        { "q_en": "It is a bit chilly outside.", "q_vi": "Ra ngoài thấy lạnh", "a_en": "Here, wear my jacket. I will wrap my arm around you.", "a_vi": "Đây, mặc áo khoác của anh vào. Anh sẽ vòng tay ôm lấy em." },
+        { "q_en": "You are so warm. Thank you, Vuong.", "q_vi": "Crush dựa vào người", "a_en": "I will always keep you safe and warm. Let's go.", "a_vi": "Anh sẽ luôn giữ cho em an toàn và ấm áp. Đi thôi nào." },
+        { "q_en": "I am so lucky to have met you.", "q_vi": "Câu nói ngôn tình", "a_en": "I am the lucky one. Destiny brought us together.", "a_vi": "Anh mới là người may mắn. Định mệnh đã mang chúng ta đến với nhau." }
+      ]
+    },
+    {
+      "id": 16,
+      "type": "vocab",
+      "description": "Level 16: Từ vựng Quan tâm hàng ngày & Sức khỏe",
+      "questions": [
+        {"q_en": "Morning", "a_vi": "Buổi sáng"}, {"q_en": "Night", "a_vi": "Buổi đêm"}, {"q_en": "Weather", "a_vi": "Thời tiết"}, {"q_en": "Rain", "a_vi": "Cơn mưa"}, {"q_en": "Cold", "a_vi": "Lạnh lẽo"}, {"q_en": "Umbrella", "a_vi": "Cây dù / Ô"}, {"q_en": "Jacket", "a_vi": "Áo khoác"}, {"q_en": "Medicine", "a_vi": "Thuốc men"}, {"q_en": "Sick", "a_vi": "Bị ốm / Bệnh"}, {"q_en": "Tired", "a_vi": "Mệt mỏi"}, {"q_en": "Busy", "a_vi": "Bận rộn"}, {"q_en": "Stress", "a_vi": "Sự căng thẳng"}, {"q_en": "Relax", "a_vi": "Thư giãn"}, {"q_en": "Sleep", "a_vi": "Giấc ngủ / Ngủ"}, {"q_en": "Dream", "a_vi": "Giấc mơ"}, {"q_en": "Awake", "a_vi": "Tỉnh giấc"}, {"q_en": "Miss", "a_vi": "Nhớ nhung"}, {"q_en": "Care", "a_vi": "Quan tâm / Chăm sóc"}, {"q_en": "Worry", "a_vi": "Lo lắng"}, {"q_en": "Protect", "a_vi": "Bảo vệ"}
+      ]
+    },
+    {
+      "id": 17,
+      "type": "vocab",
+      "description": "Level 17: Từ vựng Đi chơi xa (Dã ngoại & Biển)",
+      "questions": [
+        {"q_en": "Beach", "a_vi": "Bãi biển"}, {"q_en": "Sand", "a_vi": "Cát"}, {"q_en": "Wave", "a_vi": "Cơn sóng"}, {"q_en": "Sunshine", "a_vi": "Ánh nắng"}, {"q_en": "Sunset", "a_vi": "Hoàng hôn"}, {"q_en": "Sunrise", "a_vi": "Bình minh"}, {"q_en": "Breeze", "a_vi": "Cơn gió nhẹ"}, {"q_en": "Road trip", "a_vi": "Chuyến đi phượt bằng ô tô"}, {"q_en": "Drive", "a_vi": "Lái xe"}, {"q_en": "Scenery", "a_vi": "Phong cảnh"}, {"q_en": "Landscape", "a_vi": "Cảnh quan"}, {"q_en": "Mountain", "a_vi": "Ngọn núi"}, {"q_en": "Camp", "a_vi": "Cắm trại"}, {"q_en": "Tent", "a_vi": "Cái lều"}, {"q_en": "Peaceful", "a_vi": "Yên bình"}, {"q_en": "Memory", "a_vi": "Kỷ niệm"}, {"q_en": "Picture", "a_vi": "Bức ảnh"}, {"q_en": "Pose", "a_vi": "Tạo dáng"}, {"q_en": "Camera", "a_vi": "Máy ảnh"}, {"q_en": "Journey", "a_vi": "Hành trình"}
+      ]
+    },
+    {
+      "id": 18,
+      "type": "sentence",
+      "description": "Level 18: Mẫu câu Quan tâm Sức khỏe & Công việc",
+      "questions": [
+        {"q_en": "Wake up, sleepyhead! Time to start a new day.", "q_vi": "Gọi Crush dậy", "a_en": "Wake up, sleepyhead! Time to start a new day.", "a_vi": "Dậy đi đồ ngốc ham ngủ! Tới giờ bắt đầu một ngày mới rồi."},
+        {"q_en": "Don't forget to bring an umbrella. It looks like rain.", "q_vi": "Dặn mang ô", "a_en": "Don't forget to bring an umbrella. It looks like rain.", "a_vi": "Đừng quên mang theo ô nhé. Trời trông có vẻ sắp mưa đấy."},
+        {"q_en": "The weather is getting colder. Wear a thick jacket.", "q_vi": "Dặn mặc áo ấm", "a_en": "The weather is getting colder. Wear a thick jacket.", "a_vi": "Thời tiết đang lạnh dần rồi. Em nhớ mặc áo khoác dày nhé."},
+        {"q_en": "How was your day at work? Were you very busy?", "q_vi": "Hỏi thăm công việc", "a_en": "How was your day at work? Were you very busy?", "a_vi": "Ngày đi làm của em thế nào? Em có bận lắm không?"},
+        {"q_en": "You sound exhausted. Do you want me to come over?", "q_vi": "Thấy Crush mệt, muốn qua thăm", "a_en": "You sound exhausted. Do you want me to come over?", "a_vi": "Nghe giọng em có vẻ kiệt sức rồi. Em có muốn anh chạy qua không?"},
+        {"q_en": "I bought your favorite food. Come down, I am outside.", "q_vi": "Tạo bất ngờ mua đồ ăn", "a_en": "I bought your favorite food. Come down, I am outside.", "a_vi": "Anh mua món ăn yêu thích của em này. Xuống đi, anh đang ở ngoài."},
+        {"q_en": "Take your medicine and drink plenty of warm water.", "q_vi": "Dặn uống thuốc khi ốm", "a_en": "Take your medicine and drink plenty of warm water.", "a_vi": "Uống thuốc đi và nhớ uống nhiều nước ấm nhé."},
+        {"q_en": "I hate seeing you sick. I wish I could bear it for you.", "q_vi": "Thương xót khi Crush bệnh", "a_en": "I hate seeing you sick. I wish I could bear it for you.", "a_vi": "Anh ghét phải nhìn em ốm. Anh ước gì anh có thể chịu đựng thay em."},
+        {"q_en": "Don't stress too much about work. Just relax tonight.", "q_vi": "Khuyên bớt áp lực", "a_en": "Don't stress too much about work. Just relax tonight.", "a_vi": "Đừng áp lực quá nhiều về công việc. Tối nay cứ thư giãn đi."},
+        {"q_en": "Let me massage your shoulders. You are so tense.", "q_vi": "Đòi xoa bóp vai", "a_en": "Let me massage your shoulders. You are so tense.", "a_vi": "Để anh xoa bóp vai cho em nhé. Em đang rất căng cứng kìa."},
+        {"q_en": "Whenever you feel sad, just call me. I will listen.", "q_vi": "Làm chỗ dựa tinh thần", "a_en": "Whenever you feel sad, just call me. I will listen.", "a_vi": "Bất cứ khi nào em thấy buồn, cứ gọi cho anh. Anh sẽ lắng nghe."},
+        {"q_en": "I worry about you when you drive home late at night.", "q_vi": "Lo lắng khi về khuya", "a_en": "I worry about you when you drive home late at night.", "a_vi": "Anh lo cho em khi em lái xe về nhà lúc đêm muộn."},
+        {"q_en": "Text me as soon as you get home safely.", "q_vi": "Dặn báo bình an", "a_en": "Text me as soon as you get home safely.", "a_vi": "Nhắn tin cho anh ngay khi em về đến nhà an toàn nhé."},
+        {"q_en": "You are working too hard. You need to rest.", "q_vi": "Nhắc nhở giữ sức khỏe", "a_en": "You are working too hard. You need to rest.", "a_vi": "Em đang làm việc quá sức rồi. Em cần phải nghỉ ngơi."},
+        {"q_en": "I am always here to protect and take care of you.", "q_vi": "Khẳng định sự che chở", "a_en": "I am always here to protect and take care of you.", "a_vi": "Anh luôn ở đây để bảo vệ và chăm sóc cho em."},
+        {"q_en": "Your health is the most important thing to me.", "q_vi": "Câu nói trân trọng sức khỏe Crush", "a_en": "Your health is the most important thing to me.", "a_vi": "Sức khỏe của em là điều quan trọng nhất đối với anh."},
+        {"q_en": "Did you have any nightmares? Go back to sleep.", "q_vi": "Dỗ dành khi gặp ác mộng", "a_en": "Did you have any nightmares? Go back to sleep.", "a_vi": "Em gặp ác mộng hả? Ngủ tiếp đi ngoan nào."},
+        {"q_en": "I will stay on the phone until you fall asleep.", "q_vi": "Ru ngủ qua điện thoại", "a_en": "I will stay on the phone until you fall asleep.", "a_vi": "Anh sẽ giữ máy cho đến khi em chìm vào giấc ngủ."},
+        {"q_en": "Dream of me tonight. I miss you already.", "q_vi": "Dặn mơ về mình", "a_en": "Dream of me tonight. I miss you already.", "a_vi": "Đêm nay hãy mơ về anh nhé. Anh đã thấy nhớ em rồi."},
+        {"q_en": "I just woke up and you are my first thought.", "q_vi": "Sáng sớm báo cáo nỗi nhớ", "a_en": "I just woke up and you are my first thought.", "a_vi": "Anh vừa thức dậy và em là suy nghĩ đầu tiên của anh."}
+      ]
+    },
+    {
+      "id": 19,
+      "type": "sentence",
+      "description": "Level 19: Rủ đi Chơi Xa Cuối Tuần (Weekend Getaway)",
+      "questions": [
+        {"q_en": "Let's go on a road trip to the beach this weekend.", "q_vi": "Rủ đi phượt biển", "a_en": "Let's go on a road trip to the beach this weekend.", "a_vi": "Cuối tuần này chúng ta làm một chuyến đi phượt ra biển nhé."},
+        {"q_en": "Pack a small bag. I will handle all the driving.", "q_vi": "Nhắc chuẩn bị đồ", "a_en": "Pack a small bag. I will handle all the driving.", "a_vi": "Em xếp một cái túi nhỏ đi. Anh sẽ lo toàn bộ việc lái xe."},
+        {"q_en": "I booked a beautiful resort facing the ocean.", "q_vi": "Khoe đã đặt phòng xịn", "a_en": "I booked a beautiful resort facing the ocean.", "a_vi": "Anh đã đặt một resort tuyệt đẹp hướng ra đại dương."},
+        {"q_en": "The scenery along this coastal road is breathtaking.", "q_vi": "Khen cảnh đẹp trên đường", "a_en": "The scenery along this coastal road is breathtaking.", "a_vi": "Phong cảnh dọc theo con đường ven biển này thật đẹp đến nghẹt thở."},
+        {"q_en": "Roll down the window and feel the sea breeze.", "q_vi": "Bảo Crush cảm nhận gió biển", "a_en": "Roll down the window and feel the sea breeze.", "a_vi": "Hạ cửa kính xuống và cảm nhận làn gió biển đi em."},
+        {"q_en": "We can walk barefoot on the sand and watch the sunset.", "q_vi": "Vẽ viễn cảnh lãng mạn", "a_en": "We can walk barefoot on the sand and watch the sunset.", "a_vi": "Chúng ta có thể đi chân trần trên cát và ngắm mặt trời lặn."},
+        {"q_en": "Stand right there. The lighting is perfect for a picture.", "q_vi": "Làm thợ ảnh cho Crush", "a_en": "Stand right there. The lighting is perfect for a picture.", "a_vi": "Đứng ngay đó đi. Ánh sáng đang rất hoàn hảo để chụp một bức ảnh."},
+        {"q_en": "Pose naturally. Smile for the camera!", "q_vi": "Hướng dẫn tạo dáng", "a_en": "Pose naturally. Smile for the camera!", "a_vi": "Tạo dáng tự nhiên nào. Cười nhìn ống kính nhé!"},
+        {"q_en": "You look so beautiful in this photo. Let me send it to you.", "q_vi": "Khen ảnh đẹp", "a_en": "You look so beautiful in this photo. Let me send it to you.", "a_vi": "Em trông quá đỗi xinh đẹp trong bức ảnh này. Để anh gửi nó cho em."},
+        {"q_en": "Do you want to build a campfire on the beach tonight?", "q_vi": "Rủ đốt lửa trại", "a_en": "Do you want to build a campfire on the beach tonight?", "a_vi": "Tối nay em có muốn đốt lửa trại trên bãi biển không?"},
+        {"q_en": "We can sit by the fire and listen to the waves.", "q_vi": "Rủ ngồi nghe sóng vỗ", "a_en": "We can sit by the fire and listen to the waves.", "a_vi": "Chúng ta có thể ngồi cạnh đống lửa và lắng nghe tiếng sóng vỗ."},
+        {"q_en": "It is so peaceful here, far away from the busy city.", "q_vi": "Nhận xét không gian yên bình", "a_en": "It is so peaceful here, far away from the busy city.", "a_vi": "Ở đây thật bình yên, tránh xa thành phố ồn ào náo nhiệt."},
+        {"q_en": "I want to create unforgettable memories with you.", "q_vi": "Khẳng định mục đích chuyến đi", "a_en": "I want to create unforgettable memories with you.", "a_vi": "Anh muốn tạo ra những kỷ niệm không thể quên cùng với em."},
+        {"q_en": "Wake up early tomorrow, we will watch the sunrise together.", "q_vi": "Hẹn đón bình minh", "a_en": "Wake up early tomorrow, we will watch the sunrise together.", "a_vi": "Ngày mai dậy sớm nhé, chúng ta sẽ cùng nhau ngắm bình minh."},
+        {"q_en": "Let's pitch a tent and camp in the mountains next time.", "q_vi": "Hẹn kèo đi núi lần sau", "a_en": "Let's pitch a tent and camp in the mountains next time.", "a_vi": "Lần tới mình dựng lều và cắm trại trên núi nhé."},
+        {"q_en": "Any journey is perfect as long as you are with me.", "q_vi": "Thả thính sến súa", "a_en": "Any journey is perfect as long as you are with me.", "a_vi": "Bất kỳ hành trình nào cũng hoàn hảo miễn là có em đi cùng anh."},
+        {"q_en": "Are you hungry? We can stop by a local seafood market.", "q_vi": "Hỏi han chuyện ăn uống", "a_en": "Are you hungry? We can stop by a local seafood market.", "a_vi": "Em đói chưa? Mình có thể ghé ngang một khu chợ hải sản địa phương."},
+        {"q_en": "Lean your head on my shoulder if you want to sleep.", "q_vi": "Cho mượn bờ vai", "a_en": "Lean your head on my shoulder if you want to sleep.", "a_vi": "Tựa đầu vào vai anh này nếu em muốn ngủ."},
+        {"q_en": "This trip made me realize how much I care about you.", "q_vi": "Bày tỏ cảm xúc sau chuyến đi", "a_en": "This trip made me realize how much I care about you.", "a_vi": "Chuyến đi này làm anh nhận ra anh quan tâm đến em nhiều như thế nào."},
+        {"q_en": "Thank you for spending your weekend with me.", "q_vi": "Cảm ơn Crush đã đi cùng", "a_en": "Thank you for spending your weekend with me.", "a_vi": "Cảm ơn em vì đã dành trọn ngày cuối tuần bên anh."}
+      ]
+    },
+    {
+      "id": 20,
+      "type": "boss",
+      "description": "Level 20: BOSS Đi Phượt (Chuyến Đi Biển Đầy Lãng Mạn)",
+      "questions": [
+        {"q_en": "Wow, the ocean is so beautiful! Thank you for bringing me here.", "q_vi": "(Boss Crush) Wow, đại dương đẹp quá! Cảm ơn anh vì đã đưa em đến đây.", "a_en": "I knew you would love it. You needed a break from the city stress.", "a_vi": "Anh biết em sẽ thích mà. Em cần được nghỉ ngơi khỏi áp lực thành phố." },
+        {"q_en": "I really did. The breeze feels amazing on my face.", "q_vi": "Tận hưởng gió biển", "a_en": "Your hair is blowing in the wind. You look like a movie star right now.", "a_vi": "Tóc em đang bay trong gió kìa. Trông em giống hệt một ngôi sao điện ảnh lúc này vậy." },
+        {"q_en": "Stop flattering me! Look at that sunset, it's glowing.", "q_vi": "Đánh trống lảng chỉ hoàng hôn", "a_en": "It is beautiful, but I am too busy looking at your smile.", "a_vi": "Nó đẹp thật, nhưng anh quá bận rộn nhìn ngắm nụ cười của em mất rồi." },
+        {"q_en": "You always know exactly what to say. Should we walk on the sand?", "q_vi": "Rủ đi dạo trên cát", "a_en": "Take off your shoes. Let's walk barefoot near the waves.", "a_vi": "Cởi giày ra đi. Chúng ta cùng đi chân trần gần những con sóng nhé." },
+        {"q_en": "The water is a bit cold! (Splashes water at him)", "q_vi": "Tạt nước trêu đùa", "a_en": "Oh, so you want to play a game? I will catch you!", "a_vi": "Ồ, vậy ra em muốn chơi trò chơi hả? Anh sẽ bắt được em!" },
+        {"q_en": "(Laughing) Okay, okay, I surrender! I'm getting tired.", "q_vi": "Chạy mệt đầu hàng", "a_en": "Let's sit down on this log. The sky is turning purple.", "a_vi": "Mình ngồi xuống khúc gỗ này nhé. Bầu trời đang chuyển sang màu tím rồi." },
+        {"q_en": "It's getting a little chilly now. I should have brought a scarf.", "q_vi": "Than lạnh vì gió", "a_en": "Come here. I will wrap my jacket around both of us.", "a_vi": "Lại đây. Anh sẽ quấn áo khoác của anh quanh cả hai đứa mình." },
+        {"q_en": "This is so cozy. Your heartbeat is so fast, Vuong.", "q_vi": "Nghe thấy tim đập nhanh", "a_en": "That happens every time you are this close to me.", "a_vi": "Điều đó xảy ra mỗi khi em ở gần anh thế này đấy." },
+        {"q_en": "Really? I never thought you would be this nervous.", "q_vi": "Ngạc nhiên vì sự bối rối", "a_en": "I am not nervous, I am just overwhelmed by my feelings for you.", "a_vi": "Anh không bối rối, anh chỉ bị choáng ngợp bởi cảm xúc dành cho em thôi." },
+        {"q_en": "Vuong... you have been so good to me lately.", "q_vi": "Cảm động vì sự quan tâm", "a_en": "Because I care about you more than just a friend, Sarah.", "a_vi": "Bởi vì anh quan tâm em nhiều hơn mức một người bạn, Sarah à." },
+        {"q_en": "Are you confessing your feelings to me at the beach?", "q_vi": "Hỏi thẳng việc tỏ tình", "a_en": "Yes. I want to be the one who holds your hand every day.", "a_vi": "Đúng vậy. Anh muốn trở thành người nắm tay em mỗi ngày." },
+        {"q_en": "I... I don't know what to say. I'm afraid of getting hurt again.", "q_vi": "Crush do dự vì tổn thương cũ", "a_en": "I promise I will protect your heart. You are safe with me.", "a_vi": "Anh hứa anh sẽ bảo vệ trái tim em. Em an toàn khi ở bên anh." },
+        {"q_en": "Do you really mean that? Will you stay by my side?", "q_vi": "Hỏi xin sự chắc chắn", "a_en": "Look into my eyes. I am not going anywhere. I am yours.", "a_vi": "Nhìn vào mắt anh này. Anh sẽ không đi đâu cả. Anh là của em." },
+        {"q_en": "You make it so hard to say no. I really like you too.", "q_vi": "Crush thú nhận tình cảm", "a_en": "Can I kiss you? Just to seal the promise.", "a_vi": "Anh có thể hôn em không? Chỉ để niêm phong lời hứa này." },
+        {"q_en": "(Nods and blushes) Yes, you can.", "q_vi": "Gật đầu đồng ý", "a_en": "(Kisses gently) That was the sweetest moment of my life.", "a_vi": "(Hôn nhẹ nhàng) Đó là khoảnh khắc ngọt ngào nhất trong đời anh." },
+        {"q_en": "Wow... The stars are coming out now.", "q_vi": "Chuyển chủ đề ngắm sao", "a_en": "They are beautiful, but they can't outshine you tonight.", "a_vi": "Chúng rất đẹp, nhưng không thể tỏa sáng làm lu mờ em tối nay được." },
+        {"q_en": "We should head back to the resort. I am getting hungry.", "q_vi": "Đói bụng đòi về", "a_en": "I have already ordered a romantic seafood dinner to our balcony.", "a_vi": "Anh đã đặt sẵn một bữa tối hải sản lãng mạn ngoài ban công của chúng ta rồi." },
+        {"q_en": "You planned all of this perfectly, didn't you?", "q_vi": "Khen sự chu đáo chuẩn bị trước", "a_en": "I wanted everything to be flawless for our first official trip as a couple.", "a_vi": "Anh muốn mọi thứ không tì vết trong chuyến đi chính thức đầu tiên của chúng ta với tư cách là một cặp." },
+        {"q_en": "I am so happy I said yes to this road trip.", "q_vi": "Khẳng định sự hạnh phúc", "a_en": "This is just the beginning of our journey together, my love.", "a_vi": "Đây mới chỉ là sự khởi đầu cho hành trình cùng nhau của chúng ta thôi, tình yêu của anh." },
+        {"q_en": "Let's go eat, my boyfriend.", "q_vi": "Crush gọi bằng danh xưng mới", "a_en": "Hold my hand tight. Let's go, my girlfriend.", "a_vi": "Nắm chặt tay anh nhé. Mình đi thôi, bạn gái của anh." }
+      ]
+    },
+    {
+      "id": 21,
+      "type": "vocab",
+      "description": "Level 21: Từ vựng Tình cảm Sâu đậm & Tin tưởng",
+      "questions": [
+        {"q_en": "Truth", "a_vi": "Sự thật"}, {"q_en": "Honest", "a_vi": "Thành thật / Trung thực"}, {"q_en": "Trust", "a_vi": "Lòng tin / Sự tin tưởng"}, {"q_en": "Secret", "a_vi": "Bí mật"}, {"q_en": "Share", "a_vi": "Chia sẻ"}, {"q_en": "Listen", "a_vi": "Lắng nghe"}, {"q_en": "Understand", "a_vi": "Thấu hiểu"}, {"q_en": "Respect", "a_vi": "Sự tôn trọng"}, {"q_en": "Support", "a_vi": "Sự hỗ trợ / Chỗ dựa"}, {"q_en": "Encourage", "a_vi": "Động viên / Khuyến khích"}, {"q_en": "Proud", "a_vi": "Tự hào"}, {"q_en": "Lucky", "a_vi": "May mắn"}, {"q_en": "Grateful", "a_vi": "Biết ơn"}, {"q_en": "Future", "a_vi": "Tương lai"}, {"q_en": "Plan", "a_vi": "Kế hoạch"}, {"q_en": "Family", "a_vi": "Gia đình"}, {"q_en": "Home", "a_vi": "Mái ấm / Nhà"}, {"q_en": "Safe", "a_vi": "An toàn"}, {"q_en": "Peace", "a_vi": "Sự bình yên"}, {"q_en": "Commitment", "a_vi": "Sự cam kết"}
+      ]
+    },
+    {
+      "id": 22,
+      "type": "vocab",
+      "description": "Level 22: Từ vựng Hờn dỗi, Cãi vã & Xin lỗi",
+      "questions": [
+        {"q_en": "Angry", "a_vi": "Tức giận"}, {"q_en": "Mad", "a_vi": "Nổi điên / Phát điên"}, {"q_en": "Sad", "a_vi": "Buồn bã"}, {"q_en": "Cry", "a_vi": "Khóc"}, {"q_en": "Tear", "a_vi": "Nước mắt"}, {"q_en": "Silent", "a_vi": "Im lặng"}, {"q_en": "Fault", "a_vi": "Lỗi lầm"}, {"q_en": "Mistake", "a_vi": "Sai lầm"}, {"q_en": "Apologize", "a_vi": "Nói lời xin lỗi"}, {"q_en": "Sorry", "a_vi": "Xin lỗi / Lấy làm tiếc"}, {"q_en": "Forgive", "a_vi": "Tha thứ"}, {"q_en": "Promise", "a_vi": "Lời hứa"}, {"q_en": "Change", "a_vi": "Thay đổi"}, {"q_en": "Explain", "a_vi": "Giải thích"}, {"q_en": "Reason", "a_vi": "Lý do"}, {"q_en": "Argue", "a_vi": "Tranh cãi"}, {"q_en": "Fight", "a_vi": "Cãi vã / Đánh nhau"}, {"q_en": "Jealousy", "a_vi": "Sự ghen tuông"}, {"q_en": "Misunderstanding", "a_vi": "Sự hiểu lầm"}, {"q_en": "Makeup", "a_vi": "Làm hòa"}
+      ]
+    },
+    {
+      "id": 23,
+      "type": "sentence",
+      "description": "Level 23: Mẫu câu Thể hiện Tình yêu Chín chắn",
+      "questions": [
+        {"q_en": "I am so proud of everything you have achieved.", "q_vi": "Khen ngợi thành tựu", "a_en": "I am so proud of everything you have achieved.", "a_vi": "Anh rất tự hào về mọi thứ em đã đạt được."},
+        {"q_en": "You make me want to become a better man.", "q_vi": "Nói về sự tích cực của tình yêu", "a_en": "You make me want to become a better man.", "a_vi": "Em khiến anh muốn trở thành một người đàn ông tốt hơn."},
+        {"q_en": "Thank you for always supporting me during hard times.", "q_vi": "Cảm ơn vì đã ở bên", "a_en": "Thank you for always supporting me during hard times.", "a_vi": "Cảm ơn em vì đã luôn ủng hộ anh trong những lúc khó khăn."},
+        {"q_en": "You can tell me all your secrets. I will always listen.", "q_vi": "Tạo niềm tin để Crush kể chuyện", "a_en": "You can tell me all your secrets. I will always listen.", "a_vi": "Em có thể kể cho anh nghe mọi bí mật. Anh sẽ luôn lắng nghe."},
+        {"q_en": "I respect your decisions, even if we disagree.", "q_vi": "Nói về sự tôn trọng", "a_en": "I respect your decisions, even if we disagree.", "a_vi": "Anh tôn trọng các quyết định của em, kể cả khi chúng ta bất đồng quan điểm."},
+        {"q_en": "Being with you gives me a sense of absolute peace.", "q_vi": "Mô tả cảm giác bình yên", "a_en": "Being with you gives me a sense of absolute peace.", "a_vi": "Ở bên em mang lại cho anh một cảm giác bình yên tuyệt đối."},
+        {"q_en": "I am incredibly grateful to have you in my life.", "q_vi": "Biết ơn vì có người yêu", "a_en": "I am incredibly grateful to have you in my life.", "a_vi": "Anh vô cùng biết ơn vì có em trong đời."},
+        {"q_en": "You are not just my girlfriend, you are my best friend.", "q_vi": "Tôn vinh sự đồng điệu", "a_en": "You are not just my girlfriend, you are my best friend.", "a_vi": "Em không chỉ là bạn gái anh, em còn là người bạn thân nhất của anh."},
+        {"q_en": "I have been thinking about our future together.", "q_vi": "Bắt đầu bàn về tương lai", "a_en": "I have been thinking about our future together.", "a_vi": "Anh vẫn luôn suy nghĩ về tương lai của hai đứa mình."},
+        {"q_en": "I want to build a warm home with you someday.", "q_vi": "Nhắc đến mái ấm", "a_en": "I want to build a warm home with you someday.", "a_vi": "Một ngày nào đó anh muốn xây dựng một mái ấm áp cùng với em."},
+        {"q_en": "I promise to always be honest and faithful to you.", "q_vi": "Lời hứa chung thủy", "a_en": "I promise to always be honest and faithful to you.", "a_vi": "Anh hứa sẽ luôn thành thật và chung thủy với em."},
+        {"q_en": "I completely trust you with all my heart.", "q_vi": "Trao trọn niềm tin", "a_en": "I completely trust you with all my heart.", "a_vi": "Anh hoàn toàn tin tưởng em bằng cả trái tim mình."},
+        {"q_en": "You are the most precious gift destiny has given me.", "q_vi": "Ví Crush như món quà định mệnh", "a_en": "You are the most precious gift destiny has given me.", "a_vi": "Em là món quà quý giá nhất mà định mệnh đã ban tặng cho anh."},
+        {"q_en": "Don't ever doubt how much I love you.", "q_vi": "Nhắc nhở đừng nghi ngờ tình cảm", "a_en": "Don't ever doubt how much I love you.", "a_vi": "Đừng bao giờ nghi ngờ việc anh yêu em nhiều như thế nào."},
+        {"q_en": "I will stand by your side no matter what happens.", "q_vi": "Khẳng định sự đồng hành", "a_en": "I will stand by your side no matter what happens.", "a_vi": "Anh sẽ đứng bên cạnh em dù có chuyện gì xảy ra đi nữa."},
+        {"q_en": "Your happiness is my top priority.", "q_vi": "Ưu tiên niềm vui của người yêu", "a_en": "Your happiness is my top priority.", "a_vi": "Hạnh phúc của em là ưu tiên hàng đầu của anh."},
+        {"q_en": "I love your flaws just as much as your perfections.", "q_vi": "Yêu cả khuyết điểm", "a_en": "I love your flaws just as much as your perfections.", "a_vi": "Anh yêu những khuyết điểm của em cũng nhiều như sự hoàn hảo của em vậy."},
+        {"q_en": "Every day with you is a beautiful adventure.", "q_vi": "Khen ngợi cuộc hành trình tình yêu", "a_en": "Every day with you is a beautiful adventure.", "a_vi": "Mỗi ngày bên em đều là một cuộc phiêu lưu tuyệt đẹp."},
+        {"q_en": "I am so lucky to call you mine.", "q_vi": "Cảm thấy may mắn vì sở hữu", "a_en": "I am so lucky to call you mine.", "a_vi": "Anh thật may mắn khi được gọi em là của anh."},
+        {"q_en": "My love for you grows stronger every single day.", "q_vi": "Khẳng định tình yêu lớn dần", "a_en": "My love for you grows stronger every single day.", "a_vi": "Tình yêu anh dành cho em lớn mạnh hơn mỗi ngày."}
+      ]
+    },
+    {
+      "id": 24,
+      "type": "sentence",
+      "description": "Level 24: Nghệ thuật Dỗ dành & Xin lỗi khi Cãi vã",
+      "questions": [
+        {"q_en": "Please don't be angry with me anymore.", "q_vi": "Xin đừng giận", "a_en": "Please don't be angry with me anymore.", "a_vi": "Xin em đừng tức giận với anh nữa mà."},
+        {"q_en": "I am so sorry for hurting your feelings.", "q_vi": "Xin lỗi vì làm tổn thương", "a_en": "I am so sorry for hurting your feelings.", "a_vi": "Anh rất xin lỗi vì đã làm tổn thương cảm xúc của em."},
+        {"q_en": "I know it was my fault. I made a stupid mistake.", "q_vi": "Nhận lỗi sai do ngu ngốc", "a_en": "I know it was my fault. I made a stupid mistake.", "a_vi": "Anh biết đó là lỗi của anh. Anh đã phạm một sai lầm ngu ngốc."},
+        {"q_en": "Can you please give me a chance to explain?", "q_vi": "Xin cơ hội giải thích", "a_en": "Can you please give me a chance to explain?", "a_vi": "Em có thể vui lòng cho anh một cơ hội để giải thích không?"},
+        {"q_en": "It is just a misunderstanding, I swear to you.", "q_vi": "Thề là hiểu lầm", "a_en": "It is just a misunderstanding, I swear to you.", "a_vi": "Đó chỉ là một sự hiểu lầm thôi, anh thề với em đấy."},
+        {"q_en": "I hate it when we fight like this. It breaks my heart.", "q_vi": "Ghét việc cãi nhau", "a_en": "I hate it when we fight like this. It breaks my heart.", "a_vi": "Anh ghét việc chúng ta cãi vã như thế này. Nó làm trái tim anh tan nát."},
+        {"q_en": "Please stop giving me the silent treatment. Talk to me.", "q_vi": "Xin đừng chiến tranh lạnh", "a_en": "Please stop giving me the silent treatment. Talk to me.", "a_vi": "Làm ơn đừng dùng sự im lặng để trừng phạt anh nữa. Hãy nói chuyện với anh đi."},
+        {"q_en": "I can't stand seeing tears in your eyes.", "q_vi": "Không chịu nổi khi thấy nước mắt", "a_en": "I can't stand seeing tears in your eyes.", "a_vi": "Anh không chịu nổi việc nhìn thấy nước mắt trong mắt em."},
+        {"q_en": "Let me wipe your tears. Don't cry, my love.", "q_vi": "Lau nước mắt cho Crush", "a_en": "Let me wipe your tears. Don't cry, my love.", "a_vi": "Để anh lau nước mắt cho em. Đừng khóc nữa, tình yêu của anh."},
+        {"q_en": "I promise I will change and be more careful next time.", "q_vi": "Hứa sẽ thay đổi", "a_en": "I promise I will change and be more careful next time.", "a_vi": "Anh hứa anh sẽ thay đổi và cẩn thận hơn vào lần sau."},
+        {"q_en": "You are completely right to be mad at me.", "q_vi": "Công nhận Crush giận là đúng", "a_en": "You are completely right to be mad at me.", "a_vi": "Em hoàn toàn có quyền nổi điên với anh."},
+        {"q_en": "There is no reason for you to be jealous. I only love you.", "q_vi": "Dỗ dành khi Crush ghen", "a_en": "There is no reason for you to be jealous. I only love you.", "a_vi": "Em không có lý do gì phải ghen tuông cả. Anh chỉ yêu mình em thôi."},
+        {"q_en": "I overreacted yesterday. I should have listened to you.", "q_vi": "Nhận lỗi phản ứng thái quá", "a_en": "I overreacted yesterday. I should have listened to you.", "a_vi": "Hôm qua anh đã phản ứng thái quá. Lẽ ra anh nên lắng nghe em."},
+        {"q_en": "I am standing outside your house. Please come down.", "q_vi": "Đến tận nhà xin lỗi", "a_en": "I am standing outside your house. Please come down.", "a_vi": "Anh đang đứng ngoài cửa nhà em này. Xuống đi em."},
+        {"q_en": "Can you forgive me this one time?", "q_vi": "Xin tha thứ một lần", "a_en": "Can you forgive me this one time?", "a_vi": "Em có thể tha thứ cho anh lần này được không?"},
+        {"q_en": "Let's make up and forget about this argument.", "q_vi": "Rủ làm hòa", "a_en": "Let's make up and forget about this argument.", "a_vi": "Mình làm hòa và quên đi trận cãi vã này nhé."},
+        {"q_en": "I brought your favorite bubble tea to apologize.", "q_vi": "Dùng trà sữa chuộc lỗi", "a_en": "I brought your favorite bubble tea to apologize.", "a_vi": "Anh có mang trà sữa em thích đến để xin lỗi đây."},
+        {"q_en": "Come here and give me a hug. I missed you so much.", "q_vi": "Ôm làm hòa", "a_en": "Come here and give me a hug. I missed you so much.", "a_vi": "Lại đây và ôm anh một cái đi. Anh đã nhớ em rất nhiều."},
+        {"q_en": "Our relationship is more important than my ego.", "q_vi": "Hạ cái tôi xuống", "a_en": "Our relationship is more important than my ego.", "a_vi": "Mối quan hệ của chúng ta quan trọng hơn cái tôi của anh."},
+        {"q_en": "I will make it up to you, I swear.", "q_vi": "Hứa sẽ bù đắp", "a_en": "I will make it up to you, I swear.", "a_vi": "Anh sẽ bù đắp cho em, anh thề đấy."}
+      ]
+    },
+    {
+      "id": 25,
+      "type": "boss",
+      "description": "Level 25: BOSS Giận Dỗi (Giải quyết hiểu lầm cực gắt lúc nửa đêm)",
+      "questions": [
+        {"q_en": "Why are you calling me at 1 AM? I am trying to sleep.", "q_vi": "(Boss Dỗi) Sao anh gọi em lúc 1h sáng? Em đang cố ngủ.", "a_en": "I can't sleep knowing you are mad at me. Please, let's talk.", "a_vi": "Anh không thể ngủ được khi biết em đang giận anh. Làm ơn, mình nói chuyện nhé." },
+        {"q_en": "There is nothing to talk about. I saw you with that girl at the cafe.", "q_vi": "Ghen tuông vì thấy đi với gái", "a_en": "Sarah, it's a huge misunderstanding. She is just a coworker.", "a_vi": "Sarah à, đó là một hiểu lầm rất lớn. Cô ấy chỉ là đồng nghiệp thôi." },
+        {"q_en": "A coworker? You were laughing and looking so happy together.", "q_vi": "Bắt bẻ chuyện cười đùa", "a_en": "We were just discussing a project deadline. I swear to you.", "a_vi": "Bọn anh chỉ đang thảo luận về hạn chót dự án thôi. Anh thề với em đấy." },
+        {"q_en": "Then why didn't you reply to my messages all afternoon?", "q_vi": "Trách vì không rep tin nhắn", "a_en": "My phone died, and I was stuck in meetings. It was my fault for not telling you.", "a_vi": "Điện thoại anh hết pin, và anh thì kẹt trong các cuộc họp. Là lỗi của anh vì đã không báo cho em." },
+        {"q_en": "You always have an excuse. I felt like a fool waiting for you.", "q_vi": "Trách móc sự vô tâm", "a_en": "I am so sorry for making you feel that way. You are my priority.", "a_vi": "Anh rất xin lỗi vì đã làm em cảm thấy như vậy. Em là ưu tiên của anh." },
+        {"q_en": "If I am your priority, you wouldn't ignore me. Just leave me alone.", "q_vi": "Dỗi đòi kết thúc cuộc gọi", "a_en": "I am not hanging up. In fact, look out your window.", "a_vi": "Anh sẽ không cúp máy đâu. Thực ra thì, em hãy nhìn ra ngoài cửa sổ đi." },
+        {"q_en": "Wait, are you outside my house? It is freezing out there!", "q_vi": "Bất ngờ vì Vương tới tận nhà", "a_en": "Yes. I drove here straight from work. Come down, please.", "a_vi": "Ừ. Anh lái xe đến đây thẳng từ chỗ làm. Xuống đi em." },
+        {"q_en": "You are crazy! Fine, I'm coming down. Give me a minute.", "q_vi": "Chịu xuống nhà nhưng vẫn gắt", "a_en": "Take your time. Put on a jacket so you don't get a cold.", "a_vi": "Cứ từ từ. Khoác áo ấm vào để em không bị cảm lạnh nhé." },
+        {"q_en": "(Opens door) You are shivering! Why didn't you wear a jacket?", "q_vi": "Ra mở cửa, xót xa vì lạnh", "a_en": "I was in a rush to see you. I didn't care about the cold.", "a_vi": "Anh đã quá vội vã để gặp em. Anh không còn bận tâm đến cái lạnh nữa." },
+        {"q_en": "You are such an idiot. Come inside before you freeze to death.", "q_vi": "Mắng yêu bắt vào nhà", "a_en": "Only if you promise you will listen to me explain.", "a_vi": "Chỉ khi em hứa sẽ lắng nghe anh giải thích thôi." },
+        {"q_en": "Fine, explain. But I am still angry.", "q_vi": "Khoanh tay chờ giải thích", "a_en": "That girl is transferring to another branch next week. I won't see her again.", "a_vi": "Cô gái đó sẽ chuyển sang chi nhánh khác vào tuần tới. Anh sẽ không gặp lại cô ấy nữa." },
+        {"q_en": "Really? Why didn't you just tell me that?", "q_vi": "Dịu giọng xuống", "a_en": "I should have. I was stupid. I hate seeing tears in your beautiful eyes.", "a_vi": "Lẽ ra anh nên nói. Anh thật ngốc. Anh ghét phải nhìn thấy nước mắt trong đôi mắt đẹp của em." },
+        {"q_en": "It's because I care about you, Vuong. I got jealous.", "q_vi": "Thú nhận vì yêu nên ghen", "a_en": "There is absolutely no reason to be jealous. My heart only belongs to you.", "a_vi": "Hoàn toàn không có lý do gì để ghen cả. Trái tim anh chỉ thuộc về em thôi." },
+        {"q_en": "Do you mean that? Swear it.", "q_vi": "Đòi lời thề", "a_en": "I swear it. You are the most precious person in my life.", "a_vi": "Anh thề đấy. Em là người quý giá nhất trong đời anh." },
+        {"q_en": "Okay... I forgive you. But don't do it again.", "q_vi": "Chấp nhận tha thứ", "a_en": "I promise I will be more careful and communicate better. Come here.", "a_vi": "Anh hứa sẽ cẩn thận hơn và giao tiếp tốt hơn. Lại đây nào." },
+        {"q_en": "(Hugs him) You are freezing. I will make you some hot tea.", "q_vi": "Ôm làm hòa, đòi pha trà", "a_en": "Your hug is all the warmth I need right now.", "a_vi": "Cái ôm của em là tất cả sự ấm áp mà anh cần lúc này rồi." },
+        {"q_en": "Stop being so cheesy. Sit on the couch.", "q_vi": "Trách sến súa", "a_en": "I brought your favorite chocolate cake to apologize. It's in the car.", "a_vi": "Anh có mang bánh kem sô-cô-la em thích tới để xin lỗi. Nó ở ngoài xe." },
+        {"q_en": "Chocolate cake? Okay, you are totally forgiven now.", "q_vi": "Bị đồ ăn mua chuộc", "a_en": "Haha, I know the way to your heart. Let's make up and forget this fight.", "a_vi": "Haha, anh biết đường đi vào trái tim em mà. Mình làm hòa và quên vụ cãi vã này đi nhé." },
+        {"q_en": "Yeah. I hate fighting with you. It was exhausting.", "q_vi": "Than mệt mỏi", "a_en": "Me too. Let's promise to always trust each other from now on.", "a_vi": "Anh cũng vậy. Hãy hứa sẽ luôn tin tưởng nhau từ nay về sau nhé." },
+        {"q_en": "I promise. Now go get my cake before I get mad again!", "q_vi": "Trêu chọc giục lấy bánh", "a_en": "Yes, ma'am! I will be right back.", "a_vi": "Vâng, thưa quý cô! Anh sẽ quay lại ngay." }
+      ]
+    },
+    {
+      "id": 26,
+      "type": "vocab",
+      "description": "Level 26: Từ vựng Ra mắt Bạn bè & Mối quan hệ Xã hội",
+      "questions": [
+        {"q_en": "Friend", "a_vi": "Người bạn"}, {"q_en": "Bestie", "a_vi": "Bạn thân nhất"}, {"q_en": "Introduce", "a_vi": "Giới thiệu"}, {"q_en": "Meet", "a_vi": "Gặp gỡ"}, {"q_en": "Hang out", "a_vi": "Đi chơi chung / Tụ tập"}, {"q_en": "Party", "a_vi": "Bữa tiệc"}, {"q_en": "Comfortable", "a_vi": "Thoải mái"}, {"q_en": "Polite", "a_vi": "Lịch sự / Lễ phép"}, {"q_en": "Impression", "a_vi": "Ấn tượng"}, {"q_en": "Approve", "a_vi": "Tán thành / Ủng hộ"}, {"q_en": "Tease", "a_vi": "Trêu chọc"}, {"q_en": "Shy", "a_vi": "Xấu hổ / Rụt rè"}, {"q_en": "Outgoing", "a_vi": "Hòa đồng / Cởi mở"}, {"q_en": "Talkative", "a_vi": "Hoạt ngôn / Nói nhiều"}, {"q_en": "Quiet", "a_vi": "Ít nói / Trầm tính"}, {"q_en": "Couple", "a_vi": "Cặp đôi"}, {"q_en": "Relationship", "a_vi": "Mối quan hệ"}, {"q_en": "Approval", "a_vi": "Sự chấp thuận"}, {"q_en": "Genuine", "a_vi": "Chân thành"}, {"q_en": "Protect", "a_vi": "Bảo vệ (người yêu trước bạn bè)"}
+      ]
+    },
+    {
+      "id": 27,
+      "type": "vocab",
+      "description": "Level 27: Từ vựng Lời Thề nguyện & Cầu Hôn",
+      "questions": [
+        {"q_en": "Ring", "a_vi": "Chiếc nhẫn"}, {"q_en": "Diamond", "a_vi": "Kim cương"}, {"q_en": "Knee", "a_vi": "Đầu gối (quỳ gối)"}, {"q_en": "Marry", "a_vi": "Kết hôn / Cưới"}, {"q_en": "Wife", "a_vi": "Người vợ"}, {"q_en": "Husband", "a_vi": "Người chồng"}, {"q_en": "Forever", "a_vi": "Mãi mãi"}, {"q_en": "Eternity", "a_vi": "Sự vĩnh cửu"}, {"q_en": "Promise", "a_vi": "Lời hứa"}, {"q_en": "Vow", "a_vi": "Lời thề nguyện"}, {"q_en": "Grow old", "a_vi": "Già đi cùng nhau"}, {"q_en": "Journey", "a_vi": "Hành trình"}, {"q_en": "Adventure", "a_vi": "Chuyến phiêu lưu"}, {"q_en": "Partner", "a_vi": "Người bạn đời / Bạn đồng hành"}, {"q_en": "Soulmate", "a_vi": "Bạn tâm giao / Tri kỷ"}, {"q_en": "Tear of joy", "a_vi": "Giọt nước mắt hạnh phúc"}, {"q_en": "Surprise", "a_vi": "Sự bất ngờ"}, {"q_en": "Proposal", "a_vi": "Lời cầu hôn"}, {"q_en": "Commit", "a_vi": "Cam kết / Gắn bó"}, {"q_en": "Love", "a_vi": "Tình yêu"}
+      ]
+    },
+    {
+      "id": 28,
+      "type": "sentence",
+      "description": "Level 28: Giao tiếp Ra mắt Hội Bạn thân của Crush",
+      "questions": [
+        {"q_en": "I am so nervous to meet your best friends tonight.", "q_vi": "Hồi hộp trước khi ra mắt", "a_en": "I am so nervous to meet your best friends tonight.", "a_vi": "Anh rất hồi hộp khi gặp những người bạn thân nhất của em tối nay."},
+        {"q_en": "Don't worry, just be yourself. They will love you.", "q_vi": "Động viên tinh thần", "a_en": "Don't worry, just be yourself. They will love you.", "a_vi": "Đừng lo, hãy cứ là chính mình. Họ sẽ quý anh thôi."},
+        {"q_en": "Hello everyone, it is so nice to finally meet you all.", "q_vi": "Chào hỏi bạn bè", "a_en": "Hello everyone, it is so nice to finally meet you all.", "a_vi": "Chào mọi người, thật vui vì cuối cùng cũng được gặp tất cả các bạn."},
+        {"q_en": "Sarah talks about you guys all the time.", "q_vi": "Tạo thiện cảm", "a_en": "Sarah talks about you guys all the time.", "a_vi": "Sarah lúc nào cũng kể về các bạn hết đó."},
+        {"q_en": "Let me order the first round of drinks for the table.", "q_vi": "Ga lăng mời nước", "a_en": "Let me order the first round of drinks for the table.", "a_vi": "Để tôi gọi chầu nước đầu tiên cho cả bàn nhé."},
+        {"q_en": "So, how long have you guys known each other?", "q_vi": "Bắt chuyện hỏi thâm niên chơi chung", "a_en": "So, how long have you guys known each other?", "a_vi": "Vậy, các bạn đã biết nhau bao lâu rồi?"},
+        {"q_en": "Please don't tease her too much, she is getting shy.", "q_vi": "Bảo vệ Crush khi bị trêu", "a_en": "Please don't tease her too much, she is getting shy.", "a_vi": "Đừng trêu cô ấy quá đáng nhé, cô ấy đang xấu hổ kìa."},
+        {"q_en": "I promise I will take good care of her. You have my word.", "q_vi": "Khẳng định với bạn bè Crush", "a_en": "I promise I will take good care of her. You have my word.", "a_vi": "Tôi hứa tôi sẽ chăm sóc tốt cho cô ấy. Các bạn có lời hứa của tôi."},
+        {"q_en": "Your friends are really fun and outgoing.", "q_vi": "Khen bạn bè sau buổi tiệc", "a_en": "Your friends are really fun and outgoing.", "a_vi": "Bạn bè của em thực sự rất vui vẻ và cởi mở."},
+        {"q_en": "I think I made a pretty good impression tonight.", "q_vi": "Tự tin về bản thân", "a_en": "I think I made a pretty good impression tonight.", "a_vi": "Anh nghĩ tối nay anh đã tạo được một ấn tượng khá tốt."},
+        {"q_en": "Did they approve of our relationship?", "q_vi": "Hỏi xem bạn bè có duyệt không", "a_en": "Did they approve of our relationship?", "a_vi": "Họ có tán thành mối quan hệ của chúng ta không?"},
+        {"q_en": "They said you are the perfect gentleman.", "q_vi": "Crush truyền đạt lại lời khen", "a_en": "They said you are the perfect gentleman.", "a_vi": "Họ bảo anh là một quý ông hoàn hảo đấy."},
+        {"q_en": "I am glad they feel comfortable around me.", "q_vi": "Vui vì hòa nhập được", "a_en": "I am glad they feel comfortable around me.", "a_vi": "Anh rất vui vì họ cảm thấy thoải mái khi ở cạnh anh."},
+        {"q_en": "Next time, let's invite them to our house for a BBQ.", "q_vi": "Rủ đi chơi lần sau", "a_en": "Next time, let's invite them to our house for a BBQ.", "a_vi": "Lần tới, hãy mời họ đến nhà chúng ta ăn BBQ nhé."},
+        {"q_en": "I love seeing you laugh with your besties.", "q_vi": "Khen nụ cười khi bên bạn thân", "a_en": "I love seeing you laugh with your besties.", "a_vi": "Anh rất thích nhìn em cười cùng với những người bạn thân của em."},
+        {"q_en": "It shows a different, very adorable side of you.", "q_vi": "Nhận xét tính cách", "a_en": "It shows a different, very adorable side of you.", "a_vi": "Nó cho thấy một khía cạnh khác, rất đáng yêu của em."},
+        {"q_en": "Thank you for introducing me to your world.", "q_vi": "Biết ơn vì được hòa nhập", "a_en": "Thank you for introducing me to your world.", "a_vi": "Cảm ơn em vì đã giới thiệu anh bước vào thế giới của em."},
+        {"q_en": "I want to be a part of everything you love.", "q_vi": "Khẳng định sự gắn kết", "a_en": "I want to be a part of everything you love.", "a_vi": "Anh muốn trở thành một phần trong mọi thứ mà em yêu thích."},
+        {"q_en": "You are the center of my universe now.", "q_vi": "Tôn vinh Crush", "a_en": "You are the center of my universe now.", "a_vi": "Giờ đây em là trung tâm của vũ trụ trong anh."},
+        {"q_en": "I am holding onto you forever.", "q_vi": "Chốt hạ nắm tay", "a_en": "I am holding onto you forever.", "a_vi": "Anh sẽ giữ chặt lấy em mãi mãi."}
+      ]
+    },
+    {
+      "id": 29,
+      "type": "sentence",
+      "description": "Level 29: Những Câu Nói Cầu Hôn & Ngôn Tình Chân Thành",
+      "questions": [
+        {"q_en": "There is something very important I need to ask you.", "q_vi": "Mở lời nghiêm túc", "a_en": "There is something very important I need to ask you.", "a_vi": "Có một điều rất quan trọng anh cần phải hỏi em."},
+        {"q_en": "From the moment I met you, my life completely changed.", "q_vi": "Nhắc lại lần đầu gặp", "a_en": "From the moment I met you, my life completely changed.", "a_vi": "Từ khoảnh khắc anh gặp em, cuộc đời anh đã hoàn toàn thay đổi."},
+        {"q_en": "You are my best friend, my soulmate, and my biggest adventure.", "q_vi": "Tôn vinh vị trí của Crush", "a_en": "You are my best friend, my soulmate, and my biggest adventure.", "a_vi": "Em là bạn thân nhất, là tri kỷ, và là chuyến phiêu lưu lớn nhất của anh."},
+        {"q_en": "I cannot imagine a single day of my future without you in it.", "q_vi": "Khẳng định không thể sống thiếu", "a_en": "I cannot imagine a single day of my future without you in it.", "a_vi": "Anh không thể tưởng tượng nổi một ngày nào trong tương lai mà không có em trong đó."},
+        {"q_en": "You make every ordinary moment feel extraordinary.", "q_vi": "Khen ngợi sự diệu kỳ", "a_en": "You make every ordinary moment feel extraordinary.", "a_vi": "Em biến mọi khoảnh khắc bình thường trở nên thật phi thường."},
+        {"q_en": "I promise to hold your hand through every storm.", "q_vi": "Lời hứa vượt bão giông", "a_en": "I promise to hold your hand through every storm.", "a_vi": "Anh hứa sẽ nắm tay em bước qua mọi giông bão."},
+        {"q_en": "I vow to love you, respect you, and cherish you eternally.", "q_vi": "Lời thề nguyện sâu sắc", "a_en": "I vow to love you, respect you, and cherish you eternally.", "a_vi": "Anh thề sẽ yêu em, tôn trọng em, và trân trọng em vĩnh viễn."},
+        {"q_en": "I want to wake up next to you for the rest of my life.", "q_vi": "Mong ước nhỏ nhoi", "a_en": "I want to wake up next to you for the rest of my life.", "a_vi": "Anh muốn thức dậy bên cạnh em trong suốt quãng đời còn lại."},
+        {"q_en": "Will you do me the absolute honor of becoming my wife?", "q_vi": "Câu cầu hôn chính thức", "a_en": "Will you do me the absolute honor of becoming my wife?", "a_vi": "Em có muốn trao cho anh vinh dự tuyệt đối được làm chồng em không? (Làm vợ anh nhé?)"},
+        {"q_en": "Will you marry me, Sarah?", "q_vi": "Chốt câu Marry me", "a_en": "Will you marry me, Sarah?", "a_vi": "Em sẽ lấy anh chứ, Sarah?"},
+        {"q_en": "Yes! A million times yes!", "q_vi": "Crush đồng ý", "a_en": "Yes! A million times yes!", "a_vi": "Đồng ý! Một triệu lần đồng ý!"},
+        {"q_en": "Let me put this diamond ring on your finger.", "q_vi": "Đeo nhẫn", "a_en": "Let me put this diamond ring on your finger.", "a_vi": "Để anh đeo chiếc nhẫn kim cương này vào ngón tay em nhé."},
+        {"q_en": "It fits perfectly. It was made just for you.", "q_vi": "Khen nhẫn vừa vặn", "a_en": "It fits perfectly. It was made just for you.", "a_vi": "Nó vừa khít luôn. Nó được tạo ra chỉ dành riêng cho em."},
+        {"q_en": "You made me the happiest man on earth today.", "q_vi": "Cảm giác hạnh phúc tột độ", "a_en": "You made me the happiest man on earth today.", "a_vi": "Hôm nay em đã biến anh thành người đàn ông hạnh phúc nhất thế gian."},
+        {"q_en": "I am crying tears of joy. I love you so much.", "q_vi": "Nước mắt hạnh phúc", "a_en": "I am crying tears of joy. I love you so much.", "a_vi": "Anh đang khóc những giọt nước mắt hạnh phúc. Anh yêu em rất nhiều."},
+        {"q_en": "This is just the beginning of our forever.", "q_vi": "Bắt đầu sự vĩnh cửu", "a_en": "This is just the beginning of our forever.", "a_vi": "Đây mới chỉ là sự khởi đầu cho sự mãi mãi của chúng ta."},
+        {"q_en": "We are going to build a beautiful family together.", "q_vi": "Nhắc về gia đình tương lai", "a_en": "We are going to build a beautiful family together.", "a_vi": "Chúng ta sẽ cùng nhau xây dựng một gia đình thật êm ấm."},
+        {"q_en": "I will never let you go, my beautiful fiancee.", "q_vi": "Gọi danh xưng vợ sắp cưới", "a_en": "I will never let you go, my beautiful fiancee.", "a_vi": "Anh sẽ không bao giờ buông tay em đâu, vị hôn thê xinh đẹp của anh."},
+        {"q_en": "Let's celebrate this unforgettable milestone.", "q_vi": "Ăn mừng cột mốc", "a_en": "Let's celebrate this unforgettable milestone.", "a_vi": "Hãy cùng ăn mừng cột mốc không thể nào quên này nhé."},
+        {"q_en": "To a lifetime of love and endless adventures.", "q_vi": "Cụm ly chúc tương lai", "a_en": "To a lifetime of love and endless adventures.", "a_vi": "Chúc cho một đời tình yêu và những chuyến phiêu lưu bất tận."}
+      ]
+    },
+    {
+      "id": 30,
+      "type": "boss",
+      "description": "Level 30: BOSS CẦU HÔN (Màn Chốt Hạ Dưới Bầu Trời Đầy Sao)",
+      "questions": [
+        {"q_en": "Why did you bring me to this rooftop? It's so quiet here.", "q_vi": "(Boss Crush) Sao anh đưa em lên sân thượng này? Ở đây vắng lặng quá.", "a_en": "I rented the entire rooftop just for us tonight. Look at the view.", "a_vi": "Anh đã thuê toàn bộ sân thượng này chỉ cho hai đứa mình tối nay. Nhìn cảnh kìa em." },
+        {"q_en": "Wow, the city skyline is breathtaking! And there are so many roses.", "q_vi": "Ngạc nhiên vì hoa hồng", "a_en": "One thousand red roses. Exactly the number of days since we first met.", "a_vi": "Một ngàn đóa hồng đỏ. Chính xác là số ngày kể từ lần đầu chúng ta gặp nhau." },
+        {"q_en": "You counted the days? Vuong, you are being so secretive today.", "q_vi": "Nghi ngờ vì sự lãng mạn", "a_en": "Sarah, come stand here with me under the lights.", "a_vi": "Sarah, lại đứng đây với anh dưới những ánh đèn này đi." },
+        {"q_en": "Okay... My heart is beating so fast right now. What is happening?", "q_vi": "Crush bắt đầu hồi hộp", "a_en": "Take a deep breath. Look into my eyes.", "a_vi": "Hít một hơi thật sâu đi. Nhìn thẳng vào mắt anh này." },
+        {"q_en": "I am looking. You look so handsome in that suit.", "q_vi": "Khen ngợi ngoại hình", "a_en": "Three years ago, I walked into a bar and saw the most gorgeous girl.", "a_vi": "Ba năm trước, anh bước vào một quán bar và nhìn thấy một cô gái tuyệt đẹp nhất." },
+        {"q_en": "I remember. You used that cheesy line about 'lucky day'.", "q_vi": "Nhắc lại kỷ niệm thả thính", "a_en": "It wasn't a line. It was the absolute truth. Meeting you saved my life.", "a_vi": "Nó không phải văn vở thả thính. Đó là sự thật tuyệt đối. Gặp em đã cứu rỗi đời anh." },
+        {"q_en": "Vuong... you are making me tear up.", "q_vi": "Crush bắt đầu rưng rưng", "a_en": "You taught me how to love, how to be patient, and how to be a better man.", "a_vi": "Em đã dạy anh cách yêu thương, cách kiên nhẫn, và cách trở thành một người đàn ông tốt hơn." },
+        {"q_en": "We have been through so much together. The good and the bad.", "q_vi": "Nhắc lại sóng gió", "a_en": "And through every fight, every storm, my love for you only grew stronger.", "a_vi": "Và qua mỗi lần cãi vã, mỗi cơn bão giông, tình yêu anh dành cho em chỉ càng mạnh mẽ hơn." },
+        {"q_en": "(Wipes a tear) I love you so much, you know that right?", "q_vi": "Khẳng định tình yêu", "a_en": "I do. And I want to make sure I never spend a single day without you.", "a_vi": "Anh biết. Và anh muốn chắc chắn rằng anh sẽ không bao giờ trải qua một ngày nào thiếu em." },
+        {"q_en": "Oh my god... are you doing what I think you are doing?", "q_vi": "Crush che miệng kinh ngạc", "a_en": "(Gets down on one knee) Sarah, you are my soulmate.", "a_vi": "(Quỳ một chân xuống) Sarah, em là tri kỷ của anh." },
+        {"q_en": "(Gasps and covers her mouth crying)", "q_vi": "Khóc nức nở vì bất ngờ", "a_en": "I vow to protect you, cherish you, and make you smile for eternity.", "a_vi": "Anh thề sẽ bảo vệ em, trân trọng em, và làm em cười cho đến vĩnh hằng." },
+        {"q_en": "Yes... Yes! Keep going...", "q_vi": "Giục nói tiếp", "a_en": "Will you do me the absolute honor of becoming my wife?", "a_vi": "Em có muốn trao cho anh vinh dự tuyệt đối được làm vợ anh không?" },
+        {"q_en": "Yes! A million times yes! I will marry you!", "q_vi": "Hét lên đồng ý", "a_en": "Thank God! Give me your left hand. Let me put the ring on.", "a_vi": "Tạ ơn Chúa! Đưa tay trái của em cho anh. Để anh đeo nhẫn vào nào." },
+        {"q_en": "It is so beautiful. A perfect diamond. It fits perfectly.", "q_vi": "Khen chiếc nhẫn", "a_en": "Just like how we fit perfectly together. You are my fiancée now.", "a_vi": "Giống hệt như cách chúng ta hoàn toàn vừa vặn với nhau vậy. Giờ em là vị hôn thê của anh rồi." },
+        {"q_en": "(Hugs him tightly) Get up here and kiss me, my future husband.", "q_vi": "Kéo lên hôn", "a_en": "(Kisses her passionately) I am the luckiest man on the planet.", "a_vi": "(Hôn đắm đuối) Anh là người đàn ông may mắn nhất hành tinh này." },
+        {"q_en": "Wait, are those your friends hiding behind the bushes?", "q_vi": "Phát hiện bạn bè núp lùm", "a_en": "Haha, yes. I invited our best friends to witness this moment.", "a_vi": "Haha, ừ. Anh đã mời những người bạn thân nhất của chúng ta đến chứng kiến khoảnh khắc này." },
+        {"q_en": "You guys planned this all along?! I hate you all!", "q_vi": "Vừa khóc vừa cười mắng bạn bè", "a_en": "They helped me set up the roses. Come on out, guys!", "a_vi": "Họ đã giúp anh xếp hoa hồng đấy. Ra đây đi mọi người ơi!" },
+        {"q_en": "This is the best night of my life. Thank you, Vuong.", "q_vi": "Chốt lại cảm xúc", "a_en": "This is just the beginning of our grand adventure. I love you, Mrs. Vuong.", "a_vi": "Đây mới chỉ là khởi đầu cho chuyến phiêu lưu vĩ đại của chúng ta. Anh yêu em, Bà Vương." },
+        {"q_en": "I love you too. Forever.", "q_vi": "Lời thề mãi mãi", "a_en": "Let's pop the champagne. It is time to celebrate our future!", "a_vi": "Khui sâm panh thôi nào. Tới lúc ăn mừng cho tương lai của chúng ta rồi!" },
+        {"q_en": "(Cheers and applause from friends)", "q_vi": "Tiếng vỗ tay chúc mừng", "a_en": "To an eternity of love, peace, and happiness!", "a_vi": "Chúc cho sự vĩnh cửu của tình yêu, bình yên và hạnh phúc!" }
+      ]
+    }
+  ]
+}
