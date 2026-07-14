@@ -1,7 +1,12 @@
 [
-  { "id": "topic_hotel", "file": "topic_hotel.json", "title": "🛎️ Giao Tiếp Lễ Tân", "icon": "🏨", "color": "#008CBA" },
-  { "id": "topic_pickup", "file": "topic_pickup.json", "title": "💘 Bí Kíp Cua Gái (Mr. Vương)", "icon": "🌹", "color": "#e84393" },
-  { "id": "topic_fb", "file": "topic_fb.json", "title": "☕ F&B Nhà Hàng & Cafe", "icon": "🍹", "color": "#d35400" },
-  { "id": "topic_directions", "file": "topic_directions.json", "title": "🗺️ Hướng Dẫn Chỉ Đường", "icon": "🧭", "color": "#27ae60" },
-  { "id": "topic_meeting", "file": "topic_meeting.json", "title": "📊 Báo Cáo Cuộc Họp", "icon": "📈", "color": "#8e44ad" }
+  { "id": "topic_hotel", "file": "topic_hotel.json", "title": "🛎️ Giao Tiếp Khách Sạn", "icon": "🏨", "color": "#008CBA" },
+  { "id": "topic_directions", "file": "topic_directions.json", "title": "🗺️ Chỉ Đường & Vị Trí", "icon": "🧭", "color": "#27ae60" },
+  { "id": "topic_meeting", "file": "topic_meeting.json", "title": "📊 Báo Cáo Cuộc Họp", "icon": "📈", "color": "#8e44ad" },
+  { "id": "topic_pickup", "file": "topic_pickup.json", "title": "💘 Cua gái tiếng anh (Mr. Vương)", "icon": "🌹", "color": "#e84393" },
+  { "id": "topic_fb", "file": "topic_fb.json", "title": "☕ F&B Nhà Hàng Cafe", "icon": "🍹", "color": "#d35400" },
+  { "id": "topic_housekeeping", "file": "topic_housekeeping.json", "title": "🛏️ Buồng Phòng & Dịch Vụ", "icon": "🧹", "color": "#16a085" },
+  { "id": "topic_it", "file": "topic_it.json", "title": "💻 IT & Hệ Thống", "icon": "🖥️", "color": "#2c3e50" },
+  { "id": "topic_emergency", "file": "topic_emergency.json", "title": "🚨 Xử Lý Sự Cố Khẩn Cấp", "icon": "🚑", "color": "#e74c3c" },
+  { "id": "topic_upselling", "file": "topic_upselling.json", "title": "💎 Bán Chéo & Giới Thiệu", "icon": "🛍️", "color": "#f39c12" },
+  { "id": "topic_checkout", "file": "topic_checkout.json", "title": "👋 Tiễn Khách Check-out", "icon": "🚕", "color": "#34495e" }
 ]
