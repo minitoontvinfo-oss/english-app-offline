@@ -137,7 +137,7 @@
         { "q_en": "Can you help me carry these bags?", "q_vi": "Nhờ xách đồ", "a_en": "The bellboy will help you carry them to the taxi.", "a_vi": "Nhân viên hành lý sẽ giúp quý khách mang đồ ra taxi." },
         { "q_en": "Thank you for the excellent service.", "q_vi": "Khách khen ngợi", "a_en": "It was our pleasure. Have a safe flight!", "a_vi": "Đó là niềm vinh hạnh của chúng tôi. Chúc chuyến bay an toàn!" }
       ]
-    }
+    },
 	
 	{
       "id": 6,
@@ -408,7 +408,7 @@
         { "q_en": "Thanks. See you tomorrow morning.", "q_vi": "Boss chào tạm biệt", "a_en": "Have a restful night, sir.", "a_vi": "Chúc ngài có một đêm ngon giấc." },
         { "q_en": "Good night.", "q_vi": "Boss rời đi", "a_en": "Good night.", "a_vi": "Chúc ngủ ngon." }
       ]
-    }
+    },
 	
 	{
       "id": 16,
@@ -810,7 +810,7 @@
         { "q_en": "I have it in my pocket. I am ready.", "q_vi": "Khách xác nhận đã mang đủ", "a_en": "Excellent. Have a safe and pleasant flight back home!", "a_vi": "Tuyệt hảo. Chúc ngài có một chuyến bay về nhà an toàn và vui vẻ!" },
         { "q_en": "Thank you, goodbye!", "q_vi": "Khách chào", "a_en": "Goodbye, sir. Ocean Dunes will always welcome you.", "a_vi": "Tạm biệt ngài. Ocean Dunes sẽ luôn chào đón ngài." }
       ]
-    }
+    },
 	
 	{
       "id": 31,
@@ -1275,7 +1275,7 @@
         { "q_en": "Yes, send the therapist to my room if possible.", "q_vi": "Đồng ý làm tại phòng", "a_en": "I will arrange that immediately. Please relax while you pack.", "a_vi": "Tôi sẽ sắp xếp ngay. Xin ngài cứ thư giãn trong lúc dọn đồ." },
         { "q_en": "You are the best concierge ever. Goodbye!", "q_vi": "Khen ngợi và chào tạm biệt", "a_en": "Safe travels, sir. Don't worry about the storm, we have everything under control.", "a_vi": "Chúc chuyến đi an toàn thưa ngài. Đừng lo về cơn bão, chúng tôi đã kiểm soát mọi thứ." }
       ]
-    }
+    },
 	
 	{
       "id": 51,
@@ -1664,7 +1664,7 @@
         {"q_en": "I expect everything to go flawlessly.", "q_vi": "Cảnh cáo nhẹ phải làm tốt", "a_en": "You have my word. We will make your wedding a dream come true.", "a_vi": "Tôi xin lấy danh dự bảo đảm. Chúng tôi sẽ biến đám cưới của ngài thành giấc mơ có thật." },
         {"q_en": "I trust you. Thank you.", "q_vi": "Chốt tin tưởng", "a_en": "Thank you, sir. Have a wonderful day planning!", "a_vi": "Cảm ơn ngài. Chúc ngài có một ngày lên kế hoạch tuyệt vời!" }
       ]
-    }
+    },
 	
 	{
       "id": 71,
@@ -2053,7 +2053,7 @@
         {"q_en": "I will write a glowing review about your sustainability efforts.", "q_vi": "Hứa viết review tốt", "a_en": "That would mean the world to us. Enjoy your stay, sir.", "a_vi": "Điều đó vô cùng có ý nghĩa với chúng tôi. Chúc ngài một kỳ nghỉ vui vẻ." },
         {"q_en": "See you at the beach clean-up tomorrow.", "q_vi": "Chào tạm biệt hẹn gặp lại", "a_en": "We look forward to seeing you there. Have a great evening!", "a_vi": "Chúng tôi rất mong được gặp ngài ở đó. Chúc ngài một buổi tối tuyệt vời!" }
       ]
-    }
+    },
 	
 	{
       "id": 91,
