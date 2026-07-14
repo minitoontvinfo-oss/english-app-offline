@@ -1,0 +1,975 @@
+{
+  "id": "topic_directions",
+  "title": "🗺️ Chỉ Đường & Vị Trí",
+  "icon": "🧭",
+  "color": "#27ae60",
+  "nodes": [
+    {
+      "id": 1,
+      "type": "vocab",
+      "description": "Level 1: Từ vựng Phương hướng cơ bản",
+      "questions": [
+        { "q_en": "Straight", "a_vi": "Đi thẳng" },
+        { "q_en": "Left", "a_vi": "Bên trái" },
+        { "q_en": "Right", "a_vi": "Bên phải" },
+        { "q_en": "Forward", "a_vi": "Tiến về phía trước" },
+        { "q_en": "Backward", "a_vi": "Lùi lại phía sau" },
+        { "q_en": "Corner", "a_vi": "Góc đường" },
+        { "q_en": "Intersection", "a_vi": "Ngã tư / Giao lộ" },
+        { "q_en": "Crossroad", "a_vi": "Đường giao nhau" },
+        { "q_en": "Traffic light", "a_vi": "Đèn giao thông" },
+        { "q_en": "Block", "a_vi": "Khu nhà / Dãy nhà" },
+        { "q_en": "Street", "a_vi": "Đường phố (nhỏ)" },
+        { "q_en": "Avenue", "a_vi": "Đại lộ (lớn)" },
+        { "q_en": "Alley", "a_vi": "Hẻm / Ngõ" },
+        { "q_en": "Roundabout", "a_vi": "Vòng xuyến / Bùng binh" },
+        { "q_en": "Bridge", "a_vi": "Cây cầu" },
+        { "q_en": "Tunnel", "a_vi": "Đường hầm" },
+        { "q_en": "Pathway", "a_vi": "Lối đi bộ" },
+        { "q_en": "Sidewalk", "a_vi": "Vỉa hè" },
+        { "q_en": "Pedestrian", "a_vi": "Người đi bộ" },
+        { "q_en": "Signpost", "a_vi": "Biển chỉ đường" }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "vocab",
+      "description": "Level 2: Từ vựng Vị trí & Khu vực trong KS",
+      "questions": [
+        { "q_en": "Lobby", "a_vi": "Tiền sảnh" },
+        { "q_en": "Elevator", "a_vi": "Thang máy" },
+        { "q_en": "Stairs", "a_vi": "Cầu thang bộ" },
+        { "q_en": "Restroom", "a_vi": "Nhà vệ sinh" },
+        { "q_en": "Restaurant", "a_vi": "Nhà hàng" },
+        { "q_en": "Cafe", "a_vi": "Quán cà phê" },
+        { "q_en": "Swimming pool", "a_vi": "Hồ bơi" },
+        { "q_en": "Gym", "a_vi": "Phòng thể hình" },
+        { "q_en": "Spa", "a_vi": "Khu chăm sóc sức khỏe" },
+        { "q_en": "Business center", "a_vi": "Khu dịch vụ văn phòng" },
+        { "q_en": "Parking lot", "a_vi": "Bãi đỗ xe" },
+        { "q_en": "Basement", "a_vi": "Tầng hầm" },
+        { "q_en": "Rooftop", "a_vi": "Sân thượng" },
+        { "q_en": "Courtyard", "a_vi": "Sân trong" },
+        { "q_en": "Fountain", "a_vi": "Đài phun nước" },
+        { "q_en": "Souvenir shop", "a_vi": "Cửa hàng lưu niệm" },
+        { "q_en": "Pharmacy", "a_vi": "Tiệm thuốc tây" },
+        { "q_en": "ATM", "a_vi": "Cây rút tiền tự động" },
+        { "q_en": "Beach", "a_vi": "Bãi biển" },
+        { "q_en": "Main gate", "a_vi": "Cổng chính" }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "sentence",
+      "description": "Level 3: Chỉ đường cơ bản trong khách sạn",
+      "questions": [
+        { "q_en": "Excuse me, where is the restroom?", "q_vi": "Khách hỏi nhà vệ sinh", "a_en": "It is on your right, near the elevator.", "a_vi": "Nó ở bên tay phải của quý khách, gần thang máy." },
+        { "q_en": "How do I get to the restaurant?", "q_vi": "Khách hỏi đường đến nhà hàng", "a_en": "Walk straight and you will see it at the end of the hall.", "a_vi": "Đi thẳng và quý khách sẽ thấy nó ở cuối hành lang." },
+        { "q_en": "Is the swimming pool on this floor?", "q_vi": "Khách hỏi vị trí hồ bơi", "a_en": "No, sir. The swimming pool is on the rooftop.", "a_vi": "Dạ không. Hồ bơi nằm ở trên sân thượng." },
+        { "q_en": "Where can I find the gym?", "q_vi": "Khách tìm phòng gym", "a_en": "Please take the elevator to the third floor.", "a_vi": "Vui lòng đi thang máy lên tầng 3." },
+        { "q_en": "I am looking for the spa.", "q_vi": "Khách tìm khu spa", "a_en": "The spa is located in the basement, ma'am.", "a_vi": "Thưa bà, khu spa nằm ở dưới tầng hầm." },
+        { "q_en": "Which way is the business center?", "q_vi": "Khách hỏi hướng đi trung tâm thương vụ", "a_en": "Turn left at the next corner.", "a_vi": "Hãy rẽ trái ở góc ngoặt tiếp theo." },
+        { "q_en": "Where is the nearest ATM?", "q_vi": "Khách hỏi cây ATM", "a_en": "There is one right outside the main gate.", "a_vi": "Có một cái nằm ngay bên ngoài cổng chính." },
+        { "q_en": "How can I go to the beach?", "q_vi": "Khách hỏi đường ra biển", "a_en": "Follow this stone pathway through the garden.", "a_vi": "Hãy đi theo lối đi lát đá này xuyên qua khu vườn." },
+        { "q_en": "Is there a cafe inside the hotel?", "q_vi": "Khách tìm quán cafe", "a_en": "Yes, it is opposite the reception desk.", "a_vi": "Vâng, nó nằm đối diện quầy lễ tân." },
+        { "q_en": "Where should I park my car?", "q_vi": "Khách hỏi chỗ đỗ xe", "a_en": "Our parking lot is behind the building.", "a_vi": "Bãi đỗ xe của chúng tôi nằm ở phía sau tòa nhà." },
+        { "q_en": "Can I use the stairs instead of the elevator?", "q_vi": "Khách muốn đi thang bộ", "a_en": "Yes, the stairs are at the end of this corridor.", "a_vi": "Vâng, cầu thang bộ nằm ở cuối hành lang này." },
+        { "q_en": "Where do you serve breakfast?", "q_vi": "Khách hỏi chỗ ăn sáng", "a_en": "We serve breakfast in the main restaurant on the ground floor.", "a_vi": "Chúng tôi phục vụ bữa sáng tại nhà hàng chính ở tầng trệt." },
+        { "q_en": "I need to buy some medicine.", "q_vi": "Khách cần mua thuốc", "a_en": "The pharmacy is right next to the souvenir shop.", "a_vi": "Tiệm thuốc nằm ngay cạnh cửa hàng lưu niệm." },
+        { "q_en": "Where is room 305?", "q_vi": "Khách tìm số phòng", "a_en": "Go to the third floor and turn right. It is the second room.", "a_vi": "Lên tầng 3 và rẽ phải. Nó là căn phòng thứ hai." },
+        { "q_en": "How do I access the courtyard?", "q_vi": "Khách muốn ra sân trong", "a_en": "Just go through those glass doors over there.", "a_vi": "Chỉ cần đi qua những cánh cửa kính đằng kia." },
+        { "q_en": "Is the kids' club nearby?", "q_vi": "Khách tìm khu trẻ em", "a_en": "Yes, it is just around the corner.", "a_vi": "Vâng, nó nằm ngay ở góc đường kia thôi." },
+        { "q_en": "Where can I smoke?", "q_vi": "Khách hỏi khu vực hút thuốc", "a_en": "The smoking area is outside the lobby.", "a_vi": "Khu vực hút thuốc nằm ở bên ngoài tiền sảnh." },
+        { "q_en": "Which floor is the banquet hall on?", "q_vi": "Khách hỏi sảnh tiệc", "a_en": "The banquet hall is on the second floor.", "a_vi": "Sảnh tiệc nằm ở trên tầng hai." },
+        { "q_en": "How do I get to the front desk?", "q_vi": "Khách lạc trong sảnh", "a_en": "You are already in the lobby, it is right behind you.", "a_vi": "Quý khách đang ở tiền sảnh rồi, nó nằm ngay sau lưng ngài." },
+        { "q_en": "I am lost. Can you help me?", "q_vi": "Khách báo bị lạc", "a_en": "Don't worry, sir. I will show you the way.", "a_vi": "Đừng lo lắng thưa ngài. Tôi sẽ chỉ đường cho ngài." }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "sentence",
+      "description": "Level 4: Chỉ đường các điểm bên ngoài (Thành phố)",
+      "questions": [
+        { "q_en": "Where is the nearest convenience store?", "q_vi": "Hỏi cửa hàng tiện lợi", "a_en": "Go out, turn right and walk for two blocks.", "a_vi": "Đi ra ngoài, rẽ phải và đi bộ qua hai dãy nhà." },
+        { "q_en": "How do I get to the night market?", "q_vi": "Hỏi đường đi chợ đêm", "a_en": "I suggest taking a taxi, it is about three kilometers away.", "a_vi": "Tôi gợi ý nên đi taxi, nó cách đây khoảng 3 km." },
+        { "q_en": "Is the museum within walking distance?", "q_vi": "Hỏi bảo tàng có đi bộ được không", "a_en": "Yes, it only takes ten minutes on foot.", "a_vi": "Vâng, chỉ mất 10 phút đi bộ thôi." },
+        { "q_en": "Which bus goes to the city center?", "q_vi": "Hỏi tuyến xe buýt", "a_en": "Bus number 5 stops right across the street.", "a_vi": "Xe buýt số 5 dừng ngay ở bên kia đường." },
+        { "q_en": "Where is the train station?", "q_vi": "Hỏi nhà ga xe lửa", "a_en": "Go straight past the roundabout and you will see it.", "a_vi": "Đi thẳng qua bùng binh và quý khách sẽ thấy nó." },
+        { "q_en": "Can you show me on the map?", "q_vi": "Nhờ chỉ trên bản đồ", "a_en": "Sure. We are here, and your destination is right here.", "a_vi": "Chắc chắn rồi. Chúng ta đang ở đây, và điểm đến của ngài nằm ngay đây." },
+        { "q_en": "Is there a good seafood restaurant around here?", "q_vi": "Hỏi quán hải sản", "a_en": "Yes, there is a famous one near the beach.", "a_vi": "Vâng, có một quán nổi tiếng nằm gần bãi biển." },
+        { "q_en": "How do I find the post office?", "q_vi": "Tìm bưu điện", "a_en": "Turn left at the first traffic light.", "a_vi": "Rẽ trái ở đèn giao thông đầu tiên." },
+        { "q_en": "Where is the closest hospital?", "q_vi": "Hỏi bệnh viện gần nhất", "a_en": "Go straight ahead for about two miles.", "a_vi": "Đi thẳng về phía trước khoảng 2 dặm." },
+        { "q_en": "I am looking for the shopping mall.", "q_vi": "Tìm trung tâm thương mại", "a_en": "It is located on the main avenue, next to the bank.", "a_vi": "Nó nằm trên đại lộ chính, cạnh ngân hàng." },
+        { "q_en": "Is it safe to walk there at night?", "q_vi": "Hỏi an ninh đi bộ đêm", "a_en": "Yes, but taking a taxi is highly recommended.", "a_vi": "Vâng, nhưng chúng tôi đặc biệt khuyên ngài nên đi taxi." },
+        { "q_en": "How much is a taxi to the airport?", "q_vi": "Hỏi giá taxi ra sân bay", "a_en": "It costs around two hundred thousand dong.", "a_vi": "Nó tốn khoảng 200.000 đồng." },
+        { "q_en": "Where can I rent a motorbike?", "q_vi": "Hỏi chỗ thuê xe máy", "a_en": "There is a rental shop right next to our hotel.", "a_vi": "Có một tiệm cho thuê xe nằm ngay cạnh khách sạn chúng ta." },
+        { "q_en": "Which way is north?", "q_vi": "Hỏi phương hướng", "a_en": "The beach is facing east, so north is to your left.", "a_vi": "Bãi biển hướng về phía Đông, nên hướng Bắc nằm ở bên trái ngài." },
+        { "q_en": "Is there a pedestrian bridge to cross the highway?", "q_vi": "Hỏi cầu vượt đi bộ", "a_en": "Yes, walk down the sidewalk for 100 meters.", "a_vi": "Vâng, đi dọc theo vỉa hè khoảng 100 mét." },
+        { "q_en": "Can I cross the street here?", "q_vi": "Hỏi chỗ qua đường", "a_en": "Please use the zebra crossing over there for your safety.", "a_vi": "Vui lòng sử dụng vạch kẻ qua đường đằng kia để đảm bảo an toàn." },
+        { "q_en": "Where is the tourist information center?", "q_vi": "Tìm trung tâm hỗ trợ du lịch", "a_en": "It is located right in the middle of the city square.", "a_vi": "Nó nằm ngay chính giữa quảng trường thành phố." },
+        { "q_en": "I want to visit the local temple.", "q_vi": "Hỏi đường đi chùa", "a_en": "It is hidden in a small alley behind the market.", "a_vi": "Nó ẩn mình trong một con hẻm nhỏ phía sau khu chợ." },
+        { "q_en": "How do I get back to the hotel later?", "q_vi": "Hỏi cách về khách sạn", "a_en": "Just tell the driver 'Ocean Dunes Resort'.", "a_vi": "Chỉ cần nói với tài xế là 'Ocean Dunes Resort'." },
+        { "q_en": "I think I am going the wrong way.", "q_vi": "Khách thấy đi sai đường", "a_en": "You need to turn around and go back two blocks.", "a_vi": "Quý khách cần quay đầu lại và đi ngược lại 2 dãy nhà." }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "boss",
+      "description": "Level 5: BOSS Lạc Đường (Hướng dẫn vị trí trong ngoài phức tạp)",
+      "questions": [
+        { "q_en": "Excuse me, I am completely lost. Where am I right now?", "q_vi": "(Boss Lạc Đường) Xin lỗi, tôi hoàn toàn bị lạc. Hiện tại tôi đang ở đâu?", "a_en": "You are currently in the West Wing corridor of our resort, sir.", "a_vi": "Hiện tại ngài đang ở hành lang Khu nhà phía Tây của resort." },
+        { "q_en": "I am trying to find the gym. Is it on this floor?", "q_vi": "Boss tìm phòng gym", "a_en": "No, sir. The gym is located down in the basement.", "a_vi": "Không thưa ngài. Phòng gym nằm ở dưới tầng hầm." },
+        { "q_en": "How do I get there from here? I walked in circles.", "q_vi": "Hỏi đường đi", "a_en": "Go straight down this hall and take the elevator down to B1.", "a_vi": "Đi thẳng dọc theo hành lang này và đi thang máy xuống tầng B1." },
+        { "q_en": "Okay. And after my workout, I want to go to the spa.", "q_vi": "Hỏi đường sang Spa", "a_en": "The spa is also in the basement, right next to the gym.", "a_vi": "Khu Spa cũng ở tầng hầm, nằm ngay cạnh phòng gym." },
+        { "q_en": "Perfect. Now, my wife is waiting for me at the cafe.", "q_vi": "Hỏi đường tìm quán Cafe", "a_en": "The cafe is on the ground floor, opposite the reception desk.", "a_vi": "Quán cafe ở tầng trệt, đối diện với quầy lễ tân." },
+        { "q_en": "I walked past the reception earlier but didn't see it.", "q_vi": "Boss không nhìn thấy", "a_en": "It is tucked behind the large fountain in the lobby.", "a_vi": "Nó nằm khuất phía sau đài phun nước lớn trong tiền sảnh." },
+        { "q_en": "Ah, I see. What about the seafood restaurant for dinner?", "q_vi": "Hỏi nhà hàng hải sản", "a_en": "Our main seafood restaurant is outside, near the private beach.", "a_vi": "Nhà hàng hải sản chính của chúng tôi ở bên ngoài, gần bãi biển riêng." },
+        { "q_en": "How do we walk there from the lobby?", "q_vi": "Hỏi cách đi bộ ra bãi biển", "a_en": "Exit the main glass doors and follow the stone pathway through the garden.", "a_vi": "Ra khỏi cửa kính chính và đi theo lối đi lát đá xuyên qua khu vườn." },
+        { "q_en": "Is it well-lit at night? We will go there around 8 PM.", "q_vi": "Hỏi độ sáng ban đêm", "a_en": "Yes, the pathway is fully illuminated with beautiful lantern lights.", "a_vi": "Vâng, lối đi được chiếu sáng đầy đủ bằng những chiếc đèn lồng tuyệt đẹp." },
+        { "q_en": "Tomorrow, we want to explore the city center. Is it far?", "q_vi": "Chuyển sang hỏi đường thành phố", "a_en": "It is about five kilometers away. It takes 15 minutes by taxi.", "a_vi": "Nó cách đây khoảng 5km. Sẽ mất 15 phút đi taxi." },
+        { "q_en": "Can we walk? We love walking in the morning.", "q_vi": "Muốn đi bộ ra thành phố", "a_en": "You can, but it will take over an hour along the coastal road.", "a_vi": "Ngài có thể, nhưng sẽ mất hơn 1 tiếng đi bộ dọc theo đường ven biển." },
+        { "q_en": "We have time. Is there a safe sidewalk for pedestrians?", "q_vi": "Hỏi về vỉa hè an toàn", "a_en": "Yes, there is a very nice and wide pedestrian path along the beach.", "a_vi": "Vâng, có một con đường đi bộ rất đẹp và rộng rãi dọc theo bãi biển." },
+        { "q_en": "We also want to visit the night market. Can you show me on this map?", "q_vi": "Nhờ chỉ bản đồ chợ đêm", "a_en": "Certainly. We are here, and the night market is right here by the river.", "a_vi": "Chắc chắn rồi. Chúng ta ở đây, và chợ đêm nằm ngay đây cạnh con sông." },
+        { "q_en": "Do we need to cross any major intersections to get there?", "q_vi": "Hỏi về ngã tư lớn", "a_en": "Yes, you will cross two large intersections with traffic lights.", "a_vi": "Vâng, ngài sẽ phải băng qua hai ngã tư lớn có đèn giao thông." },
+        { "q_en": "Are there any landmarks to help us not get lost?", "q_vi": "Hỏi điểm nhận dạng", "a_en": "Look for the large clock tower; the market is right behind it.", "a_vi": "Hãy tìm tháp đồng hồ lớn; khu chợ nằm ngay phía sau nó." },
+        { "q_en": "If we get tired, how do we get a taxi back?", "q_vi": "Hỏi cách bắt taxi", "a_en": "Taxis are always waiting at the main entrance of the market.", "a_vi": "Taxi luôn đậu sẵn ở lối vào chính của khu chợ." },
+        { "q_en": "Should I just show them the hotel key card?", "q_vi": "Hỏi cách báo địa chỉ", "a_en": "Yes, showing the card with our address is the easiest way.", "a_vi": "Vâng, đưa thẻ khóa có ghi địa chỉ của chúng ta là cách dễ nhất." },
+        { "q_en": "You have been incredibly helpful. Thank you for the directions.", "q_vi": "Khen ngợi lễ tân", "a_en": "It is my absolute pleasure to assist you, sir.", "a_vi": "Đó là niềm vinh hạnh tuyệt đối của tôi khi được hỗ trợ ngài." },
+        { "q_en": "I will head to the gym now. West Wing elevator, right?", "q_vi": "Xác nhận lại đường đi", "a_en": "Exactly. Go straight and the elevator will be on your left.", "a_vi": "Chính xác. Đi thẳng và thang máy sẽ nằm ở bên trái ngài." },
+        { "q_en": "See you later!", "q_vi": "Chào tạm biệt", "a_en": "Have a great workout, sir!", "a_vi": "Chúc ngài có một buổi tập tuyệt vời!" }
+      ]
+    },
+	
+	{
+      "id": 6,
+      "type": "vocab",
+      "description": "Level 6: Từ vựng Phương tiện giao thông & Di chuyển",
+      "questions": [
+        { "q_en": "Subway", "a_vi": "Tàu điện ngầm" },
+        { "q_en": "Train", "a_vi": "Tàu hỏa" },
+        { "q_en": "Ferry", "a_vi": "Phà" },
+        { "q_en": "Shuttle", "a_vi": "Xe buýt đưa đón" },
+        { "q_en": "Station", "a_vi": "Nhà ga / Trạm xe" },
+        { "q_en": "Terminal", "a_vi": "Bến xe / Bến tàu" },
+        { "q_en": "Platform", "a_vi": "Sân ga" },
+        { "q_en": "Fare", "a_vi": "Giá vé (xe/tàu)" },
+        { "q_en": "Ticket", "a_vi": "Vé" },
+        { "q_en": "Route", "a_vi": "Tuyến đường" },
+        { "q_en": "Schedule", "a_vi": "Lịch trình" },
+        { "q_en": "Delay", "a_vi": "Sự chậm trễ / Hoãn" },
+        { "q_en": "Transfer", "a_vi": "Chuyển trạm / Đổi xe" },
+        { "q_en": "Depart", "a_vi": "Khởi hành" },
+        { "q_en": "Arrive", "a_vi": "Đến nơi" },
+        { "q_en": "Passenger", "a_vi": "Hành khách" },
+        { "q_en": "Board", "a_vi": "Lên (xe/tàu/máy bay)" },
+        { "q_en": "Alight", "a_vi": "Xuống (xe/tàu)" },
+        { "q_en": "Navigate", "a_vi": "Điều hướng / Dò đường" },
+        { "q_en": "Destination", "a_vi": "Điểm đến" }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "vocab",
+      "description": "Level 7: Từ vựng Địa danh & Điểm du lịch",
+      "questions": [
+        { "q_en": "Monument", "a_vi": "Đài kỷ niệm / Tượng đài" },
+        { "q_en": "Temple", "a_vi": "Đền thờ" },
+        { "q_en": "Pagoda", "a_vi": "Ngôi chùa" },
+        { "q_en": "Museum", "a_vi": "Bảo tàng" },
+        { "q_en": "Gallery", "a_vi": "Phòng trưng bày nghệ thuật" },
+        { "q_en": "Palace", "a_vi": "Cung điện" },
+        { "q_en": "Castle", "a_vi": "Lâu đài" },
+        { "q_en": "Square", "a_vi": "Quảng trường" },
+        { "q_en": "Fountain", "a_vi": "Đài phun nước" },
+        { "q_en": "Statue", "a_vi": "Bức tượng" },
+        { "q_en": "Market", "a_vi": "Khu chợ" },
+        { "q_en": "Souvenir", "a_vi": "Quà lưu niệm" },
+        { "q_en": "Craft", "a_vi": "Đồ thủ công" },
+        { "q_en": "Heritage", "a_vi": "Di sản" },
+        { "q_en": "Skyline", "a_vi": "Đường chân trời (Khung cảnh thành phố)" },
+        { "q_en": "Pier", "a_vi": "Bến tàu / Cầu tàu" },
+        { "q_en": "Harbor", "a_vi": "Bến cảng" },
+        { "q_en": "Coastline", "a_vi": "Đường bờ biển" },
+        { "q_en": "Peninsula", "a_vi": "Bán đảo" },
+        { "q_en": "Bay", "a_vi": "Vịnh" }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "sentence",
+      "description": "Level 8: Mẫu câu Hướng dẫn Phương tiện công cộng",
+      "questions": [
+        { "q_en": "How do I get to the central train station?", "q_vi": "Khách hỏi đường ra ga tàu", "a_en": "Take bus number 10 from the front gate.", "a_vi": "Hãy bắt xe buýt số 10 từ cổng trước." },
+        { "q_en": "Where can I buy a ticket for the subway?", "q_vi": "Khách hỏi chỗ mua vé", "a_en": "There is a ticket machine at the station entrance.", "a_vi": "Có một máy bán vé ở lối vào nhà ga." },
+        { "q_en": "How much is the bus fare to the city center?", "q_vi": "Khách hỏi giá vé xe buýt", "a_en": "It is ten thousand dong per person.", "a_vi": "Giá vé là 10.000 đồng một người." },
+        { "q_en": "What time does the next ferry depart?", "q_vi": "Khách hỏi giờ phà chạy", "a_en": "The next ferry leaves at 2:30 PM.", "a_vi": "Chuyến phà tiếp theo khởi hành lúc 2h30 chiều." },
+        { "q_en": "Is there a direct route to the airport?", "q_vi": "Khách hỏi tuyến bay thẳng", "a_en": "Yes, the airport shuttle goes directly there.", "a_vi": "Vâng, xe đưa đón sân bay đi thẳng đến đó." },
+        { "q_en": "Do I need to transfer to another line?", "q_vi": "Khách hỏi việc đổi chuyến", "a_en": "Yes, transfer to the blue line at the next station.", "a_vi": "Vâng, hãy đổi sang tuyến màu xanh dương ở trạm tiếp theo." },
+        { "q_en": "Which platform does the train to Hanoi leave from?", "q_vi": "Khách hỏi sân ga", "a_en": "It leaves from platform number three.", "a_vi": "Nó khởi hành từ sân ga số 3." },
+        { "q_en": "How often does the shuttle bus run?", "q_vi": "Khách hỏi tần suất xe buýt", "a_en": "It runs every thirty minutes.", "a_vi": "Nó chạy mỗi 30 phút một chuyến." },
+        { "q_en": "Can I pay the fare with a credit card?", "q_vi": "Khách hỏi cách trả tiền vé", "a_en": "No, the local buses only accept cash.", "a_vi": "Không, xe buýt địa phương chỉ nhận tiền mặt." },
+        { "q_en": "Is it faster to take a taxi or the subway?", "q_vi": "Khách so sánh phương tiện", "a_en": "The subway is much faster during rush hour.", "a_vi": "Tàu điện ngầm nhanh hơn nhiều trong giờ cao điểm." },
+        { "q_en": "Where should I alight for the national museum?", "q_vi": "Khách hỏi trạm xuống", "a_en": "Alight at the fourth stop, right after the bridge.", "a_vi": "Hãy xuống ở trạm thứ 4, ngay sau cây cầu." },
+        { "q_en": "My train is delayed. What should I do?", "q_vi": "Khách báo tàu trễ", "a_en": "Please wait in the departure lounge for updates.", "a_vi": "Vui lòng đợi ở phòng chờ khởi hành để nghe cập nhật." },
+        { "q_en": "Do you have a schedule for the local buses?", "q_vi": "Khách xin lịch trình xe", "a_en": "Yes, here is a printed schedule for you.", "a_vi": "Vâng, đây là một bản lịch trình đã in sẵn cho quý khách." },
+        { "q_en": "How do I navigate the public transport system?", "q_vi": "Khách hỏi cách dò đường", "a_en": "You can download the city transit app on your phone.", "a_vi": "Quý khách có thể tải ứng dụng giao thông thành phố trên điện thoại." },
+        { "q_en": "Are there any night buses available?", "q_vi": "Khách hỏi xe buýt đêm", "a_en": "Night buses run every hour after midnight.", "a_vi": "Xe buýt đêm chạy mỗi giờ một chuyến sau nửa đêm." },
+        { "q_en": "I missed my bus. When is the next one?", "q_vi": "Khách lỡ chuyến xe", "a_en": "The next one will arrive in fifteen minutes.", "a_vi": "Chuyến tiếp theo sẽ đến trong 15 phút nữa." },
+        { "q_en": "Where is the nearest taxi stand?", "q_vi": "Khách tìm bãi đậu taxi", "a_en": "There is a taxi stand just outside the hotel lobby.", "a_vi": "Có một bãi đậu taxi ngay bên ngoài tiền sảnh khách sạn." },
+        { "q_en": "Can you book a private transfer to the peninsula?", "q_vi": "Khách nhờ đặt xe riêng", "a_en": "Certainly, I will arrange a car for you.", "a_vi": "Chắc chắn rồi, tôi sẽ sắp xếp một chiếc ô tô cho quý khách." },
+        { "q_en": "Is the ferry operating in this bad weather?", "q_vi": "Khách hỏi tình hình phà", "a_en": "No, all ferry services are suspended today.", "a_vi": "Không, mọi dịch vụ phà đều bị đình chỉ hôm nay." },
+        { "q_en": "How long is the journey to the harbor?", "q_vi": "Khách hỏi thời gian di chuyển", "a_en": "The journey takes about forty-five minutes.", "a_vi": "Hành trình mất khoảng 45 phút." }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "sentence",
+      "description": "Level 9: Mẫu câu Chỉ đường đến các Địa danh",
+      "questions": [
+        { "q_en": "What is the best way to the ancient pagoda?", "q_vi": "Hỏi đường đi chùa cổ", "a_en": "Renting a bicycle is the best way to get there.", "a_vi": "Thuê một chiếc xe đạp là cách tốt nhất để đến đó." },
+        { "q_en": "Can you point out the heritage sites on the map?", "q_vi": "Nhờ chỉ di sản trên bản đồ", "a_en": "Sure, they are marked with red stars here.", "a_vi": "Chắc chắn rồi, chúng được đánh dấu bằng các ngôi sao đỏ ở đây." },
+        { "q_en": "Is the art gallery open on Mondays?", "q_vi": "Hỏi giờ mở cửa phòng tranh", "a_en": "No, the gallery is closed every Monday.", "a_vi": "Không, phòng trưng bày đóng cửa vào mỗi thứ Hai." },
+        { "q_en": "How far is the monument from the town square?", "q_vi": "Hỏi khoảng cách đài kỷ niệm", "a_en": "It is just a short walk, about five minutes.", "a_vi": "Chỉ là một quãng đi bộ ngắn, khoảng 5 phút thôi." },
+        { "q_en": "Where can we buy authentic local crafts?", "q_vi": "Hỏi chỗ mua đồ thủ công", "a_en": "The traditional market has the best authentic crafts.", "a_vi": "Khu chợ truyền thống có những món đồ thủ công đích thực tốt nhất." },
+        { "q_en": "I want to see the city skyline at night.", "q_vi": "Khách muốn ngắm cảnh đêm", "a_en": "You should visit the rooftop bar on the 50th floor.", "a_vi": "Quý khách nên ghé thăm quán bar sân thượng ở tầng 50." },
+        { "q_en": "Which way is the fishing harbor?", "q_vi": "Hỏi hướng đi bến cảng", "a_en": "Head south along the coastline for two kilometers.", "a_vi": "Hãy đi về hướng nam dọc theo đường bờ biển khoảng 2km." },
+        { "q_en": "Do we need to buy tickets for the temple?", "q_vi": "Hỏi vé vào đền", "a_en": "No, entrance to the temple is completely free.", "a_vi": "Không, vé vào đền là hoàn toàn miễn phí." },
+        { "q_en": "Is it easy to find parking near the palace?", "q_vi": "Hỏi chỗ đậu xe", "a_en": "It is very difficult. I suggest taking a taxi.", "a_vi": "Rất khó đấy. Tôi gợi ý quý khách nên đi taxi." },
+        { "q_en": "We are looking for the famous bronze statue.", "q_vi": "Khách tìm bức tượng đồng", "a_en": "It is located right in the center of the fountain.", "a_vi": "Nó nằm ngay vị trí trung tâm của đài phun nước." },
+        { "q_en": "How do we get to the island in the bay?", "q_vi": "Hỏi đường ra đảo", "a_en": "You need to take a speedboat from the main pier.", "a_vi": "Quý khách cần đi tàu cao tốc từ bến tàu chính." },
+        { "q_en": "Are there any guided tours for the ruins?", "q_vi": "Hỏi tour tham quan phế tích", "a_en": "Yes, tours depart from the visitor center every hour.", "a_vi": "Vâng, các tour khởi hành từ trung tâm du khách mỗi giờ một lần." },
+        { "q_en": "We got lost trying to find the souvenir street.", "q_vi": "Khách lạc đường tìm phố quà tặng", "a_en": "Go back to the crossroad and turn left.", "a_vi": "Hãy quay lại đoạn đường giao nhau và rẽ trái." },
+        { "q_en": "Is the walk to the castle very steep?", "q_vi": "Hỏi đường đi bộ có dốc không", "a_en": "Yes, it is quite a steep hike up the hill.", "a_vi": "Vâng, đó là một chuyến đi bộ leo lên đồi khá dốc." },
+        { "q_en": "What time does the night market close?", "q_vi": "Hỏi giờ đóng cửa chợ đêm", "a_en": "The market stays open until midnight.", "a_vi": "Khu chợ mở cửa cho đến nửa đêm." },
+        { "q_en": "Can you recommend a scenic route for driving?", "q_vi": "Nhờ gợi ý cung đường đẹp", "a_en": "The coastal road offers breathtaking ocean views.", "a_vi": "Cung đường ven biển mang đến cảnh đại dương đẹp ngoạn mục." },
+        { "q_en": "Where is the best spot to take photos of the bay?", "q_vi": "Hỏi chỗ chụp ảnh đẹp", "a_en": "The observation deck on the hill is the best spot.", "a_vi": "Đài quan sát trên đồi là địa điểm tuyệt vời nhất." },
+        { "q_en": "Are visitors allowed inside the sacred sanctuary?", "q_vi": "Hỏi quy định vào thánh địa", "a_en": "Yes, but you must wear appropriate clothing.", "a_vi": "Vâng, nhưng quý khách phải mặc trang phục phù hợp." },
+        { "q_en": "How do we return to the resort from the peninsula?", "q_vi": "Hỏi đường về từ bán đảo", "a_en": "Take the local bus number 12 back to the city.", "a_vi": "Hãy bắt xe buýt địa phương số 12 để quay lại thành phố." },
+        { "q_en": "Thank you, this map is very helpful.", "q_vi": "Khách cảm ơn bản đồ", "a_en": "You are welcome. Have a wonderful time exploring!", "a_vi": "Không có chi ạ. Chúc quý khách có khoảng thời gian khám phá tuyệt vời!" }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "boss",
+      "description": "Level 10: BOSS Lạc Đường (Trợ giúp qua điện thoại)",
+      "questions": [
+        { "q_en": "Hello, is this the resort reception? I need help.", "q_vi": "(Boss) Xin chào, đây có phải lễ tân không? Tôi cần giúp đỡ.", "a_en": "Yes, this is the reception. How can I help you, sir?", "a_vi": "Vâng, đây là lễ tân. Tôi có thể giúp gì cho ngài?" },
+        { "q_en": "I went out to explore the city and I am completely lost.", "q_vi": "Khách báo đi lạc", "a_en": "Please don't panic. Can you tell me what you see around you?", "a_vi": "Xin ngài đừng hoảng sợ. Ngài có thể cho tôi biết ngài thấy gì xung quanh không?" },
+        { "q_en": "I see a large fountain and a very old bronze statue.", "q_vi": "Khách miêu tả xung quanh", "a_en": "You are at the Central Square. That is the Independence Statue.", "a_vi": "Ngài đang ở Quảng trường Trung tâm. Đó là Bức tượng Độc lập." },
+        { "q_en": "Yes, that sounds right. How do I get back to the hotel from here?", "q_vi": "Hỏi cách về khách sạn", "a_en": "You are quite far. I highly recommend taking a taxi.", "a_vi": "Ngài đang ở khá xa. Tôi đặc biệt khuyên ngài nên đi taxi." },
+        { "q_en": "I don't have any cash left. Can I take the bus?", "q_vi": "Khách hết tiền mặt", "a_en": "Yes, you can take bus number 8. It accepts credit cards.", "a_vi": "Vâng, ngài có thể đi xe buýt số 8. Nó có chấp nhận thẻ tín dụng." },
+        { "q_en": "Where is the bus stop for number 8?", "q_vi": "Hỏi trạm xe buýt", "a_en": "Walk past the fountain, the bus stop is in front of the museum.", "a_vi": "Đi bộ qua đài phun nước, trạm xe buýt nằm phía trước bảo tàng." },
+        { "q_en": "I am at the museum now, but the board says bus 8 is delayed.", "q_vi": "Báo xe buýt bị trễ", "a_en": "I am sorry to hear that. The traffic must be heavy right now.", "a_vi": "Tôi rất tiếc khi nghe vậy. Chắc hẳn giao thông đang rất đông đúc lúc này." },
+        { "q_en": "Is there a subway station near the museum?", "q_vi": "Hỏi trạm tàu điện ngầm", "a_en": "Yes, the subway station is just around the corner to your left.", "a_vi": "Vâng, trạm tàu điện ngầm nằm ngay ở góc rẽ bên trái ngài." },
+        { "q_en": "Okay, I see the station. Which line should I take?", "q_vi": "Hỏi tuyến tàu", "a_en": "Take the Blue Line towards the coastline.", "a_vi": "Hãy đi Tuyến Xanh Dương hướng về phía đường bờ biển." },
+        { "q_en": "And which station should I alight at?", "q_vi": "Hỏi trạm xuống", "a_en": "Alight at the Marina Bay station. It is the fifth stop.", "a_vi": "Hãy xuống tại trạm Marina Bay. Nó là trạm thứ năm." },
+        { "q_en": "Let me write this down. Blue Line, Marina Bay station.", "q_vi": "Khách ghi chú lại", "a_en": "That is correct. Once you exit the station, turn right.", "a_vi": "Đúng rồi ạ. Ngay khi ngài ra khỏi trạm, hãy rẽ phải." },
+        { "q_en": "How far is the hotel from the Marina Bay station?", "q_vi": "Hỏi khoảng cách đi bộ", "a_en": "It is only a five-minute walk from the station exit.", "a_vi": "Chỉ mất 5 phút đi bộ từ lối ra của trạm tàu." },
+        { "q_en": "Great. I just bought the ticket. The subway is very crowded.", "q_vi": "Than phiền tàu đông", "a_en": "It is rush hour, sir. Please take care of your belongings.", "a_vi": "Đang là giờ cao điểm thưa ngài. Vui lòng bảo quản tư trang cẩn thận." },
+        { "q_en": "I will. Wait, the train is stopping at 'City Harbor'. Should I get off?", "q_vi": "Khách nhầm trạm", "a_en": "No, sir. City Harbor is the fourth stop. Stay on the train.", "a_vi": "Không thưa ngài. City Harbor là trạm thứ tư. Hãy ở yên trên tàu." },
+        { "q_en": "Okay, I almost got off. Next stop is Marina Bay, right?", "q_vi": "Xác nhận lại trạm", "a_en": "Yes, the next one is your stop.", "a_vi": "Vâng, trạm tiếp theo chính là trạm của ngài." },
+        { "q_en": "I have exited the station. I am standing near a large pier.", "q_vi": "Khách báo đã ra khỏi trạm", "a_en": "Excellent. Now walk straight along the coastline for two blocks.", "a_vi": "Tuyệt hảo. Bây giờ hãy đi thẳng dọc theo bờ biển qua 2 dãy nhà." },
+        { "q_en": "I see a big white building ahead. Is that the resort?", "q_vi": "Khách thấy tòa nhà", "a_en": "Yes, that is Ocean Dunes Resort. You are almost here.", "a_vi": "Vâng, đó chính là Ocean Dunes Resort. Ngài sắp đến nơi rồi." },
+        { "q_en": "Thank goodness. Navigating this city is so difficult.", "q_vi": "Khách thở phào", "a_en": "I understand. We are glad you found your way back safely.", "a_vi": "Tôi hiểu mà. Chúng tôi rất mừng vì ngài đã tìm được đường về an toàn." },
+        { "q_en": "I am at the main gate now. Thank you for staying on the phone.", "q_vi": "Khách đã tới cổng", "a_en": "It is my duty, sir. Welcome back to the hotel.", "a_vi": "Đó là nhiệm vụ của tôi thưa ngài. Chào mừng ngài đã quay lại khách sạn." },
+        { "q_en": "I need a cold drink. I will see you at the lobby.", "q_vi": "Khách dặn dò", "a_en": "I will have a cold drink waiting for you. See you shortly.", "a_vi": "Tôi sẽ chuẩn bị sẵn một thức uống lạnh chờ ngài. Hẹn gặp ngài sớm." }
+      ]
+    },
+	{
+      "id": 11, "type": "vocab", "description": "Level 11: Từ vựng Nội khu Resort (Complex)",
+      "questions": [
+        {"q_en": "Lounge", "a_vi": "Phòng chờ / Khu vực thư giãn"}, {"q_en": "Boutique", "a_vi": "Cửa hàng thời trang nhỏ"}, {"q_en": "Villa", "a_vi": "Biệt thự"}, {"q_en": "Cabana", "a_vi": "Chòi nghỉ mát (cạnh hồ bơi/biển)"}, {"q_en": "Terrace", "a_vi": "Sân hiên / Sân thượng"}, {"q_en": "Deck", "a_vi": "Boong / Sàn gỗ ngoài trời"}, {"q_en": "Ballroom", "a_vi": "Phòng khiêu vũ / Sảnh tiệc"}, {"q_en": "Auditorium", "a_vi": "Khán phòng / Hội trường"}, {"q_en": "Arcade", "a_vi": "Khu trò chơi điện tử"}, {"q_en": "Promenade", "a_vi": "Lối đi dạo (thường dọc bờ biển)"}, {"q_en": "Corridor", "a_vi": "Hành lang dài"}, {"q_en": "Wing", "a_vi": "Khu / Dãy (của tòa nhà)"}, {"q_en": "Pavilion", "a_vi": "Đình / Gian hàng triển lãm"}, {"q_en": "Conservatory", "a_vi": "Nhà kính trồng cây"}, {"q_en": "Atrium", "a_vi": "Khoảng thông tầng / Sảnh lớn có mái kính"}, {"q_en": "Gazebo", "a_vi": "Lầu vọng cảnh / Vọng lâu"}, {"q_en": "Patio", "a_vi": "Sân trong / Khoảng sân lát gạch"}, {"q_en": "Balcony", "a_vi": "Ban công"}, {"q_en": "Mezzanine", "a_vi": "Tầng lửng"}, {"q_en": "Cellar", "a_vi": "Hầm (chứa rượu)"}
+      ]
+    },
+    {
+      "id": 12, "type": "vocab", "description": "Level 12: Từ vựng Chỉ dẫn đường đi chi tiết",
+      "questions": [
+        {"q_en": "Adjacent", "a_vi": "Liền kề / Kế bên"}, {"q_en": "Opposite", "a_vi": "Đối diện"}, {"q_en": "Beyond", "a_vi": "Vượt ra ngoài / Phía bên kia"}, {"q_en": "Underneath", "a_vi": "Bên dưới"}, {"q_en": "Alongside", "a_vi": "Dọc theo"}, {"q_en": "Intersection", "a_vi": "Giao lộ / Ngã tư"}, {"q_en": "Roundabout", "a_vi": "Bùng binh / Vòng xuyến"}, {"q_en": "Landmark", "a_vi": "Cột mốc / Điểm nhận dạng"}, {"q_en": "Crosswalk", "a_vi": "Vạch kẻ qua đường"}, {"q_en": "Overpass", "a_vi": "Cầu vượt"}, {"q_en": "Underpass", "a_vi": "Đường hầm chui"}, {"q_en": "Dead end", "a_vi": "Đường cụt"}, {"q_en": "Shortcut", "a_vi": "Đường tắt"}, {"q_en": "Detour", "a_vi": "Đường vòng"}, {"q_en": "Avenue", "a_vi": "Đại lộ"}, {"q_en": "Boulevard", "a_vi": "Đại lộ (thường có cây xanh)"}, {"q_en": "Highway", "a_vi": "Đường quốc lộ"}, {"q_en": "Expressway", "a_vi": "Đường cao tốc"}, {"q_en": "Lane", "a_vi": "Làn đường"}, {"q_en": "Alleyway", "a_vi": "Ngõ hẻm"}
+      ]
+    },
+    {
+      "id": 13, "type": "sentence", "description": "Level 13: Giao tiếp Điều hướng Nội khu (Resort Navigation)",
+      "questions": [
+        {"q_en": "How do I get to the West Wing of the resort?", "q_vi": "Hỏi đường sang khu Tây", "a_en": "Walk past the central atrium and take the glass corridor.", "a_vi": "Đi ngang qua khoảng thông tầng trung tâm và đi theo hành lang kính."},
+        {"q_en": "Where is the VIP Lounge located?", "q_vi": "Tìm phòng chờ VIP", "a_en": "It is located on the mezzanine floor, adjacent to the boutique.", "a_vi": "Nó nằm ở tầng lửng, liền kề với cửa hàng thời trang."},
+        {"q_en": "Is there a shortcut to the private beach?", "q_vi": "Hỏi đường tắt ra biển", "a_en": "Yes, you can take the pathway underneath the pool deck.", "a_vi": "Vâng, ngài có thể đi lối đi bên dưới sàn gỗ hồ bơi."},
+        {"q_en": "Which way is the Grand Ballroom?", "q_vi": "Tìm sảnh tiệc", "a_en": "Turn right at the gazebo and follow the promenade.", "a_vi": "Rẽ phải tại vọng lâu và đi dọc theo lối đi dạo."},
+        {"q_en": "I am trying to find Cabana number 5.", "q_vi": "Tìm chòi nghỉ", "a_en": "Walk alongside the pool; it is the last cabana on your left.", "a_vi": "Đi dọc theo hồ bơi; nó là chòi nghỉ cuối cùng bên trái ngài."},
+        {"q_en": "Where does this corridor lead to?", "q_vi": "Hỏi đích đến của hành lang", "a_en": "This corridor leads directly to the underground wine cellar.", "a_vi": "Hành lang này dẫn thẳng xuống hầm rượu dưới lòng đất."},
+        {"q_en": "How far is the tennis court from my villa?", "q_vi": "Hỏi khoảng cách sân tennis", "a_en": "It is just a short walk beyond the botanical conservatory.", "a_vi": "Chỉ là một đoạn đi bộ ngắn phía bên kia nhà kính thực vật."},
+        {"q_en": "Can you point me to the children's arcade?", "q_vi": "Tìm khu trò chơi", "a_en": "Take the elevator to B1, it is opposite the spa reception.", "a_vi": "Đi thang máy xuống B1, nó đối diện quầy lễ tân spa."},
+        {"q_en": "Is the rooftop terrace accessible from here?", "q_vi": "Hỏi đường lên sân thượng", "a_en": "Yes, use the spiral stairs located in the pavilion.", "a_vi": "Vâng, sử dụng cầu thang xoắn ốc nằm trong đình nghỉ mát."},
+        {"q_en": "I think we reached a dead end.", "q_vi": "Khách đi vào ngõ cụt", "a_en": "Please turn around. You missed the detour sign near the patio.", "a_vi": "Vui lòng quay lại. Ngài đã bỏ lỡ biển báo đường vòng gần sân trong."},
+        {"q_en": "Where is the designated smoking area?", "q_vi": "Tìm khu vực hút thuốc", "a_en": "It is located outside, near the entrance of the East Wing.", "a_vi": "Nó nằm bên ngoài, gần lối vào của Khu Đông."},
+        {"q_en": "How do we access the outdoor dining deck?", "q_vi": "Tìm đường ra boong ăn uống", "a_en": "Go through the main restaurant and open the sliding doors.", "a_vi": "Đi xuyên qua nhà hàng chính và mở những cánh cửa trượt."},
+        {"q_en": "Is there a restroom near the auditorium?", "q_vi": "Hỏi nhà vệ sinh gần khán phòng", "a_en": "Yes, there are restrooms just outside the auditorium doors.", "a_vi": "Vâng, có nhà vệ sinh ngay bên ngoài cửa khán phòng."},
+        {"q_en": "Where can we park our rented bicycles?", "q_vi": "Hỏi chỗ đậu xe đạp", "a_en": "There is a bicycle rack next to the security booth at the main gate.", "a_vi": "Có một giá để xe đạp cạnh bốt bảo vệ ở cổng chính."},
+        {"q_en": "Can you show me the exact location of my villa on the map?", "q_vi": "Nhờ chỉ villa trên bản đồ", "a_en": "Your villa is here, right next to the lotus fountain.", "a_vi": "Biệt thự của ngài ở đây, ngay cạnh đài phun nước hoa sen."},
+        {"q_en": "Is the pathway well-lit at night?", "q_vi": "Hỏi ánh sáng lối đi", "a_en": "Yes, the entire promenade is illuminated after sunset.", "a_vi": "Vâng, toàn bộ lối đi dạo đều được chiếu sáng sau hoàng hôn."},
+        {"q_en": "We need to get to the lobby quickly. Is there a buggy?", "q_vi": "Gọi xe điện", "a_en": "I will dispatch an electric buggy to your location immediately.", "a_vi": "Tôi sẽ điều một chiếc xe điện đến vị trí của ngài ngay lập tức."},
+        {"q_en": "Are there any stairs on the way to the beach?", "q_vi": "Hỏi có cầu thang bộ không", "a_en": "No, the path is completely flat and wheelchair accessible.", "a_vi": "Không, lối đi hoàn toàn bằng phẳng và xe lăn có thể đi được."},
+        {"q_en": "Where is the emergency assembly point?", "q_vi": "Hỏi điểm tập kết khẩn cấp", "a_en": "It is located in the large courtyard behind the West Wing.", "a_vi": "Nó nằm ở khoảng sân trong rộng lớn phía sau Khu Tây."},
+        {"q_en": "Thank you, your directions were very clear.", "q_vi": "Khách cảm ơn", "a_en": "You are welcome. Enjoy exploring our resort facilities.", "a_vi": "Không có chi ạ. Chúc ngài tận hưởng việc khám phá cơ sở vật chất resort."}
+      ]
+    },
+    {
+      "id": 14, "type": "sentence", "description": "Level 14: Chỉ dẫn Giao thông & Điểm đến Địa phương",
+      "questions": [
+        {"q_en": "How do we get to the White Sand Dunes from here?", "q_vi": "Hỏi đường đi đồi cát trắng", "a_en": "It is a 45-minute drive. Head north on the main highway.", "a_vi": "Mất 45 phút lái xe. Hãy đi về hướng Bắc trên đường quốc lộ chính."},
+        {"q_en": "Is the Fairy Stream within walking distance?", "q_vi": "Hỏi Suối Tiên có đi bộ được không", "a_en": "Yes, it is only about ten minutes on foot from our resort.", "a_vi": "Vâng, chỉ mất khoảng 10 phút đi bộ từ resort của chúng ta."},
+        {"q_en": "Where is the best place to eat fresh seafood?", "q_vi": "Hỏi quán hải sản", "a_en": "I recommend the fishing village; it is 3 kilometers down this avenue.", "a_vi": "Tôi gợi ý làng chài; nó nằm cách đây 3km dọc theo đại lộ này."},
+        {"q_en": "Can we take a public bus to the city center?", "q_vi": "Hỏi xe buýt công cộng", "a_en": "Yes, wait at the bus stop opposite the hotel entrance.", "a_vi": "Vâng, hãy đợi ở trạm xe buýt đối diện lối vào khách sạn."},
+        {"q_en": "What is the most recognizable landmark near the night market?", "q_vi": "Hỏi điểm nhận dạng chợ đêm", "a_en": "Look for the large clock tower at the main roundabout.", "a_vi": "Hãy tìm tháp đồng hồ lớn tại vòng xuyến chính."},
+        {"q_en": "Should we take the coastal road or the expressway?", "q_vi": "Hỏi chọn tuyến đường", "a_en": "The coastal road is more scenic, but the expressway is faster.", "a_vi": "Đường ven biển có cảnh đẹp hơn, nhưng đường cao tốc thì nhanh hơn."},
+        {"q_en": "Where can we safely cross this busy boulevard?", "q_vi": "Hỏi chỗ qua đường lớn", "a_en": "Please use the pedestrian overpass just 100 meters ahead.", "a_vi": "Vui lòng sử dụng cầu vượt đi bộ ngay phía trước 100 mét."},
+        {"q_en": "Is there a gas station on the way to the sand dunes?", "q_vi": "Hỏi cây xăng", "a_en": "Yes, there is one right after the second intersection.", "a_vi": "Vâng, có một trạm ngay sau ngã tư thứ hai."},
+        {"q_en": "Are the roads to the mountain temple steep?", "q_vi": "Hỏi độ dốc đường núi", "a_en": "Yes, the route is quite winding and steep. Drive carefully.", "a_vi": "Vâng, tuyến đường khá ngoằn ngoèo và dốc. Hãy lái xe cẩn thận."},
+        {"q_en": "How much does a taxi to the train station usually cost?", "q_vi": "Hỏi giá taxi ra ga", "a_en": "It should be around one hundred and fifty thousand dong.", "a_vi": "Giá sẽ rơi vào khoảng 150.000 đồng."},
+        {"q_en": "Which exit should we take on the highway to reach the harbor?", "q_vi": "Hỏi lối ra cao tốc", "a_en": "Take exit number 4, then follow the signs to the pier.", "a_vi": "Đi theo lối ra số 4, sau đó làm theo biển báo chỉ đến bến tàu."},
+        {"q_en": "Is the local museum open on weekends?", "q_vi": "Hỏi giờ bảo tàng", "a_en": "Yes, it is open daily from 8 AM to 5 PM.", "a_vi": "Vâng, nó mở cửa hàng ngày từ 8h sáng đến 5h chiều."},
+        {"q_en": "We want to avoid traffic jams. What time should we leave?", "q_vi": "Hỏi cách tránh kẹt xe", "a_en": "You should depart before the rush hour starts at 4:30 PM.", "a_vi": "Quý khách nên khởi hành trước khi giờ cao điểm bắt đầu lúc 4:30 chiều."},
+        {"q_en": "Where is the nearest ATM machine?", "q_vi": "Tìm cây rút tiền", "a_en": "There is a 24-hour ATM next to the pharmacy in the next block.", "a_vi": "Có một cây ATM 24/24 cạnh tiệm thuốc ở dãy nhà tiếp theo."},
+        {"q_en": "Can you draw the route to the ancient pagoda on this map?", "q_vi": "Nhờ vẽ đường trên bản đồ", "a_en": "Certainly. You go straight here, then make a left turn at the bridge.", "a_vi": "Chắc chắn rồi. Ngài đi thẳng ở đây, sau đó rẽ trái tại cây cầu."},
+        {"q_en": "Is there a parking lot near the central square?", "q_vi": "Hỏi chỗ đậu xe", "a_en": "Yes, there is a large underground parking lot beneath the square.", "a_vi": "Vâng, có một bãi đỗ xe ngầm lớn bên dưới quảng trường."},
+        {"q_en": "We got lost yesterday. The street signs are confusing.", "q_vi": "Than phiền biển báo", "a_en": "I recommend using the GPS coordinates I sent to your phone.", "a_vi": "Tôi khuyên ngài nên dùng tọa độ GPS mà tôi đã gửi vào điện thoại ngài."},
+        {"q_en": "Which bus lane should we stand in?", "q_vi": "Hỏi làn xe buýt", "a_en": "Stand in the blue lane; that is for the intercity shuttle.", "a_vi": "Hãy đứng ở làn màu xanh dương; đó là làn dành cho xe đưa đón liên tỉnh."},
+        {"q_en": "Do we have to pay a toll fee on this route?", "q_vi": "Hỏi trạm thu phí", "a_en": "Yes, there is a toll booth halfway to your destination.", "a_vi": "Vâng, có một trạm thu phí ở giữa đường đến đích của ngài."},
+        {"q_en": "Thank you for the detailed instructions.", "q_vi": "Cảm ơn", "a_en": "Have a wonderful trip. Drive safely!", "a_vi": "Chúc quý khách có một chuyến đi tuyệt vời. Lái xe an toàn nhé!"}
+      ]
+    },
+    {
+      "id": 15, "type": "boss", "description": "Level 15: BOSS Chỉ Đường (Khách lạc trong Resort khổng lồ)",
+      "questions": [
+        {"q_en": "Hello? Is this reception? I am totally lost.", "q_vi": "(Boss Lạc Đường) Alo? Lễ tân đó hả? Tôi hoàn toàn bị lạc rồi.", "a_en": "Yes, this is reception. Please stay calm, sir. I will guide you.", "a_vi": "Vâng, lễ tân nghe ạ. Xin ngài bình tĩnh. Tôi sẽ hướng dẫn ngài."},
+        {"q_en": "I stepped out of my villa to find the Grand Ballroom and now I don't know where I am.", "q_vi": "Boss trình bày vấn đề", "a_en": "I understand. Can you look around and tell me what you see?", "a_vi": "Tôi hiểu. Ngài có thể nhìn xung quanh và nói cho tôi biết ngài thấy gì không?"},
+        {"q_en": "I see a large glass building filled with tropical plants.", "q_vi": "Boss miêu tả", "a_en": "Ah, you are standing near the Botanical Conservatory in the East Wing.", "a_vi": "À, ngài đang đứng gần Nhà kính Thực vật ở Khu Đông."},
+        {"q_en": "Yes, that's it! So which way is the Grand Ballroom?", "q_vi": "Hỏi hướng đi", "a_en": "Face the glass building, then turn left and walk down the stone pathway.", "a_vi": "Hãy đứng đối diện tòa nhà kính, sau đó rẽ trái và đi dọc theo lối đi lát đá."},
+        {"q_en": "Okay, I am walking. Wait, the path splits into two.", "q_vi": "Đường chia ngã ba", "a_en": "Take the path on the right. The left one leads to the beach.", "a_vi": "Hãy đi lối bên phải. Lối bên trái dẫn ra bãi biển."},
+        {"q_en": "Got it. I see a large fountain now.", "q_vi": "Thấy đài phun nước", "a_en": "Excellent. That is the Lotus Fountain. Walk past it.", "a_vi": "Tuyệt vời. Đó là Đài phun nước Hoa Sen. Hãy đi ngang qua nó."},
+        {"q_en": "I am walking past it. The path is going slightly uphill.", "q_vi": "Đi lên dốc", "a_en": "That is correct. You are approaching the main promenade.", "a_vi": "Đúng rồi ạ. Ngài đang tiến đến lối đi dạo chính."},
+        {"q_en": "I see a sign that says 'Mezzanine Level'. Should I go up the stairs?", "q_vi": "Thấy biển báo tầng lửng", "a_en": "No, sir. Do not go up the stairs. Keep walking straight on the ground level.", "a_vi": "Không thưa ngài. Đừng lên cầu thang. Tiếp tục đi thẳng ở tầng trệt."},
+        {"q_en": "Alright. Now I am inside a long corridor with paintings.", "q_vi": "Đi vào hành lang", "a_en": "You are in the Art Corridor. The Grand Ballroom is at the very end.", "a_vi": "Ngài đang ở Hành lang Nghệ thuật. Sảnh tiệc lớn nằm ở tận cùng."},
+        {"q_en": "It is quite a long walk. Are you sure I'm going the right way?", "q_vi": "Boss nghi ngờ", "a_en": "I am absolutely sure, sir. You are just one minute away.", "a_vi": "Tôi hoàn toàn chắc chắn thưa ngài. Ngài chỉ còn cách 1 phút đi bộ thôi."},
+        {"q_en": "Okay, I see double doors. Is this it?", "q_vi": "Thấy cửa", "a_en": "Are the doors made of dark wood with gold handles?", "a_vi": "Có phải những cánh cửa làm bằng gỗ tối màu với tay nắm vàng không?"},
+        {"q_en": "Yes, they are.", "q_vi": "Xác nhận đúng cửa", "a_en": "Congratulations, sir. You have arrived at the Grand Ballroom.", "a_vi": "Chúc mừng ngài. Ngài đã đến Sảnh tiệc lớn."},
+        {"q_en": "Finally! Now, where is the restroom? I need to wash my hands.", "q_vi": "Hỏi nhà vệ sinh", "a_en": "Before entering the ballroom, turn right. The restrooms are just down that short hall.", "a_vi": "Trước khi vào sảnh tiệc, hãy rẽ phải. Nhà vệ sinh nằm ngay dọc theo sảnh ngắn đó."},
+        {"q_en": "Found them. By the way, after the event, how do I get back to my villa?", "q_vi": "Hỏi đường về", "a_en": "Would you like me to send an electric buggy to pick you up later?", "a_vi": "Ngài có muốn tôi cử một chiếc xe điện đến đón ngài sau sự kiện không?"},
+        {"q_en": "Yes, that would be much better. Walking back in the dark is confusing.", "q_vi": "Boss đồng ý", "a_en": "I completely understand. What time does your event finish?", "a_vi": "Tôi hoàn toàn hiểu. Sự kiện của ngài kết thúc lúc mấy giờ?"},
+        {"q_en": "It ends at 10 PM.", "q_vi": "Báo giờ xong", "a_en": "I will have a buggy waiting for you outside the Grand Ballroom at 10 PM.", "a_vi": "Tôi sẽ cho một chiếc xe điện đợi ngài bên ngoài Sảnh tiệc lớn lúc 10h tối."},
+        {"q_en": "Perfect. You have been very helpful.", "q_vi": "Khen ngợi lễ tân", "a_en": "It is my pleasure to assist you, sir. Enjoy your event.", "a_vi": "Được hỗ trợ ngài là niềm vinh hạnh của tôi. Chúc ngài tận hưởng sự kiện."},
+        {"q_en": "One more thing, is there a smoking area near the ballroom?", "q_vi": "Hỏi chỗ hút thuốc", "a_en": "Yes, exit the double doors and step onto the outdoor terrace on your left.", "a_vi": "Vâng, bước ra khỏi cửa đôi và đi ra khu vực sân hiên ngoài trời bên trái ngài."},
+        {"q_en": "Great. Thanks again.", "q_vi": "Cảm ơn", "a_en": "You are very welcome. Have a wonderful evening.", "a_vi": "Không có chi thưa ngài. Chúc ngài một buổi tối tuyệt vời."},
+        {"q_en": "Goodbye.", "q_vi": "Kết thúc", "a_en": "Goodbye, sir.", "a_vi": "Tạm biệt ngài."}
+      ]
+    },
+    {
+      "id": 16, "type": "vocab", "description": "Level 16: Từ vựng Giải cứu & Tọa độ Địa lý",
+      "questions": [
+        {"q_en": "Coordinate", "a_vi": "Tọa độ"}, {"q_en": "Latitude", "a_vi": "Vĩ độ"}, {"q_en": "Longitude", "a_vi": "Kinh độ"}, {"q_en": "Compass", "a_vi": "La bàn"}, {"q_en": "Direction", "a_vi": "Phương hướng"}, {"q_en": "North", "a_vi": "Hướng Bắc"}, {"q_en": "South", "a_vi": "Hướng Nam"}, {"q_en": "East", "a_vi": "Hướng Đông"}, {"q_en": "West", "a_vi": "Hướng Tây"}, {"q_en": "Stranded", "a_vi": "Bị mắc kẹt"}, {"q_en": "Rescue", "a_vi": "Giải cứu"}, {"q_en": "Dispatch", "a_vi": "Phái đi (xe/người)"}, {"q_en": "Location", "a_vi": "Vị trí"}, {"q_en": "Pinpoint", "a_vi": "Xác định chính xác vị trí"}, {"q_en": "Track", "a_vi": "Theo dõi (tín hiệu)"}, {"q_en": "Signal", "a_vi": "Tín hiệu"}, {"q_en": "Battery", "a_vi": "Pin (điện thoại/xe)"}, {"q_en": "Emergency", "a_vi": "Tình huống khẩn cấp"}, {"q_en": "Tow truck", "a_vi": "Xe cẩu / Xe kéo"}, {"q_en": "Mechanic", "a_vi": "Thợ máy"}
+      ]
+    },
+    {
+      "id": 17, "type": "vocab", "description": "Level 17: Từ vựng Địa hình & Cảnh quan (Phan Thiết/Mũi Né)",
+      "questions": [
+        {"q_en": "Sand dune", "a_vi": "Đồi cát"}, {"q_en": "Stream", "a_vi": "Con suối (Suối Tiên)"}, {"q_en": "Canyon", "a_vi": "Hẻm núi"}, {"q_en": "Cliff", "a_vi": "Vách đá"}, {"q_en": "Lighthouse", "a_vi": "Ngọn hải đăng"}, {"q_en": "Fishing village", "a_vi": "Làng chài"}, {"q_en": "Harbor", "a_vi": "Bến cảng"}, {"q_en": "Pier", "a_vi": "Cầu tàu / Bến nhô ra biển"}, {"q_en": "Coastal road", "a_vi": "Đường ven biển"}, {"q_en": "Highway", "a_vi": "Đường quốc lộ"}, {"q_en": "Intersection", "a_vi": "Giao lộ / Ngã tư"}, {"q_en": "Roundabout", "a_vi": "Vòng xuyến"}, {"q_en": "Milestone", "a_vi": "Cột mốc (km)"}, {"q_en": "Deserted", "a_vi": "Hoang vắng / Vắng vẻ"}, {"q_en": "Pothole", "a_vi": "Ổ gà (trên đường)"}, {"q_en": "Dirt road", "a_vi": "Đường đất"}, {"q_en": "Paved road", "a_vi": "Đường rải nhựa"}, {"q_en": "Uphill", "a_vi": "Lên dốc"}, {"q_en": "Downhill", "a_vi": "Xuống dốc"}, {"q_en": "Curve", "a_vi": "Khúc cua"}
+      ]
+    },
+    {
+      "id": 18, "type": "sentence", "description": "Level 18: Giao tiếp Hỗ trợ Khách đi lạc / Mắc kẹt",
+      "questions": [
+        {"q_en": "Please share your live location via WhatsApp.", "q_vi": "Nhờ gửi định vị", "a_en": "Please share your live location via WhatsApp.", "a_vi": "Vui lòng chia sẻ vị trí trực tiếp của quý khách qua WhatsApp."},
+        {"q_en": "Can you describe any recognizable landmarks around you?", "q_vi": "Hỏi điểm nhận dạng", "a_en": "Can you describe any recognizable landmarks around you?", "a_vi": "Quý khách có thể miêu tả bất kỳ điểm nhận dạng nào xung quanh không?"},
+        {"q_en": "I see a large white lighthouse to my east.", "q_vi": "Khách thấy hải đăng", "a_en": "I see a large white lighthouse to my east.", "a_vi": "Tôi thấy một ngọn hải đăng lớn màu trắng ở phía đông của mình."},
+        {"q_en": "You are near the Ke Ga Lighthouse. Stay exactly where you are.", "q_vi": "Xác định vị trí", "a_en": "You are near the Ke Ga Lighthouse. Stay exactly where you are.", "a_vi": "Quý khách đang ở gần Hải đăng Kê Gà. Hãy ở yên vị trí hiện tại."},
+        {"q_en": "My motorbike broke down and the road is completely deserted.", "q_vi": "Báo xe hỏng đường vắng", "a_en": "My motorbike broke down and the road is completely deserted.", "a_vi": "Xe máy của tôi bị hỏng và con đường thì hoàn toàn hoang vắng."},
+        {"q_en": "We are dispatching a rescue vehicle and a mechanic now.", "q_vi": "Phái xe cứu hộ", "a_en": "We are dispatching a rescue vehicle and a mechanic now.", "a_vi": "Chúng tôi đang phái một xe cứu hộ và một thợ máy đến ngay."},
+        {"q_en": "My phone battery is at 5 percent. It will die soon.", "q_vi": "Báo điện thoại sắp hết pin", "a_en": "My phone battery is at 5 percent. It will die soon.", "a_vi": "Pin điện thoại của tôi đang ở mức 5%. Nó sẽ sớm sập nguồn."},
+        {"q_en": "Please save our hotline number and turn on battery saver mode.", "q_vi": "Hướng dẫn tiết kiệm pin", "a_en": "Please save our hotline number and turn on battery saver mode.", "a_vi": "Vui lòng lưu số đường dây nóng của chúng tôi và bật chế độ tiết kiệm pin."},
+        {"q_en": "The rescue team will reach your coordinates in twenty minutes.", "q_vi": "Báo thời gian cứu hộ đến", "a_en": "The rescue team will reach your coordinates in twenty minutes.", "a_vi": "Đội cứu hộ sẽ tiếp cận tọa độ của quý khách trong 20 phút nữa."},
+        {"q_en": "I am stuck on a dirt road full of potholes.", "q_vi": "Báo kẹt đường đất", "a_en": "I am stuck on a dirt road full of potholes.", "a_vi": "Tôi bị kẹt trên một con đường đất đầy ổ gà."},
+        {"q_en": "Do not attempt to walk back in the dark. It is unsafe.", "q_vi": "Khuyên không đi bộ trong đêm", "a_en": "Do not attempt to walk back in the dark. It is unsafe.", "a_vi": "Đừng cố gắng đi bộ về trong bóng tối. Điều đó không an toàn."},
+        {"q_en": "We have successfully pinpointed your location on the map.", "q_vi": "Xác định xong vị trí", "a_en": "We have successfully pinpointed your location on the map.", "a_vi": "Chúng tôi đã xác định thành công vị trí của ngài trên bản đồ."},
+        {"q_en": "Our driver is in a white SUV with the hotel logo.", "q_vi": "Nhận dạng xe cứu hộ", "a_en": "Our driver is in a white SUV with the hotel logo.", "a_vi": "Tài xế của chúng tôi lái một chiếc SUV màu trắng có logo khách sạn."},
+        {"q_en": "Is the engine completely dead or making a strange noise?", "q_vi": "Hỏi tình trạng xe máy", "a_en": "Is the engine completely dead or making a strange noise?", "a_vi": "Động cơ chết hoàn toàn hay đang phát ra âm thanh lạ?"},
+        {"q_en": "The tow truck will bring the motorbike back to the rental shop.", "q_vi": "Báo sẽ cẩu xe về", "a_en": "The tow truck will bring the motorbike back to the rental shop.", "a_vi": "Xe kéo sẽ chở chiếc xe máy về lại tiệm cho thuê."},
+        {"q_en": "Are you injured? Do you need medical assistance?", "q_vi": "Hỏi thăm thương tích", "a_en": "Are you injured? Do you need medical assistance?", "a_vi": "Quý khách có bị thương không? Quý khách có cần hỗ trợ y tế không?"},
+        {"q_en": "I am not injured, just very tired and frustrated.", "q_vi": "Báo an toàn nhưng mệt mỏi", "a_en": "I am not injured, just very tired and frustrated.", "a_vi": "Tôi không bị thương, chỉ rất mệt và bực bội."},
+        {"q_en": "The rescue team is flashing their headlights. Can you see them?", "q_vi": "Báo xe tới", "a_en": "The rescue team is flashing their headlights. Can you see them?", "a_vi": "Đội cứu hộ đang nháy đèn pha. Quý khách có thấy họ không?"},
+        {"q_en": "Yes, they are here! Thank you for saving me.", "q_vi": "Khách thấy xe cứu hộ", "a_en": "Yes, they are here! Thank you for saving me.", "a_vi": "Vâng, họ đây rồi! Cảm ơn vì đã cứu tôi."},
+        {"q_en": "We are glad you are safe. Our team will bring you home.", "q_vi": "Động viên khách", "a_en": "We are glad you are safe. Our team will bring you home.", "a_vi": "Chúng tôi mừng vì ngài an toàn. Đội của chúng tôi sẽ đưa ngài về nhà."}
+      ]
+    },
+    {
+      "id": 19, "type": "sentence", "description": "Level 19: Chỉ dẫn Lộ trình Liên Tỉnh & Sân Bay",
+      "questions": [
+        {"q_en": "What is the quickest route to Lien Khuong Airport from here?", "q_vi": "Hỏi đường ra sân bay Liên Khương", "a_en": "What is the quickest route to Lien Khuong Airport from here?", "a_vi": "Đường nhanh nhất từ đây đến Sân bay Liên Khương là đường nào?"},
+        {"q_en": "You should take the Dau Giay - Lien Khuong Expressway.", "q_vi": "Chỉ đường đi cao tốc", "a_en": "You setupshould take the Dau Giay - Lien Khuong Expressway.", "a_vi": "Quý khách nên đi Cao tốc Dầu Giây - Liên Khương."},
+        {"q_en": "The expressway entrance is about 15 kilometers heading North.", "q_vi": "Chỉ lối vào cao tốc", "a_en": "The expressway entrance is about 15 kilometers heading North.", "a_vi": "Lối vào cao tốc cách đây khoảng 15km về hướng Bắc."},
+        {"q_en": "Are there any toll booths on this route?", "q_vi": "Hỏi trạm thu phí", "a_en": "Are there any toll booths on this route?", "a_vi": "Có trạm thu phí nào trên tuyến đường này không?"},
+        {"q_en": "Yes, you will pass two toll booths. Make sure to have cash.", "q_vi": "Báo chuẩn bị tiền mặt", "a_en": "Yes, you will pass two toll booths. Make sure to have cash.", "a_vi": "Vâng, quý khách sẽ đi qua 2 trạm thu phí. Đảm bảo có sẵn tiền mặt."},
+        {"q_en": "How long is the drive to Ho Chi Minh City?", "q_vi": "Hỏi thời gian đi TP.HCM", "a_en": "How long is the drive to Ho Chi Minh City?", "a_vi": "Lái xe về Thành phố Hồ Chí Minh mất bao lâu?"},
+        {"q_en": "Using the new Dau Giay - Phan Thiet expressway, it takes about two hours.", "q_vi": "Báo thời gian cao tốc mới", "a_en": "Using the new Dau Giay - Phan Thiet expressway, it takes about two hours.", "a_vi": "Sử dụng cao tốc Dầu Giây - Phan Thiết mới, sẽ mất khoảng 2 tiếng."},
+        {"q_en": "Is the mountain pass safe to drive at night?", "q_vi": "Hỏi lái xe đường đèo ban đêm", "a_en": "Is the mountain pass safe to drive at night?", "a_vi": "Lái xe qua đèo vào ban đêm có an toàn không?"},
+        {"q_en": "It is quite foggy and dark. I advise driving during the day.", "q_vi": "Khuyên lái xe ban ngày", "a_en": "It is quite foggy and dark. I advise driving during the day.", "a_vi": "Trời khá nhiều sương mù và tối. Tôi khuyên ngài nên lái xe vào ban ngày."},
+        {"q_en": "We missed the exit on the highway. What do we do?", "q_vi": "Báo lỡ lối ra", "a_en": "We missed the exit on the highway. What do we do?", "a_vi": "Chúng tôi lỡ mất lối ra trên đường cao tốc. Chúng tôi phải làm gì?"},
+        {"q_en": "Continue driving to the next exit and make a U-turn at the overpass.", "q_vi": "Hướng dẫn quay đầu", "a_en": "Continue driving to the next exit and make a U-turn at the overpass.", "a_vi": "Tiếp tục lái đến lối ra tiếp theo và quay đầu xe tại cầu vượt."},
+        {"q_en": "Where is the drop-off point for international departures?", "q_vi": "Hỏi điểm trả khách quốc tế", "a_en": "Where is the drop-off point for international departures?", "a_vi": "Điểm trả khách cho các chuyến bay quốc tế khởi hành nằm ở đâu?"},
+        {"q_en": "The driver will drop you at Terminal 2, Gate 4.", "q_vi": "Chỉ cổng nhà ga", "a_en": "The driver will drop you at Terminal 2, Gate 4.", "a_vi": "Tài xế sẽ trả quý khách tại Nhà ga số 2, Cổng số 4."},
+        {"q_en": "We need a 16-seater van for our group transfer to Da Lat.", "q_vi": "Yêu cầu xe đi Đà Lạt", "a_en": "We need a 16-seater van for our group transfer to Da Lat.", "a_vi": "Chúng tôi cần một xe 16 chỗ để chở nhóm đi Đà Lạt."},
+        {"q_en": "I will arrange a comfortable van with a professional driver.", "q_vi": "Sắp xếp xe và tài xế", "a_en": "I will arrange a comfortable van with a professional driver.", "a_vi": "Tôi sẽ sắp xếp một chiếc xe rộng rãi với tài xế chuyên nghiệp."},
+        {"q_en": "Can we make a stopover for lunch during the trip?", "q_vi": "Hỏi dừng ăn trưa dọc đường", "a_en": "Can we make a stopover for lunch during the trip?", "a_vi": "Chúng tôi có thể dừng chân để ăn trưa trong chuyến đi không?"},
+        {"q_en": "Yes, the driver knows a great rest stop with clean facilities.", "q_vi": "Báo trạm dừng chân", "a_en": "Yes, the driver knows a great rest stop with clean facilities.", "a_vi": "Vâng, tài xế biết một trạm dừng chân rất tuyệt với cơ sở vật chất sạch sẽ."},
+        {"q_en": "Traffic is heavily congested near the city entrance.", "q_vi": "Báo kẹt xe cửa ngõ thành phố", "a_en": "Traffic is heavily congested near the city entrance.", "a_vi": "Giao thông đang tắc nghẽn nặng nề gần cửa ngõ thành phố."},
+        {"q_en": "The navigation app suggests an alternative route through the suburb.", "q_vi": "Đề xuất đường vòng", "a_en": "The navigation app suggests an alternative route through the suburb.", "a_vi": "Ứng dụng điều hướng đề xuất một tuyến đường thay thế đi qua vùng ngoại ô."},
+        {"q_en": "Thank you for planning this seamless intercity transfer.", "q_vi": "Cảm ơn đã lo liệu", "a_en": "Thank you for planning this seamless intercity transfer.", "a_vi": "Cảm ơn vì đã lên kế hoạch cho chuyến di chuyển liên tỉnh liền mạch này."}
+      ]
+    },
+    {
+      "id": 20, "type": "boss", "description": "Level 20: BOSS Lạc Đường Khẩn Cấp (Trắng Đêm Tìm Khách)",
+      "questions": [
+        {"q_en": "Reception? Please help me. My rental motorbike broke down.", "q_vi": "(Boss) Lễ tân hả? Làm ơn giúp tôi. Xe máy thuê của tôi bị hỏng rồi.", "a_en": "I am here to help, sir. Are you hurt? Are you safe?", "a_vi": "Tôi ở đây để giúp ngài. Ngài có bị thương không? Ngài có an toàn không?"},
+        {"q_en": "I am fine, but it is pitch dark. I am completely stranded.", "q_vi": "Báo mắc kẹt trong bóng tối", "a_en": "Please stay calm. Do you have internet access on your phone?", "a_vi": "Xin ngài bình tĩnh. Điện thoại ngài có truy cập internet không?"},
+        {"q_en": "Yes, I have 3G but my battery is at 10 percent.", "q_vi": "Báo pin yếu", "a_en": "Open Google Maps and send your current GPS coordinates to our WhatsApp number.", "a_vi": "Mở Google Maps và gửi tọa độ GPS hiện tại của ngài đến số WhatsApp của chúng tôi."},
+        {"q_en": "Okay, I just sent it. Did you get it?", "q_vi": "Gửi tọa độ xong", "a_en": "Yes, we received it. You are on the coastal dirt road towards the White Sand Dunes.", "a_vi": "Vâng, chúng tôi đã nhận được. Ngài đang ở trên đường đất ven biển hướng về phía Đồi cát Trắng."},
+        {"q_en": "Yes, I was trying to find a shortcut back to the hotel.", "q_vi": "Giải thích lý do đi lạc", "a_en": "That road is unpaved and deserted at night. Please stay exactly where you are.", "a_vi": "Đường đó không được rải nhựa và rất vắng vẻ vào ban đêm. Vui lòng ở yên vị trí hiện tại."},
+        {"q_en": "I'm scared. I hear wild dogs howling in the distance.", "q_vi": "Khách hoảng sợ", "a_en": "Turn on your motorbike's hazard lights if possible, but stay away from the bushes.", "a_vi": "Bật đèn cảnh báo nguy hiểm của xe máy nếu được, nhưng hãy tránh xa các bụi rậm."},
+        {"q_en": "The lights are completely dead. The battery is drained.", "q_vi": "Xe chết bình", "a_en": "Understood. Use your phone flashlight only when you hear a vehicle approaching.", "a_vi": "Đã hiểu. Chỉ sử dụng đèn pin điện thoại khi ngài nghe thấy tiếng xe cộ tới gần."},
+        {"q_en": "How long will it take for someone to get here?", "q_vi": "Hỏi thời gian chờ", "a_en": "Our rescue SUV and a mechanic are departing right now. It will take 25 minutes.", "a_vi": "Xe SUV cứu hộ và thợ máy của chúng tôi đang khởi hành ngay bây giờ. Sẽ mất 25 phút."},
+        {"q_en": "25 minutes feels like forever. Don't hang up on me.", "q_vi": "Sợ hãi không muốn cúp máy", "a_en": "I will stay on the line with you. To save your battery, turn down your screen brightness.", "a_vi": "Tôi sẽ giữ máy với ngài. Để tiết kiệm pin, hãy giảm độ sáng màn hình xuống."},
+        {"q_en": "Done. What if my phone dies before they arrive?", "q_vi": "Sợ sập nguồn", "a_en": "Our team has your exact coordinates. They will find you even if your phone dies.", "a_vi": "Đội của chúng tôi đã có tọa độ chính xác. Họ sẽ tìm thấy ngài ngay cả khi điện thoại sập nguồn."},
+        {"q_en": "Okay. Tell them I am wearing a bright yellow jacket.", "q_vi": "Cung cấp điểm nhận dạng", "a_en": "Noted. A bright yellow jacket. The rescue car is a white Ford Everest with flashing lights.", "a_vi": "Đã ghi nhận. Một chiếc áo khoác vàng sáng. Xe cứu hộ là chiếc Ford Everest màu trắng có nháy đèn."},
+        {"q_en": "I think I see lights approaching! Is it them?", "q_vi": "Thấy ánh đèn", "a_en": "Our GPS tracker shows our driver is exactly 1 kilometer away from you.", "a_vi": "Hệ thống theo dõi GPS của chúng tôi hiển thị tài xế chỉ còn cách ngài đúng 1km."},
+        {"q_en": "Yes! It's a white SUV! I am waving my phone flashlight.", "q_vi": "Vẫy đèn pin", "a_en": "Excellent. The driver has confirmed he sees your flashlight.", "a_vi": "Tuyệt hảo. Tài xế đã xác nhận anh ấy nhìn thấy đèn pin của ngài."},
+        {"q_en": "They are here! The mechanic is checking the bike.", "q_vi": "Thợ máy tới", "a_en": "Great. Please get into the SUV. It is warm and safe inside.", "a_vi": "Tuyệt vời. Mời ngài lên xe SUV. Bên trong rất ấm và an toàn."},
+        {"q_en": "What about the rental motorbike?", "q_vi": "Hỏi chiếc xe hỏng", "a_en": "The mechanic will load it onto the tow truck. Don't worry about it.", "a_vi": "Thợ máy sẽ bốc nó lên xe cẩu. Đừng bận tâm về nó."},
+        {"q_en": "I owe you my life. I was terrified out there.", "q_vi": "Cảm ơn vì đã cứu mạng", "a_en": "We are just relieved you are safe. Your well-being is our priority.", "a_vi": "Chúng tôi chỉ thấy nhẹ nhõm vì ngài đã an toàn. Sức khỏe của ngài là ưu tiên của chúng tôi."},
+        {"q_en": "How much do I owe the hotel for this rescue operation?", "q_vi": "Hỏi phí cứu hộ", "a_en": "This emergency rescue is complimentary. We take care of our guests.", "a_vi": "Việc cứu hộ khẩn cấp này là hoàn toàn miễn phí. Chúng tôi chăm sóc khách hàng của mình."},
+        {"q_en": "That is unbelievable. Your service is truly world-class.", "q_vi": "Khen ngợi dịch vụ đỉnh cao", "a_en": "Thank you, sir. You can relax now on your way back to the resort.", "a_vi": "Cảm ơn ngài. Giờ ngài có thể thư giãn trên đường trở về resort."},
+        {"q_en": "I will see you at the lobby in 25 minutes to thank you personally.", "q_vi": "Hẹn gặp mặt để cảm ơn", "a_en": "I will have a cup of hot tea waiting for you. See you soon.", "a_vi": "Tôi sẽ chuẩn bị sẵn một tách trà nóng đợi ngài. Hẹn gặp ngài sớm."},
+        {"q_en": "Thank you. Goodbye for now.", "q_vi": "Chào kết thúc", "a_en": "Goodbye, sir. Safe drive back.", "a_vi": "Tạm biệt ngài. Đi đường về an toàn nhé."}
+      ]
+    },
+    {
+      "id": 21, "type": "vocab", "description": "Level 21: Từ vựng Phân luồng VIP & An Ninh Tối Cao",
+      "questions": [
+        {"q_en": "Escort", "a_vi": "Hộ tống / Người hộ tống"}, {"q_en": "Motorcade", "a_vi": "Đoàn xe hộ tống (VIP)"}, {"q_en": "Perimeter", "a_vi": "Vành đai an ninh"}, {"q_en": "Clearance", "a_vi": "Sự cho phép / Cấp quyền ra vào"}, {"q_en": "Access", "a_vi": "Quyền truy cập / Lối vào"}, {"q_en": "Paparazzi", "a_vi": "Thợ săn ảnh (những người hay bám đuôi người nổi tiếng)"}, {"q_en": "Confidential", "a_vi": "Tuyệt mật"}, {"q_en": "Anonymous", "a_vi": "Ẩn danh"}, {"q_en": "Evacuation", "a_vi": "Sự sơ tán khẩn cấp"}, {"q_en": "Discreet", "a_vi": "Thận trọng / Kín đáo"}, {"q_en": "Bypass", "a_vi": "Đi đường vòng / Bỏ qua (thủ tục)"}, {"q_en": "Underground", "a_vi": "Dưới lòng đất / Đường hầm"}, {"q_en": "Alley", "a_vi": "Con hẻm / Ngõ nhỏ"}, {"q_en": "Rear entrance", "a_vi": "Cửa sau / Cửa hậu"}, {"q_en": "Loading dock", "a_vi": "Khu vực bốc dỡ hàng hóa"}, {"q_en": "Freight elevator", "a_vi": "Thang máy chở hàng"}, {"q_en": "Surveillance", "a_vi": "Sự giám sát (bằng camera)"}, {"q_en": "Briefing", "a_vi": "Cuộc họp giao nhiệm vụ / Tóm tắt tình hình"}, {"q_en": "Bodyguard", "a_vi": "Vệ sĩ riêng"}, {"q_en": "Threat", "a_vi": "Mối đe dọa"}
+      ]
+    },
+    {
+      "id": 22, "type": "vocab", "description": "Level 22: Từ vựng Logistics, Hậu cần & Chuỗi cung ứng",
+      "questions": [
+        {"q_en": "Logistics", "a_vi": "Hậu cần / Kho vận"}, {"q_en": "Supplier", "a_vi": "Nhà cung cấp"}, {"q_en": "Vendor", "a_vi": "Người bán hàng / Nhà thầu"}, {"q_en": "Delivery", "a_vi": "Sự giao hàng"}, {"q_en": "Shipment", "a_vi": "Lô hàng"}, {"q_en": "Cargo", "a_vi": "Hàng hóa (chở trên tàu/xe lớn)"}, {"q_en": "Warehouse", "a_vi": "Nhà kho"}, {"q_en": "Inventory", "a_vi": "Hàng tồn kho / Bản kiểm kê"}, {"q_en": "Forklift", "a_vi": "Xe nâng hàng"}, {"q_en": "Pallet", "a_vi": "Tấm kê hàng (pallet)"}, {"q_en": "Dispatch", "a_vi": "Gửi đi / Điều phối"}, {"q_en": "Route", "a_vi": "Tuyến đường (giao hàng)"}, {"q_en": "Schedule", "a_vi": "Lịch trình / Tiến độ"}, {"q_en": "Delay", "a_vi": "Sự chậm trễ"}, {"q_en": "Signature", "a_vi": "Chữ ký xác nhận"}, {"q_en": "Receipt", "a_vi": "Biên nhận / Biên lai"}, {"q_en": "Invoice", "a_vi": "Hóa đơn (đòi tiền)"}, {"q_en": "Procurement", "a_vi": "Thu mua / Mua sắm (vật tư)"}, {"q_en": "Unload", "a_vi": "Dỡ hàng xuống"}, {"q_en": "Fragile", "a_vi": "Dễ vỡ (hàng hóa)"}
+      ]
+    },
+    {
+      "id": 23, "type": "sentence", "description": "Level 23: Mẫu câu Điều phối An ninh VIP",
+      "questions": [
+        {"q_en": "The VIP motorcade will arrive at the rear entrance in five minutes.", "q_vi": "Báo đoàn xe VIP đến", "a_en": "The VIP motorcade will arrive at the rear entrance in five minutes.", "a_vi": "Đoàn xe VIP sẽ đến cửa sau trong 5 phút nữa."},
+        {"q_en": "Secure the perimeter and ensure no unauthorized access.", "q_vi": "Lệnh phong tỏa vành đai", "a_en": "Secure the perimeter and ensure no unauthorized access.", "a_vi": "Phong tỏa vành đai và đảm bảo không có ai ra vào trái phép."},
+        {"q_en": "We must escort the celebrity through the underground tunnel.", "q_vi": "Kế hoạch dẫn người nổi tiếng", "a_en": "We must escort the celebrity through the underground tunnel.", "a_vi": "Chúng ta phải hộ tống người nổi tiếng qua đường hầm dưới lòng đất."},
+        {"q_en": "This route allows them to completely bypass the crowded lobby.", "q_vi": "Lý do đi đường vòng", "a_en": "This route allows them to completely bypass the crowded lobby.", "a_vi": "Tuyến đường này cho phép họ hoàn toàn tránh được tiền sảnh đông đúc."},
+        {"q_en": "Please use the freight elevator to avoid the paparazzi.", "q_vi": "Sử dụng thang máy chở hàng", "a_en": "Please use the freight elevator to avoid the paparazzi.", "a_vi": "Vui lòng sử dụng thang máy chở hàng để tránh thợ săn ảnh."},
+        {"q_en": "Only staff with level-four clearance can enter the Penthouse floor.", "q_vi": "Quy định cấp phép an ninh", "a_en": "Only staff with level-four clearance can enter the Penthouse floor.", "a_vi": "Chỉ những nhân viên có quyền truy cập cấp 4 mới được vào tầng Penthouse."},
+        {"q_en": "All communication regarding this guest must remain strictly confidential.", "q_vi": "Nhắc nhở bảo mật tuyệt đối", "a_en": "All communication regarding this guest must remain strictly confidential.", "a_vi": "Mọi thông tin liên lạc về vị khách này phải được giữ bí mật tuyệt đối."},
+        {"q_en": "The guest prefers to stay anonymous during their vacation.", "q_vi": "Khách muốn ẩn danh", "a_en": "The guest prefers to stay anonymous during their vacation.", "a_vi": "Vị khách thích được ẩn danh trong suốt kỳ nghỉ của họ."},
+        {"q_en": "We have established a discreet pathway to the private beach.", "q_vi": "Lối đi kín đáo ra biển", "a_en": "We have established a discreet pathway to the private beach.", "a_vi": "Chúng tôi đã thiết lập một lối đi kín đáo dẫn ra bãi biển riêng."},
+        {"q_en": "Please conduct a full surveillance sweep before the VIP leaves the room.", "q_vi": "Lệnh quét camera an ninh", "a_en": "Please conduct a full surveillance sweep before the VIP leaves the room.", "a_vi": "Vui lòng tiến hành quét giám sát toàn bộ trước khi VIP rời khỏi phòng."},
+        {"q_en": "In case of emergency, use evacuation route B.", "q_vi": "Nhắc tuyến sơ tán", "a_en": "In case of emergency, use evacuation route B.", "a_vi": "Trong trường hợp khẩn cấp, hãy sử dụng tuyến sơ tán B."},
+        {"q_en": "The bodyguards will position themselves at the elevator doors.", "q_vi": "Bố trí vệ sĩ", "a_en": "The bodyguards will position themselves at the elevator doors.", "a_vi": "Các vệ sĩ sẽ vào vị trí tại các cửa thang máy."},
+        {"q_en": "Report any suspicious individuals lurking near the loading dock.", "q_vi": "Cảnh giác kẻ gian", "a_en": "Report any suspicious individuals lurking near the loading dock.", "a_vi": "Báo cáo bất kỳ cá nhân đáng ngờ nào lảng vảng gần khu vực bốc dỡ hàng."},
+        {"q_en": "Have the security team been briefed on today's protocol?", "q_vi": "Hỏi về họp giao nhiệm vụ", "a_en": "Have the security team been briefed on today's protocol?", "a_vi": "Đội an ninh đã được tóm tắt về quy trình chuẩn hôm nay chưa?"},
+        {"q_en": "There are no known threats at this current time.", "q_vi": "Báo cáo tình trạng an toàn", "a_en": "There are no known threats at this current time.", "a_vi": "Không có mối đe dọa nào được biết đến tại thời điểm hiện tại."},
+        {"q_en": "Please block the main driveway for the presidential convoy.", "q_vi": "Lệnh chặn đường chính", "a_en": "Please block the main driveway for the presidential convoy.", "a_vi": "Vui lòng chặn đường lái xe chính cho đoàn xe tổng thống."},
+        {"q_en": "We need to clear the hallway before they exit the suite.", "q_vi": "Dọn dẹp hành lang", "a_en": "We need to clear the hallway before they exit the suite.", "a_vi": "Chúng ta cần dọn trống hành lang trước khi họ bước ra khỏi phòng suite."},
+        {"q_en": "The VIP's personal assistant will coordinate the luggage transfer.", "q_vi": "Trợ lý riêng lo hành lý", "a_en": "The VIP's personal assistant will coordinate the luggage transfer.", "a_vi": "Trợ lý cá nhân của VIP sẽ điều phối việc chuyển hành lý."},
+        {"q_en": "Do not take any photographs or ask for autographs.", "q_vi": "Cấm nhân viên chụp ảnh", "a_en": "Do not take any photographs or ask for autographs.", "a_vi": "Tuyệt đối không chụp ảnh hay xin chữ ký."},
+        {"q_en": "The operation was executed flawlessly. Good job, team.", "q_vi": "Khen ngợi sau nhiệm vụ", "a_en": "The operation was executed flawlessly. Good job, team.", "a_vi": "Chiến dịch đã được thực thi không tì vết. Làm tốt lắm, cả đội."}
+      ]
+    },
+    {
+      "id": 24, "type": "sentence", "description": "Level 24: Điều hướng Hậu cần (Logistics) & Nhận Hàng",
+      "questions": [
+        {"q_en": "All delivery trucks must enter through the service gate.", "q_vi": "Quy định cổng giao hàng", "a_en": "All delivery trucks must enter through the service gate.", "a_vi": "Tất cả xe tải giao hàng phải đi vào qua cổng dịch vụ."},
+        {"q_en": "Where is the loading dock for the food and beverage shipment?", "q_vi": "Hỏi khu dỡ hàng F&B", "a_en": "Where is the loading dock for the food and beverage shipment?", "a_vi": "Khu bốc dỡ hàng cho lô hàng thực phẩm và đồ uống ở đâu?"},
+        {"q_en": "Turn left at the warehouse and reverse into dock number three.", "q_vi": "Chỉ dẫn xe tải de chuồng", "a_en": "Turn left at the warehouse and reverse into dock number three.", "a_vi": "Rẽ trái tại nhà kho và lùi xe vào bến dỡ hàng số 3."},
+        {"q_en": "Please wait for the forklift to unload the heavy pallets.", "q_vi": "Đợi xe nâng bốc hàng", "a_en": "Please wait for the forklift to unload the heavy pallets.", "a_vi": "Vui lòng đợi xe nâng dỡ các tấm pallet nặng xuống."},
+        {"q_en": "The supplier has delayed the morning delivery due to bad traffic.", "q_vi": "Báo hàng đến trễ", "a_en": "The supplier has delayed the morning delivery due to bad traffic.", "a_vi": "Nhà cung cấp đã hoãn đợt giao hàng buổi sáng do kẹt xe."},
+        {"q_en": "We need the receiving manager to sign this invoice.", "q_vi": "Yêu cầu ký hóa đơn", "a_en": "We need the receiving manager to sign this invoice.", "a_vi": "Chúng tôi cần quản lý kho ký nhận vào hóa đơn này."},
+        {"q_en": "These boxes contain fragile items. Handle them with extreme care.", "q_vi": "Cảnh báo hàng dễ vỡ", "a_en": "These boxes contain fragile items. Handle them with extreme care.", "a_vi": "Những chiếc hộp này chứa hàng dễ vỡ. Hãy xử lý chúng cực kỳ cẩn thận."},
+        {"q_en": "The procurement team has updated the inventory list.", "q_vi": "Báo cáo cập nhật tồn kho", "a_en": "The procurement team has updated the inventory list.", "a_vi": "Đội ngũ thu mua đã cập nhật danh sách hàng tồn kho."},
+        {"q_en": "You are blocking the emergency exit route. Move the cargo immediately.", "q_vi": "Nhắc nhở xe cản lối thoát hiểm", "a_en": "You are blocking the emergency exit route. Move the cargo immediately.", "a_vi": "Anh đang chặn tuyến đường thoát hiểm khẩn cấp. Di dời hàng hóa ngay lập tức."},
+        {"q_en": "What is the schedule for the laundry dispatch today?", "q_vi": "Hỏi lịch giao đồ giặt ủi", "a_en": "What is the schedule for the laundry dispatch today?", "a_vi": "Lịch trình gửi đồ giặt ủi hôm nay là thế nào?"},
+        {"q_en": "The truck will pick up the dirty linen at exactly 2 PM.", "q_vi": "Báo giờ xe lấy đồ", "a_en": "The truck will pick up the dirty linen at exactly 2 PM.", "a_vi": "Xe tải sẽ đến lấy đồ vải bẩn vào chính xác 2h chiều."},
+        {"q_en": "Vendors are not allowed in the guest areas at any time.", "q_vi": "Quy định cấm nhà thầu vào khu khách", "a_en": "Vendors are not allowed in the guest areas at any time.", "a_vi": "Các nhà thầu không được phép xuất hiện ở khu vực khách lưu trú bất cứ lúc nào."},
+        {"q_en": "Take the service elevator down to the basement kitchen.", "q_vi": "Chỉ đường đi thang máy phụ", "a_en": "Take the service elevator down to the basement kitchen.", "a_vi": "Sử dụng thang máy dịch vụ để đi xuống nhà bếp tầng hầm."},
+        {"q_en": "Please check the shipment against the purchase order.", "q_vi": "Yêu cầu đối chiếu đơn hàng", "a_en": "Please check the shipment against the purchase order.", "a_vi": "Vui lòng kiểm tra lô hàng đối chiếu với đơn đặt hàng."},
+        {"q_en": "There is a discrepancy in the quantity delivered today.", "q_vi": "Báo cáo thiếu sót số lượng", "a_en": "There is a discrepancy in the quantity delivered today.", "a_vi": "Có sự sai lệch về số lượng hàng được giao hôm nay."},
+        {"q_en": "We reject these vegetables because they are not fresh.", "q_vi": "Từ chối nhận hàng kém chất lượng", "a_en": "We reject these vegetables because they are not fresh.", "a_vi": "Chúng tôi từ chối nhận số rau củ này vì chúng không tươi."},
+        {"q_en": "Store the frozen seafood in the walk-in freezer immediately.", "q_vi": "Lệnh cất đồ đông lạnh", "a_en": "Store the frozen seafood in the walk-in freezer immediately.", "a_vi": "Cất số hải sản đông lạnh vào kho lạnh lớn ngay lập tức."},
+        {"q_en": "The logistics route has been changed due to road construction.", "q_vi": "Báo thay đổi tuyến đường giao hàng", "a_en": "The logistics route has been changed due to road construction.", "a_vi": "Tuyến đường kho vận đã bị thay đổi do thi công làm đường."},
+        {"q_en": "Please clear the loading dock for the next incoming truck.", "q_vi": "Yêu cầu dọn bến dỡ hàng", "a_en": "Please clear the loading dock for the next incoming truck.", "a_vi": "Vui lòng dọn trống bến dỡ hàng cho chiếc xe tải sắp tới tiếp theo."},
+        {"q_en": "Make sure you receive a stamped receipt for this delivery.", "q_vi": "Nhắc lấy biên nhận có mộc", "a_en": "Make sure you receive a stamped receipt for this delivery.", "a_vi": "Đảm bảo rằng anh nhận được biên nhận có đóng dấu cho đợt giao hàng này."}
+      ]
+    },
+    {
+      "id": 25, "type": "boss", "description": "Level 25: BOSS Bí Mật (Hộ Tống Minh Tinh Trốn Paparazzi)",
+      "questions": [
+        {"q_en": "Security Chief? This is the General Manager. Code Red. Our VIP is here.", "q_vi": "(Boss GM) Trưởng phòng An ninh? Tổng quản lý đây. Mã Đỏ. Khách VIP của chúng ta đã đến.", "a_en": "Copy that, GM. The security team is on high alert. Where is the motorcade?", "a_vi": "Rõ rồi, sếp. Đội an ninh đang trong tình trạng báo động cao. Đoàn xe đang ở đâu?"},
+        {"q_en": "They are three minutes away. But the paparazzi have found out our location.", "q_vi": "Báo có thợ săn ảnh", "a_en": "Understood. We cannot use the main entrance. Divert the motorcade to the rear gate.", "a_vi": "Đã rõ. Chúng ta không thể dùng lối vào chính. Hãy chuyển hướng đoàn xe sang cổng sau."},
+        {"q_en": "The rear gate is near the loading dock. Is it clear?", "q_vi": "Hỏi tình hình bến dỡ hàng", "a_en": "I am sending a patrol unit to clear the loading dock of any delivery trucks right now.", "a_vi": "Tôi đang phái một đơn vị tuần tra đến dọn sạch bến dỡ hàng khỏi bất kỳ xe tải giao hàng nào ngay bây giờ."},
+        {"q_en": "Good. I want her escorted directly to the Penthouse. No stopping.", "q_vi": "Lệnh đi thẳng lên Penthouse", "a_en": "We will use the underground service tunnel and the freight elevator.", "a_vi": "Chúng ta sẽ sử dụng đường hầm dịch vụ dưới lòng đất và thang máy chở hàng."},
+        {"q_en": "Is the freight elevator clean and secured?", "q_vi": "Hỏi thang máy sạch chưa", "a_en": "Yes, it has been sanitized and locked down exclusively for her use.", "a_vi": "Vâng, nó đã được vệ sinh và khóa lại độc quyền chỉ để cô ấy sử dụng."},
+        {"q_en": "Excellent. The motorcade is entering the rear gate now. Take over.", "q_vi": "Chuyển giao chỉ huy", "a_en": "Alpha team, form a perimeter around the vehicle. Do not let anyone approach.", "a_vi": "Đội Alpha, tạo một vành đai xung quanh xe. Không để ai tiếp cận."},
+        {"q_en": "We have a problem. Two paparazzi breached the perimeter. They are in the alley.", "q_vi": "Báo có kẻ lọt vào", "a_en": "Bravo team, intercept the intruders in the alley. Escort them off the premises immediately.", "a_vi": "Đội Bravo, chặn những kẻ xâm nhập ở trong hẻm. Hộ tống họ ra khỏi khuôn viên ngay lập tức."},
+        {"q_en": "They have cameras. Make sure no pictures were taken.", "q_vi": "Dặn dò về máy ảnh", "a_en": "We cannot confiscate their cameras by law, but we will block their view with umbrellas.", "a_vi": "Theo luật chúng ta không thể tịch thu máy ảnh của họ, nhưng chúng ta sẽ che khuất tầm nhìn bằng ô."},
+        {"q_en": "Smart move. The VIP is out of the car. Lead the way.", "q_vi": "Báo VIP ra khỏi xe", "a_en": "Right this way, ma'am. Please follow the guards through this tunnel.", "a_vi": "Mời đi lối này thưa cô. Vui lòng đi theo các vệ sĩ qua đường hầm này."},
+        {"q_en": "Is this safe? It's very dark down here.", "q_vi": "VIP lo lắng về đường hầm", "a_en": "It is completely safe and entirely confidential. You are doing great.", "a_vi": "Nó hoàn toàn an toàn và hoàn toàn bí mật. Cô đang làm rất tốt."},
+        {"q_en": "We are at the elevator. Proceed to the top floor.", "q_vi": "Vào thang máy", "a_en": "Swiping the master keycard. Ascending to the Penthouse directly.", "a_vi": "Quẹt thẻ khóa vạn năng. Đang đi thẳng lên Penthouse."},
+        {"q_en": "Are there any staff members waiting on the top floor?", "q_vi": "Hỏi tình hình tầng trên cùng", "a_en": "Only your personal butler, who has level-four clearance and signed an NDA.", "a_vi": "Chỉ có quản gia riêng của cô, người có quyền truy cập cấp 4 và đã ký thỏa thuận bảo mật."},
+        {"q_en": "Good. I don't want anyone asking for autographs.", "q_vi": "Cấm xin chữ ký", "a_en": "Our strict protocol prohibits staff from interacting with you unless requested.", "a_vi": "Quy trình nghiêm ngặt của chúng tôi cấm nhân viên tương tác với cô trừ khi được yêu cầu."},
+        {"q_en": "We have reached the Penthouse. Thank you for your discreet service.", "q_vi": "Tới nơi an toàn, khen ngợi", "a_en": "It is our duty, ma'am. Two bodyguards will remain stationed at your door 24/7.", "a_vi": "Đó là nhiệm vụ của chúng tôi thưa cô. Hai vệ sĩ sẽ tiếp tục đóng quân tại cửa phòng cô 24/7."},
+        {"q_en": "I need my luggage delivered immediately. Where is it?", "q_vi": "Hỏi hành lý", "a_en": "Your luggage is in the second vehicle. It is being brought up via the same route.", "a_vi": "Hành lý của cô ở xe thứ hai. Nó đang được mang lên theo cùng một tuyến đường."},
+        {"q_en": "Make sure it hasn't been tampered with.", "q_vi": "Dặn kiểm tra đồ đạc", "a_en": "We will conduct a visual inspection before bringing it inside your suite.", "a_vi": "Chúng tôi sẽ tiến hành kiểm tra bằng mắt thường trước khi mang nó vào trong phòng của cô."},
+        {"q_en": "General Manager here. Status report, Chief?", "q_vi": "GM gọi kiểm tra", "a_en": "The VIP is secure in the Penthouse. The paparazzi have been removed from the property.", "a_vi": "VIP đã an toàn trong Penthouse. Các thợ săn ảnh đã bị đuổi khỏi cơ sở."},
+        {"q_en": "Outstanding execution. Nobody noticed a thing in the lobby.", "q_vi": "Khen chiến dịch hoàn hảo", "a_en": "A flawless bypass operation, sir. We maintained absolute discretion.", "a_vi": "Một chiến dịch đi đường vòng không tì vết thưa sếp. Chúng ta đã duy trì sự kín đáo tuyệt đối."},
+        {"q_en": "I will authorize a bonus for the security team this month.", "q_vi": "Hứa thưởng", "a_en": "The team will highly appreciate that, sir. Returning to standard patrol mode.", "a_vi": "Đội sẽ rất trân trọng điều đó thưa sếp. Quay trở lại chế độ tuần tra tiêu chuẩn."},
+        {"q_en": "Stand down. Good job.", "q_vi": "Lệnh nghỉ ngơi", "a_en": "Copy that. Standing down.", "a_vi": "Rõ. Kết thúc nhiệm vụ."}
+      ]
+    },
+    {
+      "id": 26, "type": "vocab", "description": "Level 26: Từ vựng Đón Khách Mùa Bão & Rủi Ro Tự Nhiên",
+      "questions": [
+        {"q_en": "Evacuate", "a_vi": "Sơ tán"}, {"q_en": "Refuge", "a_vi": "Nơi trú ẩn"}, {"q_en": "Shelter", "a_vi": "Chỗ trú ẩn / Hầm trú ẩn"}, {"q_en": "Typhoon", "a_vi": "Bão lớn / Bão nhiệt đới"}, {"q_en": "Flood", "a_vi": "Lũ lụt"}, {"q_en": "Landslide", "a_vi": "Sạt lở đất"}, {"q_en": "Debris", "a_vi": "Mảnh vỡ / Mảnh vụn"}, {"q_en": "Casualty", "a_vi": "Thương vong / Người tử nạn"}, {"q_en": "Flashlight", "a_vi": "Đèn pin"}, {"q_en": "Generator", "a_vi": "Máy phát điện"}, {"q_en": "Outage", "a_vi": "Sự cố cúp (điện/nước)"}, {"q_en": "Barricade", "a_vi": "Vật chướng ngại / Hàng rào chắn"}, {"q_en": "Sandbag", "a_vi": "Bao cát (chống ngập)"}, {"q_en": "Disaster", "a_vi": "Thảm họa / Tai ương"}, {"q_en": "Precaution", "a_vi": "Sự đề phòng / Biện pháp an toàn"}, {"q_en": "Stockpile", "a_vi": "Dự trữ / Tích trữ (lương thực)"}, {"q_en": "Siren", "a_vi": "Còi báo động"}, {"q_en": "Stranded", "a_vi": "Mắc kẹt (không thể di chuyển)"}, {"q_en": "Vulnerable", "a_vi": "Dễ bị tổn thương / Có nguy cơ"}, {"q_en": "Resilience", "a_vi": "Sự kiên cường / Khả năng phục hồi"}
+      ]
+    },
+    {
+      "id": 27, "type": "vocab", "description": "Level 27: Từ vựng Kỹ thuật số & Bản đồ Ảo",
+      "questions": [
+        {"q_en": "Coordinates", "a_vi": "Tọa độ GPS"}, {"q_en": "Navigation", "a_vi": "Sự điều hướng / Dò đường"}, {"q_en": "Algorithm", "a_vi": "Thuật toán"}, {"q_en": "Virtual", "a_vi": "Ảo (Không gian mạng)"}, {"q_en": "Augmented", "a_vi": "Thực tế tăng cường (AR)"}, {"q_en": "Interactive", "a_vi": "Có tính tương tác"}, {"q_en": "Interface", "a_vi": "Giao diện (người dùng)"}, {"q_en": "Bandwidth", "a_vi": "Băng thông (mạng)"}, {"q_en": "Latency", "a_vi": "Độ trễ (mạng)"}, {"q_en": "Server", "a_vi": "Máy chủ"}, {"q_en": "Cloud", "a_vi": "Đám mây (lưu trữ dữ liệu)"}, {"q_en": "Synchronize", "a_vi": "Đồng bộ hóa"}, {"q_en": "Encrypt", "a_vi": "Mã hóa (bảo mật dữ liệu)"}, {"q_en": "Biometric", "a_vi": "Sinh trắc học (vân tay/khuôn mặt)"}, {"q_en": "Dashboard", "a_vi": "Bảng điều khiển tổng hợp"}, {"q_en": "Analytics", "a_vi": "Phân tích số liệu"}, {"q_en": "Traffic", "a_vi": "Lưu lượng truy cập / Giao thông"}, {"q_en": "Optimize", "a_vi": "Tối ưu hóa"}, {"q_en": "Automation", "a_vi": "Sự tự động hóa"}, {"q_en": "Integration", "a_vi": "Sự tích hợp (hệ thống)"}
+      ]
+    },
+    {
+      "id": 28, "type": "sentence", "description": "Level 28: Chỉ dẫn Sơ tán Khẩn cấp trong Khách sạn",
+      "questions": [
+        {"q_en": "We must evacuate all guests from the beachfront villas immediately.", "q_vi": "Lệnh sơ tán villa biển", "a_en": "We must evacuate all guests from the beachfront villas immediately.", "a_vi": "Chúng ta phải sơ tán toàn bộ khách khỏi các biệt thự ven biển ngay lập tức."},
+        {"q_en": "A super typhoon is expected to make landfall in three hours.", "q_vi": "Báo siêu bão đổ bộ", "a_en": "A super typhoon is expected to make landfall in three hours.", "a_vi": "Một siêu bão dự kiến sẽ đổ bộ vào đất liền trong 3 giờ nữa."},
+        {"q_en": "Please guide everyone to the underground storm shelter.", "q_vi": "Chỉ đường xuống hầm trú ẩn", "a_en": "Please guide everyone to the underground storm shelter.", "a_vi": "Vui lòng hướng dẫn mọi người xuống hầm trú bão dưới lòng đất."},
+        {"q_en": "Do not use the elevators. The power outage may trap you inside.", "q_vi": "Cảnh báo thang máy cúp điện", "a_en": "Do not use the elevators. The power outage may trap you inside.", "a_vi": "Không sử dụng thang máy. Sự cố mất điện có thể làm bạn mắc kẹt bên trong."},
+        {"q_en": "Our engineering team has barricaded the main glass doors with sandbags.", "q_vi": "Báo cáo chặn cửa kính", "a_en": "Our engineering team has barricaded the main glass doors with sandbags.", "a_vi": "Đội kỹ thuật của chúng ta đã rào chắn các cửa kính chính bằng bao cát."},
+        {"q_en": "Please distribute flashlights and emergency water to all vulnerable guests.", "q_vi": "Yêu cầu phát đồ cứu trợ", "a_en": "Please distribute flashlights and emergency water to all vulnerable guests.", "a_vi": "Vui lòng phân phát đèn pin và nước khẩn cấp cho tất cả khách có nguy cơ cao."},
+        {"q_en": "Stay away from the windows to avoid injuries from flying debris.", "q_vi": "Cảnh báo mảnh vỡ", "a_en": "Stay away from the windows to avoid injuries from flying debris.", "a_vi": "Hãy tránh xa các cửa sổ để tránh chấn thương từ các mảnh vỡ bay tới."},
+        {"q_en": "The backup generators will automatically activate in ten seconds.", "q_vi": "Báo máy phát điện chạy", "a_en": "The backup generators will automatically activate in ten seconds.", "a_vi": "Các máy phát điện dự phòng sẽ tự động kích hoạt trong 10 giây nữa."},
+        {"q_en": "Is the access road to the hospital flooded?", "q_vi": "Hỏi đường ra viện ngập không", "a_en": "Is the access road to the hospital flooded?", "a_vi": "Tuyến đường ra bệnh viện có bị ngập lụt không?"},
+        {"q_en": "Yes, there is a severe landslide blocking the highway.", "q_vi": "Báo sạt lở quốc lộ", "a_en": "Yes, there is a severe landslide blocking the highway.", "a_vi": "Vâng, có một vụ sạt lở đất nghiêm trọng đang chắn ngang quốc lộ."},
+        {"q_en": "We are totally stranded until the rescue helicopters arrive.", "q_vi": "Báo kẹt cứng chờ trực thăng", "a_en": "We are totally stranded until the rescue helicopters arrive.", "a_vi": "Chúng ta hoàn toàn bị mắc kẹt cho đến khi trực thăng cứu hộ đến."},
+        {"q_en": "We have stockpiled enough food to last for three days.", "q_vi": "Báo cáo lương thực dự trữ", "a_en": "We have stockpiled enough food to last for three days.", "a_vi": "Chúng ta đã dự trữ đủ lương thực để trụ được trong 3 ngày."},
+        {"q_en": "Listen closely to the sirens. Three short blasts mean evacuate.", "q_vi": "Giải thích tiếng còi", "a_en": "Listen closely to the sirens. Three short blasts mean evacuate.", "a_vi": "Hãy lắng nghe kỹ tiếng còi báo động. Ba tiếng còi ngắn có nghĩa là sơ tán."},
+        {"q_en": "Take only your passports and essential medicines.", "q_vi": "Dặn mang đồ quan trọng", "a_en": "Take only your passports and essential medicines.", "a_vi": "Chỉ mang theo hộ chiếu và các loại thuốc thiết yếu của bạn."},
+        {"q_en": "Our resilience as a team will help us survive this disaster.", "q_vi": "Động viên tinh thần nhân viên", "a_en": "Our resilience as a team will help us survive this disaster.", "a_vi": "Sự kiên cường của cả đội sẽ giúp chúng ta vượt qua thảm họa này."},
+        {"q_en": "Please conduct a head count to ensure no casualties.", "q_vi": "Yêu cầu điểm danh", "a_en": "Please conduct a head count to ensure no casualties.", "a_vi": "Vui lòng tiến hành điểm danh để đảm bảo không có thương vong."},
+        {"q_en": "The roof of the pavilion has collapsed due to strong winds.", "q_vi": "Báo sập mái đình", "a_en": "The roof of the pavilion has collapsed due to strong winds.", "a_vi": "Mái của đình nghỉ mát đã bị sập do gió giật mạnh."},
+        {"q_en": "Route all communication through the satellite phone.", "q_vi": "Định tuyến bộ đàm vệ tinh", "a_en": "Route all communication through the satellite phone.", "a_vi": "Định tuyến mọi thông tin liên lạc thông qua điện thoại vệ tinh."},
+        {"q_en": "We are turning the Grand Ballroom into a temporary medical clinic.", "q_vi": "Biến sảnh tiệc thành trạm xá", "a_en": "We are turning the Grand Ballroom into a temporary medical clinic.", "a_vi": "Chúng ta đang biến Sảnh tiệc lớn thành một phòng khám y tế tạm thời."},
+        {"q_en": "Stay strong. The storm eye is passing over us now.", "q_vi": "Tâm bão đi qua", "a_en": "Stay strong. The storm eye is passing over us now.", "a_vi": "Hãy mạnh mẽ lên. Tâm bão đang đi ngang qua chúng ta lúc này."}
+      ]
+    },
+    {
+      "id": 29, "type": "sentence", "description": "Level 29: Quản lý App Bản đồ số & Tối ưu hóa Giao thông",
+      "questions": [
+        {"q_en": "Our new interactive map helps guests navigate the resort seamlessly.", "q_vi": "Giới thiệu bản đồ tương tác", "a_en": "Our new interactive map helps guests navigate the resort seamlessly.", "a_vi": "Bản đồ tương tác mới của chúng tôi giúp khách hàng điều hướng resort một cách liền mạch."},
+        {"q_en": "The augmented reality feature shows real-time directions on your camera.", "q_vi": "Tính năng chỉ đường AR", "a_en": "The augmented reality feature shows real-time directions on your camera.", "a_vi": "Tính năng thực tế tăng cường hiển thị chỉ đường theo thời gian thực trên camera của bạn."},
+        {"q_en": "We must optimize the app's algorithm to reduce latency.", "q_vi": "Lệnh tối ưu app giảm lag", "a_en": "We must optimize the app's algorithm to reduce latency.", "a_vi": "Chúng ta phải tối ưu hóa thuật toán của ứng dụng để giảm độ trễ."},
+        {"q_en": "The GPS coordinates are synchronized with our cloud server instantly.", "q_vi": "Đồng bộ tọa độ lên mây", "a_en": "The GPS coordinates are synchronized with our cloud server instantly.", "a_vi": "Tọa độ GPS được đồng bộ hóa với máy chủ đám mây của chúng tôi ngay lập tức."},
+        {"q_en": "Can you check the analytics dashboard for the traffic flow?", "q_vi": "Xem báo cáo lưu lượng", "a_en": "Can you check the analytics dashboard for the traffic flow?", "a_vi": "Bạn có thể kiểm tra bảng điều khiển phân tích xem lưu lượng giao thông không?"},
+        {"q_en": "We notice heavy congestion near the main gate every morning.", "q_vi": "Phát hiện kẹt xe cổng chính", "a_en": "We notice heavy congestion near the main gate every morning.", "a_vi": "Chúng tôi nhận thấy sự tắc nghẽn nặng nề gần cổng chính vào mỗi buổi sáng."},
+        {"q_en": "Let's automate the buggy dispatch system based on guest location.", "q_vi": "Tự động hóa gọi xe điện", "a_en": "Let's automate the buggy dispatch system based on guest location.", "a_vi": "Hãy tự động hóa hệ thống điều phối xe điện dựa trên vị trí của khách."},
+        {"q_en": "The interface should be user-friendly for elderly guests.", "q_vi": "Yêu cầu giao diện dễ dùng", "a_en": "The interface should be user-friendly for elderly guests.", "a_vi": "Giao diện nên thân thiện với người dùng dành cho những vị khách lớn tuổi."},
+        {"q_en": "All personal data on the app is strictly encrypted.", "q_vi": "Cam kết bảo mật mã hóa", "a_en": "All personal data on the app is strictly encrypted.", "a_vi": "Tất cả dữ liệu cá nhân trên ứng dụng đều được mã hóa nghiêm ngặt."},
+        {"q_en": "Guests can unlock their room using biometric authentication.", "q_vi": "Mở khóa phòng bằng sinh trắc", "a_en": "Guests can unlock their room using biometric authentication.", "a_vi": "Khách hàng có thể mở khóa phòng của mình bằng xác thực sinh trắc học."},
+        {"q_en": "The integration of Google Maps API is complete.", "q_vi": "Báo cáo tích hợp xong API", "a_en": "The integration of Google Maps API is complete.", "a_vi": "Việc tích hợp API Google Maps đã hoàn tất."},
+        {"q_en": "The app will suggest an alternative route if there is a traffic jam.", "q_vi": "App tự chỉ đường vòng", "a_en": "The app will suggest an alternative route if there is a traffic jam.", "a_vi": "Ứng dụng sẽ đề xuất một tuyến đường thay thế nếu có kẹt xe."},
+        {"q_en": "We need to upgrade our bandwidth to handle the peak season traffic.", "q_vi": "Đề xuất nâng cấp mạng", "a_en": "We need to upgrade our bandwidth to handle the peak season traffic.", "a_vi": "Chúng ta cần nâng cấp băng thông để xử lý lưu lượng truy cập mùa cao điểm."},
+        {"q_en": "Scan this QR code to launch the virtual tour of the hotel.", "q_vi": "Quét mã xem tour ảo", "a_en": "Scan this QR code to launch the virtual tour of the hotel.", "a_vi": "Quét mã QR này để khởi chạy chuyến tham quan ảo của khách sạn."},
+        {"q_en": "The digital signage will update dynamically based on the event schedule.", "q_vi": "Bảng điện tử tự cập nhật", "a_en": "The digital signage will update dynamically based on the event schedule.", "a_vi": "Bảng hiệu kỹ thuật số sẽ cập nhật động dựa trên lịch trình sự kiện."},
+        {"q_en": "Is the location tracking feature draining the phone battery?", "q_vi": "Hỏi app có tốn pin không", "a_en": "Is the location tracking feature draining the phone battery?", "a_vi": "Tính năng theo dõi vị trí có làm hao pin điện thoại không?"},
+        {"q_en": "We have minimized battery usage in the latest app update.", "q_vi": "Khẳng định đã fix lỗi pin", "a_en": "We have minimized battery usage in the latest app update.", "a_vi": "Chúng tôi đã giảm thiểu mức tiêu thụ pin trong bản cập nhật ứng dụng mới nhất."},
+        {"q_en": "The dashboard alerts us whenever a guest gets lost in the forest trail.", "q_vi": "Cảnh báo khi khách lạc rừng", "a_en": "The dashboard alerts us whenever a guest gets lost in the forest trail.", "a_vi": "Bảng điều khiển cảnh báo chúng ta mỗi khi có khách đi lạc trong đường mòn khu rừng."},
+        {"q_en": "This smart navigation system is a game-changer for our resort.", "q_vi": "Khen ngợi công nghệ mới", "a_en": "This smart navigation system is a game-changer for our resort.", "a_vi": "Hệ thống điều hướng thông minh này là một bước ngoặt thay đổi cuộc chơi cho resort của chúng ta."},
+        {"q_en": "Ostock Dashboard V15 has successfully synchronized all location data.", "q_vi": "PR sản phẩm công ty Ostock", "a_en": "Ostock Dashboard V15 has successfully synchronized all location data.", "a_vi": "Hệ thống Ostock Dashboard V15 đã đồng bộ hóa thành công mọi dữ liệu vị trí."}
+      ]
+    },
+    {
+      "id": 30, "type": "boss", "description": "Level 30: BOSS Kỹ Thuật (Sếp Lớn Kiểm Tra Hệ Thống App Bản Đồ Ostock)",
+      "questions": [
+        {"q_en": "Huy, I am looking at the new Ostock Map App. It's lagging.", "q_vi": "(Boss Sếp) Huy, tôi đang xem cái App Bản đồ Ostock mới. Nó đang bị lag.", "a_en": "Good morning, boss. Let me check the latency on the analytics dashboard.", "a_vi": "Chào buổi sáng sếp. Để tôi kiểm tra độ trễ trên bảng điều khiển phân tích." },
+        {"q_en": "The augmented reality feature freezes when I point it at the pool.", "q_vi": "Sếp chê lỗi AR", "a_en": "The camera might be struggling with the water reflection. We will optimize the algorithm.", "a_vi": "Camera có thể đang gặp khó với hình ảnh phản chiếu của nước. Chúng tôi sẽ tối ưu thuật toán." },
+        {"q_en": "Fix it today. Also, the route from the Lobby to the Golf Course is wrong.", "q_vi": "Sếp bắt lỗi chỉ đường sai", "a_en": "Oh, the algorithm must be drawing a straight line instead of the paved path.", "a_vi": "Ồ, thuật toán hẳn là đang vẽ một đường thẳng thay vì lối đi rải nhựa." },
+        {"q_en": "Exactly. Guests are complaining that it told them to walk through the bushes.", "q_vi": "Khách bị chỉ đi bụi rậm", "a_en": "That is unacceptable. I will manually update the GPS coordinates for the pathways now.", "a_vi": "Điều đó thật không thể chấp nhận được. Tôi sẽ cập nhật thủ công tọa độ GPS cho các lối đi ngay." },
+        {"q_en": "We cannot afford bad reviews. Is the cloud server synchronized?", "q_vi": "Sếp lo lắng rớt mạng", "a_en": "Yes, all data is synchronized to the AWS cloud in real-time. No data loss.", "a_vi": "Vâng, mọi dữ liệu được đồng bộ lên đám mây AWS theo thời gian thực. Không mất dữ liệu." },
+        {"q_en": "What happens if the resort loses Wi-Fi connection during a storm?", "q_vi": "Hỏi rủi ro cúp mạng mùa bão", "a_en": "The app has an offline mode. It caches the map locally on the user's phone.", "a_vi": "App có chế độ ngoại tuyến. Nó lưu trữ bản đồ cục bộ ngay trên điện thoại người dùng." },
+        {"q_en": "Smart. Now, how do we track the electric buggies on this dashboard?", "q_vi": "Hỏi cách định vị xe điện", "a_en": "Every buggy has a GPS tracker. You can see them moving on this interactive interface.", "a_vi": "Mỗi xe điện đều có thiết bị định vị GPS. Sếp có thể thấy chúng di chuyển trên giao diện tương tác này." },
+        {"q_en": "I see 3 buggies stuck at the main gate. Why?", "q_vi": "Phát hiện xe kẹt", "a_en": "There is a traffic jam. A delivery truck is blocking the entrance.", "a_vi": "Đang bị kẹt xe. Một chiếc xe tải giao hàng đang chắn ngang lối vào." },
+        {"q_en": "Can we automate the dispatch to use the rear service gate instead?", "q_vi": "Hỏi cách điều phối tự động", "a_en": "Yes, I will program a detour protocol. The buggies will automatically bypass the jam.", "a_vi": "Vâng, tôi sẽ lập trình một giao thức đường vòng. Các xe sẽ tự động tránh điểm kẹt." },
+        {"q_en": "Good. Next, the VIP guests want biometric unlocking for their villas.", "q_vi": "Yêu cầu gắn khóa vân tay", "a_en": "The integration is almost done. They can unlock doors using facial recognition on the app.", "a_vi": "Việc tích hợp sắp xong. Họ có thể mở khóa cửa bằng nhận diện khuôn mặt trên app." },
+        {"q_en": "Is the facial data encrypted? We can't have a security breach.", "q_vi": "Sếp lo bảo mật", "a_en": "Absolutely. It uses military-grade encryption. It is totally confidential.", "a_vi": "Chắc chắn rồi. Nó dùng mã hóa cấp quân sự. Nó là tuyệt mật." },
+        {"q_en": "We also need to push notifications if a typhoon is approaching.", "q_vi": "Yêu cầu phát thông báo bão", "a_en": "The emergency broadcast system is ready. It will alert all active users instantly.", "a_vi": "Hệ thống phát thanh khẩn cấp đã sẵn sàng. Nó sẽ cảnh báo mọi người dùng đang hoạt động ngay tức khắc." },
+        {"q_en": "Show me a simulation. I want to see the evacuation route on the map.", "q_vi": "Sếp muốn xem chạy thử", "a_en": "Running simulation now. The screen turns red, and arrows point to the underground shelter.", "a_vi": "Đang chạy mô phỏng. Màn hình chuyển đỏ, và các mũi tên chỉ về hầm trú ẩn dưới đất." },
+        {"q_en": "The arrows are a bit small. Make them thicker and brighter.", "q_vi": "Sếp chỉnh sửa UI", "a_en": "Noted. I will increase the stroke width and add a flashing animation.", "a_vi": "Đã ghi nhận. Tôi sẽ tăng độ dày nét và thêm hiệu ứng nhấp nháy." },
+        {"q_en": "Perfect. When is the Ostock Dashboard V15 fully launching?", "q_vi": "Hỏi lịch ra mắt", "a_en": "We are completing the final tests. It will go live by the end of this month.", "a_vi": "Chúng tôi đang hoàn tất các bài test cuối cùng. Nó sẽ chính thức hoạt động vào cuối tháng này." },
+        {"q_en": "Don't disappoint me, Huy. This tech is our biggest selling point.", "q_vi": "Sếp đặt kỳ vọng cao", "a_en": "I understand the pressure. My team is working day and night to perfect it.", "a_vi": "Tôi hiểu áp lực này. Đội của tôi đang làm việc ngày đêm để hoàn thiện nó." },
+        {"q_en": "Are the marketing materials ready for the launch event?", "q_vi": "Hỏi tiến độ Marketing", "a_en": "Yes, the brochures and presentation slides are already printed and approved.", "a_vi": "Vâng, cẩm nang và slide thuyết trình đã được in và phê duyệt xong." },
+        {"q_en": "I will review them this afternoon. Send the digital copy to my email.", "q_vi": "Đòi xem trước", "a_en": "I will dispatch it to your inbox right now via our secure network.", "a_vi": "Tôi sẽ gửi nó vào hòm thư của sếp ngay bây giờ qua mạng bảo mật của chúng ta." },
+        {"q_en": "Good work. Fix those map bugs before I check again tonight.", "q_vi": "Giao deadline gắt", "a_en": "It will be flawless by 6 PM, sir. You have my word.", "a_vi": "Nó sẽ hoàn hảo trước 6h tối thưa sếp. Tôi xin hứa." },
+        {"q_en": "I expect nothing less. See you later.", "q_vi": "Chào kết thúc", "a_en": "Thank you, boss. Have a productive day.", "a_vi": "Cảm ơn sếp. Chúc sếp một ngày làm việc hiệu quả." }
+      ]
+    },
+    {
+      "id": 31, "type": "vocab", "description": "Level 31: Từ vựng Kiến trúc khách sạn & Thiết kế nội thất",
+      "questions": [
+        {"q_en": "Architecture", "a_vi": "Kiến trúc"}, {"q_en": "Facade", "a_vi": "Mặt tiền / Mặt ngoài tòa nhà"}, {"q_en": "Aesthetic", "a_vi": "Tính thẩm mỹ"}, {"q_en": "Contemporary", "a_vi": "Đương đại"}, {"q_en": "Minimalist", "a_vi": "Tối giản"}, {"q_en": "Rustic", "a_vi": "Mộc mạc / Đồng quê"}, {"q_en": "Vintage", "a_vi": "Cổ điển"}, {"q_en": "Furnishing", "a_vi": "Đồ nội thất / Đồ trang trí"}, {"q_en": "Upholstery", "a_vi": "Vải bọc (ghế sofa/nệm)"}, {"q_en": "Chandelier", "a_vi": "Đèn chùm"}, {"q_en": "Marble", "a_vi": "Đá cẩm thạch"}, {"q_en": "Granite", "a_vi": "Đá hoa cương"}, {"q_en": "Hardwood", "a_vi": "Gỗ cứng / Gỗ tự nhiên"}, {"q_en": "Carpet", "a_vi": "Thảm trải sàn"}, {"q_en": "Wallpaper", "a_vi": "Giấy dán tường"}, {"q_en": "Curtain", "a_vi": "Rèm cửa"}, {"q_en": "Blind", "a_vi": "Mành chắn sáng"}, {"q_en": "Fixture", "a_vi": "Đồ đạc cố định (đèn, vòi nước)"}, {"q_en": "Layout", "a_vi": "Bố cục / Cách bài trí"}, {"q_en": "Spacious", "a_vi": "Rộng rãi / Thoáng đãng"}
+      ]
+    },
+    {
+      "id": 32, "type": "vocab", "description": "Level 32: Từ vựng Đánh giá dịch vụ & Quản trị chất lượng",
+      "questions": [
+        {"q_en": "Exceed", "a_vi": "Vượt quá (kỳ vọng)"}, {"q_en": "Expectation", "a_vi": "Sự kỳ vọng"}, {"q_en": "Satisfaction", "a_vi": "Sự hài lòng"}, {"q_en": "Dissatisfaction", "a_vi": "Sự không hài lòng"}, {"q_en": "Feedback", "a_vi": "Phản hồi"}, {"q_en": "Review", "a_vi": "Bài nhận xét"}, {"q_en": "Rating", "a_vi": "Xếp hạng / Chấm điểm"}, {"q_en": "Criteria", "a_vi": "Tiêu chí"}, {"q_en": "Benchmark", "a_vi": "Tiêu chuẩn / Điểm chuẩn"}, {"q_en": "Consistent", "a_vi": "Nhất quán / Đồng bộ"}, {"q_en": "Flawless", "a_vi": "Không tì vết / Hoàn hảo"}, {"q_en": "Defective", "a_vi": "Có lỗi / Bị lỗi"}, {"q_en": "Shortcoming", "a_vi": "Thiếu sót"}, {"q_en": "Improvement", "a_vi": "Sự cải thiện"}, {"q_en": "Implement", "a_vi": "Thực thi / Thi hành"}, {"q_en": "Monitor", "a_vi": "Giám sát"}, {"q_en": "Evaluate", "a_vi": "Đánh giá (chất lượng)"}, {"q_en": "Metric", "a_vi": "Số liệu đo lường"}, {"q_en": "Survey", "a_vi": "Cuộc khảo sát"}, {"q_en": "Loyalty", "a_vi": "Sự trung thành (của khách hàng)"}
+      ]
+    },
+    {
+      "id": 33, "type": "sentence", "description": "Level 33: Giới thiệu Kiến trúc & Thiết kế Khách sạn",
+      "questions": [
+        {"q_en": "The facade of our hotel features a stunning contemporary design.", "q_vi": "Giới thiệu mặt tiền", "a_en": "The facade of our hotel features a stunning contemporary design.", "a_vi": "Mặt tiền khách sạn của chúng tôi nổi bật với thiết kế đương đại tuyệt đẹp."},
+        {"q_en": "We adopted a minimalist aesthetic to create a sense of calm.", "q_vi": "Nói về phong cách tối giản", "a_en": "We adopted a minimalist aesthetic to create a sense of calm.", "a_vi": "Chúng tôi áp dụng tính thẩm mỹ tối giản để tạo ra cảm giác bình yên."},
+        {"q_en": "The lobby is adorned with a magnificent crystal chandelier.", "q_vi": "Khen ngợi đèn chùm sảnh", "a_en": "The lobby is adorned with a magnificent crystal chandelier.", "a_vi": "Tiền sảnh được tô điểm bởi một chiếc đèn chùm pha lê tráng lệ."},
+        {"q_en": "All bathrooms are fitted with premium Italian marble.", "q_vi": "Giới thiệu đá cẩm thạch Ý", "a_en": "All bathrooms are fitted with premium Italian marble.", "a_vi": "Tất cả phòng tắm đều được lắp đặt đá cẩm thạch Ý cao cấp."},
+        {"q_en": "The hardwood floors bring a warm, rustic feel to the room.", "q_vi": "Khen sàn gỗ mộc mạc", "a_en": "The hardwood floors bring a warm, rustic feel to the room.", "a_vi": "Sàn gỗ tự nhiên mang lại cảm giác ấm áp, mộc mạc cho căn phòng."},
+        {"q_en": "I love the vintage upholstery on these lounge chairs.", "q_vi": "Khách khen ghế sofa", "a_en": "I love the vintage upholstery on these lounge chairs.", "a_vi": "Tôi rất thích lớp vải bọc cổ điển trên những chiếc ghế chờ này."},
+        {"q_en": "The spacious layout allows for plenty of natural light.", "q_vi": "Nói về bố cục thoáng đãng", "a_en": "The spacious layout allows for plenty of natural light.", "a_vi": "Bố cục rộng rãi cho phép ngập tràn ánh sáng tự nhiên."},
+        {"q_en": "Please draw the heavy curtains if you want to sleep in.", "q_vi": "Dặn kéo rèm cửa", "a_en": "Please draw the heavy curtains if you want to sleep in.", "a_vi": "Vui lòng kéo những tấm rèm cửa dày nếu ngài muốn ngủ nướng."},
+        {"q_en": "The automated blinds can be controlled from your bedside tablet.", "q_vi": "Giới thiệu mành tự động", "a_en": "The automated blinds can be controlled from your bedside tablet.", "a_vi": "Mành chắn sáng tự động có thể được điều khiển từ máy tính bảng đầu giường."},
+        {"q_en": "Notice the intricate wallpaper design inspired by local flora.", "q_vi": "Khen giấy dán tường", "a_en": "Notice the intricate wallpaper design inspired by local flora.", "a_vi": "Hãy chú ý đến thiết kế giấy dán tường phức tạp lấy cảm hứng từ thảm thực vật địa phương."},
+        {"q_en": "Is the tap water safe to drink from these bathroom fixtures?", "q_vi": "Hỏi về vòi nước", "a_en": "Is the tap water safe to drink from these bathroom fixtures?", "a_vi": "Nước máy từ những vòi nước phòng tắm này có an toàn để uống không?"},
+        {"q_en": "The architectural blueprint was designed by a famous French firm.", "q_vi": "Tự hào về thiết kế Pháp", "a_en": "The architectural blueprint was designed by a famous French firm.", "a_vi": "Bản thiết kế kiến trúc được thực hiện bởi một công ty nổi tiếng của Pháp."},
+        {"q_en": "We recently updated all the furnishings in the VIP suites.", "q_vi": "Báo cáo mới thay nội thất", "a_en": "We recently updated all the furnishings in the VIP suites.", "a_vi": "Chúng tôi vừa mới cập nhật toàn bộ đồ nội thất trong các phòng suite VIP."},
+        {"q_en": "The granite countertops in the kitchenette are very durable.", "q_vi": "Khen mặt bếp đá hoa cương", "a_en": "The granite countertops in the kitchenette are very durable.", "a_vi": "Mặt bàn bếp bằng đá hoa cương trong khu bếp nhỏ rất bền."},
+        {"q_en": "Can you bring an extra thick carpet for my children to play on?", "q_vi": "Khách xin thêm thảm", "a_en": "Can you bring an extra thick carpet for my children to play on?", "a_vi": "Bạn có thể mang thêm một tấm thảm dày để các con tôi chơi trên đó không?"},
+        {"q_en": "The seamless integration of nature and concrete is brilliant.", "q_vi": "Khen sự hòa quyện thiên nhiên", "a_en": "The seamless integration of nature and concrete is brilliant.", "a_vi": "Sự tích hợp liền mạch giữa thiên nhiên và bê tông thật sự tuyệt vời."},
+        {"q_en": "The majestic staircase serves as the focal point of the lobby.", "q_vi": "Chỉ điểm nhấn cầu thang", "a_en": "The majestic staircase serves as the focal point of the lobby.", "a_vi": "Cầu thang bộ tráng lệ đóng vai trò là tâm điểm của tiền sảnh."},
+        {"q_en": "Our design philosophy revolves around eco-friendly materials.", "q_vi": "Triết lý thiết kế xanh", "a_en": "Our design philosophy revolves around eco-friendly materials.", "a_vi": "Triết lý thiết kế của chúng tôi xoay quanh các vật liệu thân thiện với môi trường."},
+        {"q_en": "The acoustic panels ensure a completely soundproof room.", "q_vi": "Giải thích cách âm", "a_en": "The acoustic panels ensure a completely soundproof room.", "a_vi": "Các tấm tiêu âm đảm bảo một căn phòng cách âm hoàn toàn."},
+        {"q_en": "Every detail has been meticulously crafted for your comfort.", "q_vi": "Khẳng định sự tinh tế", "a_en": "Every detail has been meticulously crafted for your comfort.", "a_vi": "Mọi chi tiết đều được chế tác tỉ mỉ vì sự thoải mái của quý khách."}
+      ]
+    },
+    {
+      "id": 34, "type": "sentence", "description": "Level 34: Xử lý Đánh giá (Review) và Khảo sát Dịch vụ",
+      "questions": [
+        {"q_en": "We aim to exceed your expectations in every aspect.", "q_vi": "Mục tiêu vượt kỳ vọng", "a_en": "We aim to exceed your expectations in every aspect.", "a_vi": "Chúng tôi đặt mục tiêu vượt qua sự kỳ vọng của ngài về mọi khía cạnh."},
+        {"q_en": "Customer satisfaction is the ultimate benchmark of our success.", "q_vi": "Lấy khách hàng làm thước đo", "a_en": "Customer satisfaction is the ultimate benchmark of our success.", "a_vi": "Sự hài lòng của khách hàng là thước đo tối thượng cho thành công của chúng tôi."},
+        {"q_en": "I received an email asking me to complete a guest survey.", "q_vi": "Khách nói về email khảo sát", "a_en": "I received an email asking me to complete a guest survey.", "a_vi": "Tôi nhận được một email yêu cầu tôi hoàn thành một cuộc khảo sát khách hàng."},
+        {"q_en": "Your honest feedback helps us identify our shortcomings.", "q_vi": "Xin góp ý chân thành", "a_en": "Your honest feedback helps us identify our shortcomings.", "a_vi": "Phản hồi trung thực của quý khách giúp chúng tôi nhận ra những thiếu sót của mình."},
+        {"q_en": "I left a five-star rating for you on TripAdvisor this morning.", "q_vi": "Khách khoe cho 5 sao", "a_en": "I left a five-star rating for you on TripAdvisor this morning.", "a_vi": "Tôi đã để lại đánh giá 5 sao cho bạn trên TripAdvisor sáng nay."},
+        {"q_en": "We sincerely appreciate your glowing review, it motivates our team.", "q_vi": "Cảm ơn review tốt", "a_en": "We sincerely appreciate your glowing review, it motivates our team.", "a_vi": "Chúng tôi chân thành cảm kích bài đánh giá rực rỡ của ngài, nó tạo động lực cho đội ngũ của chúng tôi."},
+        {"q_en": "The service was extremely slow. I am expressing my dissatisfaction.", "q_vi": "Khách phàn nàn chê chậm", "a_en": "The service was extremely slow. I am expressing my dissatisfaction.", "a_vi": "Dịch vụ cực kỳ chậm chạp. Tôi đang bày tỏ sự không hài lòng của mình."},
+        {"q_en": "We will evaluate our staffing metrics to prevent this delay.", "q_vi": "Hứa đánh giá lại nhân sự", "a_en": "We will evaluate our staffing metrics to prevent this delay.", "a_vi": "Chúng tôi sẽ đánh giá lại các số liệu nhân sự để ngăn chặn sự chậm trễ này."},
+        {"q_en": "Delivering a consistent experience is our biggest challenge.", "q_vi": "Nhận định về thách thức", "a_en": "Delivering a consistent experience is our biggest challenge.", "a_vi": "Mang lại một trải nghiệm nhất quán là thách thức lớn nhất của chúng tôi."},
+        {"q_en": "The air conditioning unit in room 302 is defective.", "q_vi": "Báo cáo lỗi thiết bị", "a_en": "The air conditioning unit in room 302 is defective.", "a_vi": "Cục máy lạnh ở phòng 302 bị lỗi rồi."},
+        {"q_en": "We have implemented a new protocol to monitor room temperature.", "q_vi": "Áp dụng quy trình mới", "a_en": "We have implemented a new protocol to monitor room temperature.", "a_vi": "Chúng tôi đã thực thi một quy trình mới để giám sát nhiệt độ phòng."},
+        {"q_en": "Please rate our cleanliness based on these three criteria.", "q_vi": "Yêu cầu chấm điểm sạch sẽ", "a_en": "Please rate our cleanliness based on these three criteria.", "a_vi": "Vui lòng xếp hạng độ sạch sẽ của chúng tôi dựa trên 3 tiêu chí này."},
+        {"q_en": "The execution of the gala dinner was absolutely flawless.", "q_vi": "Khen ngợi tiệc gala", "a_en": "The execution of the gala dinner was absolutely flawless.", "a_vi": "Khâu tổ chức bữa tiệc gala đã diễn ra hoàn toàn không một tì vết."},
+        {"q_en": "We reward our staff for maintaining high loyalty scores.", "q_vi": "Thưởng NV điểm cao", "a_en": "We reward our staff for maintaining high loyalty scores.", "a_vi": "Chúng tôi khen thưởng nhân viên vì đã duy trì điểm trung thành cao."},
+        {"q_en": "There is a noticeable improvement in your breakfast buffet.", "q_vi": "Khen đồ ăn sáng tiến bộ", "a_en": "There is a noticeable improvement in your breakfast buffet.", "a_vi": "Có một sự cải thiện đáng chú ý trong bữa sáng buffet của các bạn."},
+        {"q_en": "Our head chef took your previous suggestions very seriously.", "q_vi": "Báo bếp trưởng đã tiếp thu", "a_en": "Our head chef took your previous suggestions very seriously.", "a_vi": "Bếp trưởng của chúng tôi đã xem xét các góp ý trước đây của ngài rất nghiêm túc."},
+        {"q_en": "The lack of hot water is a major shortcoming in your service.", "q_vi": "Trách móc việc thiếu nước nóng", "a_en": "The lack of hot water is a major shortcoming in your service.", "a_vi": "Việc thiếu nước nóng là một thiếu sót lớn trong dịch vụ của bạn."},
+        {"q_en": "I demand to speak to the person monitoring the quality control.", "q_vi": "Đòi gặp người quản lý chất lượng", "a_en": "I demand to speak to the person monitoring the quality control.", "a_vi": "Tôi yêu cầu được nói chuyện với người giám sát việc kiểm soát chất lượng."},
+        {"q_en": "We assure you that strict actions have been implemented.", "q_vi": "Cam đoan đã xử lý", "a_en": "We assure you that strict actions have been implemented.", "a_vi": "Chúng tôi cam đoan với ngài rằng các biện pháp nghiêm ngặt đã được thực thi."},
+        {"q_en": "Thank you for giving us the opportunity to make things right.", "q_vi": "Cảm ơn vì đã cho cơ hội sửa sai", "a_en": "Thank you for giving us the opportunity to make things right.", "a_vi": "Cảm ơn vì đã cho chúng tôi cơ hội để làm mọi việc đúng đắn trở lại."}
+      ]
+    },
+    {
+      "id": 35, "type": "boss", "description": "Level 35: BOSS Thanh Tra (Khách bí mật - Mystery Guest đánh giá chất lượng)",
+      "questions": [
+        {"q_en": "Good afternoon. I am Mr. Smith. I requested a quiet room.", "q_vi": "(Boss Thanh Tra) Chào. Tôi là Smith. Tôi đã yêu cầu một phòng yên tĩnh.", "a_en": "Good afternoon, Mr. Smith. Yes, we assigned you a corner room facing the garden.", "a_vi": "Chào buổi chiều, ngài Smith. Vâng, chúng tôi đã bố trí cho ngài một phòng góc hướng ra vườn." },
+        {"q_en": "Good. I am very particular about the aesthetic of my environment.", "q_vi": "Khách khó tính về thẩm mỹ", "a_en": "Our newly renovated rooms feature a minimalist and contemporary design.", "a_vi": "Các phòng mới được cải tạo của chúng tôi mang phong cách thiết kế đương đại và tối giản." },
+        {"q_en": "I noticed the chandelier in the lobby is missing a crystal.", "q_vi": "Thanh tra soi lỗi đèn chùm sảnh", "a_en": "You have a very sharp eye, sir. Maintenance is replacing it tonight.", "a_vi": "Ngài có con mắt rất tinh tường. Bộ phận bảo trì sẽ thay thế nó vào tối nay." },
+        {"q_en": "I hope so. Attention to detail is the benchmark of luxury.", "q_vi": "Lên lớp về tiêu chuẩn xa hoa", "a_en": "We completely agree. Flawless execution is what we strive for every day.", "a_vi": "Chúng tôi hoàn toàn đồng ý. Sự thực thi không tì vết là điều chúng tôi nỗ lực mỗi ngày." },
+        {"q_en": "When I arrived, the bellboy took 10 minutes to greet me. That's a shortcoming.", "q_vi": "Bắt lỗi bellboy chậm", "a_en": "I apologize for the delay. We will monitor our staffing metrics during peak hours.", "a_vi": "Tôi xin lỗi vì sự chậm trễ. Chúng tôi sẽ giám sát lại số liệu nhân sự trong giờ cao điểm." },
+        {"q_en": "You better evaluate your training protocol. Now, give me the room key.", "q_vi": "Khuyên đánh giá lại đào tạo", "a_en": "Here is your keycard. We have also placed a welcome fruit basket inside.", "a_vi": "Đây là thẻ khóa của ngài. Chúng tôi cũng đã đặt sẵn một giỏ trái cây chào mừng bên trong." },
+        {"q_en": "I will check the quality of those fruits. Are they organic?", "q_vi": "Soi chất lượng trái cây", "a_en": "Yes, they are 100% organic, cultivated in our resort's private greenhouse.", "a_vi": "Vâng, chúng là 100% hữu cơ, được trồng trong nhà kính riêng của resort chúng tôi." },
+        {"q_en": "I will be the judge of that. Does the room have hardwood floors?", "q_vi": "Hỏi về sàn gỗ phòng", "a_en": "Yes, premium oak hardwood covered with a soft Persian carpet.", "a_vi": "Vâng, gỗ sồi cứng cao cấp được trải bằng một tấm thảm Ba Tư mềm mại." },
+        {"q_en": "I am allergic to dust mites. Has the carpet been thoroughly vacuumed?", "q_vi": "Hỏi độ sạch của thảm", "a_en": "Housekeeping uses medical-grade vacuums to ensure it is perfectly safe for you.", "a_vi": "Buồng phòng dùng máy hút bụi chuẩn y tế để đảm bảo nó hoàn toàn an toàn cho ngài." },
+        {"q_en": "If I sneeze even once, I will leave a terrible review.", "q_vi": "Dọa viết review xấu", "a_en": "We guarantee your utmost comfort. Your satisfaction is our top priority.", "a_vi": "Chúng tôi bảo đảm sự thoải mái tột độ của ngài. Sự hài lòng của ngài là ưu tiên hàng đầu." },
+        {"q_en": "Let's talk about the bathroom. Are the fixtures marble or granite?", "q_vi": "Hỏi chất liệu phòng tắm", "a_en": "The vanity countertops are solid Italian marble, polished to perfection.", "a_vi": "Mặt bàn trang điểm là đá cẩm thạch Ý nguyên khối, được đánh bóng hoàn hảo." },
+        {"q_en": "Good. I expect consistent water pressure from the shower.", "q_vi": "Yêu cầu áp lực nước vòi sen", "a_en": "We recently upgraded our water pumps to guarantee strong, consistent pressure.", "a_vi": "Chúng tôi vừa nâng cấp máy bơm nước để đảm bảo áp lực mạnh và ổn định." },
+        {"q_en": "I will test it tonight. Send me the room service menu digitally.", "q_vi": "Đòi menu phòng điện tử", "a_en": "You can access the interactive menu via the tablet on your bedside table.", "a_vi": "Ngài có thể truy cập thực đơn tương tác qua máy tính bảng trên tủ đầu giường." },
+        {"q_en": "Is the interface user-friendly? I don't like complicated apps.", "q_vi": "Hỏi giao diện dễ dùng không", "a_en": "It is highly intuitive. You can order a meal in just three simple taps.", "a_vi": "Nó có tính trực giác rất cao. Ngài có thể gọi món chỉ với ba cú chạm đơn giản." },
+        {"q_en": "We shall see. If my dinner is late, I will express my dissatisfaction.", "q_vi": "Cảnh cáo nếu giao đồ ăn trễ", "a_en": "Room service is strictly monitored to deliver within 30 minutes, sir.", "a_vi": "Dịch vụ phòng được giám sát nghiêm ngặt để giao trong vòng 30 phút thưa ngài." },
+        {"q_en": "To be honest, my expectations are extremely high for Ocean Dunes.", "q_vi": "Khẳng định kỳ vọng cao", "a_en": "And it is our mission to exceed them. We thrive on constructive feedback.", "a_vi": "Và sứ mệnh của chúng tôi là vượt qua chúng. Chúng tôi phát triển nhờ các phản hồi mang tính xây dựng." },
+        {"q_en": "I will fill out your survey at the end of my stay. Don't disappoint me.", "q_vi": "Hứa sẽ làm khảo sát cuối kỳ", "a_en": "We look forward to earning a five-star rating from you, Mr. Smith.", "a_vi": "Chúng tôi rất mong chờ giành được điểm đánh giá 5 sao từ ngài, ngài Smith." },
+        {"q_en": "I am going up now. Do not disturb me before 8 AM tomorrow.", "q_vi": "Lệnh không làm phiền", "a_en": "I will activate the 'Do Not Disturb' protocol on our system immediately.", "a_vi": "Tôi sẽ kích hoạt quy trình 'Không làm phiền' trên hệ thống của chúng ta ngay lập tức." },
+        {"q_en": "You handle pressure well. I appreciate your professionalism.", "q_vi": "Thanh tra gật gù khen ngợi", "a_en": "Thank you, sir. Have a wonderful and relaxing afternoon.", "a_vi": "Cảm ơn ngài. Chúc ngài một buổi chiều tuyệt vời và thư giãn." },
+        {"q_en": "Goodbye.", "q_vi": "Chốt đi lên phòng", "a_en": "Goodbye, Mr. Smith.", "a_vi": "Tạm biệt ngài Smith." }
+      ]
+    },
+    {
+      "id": 36, "type": "vocab", "description": "Level 36: Từ vựng Du lịch Mạo hiểm & Khám phá Thiên nhiên",
+      "questions": [
+        {"q_en": "Adventure", "a_vi": "Sự mạo hiểm / Phiêu lưu"}, {"q_en": "Expedition", "a_vi": "Cuộc thám hiểm"}, {"q_en": "Hike", "a_vi": "Đi bộ đường dài (leo núi)"}, {"q_en": "Trek", "a_vi": "Hành trình đi bộ gian nan"}, {"q_en": "Trail", "a_vi": "Đường mòn"}, {"q_en": "Jungle", "a_vi": "Rừng rậm nhiệt đới"}, {"q_en": "Waterfall", "a_vi": "Thác nước"}, {"q_en": "Cave", "a_vi": "Hang động"}, {"q_en": "Cliff", "a_vi": "Vách đá cheo leo"}, {"q_en": "Summit", "a_vi": "Đỉnh núi"}, {"q_en": "Valley", "a_vi": "Thung lũng"}, {"q_en": "Terrain", "a_vi": "Địa hình"}, {"q_en": "Compass", "a_vi": "La bàn"}, {"q_en": "Binoculars", "a_vi": "Ống nhòm"}, {"q_en": "Backpack", "a_vi": "Ba lô"}, {"q_en": "Gear", "a_vi": "Trang thiết bị (leo núi/lặn)"}, {"q_en": "Tent", "a_vi": "Cái lều"}, {"q_en": "Bonfire", "a_vi": "Lửa trại"}, {"q_en": "Survival", "a_vi": "Sự sinh tồn"}, {"q_en": "Wildlife", "a_vi": "Động vật hoang dã"}
+      ]
+    },
+    {
+      "id": 37, "type": "vocab", "description": "Level 37: Từ vựng Thể thao Dưới nước & Bãi biển",
+      "questions": [
+        {"q_en": "Snorkel", "a_vi": "Ống thở (lặn nông)"}, {"q_en": "Scuba diving", "a_vi": "Lặn bình dưỡng khí (lặn sâu)"}, {"q_en": "Coral reef", "a_vi": "Rạn san hô"}, {"q_en": "Current", "a_vi": "Dòng chảy / Dòng hải lưu"}, {"q_en": "Tide", "a_vi": "Thủy triều"}, {"q_en": "Whirlpool", "a_vi": "Vùng nước xoáy"}, {"q_en": "Surfboard", "a_vi": "Ván lướt sóng"}, {"q_en": "Kitesurfing", "a_vi": "Lướt ván diều"}, {"q_en": "Parasailing", "a_vi": "Dù lượn trên biển"}, {"q_en": "Jet ski", "a_vi": "Mô tô nước"}, {"q_en": "Kayak", "a_vi": "Thuyền Kayak"}, {"q_en": "Canoe", "a_vi": "Thuyền độc mộc"}, {"q_en": "Life jacket", "a_vi": "Áo phao cứu sinh"}, {"q_en": "Goggles", "a_vi": "Kính bơi"}, {"q_en": "Flippers", "a_vi": "Chân vịt (lặn biển)"}, {"q_en": "Wetsuit", "a_vi": "Bộ đồ lặn (chống lạnh)"}, {"q_en": "Sunscreen", "a_vi": "Kem chống nắng"}, {"q_en": "Sunburn", "a_vi": "Sự cháy nắng"}, {"q_en": "Breeze", "a_vi": "Cơn gió nhẹ"}, {"q_en": "Horizon", "a_vi": "Đường chân trời"}
+      ]
+    },
+    {
+      "id": 38, "type": "sentence", "description": "Level 38: Hướng dẫn Khám phá Địa hình Tự nhiên",
+      "questions": [
+        {"q_en": "Are you ready for an exciting jungle expedition today?", "q_vi": "Hỏi khách sẵn sàng đi rừng chưa", "a_en": "Are you ready for an exciting jungle expedition today?", "a_vi": "Bạn đã sẵn sàng cho một cuộc thám hiểm rừng rậm thú vị hôm nay chưa?"},
+        {"q_en": "The hiking trail to the waterfall is quite slippery.", "q_vi": "Cảnh báo đường mòn trơn trượt", "a_en": "The hiking trail to the waterfall is quite slippery.", "a_vi": "Đường mòn đi bộ leo núi dẫn đến thác nước khá trơn trượt."},
+        {"q_en": "Please make sure you have enough water in your backpack.", "q_vi": "Nhắc mang đủ nước", "a_en": "Please make sure you have enough water in your backpack.", "a_vi": "Vui lòng đảm bảo bạn có đủ nước trong ba lô của mình."},
+        {"q_en": "Our guide will provide you with a compass and binoculars.", "q_vi": "Cung cấp đồ nghề thám hiểm", "a_en": "Our guide will provide you with a compass and binoculars.", "a_vi": "Hướng dẫn viên của chúng tôi sẽ cung cấp cho bạn la bàn và ống nhòm."},
+        {"q_en": "Do not wander off the marked trail under any circumstances.", "q_vi": "Cấm đi chệch đường mòn", "a_en": "Do not wander off the marked trail under any circumstances.", "a_vi": "Tuyệt đối không đi lang thang chệch khỏi con đường mòn đã được đánh dấu trong bất kỳ tình huống nào."},
+        {"q_en": "The terrain becomes very steep as you approach the cliff.", "q_vi": "Cảnh báo địa hình dốc", "a_en": "The terrain becomes very steep as you approach the cliff.", "a_vi": "Địa hình trở nên rất dốc khi bạn đến gần vách đá."},
+        {"q_en": "We will set up our tent in the valley before sunset.", "q_vi": "Báo giờ dựng lều", "a_en": "We will set up our tent in the valley before sunset.", "a_vi": "Chúng ta sẽ dựng lều trong thung lũng trước lúc hoàng hôn."},
+        {"q_en": "Gather some dry wood so we can start a bonfire tonight.", "q_vi": "Nhờ nhặt củi đốt lửa trại", "a_en": "Gather some dry wood so we can start a bonfire tonight.", "a_vi": "Hãy thu gom một ít củi khô để chúng ta có thể đốt lửa trại tối nay."},
+        {"q_en": "Basic survival skills are required for this three-day trek.", "q_vi": "Yêu cầu kỹ năng sinh tồn", "a_en": "Basic survival skills are required for this three-day trek.", "a_vi": "Các kỹ năng sinh tồn cơ bản là bắt buộc cho chuyến đi bộ ba ngày này."},
+        {"q_en": "Keep a safe distance if you encounter wild monkeys.", "q_vi": "Dặn dò khi gặp thú hoang", "a_en": "Keep a safe distance if you encounter wild monkeys.", "a_vi": "Hãy giữ khoảng cách an toàn nếu bạn bắt gặp những con khỉ hoang dã."},
+        {"q_en": "The view from the summit is absolutely worth the climb.", "q_vi": "Động viên khách leo núi", "a_en": "The view from the summit is absolutely worth the climb.", "a_vi": "Quang cảnh nhìn từ đỉnh núi hoàn toàn xứng đáng với công sức leo lên."},
+        {"q_en": "Make sure you double-check your climbing gear.", "q_vi": "Nhắc kiểm tra đồ bảo hộ", "a_en": "Make sure you double-check your climbing gear.", "a_vi": "Hãy chắc chắn rằng bạn đã kiểm tra kỹ lại thiết bị leo núi của mình."},
+        {"q_en": "Is the cave exploration suitable for young children?", "q_vi": "Hỏi tour hang động có hợp với trẻ em không", "a_en": "Is the cave exploration suitable for young children?", "a_vi": "Chuyến thám hiểm hang động có phù hợp với trẻ nhỏ không?"},
+        {"q_en": "No, it is too dark and narrow for kids under twelve.", "q_vi": "Từ chối trẻ nhỏ vào hang", "a_en": "No, it is too dark and narrow for kids under twelve.", "a_vi": "Không, nó quá tối và chật hẹp đối với trẻ em dưới 12 tuổi."},
+        {"q_en": "We saw a beautiful eagle through the binoculars.", "q_vi": "Khoe thấy đại bàng", "a_en": "We saw a beautiful eagle through the binoculars.", "a_vi": "Chúng tôi đã nhìn thấy một con đại bàng tuyệt đẹp qua ống nhòm."},
+        {"q_en": "Always follow the guide's footsteps when crossing the river.", "q_vi": "Dặn bước theo người hướng dẫn", "a_en": "Always follow the guide's footsteps when crossing the river.", "a_vi": "Luôn luôn bước theo dấu chân của người hướng dẫn khi băng qua con sông."},
+        {"q_en": "The jungle is extremely humid during the monsoon season.", "q_vi": "Báo rừng rất ẩm ướt", "a_en": "The jungle is extremely humid during the monsoon season.", "a_vi": "Khu rừng rậm cực kỳ ẩm ướt trong suốt mùa gió mùa."},
+        {"q_en": "Apply insect repellent to protect yourself from mosquito bites.", "q_vi": "Khuyên dùng thuốc chống muỗi", "a_en": "Apply insect repellent to protect yourself from mosquito bites.", "a_vi": "Hãy bôi thuốc chống côn trùng để bảo vệ bản thân khỏi bị muỗi đốt."},
+        {"q_en": "Leave nothing but footprints, take nothing but photos.", "q_vi": "Slogan bảo vệ môi trường", "a_en": "Leave nothing but footprints, take nothing but photos.", "a_vi": "Không để lại gì ngoài những dấu chân, không lấy đi gì ngoài những bức ảnh."},
+        {"q_en": "Congratulations on completing the hardest trek in the region!", "q_vi": "Chúc mừng hoàn thành chuyến đi", "a_en": "Congratulations on completing the hardest trek in the region!", "a_vi": "Chúc mừng bạn đã hoàn thành hành trình đi bộ gian nan nhất trong khu vực!"}
+      ]
+    },
+    {
+      "id": 39, "type": "sentence", "description": "Level 39: Hướng dẫn Thể thao dưới nước (Water Sports)",
+      "questions": [
+        {"q_en": "I want to rent a jet ski for thirty minutes.", "q_vi": "Khách muốn thuê mô tô nước", "a_en": "I want to rent a jet ski for thirty minutes.", "a_vi": "Tôi muốn thuê một chiếc mô tô nước trong 30 phút."},
+        {"q_en": "Please put on this life jacket before you get on the jet ski.", "q_vi": "Nhắc mặc áo phao", "a_en": "Please put on this life jacket before you get on the jet ski.", "a_vi": "Vui lòng mặc chiếc áo phao cứu sinh này vào trước khi bạn lên mô tô nước."},
+        {"q_en": "Is the water current strong today for snorkeling?", "q_vi": "Hỏi dòng chảy có mạnh không", "a_en": "Is the water current strong today for snorkeling?", "a_vi": "Dòng chảy của nước hôm nay có mạnh để lặn ống thở không?"},
+        {"q_en": "The tide is going out, so it is perfectly safe to snorkel.", "q_vi": "Báo thủy triều đang rút an toàn", "a_en": "The tide is going out, so it is perfectly safe to snorkel.", "a_vi": "Thủy triều đang rút, nên việc lặn ống thở là hoàn toàn an toàn."},
+        {"q_en": "Do not touch the coral reefs to protect the marine ecosystem.", "q_vi": "Cấm chạm vào san hô", "a_en": "Do not touch the coral reefs to protect the marine ecosystem.", "a_vi": "Không được chạm vào các rạn san hô để bảo vệ hệ sinh thái biển."},
+        {"q_en": "We provide flippers and goggles for the scuba diving tour.", "q_vi": "Báo cung cấp chân vịt kính bơi", "a_en": "We provide flippers and goggles for the scuba diving tour.", "a_vi": "Chúng tôi cung cấp chân vịt và kính bơi cho tour lặn bình dưỡng khí."},
+        {"q_en": "You must wear a wetsuit if you dive deeper than 10 meters.", "q_vi": "Yêu cầu mặc đồ lặn sâu", "a_en": "You must wear a wetsuit if you dive deeper than 10 meters.", "a_vi": "Bạn phải mặc bộ đồ lặn nếu lặn sâu hơn 10 mét."},
+        {"q_en": "The sea breeze is perfect for kitesurfing this afternoon.", "q_vi": "Báo gió biển lý tưởng lướt diều", "a_en": "The sea breeze is perfect for kitesurfing this afternoon.", "a_vi": "Gió biển thổi nhẹ cực kỳ hoàn hảo cho môn lướt ván diều vào chiều nay."},
+        {"q_en": "Have you ever tried parasailing over the ocean?", "q_vi": "Hỏi khách từng chơi dù lượn chưa", "a_en": "Have you ever tried parasailing over the ocean?", "a_vi": "Bạn đã bao giờ thử chơi dù lượn trên đại dương chưa?"},
+        {"q_en": "Apply sunscreen generously to avoid severe sunburns.", "q_vi": "Khuyên bôi kem chống nắng", "a_en": "Apply sunscreen generously to avoid severe sunburns.", "a_vi": "Hãy thoa kem chống nắng thật nhiều để tránh bị cháy nắng nghiêm trọng."},
+        {"q_en": "Can we rent a double kayak to paddle around the bay?", "q_vi": "Hỏi thuê thuyền kayak đôi", "a_en": "Can we rent a double kayak to paddle around the bay?", "a_vi": "Chúng tôi có thể thuê một chiếc kayak đôi để chèo quanh vịnh không?"},
+        {"q_en": "Stay away from the whirlpool area near the rocky cliff.", "q_vi": "Cảnh báo vùng nước xoáy", "a_en": "Stay away from the whirlpool area near the rocky cliff.", "a_vi": "Hãy tránh xa khu vực vùng nước xoáy gần vách đá."},
+        {"q_en": "Keep your balance steady when standing on the surfboard.", "q_vi": "Hướng dẫn lướt ván", "a_en": "Keep your balance steady when standing on the surfboard.", "a_vi": "Hãy giữ thăng bằng vững vàng khi đứng trên ván lướt sóng."},
+        {"q_en": "The rescue boat is always patrolling the swimming area.", "q_vi": "Báo ca nô cứu hộ luôn túc trực", "a_en": "The rescue boat is always patrolling the swimming area.", "a_vi": "Ca nô cứu hộ luôn đi tuần tra quanh khu vực bơi lội."},
+        {"q_en": "Look at the sun setting on the beautiful horizon.", "q_vi": "Chỉ mặt trời lặn", "a_en": "Look at the sun setting on the beautiful horizon.", "a_vi": "Hãy nhìn mặt trời đang lặn trên đường chân trời tuyệt đẹp kìa."},
+        {"q_en": "If you fall off the jet ski, the engine will stop automatically.", "q_vi": "Giải thích an toàn mô tô nước", "a_en": "If you fall off the jet ski, the engine will stop automatically.", "a_vi": "Nếu bạn ngã khỏi chiếc mô tô nước, động cơ sẽ tự động dừng lại."},
+        {"q_en": "Hold your breath and equalize the pressure in your ears.", "q_vi": "Hướng dẫn cân bằng áp suất khi lặn", "a_en": "Hold your breath and equalize the pressure in your ears.", "a_vi": "Nín thở và làm cân bằng áp suất trong tai của bạn."},
+        {"q_en": "We saw a school of dolphins swimming near the pier.", "q_vi": "Khoe thấy bầy cá heo", "a_en": "We saw a school of dolphins swimming near the pier.", "a_vi": "Chúng tôi đã nhìn thấy một bầy cá heo bơi gần bến cầu tàu."},
+        {"q_en": "The water visibility is crystal clear today for underwater photos.", "q_vi": "Báo nước trong vắt để chụp ảnh", "a_en": "The water visibility is crystal clear today for underwater photos.", "a_vi": "Tầm nhìn dưới nước hôm nay trong vắt như pha lê, rất thích hợp để chụp ảnh dưới nước."},
+        {"q_en": "Please return the canoe to the beach before 5 PM.", "q_vi": "Nhắc giờ trả thuyền", "a_en": "Please return the canoe to the beach before 5 PM.", "a_vi": "Vui lòng trả lại chiếc thuyền độc mộc về bãi biển trước 5h chiều."}
+      ]
+    },
+    {
+      "id": 40, "type": "boss", "description": "Level 40: BOSS Thể Thao (Khách Hàng Cuồng Nhiệt Thể Thao Mạo Hiểm)",
+      "questions": [
+        {"q_en": "Hey man, I am an adrenaline junkie. What extreme sports do you have?", "q_vi": "(Boss Thể Thao) Chào anh bạn, tôi là một người nghiện cảm giác mạnh. Bạn có trò thể thao mạo hiểm nào?", "a_en": "Welcome to Ocean Dunes! We offer kitesurfing, parasailing, and deep scuba diving.", "a_vi": "Chào mừng đến với Ocean Dunes! Chúng tôi có lướt ván diều, dù lượn và lặn bình dưỡng khí sâu." },
+        {"q_en": "Kitesurfing sounds awesome. How is the wind today?", "q_vi": "Hỏi về tình trạng gió", "a_en": "The sea breeze is exceptionally strong today. Perfect conditions for kitesurfing.", "a_vi": "Gió biển hôm nay mạnh một cách đặc biệt. Điều kiện hoàn hảo để lướt ván diều." },
+        {"q_en": "I brought my own surfboard. Can I just hit the waves?", "q_vi": "Khách muốn tự lấy ván đi lướt", "a_en": "Yes, but please stay within the designated safe zone marked by the red buoys.", "a_vi": "Vâng, nhưng vui lòng ở trong khu vực an toàn được chỉ định đánh dấu bằng các phao đỏ." },
+        {"q_en": "Red buoys, got it. What about scuba diving? I want to see sharks.", "q_vi": "Đòi lặn ngắm cá mập", "a_en": "We don't have sharks here, but our coral reef is stunning with colorful fish.", "a_vi": "Chúng tôi không có cá mập ở đây, nhưng rạn san hô của chúng tôi tuyệt đẹp với đủ loại cá rực rỡ." },
+        {"q_en": "Boring. I want danger. Can I rent a jet ski and go to the island?", "q_vi": "Chê chán, đòi lái mô tô nước ra đảo", "a_en": "Jet skis are strictly limited to the bay area due to the strong unpredictable currents.", "a_vi": "Mô tô nước bị giới hạn nghiêm ngặt trong khu vực vịnh do các dòng chảy mạnh khó đoán." },
+        {"q_en": "Rules, rules, rules. Fine. Book me a jet ski for an hour.", "q_vi": "Chấp nhận luật, thuê 1 tiếng", "a_en": "I will prepare the jet ski. Please wear this life jacket at all times.", "a_vi": "Tôi sẽ chuẩn bị xe. Vui lòng mặc chiếc áo phao cứu sinh này mọi lúc." },
+        {"q_en": "I am a professional swimmer. I don't need a life jacket.", "q_vi": "Từ chối mặc áo phao", "a_en": "It is mandatory by local law, sir. Even professionals must wear it for safety.", "a_vi": "Đây là quy định bắt buộc của luật địa phương thưa ngài. Kể cả người chuyên nghiệp cũng phải mặc để an toàn." },
+        {"q_en": "Alright, hand it over. Does this jet ski go over 100 km/h?", "q_vi": "Hỏi tốc độ xe", "a_en": "Yes, it is a high-performance model. But please slow down near the pier.", "a_vi": "Vâng, đó là mẫu xe hiệu suất cao. Nhưng xin ngài hãy đi chậm lại khi ở gần bến tàu." },
+        {"q_en": "I will try my best. Oh, I also want to go jungle trekking tomorrow.", "q_vi": "Chuyển sang hỏi đi bộ leo núi", "a_en": "We have a challenging two-day expedition to the peak of the local mountain.", "a_vi": "Chúng tôi có một chuyến thám hiểm 2 ngày đầy thử thách lên đỉnh ngọn núi địa phương." },
+        {"q_en": "Two days? Do we sleep in tents in the wild?", "q_vi": "Hỏi có ngủ lều không", "a_en": "Yes, you will hike through the jungle and camp in the valley overnight.", "a_vi": "Vâng, ngài sẽ đi xuyên rừng rậm và cắm trại trong thung lũng qua đêm." },
+        {"q_en": "Will we build a bonfire and hunt for our own food?", "q_vi": "Hỏi vụ đốt lửa, săn thú", "a_en": "We will have a bonfire, but hunting wildlife is strictly prohibited. We provide food.", "a_vi": "Chúng ta sẽ đốt lửa trại, nhưng việc săn bắn thú hoang bị nghiêm cấm. Chúng tôi sẽ cung cấp thức ăn." },
+        {"q_en": "Make sure the guide is tough. I don't want a slow pace.", "q_vi": "Đòi hỏi guide phải trâu bò", "a_en": "Our lead guide is a former military survival expert. You won't be disappointed.", "a_vi": "Hướng dẫn viên trưởng của chúng tôi là cựu chuyên gia sinh tồn quân đội. Ngài sẽ không thất vọng đâu." },
+        {"q_en": "Perfect! Do I need to buy a compass or any gear?", "q_vi": "Hỏi về đồ nghề cần mua", "a_en": "The resort provides all heavy gear, tents, and backpacks. Just bring good boots.", "a_vi": "Resort cung cấp mọi thiết bị nặng, lều và ba lô. Ngài chỉ cần mang đôi giày tốt thôi." },
+        {"q_en": "My boots are ready. Wait, what about mosquitoes?", "q_vi": "Lo lắng về muỗi rưừng", "a_en": "The jungle is very humid. We will provide industrial-strength insect repellent.", "a_vi": "Khu rừng rất ẩm ướt. Chúng tôi sẽ cung cấp thuốc chống côn trùng loại siêu mạnh." },
+        {"q_en": "Good. I got a terrible sunburn today. Do you sell aloe vera?", "q_vi": "Khách bị cháy nắng, mua nha đam", "a_en": "Yes, the pharmacy in our lobby sells soothing aloe vera gel for sunburns.", "a_vi": "Vâng, quầy thuốc ở sảnh của chúng tôi có bán gel nha đam làm dịu vết cháy nắng." },
+        {"q_en": "I will buy some later. Right now, I want to jump in the ocean.", "q_vi": "Nôn nóng muốn nhảy xuống biển", "a_en": "Please apply sunscreen before you go out to prevent further skin damage.", "a_vi": "Vui lòng thoa kem chống nắng trước khi ngài ra ngoài để tránh làm da tổn thương thêm." },
+        {"q_en": "I don't care about my skin. I care about the thrill!", "q_vi": "Khách máu liều", "a_en": "I admire your spirit, sir. Your jet ski is fueled up and ready at the beach.", "a_vi": "Tôi khâm phục tinh thần của ngài thưa ngài. Mô tô nước của ngài đã đổ đầy xăng và sẵn sàng ở bãi biển." },
+        {"q_en": "Watch me do a backflip on the waves!", "q_vi": "Khoe sẽ nhào lộn", "a_en": "I will be watching from the shore. Please hold on tight and be careful!", "a_vi": "Tôi sẽ đứng xem từ trên bờ. Xin ngài hãy bám thật chặt và cẩn thận nhé!" },
+        {"q_en": "This is going to be epic. See you in an hour.", "q_vi": "Hứa hẹn quay lại sau 1 tiếng", "a_en": "Have a thrilling and safe ride, sir. The lifeguard is on standby.", "a_vi": "Chúc ngài có một chuyến đi ly kỳ và an toàn. Nhân viên cứu hộ đã sẵn sàng túc trực." },
+        {"q_en": "(Engine roaring) Woohoo!", "q_vi": "Khách rồ ga chạy mất", "a_en": "That guy is crazy. I need to keep a close eye on him.", "a_vi": "Gã này điên thật. Mình cần phải để mắt thật kỹ tới anh ta." }
+      ]
+    },
+    {
+      "id": 41, "type": "vocab", "description": "Level 41: Từ vựng Các Ngành nghề Đối tác & Nhà cung cấp",
+      "questions": [
+        {"q_en": "Contractor", "a_vi": "Nhà thầu"}, {"q_en": "Supplier", "a_vi": "Nhà cung cấp"}, {"q_en": "Wholesaler", "a_vi": "Nhà bán buôn / Đại lý bán sỉ"}, {"q_en": "Distributor", "a_vi": "Nhà phân phối"}, {"q_en": "Vendor", "a_vi": "Người bán hàng / Nhà cung cấp dịch vụ"}, {"q_en": "Logistics", "a_vi": "Hậu cần / Kho vận"}, {"q_en": "Freight", "a_vi": "Cước phí chở hàng / Hàng hóa chở trên xe"}, {"q_en": "Cargo", "a_vi": "Hàng hóa (trên tàu thủy/máy bay)"}, {"q_en": "Shipment", "a_vi": "Lô hàng"}, {"q_en": "Consignment", "a_vi": "Hàng ký gửi"}, {"q_en": "Inventory", "a_vi": "Hàng tồn kho / Kiểm kê"}, {"q_en": "Warehouse", "a_vi": "Nhà kho"}, {"q_en": "Procurement", "a_vi": "Sự thu mua (vật tư/hàng hóa)"}, {"q_en": "Purchasing", "a_vi": "Phòng thu mua"}, {"q_en": "Quotation", "a_vi": "Bảng báo giá"}, {"q_en": "Invoice", "a_vi": "Hóa đơn thanh toán"}, {"q_en": "Receipt", "a_vi": "Biên nhận / Biên lai"}, {"q_en": "Audit", "a_vi": "Kiểm toán"}, {"q_en": "Compliance", "a_vi": "Sự tuân thủ (quy định)"}, {"q_en": "Deadline", "a_vi": "Hạn chót"}
+      ]
+    },
+    {
+      "id": 42, "type": "vocab", "description": "Level 42: Từ vựng Đàm Phán Hợp Đồng Thương Mại",
+      "questions": [
+        {"q_en": "Negotiate", "a_vi": "Đàm phán / Thương lượng"}, {"q_en": "Bargain", "a_vi": "Mặc cả / Trả giá"}, {"q_en": "Compromise", "a_vi": "Sự thỏa hiệp"}, {"q_en": "Agreement", "a_vi": "Thỏa thuận / Hợp đồng"}, {"q_en": "Clause", "a_vi": "Điều khoản (trong hợp đồng)"}, {"q_en": "Condition", "a_vi": "Điều kiện"}, {"q_en": "Stipulate", "a_vi": "Quy định rõ / Đặt điều kiện"}, {"q_en": "Penalty", "a_vi": "Tiền phạt / Hình phạt"}, {"q_en": "Breach", "a_vi": "Sự vi phạm (hợp đồng)"}, {"q_en": "Terminate", "a_vi": "Chấm dứt (hợp đồng)"}, {"q_en": "Renew", "a_vi": "Gia hạn / Đổi mới"}, {"q_en": "Extension", "a_vi": "Sự kéo dài (thời gian)"}, {"q_en": "Exclusive", "a_vi": "Độc quyền"}, {"q_en": "Mutual", "a_vi": "Lẫn nhau / Đôi bên"}, {"q_en": "Benefit", "a_vi": "Lợi ích"}, {"q_en": "Profit", "a_vi": "Lợi nhuận"}, {"q_en": "Margin", "a_vi": "Biên lợi nhuận"}, {"q_en": "Discount", "a_vi": "Chiết khấu / Giảm giá"}, {"q_en": "Commission", "a_vi": "Tiền hoa hồng"}, {"q_en": "Volume", "a_vi": "Khối lượng / Số lượng lớn"}
+      ]
+    },
+    {
+      "id": 43, "type": "sentence", "description": "Level 43: Giao tiếp Nhận Hàng & Kho Vận",
+      "questions": [
+        {"q_en": "Has the meat supplier delivered the morning shipment yet?", "q_vi": "Hỏi giao thịt sáng", "a_en": "Has the meat supplier delivered the morning shipment yet?", "a_vi": "Nhà cung cấp thịt đã giao lô hàng buổi sáng chưa?"},
+        {"q_en": "The delivery truck is currently backing into the loading dock.", "q_vi": "Báo xe tải đang lùi", "a_en": "The delivery truck is currently backing into the loading dock.", "a_vi": "Xe tải giao hàng hiện đang lùi vào bến dỡ hàng."},
+        {"q_en": "Please ensure the freight elevator is empty for the cargo.", "q_vi": "Nhắc dọn thang máy", "a_en": "Please ensure the freight elevator is empty for the cargo.", "a_vi": "Vui lòng đảm bảo thang máy chở hàng được để trống cho hàng hóa."},
+        {"q_en": "The wholesaler sent the wrong quantity of frozen seafood.", "q_vi": "Báo giao sai số lượng", "a_en": "The wholesaler sent the wrong quantity of frozen seafood.", "a_vi": "Nhà bán buôn đã gửi sai số lượng hải sản đông lạnh."},
+        {"q_en": "We must reject this consignment because it does not meet our standards.", "q_vi": "Từ chối lô hàng", "a_en": "We must reject this consignment because it does not meet our standards.", "a_vi": "Chúng ta phải từ chối lô hàng ký gửi này vì nó không đạt tiêu chuẩn của chúng ta."},
+        {"q_en": "Have you cross-checked the items with the purchase order?", "q_vi": "Hỏi kiểm chéo đơn", "a_en": "Have you cross-checked the items with the purchase order?", "a_vi": "Bạn đã kiểm tra chéo các mặt hàng với đơn đặt hàng chưa?"},
+        {"q_en": "The procurement team needs the stamped invoice by 3 PM.", "q_vi": "Đòi hóa đơn có mộc", "a_en": "The procurement team needs the stamped invoice by 3 PM.", "a_vi": "Đội ngũ thu mua cần hóa đơn có đóng dấu trước 3h chiều."},
+        {"q_en": "Please store these fragile items carefully in the dry warehouse.", "q_vi": "Dặn cất đồ dễ vỡ", "a_en": "Please store these fragile items carefully in the dry warehouse.", "a_vi": "Vui lòng cất giữ những mặt hàng dễ vỡ này cẩn thận trong kho khô."},
+        {"q_en": "Our inventory shows a shortage of premium French wine.", "q_vi": "Báo cáo thiếu vang Pháp", "a_en": "Our inventory shows a shortage of premium French wine.", "a_vi": "Bản kiểm kê của chúng ta cho thấy sự thiếu hụt rượu vang Pháp cao cấp."},
+        {"q_en": "I will contact the distributor to expedite the next delivery.", "q_vi": "Hứa giục giao hàng", "a_en": "I will contact the distributor to expedite the next delivery.", "a_vi": "Tôi sẽ liên hệ với nhà phân phối để thúc đẩy đợt giao hàng tiếp theo nhanh hơn."},
+        {"q_en": "The logistics company apologized for the unexpected delay.", "q_vi": "Báo bên vận tải xin lỗi", "a_en": "The logistics company apologized for the unexpected delay.", "a_vi": "Công ty hậu cần đã gửi lời xin lỗi vì sự chậm trễ ngoài dự kiến."},
+        {"q_en": "We cannot compromise on the quality of our fresh produce.", "q_vi": "Khẳng định chất lượng", "a_en": "We cannot compromise on the quality of our fresh produce.", "a_vi": "Chúng ta không thể thỏa hiệp về chất lượng của nông sản tươi."},
+        {"q_en": "Please sign the receipt to confirm the transfer of goods.", "q_vi": "Yêu cầu ký nhận", "a_en": "Please sign the receipt to confirm the transfer of goods.", "a_vi": "Vui lòng ký vào biên nhận để xác nhận việc chuyển giao hàng hóa."},
+        {"q_en": "The contractor will finish repairing the roof before the deadline.", "q_vi": "Báo cáo nhà thầu sửa mái", "a_en": "The contractor will finish repairing the roof before the deadline.", "a_vi": "Nhà thầu sẽ hoàn thành việc sửa chữa mái nhà trước hạn chót."},
+        {"q_en": "We are conducting a surprise audit on the kitchen inventory.", "q_vi": "Báo kiểm toán nhà bếp", "a_en": "We are conducting a surprise audit on the kitchen inventory.", "a_vi": "Chúng tôi đang tiến hành một cuộc kiểm toán bất ngờ đối với hàng tồn kho trong bếp."},
+        {"q_en": "Ensure full compliance with the hygiene and safety regulations.", "q_vi": "Nhắc tuân thủ vệ sinh", "a_en": "Ensure full compliance with the hygiene and safety regulations.", "a_vi": "Đảm bảo tuân thủ hoàn toàn các quy định về vệ sinh và an toàn."},
+        {"q_en": "The vendor offered us a highly competitive quotation this month.", "q_vi": "Khen báo giá rẻ", "a_en": "The vendor offered us a highly competitive quotation this month.", "a_vi": "Người bán đã cung cấp cho chúng ta một bảng báo giá có tính cạnh tranh rất cao trong tháng này."},
+        {"q_en": "We need to clear the old stock before ordering new supplies.", "q_vi": "Yêu cầu xả hàng tồn", "a_en": "We need to clear the old stock before ordering new supplies.", "a_vi": "Chúng ta cần xả hết hàng tồn kho cũ trước khi đặt mua vật tư mới."},
+        {"q_en": "Is the new purchasing software fully integrated yet?", "q_vi": "Hỏi phần mềm mới", "a_en": "Is the new purchasing software fully integrated yet?", "a_vi": "Phần mềm thu mua mới đã được tích hợp hoàn toàn chưa?"},
+        {"q_en": "Yes, it automates the entire supply chain management process.", "q_vi": "Trả lời về tính năng", "a_en": "Yes, it automates the entire supply chain management process.", "a_vi": "Vâng, nó tự động hóa toàn bộ quy trình quản lý chuỗi cung ứng."}
+      ]
+    },
+    {
+      "id": 44, "type": "sentence", "description": "Level 44: Thương Lượng & Ký Kết Hợp Đồng",
+      "questions": [
+        {"q_en": "We would like to negotiate the terms of our new partnership.", "q_vi": "Mời đàm phán", "a_en": "We would like to negotiate the terms of our new partnership.", "a_vi": "Chúng tôi muốn đàm phán các điều khoản cho mối quan hệ đối tác mới của chúng ta."},
+        {"q_en": "If we commit to a high volume, can you increase the discount?", "q_vi": "Ép chiết khấu theo SL", "a_en": "If we commit to a high volume, can you increase the discount?", "a_vi": "Nếu chúng tôi cam kết số lượng lớn, bạn có thể tăng mức chiết khấu không?"},
+        {"q_en": "A 10 percent margin is too tight for our business model.", "q_vi": "Chê biên lợi nhuận thấp", "a_en": "A 10 percent margin is too tight for our business model.", "a_vi": "Biên lợi nhuận 10% là quá eo hẹp cho mô hình kinh doanh của chúng tôi."},
+        {"q_en": "Let us find a mutual compromise that benefits both parties.", "q_vi": "Kêu gọi thỏa hiệp win-win", "a_en": "Let us find a mutual compromise that benefits both parties.", "a_vi": "Hãy cùng tìm ra một sự thỏa hiệp chung mang lại lợi ích cho đôi bên."},
+        {"q_en": "We stipulate that all deliveries must arrive before 8 AM.", "q_vi": "Ra điều kiện giao hàng", "a_en": "We stipulate that all deliveries must arrive before 8 AM.", "a_vi": "Chúng tôi quy định rõ rằng mọi chuyến giao hàng phải đến trước 8h sáng."},
+        {"q_en": "Any delay will incur a penalty of five percent per day.", "q_vi": "Báo điều khoản phạt", "a_en": "Any delay will incur a penalty of five percent per day.", "a_vi": "Bất kỳ sự chậm trễ nào sẽ phải chịu mức phạt 5% một ngày."},
+        {"q_en": "This clause guarantees the exclusivity of our resort's brand.", "q_vi": "Nói về điều khoản độc quyền", "a_en": "This clause guarantees the exclusivity of our resort's brand.", "a_vi": "Điều khoản này bảo đảm tính độc quyền cho thương hiệu resort của chúng tôi."},
+        {"q_en": "If you breach the contract, we have the right to terminate it.", "q_vi": "Cảnh cáo vi phạm", "a_en": "If you breach the contract, we have the right to terminate it.", "a_vi": "Nếu bạn vi phạm hợp đồng, chúng tôi có quyền chấm dứt nó."},
+        {"q_en": "Would you consider a three-year extension of the agreement?", "q_vi": "Mời gia hạn 3 năm", "a_en": "Would you consider a three-year extension of the agreement?", "a_vi": "Bạn có cân nhắc việc gia hạn thỏa thuận thêm 3 năm không?"},
+        {"q_en": "We require a signed NDA before revealing our marketing strategy.", "q_vi": "Đòi ký bảo mật", "a_en": "We require a signed NDA before revealing our marketing strategy.", "a_vi": "Chúng tôi yêu cầu một bản NDA đã được ký trước khi tiết lộ chiến lược tiếp thị."},
+        {"q_en": "Your proposal is very attractive, but we need time to review it.", "q_vi": "Khen nhưng câu giờ", "a_en": "Your proposal is very attractive, but we need time to review it.", "a_vi": "Bản đề xuất của bạn rất hấp dẫn, nhưng chúng tôi cần thời gian để xem xét nó."},
+        {"q_en": "The board of directors must approve this significant expenditure.", "q_vi": "Đổ lỗi cho sếp trên", "a_en": "The board of directors must approve this significant expenditure.", "a_vi": "Hội đồng quản trị phải phê duyệt khoản chi tiêu đáng kể này."},
+        {"q_en": "Can we revise section four regarding the payment conditions?", "q_vi": "Xin sửa điều khoản 4", "a_en": "Can we revise section four regarding the payment conditions?", "a_vi": "Chúng ta có thể chỉnh sửa phần bốn liên quan đến các điều kiện thanh toán không?"},
+        {"q_en": "We usually operate on a net thirty days payment cycle.", "q_vi": "Báo chu kỳ công nợ 30 ngày", "a_en": "We usually operate on a net thirty days payment cycle.", "a_vi": "Chúng tôi thường hoạt động theo chu kỳ thanh toán công nợ 30 ngày."},
+        {"q_en": "To build trust, we will waive the initial setup fee.", "q_vi": "Tặng phí khởi tạo", "a_en": "To build trust, we will waive the initial setup fee.", "a_vi": "Để xây dựng niềm tin, chúng tôi sẽ miễn khoản phí cài đặt ban đầu."},
+        {"q_en": "We offer a progressive commission structure based on your sales.", "q_vi": "Giới thiệu hoa hồng bậc thang", "a_en": "We offer a progressive commission structure based on your sales.", "a_vi": "Chúng tôi cung cấp một cấu trúc hoa hồng lũy tiến dựa trên doanh số của bạn."},
+        {"q_en": "This is our final offer. We cannot bargain any further.", "q_vi": "Chốt giá cuối", "a_en": "This is our final offer. We cannot bargain any further.", "a_vi": "Đây là lời đề nghị cuối cùng của chúng tôi. Chúng tôi không thể mặc cả thêm nữa."},
+        {"q_en": "I am confident that this alliance will generate massive profit.", "q_vi": "Tự tin về lợi nhuận", "a_en": "I am confident that this alliance will generate massive profit.", "a_vi": "Tôi tự tin rằng liên minh này sẽ tạo ra lợi nhuận khổng lồ."},
+        {"q_en": "Please sign the two original copies of the contract here.", "q_vi": "Yêu cầu ký 2 bản gốc", "a_en": "Please sign the two original copies of the contract here.", "a_vi": "Vui lòng ký vào hai bản gốc của hợp đồng tại đây."},
+        {"q_en": "Congratulations! I look forward to a successful collaboration.", "q_vi": "Chúc mừng hợp tác", "a_en": "Congratulations! I look forward to a successful collaboration.", "a_vi": "Chúc mừng! Tôi rất mong đợi một sự hợp tác thành công."}
+      ]
+    },
+    {
+      "id": 45, "type": "boss", "description": "Level 45: BOSS Đàm Phán (Đại lý Thực phẩm Chơi chiêu)",
+      "questions": [
+        {"q_en": "Hello, I am the CEO of FreshFarm. We supply organic vegetables.", "q_vi": "(Boss Thực Phẩm) Chào, tôi là CEO của FreshFarm. Chúng tôi cung cấp rau hữu cơ.", "a_en": "Welcome to Ocean Dunes. I am the Purchasing Manager. Please sit down.", "a_vi": "Chào mừng đến Ocean Dunes. Tôi là Trưởng phòng Thu mua. Xin mời ngồi." },
+        {"q_en": "We want to renew our contract, but we must increase our prices by 15%.", "q_vi": "Đòi tăng giá 15%", "a_en": "A 15% increase is unacceptable. Our budget cannot accommodate that margin.", "a_vi": "Mức tăng 15% là không thể chấp nhận được. Ngân sách của chúng tôi không thể đáp ứng biên độ đó." },
+        {"q_en": "Fuel and logistics costs have gone up. We have no choice.", "q_vi": "Viện lý do xăng tăng", "a_en": "I understand the market, but a 5% increase is the maximum we can accept.", "a_vi": "Tôi hiểu thị trường, nhưng mức tăng 5% là tối đa chúng tôi có thể chấp nhận." },
+        {"q_en": "If it is only 5%, we cannot guarantee early morning delivery at 6 AM.", "q_vi": "Dọa giao hàng trễ", "a_en": "Our kitchen operations stipulate that all fresh produce must arrive before 6 AM.", "a_vi": "Hoạt động bếp của chúng tôi quy định rõ mọi nông sản tươi phải đến trước 6h sáng." },
+        {"q_en": "Then we must compromise. How about a 10% increase?", "q_vi": "Hạ xuống 10%", "a_en": "I will agree to 8% if you grant us exclusivity on your premium strawberries.", "a_vi": "Tôi sẽ đồng ý 8% nếu bạn cấp cho chúng tôi độc quyền đối với loại dâu tây cao cấp của bạn." },
+        {"q_en": "Exclusive rights to our strawberries? That is a very high demand.", "q_vi": "Boss lưỡng lự", "a_en": "Ocean Dunes is your biggest client in this city. It is a fair trade.", "a_vi": "Ocean Dunes là khách hàng lớn nhất của bạn ở thành phố này. Đó là một cuộc trao đổi công bằng." },
+        {"q_en": "Fair enough. 8% increase and exclusive strawberries for you.", "q_vi": "Đồng ý chốt kèo", "a_en": "Excellent. Now, let's discuss the penalty clause for delayed shipments.", "a_vi": "Tuyệt vời. Bây giờ, hãy thảo luận về điều khoản phạt cho những lô hàng bị trễ." },
+        {"q_en": "We rarely delay! We don't need a strict penalty clause.", "q_vi": "Từ chối phạt trễ", "a_en": "Last month, your delivery truck arrived at 9 AM. Our breakfast was ruined.", "a_vi": "Tháng trước, xe tải giao hàng của bạn đến lúc 9h sáng. Bữa sáng của chúng tôi đã bị hỏng bét." },
+        {"q_en": "That was an accident. The truck had a flat tire on the highway.", "q_vi": "Đổ lỗi lủng lốp", "a_en": "To protect our guests, we must stipulate a 10% penalty for any delay over 1 hour.", "a_vi": "Để bảo vệ khách hàng, chúng tôi phải quy định phạt 10% cho bất kỳ sự chậm trễ nào quá 1 tiếng." },
+        {"q_en": "Make it a 5% penalty, and I will sign the agreement.", "q_vi": "Xin giảm mức phạt", "a_en": "We can agree to 5%, provided you notify us at least two hours in advance.", "a_vi": "Chúng tôi có thể đồng ý 5%, với điều kiện bạn phải báo trước cho chúng tôi ít nhất 2 giờ." },
+        {"q_en": "Agreed. Now, regarding payment terms. We want net 15 days.", "q_vi": "Đòi công nợ 15 ngày", "a_en": "Our corporate policy strictly requires a net 30 days payment cycle.", "a_vi": "Chính sách tập đoàn của chúng tôi yêu cầu nghiêm ngặt chu kỳ thanh toán công nợ 30 ngày." },
+        {"q_en": "30 days hurts our cash flow. We are a small farming syndicate.", "q_vi": "Than vãn kẹt tiền", "a_en": "If we maintain the 30-day cycle, I will increase our monthly order volume by 20%.", "a_vi": "Nếu chúng ta giữ chu kỳ 30 ngày, tôi sẽ tăng khối lượng đặt hàng hàng tháng của chúng ta lên 20%." },
+        {"q_en": "You will increase the volume by 20%? Are you sure?", "q_vi": "Boss bất ngờ vì đơn to", "a_en": "Yes, our resort is expanding. This partnership will bring you massive profits.", "a_vi": "Vâng, resort của chúng tôi đang mở rộng. Mối quan hệ đối tác này sẽ mang lại cho bạn lợi nhuận khổng lồ." },
+        {"q_en": "Okay, net 30 days is acceptable with the new volume.", "q_vi": "Chấp nhận công nợ 30", "a_en": "Perfect. I will have the legal team draft the revised contract right away.", "a_vi": "Hoàn hảo. Tôi sẽ yêu cầu đội pháp chế soạn thảo hợp đồng sửa đổi ngay lập tức." },
+        {"q_en": "When can we officially sign the new documents?", "q_vi": "Hỏi ngày ký", "a_en": "We can sign the two original copies tomorrow morning at 10 AM.", "a_vi": "Chúng ta có thể ký hai bản gốc vào sáng ngày mai lúc 10h." },
+        {"q_en": "I will be here. You drive a very hard bargain.", "q_vi": "Khen ngợi kỹ năng ép giá", "a_en": "It is my job to secure the best value for Ocean Dunes. Thank you for compromising.", "a_vi": "Nhiệm vụ của tôi là đảm bảo giá trị tốt nhất cho Ocean Dunes. Cảm ơn vì đã thỏa hiệp." },
+        {"q_en": "I respect that. Your guests are lucky to have fresh food.", "q_vi": "Khen đồ ăn ngon", "a_en": "Our culinary excellence is only possible thanks to top-tier suppliers like you.", "a_vi": "Sự xuất sắc về ẩm thực của chúng tôi chỉ có được nhờ vào những nhà cung cấp hàng đầu như bạn." },
+        {"q_en": "I look forward to another successful year together.", "q_vi": "Chúc hợp tác", "a_en": "Likewise. Let's make this year our most profitable one yet.", "a_vi": "Tôi cũng vậy. Hãy biến năm nay thành năm có lợi nhuận cao nhất từ trước đến nay của chúng ta." },
+        {"q_en": "See you tomorrow. Goodbye.", "q_vi": "Chào về", "a_en": "Goodbye. Have a safe drive back to the farm.", "a_vi": "Tạm biệt. Chúc bạn lái xe về trang trại an toàn." },
+        {"q_en": "(Shakes hand and leaves)", "q_vi": "Bắt tay rời đi", "a_en": "A very successful negotiation. The GM will be pleased.", "a_vi": "Một cuộc đàm phán rất thành công. Sếp GM sẽ hài lòng lắm đây." }
+      ]
+    },
+    {
+      "id": 46, "type": "vocab", "description": "Level 46: Từ vựng Quảng Cáo, Truyền Thông & Marketing",
+      "questions": [
+        {"q_en": "Campaign", "a_vi": "Chiến dịch (quảng cáo)"}, {"q_en": "Strategy", "a_vi": "Chiến lược"}, {"q_en": "Target audience", "a_vi": "Khách hàng mục tiêu"}, {"q_en": "Positioning", "a_vi": "Định vị (thương hiệu)"}, {"q_en": "Awareness", "a_vi": "Sự nhận diện / Nhận thức"}, {"q_en": "Engagement", "a_vi": "Sự tương tác (mạng xã hội)"}, {"q_en": "Reach", "a_vi": "Lượt tiếp cận"}, {"q_en": "Conversion", "a_vi": "Tỷ lệ chuyển đổi (ra đơn hàng)"}, {"q_en": "Metric", "a_vi": "Chỉ số đo lường"}, {"q_en": "Demographic", "a_vi": "Nhân khẩu học (độ tuổi, giới tính)"}, {"q_en": "Algorithm", "a_vi": "Thuật toán (của Facebook/Google)"}, {"q_en": "Viral", "a_vi": "Lan truyền nhanh chóng"}, {"q_en": "Sponsor", "a_vi": "Tài trợ / Nhà tài trợ"}, {"q_en": "Endorsement", "a_vi": "Sự chứng thực / Đại diện thương hiệu"}, {"q_en": "Influencer", "a_vi": "Người có sức ảnh hưởng (KOL)"}, {"q_en": "Press release", "a_vi": "Thông cáo báo chí"}, {"q_en": "Newsletter", "a_vi": "Bản tin nội bộ / Email quảng cáo"}, {"q_en": "Brochure", "a_vi": "Cuốn cẩm nang / Tờ rơi"}, {"q_en": "Testimonial", "a_vi": "Lời chứng thực (của khách hàng)"}, {"q_en": "Optimize", "a_vi": "Tối ưu hóa"}
+      ]
+    },
+    {
+      "id": 47, "type": "vocab", "description": "Level 47: Từ vựng Phân Tích Dữ Liệu & Doanh Thu (Revenue)",
+      "questions": [
+        {"q_en": "Revenue", "a_vi": "Doanh thu"}, {"q_en": "Profitability", "a_vi": "Khả năng sinh lời"}, {"q_en": "Occupancy", "a_vi": "Công suất phòng (Tỷ lệ lấp đầy)"}, {"q_en": "RevPAR", "a_vi": "Doanh thu trên mỗi phòng có sẵn"}, {"q_en": "ADR", "a_vi": "Giá phòng trung bình hàng ngày"}, {"q_en": "Forecast", "a_vi": "Dự báo (doanh thu/thời tiết)"}, {"q_en": "Budget", "a_vi": "Ngân sách"}, {"q_en": "Variance", "a_vi": "Sự chênh lệch / Sai số"}, {"q_en": "Yield", "a_vi": "Năng suất / Sản lượng"}, {"q_en": "Maximize", "a_vi": "Tối đa hóa"}, {"q_en": "Fluctuate", "a_vi": "Biến động / Dao động"}, {"q_en": "Trend", "a_vi": "Xu hướng"}, {"q_en": "Dynamic pricing", "a_vi": "Định giá linh hoạt (theo nhu cầu)"}, {"q_en": "Competitor", "a_vi": "Đối thủ cạnh tranh"}, {"q_en": "Market share", "a_vi": "Thị phần"}, {"q_en": "Segment", "a_vi": "Phân khúc (thị trường)"}, {"q_en": "Allocate", "a_vi": "Phân bổ (nguồn lực/ngân sách)"}, {"q_en": "Overhead", "a_vi": "Chi phí chung / Chi phí cố định"}, {"q_en": "Expenditure", "a_vi": "Khoản chi tiêu"}, {"q_en": "Surplus", "a_vi": "Thặng dư / Số dư thừa"}
+      ]
+    },
+    {
+      "id": 48, "type": "sentence", "description": "Level 48: Thảo luận Chiến lược Marketing & Quảng Cáo",
+      "questions": [
+        {"q_en": "We need to launch a new campaign for the upcoming summer season.", "q_vi": "Khởi động chiến dịch hè", "a_en": "We need to launch a new campaign for the upcoming summer season.", "a_vi": "Chúng ta cần khởi động một chiến dịch mới cho mùa hè sắp tới."},
+        {"q_en": "Our primary target audience is young families from Ho Chi Minh City.", "q_vi": "Xác định tệp khách", "a_en": "Our primary target audience is young families from Ho Chi Minh City.", "a_vi": "Khách hàng mục tiêu chính của chúng ta là các gia đình trẻ từ TP.HCM."},
+        {"q_en": "Brand positioning is crucial to stand out among our competitors.", "q_vi": "Khẳng định định vị", "a_en": "Brand positioning is crucial to stand out among our competitors.", "a_vi": "Định vị thương hiệu là cực kỳ quan trọng để nổi bật giữa các đối thủ cạnh tranh."},
+        {"q_en": "The recent Facebook video went viral and generated massive engagement.", "q_vi": "Khoe clip viral", "a_en": "The recent Facebook video went viral and generated massive engagement.", "a_vi": "Video Facebook gần đây đã lan truyền nhanh chóng và tạo ra lượng tương tác khổng lồ."},
+        {"q_en": "However, high reach does not always guarantee a high conversion rate.", "q_vi": "Nhắc nhở về chuyển đổi", "a_en": "However, high reach does not always guarantee a high conversion rate.", "a_vi": "Tuy nhiên, lượt tiếp cận cao không phải lúc nào cũng đảm bảo tỷ lệ chuyển đổi cao."},
+        {"q_en": "We must optimize our website to capture more direct bookings.", "q_vi": "Tối ưu web để có khách tự book", "a_en": "We must optimize our website to capture more direct bookings.", "a_vi": "Chúng ta phải tối ưu hóa trang web để thu hút nhiều đơn đặt phòng trực tiếp hơn."},
+        {"q_en": "Let's invite three famous travel influencers to endorse our resort.", "q_vi": "Mời KOL review", "a_en": "Let's invite three famous travel influencers to endorse our resort.", "a_vi": "Hãy mời 3 người có sức ảnh hưởng về du lịch nổi tiếng để đại diện chứng thực cho resort của chúng ta."},
+        {"q_en": "They will post positive testimonials on their Instagram and TikTok.", "q_vi": "Yêu cầu KOL đăng bài", "a_en": "They will post positive testimonials on their Instagram and TikTok.", "a_vi": "Họ sẽ đăng những lời chứng thực tích cực trên Instagram và TikTok của mình."},
+        {"q_en": "Has the PR department drafted the press release for the new Spa?", "q_vi": "Hỏi thông cáo báo chí Spa mới", "a_en": "Has the PR department drafted the press release for the new Spa?", "a_vi": "Phòng PR đã soạn thông cáo báo chí cho khu Spa mới chưa?"},
+        {"q_en": "Yes, we will distribute it to all major lifestyle magazines tomorrow.", "q_vi": "Hứa gửi báo", "a_en": "Yes, we will distribute it to all major lifestyle magazines tomorrow.", "a_vi": "Vâng, chúng tôi sẽ phân phối nó đến tất cả các tạp chí phong cách sống lớn vào ngày mai."},
+        {"q_en": "Please include the updated metrics in the monthly newsletter.", "q_vi": "Nhắc gửi bản tin số liệu", "a_en": "Please include the updated metrics in the monthly newsletter.", "a_vi": "Vui lòng đưa các số liệu đo lường đã cập nhật vào bản tin nội bộ hàng tháng."},
+        {"q_en": "The algorithm favored our visually appealing aesthetic photos.", "q_vi": "Khen ảnh đẹp lên xu hướng", "a_en": "The algorithm favored our visually appealing aesthetic photos.", "a_vi": "Thuật toán đã ưu ái những bức ảnh có tính thẩm mỹ bắt mắt của chúng ta."},
+        {"q_en": "We are allocating 20% of the budget to sponsor local events.", "q_vi": "Chi tiền tài trợ sự kiện", "a_en": "We are allocating 20% of the budget to sponsor local events.", "a_vi": "Chúng tôi đang phân bổ 20% ngân sách để tài trợ cho các sự kiện địa phương."},
+        {"q_en": "Understanding the demographic data is key to targeted advertising.", "q_vi": "Tầm quan trọng của Data nhân khẩu", "a_en": "Understanding the demographic data is key to targeted advertising.", "a_vi": "Thấu hiểu dữ liệu nhân khẩu học là chìa khóa cho quảng cáo nhắm mục tiêu."},
+        {"q_en": "We need to print 5000 new brochures for the upcoming travel fair.", "q_vi": "In tờ rơi cho hội chợ", "a_en": "We need to print 5000 new brochures for the upcoming travel fair.", "a_vi": "Chúng ta cần in 5000 cuốn cẩm nang mới cho hội chợ du lịch sắp tới."},
+        {"q_en": "The marketing strategy must align with our core sustainable values.", "q_vi": "Marketing phải đi đôi với giá trị cốt lõi xanh", "a_en": "The marketing strategy must align with our core sustainable values.", "a_vi": "Chiến lược tiếp thị phải phù hợp với các giá trị bền vững cốt lõi của chúng ta."},
+        {"q_en": "Offer a limited-time promo code to create a sense of urgency.", "q_vi": "Dùng chiêu FOMO giảm giá", "a_en": "Offer a limited-time promo code to create a sense of urgency.", "a_vi": "Hãy tung ra một mã giảm giá có giới hạn thời gian để tạo cảm giác cấp bách."},
+        {"q_en": "A successful campaign requires a seamless execution across all channels.", "q_vi": "Phải chạy đa kênh mượt mà", "a_en": "A successful campaign requires a seamless execution across all channels.", "a_vi": "Một chiến dịch thành công đòi hỏi sự thực thi liền mạch trên mọi kênh."},
+        {"q_en": "Track the ROI carefully to ensure the expenditure is justified.", "q_vi": "Nhắc đo lường hiệu quả", "a_en": "Track the ROI carefully to ensure the expenditure is justified.", "a_vi": "Theo dõi ROI (Tỷ suất hoàn vốn) cẩn thận để đảm bảo khoản chi tiêu là hợp lý."},
+        {"q_en": "Ocean Dunes is quickly becoming the quintessential destination in Vietnam.", "q_vi": "Slogan tham vọng", "a_en": "Ocean Dunes is quickly becoming the quintessential destination in Vietnam.", "a_vi": "Ocean Dunes đang nhanh chóng trở thành điểm đến tinh túy nhất tại Việt Nam."}
+      ]
+    },
+    {
+      "id": 49, "type": "sentence", "description": "Level 49: Phân tích Doanh Thu & Chỉ số Khách sạn (Revenue Management)",
+      "questions": [
+        {"q_en": "The occupancy rate reached 95% during the national holiday.", "q_vi": "Báo cáo full phòng lễ", "a_en": "The occupancy rate reached 95% during the national holiday.", "a_vi": "Công suất phòng đã đạt 95% trong suốt dịp lễ quốc gia."},
+        {"q_en": "Our main objective is to maximize RevPAR for the third quarter.", "q_vi": "Mục tiêu RevPAR", "a_en": "Our main objective is to maximize RevPAR for the third quarter.", "a_vi": "Mục tiêu chính của chúng ta là tối đa hóa doanh thu trên mỗi phòng có sẵn cho quý ba."},
+        {"q_en": "We must increase the Average Daily Rate (ADR) without losing market share.", "q_vi": "Mục tiêu tăng giá bán", "a_en": "We must increase the Average Daily Rate (ADR) without losing market share.", "a_vi": "Chúng ta phải tăng Giá phòng trung bình hàng ngày (ADR) mà không làm mất thị phần."},
+        {"q_en": "The revenue forecast for next month shows a positive upward trend.", "q_vi": "Dự báo doanh thu tăng", "a_en": "The revenue forecast for next month shows a positive upward trend.", "a_vi": "Dự báo doanh thu cho tháng tới cho thấy một xu hướng tăng trưởng tích cực."},
+        {"q_en": "Dynamic pricing helps us adjust rates based on fluctuating demand.", "q_vi": "Giải thích định giá động", "a_en": "Dynamic pricing helps us adjust rates based on fluctuating demand.", "a_vi": "Việc định giá linh hoạt giúp chúng ta điều chỉnh giá dựa trên nhu cầu biến động."},
+        {"q_en": "There is a significant variance between the projected and actual profit.", "q_vi": "Cảnh báo hụt lợi nhuận", "a_en": "There is a significant variance between the projected and actual profit.", "a_vi": "Có một sự chênh lệch đáng kể giữa lợi nhuận dự kiến và lợi nhuận thực tế."},
+        {"q_en": "We need to cut overhead costs to improve overall profitability.", "q_vi": "Lệnh cắt giảm chi phí", "a_en": "We need to cut overhead costs to improve overall profitability.", "a_vi": "Chúng ta cần cắt giảm các chi phí chung để cải thiện khả năng sinh lời tổng thể."},
+        {"q_en": "The corporate segment generated the highest yield this year.", "q_vi": "Khen tệp khách B2B", "a_en": "The corporate segment generated the highest yield this year.", "a_vi": "Phân khúc khách hàng doanh nghiệp đã tạo ra năng suất cao nhất trong năm nay."},
+        {"q_en": "Our competitors are offering heavy discounts to attract guests.", "q_vi": "Cảnh báo đối thủ phá giá", "a_en": "Our competitors are offering heavy discounts to attract guests.", "a_vi": "Các đối thủ cạnh tranh của chúng ta đang đưa ra mức giảm giá sâu để thu hút khách."},
+        {"q_en": "Do not undercut our prices. Focus on selling value and experience.", "q_vi": "Cấm phá giá, bán giá trị", "a_en": "Do not undercut our prices. Focus on selling value and experience.", "a_vi": "Đừng bán phá giá. Hãy tập trung vào việc bán giá trị và trải nghiệm."},
+        {"q_en": "The marketing expenditure exceeded the allocated budget by 5%.", "q_vi": "Báo lố ngân sách Ads", "a_en": "The marketing expenditure exceeded the allocated budget by 5%.", "a_vi": "Khoản chi tiêu tiếp thị đã vượt quá ngân sách được phân bổ 5%."},
+        {"q_en": "Fortunately, the F&B department reported a massive budget surplus.", "q_vi": "Khen F&B dư tiền", "a_en": "Fortunately, the F&B department reported a massive budget surplus.", "a_vi": "May mắn thay, bộ phận F&B đã báo cáo một khoản thặng dư ngân sách khổng lồ."},
+        {"q_en": "We will reinvest the surplus into upgrading the spa facilities.", "q_vi": "Đầu tư lại tiền lãi", "a_en": "We will reinvest the surplus into upgrading the spa facilities.", "a_vi": "Chúng ta sẽ tái đầu tư số tiền dư thừa vào việc nâng cấp cơ sở vật chất spa."},
+        {"q_en": "Check the historical data to predict the booking curve accurately.", "q_vi": "Nhắc xem data cũ", "a_en": "Check the historical data to predict the booking curve accurately.", "a_vi": "Hãy kiểm tra dữ liệu lịch sử để dự đoán đường cong lượng đặt phòng một cách chính xác."},
+        {"q_en": "Cancellations have heavily impacted our net revenue this week.", "q_vi": "Than phiền vì hủy phòng nhiều", "a_en": "Cancellations have heavily impacted our net revenue this week.", "a_vi": "Những ca hủy phòng đã ảnh hưởng nặng nề đến doanh thu ròng của chúng ta trong tuần này."},
+        {"q_en": "Enforce a stricter non-refundable policy for peak season dates.", "q_vi": "Lệnh siết chặt policy hoàn tiền", "a_en": "Enforce a stricter non-refundable policy for peak season dates.", "a_vi": "Hãy thi hành một chính sách không hoàn tiền nghiêm ngặt hơn cho những ngày mùa cao điểm."},
+        {"q_en": "We successfully captured a larger share of the international market.", "q_vi": "Khoe thành tích kiếm khách Tây", "a_en": "We successfully captured a larger share of the international market.", "a_vi": "Chúng ta đã thành công chiếm được một phần lớn hơn của thị trường quốc tế."},
+        {"q_en": "The total gross profit is incredibly astonishing this quarter.", "q_vi": "Khen lãi to", "a_en": "The total gross profit is incredibly astonishing this quarter.", "a_vi": "Tổng lợi nhuận gộp thật đáng kinh ngạc trong quý này."},
+        {"q_en": "Keep monitoring the daily reports to ensure we hit our milestones.", "q_vi": "Nhắc theo dõi báo cáo ngày", "a_en": "Keep monitoring the daily reports to ensure we hit our milestones.", "a_vi": "Tiếp tục giám sát các báo cáo hàng ngày để đảm bảo chúng ta đạt được các cột mốc của mình."},
+        {"q_en": "Data-driven decisions will lead us to sustainable financial success.", "q_vi": "Châm ngôn sếp lớn", "a_en": "Data-driven decisions will lead us to sustainable financial success.", "a_vi": "Các quyết định dựa trên dữ liệu sẽ dẫn chúng ta đến thành công tài chính bền vững."}
+      ]
+    },
+    {
+      "id": 50, "type": "boss", "description": "Level 50: BOSS Cổ Đông (Đại Diện Chủ Đầu Tư Xét Duyệt Ngân Sách)",
+      "questions": [
+        {"q_en": "Good morning. As a major stakeholder, I am here to review the Q3 financial report.", "q_vi": "(Boss Cổ Đông) Chào. Là một cổ đông lớn, tôi ở đây để xem xét báo cáo tài chính Quý 3.", "a_en": "Welcome, sir. I have the complete dashboard ready for your evaluation.", "a_vi": "Chào mừng ngài. Tôi đã chuẩn bị sẵn bảng điều khiển tổng hợp cho việc đánh giá của ngài." },
+        {"q_en": "I see that our occupancy rate dropped by 5% last month. Why?", "q_vi": "Soi lỗi giảm khách", "a_en": "It was due to the unexpected monsoon storms, which led to numerous flight cancellations.", "a_vi": "Đó là do những cơn bão gió mùa ngoài dự kiến, dẫn đến vô số chuyến bay bị hủy." },
+        {"q_en": "Weather is an excuse. Our competitors didn't lose that much market share.", "q_vi": "Chê bai lý do thời tiết", "a_en": "They applied heavy discounts. We chose to maintain our ADR to protect brand positioning.", "a_vi": "Họ đã áp dụng giảm giá sâu. Chúng ta chọn duy trì giá phòng trung bình (ADR) để bảo vệ định vị thương hiệu." },
+        {"q_en": "Protecting the brand is good, but I want to see profitability.", "q_vi": "Boss đòi thấy tiền lãi", "a_en": "Despite the drop in occupancy, our overall RevPAR increased by 2% due to dynamic pricing.", "a_vi": "Bất chấp sự sụt giảm công suất, tổng doanh thu trên mỗi phòng (RevPAR) của chúng ta tăng 2% nhờ định giá linh hoạt." },
+        {"q_en": "Let's talk about expenditures. The marketing budget is massively overblown.", "q_vi": "Bắt bẻ chi phí Ads quá cao", "a_en": "We allocated extra funds to a viral campaign featuring top-tier travel influencers.", "a_vi": "Chúng tôi đã phân bổ thêm quỹ cho một chiến dịch lan truyền có sự góp mặt của các KOL du lịch hàng đầu." },
+        {"q_en": "Did that viral video actually generate any direct conversions?", "q_vi": "Hỏi có ra đơn không", "a_en": "Yes, our direct website bookings surged by 30%, saving us high OTA commissions.", "a_vi": "Vâng, lượng đặt phòng trực tiếp trên web tăng vọt 30%, giúp chúng ta tiết kiệm lượng lớn tiền hoa hồng cho đại lý." },
+        {"q_en": "Hmm. 30% is an impressive metric. What about the F&B overhead costs?", "q_vi": "Chuyển sang soi chi phí nhà hàng", "a_en": "We successfully negotiated a new contract with our suppliers, cutting food costs by 8%.", "a_vi": "Chúng tôi đã đàm phán thành công hợp đồng mới với các nhà cung cấp, cắt giảm 8% chi phí thực phẩm." },
+        {"q_en": "That is what I like to hear. Now, what is your strategy for Q4?", "q_vi": "Hỏi chiến lược quý tới", "a_en": "We will target the corporate segment. They yield higher margins and stable bookings.", "a_vi": "Chúng tôi sẽ nhắm vào phân khúc khách hàng doanh nghiệp. Họ mang lại biên lợi nhuận cao và lượng đặt phòng ổn định." },
+        {"q_en": "Corporate clients demand flawless execution. Is your team trained for that?", "q_vi": "Nghi ngờ năng lực nhân sự", "a_en": "We have standardized our onboarding protocol. Our staff is empowered to deliver excellence.", "a_vi": "Chúng tôi đã tiêu chuẩn hóa quy trình hội nhập. Nhân viên được trao quyền để mang lại sự xuất sắc." },
+        {"q_en": "I noticed the staff turnover rate is slightly higher this year.", "q_vi": "Soi tỷ lệ NV nghỉ việc", "a_en": "We dismissed some underperforming staff to raise the benchmark of our hospitality.", "a_vi": "Chúng tôi đã sa thải một vài nhân viên làm việc kém hiệu quả để nâng cao tiêu chuẩn phục vụ." },
+        {"q_en": "Quality control is crucial. Ensure you retain the top talent.", "q_vi": "Nhắc nhở giữ người tài", "a_en": "We have implemented a new reward system based on positive guest testimonials.", "a_vi": "Chúng tôi đã thực thi một hệ thống khen thưởng mới dựa trên những lời chứng thực tích cực của khách." },
+        {"q_en": "Good initiative. I also want to review the budget for the upcoming renovation.", "q_vi": "Đòi xem ngân sách sửa KS", "a_en": "The architectural blueprint and the quotation are in the second folder, sir.", "a_vi": "Bản thiết kế kiến trúc và bảng báo giá nằm ở thư mục thứ hai thưa ngài." },
+        {"q_en": "Half a million dollars for new marble and chandeliers? That's too much.", "q_vi": "Chê sửa KS đắt", "a_en": "It is an investment in our aesthetic. It will allow us to raise room rates by 15%.", "a_vi": "Đó là khoản đầu tư vào tính thẩm mỹ của chúng ta. Nó sẽ cho phép ta tăng giá phòng lên 15%." },
+        {"q_en": "If you guarantee a 15% rate increase, I will authorize this expenditure.", "q_vi": "Chấp nhận chi tiền với điều kiện", "a_en": "You have my word. We will maximize the return on investment within two years.", "a_vi": "Tôi xin hứa. Chúng tôi sẽ tối đa hóa tỷ suất hoàn vốn trong vòng 2 năm." },
+        {"q_en": "I am trusting your judgment. Don't let the board of directors down.", "q_vi": "Cảnh cáo nhẹ", "a_en": "I appreciate your confidence. We are fully committed to driving sustainable profit.", "a_vi": "Tôi trân trọng sự tin tưởng của ngài. Chúng tôi hoàn toàn cam kết thúc đẩy lợi nhuận bền vững." },
+        {"q_en": "One last thing. Ensure the legal team reviews all new vendor contracts.", "q_vi": "Dặn dò pháp lý", "a_en": "All contracts have clear penalty clauses and are strictly audited for compliance.", "a_vi": "Mọi hợp đồng đều có điều khoản phạt rõ ràng và được kiểm toán tuân thủ nghiêm ngặt." },
+        {"q_en": "Excellent. Your presentation was very convincing. Keep up the synergy.", "q_vi": "Boss hài lòng", "a_en": "Thank you, sir. I will send the finalized forecast to your office tomorrow.", "a_vi": "Cảm ơn ngài. Tôi sẽ gửi bản dự báo đã chốt đến văn phòng ngài vào ngày mai." },
+        {"q_en": "I will endorse the budget. Make Ocean Dunes the quintessential resort in Asia.", "q_vi": "Sếp chốt duyệt tiền", "a_en": "That is our ultimate destination, sir. Thank you for your continued support.", "a_vi": "Đó là đích đến tối thượng của chúng tôi thưa ngài. Cảm ơn sự ủng hộ liên tục của ngài." },
+        {"q_en": "I will see you at the next board meeting.", "q_vi": "Hẹn gặp lại", "a_en": "Have a safe and pleasant trip back to headquarters.", "a_vi": "Chúc ngài có một chuyến đi an toàn và vui vẻ về lại trụ sở chính." },
+        {"q_en": "(Leaves the meeting room)", "q_vi": "Boss rời đi", "a_en": "(Sighs in relief) Another successful audit. Time to get to work.", "a_vi": "(Thở phào) Lại một cuộc kiểm toán thành công nữa. Tới lúc làm việc rồi." }
+      ]
+    }
+  ]
+}
