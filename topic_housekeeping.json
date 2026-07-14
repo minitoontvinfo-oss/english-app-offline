@@ -1,0 +1,337 @@
+{
+  "id": "topic_housekeeping",
+  "title": "🛏️ Buồng Phòng & Dịch Vụ",
+  "icon": "🧹",
+  "color": "#16a085",
+  "nodes": [
+    {
+      "id": 1,
+      "type": "vocab",
+      "description": "Level 1: Từ vựng Vật dụng trong phòng cơ bản",
+      "questions": [
+        { "q_en": "Bed", "a_vi": "Giường" },
+        { "q_en": "Pillow", "a_vi": "Cái gối" },
+        { "q_en": "Blanket", "a_vi": "Chăn / Mền" },
+        { "q_en": "Sheet", "a_vi": "Ga trải giường" },
+        { "q_en": "Towel", "a_vi": "Khăn tắm" },
+        { "q_en": "Soap", "a_vi": "Xà phòng" },
+        { "q_en": "Shampoo", "a_vi": "Dầu gội đầu" },
+        { "q_en": "Toothbrush", "a_vi": "Bàn chải đánh răng" },
+        { "q_en": "Toothpaste", "a_vi": "Kem đánh răng" },
+        { "q_en": "Toilet paper", "a_vi": "Giấy vệ sinh" },
+        { "q_en": "Trash can", "a_vi": "Thùng rác" },
+        { "q_en": "Hanger", "a_vi": "Móc treo quần áo" },
+        { "q_en": "Wardrobe", "a_vi": "Tủ quần áo" },
+        { "q_en": "Mirror", "a_vi": "Cái gương" },
+        { "q_en": "Hairdryer", "a_vi": "Máy sấy tóc" },
+        { "q_en": "Iron", "a_vi": "Bàn ủi" },
+        { "q_en": "Remote control", "a_vi": "Điều khiển từ xa" },
+        { "q_en": "Key card", "a_vi": "Thẻ khóa phòng" },
+        { "q_en": "Do Not Disturb", "a_vi": "Biển Không làm phiền" },
+        { "q_en": "Make up room", "a_vi": "Biển Yêu cầu dọn phòng" }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "vocab",
+      "description": "Level 2: Từ vựng Trạng thái & Vệ sinh",
+      "questions": [
+        { "q_en": "Clean", "a_vi": "Sạch sẽ / Dọn dẹp" },
+        { "q_en": "Dirty", "a_vi": "Dơ bẩn" },
+        { "q_en": "Messy", "a_vi": "Bừa bộn" },
+        { "q_en": "Tidy", "a_vi": "Gọn gàng / Ngăn nắp" },
+        { "q_en": "Dust", "a_vi": "Bụi" },
+        { "q_en": "Stain", "a_vi": "Vết bẩn / Vết ố" },
+        { "q_en": "Spill", "a_vi": "Tràn / Đổ (nước)" },
+        { "q_en": "Wet", "a_vi": "Ướt" },
+        { "q_en": "Dry", "a_vi": "Khô" },
+        { "q_en": "Smell", "a_vi": "Mùi (thường là mùi hôi)" },
+        { "q_en": "Fresh", "a_vi": "Thơm mát / Trong lành" },
+        { "q_en": "Empty", "a_vi": "Trống rỗng / Hết" },
+        { "q_en": "Full", "a_vi": "Đầy" },
+        { "q_en": "Replace", "a_vi": "Thay thế" },
+        { "q_en": "Refill", "a_vi": "Làm đầy lại / Bơm thêm" },
+        { "q_en": "Vacuum", "a_vi": "Hút bụi" },
+        { "q_en": "Sweep", "a_vi": "Quét (nhà)" },
+        { "q_en": "Mop", "a_vi": "Lau (nhà)" },
+        { "q_en": "Wipe", "a_vi": "Lau chùi (bề mặt)" },
+        { "q_en": "Wash", "a_vi": "Giặt / Rửa" }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "sentence",
+      "description": "Level 3: Mẫu câu Giao tiếp khi dọn phòng",
+      "questions": [
+        { "q_en": "Housekeeping! May I come in?", "q_vi": "Nhân viên buồng phòng gõ cửa", "a_en": "Housekeeping! May I come in?", "a_vi": "Dọn phòng đây ạ! Tôi có thể vào không?" },
+        { "q_en": "Yes, please come in.", "q_vi": "Khách đồng ý cho vào", "a_en": "Yes, please come in.", "a_vi": "Vâng, xin mời vào." },
+        { "q_en": "Would you like your room cleaned now?", "q_vi": "Hỏi khách có muốn dọn phòng không", "a_en": "Would you like your room cleaned now?", "a_vi": "Quý khách có muốn dọn phòng bây giờ không?" },
+        { "q_en": "Could you come back in an hour?", "q_vi": "Khách xin dọn sau", "a_en": "Could you come back in an hour?", "a_vi": "Bạn có thể quay lại sau một tiếng nữa được không?" },
+        { "q_en": "Certainly, sir. I will return later.", "q_vi": "Nhân viên đồng ý", "a_en": "Certainly, sir. I will return later.", "a_vi": "Chắc chắn rồi thưa ngài. Tôi sẽ quay lại sau." },
+        { "q_en": "I need fresh towels, please.", "q_vi": "Khách xin khăn mới", "a_en": "I need fresh towels, please.", "a_vi": "Cho tôi xin khăn tắm mới." },
+        { "q_en": "Here are some clean towels for you.", "q_vi": "Đưa khăn cho khách", "a_en": "Here are some clean towels for you.", "a_vi": "Đây là khăn tắm sạch cho quý khách." },
+        { "q_en": "Could you change the bed sheets?", "q_vi": "Khách nhờ thay ga giường", "a_en": "Could you change the bed sheets?", "a_vi": "Bạn có thể thay ga trải giường được không?" },
+        { "q_en": "Of course. I will change them right away.", "q_vi": "Nhân viên đồng ý thay ga", "a_en": "Of course. I will change them right away.", "a_vi": "Tất nhiên rồi. Tôi sẽ thay chúng ngay lập tức." },
+        { "q_en": "We are out of toilet paper.", "q_vi": "Khách báo hết giấy vệ sinh", "a_en": "We are out of toilet paper.", "a_vi": "Chúng tôi hết giấy vệ sinh rồi." },
+        { "q_en": "I will restock the toilet paper for you.", "q_vi": "Nhân viên hứa bổ sung giấy", "a_en": "I will restock the toilet paper for you.", "a_vi": "Tôi sẽ bổ sung giấy vệ sinh cho quý khách." },
+        { "q_en": "Please empty the trash can.", "q_vi": "Khách nhờ đổ rác", "a_en": "Please empty the trash can.", "a_vi": "Vui lòng đổ thùng rác giúp tôi." },
+        { "q_en": "Do you need any extra soap or shampoo?", "q_vi": "Hỏi khách có cần thêm xà phòng/dầu gội không", "a_en": "Do you need any extra soap or shampoo?", "a_vi": "Quý khách có cần thêm xà phòng hay dầu gội không?" },
+        { "q_en": "Yes, two bottles of shampoo, please.", "q_vi": "Khách xin thêm dầu gội", "a_en": "Yes, two bottles of shampoo, please.", "a_vi": "Vâng, cho tôi hai chai dầu gội nhé." },
+        { "q_en": "I spilled some coffee on the carpet.", "q_vi": "Khách làm đổ cà phê", "a_en": "I spilled some coffee on the carpet.", "a_vi": "Tôi làm đổ một ít cà phê lên thảm." },
+        { "q_en": "Don't worry, I will clean it up.", "q_vi": "Nhân viên trấn an khách", "a_en": "Don't worry, I will clean it up.", "a_vi": "Đừng lo, tôi sẽ dọn dẹp nó." },
+        { "q_en": "Is there anything else I can do for you?", "q_vi": "Hỏi khách cần giúp gì thêm không", "a_en": "Is there anything else I can do for you?", "a_vi": "Tôi có thể làm gì khác cho quý khách không?" },
+        { "q_en": "No, that's all. Thank you.", "q_vi": "Khách báo xong", "a_en": "No, that's all. Thank you.", "a_vi": "Không, thế là đủ rồi. Cảm ơn bạn." },
+        { "q_en": "You have a 'Do Not Disturb' sign on your door.", "q_vi": "Nhắc nhở khách về biển DND", "a_en": "You have a 'Do Not Disturb' sign on your door.", "a_vi": "Quý khách có treo biển 'Không làm phiền' trên cửa." },
+        { "q_en": "Oh, I forgot to remove it. You can clean now.", "q_vi": "Khách báo quên tháo biển", "a_en": "Oh, I forgot to remove it. You can clean now.", "a_vi": "Ồ, tôi quên tháo nó ra. Bạn có thể dọn bây giờ." }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "sentence",
+      "description": "Level 4: Mẫu câu Xử lý sự cố trong phòng",
+      "questions": [
+        { "q_en": "The air conditioner is not working properly.", "q_vi": "Khách báo máy lạnh hỏng", "a_en": "The air conditioner is not working properly.", "a_vi": "Máy điều hòa không hoạt động bình thường." },
+        { "q_en": "I will call the maintenance team to check it.", "q_vi": "Nhân viên hứa gọi kỹ thuật", "a_en": "I will call the maintenance team to check it.", "a_vi": "Tôi sẽ gọi đội bảo trì đến kiểm tra nó." },
+        { "q_en": "There is no hot water in the shower.", "q_vi": "Khách báo mất nước nóng", "a_en": "There is no hot water in the shower.", "a_vi": "Không có nước nóng trong vòi hoa sen." },
+        { "q_en": "The TV remote control has no batteries.", "q_vi": "Khách báo remote hết pin", "a_en": "The TV remote control has no batteries.", "a_vi": "Điều khiển TV không có pin." },
+        { "q_en": "I will bring you some new batteries right away.", "q_vi": "Hứa mang pin mới", "a_en": "I will bring you some new batteries right away.", "a_vi": "Tôi sẽ mang cho quý khách vài cục pin mới ngay." },
+        { "q_en": "The sink in the bathroom is clogged.", "q_vi": "Khách báo bồn rửa mặt tắc", "a_en": "The sink in the bathroom is clogged.", "a_vi": "Bồn rửa mặt trong phòng tắm bị tắc." },
+        { "q_en": "The light bulb in the reading lamp is broken.", "q_vi": "Khách báo bóng đèn cháy", "a_en": "The light bulb in the reading lamp is broken.", "a_vi": "Bóng đèn ở đèn đọc sách bị hỏng rồi." },
+        { "q_en": "I will inform the technician to replace it.", "q_vi": "Hứa gọi kỹ thuật thay đèn", "a_en": "I will inform the technician to replace it.", "a_vi": "Tôi sẽ báo cho kỹ thuật viên để thay nó." },
+        { "q_en": "My room key card is not opening the door.", "q_vi": "Khách báo thẻ không mở được cửa", "a_en": "My room key card is not opening the door.", "a_vi": "Thẻ khóa phòng của tôi không mở được cửa." },
+        { "q_en": "Please go to the reception to reactivate your card.", "q_vi": "Hướng dẫn khách ra lễ tân", "a_en": "Please go to the reception to reactivate your card.", "a_vi": "Vui lòng đến quầy lễ tân để kích hoạt lại thẻ của ngài." },
+        { "q_en": "The safe box is locked and I cannot open it.", "q_vi": "Khách báo két sắt bị khóa", "a_en": "The safe box is locked and I cannot open it.", "a_vi": "Két sắt bị khóa và tôi không thể mở nó." },
+        { "q_en": "Our security guard will come and assist you.", "q_vi": "Hứa gọi bảo vệ hỗ trợ", "a_en": "Our security guard will come and assist you.", "a_vi": "Bảo vệ của chúng tôi sẽ đến và hỗ trợ ngài." },
+        { "q_en": "There is a strange smell coming from the minibar.", "q_vi": "Khách báo mùi lạ từ tủ lạnh", "a_en": "There is a strange smell coming from the minibar.", "a_vi": "Có một mùi lạ bốc ra từ tủ lạnh nhỏ." },
+        { "q_en": "I will clean the minibar and check for spoiled items.", "q_vi": "Hứa dọn tủ lạnh", "a_en": "I will clean the minibar and check for spoiled items.", "a_vi": "Tôi sẽ dọn tủ lạnh và kiểm tra xem có đồ bị hỏng không." },
+        { "q_en": "The Wi-Fi signal in my room is very weak.", "q_vi": "Khách than Wi-Fi yếu", "a_en": "The Wi-Fi signal in my room is very weak.", "a_vi": "Tín hiệu Wi-Fi trong phòng tôi rất yếu." },
+        { "q_en": "I will report this to the IT department.", "q_vi": "Hứa báo IT", "a_en": "I will report this to the IT department.", "a_vi": "Tôi sẽ báo cáo việc này cho bộ phận IT." },
+        { "q_en": "The neighbors are making too much noise.", "q_vi": "Khách phàn nàn phòng bên ồn", "a_en": "The neighbors are making too much noise.", "a_vi": "Những người hàng xóm đang làm ồn quá nhiều." },
+        { "q_en": "I will politely ask them to keep the volume down.", "q_vi": "Hứa nhắc nhở phòng bên", "a_en": "I will politely ask them to keep the volume down.", "a_vi": "Tôi sẽ lịch sự yêu cầu họ giảm âm lượng xuống." },
+        { "q_en": "I accidentally broke a glass. Please be careful.", "q_vi": "Khách báo làm vỡ ly", "a_en": "I accidentally broke a glass. Please be careful.", "a_vi": "Tôi lỡ tay làm vỡ một cái ly. Vui lòng cẩn thận nhé." },
+        { "q_en": "Thank you for letting me know. I will sweep it up.", "q_vi": "Cảm ơn khách và hứa dọn dẹp", "a_en": "Thank you for letting me know. I will sweep it up.", "a_vi": "Cảm ơn quý khách đã báo. Tôi sẽ quét dọn nó." }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "boss",
+      "description": "Level 5: BOSS Buồng Phòng (Xử lý phòng bừa bộn và yêu cầu của khách khó tính)",
+      "questions": [
+        { "q_en": "Housekeeping! Housekeeping!", "q_vi": "(Nhân viên gõ cửa) Dọn phòng đây ạ! Dọn phòng đây ạ!", "a_en": "Yes, come in! The room is a total mess.", "a_vi": "Vâng, vào đi! Căn phòng đang hoàn toàn bừa bộn." },
+        { "q_en": "Good morning, sir. Would you like me to clean the room now?", "q_vi": "Chào buổi sáng và hỏi ý khách", "a_en": "Yes. We had a small party last night. Please clean everything.", "a_vi": "Vâng. Tối qua chúng tôi có một bữa tiệc nhỏ. Vui lòng dọn dẹp mọi thứ." },
+        { "q_en": "I will start with the trash. There are a lot of empty bottles here.", "q_vi": "Báo cáo dọn rác trước", "a_en": "Just throw them all away. And please bring us more bottled water.", "a_vi": "Cứ vứt hết chúng đi. Và làm ơn mang thêm nước đóng chai cho chúng tôi." },
+        { "q_en": "Certainly. Two bottles are complimentary, sir.", "q_vi": "Nhắc về số lượng nước miễn phí", "a_en": "We need four bottles. I will pay the extra charge.", "a_vi": "Chúng tôi cần 4 chai. Tôi sẽ trả thêm phí." },
+        { "q_en": "Noted. I see some stains on the bed sheet. I will replace it.", "q_vi": "Báo cáo thấy vết bẩn trên ga", "a_en": "Yes, somebody spilled some wine. Sorry about that.", "a_vi": "Ừ, có ai đó đã làm đổ một ít rượu vang. Xin lỗi vì chuyện đó." },
+        { "q_en": "No problem. I will change all the linens to be safe.", "q_vi": "Nhân viên vui vẻ thay ga", "a_en": "Can you also bring me an extra firm pillow? My neck hurts.", "a_vi": "Bạn có thể mang cho tôi một chiếc gối cứng hơn được không? Cổ tôi bị đau." },
+        { "q_en": "I will bring a firmer pillow from our storage for you.", "q_vi": "Hứa mang gối cứng", "a_en": "Thank you. And the bathroom needs a thorough cleaning.", "a_vi": "Cảm ơn. Và phòng tắm cần được dọn dẹp thật kỹ." },
+        { "q_en": "Of course. I will scrub the tub and restock all the amenities.", "q_vi": "Hứa dọn phòng tắm", "a_en": "Make sure you give us extra towels. We use a lot.", "a_vi": "Đảm bảo bạn cho chúng tôi thêm khăn tắm nhé. Chúng tôi dùng rất nhiều." },
+        { "q_en": "I will leave four fresh towels on the rack for you.", "q_vi": "Báo số lượng khăn sẽ cung cấp", "a_en": "Also, the minibar is completely empty. We drank everything.", "a_vi": "Ngoài ra, minibar đã trống trơn. Chúng tôi đã uống hết mọi thứ." },
+        { "q_en": "I will note that down and inform room service to restock it.", "q_vi": "Hứa báo châm minibar", "a_en": "How long will this cleaning take? We want to rest.", "a_vi": "Việc dọn dẹp này sẽ mất bao lâu? Chúng tôi muốn nghỉ ngơi." },
+        { "q_en": "It should take about 20 minutes to complete the service.", "q_vi": "Báo thời gian dọn phòng", "a_en": "Okay. We will sit on the balcony while you work.", "a_vi": "Được rồi. Chúng tôi sẽ ra ban công ngồi trong lúc bạn làm việc." },
+        { "q_en": "Excuse me, sir. I found a gold ring under the bed.", "q_vi": "Báo cáo nhặt được của rơi", "a_en": "Oh, my wife was looking for that! You found it!", "a_vi": "Ồ, vợ tôi đang tìm nó đấy! Bạn tìm thấy nó rồi!" },
+        { "q_en": "Yes, here it is. Please keep it safe.", "q_vi": "Trả lại đồ cho khách", "a_en": "You are very honest. Here, take this $20 tip.", "a_vi": "Bạn rất thật thà. Đây, nhận lấy 20 đô tiền boa này đi." },
+        { "q_en": "Thank you very much, sir. That is very generous.", "q_vi": "Cảm ơn tiền boa", "a_en": "You earned it. The room looks spotless now.", "a_vi": "Bạn xứng đáng mà. Căn phòng trông sạch không tì vết rồi đấy." },
+        { "q_en": "I am glad you are satisfied. I will spray some air freshener.", "q_vi": "Khách vui, xịt thơm phòng", "a_en": "Ah, much better. The wine smell is gone.", "a_vi": "À, tốt hơn nhiều rồi. Mùi rượu vang đã biến mất." },
+        { "q_en": "I have also left the four bottles of water and the firm pillow.", "q_vi": "Báo cáo hoàn thành các yêu cầu phụ", "a_en": "Perfect. You have been a great help.", "a_vi": "Hoàn hảo. Bạn đã giúp đỡ rất nhiều." },
+        { "q_en": "Is there anything else I can assist you with before I leave?", "q_vi": "Hỏi khách cần gì nữa không", "a_en": "No, we are good. We will put the 'Do Not Disturb' sign up now.", "a_vi": "Không, chúng tôi ổn rồi. Giờ chúng tôi sẽ treo biển 'Không làm phiền' lên." },
+        { "q_en": "Understood. I will inform the staff not to bother you.", "q_vi": "Xác nhận biển DND", "a_en": "Thank you. Have a good day.", "a_vi": "Cảm ơn. Chúc bạn một ngày tốt lành." },
+        { "q_en": "Have a wonderful stay, sir.", "q_vi": "Chào kết thúc", "a_en": "(Closes door) Ah, finally some peace and quiet.", "a_vi": "(Đóng cửa) À, cuối cùng cũng được yên tĩnh." }
+      ]
+    },
+	
+	{
+      "id": 6,
+      "type": "vocab",
+      "description": "Level 6: Từ vựng Giặt ủi & Đồ vải (Laundry & Linen)",
+      "questions": [
+        {"q_en": "Laundry", "a_vi": "Giặt ủi"}, {"q_en": "Dry cleaning", "a_vi": "Giặt khô"}, {"q_en": "Ironing", "a_vi": "Ủi / Là"}, {"q_en": "Pressing", "a_vi": "Ép phẳng"}, {"q_en": "Detergent", "a_vi": "Bột giặt / Nước giặt"}, {"q_en": "Softener", "a_vi": "Nước xả vải"}, {"q_en": "Bleach", "a_vi": "Thuốc tẩy"}, {"q_en": "Stain removal", "a_vi": "Tẩy vết bẩn"}, {"q_en": "Fold", "a_vi": "Gấp (quần áo/khăn)"}, {"q_en": "Hanger", "a_vi": "Móc treo"}, {"q_en": "Basket", "a_vi": "Giỏ đựng đồ"}, {"q_en": "Linen", "a_vi": "Đồ vải (ga, bao gối)"}, {"q_en": "Bed sheet", "a_vi": "Ga trải giường"}, {"q_en": "Pillowcase", "a_vi": "Vỏ gối"}, {"q_en": "Duvet cover", "a_vi": "Vỏ chăn"}, {"q_en": "Bathrobe", "a_vi": "Áo choàng tắm"}, {"q_en": "Uniform", "a_vi": "Đồng phục"}, {"q_en": "Fabric", "a_vi": "Chất liệu vải"}, {"q_en": "Shrink", "a_vi": "Bị co rút (vải)"}, {"q_en": "Delicate", "a_vi": "Đồ mỏng manh / Cần nâng niu"}
+      ]
+    },
+    {
+      "id": 7,
+      "type": "vocab",
+      "description": "Level 7: Từ vựng Vật dụng & Tiện ích (Amenities)",
+      "questions": [
+        {"q_en": "Toiletries", "a_vi": "Đồ dùng vệ sinh cá nhân"}, {"q_en": "Dispenser", "a_vi": "Bình chiết (sữa tắm/gội)"}, {"q_en": "Slippers", "a_vi": "Dép đi trong nhà"}, {"q_en": "Bath mat", "a_vi": "Thảm chùi chân phòng tắm"}, {"q_en": "Sewing kit", "a_vi": "Bộ kim chỉ"}, {"q_en": "Stationery", "a_vi": "Văn phòng phẩm"}, {"q_en": "Mini-bar", "a_vi": "Tủ lạnh nhỏ"}, {"q_en": "Kettle", "a_vi": "Ấm đun nước"}, {"q_en": "Safe box", "a_vi": "Két an toàn"}, {"q_en": "Flashlight", "a_vi": "Đèn pin"}, {"q_en": "Pillow menu", "a_vi": "Thực đơn gối"}, {"q_en": "Mineral water", "a_vi": "Nước khoáng"}, {"q_en": "Tea set", "a_vi": "Bộ ấm trà"}, {"q_en": "Coffee pod", "a_vi": "Viên nén cà phê"}, {"q_en": "Scale", "a_vi": "Cái cân"}, {"q_en": "Bath salts", "a_vi": "Muối tắm"}, {"q_en": "Shaving kit", "a_vi": "Bộ dao cạo râu"}, {"q_en": "Comb", "a_vi": "Cái lược"}, {"q_en": "Shower cap", "a_vi": "Mũ trùm tóc"}, {"q_en": "Cotton bud", "a_vi": "Tăm bông"}
+      ]
+    },
+    {
+      "id": 8,
+      "type": "sentence",
+      "description": "Level 8: Giao tiếp Giặt ủi & Chăm sóc đồ dùng",
+      "questions": [
+        {"q_en": "I need these shirts dry-cleaned by this evening.", "q_vi": "Khách yêu cầu giặt khô gấp", "a_en": "I need these shirts dry-cleaned by this evening.", "a_vi": "Tôi cần giặt khô những chiếc áo sơ mi này trước tối nay."},
+        {"q_en": "We can offer express service with a small surcharge.", "q_vi": "Báo dịch vụ hỏa tốc", "a_en": "We can offer express service with a small surcharge.", "a_vi": "Chúng tôi có thể cung cấp dịch vụ hỏa tốc với một khoản phụ phí nhỏ."},
+        {"q_en": "Please be careful with this silk blouse; it is very delicate.", "q_vi": "Nhắc nhở đồ lụa mỏng", "a_en": "Please be careful with this silk blouse; it is very delicate.", "a_vi": "Vui lòng cẩn thận với chiếc áo lụa này; nó rất mỏng manh."},
+        {"q_en": "We will handle it with extra care and follow the label instructions.", "q_vi": "Hứa cẩn thận", "a_en": "We will handle it with extra care and follow the label instructions.", "a_vi": "Chúng tôi sẽ xử lý nó với sự chăm sóc đặc biệt và làm theo hướng dẫn trên nhãn."},
+        {"q_en": "My suit is wrinkled. Can someone iron it?", "q_vi": "Khách xin ủi đồ", "a_en": "My suit is wrinkled. Can someone iron it?", "a_vi": "Bộ vest của tôi bị nhăn rồi. Có ai ủi giúp được không?"},
+        {"q_en": "Yes, I will send the valet to your room immediately.", "q_vi": "Hứa cử người lên", "a_en": "Yes, I will send the valet to your room immediately.", "a_vi": "Vâng, tôi sẽ cử nhân viên lên phòng ngài ngay."},
+        {"q_en": "Where should I put the dirty laundry for pickup?", "q_vi": "Hỏi chỗ để đồ giặt", "a_en": "Just put them in the laundry bag provided in the wardrobe.", "a_vi": "Chỉ cần để chúng vào túi giặt được cung cấp trong tủ quần áo."},
+        {"q_en": "The laundry list is on the desk.", "q_vi": "Chỉ chỗ lấy phiếu giặt", "a_en": "The laundry list is on the desk.", "a_vi": "Phiếu giặt ủi nằm trên bàn làm việc."},
+        {"q_en": "Make sure you count the items before handing them over.", "q_vi": "Nhắc khách đếm đồ", "a_en": "Make sure you count the items before handing them over.", "a_vi": "Hãy đảm bảo ngài đếm số lượng đồ trước khi bàn giao."},
+        {"q_en": "I accidentally stained my dress with wine.", "q_vi": "Khách báo đổ rượu lên váy", "a_en": "I accidentally stained my dress with wine.", "a_vi": "Tôi lỡ tay làm đổ rượu lên chiếc váy của mình."},
+        {"q_en": "We have an expert stain removal service. We will try our best.", "q_vi": "Hứa xử lý vết bẩn", "a_en": "We have an expert stain removal service. We will try our best.", "a_vi": "Chúng tôi có dịch vụ tẩy vết bẩn chuyên nghiệp. Chúng tôi sẽ cố gắng hết sức."},
+        {"q_en": "Can you bring me some fresh bathrobe and slippers?", "q_vi": "Khách xin thêm đồ vải", "a_en": "Can you bring me some fresh bathrobe and slippers?", "a_vi": "Bạn có thể mang cho tôi áo choàng và dép mới không?"},
+        {"q_en": "I will bring them right away, along with extra towels.", "q_vi": "Hứa mang đồ sạch", "a_en": "I will bring them right away, along with extra towels.", "a_vi": "Tôi sẽ mang chúng đến ngay, cùng với khăn tắm thêm nữa."},
+        {"q_en": "We have run out of shampoo and shower gel.", "q_vi": "Khách báo hết xà phòng", "a_en": "We have run out of shampoo and shower gel.", "a_vi": "Chúng tôi dùng hết dầu gội và sữa tắm rồi."},
+        {"q_en": "I will refill the dispensers immediately.", "q_vi": "Hứa châm thêm", "a_en": "I will refill the dispensers immediately.", "a_vi": "Tôi sẽ châm thêm vào bình chiết ngay lập tức."},
+        {"q_en": "Do you offer any hypoallergenic toiletries?", "q_vi": "Hỏi đồ vệ sinh không gây dị ứng", "a_en": "Do you offer any hypoallergenic toiletries?", "a_vi": "Các bạn có cung cấp đồ dùng vệ sinh không gây dị ứng không?"},
+        {"q_en": "Yes, we have a special line of natural products.", "q_vi": "Báo có đồ tự nhiên", "a_en": "Yes, we have a special line of natural products.", "a_vi": "Vâng, chúng tôi có một dòng sản phẩm tự nhiên đặc biệt."},
+        {"q_en": "Please replace the bed sheets. They feel a bit dusty.", "q_vi": "Yêu cầu thay ga giường", "a_en": "Please replace the bed sheets. They feel a bit dusty.", "a_vi": "Vui lòng thay ga giường đi. Chúng hơi bám bụi rồi."},
+        {"q_en": "I apologize. I will change the entire bedding set for you.", "q_vi": "Xin lỗi và hứa thay mới", "a_en": "I apologize. I will change the entire bedding set for you.", "a_vi": "Tôi xin lỗi. Tôi sẽ thay toàn bộ bộ chăn ga gối cho quý khách."},
+        {"q_en": "Thank you for the quick service.", "q_vi": "Cảm ơn", "a_en": "Thank you for the quick service.", "a_vi": "Cảm ơn vì dịch vụ nhanh chóng của bạn."}
+      ]
+    },
+    {
+      "id": 9,
+      "type": "sentence",
+      "description": "Level 9: Mẫu câu Kiểm tra An ninh & Đồ thất lạc (Lost & Found)",
+      "questions": [
+        {"q_en": "I think I left my wallet in the room.", "q_vi": "Khách báo mất ví", "a_en": "I think I left my wallet in the room.", "a_vi": "Tôi nghĩ tôi để quên cái ví trong phòng."},
+        {"q_en": "Let me check the lost and found log for you.", "q_vi": "Lễ tân check sổ đồ thất lạc", "a_en": "Let me check the lost and found log for you.", "a_vi": "Để tôi kiểm tra sổ ghi chép đồ thất lạc cho quý khách."},
+        {"q_en": "Did the cleaning staff find anything under the bed?", "q_vi": "Khách hỏi kỹ đồ dưới gầm", "a_en": "Did the cleaning staff find anything under the bed?", "a_vi": "Nhân viên dọn phòng có tìm thấy gì dưới gầm giường không?"},
+        {"q_en": "I will contact the housekeeping supervisor immediately.", "q_vi": "Hứa gọi giám sát buồng", "a_en": "I will contact the housekeeping supervisor immediately.", "a_vi": "Tôi sẽ liên hệ với giám sát viên buồng phòng ngay lập tức."},
+        {"q_en": "We found a black wallet in room 305 this morning.", "q_vi": "Báo tin vui tìm thấy ví", "a_en": "We found a black wallet in room 305 this morning.", "a_vi": "Chúng tôi đã tìm thấy một chiếc ví màu đen ở phòng 305 sáng nay."},
+        {"q_en": "Please come to the reception to verify the contents.", "q_vi": "Mời khách đến xác nhận", "a_en": "Please come to the reception to verify the contents.", "a_vi": "Vui lòng đến quầy lễ tân để xác nhận nội dung bên trong."},
+        {"q_en": "I lost my diamond earring while I was swimming.", "q_vi": "Khách báo mất bông tai", "a_en": "I lost my diamond earring while I was swimming.", "a_vi": "Tôi đã đánh mất chiếc bông tai kim cương khi đang bơi."},
+        {"q_en": "We will deploy a team to scan the pool area.", "q_vi": "Hứa cử người tìm", "a_en": "We will deploy a team to scan the pool area.", "a_vi": "Chúng tôi sẽ cử một đội đi rà soát khu vực hồ bơi."},
+        {"q_en": "Was there any suspicious person in your room?", "q_vi": "Hỏi về người lạ", "a_en": "Was there any suspicious person in your room?", "a_vi": "Có ai đáng ngờ vào phòng ngài không?"},
+        {"q_en": "No, only the housekeeping staff came in.", "q_vi": "Khách báo chỉ có dọn phòng vào", "a_en": "No, only the housekeeping staff came in.", "a_vi": "Không, chỉ có nhân viên dọn phòng đi vào thôi."},
+        {"q_en": "We have an electronic log of all room entries.", "q_vi": "Trấn an khách", "a_en": "We have an electronic log of all room entries.", "a_vi": "Chúng tôi có nhật ký điện tử của mọi lượt ra vào phòng."},
+        {"q_en": "Security will investigate the lock history.", "q_vi": "Hứa điều tra lịch sử khóa", "a_en": "Security will investigate the lock history.", "a_vi": "Bộ phận an ninh sẽ điều tra lịch sử khóa cửa."},
+        {"q_en": "Please keep your valuables in the safe box.", "q_vi": "Nhắc cất đồ vào két", "a_en": "Please keep your valuables in the safe box.", "a_vi": "Vui lòng cất giữ các vật dụng giá trị của ngài vào két an toàn."},
+        {"q_en": "I am so relieved you found my passport.", "q_vi": "Khách cảm ơn vì tìm thấy hộ chiếu", "a_en": "I am so relieved you found my passport.", "a_vi": "Tôi thật nhẹ nhõm vì các bạn đã tìm thấy hộ chiếu của tôi."},
+        {"q_en": "We are glad it is safe. Please keep it in your pocket next time.", "q_vi": "Nhắc nhở khách", "a_en": "We are glad it is safe. Please keep it in your pocket next time.", "a_vi": "Chúng tôi mừng vì nó an toàn. Lần sau hãy giữ nó trong túi của quý khách nhé."},
+        {"q_en": "Could you provide a written report for my insurance?", "q_vi": "Khách xin văn bản cho bảo hiểm", "a_en": "Could you provide a written report for my insurance?", "a_vi": "Bạn có thể cung cấp một bản báo cáo bằng văn bản cho bảo hiểm của tôi không?"},
+        {"q_en": "I will prepare the official document within the hour.", "q_vi": "Hứa làm giấy tờ", "a_en": "I will prepare the official document within the hour.", "a_vi": "Tôi sẽ chuẩn bị văn bản chính thức trong vòng một giờ."},
+        {"q_en": "Is the CCTV footage available for viewing?", "q_vi": "Khách đòi xem camera", "a_en": "Is the CCTV footage available for viewing?", "a_vi": "Đoạn phim camera an ninh có thể được xem không?"},
+        {"q_en": "It is confidential, but we will hand it to the police.", "q_vi": "Khẳng định chính sách bảo mật", "a_en": "It is confidential, but we will hand it to the police.", "a_vi": "Nó là thông tin bảo mật, nhưng chúng tôi sẽ giao nó cho cảnh sát."},
+        {"q_en": "Thank you for taking this matter so seriously.", "q_vi": "Cảm ơn", "a_en": "Thank you for taking this matter so seriously.", "a_vi": "Cảm ơn đã coi trọng vấn đề này."}
+      ]
+    },
+    {
+      "id": 10,
+      "type": "boss",
+      "description": "Level 10: BOSS Buồng Phòng (Xử lý sự cố mất đồ của khách VIP)",
+      "questions": [
+        {"q_en": "General Manager? My guest in the Presidential Suite is missing her jewelry.", "q_vi": "(Boss Trưởng phòng) Sếp ơi? Vị khách phòng Tổng thống đang mất nữ trang.", "a_en": "What? Stay calm. Is she angry?", "a_vi": "Cái gì? Bình tĩnh. Cô ấy có giận dữ không?" },
+        {"q_en": "She is furious. She claims someone stole her diamond ring.", "q_vi": "Khách báo mất nhẫn", "a_en": "This is critical. Seal the room immediately. Nobody enters.", "a_vi": "Việc này cực kỳ nghiêm trọng. Niêm phong căn phòng ngay lập tức. Không ai được vào." },
+        {"q_en": "I already sealed it. The housekeeping staff who cleaned are shaking.", "q_vi": "Nhân viên dọn phòng sợ hãi", "a_en": "Bring those maids to the security office. I want them questioned.", "a_vi": "Đưa những cô nhân viên đó tới văn phòng an ninh. Tôi muốn thẩm vấn họ." },
+        {"q_en": "Should we call the police? The ring is worth $50,000.", "q_vi": "Hỏi có gọi công an không", "a_en": "Yes, call them. This is a theft, not a misplacement.", "a_vi": "Vâng, gọi họ đi. Đây là một vụ trộm, không phải là để quên đồ." },
+        {"q_en": "What about the guest? She is threatening to leave.", "q_vi": "Khách đòi check-out", "a_en": "Offer her a presidential upgrade or free stay, do whatever it takes.", "a_vi": "Hãy đề nghị nâng cấp phòng Tổng thống hoặc miễn phí kỳ lưu trú, làm bất cứ điều gì cần thiết." },
+        {"q_en": "She refuses. She says she doesn't feel safe here anymore.", "q_vi": "Khách từ chối đền bù", "a_en": "Give me the phone. I will talk to her personally.", "a_vi": "Đưa điện thoại cho tôi. Tôi sẽ đích thân nói chuyện với cô ấy." },
+        {"q_en": "Madam, I apologize for this. We are conducting a full investigation.", "q_vi": "Sếp xin lỗi khách", "a_en": "I don't want apologies! I want my ring back!", "a_vi": "Tôi không cần xin lỗi! Tôi muốn nhẫn của tôi quay trở về!" },
+        {"q_en": "We are reviewing the electronic lock logs to see who entered.", "q_vi": "Báo đang check khóa điện tử", "a_en": "If you don't find it, I am suing this hotel for everything it's worth.", "a_vi": "Nếu các người không tìm thấy, tôi sẽ kiện khách sạn này ra trò." },
+        {"q_en": "I understand. Our security team is cooperating with the police now.", "q_vi": "Báo đang phối hợp công an", "a_en": "Make it quick. I have a flight at 5 PM.", "a_vi": "Làm nhanh lên. Tôi có chuyến bay lúc 5h chiều." },
+        {"q_en": "(Security Chief) Boss, we found it! It was stuck in the drain.", "q_vi": "Tìm thấy nhẫn ở cống", "a_en": "What? In the drain? How did it get there?", "a_vi": "Cái gì? Trong cống á? Sao nó lại ở đó?" },
+        {"q_en": "She must have dropped it while washing her hands.", "q_vi": "Đoán khách làm rớt", "a_en": "Thank God. Give it to me. I need to return it to her personally.", "a_vi": "Tạ ơn Chúa. Đưa nó đây. Tôi cần đích thân trả lại cho cô ấy." },
+        {"q_en": "Madam, we found your ring! It was in the drain, not stolen.", "q_vi": "Sếp trả lại nhẫn", "a_en": "(Relieved) Oh my god! I feel so foolish. I am so sorry.", "a_vi": "(Nhẹ nhõm) Ôi chúa ơi! Tôi cảm thấy thật ngốc nghếch. Tôi rất xin lỗi." },
+        {"q_en": "It happens. We are just happy you are safe and happy.", "q_vi": "Lễ độ", "a_en": "I am so embarrassed for accusing your staff.", "a_vi": "Tôi thấy thật xấu hổ vì đã buộc tội nhân viên của bạn." },
+        {"q_en": "Don't worry. We will provide a free car to take you to the airport.", "q_vi": "Đề xuất xe miễn phí", "a_en": "You are too kind. I will definitely be back.", "a_vi": "Bạn quá tốt bụng rồi. Chắc chắn tôi sẽ quay lại." },
+        {"q_en": "It is our duty. Have a safe flight.", "q_vi": "Chào tạm biệt", "a_en": "Thank you for everything. Goodbye.", "a_vi": "Cảm ơn vì mọi thứ. Tạm biệt." },
+        {"q_en": "Chief, clean up the security report. Make sure it's confidential.", "q_vi": "Dặn dò dọn dẹp báo cáo", "a_en": "Yes, GM. No mention of the theft allegation in the official logs.", "a_vi": "Vâng, GM. Không đề cập đến cáo buộc trộm cắp trong các bản ghi chính thức." },
+        {"q_en": "And apologize to the maid who was questioned. Give her a bonus.", "q_vi": "Dặn thưởng nhân viên bị oan", "a_en": "I will give her a 'Service Excellence' bonus this afternoon.", "a_vi": "Tôi sẽ tặng cô ấy một khoản tiền thưởng 'Dịch vụ Xuất sắc' vào chiều nay." },
+        {"q_en": "Good. That was a close call. We need better room designs.", "q_vi": "Rút kinh nghiệm", "a_en": "I agree. Maybe we need a finer drain mesh in the suites.", "a_vi": "Tôi đồng ý. Có lẽ chúng ta cần một tấm lưới lọc cống mịn hơn ở các phòng suite." },
+        {"q_en": "Fix it. I don't want to dig through the drain again.", "q_vi": "Ra lệnh", "a_en": "Yes, sir. It will be installed by tomorrow.", "a_vi": "Vâng thưa sếp. Nó sẽ được lắp đặt vào ngày mai." },
+        {"q_en": "Good. Now get back to work.", "q_vi": "Kết thúc", "a_en": "Yes, sir!", "a_vi": "Vâng thưa sếp!" }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "vocab",
+      "description": "Level 11: Từ vựng Gia đình & Trẻ em (Kids & Families)",
+      "questions": [
+        {"q_en": "Family", "a_vi": "Gia đình"}, {"q_en": "Parents", "a_vi": "Bố mẹ"}, {"q_en": "Kids / Children", "a_vi": "Trẻ em"}, {"q_en": "Infant", "a_vi": "Trẻ sơ sinh"}, {"q_en": "Toddler", "a_vi": "Trẻ mới biết đi"}, {"q_en": "Babysitter", "a_vi": "Người trông trẻ"}, {"q_en": "Nanny", "a_vi": "Bảo mẫu"}, {"q_en": "Kids club", "a_vi": "Câu lạc bộ trẻ em"}, {"q_en": "Playground", "a_vi": "Sân chơi"}, {"q_en": "High chair", "a_vi": "Ghế ăn dặm"}, {"q_en": "Baby cot", "a_vi": "Cũi em bé"}, {"q_en": "Stroller", "a_vi": "Xe đẩy em bé"}, {"q_en": "Baby formula", "a_vi": "Sữa công thức"}, {"q_en": "Diaper", "a_vi": "Tã / Bỉm"}, {"q_en": "Wipe", "a_vi": "Khăn ướt"}, {"q_en": "Pediatrician", "a_vi": "Bác sĩ nhi"}, {"q_en": "Allergy", "a_vi": "Sự dị ứng"}, {"q_en": "Safety", "a_vi": "Sự an toàn"}, {"q_en": "Childproof", "a_vi": "Thiết kế an toàn cho trẻ"}, {"q_en": "Attention", "a_vi": "Sự chú ý (trông chừng)"}
+      ]
+    },
+    {
+      "id": 12,
+      "type": "vocab",
+      "description": "Level 12: Từ vựng Thú cưng & Các quy định (Pets & Rules)",
+      "questions": [
+        {"q_en": "Pet", "a_vi": "Thú cưng"}, {"q_en": "Dog", "a_vi": "Chó"}, {"q_en": "Cat", "a_vi": "Mèo"}, {"q_en": "Leash", "a_vi": "Dây xích"}, {"q_en": "Collar", "a_vi": "Vòng cổ"}, {"q_en": "Carrier", "a_vi": "Lồng vận chuyển"}, {"q_en": "Pet-friendly", "a_vi": "Thân thiện với thú cưng"}, {"q_en": "Policy", "a_vi": "Chính sách"}, {"q_en": "Restriction", "a_vi": "Sự hạn chế"}, {"q_en": "Prohibited", "a_vi": "Bị cấm"}, {"q_en": "Vaccination", "a_vi": "Sự tiêm phòng"}, {"q_en": "Grooming", "a_vi": "Việc chải chuốt/tỉa lông"}, {"q_en": "Allergic", "a_vi": "Bị dị ứng (lông thú)"}, {"q_en": "Mess", "a_vi": "Sự bừa bộn / Chất thải"}, {"q_en": "Clean up", "a_vi": "Dọn dẹp"}, {"q_en": "Noise", "a_vi": "Tiếng ồn"}, {"q_en": "Bark", "a_vi": "Tiếng sủa"}, {"q_en": "Meow", "a_vi": "Tiếng mèo kêu"}, {"q_en": "Deposit", "a_vi": "Tiền cọc (thú cưng)"}, {"q_en": "Responsibility", "a_vi": "Trách nhiệm"}
+      ]
+    },
+    {
+      "id": 13,
+      "type": "sentence",
+      "description": "Level 13: Giao tiếp Hỗ trợ Gia đình & Trẻ em",
+      "questions": [
+        {"q_en": "Do you have a baby cot for our room?", "q_vi": "Hỏi xin cũi em bé", "a_en": "Do you have a baby cot for our room?", "a_vi": "Các bạn có cũi em bé cho phòng chúng tôi không?"},
+        {"q_en": "Yes, I will arrange it right away.", "q_vi": "Hứa mang cũi", "a_en": "Yes, I will arrange it right away.", "a_vi": "Vâng, tôi sẽ sắp xếp nó ngay lập tức."},
+        {"q_en": "Can we get a high chair at the restaurant?", "q_vi": "Hỏi ghế ăn dặm", "a_en": "Can we get a high chair at the restaurant?", "a_vi": "Chúng tôi có thể lấy ghế ăn dặm ở nhà hàng không?"},
+        {"q_en": "I will make sure a high chair is reserved for your table.", "q_vi": "Hứa giữ ghế", "a_en": "I will make sure a high chair is reserved for your table.", "a_vi": "Tôi sẽ đảm bảo một chiếc ghế ăn dặm được giữ cho bàn của quý khách."},
+        {"q_en": "Do you offer babysitting services in the evening?", "q_vi": "Hỏi dịch vụ trông trẻ", "a_en": "Do you offer babysitting services in the evening?", "a_vi": "Các bạn có cung cấp dịch vụ trông trẻ vào buổi tối không?"},
+        {"q_en": "Yes, our certified nanny is available upon request.", "q_vi": "Báo có bảo mẫu", "a_en": "Yes, our certified nanny is available upon request.", "a_vi": "Vâng, bảo mẫu có chứng chỉ của chúng tôi luôn sẵn sàng theo yêu cầu."},
+        {"q_en": "My child is allergic to peanuts. Please alert the kitchen.", "q_vi": "Báo dị ứng cho con", "a_en": "My child is severely allergic to peanuts. Please alert the kitchen.", "a_vi": "Con tôi bị dị ứng nặng với đậu phộng. Vui lòng báo cho bếp nhé."},
+        {"q_en": "I will add a special note to your room profile immediately.", "q_vi": "Hứa lưu ghi chú", "a_en": "I will add a special note to your room profile immediately.", "a_vi": "Tôi sẽ thêm một ghi chú đặc biệt vào hồ sơ phòng của quý khách ngay lập tức."},
+        {"q_en": "Is the kids club safe for a three-year-old?", "q_vi": "Hỏi độ an toàn khu trẻ em", "a_en": "Is the kids club safe for a three-year-old?", "a_vi": "Khu vui chơi trẻ em có an toàn cho bé 3 tuổi không?"},
+        {"q_en": "Yes, we have staff supervising the play area at all times.", "q_vi": "Cam kết an toàn", "a_en": "Yes, we have staff supervising the play area at all times.", "a_vi": "Vâng, chúng tôi có nhân viên giám sát khu vực vui chơi mọi lúc."},
+        {"q_en": "Can you heat up this bottle of baby formula?", "q_vi": "Nhờ hâm sữa", "a_en": "Can you heat up this bottle of baby formula?", "a_vi": "Bạn có thể hâm nóng bình sữa công thức này không?"},
+        {"q_en": "I will warm it up for you. Please be careful, it might be hot.", "q_vi": "Hứa hâm sữa và nhắc nóng", "a_en": "I will warm it up for you. Please be careful, it might be hot.", "a_vi": "Tôi sẽ hâm nóng nó cho quý khách. Xin cẩn thận, nó có thể sẽ nóng."},
+        {"q_en": "My child needs fresh milk every morning.", "q_vi": "Yêu cầu sữa tươi", "a_en": "My child needs fresh milk every morning.", "a_vi": "Con tôi cần sữa tươi mỗi buổi sáng."},
+        {"q_en": "We can deliver fresh milk to your room at 7 AM.", "q_vi": "Hứa giao sữa tận phòng", "a_en": "We can deliver fresh milk to your room at 7 AM.", "a_vi": "Chúng tôi có thể giao sữa tươi đến phòng ngài lúc 7h sáng."},
+        {"q_en": "Are there any baby diapers available for purchase?", "q_vi": "Hỏi mua bỉm", "a_en": "Are there any baby diapers available for purchase?", "a_vi": "Có bỉm em bé nào để mua không ạ?"},
+        {"q_en": "The convenience store sells diapers in various sizes.", "q_vi": "Chỉ chỗ mua bỉm", "a_en": "The convenience store sells diapers in various sizes.", "a_vi": "Cửa hàng tiện lợi có bán bỉm với nhiều kích cỡ khác nhau."},
+        {"q_en": "Could I borrow a stroller for the weekend?", "q_vi": "Hỏi thuê xe đẩy", "a_en": "Could I borrow a stroller for the weekend?", "a_vi": "Tôi có thể mượn một chiếc xe đẩy cho cuối tuần không?"},
+        {"q_en": "We have strollers available. Please leave your room number.", "q_vi": "Hứa cho mượn xe đẩy", "a_en": "We have strollers available. Please leave your room number.", "a_vi": "Chúng tôi có sẵn xe đẩy. Vui lòng cho tôi số phòng của quý khách."},
+        {"q_en": "The room is childproof, so your baby will be safe.", "q_vi": "Cam kết phòng an toàn", "a_en": "The room is childproof, so your baby will be safe.", "a_vi": "Căn phòng đã được thiết kế an toàn cho trẻ, nên bé sẽ an toàn."},
+        {"q_en": "Let us know if you need any further help with your family.", "q_vi": "Lời chào của nhân viên", "a_en": "Let us know if you need any further help with your family.", "a_vi": "Hãy cho chúng tôi biết nếu ngài cần bất kỳ sự giúp đỡ nào thêm cho gia đình mình."}
+      ]
+    },
+    {
+      "id": 14,
+      "type": "sentence",
+      "description": "Level 14: Quy định Thú cưng & Sự cố vật nuôi",
+      "questions": [
+        {"q_en": "Is your resort a pet-friendly property?", "q_vi": "Hỏi resort có cho thú cưng không", "a_en": "Is your resort a pet-friendly property?", "a_vi": "Resort của bạn có thân thiện với thú cưng không?"},
+        {"q_en": "Yes, we welcome well-behaved pets in designated villas.", "q_vi": "Báo có nhận thú cưng", "a_en": "Yes, we welcome well-behaved pets in designated villas.", "a_vi": "Vâng, chúng tôi chào đón các thú cưng ngoan ngoãn trong các căn villa được chỉ định."},
+        {"q_en": "We require a pet deposit for any damages.", "q_vi": "Báo yêu cầu cọc", "a_en": "We require a pet deposit for any damages.", "a_vi": "Chúng tôi yêu cầu tiền cọc thú cưng cho bất kỳ hư hại nào."},
+        {"q_en": "Pets must be on a leash in all public areas.", "q_vi": "Nhắc xích thú cưng", "a_en": "Pets must be on a leash in all public areas.", "a_vi": "Thú cưng phải được đeo dây xích ở tất cả các khu vực công cộng."},
+        {"q_en": "Please ensure your dog does not bark at night.", "q_vi": "Nhắc cấm chó sủa đêm", "a_en": "Please ensure your dog does not bark at night.", "a_vi": "Vui lòng đảm bảo chó của bạn không sủa vào ban đêm."},
+        {"q_en": "You are responsible for cleaning up after your pet.", "q_vi": "Nhắc tự dọn chất thải", "a_en": "You are responsible for cleaning up after your pet.", "a_vi": "Ngài chịu trách nhiệm dọn dẹp sau khi thú cưng của ngài đi vệ sinh."},
+        {"q_en": "Is there a designated area for pets to play?", "q_vi": "Hỏi sân chơi thú cưng", "a_en": "Is there a designated area for pets to play?", "a_vi": "Có khu vực chỉ định nào cho thú cưng chơi đùa không?"},
+        {"q_en": "Yes, the pet garden is located behind the East Wing.", "q_vi": "Chỉ chỗ chơi thú cưng", "a_en": "Yes, the pet garden is located behind the East Wing.", "a_vi": "Vâng, khu vườn thú cưng nằm phía sau Khu Đông."},
+        {"q_en": "My cat accidentally scratched the sofa in the room.", "q_vi": "Báo mèo cào ghế", "a_en": "My cat accidentally scratched the sofa in the room.", "a_vi": "Con mèo của tôi vô tình cào hỏng ghế sofa trong phòng."},
+        {"q_en": "We will assess the damage and discuss the repair cost.", "q_vi": "Báo sẽ đánh giá thiệt hại", "a_en": "We will assess the damage and discuss the repair cost.", "a_vi": "Chúng tôi sẽ đánh giá thiệt hại và thảo luận về chi phí sửa chữa."},
+        {"q_en": "Another guest complained that your dog is running loose.", "q_vi": "Báo khách khác phàn nàn", "a_en": "Another guest complained that your dog is running loose.", "a_vi": "Một vị khách khác phàn nàn rằng con chó của bạn đang chạy rông."},
+        {"q_en": "I am so sorry, I will keep him on a leash now.", "q_vi": "Xin lỗi và hứa xích", "a_en": "I am so sorry, I will keep him on a leash now.", "a_vi": "Tôi rất xin lỗi, tôi sẽ xích nó lại ngay bây giờ."},
+        {"q_en": "Are cats allowed in the restaurant area?", "q_vi": "Hỏi mèo có vào nhà hàng không", "a_en": "Are cats allowed in the restaurant area?", "a_vi": "Mèo có được phép vào khu vực nhà hàng không?"},
+        {"q_en": "No, pets are strictly prohibited in the restaurant for hygiene.", "q_vi": "Cấm thú cưng vào nhà hàng", "a_en": "No, pets are strictly prohibited in the restaurant for hygiene.", "a_vi": "Không, thú cưng bị nghiêm cấm trong nhà hàng vì lý do vệ sinh."},
+        {"q_en": "Do you have any grooming services for dogs?", "q_vi": "Hỏi dịch vụ tỉa lông", "a_en": "Do you have any grooming services for dogs?", "a_vi": "Bạn có bất kỳ dịch vụ chải chuốt nào cho chó không?"},
+        {"q_en": "We can recommend a professional pet groomer nearby.", "q_vi": "Gợi ý nơi tỉa lông", "a_en": "We can recommend a professional pet groomer nearby.", "a_vi": "Chúng tôi có thể giới thiệu một tiệm tỉa lông thú cưng chuyên nghiệp gần đây."},
+        {"q_en": "Please keep your pet off the bed sheets.", "q_vi": "Nhắc giữ ga sạch", "a_en": "Please keep your pet off the bed sheets.", "a_vi": "Vui lòng đừng để thú cưng của bạn lên ga giường."},
+        {"q_en": "We have dedicated pet-friendly beds available on request.", "q_vi": "Giới thiệu giường cho pet", "a_en": "We have dedicated pet-friendly beds available on request.", "a_vi": "Chúng tôi có giường chuyên dụng cho thú cưng theo yêu cầu."},
+        {"q_en": "Your pet must be fully vaccinated to stay at our resort.", "q_vi": "Nhắc quy định tiêm phòng", "a_en": "Your pet must be fully vaccinated to stay at our resort.", "a_vi": "Thú cưng của bạn phải được tiêm phòng đầy đủ để ở tại resort của chúng ta."},
+        {"q_en": "Thank you for your cooperation regarding our pet policy.", "q_vi": "Cảm ơn đã hợp tác", "a_en": "Thank you for your cooperation regarding our pet policy.", "a_vi": "Cảm ơn sự hợp tác của quý khách liên quan đến chính sách thú cưng."}
+      ]
+    },
+    {
+      "id": 15,
+      "type": "boss",
+      "description": "Level 15: BOSS Buồng Phòng (Xử lý sự cố nghiêm trọng của khách VIP)",
+      "questions": [
+        {"q_en": "Housekeeping, I need someone in room 501 immediately. There is a flood!", "q_vi": "(Boss VIP) Buồng phòng đâu? Cần người qua phòng 501 ngay. Có lụt!", "a_en": "I am on my way, sir! Are you safe?", "a_vi": "Tôi tới ngay đây ạ! Ngài có an toàn không?" },
+        {"q_en": "My bathroom is leaking water everywhere. My luggage is getting soaked!", "q_vi": "Báo nước ngập hành lý", "a_en": "I will get the engineering team and extra towels up there right away.", "a_vi": "Tôi sẽ gọi đội kỹ thuật và mang khăn thêm lên đó ngay." },
+        {"q_en": "My expensive suit is in that bag! This is a disaster!", "q_vi": "Boss lo đồ hiệu", "a_en": "Please move your luggage to the living area. I will handle the water.", "a_vi": "Vui lòng di chuyển hành lý ra khu vực phòng khách. Tôi sẽ xử lý nước." },
+        {"q_en": "Why is the hotel falling apart? I am a Diamond member!", "q_vi": "Boss dọa dẫm", "a_en": "I sincerely apologize, sir. A pipe burst unexpectedly. We will relocate you.", "a_vi": "Tôi thành thật xin lỗi thưa ngài. Một đường ống bất ngờ bị vỡ. Chúng tôi sẽ dời ngài sang phòng khác." },
+        {"q_en": "I don't want to move! I just want my things dry.", "q_vi": "Khách khó tính không chịu dời", "a_en": "I understand. I will dry your clothes and shoes while you wait.", "a_vi": "Tôi hiểu. Tôi sẽ sấy khô quần áo và giày dép của ngài trong lúc ngài chờ." },
+        {"q_en": "Wait, I have a cat in this room. Can I take it to the new room?", "q_vi": "Báo có mèo", "a_en": "Yes, sir. Our pet-friendly suite is ready. I will help you carry the cat.", "a_vi": "Vâng thưa ngài. Phòng suite thân thiện với thú cưng đã sẵn sàng. Tôi sẽ giúp ngài mang mèo sang." },
+        {"q_en": "The cat is hiding under the bed. It's scared of the noise.", "q_vi": "Mèo trốn dưới gầm", "a_en": "Don't worry. I will use some treats to lure it out gently.", "a_vi": "Đừng lo. Tôi sẽ dùng ít bánh thưởng để dụ nó ra nhẹ nhàng." },
+        {"q_en": "You seem to know how to handle pets. Are you a pet owner?", "q_vi": "Crush khen nhân viên", "a_en": "I have two dogs at home. I love animals.", "a_vi": "Tôi có 2 chú chó ở nhà. Tôi rất yêu động vật." },
+        {"q_en": "That makes me feel better. Please find the cat.", "q_vi": "Khách yên tâm", "a_en": "Got it! She is safe. Let me put her in the carrier.", "a_vi": "Bắt được rồi! Cô bé an toàn rồi. Để tôi cho nó vào lồng vận chuyển." },
+        {"q_en": "Okay, cat is secured. Now, what about the flood?", "q_vi": "Hỏi lại vụ lụt", "a_en": "The maintenance team has sealed the pipe. The floor is being dried now.", "a_vi": "Đội bảo trì đã bịt kín đường ống. Sàn đang được sấy khô." },
+        {"q_en": "My suit... is it ruined?", "q_vi": "Hỏi về bộ vest", "a_en": "I have already sent it to our professional dry cleaners. It will be back soon.", "a_vi": "Tôi đã gửi nó đến tiệm giặt khô chuyên nghiệp. Nó sẽ sớm quay lại thôi." },
+        {"q_en": "You are very efficient. I am sorry I yelled.", "q_vi": "Khách xin lỗi", "a_en": "That is fine, sir. Your frustration is completely understandable.", "a_vi": "Không sao đâu ạ. Sự bực bội của ngài là hoàn toàn dễ hiểu." },
+        {"q_en": "Is the new room ready? I want to get out of this wet place.", "q_vi": "Đòi qua phòng mới", "a_en": "Yes, it is pristine. Please follow me.", "a_vi": "Vâng, phòng mới đã sạch tinh tươm. Mời ngài đi theo tôi." },
+        {"q_en": "Wait, did you move my laptop? I can't find it.", "q_vi": "Khách mất đồ", "a_en": "It is already on the desk in your new suite. Your security is our priority.", "a_vi": "Nó đã nằm trên bàn ở phòng mới của ngài rồi. Sự an toàn của ngài là ưu tiên của chúng tôi." },
+        {"q_en": "Wow, you moved everything? That's really good service.", "q_vi": "Khen dịch vụ", "a_en": "We want your transition to be as seamless as possible.", "a_vi": "Chúng tôi muốn sự chuyển đổi của ngài diễn ra liền mạch nhất có thể." },
+        {"q_en": "Do you need any help with the cat carrier?", "q_vi": "Khách hỏi ngược lại", "a_en": "No, I have it. Please take your time with your personal items.", "a_vi": "Không ạ, tôi cầm được. Ngài cứ thong thả với đồ cá nhân của ngài." },
+        {"q_en": "I am impressed by how you handled the mess.", "q_vi": "Khen lần cuối", "a_en": "It is my duty to provide flawless service, sir.", "a_vi": "Đó là nhiệm vụ của tôi để mang lại dịch vụ hoàn hảo thưa ngài." },
+        {"q_en": "Thanks. See you in the morning.", "q_vi": "Chào", "a_en": "Good night, sir. Sleep well.", "a_vi": "Chúc ngài ngủ ngon." },
+        {"q_en": "(To self) Another disaster averted.", "q_vi": "Lễ tân tự nhủ", "a_en": "(To team) Good work, everyone. Let's get back to patrol.", "a_vi": "(Với đội) Làm tốt lắm mọi người. Quay lại tuần tra thôi." },
+        {"q_en": "Wait! Where is my other slipper?", "q_vi": "Khách hét lớn", "a_en": "I'm coming back! It's under the rug!", "a_vi": "Tôi quay lại ngay! Nó ở dưới tấm thảm ạ!" }
+      ]
+    }
+  ]
+}
