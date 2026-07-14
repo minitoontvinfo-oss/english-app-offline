@@ -1,0 +1,627 @@
+{
+  "id": "topic_fb",
+  "title": "☕ F&B Nhà Hàng Cafe",
+  "icon": "🍹",
+  "color": "#d35400",
+  "nodes": [
+    {
+      "id": 1,
+      "type": "vocab",
+      "description": "Level 1: Từ vựng Cơ bản Nhà hàng",
+      "questions": [
+        { "q_en": "Menu", "a_vi": "Thực đơn" },
+        { "q_en": "Order", "a_vi": "Gọi món / Đơn đặt hàng" },
+        { "q_en": "Beverage", "a_vi": "Đồ uống / Thức uống" },
+        { "q_en": "Appetizer", "a_vi": "Món khai vị" },
+        { "q_en": "Main course", "a_vi": "Món chính" },
+        { "q_en": "Dessert", "a_vi": "Món tráng miệng" },
+        { "q_en": "Napkin", "a_vi": "Khăn ăn" },
+        { "q_en": "Cutlery", "a_vi": "Bộ dao nĩa" },
+        { "q_en": "Plate", "a_vi": "Cái đĩa" },
+        { "q_en": "Glass", "a_vi": "Cái ly (thủy tinh)" },
+        { "q_en": "Fork", "a_vi": "Cái nĩa" },
+        { "q_en": "Spoon", "a_vi": "Cái muỗng / Thìa" },
+        { "q_en": "Knife", "a_vi": "Con dao" },
+        { "q_en": "Waiter", "a_vi": "Nam phục vụ" },
+        { "q_en": "Waitress", "a_vi": "Nữ phục vụ" },
+        { "q_en": "Chef", "a_vi": "Đầu bếp" },
+        { "q_en": "Bill", "a_vi": "Hóa đơn thanh toán" },
+        { "q_en": "Tip", "a_vi": "Tiền boa / Tiền thưởng" },
+        { "q_en": "Table", "a_vi": "Bàn ăn" },
+        { "q_en": "Reservation", "a_vi": "Sự đặt bàn trước" }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "vocab",
+      "description": "Level 2: Từ vựng Hương vị & Chế biến",
+      "questions": [
+        { "q_en": "Sweet", "a_vi": "Ngọt" },
+        { "q_en": "Sour", "a_vi": "Chua" },
+        { "q_en": "Salty", "a_vi": "Mặn" },
+        { "q_en": "Bitter", "a_vi": "Đắng" },
+        { "q_en": "Spicy", "a_vi": "Cay" },
+        { "q_en": "Savory", "a_vi": "Đậm đà / Thơm ngon (món mặn)" },
+        { "q_en": "Fresh", "a_vi": "Tươi / Tươi sống" },
+        { "q_en": "Raw", "a_vi": "Đồ sống (chưa nấu)" },
+        { "q_en": "Rare", "a_vi": "Chín tái (thịt)" },
+        { "q_en": "Well-done", "a_vi": "Chín kỹ (thịt)" },
+        { "q_en": "Grill", "a_vi": "Nướng (với vỉ sắt)" },
+        { "q_en": "Steam", "a_vi": "Hấp" },
+        { "q_en": "Fry", "a_vi": "Chiên / Rán" },
+        { "q_en": "Boil", "a_vi": "Luộc / Đun sôi" },
+        { "q_en": "Roast", "a_vi": "Quay (thịt/gà)" },
+        { "q_en": "Vegetarian", "a_vi": "Người ăn chay (có trứng sữa)" },
+        { "q_en": "Vegan", "a_vi": "Người ăn thuần chay" },
+        { "q_en": "Seafood", "a_vi": "Hải sản" },
+        { "q_en": "Ingredient", "a_vi": "Nguyên liệu / Thành phần" },
+        { "q_en": "Recipe", "a_vi": "Công thức nấu ăn" }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "sentence",
+      "description": "Level 3: Mẫu câu Chào đón & Xếp bàn",
+      "questions": [
+        { "q_en": "Welcome to Ocean Restaurant.", "q_vi": "Chào đón khách", "a_en": "Welcome to Ocean Restaurant.", "a_vi": "Chào mừng quý khách đến với Nhà hàng Ocean." },
+        { "q_en": "Do you have a reservation?", "q_vi": "Hỏi khách đặt bàn chưa", "a_en": "Do you have a reservation?", "a_vi": "Quý khách có đặt bàn trước không ạ?" },
+        { "q_en": "Under what name, please?", "q_vi": "Xin tên khách đã đặt", "a_en": "Under what name, please?", "a_vi": "Quý khách đặt bàn dưới tên gì ạ?" },
+        { "q_en": "I have a reservation for two people.", "q_vi": "Khách báo có đặt bàn", "a_en": "I have a reservation for two people.", "a_vi": "Tôi có đặt bàn cho 2 người." },
+        { "q_en": "Right this way, please.", "q_vi": "Mời khách đi theo", "a_en": "Right this way, please.", "a_vi": "Xin mời đi lối này ạ." },
+        { "q_en": "Is this table okay for you?", "q_vi": "Hỏi ý kiến khách về bàn", "a_en": "Is this table okay for you?", "a_vi": "Bàn này có ổn với quý khách không ạ?" },
+        { "q_en": "Can we have a table by the window?", "q_vi": "Khách xin ngồi cạnh cửa sổ", "a_en": "Can we have a table by the window?", "a_vi": "Chúng tôi có thể ngồi bàn cạnh cửa sổ không?" },
+        { "q_en": "Could we get a high chair for the baby?", "q_vi": "Khách xin ghế trẻ em", "a_en": "Could we get a high chair for the baby?", "a_vi": "Cho chúng tôi xin một ghế ăn dặm cho bé nhé?" },
+        { "q_en": "Here is the menu for you.", "q_vi": "Đưa thực đơn cho khách", "a_en": "Here is the menu for you.", "a_vi": "Đây là thực đơn dành cho quý khách ạ." },
+        { "q_en": "Would you like to see the wine list?", "q_vi": "Mời khách xem menu rượu", "a_en": "Would you like to see the wine list?", "a_vi": "Quý khách có muốn xem danh sách rượu vang không?" },
+        { "q_en": "Can I get you something to drink first?", "q_vi": "Hỏi khách dùng đồ uống trước", "a_en": "Can I get you something to drink first?", "a_vi": "Tôi có thể mang cho quý khách đồ uống trước không?" },
+        { "q_en": "I will have a glass of iced water.", "q_vi": "Khách gọi nước đá", "a_en": "I will have a glass of iced water.", "a_vi": "Cho tôi một ly nước đá." },
+        { "q_en": "Please give us a few more minutes.", "q_vi": "Khách xin thêm thời gian xem menu", "a_en": "Please give us a few more minutes.", "a_vi": "Vui lòng cho chúng tôi thêm vài phút nhé." },
+        { "q_en": "Are you waiting for someone else?", "q_vi": "Hỏi khách có đợi ai không", "a_en": "Are you waiting for someone else?", "a_vi": "Quý khách có đang đợi ai khác nữa không ạ?" },
+        { "q_en": "My friend will arrive shortly.", "q_vi": "Khách báo bạn sắp tới", "a_en": "My friend will arrive shortly.", "a_vi": "Bạn tôi sẽ đến ngay thôi." },
+        { "q_en": "I will be right back with your drinks.", "q_vi": "Hẹn quay lại mang nước", "a_en": "I will be right back with your drinks.", "a_vi": "Tôi sẽ quay lại ngay với đồ uống của quý khách." },
+        { "q_en": "Excuse me, waiter!", "q_vi": "Khách gọi phục vụ", "a_en": "Excuse me, waiter!", "a_vi": "Xin lỗi, phục vụ ơi!" },
+        { "q_en": "Yes, how can I help you?", "q_vi": "Phục vụ đáp lời", "a_en": "Yes, how can I help you?", "a_vi": "Vâng, tôi có thể giúp gì cho quý khách?" },
+        { "q_en": "Could you wipe this table, please?", "q_vi": "Khách nhờ lau bàn", "a_en": "Could you wipe this table, please?", "a_vi": "Bạn có thể lau chiếc bàn này được không?" },
+        { "q_en": "Have a seat and make yourself comfortable.", "q_vi": "Mời khách ngồi thoải mái", "a_en": "Have a seat and make yourself comfortable.", "a_vi": "Xin mời ngồi và cứ tự nhiên như ở nhà nhé." }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "sentence",
+      "description": "Level 4: Mẫu câu Gọi món & Phục vụ",
+      "questions": [
+        { "q_en": "Are you ready to order now?", "q_vi": "Hỏi khách gọi món chưa", "a_en": "Are you ready to order now?", "a_vi": "Quý khách đã sẵn sàng gọi món chưa ạ?" },
+        { "q_en": "What is the chef's special today?", "q_vi": "Khách hỏi món đặc biệt", "a_en": "What is the chef's special today?", "a_vi": "Món đặc biệt của đầu bếp hôm nay là gì?" },
+        { "q_en": "I highly recommend the grilled salmon.", "q_vi": "Gợi ý món cá hồi nướng", "a_en": "I highly recommend the grilled salmon.", "a_vi": "Tôi đặc biệt gợi ý món cá hồi nướng." },
+        { "q_en": "I would like the beef steak, please.", "q_vi": "Khách gọi bít tết", "a_en": "I would like the beef steak, please.", "a_vi": "Tôi muốn dùng món bò bít tết." },
+        { "q_en": "How would you like your steak cooked?", "q_vi": "Hỏi độ chín của thịt", "a_en": "How would you like your steak cooked?", "a_vi": "Quý khách muốn bít tết chín ở mức độ nào ạ?" },
+        { "q_en": "Medium rare, please.", "q_vi": "Khách yêu cầu chín tái", "a_en": "Medium rare, please.", "a_vi": "Làm chín tái nhé." },
+        { "q_en": "Does this dish contain any peanuts?", "q_vi": "Khách hỏi thành phần đậu phộng", "a_en": "Does this dish contain any peanuts?", "a_vi": "Món này có chứa đậu phộng không?" },
+        { "q_en": "I am allergic to seafood.", "q_vi": "Khách báo dị ứng hải sản", "a_en": "I am allergic to seafood.", "a_vi": "Tôi bị dị ứng với hải sản." },
+        { "q_en": "Can I have the salad without onions?", "q_vi": "Khách yêu cầu không hành tây", "a_en": "Can I have the salad without onions?", "a_vi": "Cho tôi món salad không hành tây nhé?" },
+        { "q_en": "What kind of dressing comes with the salad?", "q_vi": "Khách hỏi nước xốt salad", "a_en": "What kind of dressing comes with the salad?", "a_vi": "Món salad này đi kèm với loại nước xốt nào?" },
+        { "q_en": "We will share the appetizer.", "q_vi": "Khách báo sẽ ăn chung món khai vị", "a_en": "We will share the appetizer.", "a_vi": "Chúng tôi sẽ ăn chung món khai vị." },
+        { "q_en": "Would you like any side dishes?", "q_vi": "Hỏi khách có gọi đồ ăn kèm không", "a_en": "Would you like any side dishes?", "a_vi": "Quý khách có muốn gọi thêm món ăn kèm không ạ?" },
+        { "q_en": "A portion of french fries, please.", "q_vi": "Khách gọi khoai tây chiên", "a_en": "A portion of french fries, please.", "a_vi": "Cho một phần khoai tây chiên nhé." },
+        { "q_en": "That will be all for now.", "q_vi": "Khách chốt món", "a_en": "That will be all for now.", "a_vi": "Tạm thời chỉ gọi bấy nhiêu thôi." },
+        { "q_en": "I will repeat your order to confirm.", "q_vi": "Nhắc lại order cho khách", "a_en": "I will repeat your order to confirm.", "a_vi": "Tôi sẽ nhắc lại yêu cầu gọi món để xác nhận nhé." },
+        { "q_en": "How long will the food take?", "q_vi": "Khách hỏi thời gian lên món", "a_en": "How long will the food take?", "a_vi": "Thức ăn sẽ mất bao lâu?" },
+        { "q_en": "It will take about twenty minutes.", "q_vi": "Báo thời gian 20 phút", "a_en": "It will take about twenty minutes.", "a_vi": "Sẽ mất khoảng 20 phút ạ." },
+        { "q_en": "Can you bring some extra napkins?", "q_vi": "Khách xin thêm khăn giấy", "a_en": "Can you bring some extra napkins?", "a_vi": "Bạn có thể mang thêm vài tờ khăn giấy không?" },
+        { "q_en": "Enjoy your meal!", "q_vi": "Chúc khách ngon miệng", "a_en": "Enjoy your meal!", "a_vi": "Chúc quý khách ngon miệng!" },
+        { "q_en": "Be careful, the plate is very hot.", "q_vi": "Nhắc khách cẩn thận đĩa nóng", "a_en": "Be careful, the plate is very hot.", "a_vi": "Cẩn thận nhé, chiếc đĩa đang rất nóng." }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "boss",
+      "description": "Level 5: BOSS Nhà Hàng (Thực chiến Phục vụ Bàn A-Z)",
+      "questions": [
+        { "q_en": "Hello. A table for two, please. We don't have a reservation.", "q_vi": "(Boss Khách) Xin chào. Cho một bàn 2 người. Chúng tôi không đặt trước.", "a_en": "Welcome! Let me check if we have any tables available.", "a_vi": "Chào mừng! Để tôi kiểm tra xem chúng ta còn bàn trống không nhé." },
+        { "q_en": "We prefer a table outside on the terrace, if possible.", "q_vi": "Khách muốn ngồi ngoài ban công", "a_en": "You are in luck. We have one table left on the terrace.", "a_vi": "Ông bà thật may mắn. Chúng tôi còn lại đúng một bàn ngoài ban công." },
+        { "q_en": "Great. The view here is amazing. Can I have the menu?", "q_vi": "Khen cảnh đẹp, xin thực đơn", "a_en": "Here is the menu. Would you like to start with some drinks?", "a_vi": "Thực đơn đây ạ. Ông bà có muốn dùng đồ uống trước không?" },
+        { "q_en": "I will have a cold beer. What about you, honey?", "q_vi": "Khách nam gọi bia, hỏi khách nữ", "a_en": "We have local craft beers and imported ones. Which do you prefer?", "a_vi": "Chúng tôi có bia thủ công địa phương và bia nhập. Ngài thích loại nào?" },
+        { "q_en": "Local craft beer is fine. And a fresh orange juice for her.", "q_vi": "Khách chốt đồ uống", "a_en": "Noted. One craft beer and one orange juice. I will be right back.", "a_vi": "Đã ghi nhận. 1 bia thủ công và 1 nước cam. Tôi sẽ quay lại ngay." },
+        { "q_en": "Waiter, we are ready to order the food now.", "q_vi": "Khách gọi phục vụ để order", "a_en": "Certainly. What would you like to have for the appetizer?", "a_vi": "Chắc chắn rồi. Ông bà muốn dùng gì cho món khai vị ạ?" },
+        { "q_en": "We will share a Caesar salad. Make sure there are no olives.", "q_vi": "Gọi Salad Caesar không có oliu", "a_en": "A Caesar salad without olives. And for the main course?", "a_vi": "Một Salad Caesar không có oliu. Còn món chính thì sao ạ?" },
+        { "q_en": "I want the grilled ribeye steak.", "q_vi": "Khách nam gọi bít tết sườn", "a_en": "Excellent choice. How would you like your steak cooked, sir?", "a_vi": "Lựa chọn xuất sắc. Ngài muốn bít tết chín mức độ nào ạ?" },
+        { "q_en": "Medium well, please. With mashed potatoes on the side.", "q_vi": "Yêu cầu chín vừa tới, kèm khoai tây nghiền", "a_en": "Medium well with mashed potatoes. And for the lady?", "a_vi": "Chín vừa tới kèm khoai tây nghiền. Còn quý cô đây thì sao?" },
+        { "q_en": "She will have the spaghetti carbonara. Is it very creamy?", "q_vi": "Khách nữ gọi mì Ý, hỏi độ béo", "a_en": "Yes, it is made with rich cream and authentic Italian cheese.", "a_vi": "Vâng, nó được làm từ kem béo và phô mai chuẩn Ý." },
+        { "q_en": "Sounds good. We will take that. That's all.", "q_vi": "Khách chốt order", "a_en": "Let me repeat your order. A Caesar salad, a ribeye steak, and a carbonara.", "a_vi": "Để tôi nhắc lại món nhé. 1 Salad Caesar, 1 bít tết sườn, và 1 mì Ý." },
+        { "q_en": "Yes, that is correct. How long is the wait?", "q_vi": "Khách xác nhận và hỏi thời gian chờ", "a_en": "Your food will be ready in approximately 25 minutes.", "a_vi": "Thức ăn của ông bà sẽ sẵn sàng trong khoảng 25 phút nữa." },
+        { "q_en": "Okay. Can you bring some bread and butter while we wait?", "q_vi": "Khách xin bánh mì ăn lót dạ", "a_en": "Of course. I will bring complimentary bread right away.", "a_vi": "Dĩ nhiên rồi. Tôi sẽ mang bánh mì tặng kèm ra ngay lập tức." },
+        { "q_en": "Excuse me, I dropped my fork. Can I get a new one?", "q_vi": "Khách làm rớt nĩa", "a_en": "I am sorry about that. Here is a clean fork for you.", "a_vi": "Tôi rất tiếc vì điều đó. Đây là một chiếc nĩa sạch cho ngài." },
+        { "q_en": "Thanks. The steak is perfectly cooked. It's delicious.", "q_vi": "Khách khen bít tết ngon", "a_en": "I am very glad to hear that. Enjoy the rest of your meal!", "a_vi": "Tôi rất vui khi nghe điều đó. Chúc ông bà tiếp tục dùng bữa ngon miệng!" },
+        { "q_en": "We are full. Can we see the dessert menu?", "q_vi": "Khách no bụng, xin menu tráng miệng", "a_en": "Here it is. I highly recommend our signature tiramisu.", "a_vi": "Đây ạ. Tôi đặc biệt gợi ý món Tiramisu đặc trưng của chúng tôi." },
+        { "q_en": "We will take one tiramisu and two espressos.", "q_vi": "Khách gọi Tiramisu và 2 cafe Espresso", "a_en": "Perfect. One tiramisu and two hot espressos coming right up.", "a_vi": "Hoàn hảo. 1 Tiramisu và 2 Espresso nóng sẽ được mang ra ngay." },
+        { "q_en": "Check, please. Do you accept credit cards?", "q_vi": "Khách gọi tính tiền, hỏi quẹt thẻ", "a_en": "Yes, we do. Here is your bill, sir.", "a_vi": "Vâng, chúng tôi có nhận. Hóa đơn của ngài đây thưa ngài." },
+        { "q_en": "Here is my card. Keep the change as a tip. The service was great.", "q_vi": "Khách đưa thẻ, boa tiền thừa", "a_en": "Thank you very much for your generosity. Here is your receipt.", "a_vi": "Rất cảm ơn sự hào phóng của ngài. Biên lai của ngài đây ạ." },
+        { "q_en": "We will definitely come back. Have a good night.", "q_vi": "Khách chào về", "a_en": "We look forward to welcoming you again. Good night!", "a_vi": "Chúng tôi rất mong được đón tiếp ông bà lần nữa. Chúc buổi tối tốt lành!" }
+      ]
+    },
+	
+	{
+      "id": 6,
+      "type": "vocab",
+      "description": "Level 6: Từ vựng Đặt bàn & Gọi đồ mang đi (Takeaway)",
+      "questions": [
+        {"q_en": "Takeaway", "a_vi": "Đồ ăn mang đi"}, {"q_en": "Delivery", "a_vi": "Giao hàng tận nơi"}, {"q_en": "Reservation", "a_vi": "Sự đặt bàn"}, {"q_en": "Cancel", "a_vi": "Hủy bỏ (đặt bàn)"}, {"q_en": "Postpone", "a_vi": "Trì hoãn / Dời lịch"}, {"q_en": "Available", "a_vi": "Có sẵn / Trống"}, {"q_en": "Fully booked", "a_vi": "Đã kín bàn"}, {"q_en": "High chair", "a_vi": "Ghế ăn dặm cho bé"}, {"q_en": "Window seat", "a_vi": "Chỗ ngồi cạnh cửa sổ"}, {"q_en": "Booth", "a_vi": "Bàn góc khuất (ghế sofa chữ U)"}, {"q_en": "Patio", "a_vi": "Sân hiên / Khu vực ăn ngoài trời"}, {"q_en": "Private room", "a_vi": "Phòng ăn riêng tư"}, {"q_en": "Allergy", "a_vi": "Sự dị ứng"}, {"q_en": "Dietary", "a_vi": "Chế độ ăn kiêng"}, {"q_en": "Confirm", "a_vi": "Xác nhận"}, {"q_en": "Occasion", "a_vi": "Dịp đặc biệt (Sinh nhật, Kỷ niệm)"}, {"q_en": "Container", "a_vi": "Hộp đựng (đồ ăn mang về)"}, {"q_en": "Straw", "a_vi": "Ống hút"}, {"q_en": "Plastic bag", "a_vi": "Túi nilon"}, {"q_en": "Napkin", "a_vi": "Khăn giấy / Khăn ăn"}
+      ]
+    },
+    {
+      "id": 7,
+      "type": "vocab",
+      "description": "Level 7: Từ vựng Nguyên liệu & Chế biến món ăn",
+      "questions": [
+        {"q_en": "Ingredient", "a_vi": "Thành phần nguyên liệu"}, {"q_en": "Recipe", "a_vi": "Công thức nấu ăn"}, {"q_en": "Seasoning", "a_vi": "Gia vị"}, {"q_en": "Garlic", "a_vi": "Tỏi"}, {"q_en": "Onion", "a_vi": "Hành tây"}, {"q_en": "Mushroom", "a_vi": "Nấm"}, {"q_en": "Dairy", "a_vi": "Sản phẩm từ sữa"}, {"q_en": "Gluten", "a_vi": "Chất gluten (trong tinh bột)"}, {"q_en": "Nut", "a_vi": "Các loại hạt"}, {"q_en": "Peanut", "a_vi": "Đậu phộng / Lạc"}, {"q_en": "Bake", "a_vi": "Nướng (bằng lò)"}, {"q_en": "Simmer", "a_vi": "Ninh / Hầm lửa nhỏ"}, {"q_en": "Stir-fry", "a_vi": "Xào"}, {"q_en": "Deep-fry", "a_vi": "Chiên ngập dầu"}, {"q_en": "Marinate", "a_vi": "Ướp (thịt/cá)"}, {"q_en": "Garnish", "a_vi": "Trang trí món ăn (bằng rau thơm/hoa)"}, {"q_en": "Tender", "a_vi": "Mềm (thịt)"}, {"q_en": "Crispy", "a_vi": "Giòn rụm"}, {"q_en": "Greasy", "a_vi": "Nhiều dầu mỡ"}, {"q_en": "Nutritious", "a_vi": "Bổ dưỡng"}
+      ]
+    },
+    {
+      "id": 8,
+      "type": "sentence",
+      "description": "Level 8: Mẫu câu Đặt bàn qua điện thoại",
+      "questions": [
+        {"q_en": "Ocean Restaurant, how may I help you?", "q_vi": "Nhấc máy chào khách", "a_en": "Ocean Restaurant, how may I help you?", "a_vi": "Nhà hàng Ocean xin nghe, tôi có thể giúp gì cho quý khách?"},
+        {"q_en": "I would like to book a table for four people tonight.", "q_vi": "Khách đặt bàn 4 người", "a_en": "I would like to book a table for four people tonight.", "a_vi": "Tôi muốn đặt một bàn cho 4 người vào tối nay."},
+        {"q_en": "What time would you like to arrive?", "q_vi": "Hỏi giờ đến", "a_en": "What time would you like to arrive?", "a_vi": "Quý khách muốn đến vào lúc mấy giờ ạ?"},
+        {"q_en": "We will be there at around 7:30 PM.", "q_vi": "Khách báo 7 rưỡi tối", "a_en": "We will be there at around 7:30 PM.", "a_vi": "Chúng tôi sẽ có mặt ở đó vào khoảng 7h30 tối."},
+        {"q_en": "I am sorry, we are fully booked at 7:30 PM.", "q_vi": "Báo hết bàn giờ đó", "a_en": "I am sorry, we are fully booked at 7:30 PM.", "a_vi": "Tôi rất xin lỗi, chúng tôi đã kín bàn vào lúc 7h30 tối."},
+        {"q_en": "Could you come a bit later, perhaps at 8:15 PM?", "q_vi": "Đề nghị dời giờ", "a_en": "Could you come a bit later, perhaps at 8:15 PM?", "a_vi": "Quý khách có thể đến muộn hơn một chút, có lẽ lúc 8h15 được không?"},
+        {"q_en": "Yes, 8:15 works for us. Please reserve a window seat.", "q_vi": "Khách đồng ý và xin chỗ cửa sổ", "a_en": "Yes, 8:15 works for us. Please reserve a window seat.", "a_vi": "Vâng, 8h15 thì ổn. Vui lòng giữ cho chúng tôi một bàn cạnh cửa sổ."},
+        {"q_en": "May I have your name and phone number, please?", "q_vi": "Xin tên và SĐT", "a_en": "May I have your name and phone number, please?", "a_vi": "Tôi có thể xin tên và số điện thoại của quý khách được không?"},
+        {"q_en": "Is this booking for a special occasion?", "q_vi": "Hỏi có dịp đặc biệt không", "a_en": "Is this booking for a special occasion?", "a_vi": "Lần đặt bàn này có phải cho một dịp đặc biệt nào không ạ?"},
+        {"q_en": "Yes, it is my wife's birthday.", "q_vi": "Khách báo sinh nhật vợ", "a_en": "Yes, it is my wife's birthday.", "a_vi": "Vâng, đó là sinh nhật của vợ tôi."},
+        {"q_en": "We will prepare a complimentary birthday cake for her.", "q_vi": "Hứa tặng bánh kem", "a_en": "We will prepare a complimentary birthday cake for her.", "a_vi": "Chúng tôi sẽ chuẩn bị một chiếc bánh sinh nhật tặng miễn phí cho cô ấy."},
+        {"q_en": "Do any of your guests have food allergies?", "q_vi": "Hỏi về dị ứng thức ăn", "a_en": "Do any of your guests have food allergies?", "a_vi": "Có vị khách nào của ngài bị dị ứng thức ăn không ạ?"},
+        {"q_en": "One person is allergic to seafood. Please note that down.", "q_vi": "Khách báo dị ứng hải sản", "a_en": "One person is allergic to seafood. Please note that down.", "a_vi": "Có một người bị dị ứng hải sản. Vui lòng ghi chú lại nhé."},
+        {"q_en": "I have noted it. A table for four at 8:15 PM.", "q_vi": "Xác nhận lại thông tin", "a_en": "I have noted it. A table for four at 8:15 PM.", "a_vi": "Tôi đã ghi chú lại. Một bàn 4 người lúc 8h15 tối."},
+        {"q_en": "Can I order some dishes in advance to save time?", "q_vi": "Khách muốn gọi món trước", "a_en": "Can I order some dishes in advance to save time?", "a_vi": "Tôi có thể gọi trước vài món để tiết kiệm thời gian không?"},
+        {"q_en": "Certainly. I will email you our menu right away.", "q_vi": "Đồng ý và gửi menu", "a_en": "Certainly. I will email you our menu right away.", "a_vi": "Chắc chắn rồi. Tôi sẽ gửi email thực đơn cho ngài ngay lập tức."},
+        {"q_en": "I need to cancel my reservation for tonight.", "q_vi": "Khách gọi hủy bàn", "a_en": "I need to cancel my reservation for tonight.", "a_vi": "Tôi cần hủy việc đặt bàn cho tối nay."},
+        {"q_en": "No problem. Would you like to postpone it to tomorrow?", "q_vi": "Hỏi khách muốn dời lịch không", "a_en": "No problem. Would you like to postpone it to tomorrow?", "a_vi": "Không sao ạ. Ngài có muốn dời lịch sang ngày mai không?"},
+        {"q_en": "Please call us if you are running more than 15 minutes late.", "q_vi": "Dặn khách nếu tới trễ", "a_en": "Please call us if you are running more than 15 minutes late.", "a_vi": "Vui lòng gọi cho chúng tôi nếu ngài đến muộn hơn 15 phút."},
+        {"q_en": "We look forward to serving you tonight.", "q_vi": "Câu chào kết thúc cuộc gọi", "a_en": "We look forward to serving you tonight.", "a_vi": "Chúng tôi rất mong được phục vụ quý khách vào tối nay."}
+      ]
+    },
+    {
+      "id": 9,
+      "type": "sentence",
+      "description": "Level 9: Mẫu câu Giao đồ ăn & Takeaway",
+      "questions": [
+        {"q_en": "I would like to order some food for takeaway.", "q_vi": "Khách muốn mua mang về", "a_en": "I would like to order some food for takeaway.", "a_vi": "Tôi muốn gọi một ít đồ ăn để mang đi."},
+        {"q_en": "Sure. Please scan the QR code to view our digital menu.", "q_vi": "Chỉ khách quét mã QR", "a_en": "Sure. Please scan the QR code to view our digital menu.", "a_vi": "Vâng ạ. Vui lòng quét mã QR để xem thực đơn điện tử của chúng tôi."},
+        {"q_en": "I want two beef burgers and one large fries.", "q_vi": "Khách order món", "a_en": "I want two beef burgers and one large fries.", "a_vi": "Tôi muốn 2 chiếc burger bò và 1 khoai tây chiên cỡ lớn."},
+        {"q_en": "Would you like to add any drinks to your order?", "q_vi": "Hỏi khách có gọi nước không", "a_en": "Would you like to add any drinks to your order?", "a_vi": "Quý khách có muốn thêm đồ uống nào vào đơn hàng không?"},
+        {"q_en": "Just a diet coke, please. No ice.", "q_vi": "Khách gọi coca ăn kiêng", "a_en": "Just a diet coke, please. No ice.", "a_vi": "Chỉ một coca ăn kiêng thôi. Không đá nhé."},
+        {"q_en": "Your order will take about 15 minutes to prepare.", "q_vi": "Báo thời gian chờ", "a_en": "Your order will take about 15 minutes to prepare.", "a_vi": "Đơn hàng của quý khách sẽ mất khoảng 15 phút để chuẩn bị."},
+        {"q_en": "Please have a seat in the waiting area over there.", "q_vi": "Mời khách ngồi chờ", "a_en": "Please have a seat in the waiting area over there.", "a_vi": "Vui lòng ngồi tại khu vực chờ ở đằng kia."},
+        {"q_en": "Can you pack the sauce in a separate container?", "q_vi": "Khách yêu cầu để riêng nước xốt", "a_en": "Can you pack the sauce in a separate container?", "a_vi": "Bạn có thể đóng gói nước xốt vào một hộp riêng được không?"},
+        {"q_en": "Yes, I will put the sauce and napkins in a small plastic bag.", "q_vi": "Xác nhận sẽ để riêng", "a_en": "Yes, I will put the sauce and napkins in a small plastic bag.", "a_vi": "Vâng, tôi sẽ để nước xốt và khăn giấy vào một túi nilon nhỏ."},
+        {"q_en": "We use eco-friendly paper boxes for all takeaway orders.", "q_vi": "Khoe dùng hộp giấy bảo vệ môi trường", "a_en": "We use eco-friendly paper boxes for all takeaway orders.", "a_vi": "Chúng tôi sử dụng hộp giấy thân thiện với môi trường cho mọi đơn mang đi."},
+        {"q_en": "Order number 45! Your food is ready for pick up.", "q_vi": "Gọi khách lấy đồ", "a_en": "Order number 45! Your food is ready for pick up.", "a_vi": "Đơn hàng số 45! Thức ăn của quý khách đã sẵn sàng để lấy."},
+        {"q_en": "Can I have some extra chili sauce and ketchup?", "q_vi": "Khách xin thêm tương ớt/cà", "a_en": "Can I have some extra chili sauce and ketchup?", "a_vi": "Cho tôi xin thêm một ít tương ớt và tương cà được không?"},
+        {"q_en": "Here you go. Be careful, the bottom of the box is hot.", "q_vi": "Đưa hàng và nhắc nhở nóng", "a_en": "Here you go. Be careful, the bottom of the box is hot.", "a_vi": "Của quý khách đây. Cẩn thận nhé, đáy hộp đang rất nóng."},
+        {"q_en": "Do you offer food delivery to the hotel rooms?", "q_vi": "Hỏi có giao tận phòng không", "a_en": "Do you offer food delivery to the hotel rooms?", "a_vi": "Các bạn có cung cấp dịch vụ giao đồ ăn đến phòng khách sạn không?"},
+        {"q_en": "Yes, you can dial number 3 on your room phone to order.", "q_vi": "Hướng dẫn gọi Room Service", "a_en": "Yes, you can dial number 3 on your room phone to order.", "a_vi": "Vâng, ngài có thể bấm số 3 trên điện thoại phòng để gọi món."},
+        {"q_en": "There is a 10% delivery surcharge for room service.", "q_vi": "Báo phụ phí giao hàng lên phòng", "a_en": "There is a 10% delivery surcharge for room service.", "a_vi": "Có 10% phụ phí giao hàng đối với dịch vụ phục vụ tại phòng."},
+        {"q_en": "Please double-check the items before you leave.", "q_vi": "Nhắc khách kiểm tra đồ trước khi đi", "a_en": "Please double-check the items before you leave.", "a_vi": "Vui lòng kiểm tra kỹ lại các món hàng trước khi quý khách rời đi."},
+        {"q_en": "I think you forgot to put the straw in the bag.", "q_vi": "Khách báo quên ống hút", "a_en": "I think you forgot to put the straw in the bag.", "a_vi": "Tôi nghĩ bạn quên để ống hút vào trong túi rồi."},
+        {"q_en": "I apologize for the oversight. Here is your straw.", "q_vi": "Xin lỗi vì sơ suất và đưa ống hút", "a_en": "I apologize for the oversight. Here is your straw.", "a_vi": "Tôi xin lỗi vì sự sơ suất này. Ống hút của quý khách đây."},
+        {"q_en": "Enjoy your meal and have a great day!", "q_vi": "Chào khách ra về", "a_en": "Enjoy your meal and have a great day!", "a_vi": "Chúc quý khách ngon miệng và có một ngày tuyệt vời!"}
+      ]
+    },
+    {
+      "id": 10,
+      "type": "boss",
+      "description": "Level 10: BOSS Đặt Bàn (Xử lý tình huống thay đổi order giờ chót)",
+      "questions": [
+        {"q_en": "Ocean Restaurant, good afternoon. How may I assist you?", "q_vi": "(Lễ tân nhà hàng) Nhà hàng Ocean chào buổi chiều. Tôi có thể giúp gì cho quý khách?", "a_en": "Hi, I booked a table for two tonight under the name Smith. I need to change it.", "a_vi": "Chào, tôi đã đặt một bàn 2 người tối nay dưới tên Smith. Tôi cần thay đổi nó." },
+        {"q_en": "Certainly, Mr. Smith. Let me find your reservation. What would you like to change?", "q_vi": "Hỏi khách muốn đổi gì", "a_en": "My parents decided to join us. Can we make it a table for four?", "a_vi": "Bố mẹ tôi quyết định tham gia cùng. Chúng tôi có thể đổi thành bàn 4 người không?" },
+        {"q_en": "A table for four. Let me check... Yes, we can accommodate that.", "q_vi": "Đồng ý đổi sang bàn 4", "a_en": "Thank you. But my mother is in a wheelchair. Is the table accessible?", "a_vi": "Cảm ơn. Nhưng mẹ tôi phải ngồi xe lăn. Bàn đó có tiện đi lại không?" },
+        {"q_en": "I will move your reservation to a spacious table on the ground floor.", "q_vi": "Bố trí bàn rộng tầng trệt", "a_en": "That is perfect. Also, we will be arriving 30 minutes late. Around 8 PM.", "a_vi": "Thế thì hoàn hảo. Ngoài ra, chúng tôi sẽ đến muộn 30 phút. Khoảng 8h tối." },
+        {"q_en": "Noted, sir. A table for four at 8 PM on the ground floor.", "q_vi": "Xác nhận lại giờ và số lượng", "a_en": "Do you still have the fresh lobster available tonight? I want to pre-order two.", "a_vi": "Nhà hàng vẫn còn tôm hùm tươi tối nay chứ? Tôi muốn đặt trước 2 con." },
+        {"q_en": "Yes, we do. How would you like the lobsters prepared?", "q_vi": "Hỏi cách chế biến tôm hùm", "a_en": "Please have them grilled with garlic butter. Not too spicy.", "a_vi": "Vui lòng nướng chúng với bơ tỏi. Đừng cay quá nhé." },
+        {"q_en": "Grilled with garlic butter, not spicy. Would you like to order anything else?", "q_vi": "Xác nhận món và hỏi gọi thêm", "a_en": "My father is a strict vegan. Do you have any vegan main courses?", "a_vi": "Bố tôi là người ăn thuần chay nghiêm ngặt. Bạn có món chính nào thuần chay không?" },
+        {"q_en": "We highly recommend our vegan mushroom risotto.", "q_vi": "Gợi ý món cơm ý nấm thuần chay", "a_en": "Sounds good. Please add one vegan mushroom risotto to the order.", "a_vi": "Nghe ngon đấy. Vui lòng thêm 1 cơm ý nấm thuần chay vào đơn nhé." },
+        {"q_en": "I have added it. Just to confirm, does your father eat dairy or eggs?", "q_vi": "Hỏi kỹ về trứng sữa vì khách thuần chay", "a_en": "No dairy, no eggs. Absolute vegan. Please make sure the chef knows.", "a_vi": "Không sữa, không trứng. Thuần chay tuyệt đối. Hãy đảm bảo đầu bếp biết việc này." },
+        {"q_en": "I will inform the Executive Chef personally. Your father is in good hands.", "q_vi": "Cam đoan với khách", "a_en": "Thank you. Oh, I almost forgot. It is my parents' wedding anniversary.", "a_vi": "Cảm ơn. Ồ, tôi suýt quên. Đó là kỷ niệm ngày cưới của bố mẹ tôi." },
+        {"q_en": "Happy anniversary to them! We will prepare a complimentary cake.", "q_vi": "Chúc mừng và hứa tặng bánh", "a_en": "That is very kind. Can you write 'Happy 40th Anniversary' on the plate?", "a_vi": "Bạn thật tốt bụng. Bạn có thể viết 'Chúc mừng Kỷ niệm 40 năm' lên đĩa được không?" },
+        {"q_en": "It would be our pleasure. 'Happy 40th Anniversary'.", "q_vi": "Nhận lời ghi chữ lên bánh", "a_en": "Can we also get a nice bottle of red wine ready on the table?", "a_vi": "Chúng tôi có thể yêu cầu để sẵn một chai vang đỏ ngon trên bàn được không?" },
+        {"q_en": "Certainly. Our sommelier will select a premium French vintage for you.", "q_vi": "Hứa cử chuyên gia chọn rượu", "a_en": "Excellent. You have been incredibly helpful. I appreciate it.", "a_vi": "Tuyệt vời. Bạn đã hỗ trợ vô cùng tận tình. Tôi rất trân trọng." },
+        {"q_en": "It is my duty, Mr. Smith. Is there anything else I can assist you with?", "q_vi": "Hỏi xem khách cần gì nữa không", "a_en": "No, that covers everything. We will see you at 8 PM.", "a_vi": "Không, thế là đủ mọi thứ rồi. Chúng tôi sẽ gặp bạn lúc 8h tối." },
+        {"q_en": "We look forward to hosting your family's special celebration tonight.", "q_vi": "Câu chào kết thúc chuyên nghiệp", "a_en": "Thank you, Ocean Restaurant. Goodbye.", "a_vi": "Cảm ơn Nhà hàng Ocean. Tạm biệt." },
+        {"q_en": "(Hangs up phone) Chef! We have a strict vegan order and two lobsters for 8 PM!", "q_vi": "Báo ngay cho bếp trưởng", "a_en": "Chef: Heard you loud and clear! I'll prepare the vegan risotto station.", "a_vi": "Bếp trưởng: Nghe rất rõ ràng! Tôi sẽ chuẩn bị trạm nấu cơm Ý thuần chay." },
+        {"q_en": "Hostess, please arrange a wheelchair-accessible table on the ground floor.", "q_vi": "Chỉ đạo lễ tân xếp bàn xe lăn", "a_en": "Hostess: Table 12 is perfect. Wide space and near the window.", "a_vi": "Lễ tân: Bàn 12 là hoàn hảo. Không gian rộng và gần cửa sổ." },
+        {"q_en": "And tell the pastry chef we need a 40th-anniversary cake.", "q_vi": "Dặn dò bếp bánh", "a_en": "Pastry Chef: I will pipe the chocolate letters beautifully on the plate.", "a_vi": "Bếp Bánh: Tôi sẽ bắt chữ bằng sô-cô-la thật đẹp lên đĩa." },
+        {"q_en": "Sommelier, please decant a premium French red wine for Table 12.", "q_vi": "Dặn chuyên gia rượu vang", "a_en": "Sommelier: I have a 2010 Bordeaux ready to breathe.", "a_vi": "Chuyên gia rượu: Tôi có một chai Bordeaux 2010 đã sẵn sàng để thở." },
+        {"q_en": "Teamwork makes the dream work. Let's give them an unforgettable night.", "q_vi": "Động viên cả đội", "a_en": "Everyone: Yes, sir! We are ready for service.", "a_vi": "Tất cả: Vâng thưa sếp! Chúng tôi đã sẵn sàng phục vụ." }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "vocab",
+      "description": "Level 11: Từ vựng Quầy Bar, Pha chế & Đồ uống",
+      "questions": [
+        {"q_en": "Bartender", "a_vi": "Nhân viên pha chế"}, {"q_en": "Cocktail", "a_vi": "Rượu pha chế có cồn"}, {"q_en": "Mocktail", "a_vi": "Thức uống pha chế không cồn"}, {"q_en": "Liquor", "a_vi": "Rượu mạnh / Rượu mùi"}, {"q_en": "Draft beer", "a_vi": "Bia tươi (rót từ vòi)"}, {"q_en": "Spirit", "a_vi": "Rượu mạnh (Vodka, Gin, Rum...)"}, {"q_en": "Garnish", "a_vi": "Đồ trang trí ly nước (chanh, cherry)"}, {"q_en": "Shaker", "a_vi": "Bình lắc pha chế"}, {"q_en": "Ice cube", "a_vi": "Đá viên"}, {"q_en": "Crushed ice", "a_vi": "Đá bào"}, {"q_en": "Neat", "a_vi": "Uống nguyên chất (không đá, không pha)"}, {"q_en": "On the rocks", "a_vi": "Uống kèm với đá viên"}, {"q_en": "Straight up", "a_vi": "Lắc với đá rồi rót ra ly không đá"}, {"q_en": "Happy hour", "a_vi": "Giờ vàng khuyến mãi"}, {"q_en": "Coaster", "a_vi": "Miếng lót ly"}, {"q_en": "Straw", "a_vi": "Ống hút"}, {"q_en": "Stir", "a_vi": "Khuấy đều"}, {"q_en": "Shake", "a_vi": "Lắc mạnh"}, {"q_en": "Blend", "a_vi": "Xay (bằng máy sinh tố)"}, {"q_en": "Sober", "a_vi": "Tỉnh táo (không say)"}
+      ]
+    },
+    {
+      "id": 12,
+      "type": "vocab", "description": "Level 12: Từ vựng Rượu Vang (Wine & Sommelier)",
+      "questions": [
+        {"q_en": "Sommelier", "a_vi": "Chuyên gia nếm & phục vụ rượu vang"}, {"q_en": "Vineyard", "a_vi": "Vườn nho"}, {"q_en": "Vintage", "a_vi": "Năm thu hoạch nho / Rượu lâu năm"}, {"q_en": "Red wine", "a_vi": "Rượu vang đỏ"}, {"q_en": "White wine", "a_vi": "Rượu vang trắng"}, {"q_en": "Sparkling wine", "a_vi": "Rượu vang sủi bọt"}, {"q_en": "Champagne", "a_vi": "Rượu sâm panh (vang sủi từ vùng Champagne Pháp)"}, {"q_en": "Cork", "a_vi": "Nút bần / Nút bấc"}, {"q_en": "Corkscrew", "a_vi": "Đồ khui rượu vang"}, {"q_en": "Decanter", "a_vi": "Bình chiết rượu (để rượu thở)"}, {"q_en": "Aroma", "a_vi": "Hương thơm (của rượu/thức ăn)"}, {"q_en": "Bouquet", "a_vi": "Hương vị phức hợp của rượu vang"}, {"q_en": "Tannin", "a_vi": "Chất chát (trong vang đỏ)"}, {"q_en": "Acidity", "a_vi": "Độ chua"}, {"q_en": "Body", "a_vi": "Cấu trúc / Độ đậm đà của rượu"}, {"q_en": "Dry", "a_vi": "Không ngọt / Chát"}, {"q_en": "Sweet", "a_vi": "Ngọt"}, {"q_en": "Pairing", "a_vi": "Sự kết hợp (rượu với món ăn)"}, {"q_en": "Pour", "a_vi": "Rót (rượu/nước)"}, {"q_en": "Swirl", "a_vi": "Lắc nhẹ ly rượu (để tỏa hương)"}
+      ]
+    },
+    {
+      "id": 13,
+      "type": "sentence",
+      "description": "Level 13: Mẫu câu Phục vụ tại Quầy Bar",
+      "questions": [
+        {"q_en": "Welcome to the lounge bar. What can I get for you?", "q_vi": "Chào khách ở Bar", "a_en": "Welcome to the lounge bar. What can I get for you?", "a_vi": "Chào mừng đến với quầy bar thư giãn. Tôi có thể lấy gì cho quý khách?"},
+        {"q_en": "I will have a gin and tonic, please.", "q_vi": "Khách gọi Gin Tonic", "a_en": "I will have a gin and tonic, please.", "a_vi": "Cho tôi một ly gin pha nước tonic."},
+        {"q_en": "Would you like a slice of lemon or lime as a garnish?", "q_vi": "Hỏi khách thích trang trí chanh nào", "a_en": "Would you like a slice of lemon or lime as a garnish?", "a_vi": "Quý khách muốn trang trí bằng một lát chanh vàng hay chanh xanh?"},
+        {"q_en": "Can you make me a tropical cocktail?", "q_vi": "Khách nhờ pha cocktail nhiệt đới", "a_en": "Can you make me a tropical cocktail?", "a_vi": "Bạn có thể pha cho tôi một ly cocktail nhiệt đới không?"},
+        {"q_en": "I highly recommend our signature Piña Colada.", "q_vi": "Bartender gợi ý món", "a_en": "I highly recommend our signature Piña Colada.", "a_vi": "Tôi đặc biệt gợi ý món Piña Colada đặc trưng của chúng tôi."},
+        {"q_en": "I don't drink alcohol. Do you have any mocktails?", "q_vi": "Khách hỏi đồ không cồn", "a_en": "I don't drink alcohol. Do you have any mocktails?", "a_vi": "Tôi không uống đồ có cồn. Bạn có thức uống pha chế không cồn (mocktail) nào không?"},
+        {"q_en": "We can blend fresh mango and passion fruit for you.", "q_vi": "Gợi ý xay trái cây tươi", "a_en": "We can blend fresh mango and passion fruit for you.", "a_vi": "Chúng tôi có thể xay xoài tươi và chanh dây cho quý khách."},
+        {"q_en": "I want a whiskey, neat. No ice, please.", "q_vi": "Khách gọi Whiskey nguyên chất", "a_en": "I want a whiskey, neat. No ice, please.", "a_vi": "Tôi muốn một ly whiskey nguyên chất. Không đá nhé."},
+        {"q_en": "Make it a double, on the rocks.", "q_vi": "Khách gọi ly đúp có đá", "a_en": "Make it a double, on the rocks.", "a_vi": "Cho một ly đúp (gấp đôi rượu), uống kèm với đá."},
+        {"q_en": "It is Happy Hour right now. All draft beers are buy one get one free.", "q_vi": "Giới thiệu giờ vàng", "a_en": "It is Happy Hour right now. All draft beers are buy one get one free.", "a_vi": "Hiện tại đang là Giờ Vàng. Mọi loại bia tươi đều mua 1 tặng 1."},
+        {"q_en": "That sounds great. Give me two draft beers then.", "q_vi": "Khách chốt lấy bia", "a_en": "That sounds great. Give me two draft beers then.", "a_vi": "Nghe tuyệt đấy. Vậy cho tôi 2 ly bia tươi."},
+        {"q_en": "Do you prefer your martini shaken or stirred?", "q_vi": "Hỏi cách pha Martini", "a_en": "Do you prefer your martini shaken or stirred?", "a_vi": "Quý khách thích ly martini của mình được lắc hay khuấy?"},
+        {"q_en": "Shaken, please. And served straight up.", "q_vi": "Khách yêu cầu lắc và không đá", "a_en": "Shaken, please. And served straight up.", "a_vi": "Lắc nhé. Và rót ra ly không kèm đá."},
+        {"q_en": "Here is your drink. Let me put a coaster under it.", "q_vi": "Đưa nước và lót ly", "a_en": "Here is your drink. Let me put a coaster under it.", "a_vi": "Đồ uống của quý khách đây. Để tôi đặt một miếng lót ly dưới nó."},
+        {"q_en": "Can I get some bar snacks, like peanuts or chips?", "q_vi": "Khách gọi đồ nhắm", "a_en": "Can I get some bar snacks, like peanuts or chips?", "a_vi": "Cho tôi vài món ăn vặt, như đậu phộng hay khoai tây chiên được không?"},
+        {"q_en": "We offer complimentary mixed nuts for all bar guests.", "q_vi": "Báo có hạt tặng kèm", "a_en": "We offer complimentary mixed nuts for all bar guests.", "a_vi": "Chúng tôi cung cấp các loại hạt trộn miễn phí cho mọi khách tại bar."},
+        {"q_en": "Sir, I think you have had enough to drink tonight.", "q_vi": "Từ chối phục vụ khách say", "a_en": "Sir, I think you have had enough to drink tonight.", "a_vi": "Thưa ngài, tôi nghĩ ngài đã uống đủ nhiều cho tối nay rồi."},
+        {"q_en": "Let me order a taxi to take you back to your room safely.", "q_vi": "Đề nghị gọi taxi cho khách say", "a_en": "Let me order a taxi to take you back to your room safely.", "a_vi": "Để tôi gọi một chiếc taxi đưa ngài về phòng an toàn nhé."},
+        {"q_en": "I am completely sober! Just one more shot.", "q_vi": "Khách say cãi nhem nhẻm", "a_en": "I am completely sober! Just one more shot.", "a_vi": "Tôi hoàn toàn tỉnh táo! Chỉ một ly (shot) nữa thôi."},
+        {"q_en": "I am sorry, but it is against our hotel policy to serve intoxicated guests.", "q_vi": "Khẳng định luật khách sạn", "a_en": "I am sorry, but it is against our hotel policy to serve intoxicated guests.", "a_vi": "Tôi rất xin lỗi, nhưng phục vụ khách say xỉn là trái với quy định của khách sạn."}
+      ]
+    },
+    {
+      "id": 14,
+      "type": "sentence",
+      "description": "Level 14: Giao tiếp Rượu vang & Sommelier",
+      "questions": [
+        {"q_en": "Would you like to see our wine list?", "q_vi": "Mời khách xem menu rượu", "a_en": "Would you like to see our wine list?", "a_vi": "Quý khách có muốn xem danh sách rượu vang của chúng tôi không?"},
+        {"q_en": "Could you recommend a good red wine to pair with the steak?", "q_vi": "Khách nhờ chuyên gia gợi ý", "a_en": "Could you recommend a good red wine to pair with the steak?", "a_vi": "Bạn có thể gợi ý một loại vang đỏ ngon để ăn kèm với bít tết không?"},
+        {"q_en": "I highly recommend this full-bodied Cabernet Sauvignon.", "q_vi": "Gợi ý vang đỏ đậm đà", "a_en": "I highly recommend this full-bodied Cabernet Sauvignon.", "a_vi": "Tôi đặc biệt gợi ý loại vang Cabernet Sauvignon có cấu trúc đậm đà này."},
+        {"q_en": "It has a strong aroma of dark berries and a hint of oak.", "q_vi": "Miêu tả hương vị rượu", "a_en": "It has a strong aroma of dark berries and a hint of oak.", "a_vi": "Nó có hương thơm nồng của các loại quả mọng đen và một chút mùi gỗ sồi."},
+        {"q_en": "That sounds perfect. We will take a bottle of that.", "q_vi": "Khách chốt lấy 1 chai", "a_en": "That sounds perfect. We will take a bottle of that.", "a_vi": "Nghe hoàn hảo đấy. Chúng tôi sẽ lấy một chai đó."},
+        {"q_en": "Excellent choice. I will bring the bottle to your table to open.", "q_vi": "Hẹn mang ra bàn khui", "a_en": "Excellent choice. I will bring the bottle to your table to open.", "a_vi": "Lựa chọn xuất sắc. Tôi sẽ mang chai rượu ra bàn của quý khách để mở."},
+        {"q_en": "Here is the vintage you selected. Please confirm the label.", "q_vi": "Mời khách xác nhận nhãn chai", "a_en": "Here is the vintage you selected. Please confirm the label.", "a_vi": "Đây là chai rượu lâu năm ngài đã chọn. Vui lòng xác nhận nhãn mác."},
+        {"q_en": "Yes, that is the correct bottle. Please open it.", "q_vi": "Khách xác nhận đúng chai", "a_en": "Yes, that is the correct bottle. Please open it.", "a_vi": "Vâng, đúng chai đó rồi. Vui lòng khui nó ra."},
+        {"q_en": "I will carefully remove the cork with the corkscrew.", "q_vi": "Miêu tả hành động khui rượu", "a_en": "I will carefully remove the cork with the corkscrew.", "a_vi": "Tôi sẽ cẩn thận rút nút bần ra bằng đồ khui rượu."},
+        {"q_en": "Would you like me to pour a small amount for tasting?", "q_vi": "Mời nếm thử", "a_en": "Would you like me to pour a small amount for tasting?", "a_vi": "Ngài có muốn tôi rót một lượng nhỏ để nếm thử không?"},
+        {"q_en": "Yes, pour a little bit so I can check the bouquet.", "q_vi": "Khách muốn ngửi và nếm", "a_en": "Yes, pour a little bit so I can check the bouquet.", "a_vi": "Vâng, hãy rót một chút để tôi có thể kiểm tra hương vị phức hợp của nó."},
+        {"q_en": "Swirl the glass gently to release the full aroma.", "q_vi": "Hướng dẫn khách lắc ly", "a_en": "Swirl the glass gently to release the full aroma.", "a_vi": "Hãy lắc nhẹ chiếc ly để giải phóng toàn bộ hương thơm."},
+        {"q_en": "It is slightly dry, but the tannins are very smooth.", "q_vi": "Khách nhận xét vị chát mượt", "a_en": "It is slightly dry, but the tannins are very smooth.", "a_vi": "Nó hơi chát (không ngọt), nhưng vị chát tannin thì rất mượt mà."},
+        {"q_en": "It is perfect. You may pour for the rest of the table.", "q_vi": "Khách ưng ý, cho rót hết bàn", "a_en": "It is perfect. You may pour for the rest of the table.", "a_vi": "Nó rất hoàn hảo. Bạn có thể rót cho những người còn lại trong bàn."},
+        {"q_en": "Should I pour the remaining wine into a decanter?", "q_vi": "Hỏi có muốn chiết rượu ra bình không", "a_en": "Should I pour the remaining wine into a decanter?", "a_vi": "Tôi có nên rót phần rượu còn lại vào bình chiết không ạ?"},
+        {"q_en": "Yes, let the wine breathe for about twenty minutes.", "q_vi": "Khách muốn để rượu thở", "a_en": "Yes, let the wine breathe for about twenty minutes.", "a_vi": "Vâng, hãy để rượu thở trong khoảng 20 phút."},
+        {"q_en": "Do you have any sweet sparkling wine for dessert?", "q_vi": "Khách hỏi vang sủi ngọt ăn tráng miệng", "a_en": "Do you have any sweet sparkling wine for dessert?", "a_vi": "Bạn có loại rượu vang sủi bọt có vị ngọt nào để ăn tráng miệng không?"},
+        {"q_en": "I suggest a glass of chilled Moscato. It pairs perfectly with cake.", "q_vi": "Gợi ý rượu Moscato", "a_en": "I suggest a glass of chilled Moscato. It pairs perfectly with cake.", "a_vi": "Tôi đề xuất một ly Moscato ướp lạnh. Nó kết hợp hoàn hảo với bánh ngọt."},
+        {"q_en": "I think this wine has gone bad. It smells like vinegar.", "q_vi": "Khách phàn nàn rượu bị hỏng mùi chua", "a_en": "I think this wine has gone bad. It smells like vinegar.", "a_vi": "Tôi nghĩ rượu này bị hỏng rồi. Nó có mùi như giấm vậy."},
+        {"q_en": "I sincerely apologize. The bottle might be 'corked'. I will bring a new one.", "q_vi": "Xin lỗi và đổi chai mới (lỗi nút bần)", "a_en": "I sincerely apologize. The bottle might be 'corked'. I will bring a new one.", "a_vi": "Tôi thành thật xin lỗi. Chai này có thể đã bị 'hỏng do nút bần'. Tôi sẽ mang một chai mới ra."}
+      ]
+    },
+    {
+      "id": 15,
+      "type": "boss",
+      "description": "Level 15: BOSS Sommelier (Khách Sành Vang Bắt Bẻ & Đổi Rượu)",
+      "questions": [
+        {"q_en": "Good evening. I am the Sommelier. Would you like to select a wine for your dinner?", "q_vi": "(Sommelier) Chào buổi tối. Tôi là Chuyên gia nếm rượu. Ngài có muốn chọn một loại rượu cho bữa tối không?", "a_en": "Yes. We ordered the grilled lamb rack. What do you recommend?", "a_vi": "Vâng. Chúng tôi đã gọi món sườn cừu nướng. Bạn gợi ý loại nào?" },
+        {"q_en": "For lamb, a robust red wine is best. Perhaps a Syrah from our French collection?", "q_vi": "Gợi ý vang đỏ Pháp", "a_en": "I am not a fan of French Syrah. The tannins are usually too aggressive for me.", "a_vi": "Tôi không phải fan của Syrah Pháp. Vị chát thường quá gắt đối với tôi." },
+        {"q_en": "I understand. If you prefer smoother tannins, how about an aged Italian Merlot?", "q_vi": "Đổi sang gợi ý vang Ý", "a_en": "An aged Merlot sounds intriguing. What vintage do you have?", "a_vi": "Một chai Merlot lâu năm nghe có vẻ hấp dẫn đấy. Bạn có niên vụ năm nào?" },
+        {"q_en": "We have an excellent 2015 vintage. It has a beautiful bouquet of cherry and vanilla.", "q_vi": "Báo niên vụ 2015 và miêu tả hương", "a_en": "Alright, bring the 2015 Merlot. Make sure it is stored at the proper temperature.", "a_vi": "Được rồi, mang chai Merlot 2015 ra đây. Đảm bảo nó được bảo quản ở nhiệt độ chuẩn nhé." },
+        {"q_en": "Certainly, sir. (Returns) Here is the bottle. Please inspect the label.", "q_vi": "Mang rượu ra cho khách kiểm tra nhãn", "a_en": "The label is correct. Go ahead and open it.", "a_vi": "Nhãn đúng rồi. Cứ tự nhiên khui nó đi." },
+        {"q_en": "(Uncorks the bottle) Here is the cork, sir. I will pour a small amount for you to taste.", "q_vi": "Mời khách nếm thử", "a_en": "(Swirls and sniffs) Wait a minute... This doesn't smell right.", "a_vi": "(Lắc ly và ngửi) Khoan đã... Mùi này không đúng lắm." },
+        {"q_en": "Is there something wrong with the aroma, sir?", "q_vi": "Hỏi thăm sự cố", "a_en": "It smells musty, like wet cardboard. I think this wine is corked.", "a_vi": "Nó có mùi mốc, giống như bìa các-tông ướt vậy. Tôi nghĩ rượu này bị lỗi nút bần rồi." },
+        {"q_en": "Please allow me to verify. (Smells the glass) You are absolutely right, sir. I apologize.", "q_vi": "Chuyên gia ngửi lại và nhận lỗi", "a_en": "It happens. Just take it away and bring me a new bottle of the same vintage.", "a_vi": "Chuyện đó cũng hay xảy ra thôi. Cứ mang nó đi và mang cho tôi một chai mới cùng niên vụ." },
+        {"q_en": "I will retrieve a new bottle immediately. Thank you for your patience.", "q_vi": "Hứa đi lấy chai mới", "a_en": "And please bring a decanter this time. It needs to breathe.", "a_vi": "Và vui lòng mang theo một bình chiết lần này nhé. Nó cần được thở." },
+        {"q_en": "(Returns with new bottle) I have thoroughly checked this bottle, sir. May I pour?", "q_vi": "Mang chai mới ra, xin phép rót", "a_en": "Yes, pour a little. Let's hope this one is better.", "a_vi": "Vâng, rót một chút đi. Cùng hy vọng chai này sẽ tốt hơn." },
+        {"q_en": "(Pours wine) How is the bouquet on this one?", "q_vi": "Hỏi hương vị chai mới", "a_en": "(Tastes the wine) Ah, much better. The cherry notes are very vibrant. It's excellent.", "a_vi": "(Nếm rượu) À, tốt hơn nhiều rồi. Hương anh đào rất sống động. Thật xuất sắc." },
+        {"q_en": "I am delighted to hear that. I will decant the rest of the bottle for you now.", "q_vi": "Tiến hành chiết rượu", "a_en": "Thank you. Pour a glass for my wife as well, please.", "a_vi": "Cảm ơn. Vui lòng rót một ly cho vợ tôi luôn nhé." },
+        {"q_en": "(Pours for the wife) Your lamb rack will be served in approximately 10 minutes.", "q_vi": "Báo giờ lên món chính", "a_en": "Perfect timing. The wine will be perfectly aerated by then.", "a_vi": "Thời gian hoàn hảo. Rượu sẽ được sục khí (thở) hoàn hảo vào lúc đó." },
+        {"q_en": "Is there any sparkling water I can bring to cleanse your palate?", "q_vi": "Mời nước khoáng làm sạch vị giác", "a_en": "Yes, a bottle of sparkling water with a slice of lime would be great.", "a_vi": "Vâng, một chai nước khoáng có ga với một lát chanh xanh sẽ rất tuyệt." },
+        {"q_en": "Right away. Please accept our sincere apologies again for the faulty bottle.", "q_vi": "Xin lỗi lần nữa", "a_en": "Don't worry about it. You handled the situation very professionally.", "a_vi": "Đừng bận tâm về nó nữa. Bạn đã xử lý tình huống rất chuyên nghiệp." },
+        {"q_en": "Your understanding is greatly appreciated. We have removed the corked bottle from your bill.", "q_vi": "Báo không tính tiền chai hỏng", "a_en": "Of course. I wouldn't expect to pay for a defective wine anyway.", "a_vi": "Tất nhiên rồi. Dù sao thì tôi cũng không đời nào trả tiền cho một chai rượu bị lỗi." },
+        {"q_en": "Enjoy the wine and your evening. I will leave the decanter right here.", "q_vi": "Để lại bình chiết và lui đi", "a_en": "Thank you. We will enjoy our meal now.", "a_vi": "Cảm ơn. Giờ chúng tôi sẽ thưởng thức bữa ăn của mình." },
+        {"q_en": "Should you need anything else, just signal me.", "q_vi": "Dặn khách gọi nếu cần", "a_en": "Will do. The service here is top-notch.", "a_vi": "Tôi sẽ làm vậy. Dịch vụ ở đây đúng là đỉnh cao." },
+        {"q_en": "Thank you, sir.", "q_vi": "Cảm ơn", "a_en": "Cheers, honey. To a wonderful night.", "a_vi": "Cạn ly em yêu. Chúc cho một đêm tuyệt vời." },
+        {"q_en": "(Walks away confidently)", "q_vi": "Rời đi tự tin", "a_en": "(Guests enjoy the wine)", "a_vi": "(Khách thưởng thức rượu)" }
+      ]
+    },
+    {
+      "id": 16,
+      "type": "vocab",
+      "description": "Level 16: Từ vựng Phàn nàn, Dị ứng & Trả món",
+      "questions": [
+        {"q_en": "Complaint", "a_vi": "Lời phàn nàn / Sự khiếu nại"}, {"q_en": "Apologize", "a_vi": "Nói lời xin lỗi"}, {"q_en": "Replacement", "a_vi": "Sự thay thế (đổi món khác)"}, {"q_en": "Refund", "a_vi": "Hoàn tiền lại"}, {"q_en": "Overcooked", "a_vi": "Bị nấu chín quá / Nấu quá lửa"}, {"q_en": "Undercooked", "a_vi": "Chưa chín tới / Còn sống"}, {"q_en": "Salty", "a_vi": "Quá mặn"}, {"q_en": "Bland", "a_vi": "Nhạt nhẽo / Không có vị"}, {"q_en": "Burnt", "a_vi": "Bị khét / Cháy đen"}, {"q_en": "Cold", "a_vi": "Bị nguội lạnh"}, {"q_en": "Stale", "a_vi": "Bị ôi thiu / Cũ (bánh mì)"}, {"q_en": "Foreign object", "a_vi": "Vật thể lạ / Dị vật (trong thức ăn)"}, {"q_en": "Hair", "a_vi": "Sợi tóc"}, {"q_en": "Bug / Insect", "a_vi": "Con bọ / Côn trùng"}, {"q_en": "Allergic reaction", "a_vi": "Phản ứng dị ứng"}, {"q_en": "EpiPen", "a_vi": "Bút tiêm Adrenaline (cấp cứu dị ứng)"}, {"q_en": "Choke", "a_vi": "Bị nghẹn / Hóc"}, {"q_en": "Paramedic", "a_vi": "Nhân viên y tế cấp cứu"}, {"q_en": "Compensate", "a_vi": "Đền bù / Bồi thường"}, {"q_en": "Complimentary", "a_vi": "Miễn phí / Được tặng kèm"}
+      ]
+    },
+    {
+      "id": 17,
+      "type": "vocab",
+      "description": "Level 17: Từ vựng Thanh toán, Chia Bill & Xử lý thẻ",
+      "questions": [
+        {"q_en": "Bill / Check", "a_vi": "Hóa đơn thanh toán (nhà hàng)"}, {"q_en": "Settle", "a_vi": "Thanh toán (hóa đơn)"}, {"q_en": "Split the bill", "a_vi": "Chia đôi hóa đơn (cưa tiền)"}, {"q_en": "Go Dutch", "a_vi": "Mạnh ai nấy trả"}, {"q_en": "Treat", "a_vi": "Bao / Mời (Tôi sẽ bao chầu này)"}, {"q_en": "Cashier", "a_vi": "Thu ngân"}, {"q_en": "Terminal / POS machine", "a_vi": "Máy quẹt thẻ"}, {"q_en": "Insert", "a_vi": "Đút (thẻ) vào"}, {"q_en": "Tap / Contactless", "a_vi": "Chạm thẻ (không chạm)"}, {"q_en": "Declined", "a_vi": "Bị từ chối (Giao dịch thẻ)"}, {"q_en": "Approved", "a_vi": "Được chấp thuận (Giao dịch thành công)"}, {"q_en": "PIN code", "a_vi": "Mã PIN"}, {"q_en": "Insufficient funds", "a_vi": "Không đủ số dư (trong thẻ)"}, {"q_en": "Error", "a_vi": "Lỗi hệ thống"}, {"q_en": "Cash", "a_vi": "Tiền mặt"}, {"q_en": "Change", "a_vi": "Tiền thối lại / Tiền lẻ"}, {"q_en": "Service charge", "a_vi": "Phí dịch vụ"}, {"q_en": "VAT (Value Added Tax)", "a_vi": "Thuế Giá trị gia tăng"}, {"q_en": "Tip / Gratuity", "a_vi": "Tiền boa / Tiền thưởng phục vụ"}, {"q_en": "Invoice", "a_vi": "Hóa đơn đỏ (GTGT cho công ty)"}
+      ]
+    },
+    {
+      "id": 18,
+      "type": "sentence",
+      "description": "Level 18: Xử lý Phàn nàn Thức ăn & Dị vật",
+      "questions": [
+        {"q_en": "Excuse me, my soup is completely cold.", "q_vi": "Khách than súp nguội", "a_en": "Excuse me, my soup is completely cold.", "a_vi": "Xin lỗi, món súp của tôi hoàn toàn bị nguội ngắt."},
+        {"q_en": "I am so sorry. Let me take it back to the kitchen to reheat it.", "q_vi": "Xin lỗi và mang hâm lại", "a_en": "I am so sorry. Let me take it back to the kitchen to reheat it.", "a_vi": "Tôi rất xin lỗi. Để tôi mang nó lại nhà bếp để hâm nóng lại."},
+        {"q_en": "This steak is overcooked. I asked for medium rare.", "q_vi": "Khách chê bò chín quá", "a_en": "This steak is overcooked. I asked for medium rare.", "a_vi": "Món bít tết này bị nấu chín quá rồi. Tôi đã yêu cầu chín tái cơ mà."},
+        {"q_en": "I deeply apologize. The chef will prepare a new one immediately.", "q_vi": "Xin lỗi và làm món mới", "a_en": "I deeply apologize. The chef will prepare a new one immediately.", "a_vi": "Tôi vô cùng xin lỗi. Đầu bếp sẽ chuẩn bị một phần mới ngay lập tức."},
+        {"q_en": "The pasta is incredibly salty. I cannot eat it.", "q_vi": "Khách chê mì Ý mặn chát", "a_en": "The pasta is incredibly salty. I cannot eat it.", "a_vi": "Món mì Ý này mặn chát. Tôi không thể ăn được."},
+        {"q_en": "Would you like me to replace it with a different dish entirely?", "q_vi": "Hỏi khách muốn đổi món khác không", "a_en": "Would you like me to replace it with a different dish entirely?", "a_vi": "Quý khách có muốn tôi thay thế nó bằng một món ăn khác hoàn toàn không?"},
+        {"q_en": "Yes, I will have the grilled chicken salad instead.", "q_vi": "Khách đổi sang salad gà", "a_en": "Yes, I will have the grilled chicken salad instead.", "a_vi": "Vâng, thay vào đó tôi sẽ dùng món salad gà nướng."},
+        {"q_en": "Oh my god! There is a hair in my food!", "q_vi": "Khách hoảng hốt thấy tóc", "a_en": "Oh my god! There is a hair in my food!", "a_vi": "Trời ơi! Có một sợi tóc trong thức ăn của tôi!"},
+        {"q_en": "This is completely unacceptable. I will call the manager right now.", "q_vi": "Lễ tân hoảng hốt nhận lỗi và gọi quản lý", "a_en": "This is completely unacceptable. I will call the manager right now.", "a_vi": "Điều này là hoàn toàn không thể chấp nhận được. Tôi sẽ gọi quản lý ngay bây giờ."},
+        {"q_en": "I found a piece of plastic inside the dessert.", "q_vi": "Khách thấy miếng nhựa", "a_en": "I found a piece of plastic inside the dessert.", "a_vi": "Tôi tìm thấy một mảnh nhựa bên trong món tráng miệng."},
+        {"q_en": "Please accept our sincerest apologies. We will waive your entire bill.", "q_vi": "Quản lý xin lỗi và miễn phí toàn bộ", "a_en": "Please accept our sincerest apologies. We will waive your entire bill.", "a_vi": "Xin hãy nhận lời xin lỗi chân thành nhất của chúng tôi. Chúng tôi sẽ miễn phí toàn bộ hóa đơn của ngài."},
+        {"q_en": "I specifically asked for no peanuts. My throat is swelling!", "q_vi": "Khách bị dị ứng sưng họng", "a_en": "I specifically asked for no peanuts. My throat is swelling!", "a_vi": "Tôi đã dặn kỹ là không đậu phộng mà. Họng tôi đang sưng lên đây này!"},
+        {"q_en": "Do you have an EpiPen? I am calling the ambulance immediately!", "q_vi": "Phục vụ hoảng hốt hỏi bút tiêm và gọi cấp cứu", "a_en": "Do you have an EpiPen? I am calling the ambulance immediately!", "a_vi": "Quý khách có bút tiêm dị ứng (EpiPen) không? Tôi đang gọi xe cấp cứu ngay lập tức!"},
+        {"q_en": "The bread is stale and hard as a rock.", "q_vi": "Khách chê bánh mì cũ cứng", "a_en": "The bread is stale and hard as a rock.", "a_vi": "Bánh mì bị ôi thiu và cứng như đá vậy."},
+        {"q_en": "I will bring you a basket of freshly baked bread straight from the oven.", "q_vi": "Hứa mang bánh mới nướng", "a_en": "I will bring you a basket of freshly baked bread straight from the oven.", "a_vi": "Tôi sẽ mang cho quý khách một rổ bánh mì mới nướng thẳng từ lò ra."},
+        {"q_en": "The chicken is undercooked. It is still pink and bloody inside.", "q_vi": "Khách chê gà sống", "a_en": "The chicken is undercooked. It is still pink and bloody inside.", "a_vi": "Thịt gà chưa chín. Bên trong vẫn còn màu hồng và rướm máu."},
+        {"q_en": "That is a serious health hazard. I will report this to the Head Chef.", "q_vi": "Nhận lỗi nguy hiểm và báo bếp trưởng", "a_en": "That is a serious health hazard. I will report this to the Head Chef.", "a_vi": "Đó là một mối nguy hiểm sức khỏe nghiêm trọng. Tôi sẽ báo cáo việc này với Bếp trưởng."},
+        {"q_en": "We will offer you a complimentary bottle of wine to compensate for the bad experience.", "q_vi": "Đền bù chai vang", "a_en": "We will offer you a complimentary bottle of wine to compensate for the bad experience.", "a_vi": "Chúng tôi sẽ tặng ngài một chai rượu vang miễn phí để đền bù cho trải nghiệm tồi tệ này."},
+        {"q_en": "I appreciate your prompt resolution. Mistakes happen.", "q_vi": "Khách nguôi giận", "a_en": "I appreciate your prompt resolution. Mistakes happen.", "a_vi": "Tôi đánh giá cao cách giải quyết nhanh chóng của bạn. Sai sót thì cũng hay xảy ra mà."},
+        {"q_en": "Thank you for your understanding and patience, sir.", "q_vi": "Cảm ơn sự thông cảm của khách", "a_en": "Thank you for your understanding and patience, sir.", "a_vi": "Cảm ơn sự thấu hiểu và lòng kiên nhẫn của ngài, thưa ngài."}
+      ]
+    },
+    {
+      "id": 19,
+      "type": "sentence",
+      "description": "Level 19: Thanh toán phức tạp & Lỗi Thẻ",
+      "questions": [
+        {"q_en": "Excuse me, we are ready to settle the bill.", "q_vi": "Khách gọi tính tiền", "a_en": "Excuse me, we are ready to settle the bill.", "a_vi": "Xin lỗi, chúng tôi đã sẵn sàng thanh toán hóa đơn."},
+        {"q_en": "Are you paying together or would you like to split the bill?", "q_vi": "Hỏi khách trả chung hay chia bill", "a_en": "Are you paying together or would you like to split the bill?", "a_vi": "Quý khách trả chung hay muốn chia đôi hóa đơn ạ?"},
+        {"q_en": "We will go Dutch. Please split it equally between the three of us.", "q_vi": "Khách đòi chia đều 3 người", "a_en": "We will go Dutch. Please split it equally between the three of us.", "a_vi": "Chúng tôi sẽ mạnh ai nấy trả. Vui lòng chia đều cho 3 người chúng tôi."},
+        {"q_en": "No, put your wallets away. It's my treat tonight.", "q_vi": "Một khách giành trả hết", "a_en": "No, put your wallets away. It's my treat tonight.", "a_vi": "Không, cất ví của các cậu đi. Tối nay để tôi mời."},
+        {"q_en": "I will pay the full amount on my credit card.", "q_vi": "Đưa thẻ tín dụng quẹt nguyên cục", "a_en": "I will pay the full amount on my credit card.", "a_vi": "Tôi sẽ trả toàn bộ số tiền bằng thẻ tín dụng của tôi."},
+        {"q_en": "Please insert your card into the terminal and enter your PIN code.", "q_vi": "Hướng dẫn đút thẻ nhập PIN", "a_en": "Please insert your card into the terminal and enter your PIN code.", "a_vi": "Vui lòng đút thẻ của quý khách vào máy và nhập mã PIN."},
+        {"q_en": "Or you can simply tap it on the screen for contactless payment.", "q_vi": "Hướng dẫn chạm thẻ", "a_en": "Or you can simply tap it on the screen for contactless payment.", "a_vi": "Hoặc quý khách có thể chỉ cần chạm nó vào màn hình để thanh toán không chạm."},
+        {"q_en": "I am sorry, sir. The transaction was declined.", "q_vi": "Báo thẻ bị từ chối", "a_en": "I am sorry, sir. The transaction was declined.", "a_vi": "Tôi xin lỗi thưa ngài. Giao dịch đã bị từ chối."},
+        {"q_en": "That is weird. Try inserting it again.", "q_vi": "Khách bảo thử lại", "a_en": "That is weird. Try inserting it again.", "a_vi": "Thật kỳ lạ. Thử đút nó vào lần nữa xem."},
+        {"q_en": "It still says 'insufficient funds'. Do you have an alternative card?", "q_vi": "Báo thẻ không đủ tiền", "a_en": "It still says 'insufficient funds'. Do you have an alternative card?", "a_vi": "Nó vẫn báo 'không đủ số dư'. Ngài có thẻ thay thế nào không?"},
+        {"q_en": "Let me pay in cash then. Here is a one hundred dollar bill.", "q_vi": "Đổi sang trả tiền mặt", "a_en": "Let me pay in cash then. Here is a one hundred dollar bill.", "a_vi": "Vậy để tôi trả bằng tiền mặt. Đây là tờ 100 đô la."},
+        {"q_en": "Is the 10% service charge already included in the total?", "q_vi": "Hỏi phí phục vụ đã tính chưa", "a_en": "Is the 10% service charge already included in the total?", "a_vi": "Phí dịch vụ 10% đã được bao gồm trong tổng số tiền chưa?"},
+        {"q_en": "Yes, both the service charge and VAT are included.", "q_vi": "Báo đã gồm cả phí và thuế", "a_en": "Yes, both the service charge and VAT are included.", "a_vi": "Vâng, cả phí dịch vụ và thuế VAT đều đã được tính vào rồi."},
+        {"q_en": "Here is your change and the receipt.", "q_vi": "Đưa tiền thối và biên lai", "a_en": "Here is your change and the receipt.", "a_vi": "Tiền thối và biên lai của ngài đây ạ."},
+        {"q_en": "Keep the change. You provided excellent service tonight.", "q_vi": "Khách boa tiền thừa", "a_en": "Keep the change. You provided excellent service tonight.", "a_vi": "Cứ giữ lại tiền thối nhé. Bạn đã phục vụ rất tuyệt vời vào tối nay."},
+        {"q_en": "Thank you very much for the generous gratuity, sir.", "q_vi": "Cảm ơn tiền boa", "a_en": "Thank you very much for the generous gratuity, sir.", "a_vi": "Rất cảm ơn ngài vì số tiền boa hào phóng thưa ngài."},
+        {"q_en": "Can I get a red invoice for my company's accounting department?", "q_vi": "Khách đòi xuất hóa đơn đỏ", "a_en": "Can I get a red invoice for my company's accounting department?", "a_vi": "Tôi có thể lấy hóa đơn đỏ cho bộ phận kế toán của công ty tôi không?"},
+        {"q_en": "Certainly. Please fill out this form with your company's tax code and details.", "q_vi": "Đưa form xin mã số thuế", "a_en": "Certainly. Please fill out this form with your company's tax code and details.", "a_vi": "Chắc chắn rồi. Vui lòng điền vào biểu mẫu này mã số thuế và chi tiết công ty của ngài."},
+        {"q_en": "We will email the electronic invoice to you within 24 hours.", "q_vi": "Hứa gửi hóa đơn điện tử", "a_en": "We will email the electronic invoice to you within 24 hours.", "a_vi": "Chúng tôi sẽ gửi email hóa đơn điện tử cho ngài trong vòng 24 giờ."},
+        {"q_en": "Have a wonderful night, and we hope to see you again soon.", "q_vi": "Chào tạm biệt lịch sự", "a_en": "Have a wonderful night, and we hope to see you again soon.", "a_vi": "Chúc quý khách một buổi tối tuyệt vời, và hy vọng sẽ sớm gặp lại quý khách."}
+      ]
+    },
+    {
+      "id": 20,
+      "type": "boss",
+      "description": "Level 20: BOSS Thanh Toán (Chia Bill Tranh Cãi & Dị Vật Bất Ngờ)",
+      "questions": [
+        {"q_en": "Excuse me, waiter! Come here right now!", "q_vi": "(Boss Tức Giận) Xin lỗi, phục vụ! Lại đây ngay lập tức!", "a_en": "Yes, sir. Is there a problem with your meal?", "a_vi": "Vâng thưa ngài. Bữa ăn của ngài có vấn đề gì sao ạ?" },
+        {"q_en": "A problem? I just bit into something hard. Look at this!", "q_vi": "Khách cắn trúng vật cứng", "a_en": "Oh my goodness. Is that a small piece of glass inside the mashed potatoes?", "a_vi": "Ôi trời ơi. Đó có phải là một mảnh kính nhỏ bên trong món khoai tây nghiền không?" },
+        {"q_en": "Yes, it is! I could have choked or cut my throat!", "q_vi": "Khách hoảng sợ vì suýt hóc", "a_en": "I am incredibly sorry, sir. Are you hurt? Do you need medical attention?", "a_vi": "Tôi vô cùng xin lỗi thưa ngài. Ngài có bị thương không? Ngài có cần chăm sóc y tế không?" },
+        {"q_en": "No, my mouth isn't bleeding. But this is completely unacceptable.", "q_vi": "Xác nhận không chảy máu nhưng bực", "a_en": "Please accept my deepest apologies. I will call the Restaurant Manager immediately.", "a_vi": "Xin hãy nhận lời xin lỗi sâu sắc nhất của tôi. Tôi sẽ gọi Quản lý Nhà hàng ngay lập tức." },
+        {"q_en": "You better! I want an explanation of how glass gets into potatoes.", "q_vi": "Đòi giải thích", "a_en": "(Manager arrives) Good evening, sir. I was informed of the severe defect in your dish.", "a_vi": "(Quản lý đến) Chào buổi tối thưa ngài. Tôi đã được thông báo về lỗi nghiêm trọng trong món ăn của ngài." },
+        {"q_en": "Are your chefs smashing plates in the kitchen? This is dangerous.", "q_vi": "Khách chất vấn quản lý", "a_en": "This is a serious health hazard. We will investigate the kitchen at once.", "a_vi": "Đây là một mối nguy hiểm sức khỏe nghiêm trọng. Chúng tôi sẽ điều tra nhà bếp ngay lập tức." },
+        {"q_en": "I have lost my appetite. Just bring us the bill.", "q_vi": "Đòi tính tiền đi về", "a_en": "Sir, we will completely waive the entire bill for your table tonight as compensation.", "a_vi": "Thưa ngài, chúng tôi sẽ hoàn toàn miễn phí toàn bộ hóa đơn cho bàn của ngài tối nay để đền bù." },
+        {"q_en": "I don't want your charity. I will pay for the wine and my friend's steak.", "q_vi": "Tự ái không nhận đền bù, đòi trả tiền vang", "a_en": "We insist, sir. It is the least we can do to make up for this horrifying experience.", "a_vi": "Chúng tôi khẩn thiết mong ngài nhận thưa ngài. Đó là điều tối thiểu chúng tôi có thể làm để bù đắp cho trải nghiệm kinh khủng này." },
+        {"q_en": "Fine. But I am still paying for the $300 bottle of vintage wine.", "q_vi": "Ép phải lấy tiền chai rượu 300 đô", "a_en": "If you insist, I will print a revised bill for the wine only. Just a moment.", "a_vi": "Nếu ngài khăng khăng, tôi sẽ in một hóa đơn đã sửa chỉ tính tiền rượu. Xin đợi một lát." },
+        {"q_en": "My friend and I will split the wine bill. Half and half.", "q_vi": "Đòi chia đôi tiền rượu", "a_en": "Understood. That will be $150 on each card. I have the terminal ready.", "a_vi": "Đã rõ. Vậy sẽ là 150 đô trên mỗi thẻ. Tôi đã chuẩn bị sẵn máy quẹt thẻ." },
+        {"q_en": "Here is my card. Insert it.", "q_vi": "Đưa thẻ thứ nhất", "a_en": "Processing... Sir, this transaction was declined by the bank.", "a_vi": "Đang xử lý... Thưa ngài, giao dịch này đã bị ngân hàng từ chối." },
+        {"q_en": "Declined? That's impossible. I have plenty of funds.", "q_vi": "Khách bất ngờ vì rớt thẻ", "a_en": "It might be a security block for overseas transactions. Would you like to try again?", "a_vi": "Có thể là do lệnh khóa bảo mật đối với các giao dịch ở nước ngoài. Ngài có muốn thử lại không?" },
+        {"q_en": "No, don't bother. Just put the whole $300 on my friend's card.", "q_vi": "Ngại quá nên đẩy qua bạn trả hết", "a_en": "Are you sure, sir? (Turns to friend) May I process the full amount on your card?", "a_vi": "Ngài chắc chứ ạ? (Quay sang bạn khách) Tôi có thể xử lý toàn bộ số tiền trên thẻ của ngài không?" },
+        {"q_en": "Friend: Yeah, tap it. I'll get him to pay me back later.", "q_vi": "Bạn khách đồng ý quẹt thẻ", "a_en": "Thank you. Tap successful. The payment is approved.", "a_vi": "Cảm ơn. Chạm thẻ thành công. Thanh toán đã được chấp thuận." },
+        {"q_en": "I also need a red invoice for the wine. It's a business expense.", "q_vi": "Khách đòi hóa đơn đỏ cho chai rượu", "a_en": "Please write down your company's tax code here. We will email the VAT invoice.", "a_vi": "Vui lòng viết mã số thuế công ty của ngài ra đây. Chúng tôi sẽ email hóa đơn VAT." },
+        {"q_en": "I wrote it down. Let's get out of here. I'm still angry about the glass.", "q_vi": "Đưa form, vẫn còn bực", "a_en": "Once again, I am profoundly sorry. The Executive Chef has been notified.", "a_vi": "Một lần nữa, tôi vô cùng xin lỗi. Bếp trưởng điều hành đã được thông báo." },
+        {"q_en": "You handled it well, Manager, but your kitchen is a mess.", "q_vi": "Khen quản lý nhưng chê bếp", "a_en": "We will take strict disciplinary action. This will never happen again.", "a_vi": "Chúng tôi sẽ thực hiện hành động kỷ luật nghiêm ngặt. Việc này sẽ không bao giờ lặp lại." },
+        {"q_en": "I hope not. Have a good night.", "q_vi": "Khách đứng dậy về", "a_en": "Good night, gentlemen. We hope you will give us a second chance in the future.", "a_vi": "Chúc buổi tối tốt lành, các quý ông. Chúng tôi hy vọng các ngài sẽ cho chúng tôi cơ hội thứ 2 trong tương lai." },
+        {"q_en": "(Guests leave) Phew, that was intense.", "q_vi": "Khách đi khuất", "a_en": "Head to the kitchen immediately. I want to know who broke a glass near the food prep area!", "a_vi": "Vào bếp ngay lập tức. Tôi muốn biết kẻ nào đã làm vỡ ly gần khu vực sơ chế thức ăn!" },
+        {"q_en": "Yes, Manager! I'm going right now.", "q_vi": "Phục vụ vội vã chạy đi", "a_en": "This is a disaster for our hygiene audit. Let's fix this fast.", "a_vi": "Đây là một thảm họa cho cuộc kiểm toán vệ sinh của chúng ta. Nhanh chóng giải quyết việc này thôi." }
+      ]
+    },
+    {
+      "id": 21,
+      "type": "vocab",
+      "description": "Level 21: Từ vựng Fine Dining & Ẩm thực Phân tử (Gastronomy)",
+      "questions": [
+        {"q_en": "Gastronomy", "a_vi": "Ẩm thực học / Ẩm thực phân tử"}, {"q_en": "Michelin-star", "a_vi": "Chuẩn sao Michelin"}, {"q_en": "Signature dish", "a_vi": "Món ăn đặc trưng (độc bản)"}, {"q_en": "Tasting menu", "a_vi": "Thực đơn nếm thử (nhiều món nhỏ)"}, {"q_en": "Amuse-bouche", "a_vi": "Món khai vị nhỏ (được đầu bếp tặng)"}, {"q_en": "Palate cleanser", "a_vi": "Món làm sạch vị giác (sorbet)"}, {"q_en": "Caviar", "a_vi": "Trứng cá tầm"}, {"q_en": "Truffle", "a_vi": "Nấm cục (loại nấm đắt tiền)"}, {"q_en": "Foie gras", "a_vi": "Gan ngỗng béo"}, {"q_en": "Saffron", "a_vi": "Nhụy hoa nghệ tây"}, {"q_en": "Texture", "a_vi": "Kết cấu (của món ăn: giòn, mềm...)"}, {"q_en": "Aroma", "a_vi": "Hương thơm ngào ngạt"}, {"q_en": "Plating", "a_vi": "Nghệ thuật bày trí đĩa thức ăn"}, {"q_en": "Deconstruct", "a_vi": "Kỹ thuật tháo dỡ / Tách cấu trúc món ăn"}, {"q_en": "Flambé", "a_vi": "Kỹ thuật đốt rượu trên món ăn"}, {"q_en": "Infusion", "a_vi": "Sự ngâm/chiết xuất hương liệu"}, {"q_en": "Exquisite", "a_vi": "Tuyệt túy / Cực kỳ tinh tế"}, {"q_en": "Impeccable", "a_vi": "Hoàn hảo / Không thể chê"}, {"q_en": "Culinary", "a_vi": "Thuộc về nghệ thuật nấu ăn"}, {"q_en": "Masterpiece", "a_vi": "Kiệt tác"}
+      ]
+    },
+    {
+      "id": 22,
+      "type": "vocab",
+      "description": "Level 22: Từ vựng Phục vụ Rượu vang nâng cao (Advanced Wine Pairing)",
+      "questions": [
+        {"q_en": "Decant", "a_vi": "Chiết rượu / Lọc cặn rượu"}, {"q_en": "Aeration", "a_vi": "Sự sục khí (để rượu thở)"}, {"q_en": "Sediment", "a_vi": "Cặn (dưới đáy chai vang cũ)"}, {"q_en": "Vintage", "a_vi": "Niên vụ (năm thu hoạch nho)"}, {"q_en": "Terroir", "a_vi": "Thổ nhưỡng (đất trồng nho)"}, {"q_en": "Grape variety", "a_vi": "Giống nho"}, {"q_en": "Full-bodied", "a_vi": "Đậm đà / Cấu trúc mạnh (Rượu)"}, {"q_en": "Light-bodied", "a_vi": "Nhẹ nhàng / Thanh thoát (Rượu)"}, {"q_en": "Crisp", "a_vi": "Tươi mát / Sảng khoái (Vang trắng)"}, {"q_en": "Tannin", "a_vi": "Chất chát (từ vỏ nho)"}, {"q_en": "Acidity", "a_vi": "Độ chua"}, {"q_en": "Bouquet", "a_vi": "Hương vị phức hợp (của vang lâu năm)"}, {"q_en": "Corked", "a_vi": "Bị hỏng do nút bần (rượu có mùi mốc)"}, {"q_en": "Oxidized", "a_vi": "Bị oxy hóa (rượu tiếp xúc nhiều với không khí)"}, {"q_en": "Pairing", "a_vi": "Sự kết hợp (rượu và thức ăn)"}, {"q_en": "Contrast", "a_vi": "Sự tương phản (vị giác)"}, {"q_en": "Complement", "a_vi": "Sự bổ sung / Tôn lên (hương vị)"}, {"q_en": "Palate", "a_vi": "Vòm miệng / Vị giác"}, {"q_en": "Swirl", "a_vi": "Lắc nhẹ ly rượu"}, {"q_en": "Sip", "a_vi": "Nhấp một ngụm"}
+      ]
+    },
+    {
+      "id": 23,
+      "type": "sentence",
+      "description": "Level 23: Mẫu câu Phục vụ Fine Dining chuẩn Michelin",
+      "questions": [
+        {"q_en": "Welcome to our Michelin-starred establishment.", "q_vi": "Chào mừng khách Fine Dining", "a_en": "Welcome to our Michelin-starred establishment.", "a_vi": "Chào mừng quý khách đến với cơ sở đạt chuẩn sao Michelin của chúng tôi."},
+        {"q_en": "Tonight, our Executive Chef has prepared a seven-course tasting menu.", "q_vi": "Giới thiệu set menu 7 món", "a_en": "Tonight, our Executive Chef has prepared a seven-course tasting menu.", "a_vi": "Tối nay, Bếp trưởng Điều hành của chúng tôi đã chuẩn bị một thực đơn nếm thử 7 món."},
+        {"q_en": "We will begin with an amuse-bouche to awaken your palate.", "q_vi": "Phục vụ món khai vị tặng kèm", "a_en": "We will begin with an amuse-bouche to awaken your palate.", "a_vi": "Chúng ta sẽ bắt đầu với một món khai vị nhỏ để đánh thức vị giác của quý khách."},
+        {"q_en": "This is a deconstructed lemon tart with saffron infusion.", "q_vi": "Giới thiệu món ăn tách cấu trúc", "a_en": "This is a deconstructed lemon tart with saffron infusion.", "a_vi": "Đây là món bánh tart chanh tách cấu trúc được chiết xuất cùng nhụy hoa nghệ tây."},
+        {"q_en": "Notice the exquisite plating and the delicate textures.", "q_vi": "Khen ngợi cách bày trí", "a_en": "Notice the exquisite plating and the delicate textures.", "a_vi": "Hãy chú ý đến cách bày trí đĩa tuyệt túy và những kết cấu tinh tế."},
+        {"q_en": "The chef uses fresh black truffle imported directly from Italy.", "q_vi": "PR nguyên liệu nấm cục Ý", "a_en": "The chef uses fresh black truffle imported directly from Italy.", "a_vi": "Đầu bếp sử dụng nấm cục đen tươi được nhập khẩu trực tiếp từ Ý."},
+        {"q_en": "Before the main course, please enjoy this lemon sorbet as a palate cleanser.", "q_vi": "Phục vụ kem làm sạch miệng", "a_en": "Before the main course, please enjoy this lemon sorbet as a palate cleanser.", "a_vi": "Trước món chính, mời quý khách thưởng thức kem chanh này để làm sạch vị giác."},
+        {"q_en": "I will perform a flambé presentation for your Wagyu beef right at the table.", "q_vi": "Biểu diễn đốt rượu tại bàn", "a_en": "I will perform a flambé presentation for your Wagyu beef right at the table.", "a_vi": "Tôi sẽ thực hiện màn biểu diễn đốt rượu cho món bò Wagyu của ngài ngay tại bàn."},
+        {"q_en": "Please step back slightly, the flames will rise quite high.", "q_vi": "Nhắc khách lùi lại tránh lửa", "a_en": "Please step back slightly, the flames will rise quite high.", "a_vi": "Vui lòng lùi lại một chút, ngọn lửa sẽ bốc lên khá cao đấy."},
+        {"q_en": "The rich aroma of the roasted garlic perfectly complements the foie gras.", "q_vi": "Miêu tả hương vị tỏi và gan ngỗng", "a_en": "The rich aroma of the roasted garlic perfectly complements the foie gras.", "a_vi": "Hương thơm ngào ngạt của tỏi nướng bổ sung hoàn hảo cho món gan ngỗng béo."},
+        {"q_en": "This culinary masterpiece is the signature dish of our restaurant.", "q_vi": "Tự hào giới thiệu món độc bản", "a_en": "This culinary masterpiece is the signature dish of our restaurant.", "a_vi": "Kiệt tác ẩm thực này là món ăn đặc trưng của nhà hàng chúng tôi."},
+        {"q_en": "Is the texture of the caviar to your liking?", "q_vi": "Hỏi cảm nhận về trứng cá tầm", "a_en": "Is the texture of the caviar to your liking?", "a_vi": "Kết cấu của trứng cá tầm có vừa ý quý khách không?"},
+        {"q_en": "It is absolutely impeccable. A true explosion of flavors.", "q_vi": "Khách khen ngợi nức nở", "a_en": "It is absolutely impeccable. A true explosion of flavors.", "a_vi": "Nó hoàn toàn không thể chê vào đâu được. Một sự bùng nổ hương vị đích thực."},
+        {"q_en": "We ensure that every ingredient reflects the local terroir.", "q_vi": "Khẳng định tôn trọng thổ nhưỡng", "a_en": "We ensure that every ingredient reflects the local terroir.", "a_vi": "Chúng tôi đảm bảo rằng mỗi nguyên liệu đều phản ánh thổ nhưỡng địa phương."},
+        {"q_en": "May I clear the plates and prepare the table for dessert?", "q_vi": "Xin phép dọn bàn ăn tráng miệng", "a_en": "May I clear the plates and prepare the table for dessert?", "a_vi": "Tôi có thể dọn đĩa và chuẩn bị bàn cho món tráng miệng không?"},
+        {"q_en": "This molecular gastronomy dessert mimics the shape of an apple.", "q_vi": "Giới thiệu ẩm thực phân tử", "a_en": "This molecular gastronomy dessert mimics the shape of an apple.", "a_vi": "Món tráng miệng ẩm thực phân tử này mô phỏng lại hình dáng của một quả táo."},
+        {"q_en": "Use the back of your spoon to crack the sugar shell.", "q_vi": "Hướng dẫn cách ăn", "a_en": "Use the back of your spoon to crack the sugar shell.", "a_vi": "Hãy dùng mặt sau của chiếc muỗng để gõ vỡ lớp vỏ đường."},
+        {"q_en": "Your culinary journey tonight is nearing its end.", "q_vi": "Báo hiệu kết thúc bữa ăn", "a_en": "Your culinary journey tonight is nearing its end.", "a_vi": "Hành trình ẩm thực của quý khách tối nay đang đi đến hồi kết."},
+        {"q_en": "We hope this dining experience has been truly unforgettable.", "q_vi": "Hy vọng khách khó quên", "a_en": "We hope this dining experience has been truly unforgettable.", "a_vi": "Chúng tôi hy vọng trải nghiệm dùng bữa này đã thực sự khó quên."},
+        {"q_en": "It was an honor to serve you at the Chef's Table.", "q_vi": "Vinh hạnh phục vụ khách", "a_en": "It was an honor to serve you at the Chef's Table.", "a_vi": "Đó là một vinh dự khi được phục vụ ngài tại Bàn của Bếp trưởng (Chef's Table)."}
+      ]
+    },
+    {
+      "id": 24,
+      "type": "sentence",
+      "description": "Level 24: Giao tiếp Đỉnh cao về Rượu vang (Wine Pairing)",
+      "questions": [
+        {"q_en": "Our sommelier has carefully curated a wine pairing for each course.", "q_vi": "Giới thiệu gói rượu vang đi kèm", "a_en": "Our sommelier has carefully curated a wine pairing for each course.", "a_vi": "Chuyên gia rượu vang của chúng tôi đã tuyển chọn kỹ lưỡng một loại rượu kết hợp cho mỗi món ăn."},
+        {"q_en": "For the seafood appetizer, I suggest a crisp, light-bodied Sauvignon Blanc.", "q_vi": "Gợi ý vang trắng nhẹ cho hải sản", "a_en": "For the seafood appetizer, I suggest a crisp, light-bodied Sauvignon Blanc.", "a_vi": "Đối với món khai vị hải sản, tôi gợi ý một ly Sauvignon Blanc tươi mát và nhẹ nhàng."},
+        {"q_en": "Its high acidity will contrast beautifully with the richness of the oysters.", "q_vi": "Giải thích lý do kết hợp tương phản", "a_en": "Its high acidity will contrast beautifully with the richness of the oysters.", "a_vi": "Độ chua cao của nó sẽ tương phản tuyệt đẹp với sự béo ngậy của những con hàu."},
+        {"q_en": "Moving on to the red meat, we have a 2012 vintage Pinot Noir.", "q_vi": "Đổi sang vang đỏ cho thịt đỏ", "a_en": "Moving on to the red meat, we have a 2012 vintage Pinot Noir.", "a_vi": "Chuyển sang món thịt đỏ, chúng ta có một chai Pinot Noir niên vụ 2012."},
+        {"q_en": "Since this is an older vintage, it contains some natural sediment at the bottom.", "q_vi": "Cảnh báo cặn rượu vang cũ", "a_en": "Since this is an older vintage, it contains some natural sediment at the bottom.", "a_vi": "Vì đây là một niên vụ cũ, nó có chứa một ít cặn tự nhiên ở dưới đáy."},
+        {"q_en": "I will decant the wine over a candle to separate the clear liquid.", "q_vi": "Hướng dẫn chiết rượu bằng nến", "a_en": "I will decant the wine over a candle to separate the clear liquid.", "a_vi": "Tôi sẽ chiết rượu qua một ngọn nến để tách phần chất lỏng trong vắt ra."},
+        {"q_en": "This process also allows the wine proper aeration to release its bouquet.", "q_vi": "Giải thích tác dụng sục khí", "a_en": "This process also allows the wine proper aeration to release its bouquet.", "a_vi": "Quá trình này cũng cho phép rượu được sục khí đúng cách để giải phóng hương vị phức hợp của nó."},
+        {"q_en": "Please swirl your glass and take a small sip to test it.", "q_vi": "Mời khách lắc và nếm thử", "a_en": "Please swirl your glass and take a small sip to test it.", "a_vi": "Vui lòng lắc nhẹ ly của ngài và nhấp một ngụm nhỏ để thử."},
+        {"q_en": "The tannins are incredibly smooth and well-integrated.", "q_vi": "Khách khen vị chát mượt", "a_en": "The tannins are incredibly smooth and well-integrated.", "a_vi": "Chất chát (tannin) vô cùng mượt mà và được hòa quyện rất tốt."},
+        {"q_en": "It has a complex aroma of dark chocolate, leather, and ripe plums.", "q_vi": "Phân tích mùi hương của rượu", "a_en": "It has a complex aroma of dark chocolate, leather, and ripe plums.", "a_vi": "Nó có một hương thơm phức hợp của sô-cô-la đen, mùi da thuộc, và quả mận chín."},
+        {"q_en": "This full-bodied red complements the Wagyu beef impeccably.", "q_vi": "Khẳng định sự kết hợp hoàn hảo", "a_en": "This full-bodied red complements the Wagyu beef impeccably.", "a_vi": "Loại vang đỏ đậm đà này tôn lên món bò Wagyu một cách không thể chê vào đâu được."},
+        {"q_en": "I smell something strange. Is this wine oxidized?", "q_vi": "Khách nghi ngờ rượu bị oxy hóa", "a_en": "I smell something strange. Is this wine oxidized?", "a_vi": "Tôi ngửi thấy mùi gì đó lạ. Rượu này bị oxy hóa rồi phải không?"},
+        {"q_en": "The cork seems to be compromised. The wine is slightly corked.", "q_vi": "Sommelier xác nhận lỗi nút bần", "a_en": "The cork seems to be compromised. The wine is slightly corked.", "a_vi": "Nút bần có vẻ đã bị hỏng. Rượu đã hơi bị ám mùi mốc (corked)."},
+        {"q_en": "I will return this to the cellar and bring you a fresh bottle immediately.", "q_vi": "Đổi chai khác ngay lập tức", "a_en": "I will return this to the cellar and bring you a fresh bottle immediately.", "a_vi": "Tôi sẽ trả lại chai này về hầm và mang cho ngài một chai mới ngay lập tức."},
+        {"q_en": "Thank you for noticing. We only serve perfection here.", "q_vi": "Cảm ơn khách đã bắt lỗi", "a_en": "Thank you for noticing. We only serve perfection here.", "a_vi": "Cảm ơn ngài đã chú ý. Chúng tôi chỉ phục vụ sự hoàn hảo ở đây."},
+        {"q_en": "For the dessert, we have chosen a sweet Champagne.", "q_vi": "Chuyển sang Champagne tráng miệng", "a_en": "For the dessert, we have chosen a sweet Champagne.", "a_vi": "Cho món tráng miệng, chúng tôi đã chọn một loại Sâm-panh ngọt."},
+        {"q_en": "Notice the fine, persistent bubbles dancing in the glass.", "q_vi": "Khen bọt sủi của Champagne", "a_en": "Notice the fine, persistent bubbles dancing in the glass.", "a_vi": "Hãy chú ý những bọt sủi tăm mịn màng, dai dẳng đang nhảy múa trong ly."},
+        {"q_en": "This grape variety is grown specifically in the Champagne region of France.", "q_vi": "Giải thích nguồn gốc", "a_en": "This grape variety is grown specifically in the Champagne region of France.", "a_vi": "Giống nho này được trồng đặc biệt tại vùng Champagne của Pháp."},
+        {"q_en": "Your extensive knowledge of wine is highly impressive.", "q_vi": "Khách khen ngợi Sommelier", "a_en": "Your extensive knowledge of wine is highly impressive.", "a_vi": "Kiến thức sâu rộng của bạn về rượu vang thực sự rất ấn tượng."},
+        {"q_en": "It is my passion to guide you through this tasting journey.", "q_vi": "Thể hiện đam mê nghề nghiệp", "a_en": "It is my passion to guide you through this tasting journey.", "a_vi": "Được dẫn dắt ngài qua hành trình nếm thử này chính là niềm đam mê của tôi."}
+      ]
+    },
+    {
+      "id": 25,
+      "type": "boss",
+      "description": "Level 25: BOSS Sommelier Thượng Lưu (Đấu Trí Với Khách Sành Vang Khó Tính)",
+      "questions": [
+        {"q_en": "Good evening, sir. I am the Head Sommelier. Are we ready to select the wine?", "q_vi": "(Sommelier) Chào buổi tối ngài. Tôi là Chuyên gia rượu trưởng. Ngài sẵn sàng chọn rượu chưa?", "a_en": "Yes. We are having the 7-course tasting menu. Impress me.", "a_vi": "Rồi. Chúng tôi sẽ dùng thực đơn nếm thử 7 món. Hãy làm tôi ấn tượng đi." },
+        {"q_en": "For the caviar and oysters, I suggest a 2018 vintage Chablis. It's very crisp.", "q_vi": "Gợi ý vang trắng Chablis 2018", "a_en": "A Chablis? Too basic. The acidity is too sharp for my palate. What else?", "a_vi": "Chablis sao? Cơ bản quá. Độ chua quá gắt đối với vị giác của tôi. Còn gì khác không?" },
+        {"q_en": "I understand. If you prefer less acidity, perhaps a premier cru White Burgundy?", "q_vi": "Đổi sang vang trắng Burgundy cao cấp", "a_en": "Ah, a White Burgundy. That shows better taste. It will complement the caviar.", "a_vi": "À, một chai Burgundy Trắng. Nó cho thấy gu tốt hơn đấy. Nó sẽ tôn lên món trứng cá tầm." },
+        {"q_en": "Excellent choice. And for the Wagyu main course, a full-bodied Barolo?", "q_vi": "Gợi ý vang đỏ Barolo cho bò Wagyu", "a_en": "Barolo is too heavy. It will overpower the delicate fat of the Wagyu.", "a_vi": "Barolo quá nặng. Nó sẽ lấn át phần mỡ tinh tế của bò Wagyu mất." },
+        {"q_en": "A fair point, sir. Then a 2010 Pinot Noir from Oregon. Smooth tannins, elegant bouquet.", "q_vi": "Đổi sang Pinot Noir 2010 vị chát mượt", "a_en": "Now we are talking. Bring the 2010 Pinot Noir. And decant it at the table.", "a_vi": "Giờ thì nghe hợp lý rồi đấy. Mang chai Pinot Noir 2010 ra. Và chiết nó ngay tại bàn nhé." },
+        {"q_en": "(Brings the bottle) Here is the 2010 Pinot Noir. Please verify the label.", "q_vi": "Mang rượu ra cho khách check nhãn", "a_en": "The terroir is correct. The vintage is correct. Open it carefully.", "a_vi": "Thổ nhưỡng đúng. Niên vụ đúng. Mở nó cẩn thận đi." },
+        {"q_en": "(Uncorks) I will light the candle to watch for sediment while I decant it.", "q_vi": "Sommelier dùng nến để chiết rượu", "a_en": "Good technique. You don't want to pour cloudy wine into my glass.", "a_vi": "Kỹ thuật tốt đấy. Bạn sẽ không muốn rót rượu vẩn đục vào ly của tôi đâu." },
+        {"q_en": "The wine is decanted. May I pour a small amount for you to taste?", "q_vi": "Chiết xong, mời nếm thử", "a_en": "Yes. (Swirls and smells) The aroma is complex... leather, cherry, oak.", "a_vi": "Được. (Lắc ly và ngửi) Hương thơm rất phức hợp... da thuộc, anh đào, gỗ sồi." },
+        {"q_en": "Does the palate meet your high expectations, sir?", "q_vi": "Hỏi vị giác khách có ưng không", "a_en": "(Sips) It is... slightly oxidized. It has been exposed to heat.", "a_vi": "(Nhấp ngụm) Nó... hơi bị oxy hóa rồi. Nó đã bị tiếp xúc với nhiệt độ cao." },
+        {"q_en": "Oxidized? Please allow me to verify. (Smells the cork) You have a remarkable palate.", "q_vi": "Sommelier ngửi nút bần và xác nhận khách đúng", "a_en": "I know my wine. This bottle is defective. It is flat and lifeless.", "a_vi": "Tôi rành về rượu của mình mà. Chai này bị lỗi rồi. Nó nhạt nhẽo và không có sức sống." },
+        {"q_en": "I deeply apologize. The storage must have failed. I will retrieve a pristine bottle.", "q_vi": "Xin lỗi và hứa lấy chai nguyên vẹn", "a_en": "Make it quick. The Wagyu will be served in 15 minutes.", "a_vi": "Làm lẹ lên. Bò Wagyu sẽ được dọn ra trong 15 phút nữa." },
+        {"q_en": "(Returns with new bottle, decants) Please try this second bottle, sir.", "q_vi": "Làm lại quy trình với chai thứ 2", "a_en": "(Tastes) Now this is impeccable. The tannins are silky smooth. Perfect.", "a_vi": "(Nếm thử) Chai này thì hoàn hảo không tì vết. Vị chát mượt như lụa. Tuyệt." },
+        {"q_en": "I am relieved to hear that. I will pour for the lady as well.", "q_vi": "Sommelier thở phào và rót cho người nữ", "a_en": "You recovered well under pressure. I appreciate your professionalism.", "a_vi": "Bạn đã khắc phục rất tốt dưới áp lực. Tôi đánh giá cao sự chuyên nghiệp của bạn." },
+        {"q_en": "It is my duty to ensure a flawless gastronomy experience for you.", "q_vi": "Khẳng định nhiệm vụ phục vụ Fine Dining", "a_en": "The pairing is indeed exquisite. The wine complements the beef beautifully.", "a_vi": "Sự kết hợp này quả thực rất tuyệt túy. Rượu tôn lên món bò một cách tuyệt đẹp." },
+        {"q_en": "For dessert, our Chef is preparing a deconstructed chocolate mousse.", "q_vi": "Giới thiệu tráng miệng tách cấu trúc", "a_en": "And what wine will you pair with chocolate? It's a tricky pairing.", "a_vi": "Và bạn sẽ ghép rượu gì với sô-cô-la? Đó là một sự kết hợp khó nhằn đấy." },
+        {"q_en": "A 20-year-old Tawny Port. Sweet, nutty, and perfectly balanced.", "q_vi": "Tự tin gợi ý rượu Port 20 năm", "a_en": "A Tawny Port? Brilliant choice. You truly know your craft.", "a_vi": "Rượu Port Tawny sao? Lựa chọn xuất sắc. Bạn thực sự rất am hiểu nghề của mình." },
+        {"q_en": "Thank you, sir. I will prepare the Port glasses right away.", "q_vi": "Cảm ơn và đi chuẩn bị ly", "a_en": "We will enjoy this. And take that defective bottle off the bill.", "a_vi": "Chúng tôi sẽ thưởng thức nó. Và nhớ bỏ chai rượu lỗi kia ra khỏi hóa đơn nhé." },
+        {"q_en": "Of course, sir. It has already been removed with our compliments.", "q_vi": "Đã trừ tiền và tặng kèm", "a_en": "Good. I will ask for you specifically next time I dine here.", "a_vi": "Tốt. Tôi sẽ đích thân yêu cầu bạn phục vụ vào lần tới tôi dùng bữa ở đây." },
+        {"q_en": "It would be an absolute honor. Enjoy your masterpiece, sir.", "q_vi": "Cảm thấy vinh hạnh", "a_en": "We will. Cheers.", "a_vi": "Chúng tôi sẽ tận hưởng. Cạn ly." },
+        {"q_en": "(Bows and steps back) A tough crowd, but a successful pairing.", "q_vi": "Sommelier lui ra và tự nhủ", "a_en": "(Guests toast to the night)", "a_vi": "(Khách hàng cụng ly chúc mừng đêm nay)" }
+      ]
+    },
+    {
+      "id": 26,
+      "type": "vocab",
+      "description": "Level 26: Từ vựng Phục vụ tại phòng & Tiện ích (Room Service)",
+      "questions": [
+        {"q_en": "Room service", "a_vi": "Dịch vụ phục vụ ăn uống tại phòng"}, {"q_en": "Trolley", "a_vi": "Xe đẩy (chở thức ăn)"}, {"q_en": "Tray", "a_vi": "Cái khay"}, {"q_en": "Cloche / Dome", "a_vi": "Nắp đậy thức ăn (bằng inox/bạc)"}, {"q_en": "Condiment", "a_vi": "Gia vị ăn kèm (tương ớt, mù tạt...)"}, {"q_en": "Cutlery", "a_vi": "Bộ dao nĩa muỗng"}, {"q_en": "Napkin", "a_vi": "Khăn ăn"}, {"q_en": "Minibar", "a_vi": "Tủ lạnh nhỏ trong phòng"}, {"q_en": "Restock", "a_vi": "Bổ sung / Châm thêm hàng"}, {"q_en": "Surcharge", "a_vi": "Phụ phí (thu thêm)"}, {"q_en": "Midnight", "a_vi": "Nửa đêm"}, {"q_en": "Delivery", "a_vi": "Sự giao hàng"}, {"q_en": "Retrieve", "a_vi": "Thu hồi / Lấy lại (khay/xe đẩy)"}, {"q_en": "Corridor", "a_vi": "Hành lang"}, {"q_en": "Knock", "a_vi": "Gõ cửa"}, {"q_en": "Privacy", "a_vi": "Sự riêng tư"}, {"q_en": "Do Not Disturb (DND)", "a_vi": "Biển báo Không làm phiền"}, {"q_en": "Dietary", "a_vi": "Chế độ ăn uống"}, {"q_en": "Allergy", "a_vi": "Sự dị ứng"}, {"q_en": "Complimentary", "a_vi": "Miễn phí / Tặng kèm"}
+      ]
+    },
+    {
+      "id": 27,
+      "type": "vocab",
+      "description": "Level 27: Từ vựng Tổ chức Tiệc Buffet & Teabreak",
+      "questions": [
+        {"q_en": "Buffet", "a_vi": "Tiệc tự chọn"}, {"q_en": "Station", "a_vi": "Quầy / Trạm (đồ ăn)"}, {"q_en": "Live cooking", "a_vi": "Nấu ăn trực tiếp tại quầy"}, {"q_en": "Carving station", "a_vi": "Quầy thái thịt nướng (thịt nguyên tảng)"}, {"q_en": "Chafing dish", "a_vi": "Khay hâm nóng thức ăn (dùng cồn/điện)"}, {"q_en": "Tongs", "a_vi": "Cái kẹp gắp thức ăn"}, {"q_en": "Ladle", "a_vi": "Cái môi / Cái vá (múc canh)"}, {"q_en": "Platter", "a_vi": "Đĩa lớn / Mâm đựng thức ăn"}, {"q_en": "Replenish", "a_vi": "Làm đầy lại / Lên thêm món"}, {"q_en": "Leftover", "a_vi": "Thức ăn thừa"}, {"q_en": "Wastage", "a_vi": "Sự lãng phí"}, {"q_en": "Queue / Line", "a_vi": "Hàng lối / Việc xếp hàng"}, {"q_en": "Teabreak", "a_vi": "Tiệc trà giải lao"}, {"q_en": "Pastry", "a_vi": "Bánh ngọt nướng"}, {"q_en": "Finger food", "a_vi": "Đồ ăn bốc bằng tay (nhỏ gọn)"}, {"q_en": "Canapé", "a_vi": "Món khai vị nhỏ nhắn (ăn 1 miếng)"}, {"q_en": "Refreshment", "a_vi": "Đồ ăn thức uống nhẹ"}, {"q_en": "Beverage dispenser", "a_vi": "Bình chứa đồ uống (có vòi rót)"}, {"q_en": "Refill", "a_vi": "Bơm thêm / Rót thêm"}, {"q_en": "Capacity", "a_vi": "Sức chứa (người)"}
+      ]
+    },
+    {
+      "id": 28,
+      "type": "sentence",
+      "description": "Level 28: Giao tiếp Phục vụ tại phòng (Room Service)",
+      "questions": [
+        {"q_en": "Room service, how may I assist you this evening?", "q_vi": "Bắt máy Room Service", "a_en": "Room service, how may I assist you this evening?", "a_vi": "Dịch vụ phòng xin nghe, tôi có thể giúp gì cho quý khách tối nay?"},
+        {"q_en": "I would like to order a club sandwich and a mushroom soup.", "q_vi": "Khách gọi món bánh mì và súp", "a_en": "I would like to order a club sandwich and a mushroom soup.", "a_vi": "Tôi muốn gọi một bánh mì kẹp club sandwich và một súp nấm."},
+        {"q_en": "Certainly. Would you like any extra condiments like ketchup or mayo?", "q_vi": "Hỏi khách có cần gia vị kèm không", "a_en": "Certainly. Would you like any extra condiments like ketchup or mayo?", "a_vi": "Chắc chắn rồi. Quý khách có muốn thêm gia vị ăn kèm như tương cà hay sốt mayo không?"},
+        {"q_en": "Yes, please bring some extra ketchup. How long will it take?", "q_vi": "Khách xin tương cà và hỏi giờ", "a_en": "Yes, please bring some extra ketchup. How long will it take?", "a_vi": "Vâng, vui lòng mang thêm một ít tương cà. Sẽ mất bao lâu vậy?"},
+        {"q_en": "It will take approximately 30 minutes to deliver to your room.", "q_vi": "Báo thời gian 30 phút", "a_en": "It will take approximately 30 minutes to deliver to your room.", "a_vi": "Sẽ mất xấp xỉ 30 phút để giao đến phòng của quý khách."},
+        {"q_en": "Please note there is a 10% room service delivery surcharge.", "q_vi": "Nhắc khách về phụ phí", "a_en": "Please note there is a 10% room service delivery surcharge.", "a_vi": "Xin lưu ý là có 10% phụ phí giao hàng đối với dịch vụ phục vụ tại phòng."},
+        {"q_en": "(Knocks on door) Room service! Your order is here.", "q_vi": "Gõ cửa giao đồ ăn", "a_en": "(Knocks on door) Room service! Your order is here.", "a_vi": "(Gõ cửa) Dịch vụ phòng đây ạ! Đơn hàng của ngài đã đến."},
+        {"q_en": "Come in. You can just wheel the trolley next to the bed.", "q_vi": "Khách mời vào và chỉ chỗ để xe đẩy", "a_en": "Come in. You can just wheel the trolley next to the bed.", "a_vi": "Vào đi. Bạn cứ đẩy xe chở thức ăn lại cạnh giường là được."},
+        {"q_en": "I will remove the cloche to reveal your hot dishes.", "q_vi": "Mở nắp đậy thức ăn inox", "a_en": "I will remove the cloche to reveal your hot dishes.", "a_vi": "Tôi sẽ mở nắp đậy (cloche) để hé lộ các món ăn nóng của ngài."},
+        {"q_en": "Please sign the bill here to charge it to your room account.", "q_vi": "Yêu cầu ký nợ bill phòng", "a_en": "Please sign the bill here to charge it to your room account.", "a_vi": "Vui lòng ký hóa đơn tại đây để ghi nợ vào tài khoản phòng của ngài."},
+        {"q_en": "When you finish, please leave the trolley in the corridor outside your door.", "q_vi": "Dặn khách để xe đẩy ra ngoài khi ăn xong", "a_en": "When you finish, please leave the trolley in the corridor outside your door.", "a_vi": "Khi ngài dùng xong, vui lòng để xe đẩy ở hành lang bên ngoài cửa phòng."},
+        {"q_en": "Our night staff will retrieve the tray and empty plates at midnight.", "q_vi": "Hứa sẽ thu dọn mâm", "a_en": "Our night staff will retrieve the tray and empty plates at midnight.", "a_vi": "Nhân viên ca đêm của chúng tôi sẽ thu hồi khay và các đĩa trống vào lúc nửa đêm."},
+        {"q_en": "I tried to deliver the food, but the 'Do Not Disturb' sign was on.", "q_vi": "Báo cáo thấy biển DND không dám gõ cửa", "a_en": "I tried to deliver the food, but the 'Do Not Disturb' sign was on.", "a_vi": "Tôi đã cố giao thức ăn, nhưng biển báo 'Không làm phiền' đang được bật."},
+        {"q_en": "Call the guest's phone to respect their privacy before knocking.", "q_vi": "Chỉ đạo gọi điện thoại trước", "a_en": "Call the guest's phone to respect their privacy before knocking.", "a_vi": "Hãy gọi vào điện thoại của khách để tôn trọng sự riêng tư của họ trước khi gõ cửa."},
+        {"q_en": "We also need to restock the minibar in room 505.", "q_vi": "Nhắc châm thêm đồ minibar", "a_en": "We also need to restock the minibar in room 505.", "a_vi": "Chúng ta cũng cần bổ sung thêm đồ cho tủ lạnh nhỏ ở phòng 505."},
+        {"q_en": "The guest consumed two bottles of sparkling water and a chocolate bar.", "q_vi": "Kiểm đếm đồ khách đã dùng", "a_en": "The guest consumed two bottles of sparkling water and a chocolate bar.", "a_vi": "Khách đã sử dụng 2 chai nước khoáng có ga và 1 thanh sô-cô-la."},
+        {"q_en": "I will update the inventory and add the charges to their final bill.", "q_vi": "Cập nhật tồn kho và tính tiền", "a_en": "I will update the inventory and add the charges to their final bill.", "a_vi": "Tôi sẽ cập nhật kiểm kê và cộng các khoản phí vào hóa đơn cuối cùng của họ."},
+        {"q_en": "We offer complimentary fruit baskets for all suites upon arrival.", "q_vi": "Giới thiệu giỏ trái cây tặng kèm", "a_en": "We offer complimentary fruit baskets for all suites upon arrival.", "a_vi": "Chúng tôi cung cấp giỏ trái cây tặng kèm miễn phí cho mọi phòng Suite khi nhận phòng."},
+        {"q_en": "Is the cutlery rolled properly inside the napkin?", "q_vi": "Kiểm tra dao nĩa quấn trong khăn", "a_en": "Is the cutlery rolled properly inside the napkin?", "a_vi": "Bộ dao nĩa đã được cuộn đúng cách bên trong khăn ăn chưa?"},
+        {"q_en": "Yes, everything is set up perfectly for the midnight delivery.", "q_vi": "Báo cáo sẵn sàng giao đêm", "a_en": "Yes, everything is set up perfectly for the midnight delivery.", "a_vi": "Vâng, mọi thứ đã được chuẩn bị hoàn hảo cho chuyến giao hàng lúc nửa đêm."}
+      ]
+    },
+    {
+      "id": 29,
+      "type": "sentence",
+      "description": "Level 29: Quản lý Vận hành Tiệc Buffet & Teabreak",
+      "questions": [
+        {"q_en": "The breakfast buffet opens at 6:00 AM and closes at 10:00 AM.", "q_vi": "Thông báo giờ mở cửa Buffet", "a_en": "The breakfast buffet opens at 6:00 AM and closes at 10:00 AM.", "a_vi": "Tiệc buffet sáng mở cửa lúc 6h00 và đóng cửa lúc 10h00."},
+        {"q_en": "Please ensure the chafing dishes are heated correctly with gel fuel.", "q_vi": "Nhắc kiểm tra khay hâm thức ăn bằng cồn", "a_en": "Please ensure the chafing dishes are heated correctly with gel fuel.", "a_vi": "Vui lòng đảm bảo các khay hâm nóng thức ăn được làm nóng đúng cách bằng cồn thạch."},
+        {"q_en": "We need to replenish the scrambled eggs immediately; the tray is empty.", "q_vi": "Hối thúc châm thêm trứng", "a_en": "We need to replenish the scrambled eggs immediately; the tray is empty.", "a_vi": "Chúng ta cần làm đầy lại khay trứng khuấy ngay lập tức; khay trống không rồi."},
+        {"q_en": "Place the serving tongs properly next to each food platter.", "q_vi": "Dặn dò để kẹp gắp cạnh mâm", "a_en": "Place the serving tongs properly next to each food platter.", "a_vi": "Hãy đặt các kẹp gắp thức ăn đúng cách bên cạnh mỗi mâm đồ ăn."},
+        {"q_en": "The live cooking station for pho and omelets is highly popular.", "q_vi": "Khen quầy nấu trực tiếp phở và trứng", "a_en": "The live cooking station for pho and omelets is highly popular.", "a_vi": "Quầy nấu ăn trực tiếp phục vụ phở và trứng tráng thì cực kỳ nổi tiếng."},
+        {"q_en": "Chef, please man the carving station and slice the roasted beef.", "q_vi": "Nhờ đầu bếp đứng quầy thái thịt", "a_en": "Chef, please man the carving station and slice the roasted beef.", "a_vi": "Đầu bếp, vui lòng phụ trách quầy thái thịt và cắt mỏng phần bò quay nhé."},
+        {"q_en": "There is a long queue forming at the coffee machine.", "q_vi": "Báo cáo khách xếp hàng dài ở máy cafe", "a_en": "There is a long queue forming at the coffee machine.", "a_vi": "Đang có một hàng dài hình thành tại khu vực máy pha cà phê."},
+        {"q_en": "Refill the beverage dispensers with fresh orange and apple juice.", "q_vi": "Lệnh châm thêm nước trái cây", "a_en": "Refill the beverage dispensers with fresh orange and apple juice.", "a_vi": "Hãy bơm thêm nước cam và nước táo tươi vào các bình chứa đồ uống."},
+        {"q_en": "We have prepared a variety of finger foods and canapés for the teabreak.", "q_vi": "Giới thiệu đồ ăn nhẹ teabreak", "a_en": "We have prepared a variety of finger foods and canapés for the teabreak.", "a_vi": "Chúng tôi đã chuẩn bị nhiều loại đồ ăn bốc tay và món khai vị canapé cho tiệc trà."},
+        {"q_en": "The pastries are freshly baked and filled with sweet cream.", "q_vi": "Khen bánh ngọt nướng", "a_en": "The pastries are freshly baked and filled with sweet cream.", "a_vi": "Các loại bánh ngọt vừa được nướng mới tinh và có nhân kem ngọt ngào."},
+        {"q_en": "Guests are complaining that there are no ladles for the soup station.", "q_vi": "Khách phàn nàn thiếu môi múc canh", "a_en": "Guests are complaining that there are no ladles for the soup station.", "a_vi": "Khách hàng đang phàn nàn rằng không có chiếc môi/vá nào cho quầy súp."},
+        {"q_en": "I will bring clean ladles and soup bowls right away.", "q_vi": "Phục vụ hứa mang ra", "a_en": "I will bring clean ladles and soup bowls right away.", "a_vi": "Tôi sẽ mang những chiếc môi và bát súp sạch ra ngay lập tức."},
+        {"q_en": "Food wastage is a massive problem during large buffet events.", "q_vi": "Than phiền lãng phí đồ ăn", "a_en": "Food wastage is a massive problem during large buffet events.", "a_vi": "Sự lãng phí thức ăn là một vấn đề khổng lồ trong các sự kiện buffet lớn."},
+        {"q_en": "We encourage guests to take small portions and come back for more.", "q_vi": "Khuyên khách lấy ít đồ", "a_en": "We encourage guests to take small portions and come back for more.", "a_vi": "Chúng tôi khuyến khích khách hàng lấy khẩu phần nhỏ và quay lại lấy thêm sau."},
+        {"q_en": "What do we do with the leftover food after the buffet closes?", "q_vi": "Hỏi cách xử lý đồ thừa", "a_en": "What do we do with the leftover food after the buffet closes?", "a_vi": "Chúng ta phải làm gì với thức ăn thừa sau khi buffet đóng cửa?"},
+        {"q_en": "Untouched pastries are donated to the local charity kitchen.", "q_vi": "Quyên góp bánh chưa đụng", "a_en": "Untouched pastries are donated to the local charity kitchen.", "a_vi": "Các loại bánh ngọt chưa được đụng tới sẽ được quyên góp cho bếp ăn từ thiện địa phương."},
+        {"q_en": "The seating capacity of the dining hall is currently full.", "q_vi": "Báo nhà ăn hết chỗ", "a_en": "The seating capacity of the dining hall is currently full.", "a_vi": "Sức chứa chỗ ngồi của phòng ăn hiện tại đã hoàn toàn kín."},
+        {"q_en": "Please guide the overflow guests to the patio outdoor seating.", "q_vi": "Chỉ đạo đưa khách ra sân hiên", "a_en": "Please guide the overflow guests to the patio outdoor seating.", "a_vi": "Vui lòng hướng dẫn những vị khách tràn ra ngoài đi tới chỗ ngồi ở sân hiên."},
+        {"q_en": "The VIPs requested a private refreshment setup inside their meeting room.", "q_vi": "Khách VIP xin setup tiệc nhẹ trong phòng họp", "a_en": "The VIPs requested a private refreshment setup inside their meeting room.", "a_vi": "Khách VIP đã yêu cầu bố trí đồ ăn thức uống nhẹ riêng tư bên trong phòng họp của họ."},
+        {"q_en": "Maintain a highly vigilant and proactive attitude to clear empty plates.", "q_vi": "Nhắc nhở chủ động dọn đĩa trống", "a_en": "Maintain a highly vigilant and proactive attitude to clear empty plates.", "a_vi": "Hãy duy trì thái độ cực kỳ cảnh giác và chủ động để dọn dẹp các đĩa đã trống."}
+      ]
+    },
+    {
+      "id": 30,
+      "type": "boss",
+      "description": "Level 30: BOSS Buffet (Khách lấy quá nhiều đồ ăn & Gây rối tại quầy Live Cooking)",
+      "questions": [
+        {"q_en": "Excuse me, where are the fresh oysters? The platter is completely empty.", "q_vi": "(Boss Khách Tham Ăn) Xin lỗi, hàu sống ở đâu? Cái đĩa trống trơn rồi.", "a_en": "I apologize, sir. The chef is preparing a new batch. I will replenish it shortly.", "a_vi": "Tôi xin lỗi thưa ngài. Đầu bếp đang chuẩn bị một mẻ mới. Tôi sẽ làm đầy lại đĩa ngay." },
+        {"q_en": "Hurry up. I paid for a premium buffet, not for empty chafing dishes.", "q_vi": "Khách hối thúc bực bội", "a_en": "They will be out in two minutes. In the meantime, would you like to try the live cooking station?", "a_vi": "Chúng sẽ ra trong 2 phút nữa. Trong lúc đó, ngài có muốn thử quầy nấu trực tiếp không?" },
+        {"q_en": "Fine. Chef, give me five bowls of Pho. And put a lot of Wagyu beef in them.", "q_vi": "Khách đòi 5 tô phở nhiều bò", "a_en": "Chef: Sir, to ensure everyone gets a taste, we limit it to two bowls per order.", "a_vi": "Đầu bếp: Thưa ngài, để đảm bảo ai cũng được nếm, chúng tôi giới hạn 2 tô cho mỗi lần gọi." },
+        {"q_en": "Are you limiting my food? I said I want five bowls!", "q_vi": "Khách nổi nóng vì bị giới hạn", "a_en": "Chef: You can absolutely come back for more, sir. But the queue behind you is very long.", "a_vi": "Đầu bếp: Ngài hoàn toàn có thể quay lại lấy thêm thưa ngài. Nhưng hàng người phía sau đang rất dài." },
+        {"q_en": "I don't care about the queue. Just make them. I hate standing in lines.", "q_vi": "Khách phớt lờ hàng đợi", "a_en": "(Manager intervenes) Good morning, sir. I see you are eager to try our signature Pho.", "a_vi": "(Quản lý can thiệp) Chào buổi sáng ngài. Tôi thấy ngài rất háo hức muốn thử món Phở đặc trưng." },
+        {"q_en": "Yes, but your chef refuses to serve me. This is unacceptable.", "q_vi": "Khách mách lẻo quản lý", "a_en": "I apologize for the misunderstanding. We ask guests to take smaller portions to avoid wastage.", "a_vi": "Tôi xin lỗi vì sự hiểu lầm. Chúng tôi mong khách lấy khẩu phần nhỏ hơn để tránh lãng phí." },
+        {"q_en": "Wastage? I am going to eat all five bowls. I have a huge appetite.", "q_vi": "Khách khẳng định sẽ ăn hết", "a_en": "I understand. Please have a seat. I will personally deliver the 5 bowls to your table.", "a_vi": "Tôi hiểu. Xin ngài cứ về bàn ngồi. Tôi sẽ đích thân mang 5 tô đó đến tận bàn cho ngài." },
+        {"q_en": "Well, that is more like it. Bring them to table 14 near the patio.", "q_vi": "Khách đồng ý về bàn", "a_en": "Certainly. The oysters have also been replenished. Shall I bring you a plate?", "a_vi": "Chắc chắn rồi. Hàu cũng đã được châm thêm. Tôi có nên mang cho ngài một đĩa luôn không?" },
+        {"q_en": "Yes, a full plate of oysters. And don't forget the lemon.", "q_vi": "Khách đòi đĩa đầy hàu", "a_en": "Noted. I will bring the oysters, lemon wedges, and the Pho directly to you.", "a_vi": "Đã ghi nhận. Tôi sẽ mang hàu, chanh cắt lát, và Phở trực tiếp đến cho ngài." },
+        {"q_en": "(At the table) Here is your food, sir. Enjoy your meal.", "q_vi": "Mang đồ ăn ra bàn", "a_en": "Wow, my table is completely full. I didn't realize how much food this was.", "a_vi": "Wow, bàn của tôi đầy kín rồi. Tôi không nhận ra là lượng thức ăn lại nhiều thế này." },
+        {"q_en": "If you need any extra condiments, the station is right over there.", "q_vi": "Chỉ chỗ lấy gia vị", "a_en": "No, this is enough. But the soup is spilling out of the bowls.", "a_vi": "Không, thế này là đủ rồi. Nhưng súp đang bị tràn ra khỏi tô kìa." },
+        {"q_en": "Let me wipe that for you with a fresh napkin. Be careful, it is hot.", "q_vi": "Lau dọn giúp khách", "a_en": "Thank you. You handle difficult situations very calmly, Manager.", "a_vi": "Cảm ơn. Bạn xử lý những tình huống khó khăn rất điềm tĩnh đấy, Quản lý." },
+        {"q_en": "It is my job to ensure you have a pleasant dining experience.", "q_vi": "Khiêm tốn nhận lời khen", "a_en": "(45 minutes later) Waiter, can you clear these plates? I couldn't finish it all.", "a_vi": "(45 phút sau) Phục vụ, dọn mấy đĩa này đi được không? Tôi không thể ăn hết nổi." },
+        {"q_en": "Of course. I see there are still three full bowls of Pho left.", "q_vi": "Quản lý nhắc khéo vụ thừa đồ ăn", "a_en": "Yeah, my eyes were bigger than my stomach. My apologies.", "a_vi": "Ừ, mắt tôi to hơn bụng mất rồi (tham ăn). Cho tôi xin lỗi nhé." },
+        {"q_en": "It happens, sir. As we mentioned, we try to minimize food wastage.", "q_vi": "Nhắc lại chính sách lãng phí", "a_en": "I get it now. Next time, I will just take one bowl and come back.", "a_vi": "Tôi hiểu rồi. Lần sau, tôi sẽ chỉ lấy một tô và quay lại sau." },
+        {"q_en": "We appreciate your understanding. Would you like some hot tea to digest?", "q_vi": "Mời trà cho tiêu hóa", "a_en": "Yes, a cup of chamomile tea would be lovely.", "a_vi": "Vâng, một tách trà hoa cúc sẽ rất tuyệt." },
+        {"q_en": "I will pour it for you right now from the beverage dispenser.", "q_vi": "Hứa đi rót trà", "a_en": "Thank you. I must admit, the Wagyu beef in the Pho was excellent.", "a_vi": "Cảm ơn. Tôi phải thừa nhận, thịt bò Wagyu trong Phở thật sự xuất sắc." },
+        {"q_en": "I will pass your compliments to the Chef. Have a wonderful day.", "q_vi": "Sẽ chuyển lời khen cho Bếp trưởng", "a_en": "I will. Thanks for putting up with my attitude earlier.", "a_vi": "Tôi sẽ thế. Cảm ơn vì đã chịu đựng thái độ của tôi lúc nãy." },
+        {"q_en": "Not a problem at all, sir. We are always here to serve you.", "q_vi": "Chào kết thúc chuyên nghiệp", "a_en": "(Guest leaves) A good manager never loses their temper. Well played.", "a_vi": "(Khách rời đi) Một người quản lý giỏi không bao giờ mất bình tĩnh. Xử lý tốt lắm." }
+      ]
+    }
+  ]
+}
