@@ -1,0 +1,493 @@
+{
+  "id": "topic_it",
+  "title": "💻 IT & Hệ Thống",
+  "icon": "🖥️",
+  "color": "#2c3e50",
+  "nodes": [
+    {
+      "id": 1,
+      "type": "vocab",
+      "description": "Level 1: Từ vựng Phần cứng & Văn phòng phẩm IT",
+      "questions": [
+        {"q_en": "Computer", "a_vi": "Máy tính"}, {"q_en": "Server", "a_vi": "Máy chủ"}, {"q_en": "Network", "a_vi": "Mạng"}, {"q_en": "Wi-Fi", "a_vi": "Mạng không dây"}, {"q_en": "Password", "a_vi": "Mật khẩu"}, {"q_en": "Software", "a_vi": "Phần mềm"}, {"q_en": "Hardware", "a_vi": "Phần cứng"}, {"q_en": "Mouse", "a_vi": "Chuột máy tính"}, {"q_en": "Keyboard", "a_vi": "Bàn phím"}, {"q_en": "Printer", "a_vi": "Máy in"}, {"q_en": "Scanner", "a_vi": "Máy quét"}, {"q_en": "Monitor", "a_vi": "Màn hình"}, {"q_en": "Laptop", "a_vi": "Máy tính xách tay"}, {"q_en": "Desktop", "a_vi": "Máy tính để bàn"}, {"q_en": "Internet", "a_vi": "Mạng internet"}, {"q_en": "Connection", "a_vi": "Kết nối"}, {"q_en": "Router", "a_vi": "Thiết bị phát mạng"}, {"q_en": "Cable", "a_vi": "Dây cáp"}, {"q_en": "Port", "a_vi": "Cổng kết nối"}, {"q_en": "Power", "a_vi": "Nguồn điện"}
+      ]
+    },
+    {
+      "id": 2,
+      "type": "vocab",
+      "description": "Level 2: Từ vựng Sự cố & Xử lý hệ thống",
+      "questions": [
+        {"q_en": "System", "a_vi": "Hệ thống"}, {"q_en": "Error", "a_vi": "Lỗi"}, {"q_en": "Bug", "a_vi": "Lỗi phần mềm"}, {"q_en": "Glitch", "a_vi": "Sự cố nhỏ / Lỗi tạm thời"}, {"q_en": "Update", "a_vi": "Cập nhật"}, {"q_en": "Upgrade", "a_vi": "Nâng cấp"}, {"q_en": "Reboot", "a_vi": "Khởi động lại"}, {"q_en": "Restart", "a_vi": "Khởi động lại"}, {"q_en": "Install", "a_vi": "Cài đặt"}, {"q_en": "Uninstall", "a_vi": "Gỡ cài đặt"}, {"q_en": "Login", "a_vi": "Đăng nhập"}, {"q_en": "Logout", "a_vi": "Đăng xuất"}, {"q_en": "Account", "a_vi": "Tài khoản"}, {"q_en": "Security", "a_vi": "Bảo mật"}, {"q_en": "Firewall", "a_vi": "Tường lửa"}, {"q_en": "Data", "a_vi": "Dữ liệu"}, {"q_en": "Backup", "a_vi": "Sao lưu"}, {"q_en": "Restore", "a_vi": "Khôi phục"}, {"q_en": "Download", "a_vi": "Tải xuống"}, {"q_en": "Storage", "a_vi": "Bộ nhớ / Lưu trữ"}
+      ]
+    },
+    {
+      "id": 3,
+      "type": "sentence",
+      "description": "Level 3: Mẫu câu Hỗ trợ IT cơ bản",
+      "questions": [
+        {"q_en": "I cannot connect to the Wi-Fi.", "q_vi": "Khách báo không vào được wifi", "a_en": "Please check if your Wi-Fi is turned on.", "a_vi": "Vui lòng kiểm tra xem Wi-Fi đã được bật chưa ạ."},
+        {"q_en": "My computer is running very slowly.", "q_vi": "Khách báo máy chậm", "a_en": "Try closing all unnecessary applications.", "a_vi": "Hãy thử đóng tất cả các ứng dụng không cần thiết đi ạ."},
+        {"q_en": "I forgot my account password.", "q_vi": "Khách quên mật khẩu", "a_en": "I can reset your password for you right now.", "a_vi": "Tôi có thể đặt lại mật khẩu cho quý khách ngay bây giờ."},
+        {"q_en": "The printer is jammed again.", "q_vi": "Khách báo kẹt giấy in", "a_en": "I will send someone to clear the paper jam.", "a_vi": "Tôi sẽ cử người đến lấy giấy bị kẹt ra ạ."},
+        {"q_en": "My monitor has a black screen.", "q_vi": "Khách báo màn hình đen", "a_en": "Please check if the power cable is connected properly.", "a_vi": "Vui lòng kiểm tra xem dây nguồn đã được kết nối đúng chưa ạ."},
+        {"q_en": "I cannot open this file on my laptop.", "q_vi": "Khách không mở được file", "a_en": "That file might be corrupted. Do you have a backup?", "a_vi": "File đó có lẽ đã bị hỏng rồi. Quý khách có bản sao lưu không?"},
+        {"q_en": "The keyboard is not responding to my typing.", "q_vi": "Khách báo bàn phím liệt", "a_en": "Please try to unplug and replug the USB cable.", "a_vi": "Vui lòng thử rút ra và cắm lại dây USB ạ."},
+        {"q_en": "I need to install a new software.", "q_vi": "Khách cần cài phần mềm", "a_en": "I need your admin password to proceed.", "a_vi": "Tôi cần mật khẩu quản trị của quý khách để tiến hành ạ."},
+        {"q_en": "My email is not syncing.", "q_vi": "Khách báo lỗi đồng bộ email", "a_en": "Please check your internet connection and try again.", "a_vi": "Vui lòng kiểm tra kết nối internet và thử lại ạ."},
+        {"q_en": "The mouse is not working correctly.", "q_vi": "Khách báo chuột hỏng", "a_en": "I will bring you a new mouse immediately.", "a_vi": "Tôi sẽ mang một con chuột mới đến cho quý khách ngay."},
+        {"q_en": "Can you help me set up the projector?", "q_vi": "Khách nhờ cài máy chiếu", "a_en": "Yes, I will help you connect it to your laptop.", "a_vi": "Vâng, tôi sẽ giúp ngài kết nối nó với máy tính xách tay."},
+        {"q_en": "I accidentally deleted an important document.", "q_vi": "Khách báo xóa nhầm file", "a_en": "Don't worry, I can restore it from the cloud backup.", "a_vi": "Đừng lo, tôi có thể khôi phục nó từ bản sao lưu đám mây."},
+        {"q_en": "The website keeps crashing on my browser.", "q_vi": "Khách báo web bị sập", "a_en": "Please try clearing your browser cache.", "a_vi": "Vui lòng thử xóa bộ nhớ đệm của trình duyệt đi ạ."},
+        {"q_en": "Where is the power port for my laptop?", "q_vi": "Hỏi chỗ cắm điện", "a_en": "It is located under the desk, near your feet.", "a_vi": "Nó nằm dưới bàn, gần chân của quý khách ạ."},
+        {"q_en": "The computer keeps restarting by itself.", "q_vi": "Khách báo máy tự khởi động lại", "a_en": "It might be an overheating issue. I will check the hardware.", "a_vi": "Có thể là vấn đề quá nhiệt. Tôi sẽ kiểm tra phần cứng."},
+        {"q_en": "I need to download this large file quickly.", "q_vi": "Khách cần tải file gấp", "a_en": "I will switch you to a high-speed dedicated line.", "a_vi": "Tôi sẽ chuyển quý khách sang một đường truyền tốc độ cao riêng biệt."},
+        {"q_en": "Is this email attachment safe to open?", "q_vi": "Khách hỏi email lạ có an toàn", "a_en": "Do not open it; it might contain malware.", "a_vi": "Đừng mở nó; nó có thể chứa phần mềm độc hại đấy."},
+        {"q_en": "The internet is disconnected.", "q_vi": "Khách báo mất mạng", "a_en": "I am rebooting the router, please wait a moment.", "a_vi": "Tôi đang khởi động lại router, vui lòng đợi một chút."},
+        {"q_en": "I need help with my Zoom meeting setup.", "q_vi": "Khách nhờ cài Zoom", "a_en": "I will assist you with the audio and video settings.", "a_vi": "Tôi sẽ hỗ trợ quý khách phần cài đặt âm thanh và hình ảnh."},
+        {"q_en": "Thank you for fixing my computer.", "q_vi": "Khách cảm ơn", "a_en": "You are very welcome. Let me know if you need anything else.", "a_vi": "Không có chi ạ. Hãy cho tôi biết nếu ngài cần hỗ trợ gì thêm."}
+      ]
+    },
+    {
+      "id": 4,
+      "type": "sentence",
+      "description": "Level 4: Mẫu câu Xử lý Sự cố Hệ thống (Advanced IT)",
+      "questions": [
+        {"q_en": "The server is experiencing high latency.", "q_vi": "Báo cáo server lag", "a_en": "The server is experiencing high latency.", "a_vi": "Máy chủ đang trải qua độ trễ cao."},
+        {"q_en": "I will optimize the database queries to reduce the load.", "q_vi": "Hứa tối ưu database", "a_en": "I will optimize the database queries to reduce the load.", "a_vi": "Tôi sẽ tối ưu hóa các truy vấn cơ sở dữ liệu để giảm tải."},
+        {"q_en": "The cloud backup failed to synchronize last night.", "q_vi": "Báo lỗi sao lưu", "a_en": "The cloud backup failed to synchronize last night.", "a_vi": "Việc sao lưu lên đám mây đã không thể đồng bộ hóa đêm qua."},
+        {"q_en": "We must encrypt all guest data to ensure cybersecurity.", "q_vi": "Nhắc mã hóa dữ liệu", "a_en": "We must encrypt all guest data to ensure cybersecurity.", "a_vi": "Chúng ta phải mã hóa tất cả dữ liệu khách hàng để đảm bảo an ninh mạng."},
+        {"q_en": "There is a vulnerability in our firewall settings.", "q_vi": "Phát hiện lỗ hổng tường lửa", "a_en": "There is a vulnerability in our firewall settings.", "a_vi": "Có một lỗ hổng trong các thiết lập tường lửa của chúng ta."},
+        {"q_en": "Update the security patch to fix the system bug.", "q_vi": "Lệnh update bản vá", "a_en": "Update the security patch to fix the system bug.", "a_vi": "Cập nhật bản vá bảo mật để sửa lỗi hệ thống."},
+        {"q_en": "The system is having a downtime for maintenance.", "q_vi": "Báo hệ thống bảo trì", "a_en": "The system is having a downtime for maintenance.", "a_vi": "Hệ thống đang trong thời gian chết để bảo trì."},
+        {"q_en": "We need to migrate the database to a more scalable server.", "q_vi": "Đề xuất chuyển server mạnh hơn", "a_en": "We need to migrate the database to a more scalable server.", "a_vi": "Chúng ta cần di chuyển cơ sở dữ liệu sang một máy chủ có khả năng mở rộng tốt hơn."},
+        {"q_en": "The user interface needs to be more intuitive for the staff.", "q_vi": "Yêu cầu giao diện dễ dùng", "a_en": "The user interface needs to be more intuitive for the staff.", "a_vi": "Giao diện người dùng cần phải trực quan hơn đối với nhân viên."},
+        {"q_en": "Our analytics dashboard is showing an unusual traffic spike.", "q_vi": "Báo cáo traffic lạ", "a_en": "Our analytics dashboard is showing an unusual traffic spike.", "a_vi": "Bảng điều khiển phân tích của chúng ta đang hiển thị một lưu lượng truy cập bất thường."},
+        {"q_en": "Please troubleshoot the connection between the API and the app.", "q_vi": "Yêu cầu gỡ lỗi API", "a_en": "Please troubleshoot the connection between the API and the app.", "a_vi": "Vui lòng xử lý sự cố kết nối giữa API và ứng dụng."},
+        {"q_en": "The automation module is not triggering the alert.", "q_vi": "Báo lỗi module tự động", "a_en": "The automation module is not triggering the alert.", "a_vi": "Phân hệ tự động hóa không kích hoạt cảnh báo."},
+        {"q_en": "We must implement a multi-factor authentication for admin accounts.", "q_vi": "Yêu cầu bảo mật 2 lớp", "a_en": "We must implement a multi-factor authentication for admin accounts.", "a_vi": "Chúng ta phải thực thi xác thực đa yếu tố cho các tài khoản quản trị."},
+        {"q_en": "Backup data to the offline drive as a precaution.", "q_vi": "Nhắc sao lưu ngoại tuyến", "a_en": "Backup data to the offline drive as a precaution.", "a_vi": "Sao lưu dữ liệu vào ổ cứng ngoại tuyến như một biện pháp phòng ngừa."},
+        {"q_en": "The integration between the booking engine and the app failed.", "q_vi": "Báo lỗi tích hợp", "a_en": "The integration between the booking engine and the app failed.", "a_vi": "Việc tích hợp giữa hệ thống đặt phòng và ứng dụng đã thất bại."},
+        {"q_en": "Check the API documentation for the correct endpoint.", "q_vi": "Nhắc check tài liệu API", "a_en": "Check the API documentation for the correct endpoint.", "a_vi": "Kiểm tra tài liệu API để tìm điểm cuối (endpoint) chính xác."},
+        {"q_en": "We have successfully deployed the latest software update.", "q_vi": "Báo cáo triển khai xong", "a_en": "We have successfully deployed the latest software update.", "a_vi": "Chúng ta đã triển khai thành công bản cập nhật phần mềm mới nhất."},
+        {"q_en": "The dashboard metrics are now updating in real-time.", "q_vi": "Báo cáo dashboard chạy real-time", "a_en": "The dashboard metrics are now updating in real-time.", "a_vi": "Các chỉ số trên bảng điều khiển hiện đang cập nhật theo thời gian thực."},
+        {"q_en": "The system architecture is designed for high scalability.", "q_vi": "Khen ngợi kiến trúc hệ thống", "a_en": "The system architecture is designed for high scalability.", "a_vi": "Kiến trúc hệ thống được thiết kế cho khả năng mở rộng cao."},
+        {"q_en": "I will monitor the server logs for any suspicious activity.", "q_vi": "Hứa giám sát log", "a_en": "I will monitor the server logs for any suspicious activity.", "a_vi": "Tôi sẽ giám sát các nhật ký máy chủ để tìm kiếm bất kỳ hoạt động đáng ngờ nào."}
+      ]
+    },
+    {
+      "id": 5,
+      "type": "boss",
+      "description": "Level 5: BOSS IT (Sự cố sập Server trong giờ cao điểm)",
+      "questions": [
+        {"q_en": "Huy, the whole booking system is down! Every guest is complaining.", "q_vi": "(Boss) Huy, toàn bộ hệ thống đặt phòng bị sập! Khách đang phàn nàn quá trời.", "a_en": "I am aware, sir. The central server is experiencing a major outage.", "a_vi": "Tôi biết rồi thưa sếp. Máy chủ trung tâm đang gặp sự cố ngừng hoạt động lớn." },
+        {"q_en": "How could this happen? We just upgraded the infrastructure last week!", "q_vi": "Sếp mắng vốn", "a_en": "It appears to be a hardware failure in the main rack. I'm investigating now.", "a_vi": "Có vẻ là lỗi phần cứng ở tủ rack chính. Tôi đang điều tra ngay đây." },
+        {"q_en": "Can we switch to the cloud backup? Do we have one?", "q_vi": "Hỏi về backup đám mây", "a_en": "Yes, but there is a slight latency in synchronizing the data.", "a_vi": "Vâng, nhưng có một độ trễ nhỏ trong việc đồng bộ hóa dữ liệu." },
+        {"q_en": "Latency is better than total downtime. Switch to the cloud immediately.", "q_vi": "Lệnh chuyển sang cloud", "a_en": "Switching to the cloud server now. The system should be back in two minutes.", "a_vi": "Đang chuyển sang máy chủ đám mây. Hệ thống sẽ hoạt động lại trong 2 phút nữa." },
+        {"q_en": "Good. What about the guests trying to check in right now?", "q_vi": "Hỏi khách đang check-in", "a_en": "The front desk team is switching to the manual check-in protocol.", "a_vi": "Đội lễ tân đang chuyển sang quy trình nhận phòng thủ công." },
+        {"q_en": "Is the manual protocol safe? What about the data synchronization?", "q_vi": "Sếp lo bảo mật/dữ liệu", "a_en": "We will manually input all data once the server is restored. No data will be lost.", "a_vi": "Chúng tôi sẽ nhập thủ công mọi dữ liệu khi máy chủ được khôi phục. Sẽ không có dữ liệu nào bị mất." },
+        {"q_en": "Keep me posted. Why did the firewall not prevent this failure?", "q_vi": "Hỏi về tường lửa", "a_en": "This is a hardware issue, not a cyberattack. The firewall is working fine.", "a_vi": "Đây là vấn đề phần cứng, không phải tấn công mạng. Tường lửa vẫn hoạt động tốt." },
+        {"q_en": "I want a full report on the root cause by tonight. No bugs.", "q_vi": "Đòi báo cáo root cause", "a_en": "I will prepare a detailed analysis including the hardware defect report.", "a_vi": "Tôi sẽ chuẩn bị một bản phân tích chi tiết bao gồm báo cáo lỗi phần cứng." },
+        {"q_en": "Are the guest records encrypted? I don't want a data breach.", "q_vi": "Sếp lo lộ data khách", "a_en": "Yes, all records are protected by military-grade encryption.", "a_vi": "Vâng, tất cả hồ sơ được bảo vệ bằng mã hóa cấp quân sự." },
+        {"q_en": "Good. Now, the app is still lagging for some users.", "q_vi": "Sếp check app thấy lag", "a_en": "We are optimizing the bandwidth. Traffic spike is causing the high latency.", "a_vi": "Chúng tôi đang tối ưu hóa băng thông. Lưu lượng truy cập tăng vọt đang gây ra độ trễ cao." },
+        {"q_en": "Is the system scalable? Can it handle the traffic?", "q_vi": "Hỏi khả năng mở rộng", "a_en": "Yes, the architecture is designed for high scalability. We are adding more resources.", "a_vi": "Vâng, kiến trúc được thiết kế cho khả năng mở rộng cao. Chúng tôi đang thêm tài nguyên." },
+        {"q_en": "Make it happen. Our reputation depends on this app.", "q_vi": "Ép áp lực", "a_en": "I understand. I am working with the development team to push a patch.", "a_vi": "Tôi hiểu. Tôi đang làm việc với đội phát triển để đẩy một bản vá." },
+        {"q_en": "What about the backup drive? Is it updated?", "q_vi": "Hỏi ổ cứng dự phòng", "a_en": "The offline backup drive was synchronized at 6 AM. It is safe.", "a_vi": "Ổ cứng sao lưu ngoại tuyến đã được đồng bộ lúc 6h sáng. Nó rất an toàn." },
+        {"q_en": "I need a status update every 15 minutes. Don't make me ask.", "q_vi": "Yêu cầu báo cáo 15p/lần", "a_en": "I will send a status update to your phone every 15 minutes.", "a_vi": "Tôi sẽ gửi cập nhật tình hình đến điện thoại của sếp mỗi 15 phút." },
+        {"q_en": "What if the hackers are behind this outage?", "q_vi": "Sếp nghi hack", "a_en": "I am monitoring the server logs. No suspicious activity detected so far.", "a_vi": "Tôi đang giám sát nhật ký máy chủ. Chưa phát hiện hoạt động đáng ngờ nào." },
+        {"q_en": "Keep monitoring. If you see a breach, shut it all down.", "q_vi": "Lệnh sập hệ thống nếu bị hack", "a_en": "We have an emergency protocol for that. I will isolate the system immediately.", "a_vi": "Chúng tôi có quy trình khẩn cấp cho việc đó. Tôi sẽ cách ly hệ thống ngay lập tức." },
+        {"q_en": "Okay. The system seems stable now. Good job.", "q_vi": "Hệ thống ổn định", "a_en": "Thank you, sir. We are continuing to monitor the latency.", "a_vi": "Cảm ơn sếp. Chúng tôi đang tiếp tục giám sát độ trễ." },
+        {"q_en": "Make sure you install a redundant server to avoid this next time.", "q_vi": "Yêu cầu lắp server dự phòng", "a_en": "I will submit a proposal for a redundant server setup tomorrow.", "a_vi": "Tôi sẽ nộp bản đề xuất cho cấu hình máy chủ dự phòng vào ngày mai." },
+        {"q_en": "Do it. I want a bulletproof system.", "q_vi": "Lệnh cuối", "a_en": "We are committed to building an impenetrable infrastructure.", "a_vi": "Chúng tôi cam kết xây dựng một cơ sở hạ tầng bất khả xâm phạm." },
+        {"q_en": "Dismissed. Go get it fixed.", "q_vi": "Giải tán", "a_en": "Yes, sir! Returning to the server room.", "a_vi": "Vâng thưa sếp! Quay lại phòng máy chủ đây." }
+      ]
+    },
+	{
+      "id": 6,
+      "type": "vocab",
+      "description": "Level 6: Từ vựng Quản trị Hệ thống & Server",
+      "questions": [
+        {"q_en": "Latency", "a_vi": "Độ trễ"}, {"q_en": "Bandwidth", "a_vi": "Băng thông"}, {"q_en": "Throughput", "a_vi": "Lưu lượng truyền tải"}, {"q_en": "Downtime", "a_vi": "Thời gian chết (sập hệ thống)"}, {"q_en": "Uptime", "a_vi": "Thời gian hoạt động liên tục"}, {"q_en": "Load balancer", "a_vi": "Bộ cân bằng tải"}, {"q_en": "Failover", "a_vi": "Cơ chế dự phòng / Chuyển đổi lỗi"}, {"q_en": "Redundancy", "a_vi": "Sự dư thừa (để dự phòng)"}, {"q_en": "Scalability", "a_vi": "Khả năng mở rộng"}, {"q_en": "Virtualization", "a_vi": "Sự ảo hóa"}, {"q_en": "Container", "a_vi": "Khối chứa (Docker...)"}, {"q_en": "Provision", "a_vi": "Cung cấp (tài nguyên)"}, {"q_en": "Log", "a_vi": "Nhật ký hệ thống"}, {"q_en": "Debug", "a_vi": "Gỡ lỗi"}, {"q_en": "Cluster", "a_vi": "Cụm máy chủ"}, {"q_en": "Instance", "a_vi": "Phiên bản máy chủ (Cloud)"}, {"q_en": "Compute", "a_vi": "Điện toán"}, {"q_en": "Memory", "a_vi": "Bộ nhớ (RAM)"}, {"q_en": "Storage", "a_vi": "Bộ nhớ (Ổ cứng)"}, {"q_en": "Kernel", "a_vi": "Nhân hệ điều hành"}
+      ]
+    },
+    {
+      "id": 7,
+      "type": "vocab",
+      "description": "Level 7: Từ vựng Bảo mật & An ninh mạng",
+      "questions": [
+        {"q_en": "Breach", "a_vi": "Sự vi phạm / Lỗ hổng"}, {"q_en": "Vulnerability", "a_vi": "Lỗ hổng bảo mật"}, {"q_en": "Malware", "a_vi": "Phần mềm độc hại"}, {"q_en": "Ransomware", "a_vi": "Mã độc tống tiền"}, {"q_en": "Phishing", "a_vi": "Tấn công giả mạo (lừa đảo)"}, {"q_en": "Firewall", "a_vi": "Tường lửa"}, {"q_en": "Encryption", "a_vi": "Sự mã hóa"}, {"q_en": "Authentication", "a_vi": "Sự xác thực"}, {"q_en": "Authorization", "a_vi": "Sự cấp quyền"}, {"q_en": "Credential", "a_vi": "Thông tin đăng nhập"}, {"q_en": "Protocol", "a_vi": "Giao thức"}, {"q_en": "Patched", "a_vi": "Đã được vá lỗi"}, {"q_en": "Intrusion", "a_vi": "Sự xâm nhập"}, {"q_en": "Surveillance", "a_vi": "Sự giám sát"}, {"q_en": "Unauthorized", "a_vi": "Trái phép"}, {"q_en": "Compliance", "a_vi": "Sự tuân thủ (tiêu chuẩn)"}, {"q_en": "Biometric", "a_vi": "Sinh trắc học"}, {"q_en": "Checksum", "a_vi": "Mã kiểm tra toàn vẹn dữ liệu"}, {"q_en": "Zero-day", "a_vi": "Lỗi chưa biết trước đó"}, {"q_en": "Denial of Service", "a_vi": "Từ chối dịch vụ (tấn công)"}
+      ]
+    },
+    {
+      "id": 8,
+      "type": "sentence",
+      "description": "Level 8: Báo cáo Vận hành Server & Network",
+      "questions": [
+        {"q_en": "The main server is experiencing intermittent latency.", "q_vi": "Báo server lag chập chờn", "a_en": "The main server is experiencing intermittent latency.", "a_vi": "Máy chủ chính đang gặp tình trạng độ trễ chập chờn."},
+        {"q_en": "We need to scale up our cloud infrastructure immediately.", "q_vi": "Đề xuất nâng cấp Cloud", "a_en": "We need to scale up our cloud infrastructure immediately.", "a_vi": "Chúng ta cần mở rộng hạ tầng đám mây ngay lập tức."},
+        {"q_en": "Check the load balancer configuration to distribute traffic.", "q_vi": "Nhắc check cân bằng tải", "a_en": "Check the load balancer configuration to distribute traffic.", "a_vi": "Kiểm tra lại cấu hình bộ cân bằng tải để phân phối lưu lượng."},
+        {"q_en": "We have zero redundancy on the database cluster.", "q_vi": "Báo thiếu dự phòng database", "a_en": "We have zero redundancy on the database cluster.", "a_vi": "Chúng ta không có cơ chế dự phòng cho cụm cơ sở dữ liệu."},
+        {"q_en": "Is the automatic failover protocol functional?", "q_vi": "Hỏi về cơ chế chuyển đổi dự phòng", "a_en": "Is the automatic failover protocol functional?", "a_vi": "Giao thức chuyển đổi dự phòng tự động có đang hoạt động không?"},
+        {"q_en": "The server logs show thousands of failed login attempts.", "q_vi": "Báo cáo bị tấn công dò mật khẩu", "a_en": "The server logs show thousands of failed login attempts.", "a_vi": "Nhật ký máy chủ hiển thị hàng ngàn lần đăng nhập thất bại."},
+        {"q_en": "Configure the firewall to block this specific IP range.", "q_vi": "Lệnh chặn IP", "a_en": "Configure the firewall to block this specific IP range.", "a_vi": "Cấu hình tường lửa để chặn dải IP cụ thể này."},
+        {"q_en": "Did you apply the security patch for the kernel vulnerability?", "q_vi": "Hỏi đã vá lỗi kernel chưa", "a_en": "Did you apply the security patch for the kernel vulnerability?", "a_vi": "Bạn đã áp dụng bản vá bảo mật cho lỗ hổng nhân hệ thống chưa?"},
+        {"q_en": "I am synchronizing the local data to the cloud storage.", "q_vi": "Báo cáo đồng bộ dữ liệu", "a_en": "I am synchronizing the local data to the cloud storage.", "a_vi": "Tôi đang đồng bộ hóa dữ liệu cục bộ lên lưu trữ đám mây."},
+        {"q_en": "The system uptime is currently 99.9 percent.", "q_vi": "Báo cáo độ ổn định hệ thống", "a_en": "The system uptime is currently 99.9 percent.", "a_vi": "Thời gian hoạt động liên tục của hệ thống hiện đang là 99.9%."},
+        {"q_en": "Please monitor the bandwidth usage during the peak hours.", "q_vi": "Nhắc theo dõi băng thông", "a_en": "Please monitor the bandwidth usage during the peak hours.", "a_vi": "Vui lòng giám sát việc sử dụng băng thông trong các giờ cao điểm."},
+        {"q_en": "We have a critical outage in the booking module.", "q_vi": "Báo lỗi module đặt phòng", "a_en": "We have a critical outage in the booking module.", "a_vi": "Chúng ta đang gặp sự cố nghiêm trọng ở phân hệ đặt phòng."},
+        {"q_en": "Restore the last stable version from the backup immediately.", "q_vi": "Lệnh khôi phục backup", "a_en": "Restore the last stable version from the backup immediately.", "a_vi": "Khôi phục lại phiên bản ổn định gần nhất từ bản sao lưu ngay lập tức."},
+        {"q_en": "The hardware failure was caused by a faulty power supply unit.", "q_vi": "Báo cáo lỗi nguồn", "a_en": "The hardware failure was caused by a faulty power supply unit.", "a_vi": "Lỗi phần cứng là do bộ nguồn bị hỏng."},
+        {"q_en": "Allocate more memory to the booking engine container.", "q_vi": "Lệnh cấp thêm RAM cho Docker", "a_en": "Allocate more memory to the booking engine container.", "a_vi": "Phân bổ thêm bộ nhớ cho khối chứa bộ máy đặt phòng."},
+        {"q_en": "Do we have sufficient storage for the security camera footage?", "q_vi": "Hỏi về dung lượng lưu trữ camera", "a_en": "Do we have sufficient storage for the security camera footage?", "a_vi": "Chúng ta có đủ bộ nhớ cho đoạn phim camera an ninh không?"},
+        {"q_en": "Everything is optimized to ensure a seamless guest experience.", "q_vi": "Khẳng định tối ưu trải nghiệm", "a_en": "Everything is optimized to ensure a seamless guest experience.", "a_vi": "Mọi thứ đều được tối ưu hóa để đảm bảo trải nghiệm liền mạch cho khách."},
+        {"q_en": "Is the encryption for guest payment data enabled?", "q_vi": "Hỏi về mã hóa thanh toán", "a_en": "Is the encryption for guest payment data enabled?", "a_vi": "Mã hóa cho dữ liệu thanh toán của khách đã được bật chưa?"},
+        {"q_en": "Yes, all payment transactions are fully encrypted.", "q_vi": "Xác nhận đã mã hóa", "a_en": "Yes, all payment transactions are fully encrypted.", "a_vi": "Vâng, mọi giao dịch thanh toán đều được mã hóa hoàn toàn."},
+        {"q_en": "Good job keeping the system secure and stable.", "q_vi": "Khen ngợi", "a_en": "Good job keeping the system secure and stable.", "a_vi": "Làm tốt lắm trong việc giữ cho hệ thống an toàn và ổn định."}
+      ]
+    },
+    {
+      "id": 9,
+      "type": "sentence",
+      "description": "Level 9: Xử lý sự cố phần mềm (Troubleshooting)",
+      "questions": [
+        {"q_en": "The application crashed unexpectedly on my phone.", "q_vi": "Khách báo app bị crash", "a_en": "The application crashed unexpectedly on my phone.", "a_vi": "Ứng dụng bị sập đột ngột trên điện thoại của tôi."},
+        {"q_en": "Please try to reboot your device and clear the cache.", "q_vi": "Hỗ trợ khách khởi động lại", "a_en": "Please try to reboot your device and clear the cache.", "a_vi": "Vui lòng thử khởi động lại thiết bị và xóa bộ nhớ đệm."},
+        {"q_en": "I am getting an error message when I log in.", "q_vi": "Khách báo lỗi đăng nhập", "a_en": "I am getting an error message when I log in.", "a_vi": "Tôi nhận được thông báo lỗi khi đăng nhập."},
+        {"q_en": "Let me debug the account settings for you.", "q_vi": "Hứa gỡ lỗi tài khoản", "a_en": "Let me debug the account settings for you.", "a_vi": "Để tôi gỡ lỗi các thiết lập tài khoản cho quý khách."},
+        {"q_en": "The mobile interface is not displaying correctly.", "q_vi": "Khách báo lỗi giao diện mobile", "a_en": "The mobile interface is not displaying correctly.", "a_vi": "Giao diện di động đang hiển thị không chính xác."},
+        {"q_en": "I will push a patch to fix the UI layout issue.", "q_vi": "Hứa đẩy bản vá lỗi giao diện", "a_en": "I will push a patch to fix the UI layout issue.", "a_vi": "Tôi sẽ đẩy một bản vá để sửa vấn đề bố cục giao diện người dùng."},
+        {"q_en": "Why can't I download the room service menu?", "q_vi": "Khách báo không tải được menu", "a_en": "Check if you have an active internet connection.", "a_vi": "Tại sao tôi không thể tải thực đơn dịch vụ phòng?"},
+        {"q_en": "The system is not synchronizing with the hotel booking engine.", "q_vi": "Báo lỗi đồng bộ", "a_en": "The system is not synchronizing with the hotel booking engine.", "a_vi": "Hệ thống không đồng bộ hóa với bộ máy đặt phòng của khách sạn."},
+        {"q_en": "I will re-initialize the API connection.", "q_vi": "Hứa khởi tạo lại API", "a_en": "I will re-initialize the API connection.", "a_vi": "Tôi sẽ khởi tạo lại kết nối API."},
+        {"q_en": "There is a bug preventing the checkout button from working.", "q_vi": "Báo lỗi nút checkout", "a_en": "There is a bug preventing the checkout button from working.", "a_vi": "Có một lỗi đang ngăn cản nút trả phòng hoạt động."},
+        {"q_en": "I will investigate the code and provide a solution.", "q_vi": "Hứa sửa code", "a_en": "I will investigate the code and provide a solution.", "a_vi": "Tôi sẽ điều tra mã nguồn và đưa ra giải pháp."},
+        {"q_en": "My account shows incorrect loyalty points.", "q_vi": "Khách báo sai điểm", "a_en": "I will manually correct your loyalty points status.", "a_vi": "Tài khoản của tôi hiển thị điểm thưởng không chính xác."},
+        {"q_en": "The login page is stuck on the loading screen.", "q_vi": "Khách báo treo trang đăng nhập", "a_en": "Please try accessing it via a different browser.", "a_vi": "Trang đăng nhập bị kẹt ở màn hình tải."},
+        {"q_en": "Everything is running smoothly after the update.", "q_vi": "Báo cáo mọi thứ mượt", "a_en": "Everything is running smoothly after the update.", "a_vi": "Mọi thứ đang chạy trơn tru sau bản cập nhật."},
+        {"q_en": "Is the database currently undergoing maintenance?", "q_vi": "Hỏi hệ thống đang bảo trì à", "a_en": "Is the database currently undergoing maintenance?", "a_vi": "Cơ sở dữ liệu hiện đang được bảo trì à?"},
+        {"q_en": "No, it is fully operational at the moment.", "q_vi": "Xác nhận hệ thống ổn", "a_en": "No, it is fully operational at the moment.", "a_vi": "Không, hiện tại nó đang hoạt động hoàn toàn bình thường."},
+        {"q_en": "Can you uninstall the app and reinstall it?", "q_vi": "Hướng dẫn cài lại app", "a_en": "Can you uninstall the app and reinstall it?", "a_vi": "Bạn có thể gỡ cài đặt ứng dụng và cài lại không?"},
+        {"q_en": "This will fix most common software errors.", "q_vi": "Giải thích lý do cài lại", "a_en": "This will fix most common software errors.", "a_vi": "Việc này sẽ sửa hầu hết các lỗi phần mềm phổ biến."},
+        {"q_en": "I have successfully deployed the latest version.", "q_vi": "Báo cáo triển khai thành công", "a_en": "I have successfully deployed the latest version.", "a_vi": "Tôi đã triển khai thành công phiên bản mới nhất."},
+        {"q_en": "The app feels much more user-friendly now.", "q_vi": "Khách khen app dễ dùng", "a_en": "The app feels much more user-friendly now.", "a_vi": "Ứng dụng giờ cảm giác thân thiện với người dùng hơn nhiều."}
+      ]
+    },
+    {
+      "id": 10,
+      "type": "boss",
+      "description": "Level 10: BOSS IT (Họp Khẩn Xử Lý Lỗ Hổng Bảo Mật & Sập App)",
+      "questions": [
+        {"q_en": "The Dashboard V15 app is crashing. All Managers are panicking.", "q_vi": "(Boss IT) App Dashboard V15 bị crash. Tất cả quản lý đang hoảng loạn.", "a_en": "I am on it, sir. It seems like a memory leak in the analytics module.", "a_vi": "Tôi đang xử lý đây sếp. Có vẻ là do rò rỉ bộ nhớ ở phân hệ phân tích." },
+        {"q_en": "Fix it now! The GM needs those numbers for the board meeting.", "q_vi": "Sếp ép tiến độ", "a_en": "I will restart the specific module. It should take thirty seconds.", "a_vi": "Tôi sẽ khởi động lại phân hệ đó. Sẽ mất 30 giây thôi." },
+        {"q_en": "What caused this? Did we get hacked?", "q_vi": "Sếp nghi bị hack", "a_en": "No, it is just a bug in the code. I am pushing a patch right now.", "a_vi": "Không, chỉ là một lỗi trong mã nguồn. Tôi đang đẩy một bản vá lên đây." },
+        {"q_en": "Is the firewall blocking legitimate users?", "q_vi": "Hỏi tường lửa chặn khách", "a_en": "No, the firewall is correctly configured. It is only blocking unauthorized IPs.", "a_vi": "Không, tường lửa được cấu hình đúng. Nó chỉ đang chặn các IP trái phép thôi." },
+        {"q_en": "I keep getting a 'Database Connection Error'. Why?", "q_vi": "Sếp check app báo lỗi kết nối", "a_en": "The database cluster is overloaded. I am scaling up the memory now.", "a_vi": "Cụm cơ sở dữ liệu đang quá tải. Tôi đang mở rộng bộ nhớ đây." },
+        {"q_en": "Is this downtime affecting our booking engine?", "q_vi": "Hỏi có mất đơn hàng không", "a_en": "No, the booking engine is on a separate server cluster. It is safe.", "a_vi": "Không, bộ máy đặt phòng nằm trên cụm máy chủ riêng biệt. Nó an toàn." },
+        {"q_en": "Good. I don't want to lose a single booking. Any cyber threats?", "q_vi": "Hỏi về tấn công mạng", "a_en": "We detected an intrusion attempt, but our encryption held firm.", "a_vi": "Chúng tôi phát hiện một nỗ lực xâm nhập, nhưng mã hóa của chúng ta đã đứng vững." },
+        {"q_en": "What did they try to access?", "q_vi": "Hỏi hacker định vào đâu", "a_en": "They targeted the guest payment database. I have isolated the system.", "a_vi": "Họ nhắm vào cơ sở dữ liệu thanh toán của khách. Tôi đã cách ly hệ thống rồi." },
+        {"q_en": "Are you sure the data is not encrypted? No breach?", "q_vi": "Sếp lo lộ data", "a_en": "All sensitive data is encrypted. They didn't get past the firewall.", "a_vi": "Tất cả dữ liệu nhạy cảm đều được mã hóa. Họ đã không vượt qua được tường lửa." },
+        {"q_en": "Fine. Keep the database backup ready. I want daily snapshots.", "q_vi": "Lệnh sao lưu", "a_en": "I will automate the backup process to take snapshots every hour.", "a_vi": "Tôi sẽ tự động hóa quy trình sao lưu để chụp ảnh dữ liệu mỗi giờ." },
+        {"q_en": "What is the status of the new facial recognition module?", "q_vi": "Hỏi tiến độ nhận diện mặt", "a_en": "It is fully integrated. Just need to calibrate the sensors in the lobby.", "a_vi": "Nó đã được tích hợp hoàn toàn. Chỉ cần hiệu chuẩn các cảm biến ở tiền sảnh thôi." },
+        {"q_en": "Make it work by Friday. The VIPs are coming.", "q_vi": "Lệnh deadline", "a_en": "Understood. The team will work overtime to ensure it is seamless.", "a_vi": "Đã rõ. Đội ngũ sẽ làm thêm giờ để đảm bảo nó hoạt động liền mạch." },
+        {"q_en": "What about the user interface? Is it easy for the staff?", "q_vi": "Hỏi giao diện dễ dùng không", "a_en": "The interface is very intuitive. Even the new staff learned it in minutes.", "a_vi": "Giao diện rất trực quan. Ngay cả nhân viên mới cũng học nó chỉ trong vài phút." },
+        {"q_en": "Do we have enough bandwidth for the new security cameras?", "q_vi": "Hỏi băng thông cam", "a_en": "We upgraded to a dedicated line. We have plenty of bandwidth.", "a_vi": "Chúng ta đã nâng cấp lên một đường truyền riêng. Chúng ta có rất nhiều băng thông." },
+        {"q_en": "Check the server racks for overheating. I want this cold.", "q_vi": "Dặn máy lạnh phòng server", "a_en": "I have set the room temperature to 18 degrees Celsius. The hardware is fine.", "a_vi": "Tôi đã cài nhiệt độ phòng 18 độ C. Phần cứng vẫn ổn." },
+        {"q_en": "Good. This system must be flawless, Huy.", "q_vi": "Sếp áp lực", "a_en": "I guarantee it. We are building a world-class IT system here.", "a_vi": "Tôi xin đảm bảo. Chúng ta đang xây dựng một hệ thống IT đẳng cấp thế giới." },
+        {"q_en": "How do we handle if the main server completely fails?", "q_vi": "Hỏi phương án cuối", "a_en": "We have a failover server that kicks in automatically in under a second.", "a_vi": "Chúng ta có một máy chủ dự phòng sẽ tự động kích hoạt trong chưa đầy một giây." },
+        {"q_en": "I'm relieved to hear that. You have a solid blueprint.", "q_vi": "Sếp yên tâm", "a_en": "Thank you, sir. We focus on scalability and security.", "a_vi": "Cảm ơn sếp. Chúng tôi tập trung vào khả năng mở rộng và bảo mật." },
+        {"q_en": "Keep the reports coming. I want to see the analytics dashboard live.", "q_vi": "Đòi xem dashboard", "a_en": "It is ready on your screen now, sir. Real-time metrics.", "a_vi": "Nó đã sẵn sàng trên màn hình của sếp rồi ạ. Các chỉ số thời gian thực." },
+        {"q_en": "Excellent. Dismissed. Go back to fixing that bug.", "q_vi": "Sếp giải tán", "a_en": "Yes, sir! See you at the deployment phase.", "a_vi": "Vâng thưa sếp! Hẹn gặp sếp ở giai đoạn triển khai." }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "vocab",
+      "description": "Level 11: Từ vựng Bán chéo & Giới thiệu Dịch vụ",
+      "questions": [
+        {"q_en": "Upsell", "a_vi": "Bán thêm (nâng cấp)"}, {"q_en": "Cross-sell", "a_vi": "Bán chéo (món khác)"}, {"q_en": "Promotion", "a_vi": "Chương trình khuyến mãi"}, {"q_en": "Package", "a_vi": "Gói dịch vụ"}, {"q_en": "Discount", "a_vi": "Giảm giá"}, {"q_en": "Voucher", "a_vi": "Phiếu mua hàng"}, {"q_en": "Incentive", "a_vi": "Sự khích lệ / Ưu đãi"}, {"q_en": "Experience", "a_vi": "Trải nghiệm"}, {"q_en": "Exclusive", "a_vi": "Độc quyền"}, {"q_en": "Premium", "a_vi": "Cao cấp"}, {"q_en": "Value", "a_vi": "Giá trị"}, {"q_en": "Recommend", "a_vi": "Gợi ý / Khuyên dùng"}, {"q_en": "Suggest", "a_vi": "Đề xuất"}, {"q_en": "Enhance", "a_vi": "Nâng cao / Tăng cường"}, {"q_en": "Benefit", "a_vi": "Lợi ích"}, {"q_en": "Offer", "a_vi": "Lời đề nghị / Chào hàng"}, {"q_en": "Target", "a_vi": "Mục tiêu (khách hàng)"}, {"q_en": "Profit", "a_vi": "Lợi nhuận"}, {"q_en": "Revenue", "a_vi": "Doanh thu"}, {"q_en": "Closing", "a_vi": "Việc chốt (đơn hàng)"}
+      ]
+    },
+    {
+      "id": 12,
+      "type": "vocab",
+      "description": "Level 12: Từ vựng Quảng bá & Chăm sóc khách hàng",
+      "questions": [
+        {"q_en": "Hospitality", "a_vi": "Lòng hiếu khách"}, {"q_en": "Courtesy", "a_vi": "Sự lịch sự"}, {"q_en": "Professionalism", "a_vi": "Sự chuyên nghiệp"}, {"q_en": "Satisfaction", "a_vi": "Sự hài lòng"}, {"q_en": "Feedback", "a_vi": "Phản hồi"}, {"q_en": "Testimonial", "a_vi": "Lời khen ngợi / Chứng thực"}, {"q_en": "Reputation", "a_vi": "Danh tiếng"}, {"q_en": "Relationship", "a_vi": "Mối quan hệ"}, {"q_en": "Engagement", "a_vi": "Sự tương tác"}, {"q_en": "Loyalty", "a_vi": "Sự trung thành"}, {"q_en": "Member", "a_vi": "Hội viên"}, {"q_en": "Benefits", "a_vi": "Quyền lợi"}, {"q_en": "Personalized", "a_vi": "Cá nhân hóa"}, {"q_en": "Tailor-made", "a_vi": "Thiết kế theo yêu cầu"}, {"q_en": "Comfort", "a_vi": "Sự thoải mái"}, {"q_en": "Delight", "a_vi": "Sự vui thích"}, {"q_en": "Surprise", "a_vi": "Sự bất ngờ"}, {"q_en": "Memorable", "a_vi": "Đáng nhớ"}, {"q_en": "Repeat guest", "a_vi": "Khách hàng quay lại"}, {"q_en": "Referral", "a_vi": "Sự giới thiệu"}
+      ]
+    },
+    {
+      "id": 13,
+      "type": "sentence",
+      "description": "Level 13: Mẫu câu Bán chéo (Upselling) Dịch vụ",
+      "questions": [
+        {"q_en": "Would you like to upgrade your room to a sea view?", "q_vi": "Mời nâng cấp phòng", "a_en": "Would you like to upgrade your room to a sea view?", "a_vi": "Quý khách có muốn nâng cấp phòng lên hướng biển không?"},
+        {"q_en": "It is only an extra fifty dollars for a stunning balcony.", "q_vi": "Báo giá chênh lệch", "a_en": "It is only an extra fifty dollars for a stunning balcony.", "a_vi": "Chỉ mất thêm 50 đô la cho một ban công tuyệt đẹp thôi ạ."},
+        {"q_en": "We have a special spa package for couples this weekend.", "q_vi": "Mời gói spa đôi", "a_en": "We have a special spa package for couples this weekend.", "a_vi": "Chúng tôi có gói spa đặc biệt cho các cặp đôi vào cuối tuần này."},
+        {"q_en": "Why not add a bottle of champagne to your reservation?", "q_vi": "Mời thêm rượu", "a_en": "Why not add a bottle of champagne to your reservation?", "a_vi": "Sao mình không thêm một chai sâm panh vào đơn đặt phòng nhỉ?"},
+        {"q_en": "We offer a breakfast buffet upgrade for only twenty dollars.", "q_vi": "Mời nâng cấp buffet", "a_en": "We offer a breakfast buffet upgrade for only twenty dollars.", "a_vi": "Chúng tôi cung cấp gói nâng cấp buffet sáng chỉ với 20 đô la."},
+        {"q_en": "Enjoy a private airport transfer in our luxury limousine.", "q_vi": "Mời xe đưa đón VIP", "a_en": "Enjoy a private airport transfer in our luxury limousine.", "a_vi": "Hãy tận hưởng chuyến đưa đón sân bay riêng tư bằng xe limousine sang trọng."},
+        {"q_en": "Would you be interested in our guided city tour?", "q_vi": "Mời tour du lịch", "a_en": "Would you be interested in our guided city tour?", "a_vi": "Quý khách có hứng thú với tour du lịch thành phố có hướng dẫn không?"},
+        {"q_en": "For just thirty dollars, you can have a late checkout.", "q_vi": "Mời mua giờ check-out trễ", "a_en": "For just thirty dollars, you can have a late checkout.", "a_vi": "Chỉ với 30 đô la, quý khách có thể trả phòng muộn."},
+        {"q_en": "Our fine dining restaurant is open; would you like a table?", "q_vi": "Mời ăn nhà hàng cao cấp", "a_en": "Our fine dining restaurant is open; would you like a table?", "a_vi": "Nhà hàng ẩm thực cao cấp của chúng tôi đang mở; quý khách có muốn đặt bàn không?"},
+        {"q_en": "I can reserve the best table for your anniversary dinner.", "q_vi": "Mời đặt bàn kỷ niệm", "a_en": "I can reserve the best table for your anniversary dinner.", "a_vi": "Tôi có thể giữ bàn đẹp nhất cho bữa tối kỷ niệm của quý khách."},
+        {"q_en": "Would you like to join our loyalty program for extra perks?", "q_vi": "Mời tham gia thẻ thành viên", "a_en": "Would you like to join our loyalty program for extra perks?", "a_vi": "Quý khách có muốn tham gia chương trình khách hàng thân thiết để nhận thêm quyền lợi không?"},
+        {"q_en": "You will get a ten percent discount on your next stay.", "q_vi": "Nhấn mạnh quyền lợi", "a_en": "You will get a ten percent discount on your next stay.", "a_vi": "Quý khách sẽ nhận được giảm giá 10% cho kỳ nghỉ tiếp theo."},
+        {"q_en": "We have a limited-time offer for our beach cabana rental.", "q_vi": "Mời thuê chòi biển", "a_en": "We have a limited-time offer for our beach cabana rental.", "a_vi": "Chúng tôi đang có ưu đãi giới hạn thời gian cho việc thuê chòi nghỉ mát trên bãi biển."},
+        {"q_en": "It comes with complimentary fruit and cold drinks.", "q_vi": "PR quyền lợi đi kèm", "a_en": "It comes with complimentary fruit and cold drinks.", "a_vi": "Nó đi kèm với trái cây và đồ uống lạnh miễn phí."},
+        {"q_en": "Would you like to book a private golf lesson?", "q_vi": "Mời chơi golf", "a_en": "Would you like to book a private golf lesson?", "a_vi": "Quý khách có muốn đặt một buổi học đánh gôn riêng không?"},
+        {"q_en": "This package is a great value for your family.", "q_vi": "Khẳng định giá trị gói", "a_en": "This package is a great value for your family.", "a_vi": "Gói này là một giá trị tuyệt vời cho gia đình của quý khách."},
+        {"q_en": "Everything is personalized to suit your preferences.", "q_vi": "Nhấn mạnh sự cá nhân hóa", "a_en": "Everything is personalized to suit your preferences.", "a_vi": "Mọi thứ đều được cá nhân hóa để phù hợp với sở thích của quý khách."},
+        {"q_en": "You will enjoy exclusive access to the VIP lounge.", "q_vi": "PR quyền lợi VIP", "a_en": "You will enjoy exclusive access to the VIP lounge.", "a_vi": "Quý khách sẽ được tận hưởng quyền truy cập độc quyền vào phòng chờ VIP."},
+        {"q_en": "We are committed to making your stay memorable.", "q_vi": "Câu chốt tạo cảm tình", "a_en": "We are committed to making your stay memorable.", "a_vi": "Chúng tôi cam kết làm cho kỳ nghỉ của quý khách trở nên đáng nhớ."},
+        {"q_en": "Let me know if you decide to add anything else.", "q_vi": "Lời chào mời thêm", "a_en": "Let me know if you decide to add anything else.", "a_vi": "Hãy cho tôi biết nếu quý khách quyết định thêm bất kỳ điều gì khác."}
+      ]
+    },
+    {
+      "id": 14,
+      "type": "sentence",
+      "description": "Level 14: Giao tiếp Chăm sóc & Nhận phản hồi",
+      "questions": [
+        {"q_en": "Thank you for choosing Ocean Dunes Resort.", "q_vi": "Lời chào khách", "a_en": "Thank you for choosing Ocean Dunes Resort.", "a_vi": "Cảm ơn quý khách đã chọn Ocean Dunes Resort."},
+        {"q_en": "Is there anything you need to make your stay more comfortable?", "q_vi": "Hỏi nhu cầu khách", "a_en": "Is there anything you need to make your stay more comfortable?", "a_vi": "Có bất cứ thứ gì quý khách cần để kỳ nghỉ thoải mái hơn không?"},
+        {"q_en": "Did you enjoy your breakfast this morning?", "q_vi": "Hỏi về bữa sáng", "a_en": "Did you enjoy your breakfast this morning?", "a_vi": "Quý khách có thưởng thức bữa sáng sáng nay không ạ?"},
+        {"q_en": "We value your honest feedback.", "q_vi": "Xin góp ý", "a_en": "We value your honest feedback.", "a_vi": "Chúng tôi trân trọng những phản hồi trung thực của quý khách."},
+        {"q_en": "I am so glad to hear that you had a wonderful time.", "q_vi": "Vui khi khách khen", "a_en": "I am so glad to hear that you had a wonderful time.", "a_vi": "Tôi rất vui khi nghe rằng quý khách đã có khoảng thời gian tuyệt vời."},
+        {"q_en": "Please feel free to share your experience on our social media.", "q_vi": "Xin review mạng xã hội", "a_en": "Please feel free to share your experience on our social media.", "a_vi": "Vui lòng thoải mái chia sẻ trải nghiệm của quý khách trên mạng xã hội của chúng tôi."},
+        {"q_en": "It is our goal to create a sense of belonging for every guest.", "q_vi": "Slogan tạo cảm giác thân thuộc", "a_en": "It is our goal to create a sense of belonging for every guest.", "a_vi": "Mục tiêu của chúng tôi là tạo ra cảm giác thuộc về cho mọi vị khách."},
+        {"q_en": "We love seeing our repeat guests return again and again.", "q_vi": "Khen khách quen quay lại", "a_en": "We love seeing our repeat guests return again and again.", "a_vi": "Chúng tôi rất thích nhìn thấy những vị khách quen quay lại hết lần này đến lần khác."},
+        {"q_en": "Is there any area we can improve to serve you better?", "q_vi": "Hỏi ý kiến cải thiện", "a_en": "Is there any area we can improve to serve you better?", "a_vi": "Có lĩnh vực nào chúng tôi có thể cải thiện để phục vụ quý khách tốt hơn không?"},
+        {"q_en": "Your satisfaction is the ultimate goal of our service.", "q_vi": "Khẳng định sự hài lòng là mục tiêu", "a_en": "Your satisfaction is the ultimate goal of our service.", "a_vi": "Sự hài lòng của quý khách là mục tiêu tối thượng của dịch vụ chúng tôi."},
+        {"q_en": "Thank you for your kind testimonial; it really boosts our morale.", "q_vi": "Cảm ơn lời khen của khách", "a_en": "Thank you for your kind testimonial; it really boosts our morale.", "a_vi": "Cảm ơn lời chứng thực tử tế của quý khách; nó thực sự nâng cao tinh thần của chúng tôi."},
+        {"q_en": "We will pass your compliments to the housekeeping team.", "q_vi": "Hứa chuyển lời khen cho nhân viên", "a_en": "We will pass your compliments to the housekeeping team.", "a_vi": "Chúng tôi sẽ chuyển những lời khen ngợi của quý khách đến đội buồng phòng."},
+        {"q_en": "We are committed to providing personalized service to all guests.", "q_vi": "Cam kết dịch vụ cá nhân hóa", "a_en": "We are committed to providing personalized service to all guests.", "a_vi": "Chúng tôi cam kết cung cấp dịch vụ cá nhân hóa cho tất cả các vị khách."},
+        {"q_en": "Please let us know if you have any specific dietary requirements.", "q_vi": "Hỏi về ăn kiêng", "a_en": "Please let us know if you have any specific dietary requirements.", "a_vi": "Vui lòng cho chúng tôi biết nếu quý khách có bất kỳ yêu cầu ăn kiêng cụ thể nào."},
+        {"q_en": "Your presence has been a delight to our resort.", "q_vi": "Khách khen làm resort vinh dự", "a_en": "Your presence has been a delight to our resort.", "a_vi": "Sự hiện diện của quý khách là một niềm vui cho khu nghỉ dưỡng của chúng tôi."},
+        {"q_en": "We are already looking forward to your next visit.", "q_vi": "Chào mời quay lại", "a_en": "We are already looking forward to your next visit.", "a_vi": "Chúng tôi đã đang mong chờ chuyến thăm tiếp theo của quý khách."},
+        {"q_en": "Our concierge team can help you with local recommendations.", "q_vi": "PR dịch vụ hỗ trợ", "a_en": "Our concierge team can help you with local recommendations.", "a_vi": "Đội ngũ hỗ trợ thông tin của chúng tôi có thể giúp quý khách với các gợi ý địa phương."},
+        {"q_en": "Everything is tailormade to make your stay memorable.", "q_vi": "Khẳng định thiết kế riêng", "a_en": "Everything is tailormade to make your stay memorable.", "a_vi": "Mọi thứ đều được thiết kế riêng để làm cho kỳ nghỉ của quý khách đáng nhớ."},
+        {"q_en": "We hope to see you back for many years to come.", "q_vi": "Chúc tình gắn kết lâu dài", "a_en": "We hope to see you back for many years to come.", "a_vi": "Chúng tôi hy vọng được gặp lại quý khách trong nhiều năm tới."},
+        {"q_en": "Thank you for making our hospitality truly meaningful.", "q_vi": "Lời cảm ơn cuối", "a_en": "Thank you for making our hospitality truly meaningful.", "a_vi": "Cảm ơn quý khách vì đã làm cho lòng hiếu khách của chúng tôi trở nên thực sự ý nghĩa."}
+      ]
+    },
+    {
+      "id": 15,
+      "type": "boss",
+      "description": "Level 15: BOSS Tiền Sảnh (Hội đồng HODs - Đánh giá KPI & Giải quyết khủng hoảng khách)",
+      "questions": [
+        {"q_en": "Team, our guest feedback scores are dropping. We need a strategy.", "q_vi": "(Boss) Cả đội, điểm phản hồi của khách đang giảm. Chúng ta cần chiến lược.", "a_en": "I agree. We need to boost guest engagement. Let's start an 'Employee of the Month' program.", "a_vi": "Tôi đồng ý. Chúng ta cần thúc đẩy sự tương tác của khách. Hãy bắt đầu chương trình 'Nhân viên của tháng' đi." },
+        {"q_en": "What metrics will we use to track this performance?", "q_vi": "Hỏi về chỉ số đo", "a_en": "We will use the volume of positive testimonials on TripAdvisor.", "a_vi": "Chúng ta sẽ sử dụng khối lượng lời khen ngợi tích cực trên TripAdvisor." },
+        {"q_en": "Good idea. Now, what about upselling? The revenue is flat.", "q_vi": "Hỏi về việc bán thêm", "a_en": "We are launching a new spa and breakfast bundle for direct bookings.", "a_vi": "Chúng tôi đang tung ra một gói nâng cấp spa và bữa sáng mới cho các lượt đặt phòng trực tiếp." },
+        {"q_en": "Are the receptionists trained to cross-sell these bundles?", "q_vi": "Hỏi nhân viên có biết bán không", "a_en": "I will conduct a roleplay training session tomorrow morning.", "a_vi": "Tôi sẽ tiến hành một buổi tập huấn đóng vai vào sáng mai." },
+        {"q_en": "Make sure they don't sound too pushy. It must be personalized.", "q_vi": "Dặn đừng chèo kéo", "a_en": "Understood. The staff will be taught to suggest it based on guest needs.", "a_vi": "Đã hiểu. Nhân viên sẽ được dạy cách đề xuất nó dựa trên nhu cầu của khách." },
+        {"q_en": "Moving on. A loyalty member just complained about his room status.", "q_vi": "Báo cáo khách thân thiết phàn nàn", "a_en": "What was the issue? Did he feel undervalued?", "a_vi": "Vấn đề là gì ạ? Ông ấy có cảm thấy không được coi trọng không?" },
+        {"q_en": "Yes, he is a Platinum member but received no room upgrade.", "q_vi": "Báo không được nâng hạng", "a_en": "That is a disaster. His loyalty status must be clearly visible on the dashboard.", "a_vi": "Thật là thảm họa. Trạng thái trung thành của ông ấy phải hiển thị rõ ràng trên bảng điều khiển." },
+        {"q_en": "Our database had a sync error. It didn't show his status.", "q_vi": "Báo lỗi đồng bộ", "a_en": "IT needs to fix that sync error immediately. We cannot afford to lose loyal guests.", "a_vi": "IT cần sửa lỗi đồng bộ đó ngay lập tức. Chúng ta không thể mất khách hàng trung thành." },
+        {"q_en": "I will handle it personally. What compensation can we offer him?", "q_vi": "Hỏi cách đền bù", "a_en": "Give him a free night voucher and invite him to our exclusive VIP lounge.", "a_vi": "Tặng ông ấy voucher một đêm miễn phí và mời ông ấy đến phòng chờ VIP độc quyền của chúng ta." },
+        {"q_en": "Perfect. He will appreciate the personalized treatment.", "q_vi": "Chốt cách đền bù", "a_en": "I will call him now to resolve the misunderstanding.", "a_vi": "Tôi sẽ gọi cho ông ấy ngay để giải quyết hiểu lầm này." },
+        {"q_en": "Wait, we have another issue. A travel agency is accusing us of rate parity breach.", "q_vi": "Báo cáo bị kiện vi phạm giá", "a_en": "The website shows a lower price than our contract with them?", "a_vi": "Trang web hiển thị giá thấp hơn hợp đồng của chúng ta với họ ư?" },
+        {"q_en": "Exactly. They want to terminate the contract.", "q_vi": "Khách dọa hủy hợp đồng", "a_en": "This could hurt our market share. I will negotiate a better commission rate.", "a_vi": "Điều này có thể làm tổn thương thị phần của chúng ta. Tôi sẽ đàm phán một mức hoa hồng tốt hơn." },
+        {"q_en": "Handle it. We cannot lose our market share to competitors.", "q_vi": "Lệnh xử lý", "a_en": "I will reach out to their manager today to settle the dispute.", "a_vi": "Tôi sẽ liên hệ với quản lý của họ hôm nay để giải quyết tranh chấp." },
+        {"q_en": "What is our current occupancy forecast for the upcoming holidays?", "q_vi": "Hỏi dự báo công suất", "a_en": "We are forecasting 90% occupancy, which is very promising.", "a_vi": "Chúng ta đang dự báo công suất 90%, điều này rất hứa hẹn." },
+        {"q_en": "Maximize our yield management. Push the prices up for last-minute bookings.", "q_vi": "Lệnh đẩy giá phút chót", "a_en": "We have already adjusted the dynamic pricing algorithm accordingly.", "a_vi": "Chúng ta đã điều chỉnh thuật toán định giá linh hoạt cho phù hợp rồi." },
+        {"q_en": "The marketing team needs to push more sponsored posts for that period.", "q_vi": "Lệnh chạy Ads", "a_en": "I will coordinate with the marketing manager to launch a targeted campaign.", "a_vi": "Tôi sẽ phối hợp với quản lý marketing để tung ra một chiến dịch nhắm mục tiêu." },
+        {"q_en": "Good. Any other feedback from the guest survey?", "q_vi": "Hỏi review khác", "a_en": "Guests are loving the new, personalized breakfast service.", "a_vi": "Khách hàng đang yêu thích dịch vụ bữa sáng mới được cá nhân hóa." },
+        {"q_en": "Keep that standard high. That is our hallmark.", "q_vi": "Nhắc nhở giữ vững chuẩn", "a_en": "We are fully dedicated to that. The service will remain impeccable.", "a_vi": "Chúng tôi hoàn toàn tận tâm với điều đó. Dịch vụ sẽ vẫn luôn hoàn hảo." },
+        {"q_en": "Meeting adjourned. I expect 95% satisfaction by the next meeting.", "q_vi": "Kết thúc họp, đặt mục tiêu", "a_en": "We will strive for that goal, sir. Thank you.", "a_vi": "Chúng tôi sẽ phấn đấu cho mục tiêu đó thưa sếp. Cảm ơn sếp." },
+        {"q_en": "(Stands up) Now, let's get back to work and keep our reputation solid.", "q_vi": "Đứng dậy ra lệnh", "a_en": "Yes, sir! Let's go team.", "a_vi": "Vâng ạ! Làm việc thôi cả đội." }
+      ]
+    },
+    {
+      "id": 16,
+      "type": "vocab",
+      "description": "Level 16: Từ vựng Quản trị & Nhân sự (Management & HR)",
+      "questions": [
+        {"q_en": "Supervise", "a_vi": "Giám sát"}, {"q_en": "Delegate", "a_vi": "Ủy quyền"}, {"q_en": "Performance", "a_vi": "Hiệu suất"}, {"q_en": "Appraisal", "a_vi": "Sự đánh giá (năng lực)"}, {"q_en": "Disciplinary", "a_vi": "Kỷ luật"}, {"q_en": "Onboarding", "a_vi": "Sự hội nhập (nhân viên mới)"}, {"q_en": "Mentorship", "a_vi": "Sự kèm cặp / Cố vấn"}, {"q_en": "Productivity", "a_vi": "Năng suất"}, {"q_en": "Morale", "a_vi": "Tinh thần (làm việc)"}, {"q_en": "Retention", "a_vi": "Việc giữ chân (nhân viên)"}, {"q_en": "Turnover", "a_vi": "Tỷ lệ nghỉ việc"}, {"q_en": "Incentive", "a_vi": "Sự khích lệ / Ưu đãi"}, {"q_en": "Bonus", "a_vi": "Tiền thưởng"}, {"q_en": "Payroll", "a_vi": "Bảng lương"}, {"q_en": "Recruitment", "a_vi": "Sự tuyển dụng"}, {"q_en": "Candidate", "a_vi": "Ứng viên"}, {"q_en": "Orientation", "a_vi": "Sự định hướng"}, {"q_en": "Standardize", "a_vi": "Tiêu chuẩn hóa"}, {"q_en": "Synergy", "a_vi": "Sức mạnh hiệp đồng"}, {"q_en": "Leadership", "a_vi": "Sự lãnh đạo"}
+      ]
+    },
+    {
+      "id": 17,
+      "type": "vocab",
+      "description": "Level 17: Từ vựng Đàm phán & Hợp đồng (Negotiation)",
+      "questions": [
+        {"q_en": "Negotiate", "a_vi": "Đàm phán"}, {"q_en": "Bargain", "a_vi": "Mặc cả"}, {"q_en": "Agreement", "a_vi": "Thỏa thuận / Hợp đồng"}, {"q_en": "Clause", "a_vi": "Điều khoản (trong hợp đồng)"}, {"q_en": "Penalty", "a_vi": "Tiền phạt"}, {"q_en": "Breach", "a_vi": "Sự vi phạm (hợp đồng)"}, {"q_en": "Terminate", "a_vi": "Chấm dứt"}, {"q_en": "Renew", "a_vi": "Gia hạn"}, {"q_en": "Commission", "a_vi": "Tiền hoa hồng"}, {"q_en": "Discount", "a_vi": "Chiết khấu"}, {"q_en": "Exclusive", "a_vi": "Độc quyền"}, {"q_en": "Mutual", "a_vi": "Đôi bên / Lẫn nhau"}, {"q_en": "Volume", "a_vi": "Khối lượng / Số lượng"}, {"q_en": "Stipulate", "a_vi": "Quy định rõ"}, {"q_en": "Provision", "a_vi": "Điều khoản"}, {"q_en": "Liability", "a_vi": "Trách nhiệm pháp lý"}, {"q_en": "Indemnity", "a_vi": "Sự bồi thường"}, {"q_en": "Arbitration", "a_vi": "Sự trọng tài / Phân xử"}, {"q_en": "Non-Disclosure (NDA)", "a_vi": "Sự bảo mật thông tin"}, {"q_en": "Authority", "a_vi": "Thẩm quyền / Chính quyền"}
+      ]
+    },
+    {
+      "id": 18,
+      "type": "sentence",
+      "description": "Level 18: Mẫu câu Quản lý nhân sự & Đào tạo",
+      "questions": [
+        {"q_en": "We need to improve the morale of the housekeeping team.", "q_vi": "Yêu cầu nâng cao tinh thần buồng phòng", "a_en": "We need to improve the morale of the housekeeping team.", "a_vi": "Chúng ta cần nâng cao tinh thần cho đội ngũ buồng phòng."},
+        {"q_en": "What is our current staff turnover rate this year?", "q_vi": "Hỏi tỷ lệ nghỉ việc", "a_en": "What is our current staff turnover rate this year?", "a_vi": "Tỷ lệ nghỉ việc hiện tại của chúng ta trong năm nay là bao nhiêu?"},
+        {"q_en": "We should implement a new employee retention strategy.", "q_vi": "Đề xuất chiến lược giữ người", "a_en": "We should implement a new employee retention strategy.", "a_vi": "Chúng ta nên thực thi một chiến lược giữ chân nhân viên mới."},
+        {"q_en": "Are the new hires participating in the onboarding program?", "q_vi": "Hỏi NV mới có tham gia hội nhập không", "a_en": "Are the new hires participating in the onboarding program?", "a_vi": "Các nhân viên mới có đang tham gia chương trình hội nhập không?"},
+        {"q_en": "I am assigning a mentor to each new employee.", "q_vi": "Báo cáo phân công người kèm cặp", "a_en": "I am assigning a mentor to each new employee.", "a_vi": "Tôi đang phân công một người hướng dẫn cho mỗi nhân viên mới."},
+        {"q_en": "Have you evaluated the productivity of the morning shift?", "q_vi": "Hỏi đánh giá năng suất", "a_en": "Have you evaluated the productivity of the morning shift?", "a_vi": "Bạn đã đánh giá năng suất của ca sáng chưa?"},
+        {"q_en": "We offer incentives for employees who exceed their targets.", "q_vi": "Giới thiệu chính sách thưởng", "a_en": "We offer incentives for employees who exceed their targets.", "a_vi": "Chúng tôi cung cấp các khoản ưu đãi cho những nhân viên vượt chỉ tiêu của họ."},
+        {"q_en": "Please conduct an appraisal for the shift supervisor.", "q_vi": "Lệnh đánh giá năng lực giám sát", "a_en": "Please conduct an appraisal for the shift supervisor.", "a_vi": "Vui lòng tiến hành đánh giá năng lực cho giám sát viên ca trực."},
+        {"q_en": "Disciplinary action is necessary for staff who violate the rules.", "q_vi": "Nhắc nhở xử lý kỷ luật", "a_en": "Disciplinary action is necessary for staff who violate the rules.", "a_vi": "Hành động kỷ luật là cần thiết đối với nhân viên vi phạm nội quy."},
+        {"q_en": "Did you verify the payroll records before finalizing them?", "q_vi": "Hỏi đối chiếu bảng lương", "a_en": "Did you verify the payroll records before finalizing them?", "a_vi": "Bạn đã xác minh lại bảng lương trước khi hoàn tất chúng chưa?"},
+        {"q_en": "We need to hire more staff to reduce overtime hours.", "q_vi": "Yêu cầu tuyển thêm để giảm OT", "a_en": "We need to hire more staff to reduce overtime hours.", "a_vi": "Chúng ta cần tuyển thêm nhân viên để giảm bớt số giờ làm thêm."},
+        {"q_en": "Is the orientation schedule ready for next week?", "q_vi": "Hỏi lịch định hướng", "a_en": "Is the orientation schedule ready for next week?", "a_vi": "Lịch trình định hướng cho tuần tới đã sẵn sàng chưa?"},
+        {"q_en": "Leadership requires a strong sense of responsibility.", "q_vi": "Châm ngôn lãnh đạo", "a_en": "Leadership requires a strong sense of responsibility.", "a_vi": "Lãnh đạo đòi hỏi một tinh thần trách nhiệm mạnh mẽ."},
+        {"q_en": "Let's organize a workshop to discuss our team synergy.", "q_vi": "Rủ thảo luận sức mạnh team", "a_en": "Let's organize a workshop to discuss our team synergy.", "a_vi": "Hãy cùng tổ chức một buổi hội thảo để thảo luận về sức mạnh hiệp đồng của chúng ta."},
+        {"q_en": "The training syllabus has been standardized for all departments.", "q_vi": "Báo cáo tiêu chuẩn hóa giáo trình", "a_en": "The training syllabus has been standardized for all departments.", "a_vi": "Giáo trình đào tạo đã được tiêu chuẩn hóa cho tất cả các phòng ban."},
+        {"q_en": "I am delegating the task of roster planning to you.", "q_vi": "Ủy quyền làm lịch", "a_en": "I am delegating the task of roster planning to you.", "a_vi": "Tôi đang ủy quyền nhiệm vụ lập lịch phân công cho bạn."},
+        {"q_en": "Empower your team members to solve minor problems.", "q_vi": "Khuyên trao quyền cho team", "a_en": "Empower your team members to solve minor problems.", "a_vi": "Hãy trao quyền cho các thành viên trong nhóm của bạn để tự giải quyết các vấn đề nhỏ."},
+        {"q_en": "Motivation comes from within, but we can help inspire it.", "q_vi": "Châm ngôn tạo động lực", "a_en": "Motivation comes from within, but we can help inspire it.", "a_vi": "Động lực đến từ bên trong, nhưng chúng ta có thể giúp truyền cảm hứng cho nó."},
+        {"q_en": "We provide cross-training to help staff develop new skills.", "q_vi": "Báo cáo đào tạo chéo", "a_en": "We provide cross-training to help staff develop new skills.", "a_vi": "Chúng tôi cung cấp đào tạo chéo để giúp nhân viên phát triển kỹ năng mới."},
+        {"q_en": "Your dedication to staff development is highly appreciated.", "q_vi": "Khen sếp quan tâm đào tạo", "a_en": "Your dedication to staff development is highly appreciated.", "a_vi": "Sự tận tâm của bạn đối với sự phát triển của nhân viên được đánh giá rất cao."}
+      ]
+    },
+    {
+      "id": 19,
+      "type": "sentence",
+      "description": "Level 19: Báo cáo Đàm phán & Tranh chấp Pháp lý",
+      "questions": [
+        {"q_en": "The supplier has breached our contract terms.", "q_vi": "Báo nhà cung cấp vi phạm", "a_en": "The supplier has breached our contract terms.", "a_vi": "Nhà cung cấp đã vi phạm các điều khoản hợp đồng của chúng ta."},
+        {"q_en": "I want to terminate the agreement with them immediately.", "q_vi": "Lệnh chấm dứt hợp đồng", "a_en": "I want to terminate the agreement with them immediately.", "a_vi": "Tôi muốn chấm dứt thỏa thuận với họ ngay lập tức."},
+        {"q_en": "We have clear proof of their breach in this document.", "q_vi": "Báo có bằng chứng vi phạm", "a_en": "We have clear proof of their breach in this document.", "a_vi": "Chúng ta có bằng chứng rõ ràng về sự vi phạm của họ trong tài liệu này."},
+        {"q_en": "Please include a penalty clause for future agreements.", "q_vi": "Dặn gài điều khoản phạt", "a_en": "Please include a penalty clause for future agreements.", "a_vi": "Vui lòng thêm một điều khoản phạt cho các thỏa thuận trong tương lai."},
+        {"q_en": "The vendor is demanding a higher commission rate.", "q_vi": "Báo vendor đòi tăng hoa hồng", "a_en": "The vendor is demanding a higher commission rate.", "a_vi": "Nhà cung cấp đang đòi một mức hoa hồng cao hơn."},
+        {"q_en": "We should negotiate better conditions before renewing.", "q_vi": "Chỉ đạo đàm phán lại", "a_en": "We should negotiate better conditions before renewing.", "a_vi": "Chúng ta nên đàm phán các điều kiện tốt hơn trước khi gia hạn."},
+        {"q_en": "The dispute over payment terms is still unresolved.", "q_vi": "Báo tranh chấp chưa xong", "a_en": "The dispute over payment terms is still unresolved.", "a_vi": "Cuộc tranh chấp về các điều khoản thanh toán vẫn chưa được giải quyết."},
+        {"q_en": "Do we have the authority to settle this without lawyers?", "q_vi": "Hỏi có quyền tự xử không", "a_en": "Do we have the authority to settle this without lawyers?", "a_vi": "Chúng ta có thẩm quyền để giải quyết việc này mà không cần luật sư không?"},
+        {"q_en": "We must strictly follow the non-disclosure agreement.", "q_vi": "Nhắc bảo mật", "a_en": "We must strictly follow the non-disclosure agreement.", "a_vi": "Chúng ta phải tuân thủ nghiêm ngặt thỏa thuận bảo mật."},
+        {"q_en": "They made false allegations against our management.", "q_vi": "Báo cáo bị vu khống", "a_en": "They made false allegations against our management.", "a_vi": "Họ đã đưa ra những cáo buộc sai sự thật chống lại ban quản lý của chúng ta."},
+        {"q_en": "The copyright infringement case will go to arbitration.", "q_vi": "Báo đi phân xử vụ bản quyền", "a_en": "The copyright infringement case will go to arbitration.", "a_vi": "Vụ việc vi phạm bản quyền sẽ được đưa ra trọng tài phân xử."},
+        {"q_en": "Make sure the indemnity clause is included in the new contract.", "q_vi": "Nhắc thêm điều khoản bồi thường", "a_en": "Make sure the indemnity clause is included in the new contract.", "a_vi": "Đảm bảo rằng điều khoản bồi thường được bao gồm trong hợp đồng mới."},
+        {"q_en": "This contract clause is null and void due to new legislation.", "q_vi": "Báo điều khoản hết hiệu lực", "a_en": "This contract clause is null and void due to new legislation.", "a_vi": "Điều khoản hợp đồng này đã vô hiệu do luật pháp mới."},
+        {"q_en": "We need to ensure mutual benefit for both parties.", "q_vi": "Nhắc nguyên tắc đôi bên cùng có lợi", "a_en": "We need to ensure mutual benefit for both parties.", "a_vi": "Chúng ta cần đảm bảo lợi ích chung cho cả đôi bên."},
+        {"q_en": "I will authorize the discount to settle this dispute.", "q_vi": "Phê duyệt giảm giá để hòa giải", "a_en": "I will authorize the discount to settle this dispute.", "a_vi": "Tôi sẽ phê duyệt mức giảm giá để giải quyết tranh chấp này."},
+        {"q_en": "The legal department must review all contracts before signature.", "q_vi": "Nhắc bộ phận pháp chế check hợp đồng", "a_en": "The legal department must review all contracts before signature.", "a_vi": "Bộ phận pháp chế phải xem xét tất cả các hợp đồng trước khi ký."},
+        {"q_en": "Is the exclusive rights clause clear enough?", "q_vi": "Hỏi điều khoản độc quyền", "a_en": "Is the exclusive rights clause clear enough?", "a_vi": "Điều khoản về quyền độc quyền đã đủ rõ ràng chưa?"},
+        {"q_en": "They are trying to bargain for a lower price.", "q_vi": "Báo cáo khách đòi mặc cả", "a_en": "They are trying to bargain for a lower price.", "a_vi": "Họ đang cố gắng mặc cả để có mức giá thấp hơn."},
+        {"q_en": "Stand firm on the price; our value is superior.", "q_vi": "Chỉ đạo giữ giá", "a_en": "Stand firm on the price; our value is superior.", "a_vi": "Hãy giữ vững mức giá; giá trị của chúng ta vượt trội hơn."},
+        {"q_en": "We are seeking a peaceful settlement for this legal issue.", "q_vi": "Chốt mong muốn hòa bình", "a_en": "We are seeking a peaceful settlement for this legal issue.", "a_vi": "Chúng ta đang tìm kiếm một sự hòa giải trong hòa bình cho vấn đề pháp lý này."}
+      ]
+    },
+    {
+      "id": 20,
+      "type": "boss",
+      "description": "Level 20: BOSS Cuộc Họp Chiến Lược (Thảo luận KPI, Marketing & Pháp lý)",
+      "questions": [
+        {"q_en": "Team, I have reviewed the Q3 reports. Our performance is lagging.", "q_vi": "(Boss) Đội ngũ, tôi đã xem báo cáo Q3. Hiệu suất đang trì trệ.", "a_en": "Good morning, Director. We have identified the bottleneck in operations.", "a_vi": "Chào buổi sáng Giám đốc. Chúng tôi đã xác định được điểm nghẽn trong vận hành." },
+        {"q_en": "The marketing ROI is too low. Why are we spending so much?", "q_vi": "Sếp chất vấn phí Marketing", "a_en": "We invested heavily in brand awareness, which increased our market share.", "a_vi": "Chúng ta đã đầu tư lớn vào độ nhận diện thương hiệu, điều này đã tăng thị phần của chúng ta." },
+        {"q_en": "I want conversions, not just awareness. Fix the landing page bounce rate.", "q_vi": "Sếp đòi chuyển đổi, sửa web", "a_en": "I will task the IT team to optimize the page load speed today.", "a_vi": "Tôi sẽ giao đội IT tối ưu hóa tốc độ tải trang ngay hôm nay." },
+        {"q_en": "What about HR? Why is our turnover rate at 15%?", "q_vi": "Sếp hỏi về nghỉ việc", "a_en": "The workload is too high. We need to hire more part-time staff.", "a_vi": "Khối lượng công việc quá cao. Chúng ta cần tuyển thêm nhân viên bán thời gian." },
+        {"q_en": "I approve the recruitment budget. Any issue with the new hires?", "q_vi": "Sếp duyệt ngân sách, hỏi NV mới", "a_en": "They are promising, but they need better orientation and mentorship.", "a_vi": "Họ rất triển vọng, nhưng cần được định hướng và kèm cặp tốt hơn." },
+        {"q_en": "Set up a training workshop immediately. I want them standardized.", "q_vi": "Lệnh đào tạo", "a_en": "Yes, I will implement a two-week onboarding syllabus starting Monday.", "a_vi": "Vâng, tôi sẽ thực thi giáo trình hội nhập 2 tuần bắt đầu từ thứ Hai." },
+        {"q_en": "Now, about the legal dispute. The supplier is suing us?", "q_vi": "Hỏi vụ kiện nhà cung cấp", "a_en": "Not yet, but they are threatening litigation over the payment terms.", "a_vi": "Chưa, nhưng họ đang dọa kiện về các điều khoản thanh toán." },
+        {"q_en": "Check the contract clauses. Did we breach anything?", "q_vi": "Hỏi về điều khoản vi phạm", "a_en": "Our legal team is reviewing the agreement. We have a solid defense.", "a_vi": "Đội pháp chế đang xem xét thỏa thuận. Chúng ta có một sự bào chữa vững chắc." },
+        {"q_en": "Good. If they breach our standards again, terminate them.", "q_vi": "Lệnh chấm dứt", "a_en": "Understood. We will strictly enforce our compliance standards.", "a_vi": "Đã rõ. Chúng tôi sẽ thực thi nghiêm ngặt các tiêu chuẩn tuân thủ." },
+        {"q_en": "I want this hotel to be the benchmark for luxury.", "q_vi": "Chốt tiêu chuẩn", "a_en": "We are fully dedicated to that, sir. Our operations are becoming flawless.", "a_vi": "Chúng tôi hoàn toàn tận tâm với điều đó thưa sếp. Các hoạt động đang trở nên hoàn hảo." },
+        {"q_en": "Are the analytics reliable? Can we trust this dashboard?", "q_vi": "Hỏi độ tin cậy của App", "a_en": "It synchronizes data in real-time. It is our single source of truth.", "a_vi": "Nó đồng bộ dữ liệu theo thời gian thực. Nó là nguồn dữ liệu duy nhất đáng tin cậy của chúng ta." },
+        {"q_en": "What is our strategy for the upcoming peak season?", "q_vi": "Hỏi chiến lược mùa cao điểm", "a_en": "Dynamic pricing and aggressive upselling to maximize revenue.", "a_vi": "Định giá linh hoạt và đẩy mạnh bán thêm để tối đa hóa doanh thu." },
+        {"q_en": "Ensure the housekeeping team is ready. No shortages.", "q_vi": "Nhắc buồng phòng", "a_en": "We have secured a temporary labor contract to cover the peak period.", "a_vi": "Chúng tôi đã chốt một hợp đồng lao động tạm thời để bao quát giai đoạn cao điểm." },
+        {"q_en": "And the F&B cost? It was too high last month.", "q_vi": "Soi chi phí ăn uống", "a_en": "We reduced food wastage by 10% through better inventory control.", "a_vi": "Chúng ta đã giảm lãng phí thực phẩm 10% nhờ kiểm soát hàng tồn kho tốt hơn." },
+        {"q_en": "Keep it under 30%. I want to see the profit margin grow.", "q_vi": "Yêu cầu biên lợi nhuận", "a_en": "Yes, Director. We are aiming for 32% profit margin next quarter.", "a_vi": "Vâng, Giám đốc. Chúng ta đang hướng tới biên lợi nhuận 32% vào quý tới." },
+        {"q_en": "Send me the final proposal for the renovation by tomorrow.", "q_vi": "Đòi bản đề xuất sửa sang", "a_en": "It will be on your desk at 9 AM sharp, sir.", "a_vi": "Nó sẽ nằm trên bàn sếp lúc 9h sáng, thưa sếp." },
+        {"q_en": "This meeting was productive. Let's execute the plans.", "q_vi": "Kết thúc họp", "a_en": "Thank you for the guidance, Director. We are ready.", "a_vi": "Cảm ơn sự chỉ đạo của Giám đốc. Chúng tôi đã sẵn sàng." },
+        {"q_en": "One more thing, keep the stakeholders updated on the expansion.", "q_vi": "Nhắc báo cáo cổ đông", "a_en": "I will prepare a monthly newsletter for all our shareholders.", "a_vi": "Tôi sẽ chuẩn bị một bản tin hàng tháng cho tất cả các cổ đông." },
+        {"q_en": "Good. Dismissed.", "q_vi": "Giải tán", "a_en": "Have a great day, sir.", "a_vi": "Chúc sếp một ngày tốt lành." },
+        {"q_en": "(Walking out) That was a lot of pressure, but we can do it.", "q_vi": "Tự nhủ", "a_en": "(To team) Let's get to work!", "a_vi": "(Với cả đội) Vào việc thôi nào!" }
+      ]
+    },
+    {
+      "id": 21,
+      "type": "vocab",
+      "description": "Level 21: Từ vựng Quản trị & Nhân sự (Management & HR)",
+      "questions": [
+        {"q_en": "Supervise", "a_vi": "Giám sát"}, {"q_en": "Delegate", "a_vi": "Ủy quyền"}, {"q_en": "Performance", "a_vi": "Hiệu suất"}, {"q_en": "Appraisal", "a_vi": "Sự đánh giá (năng lực)"}, {"q_en": "Disciplinary", "a_vi": "Kỷ luật"}, {"q_en": "Onboarding", "a_vi": "Sự hội nhập (nhân viên mới)"}, {"q_en": "Mentorship", "a_vi": "Sự kèm cặp / Cố vấn"}, {"q_en": "Productivity", "a_vi": "Năng suất"}, {"q_en": "Morale", "a_vi": "Tinh thần (làm việc)"}, {"q_en": "Retention", "a_vi": "Việc giữ chân (nhân viên)"}, {"q_en": "Turnover", "a_vi": "Tỷ lệ nghỉ việc"}, {"q_en": "Incentive", "a_vi": "Sự khích lệ / Ưu đãi"}, {"q_en": "Bonus", "a_vi": "Tiền thưởng"}, {"q_en": "Payroll", "a_vi": "Bảng lương"}, {"q_en": "Recruitment", "a_vi": "Sự tuyển dụng"}, {"q_en": "Candidate", "a_vi": "Ứng viên"}, {"q_en": "Orientation", "a_vi": "Sự định hướng"}, {"q_en": "Standardize", "a_vi": "Tiêu chuẩn hóa"}, {"q_en": "Synergy", "a_vi": "Sức mạnh hiệp đồng"}, {"q_en": "Leadership", "a_vi": "Sự lãnh đạo"}
+      ]
+    },
+    {
+      "id": 22,
+      "type": "vocab",
+      "description": "Level 22: Từ vựng Đàm phán & Hợp đồng (Negotiation)",
+      "questions": [
+        {"q_en": "Negotiate", "a_vi": "Đàm phán"}, {"q_en": "Bargain", "a_vi": "Mặc cả"}, {"q_en": "Agreement", "a_vi": "Thỏa thuận / Hợp đồng"}, {"q_en": "Clause", "a_vi": "Điều khoản (trong hợp đồng)"}, {"q_en": "Penalty", "a_vi": "Tiền phạt"}, {"q_en": "Breach", "a_vi": "Sự vi phạm (hợp đồng)"}, {"q_en": "Terminate", "a_vi": "Chấm dứt"}, {"q_en": "Renew", "a_vi": "Gia hạn"}, {"q_en": "Commission", "a_vi": "Tiền hoa hồng"}, {"q_en": "Discount", "a_vi": "Chiết khấu"}, {"q_en": "Exclusive", "a_vi": "Độc quyền"}, {"q_en": "Mutual", "a_vi": "Đôi bên / Lẫn nhau"}, {"q_en": "Volume", "a_vi": "Khối lượng / Số lượng"}, {"q_en": "Stipulate", "a_vi": "Quy định rõ"}, {"q_en": "Provision", "a_vi": "Điều khoản"}, {"q_en": "Liability", "a_vi": "Trách nhiệm pháp lý"}, {"q_en": "Indemnity", "a_vi": "Sự bồi thường"}, {"q_en": "Arbitration", "a_vi": "Sự trọng tài / Phân xử"}, {"q_en": "Non-Disclosure (NDA)", "a_vi": "Sự bảo mật thông tin"}, {"q_en": "Authority", "a_vi": "Thẩm quyền / Chính quyền"}
+      ]
+    },
+    {
+      "id": 23,
+      "type": "sentence",
+      "description": "Level 23: Mẫu câu Báo cáo Nhân sự & Đào tạo",
+      "questions": [
+        {"q_en": "We need to improve the morale of the housekeeping team.", "a_vi": "Chúng ta cần nâng cao tinh thần cho đội ngũ buồng phòng.", "q_vi": "Nâng cao tinh thần buồng phòng"},
+        {"q_en": "What is our current staff turnover rate this year?", "a_vi": "Tỷ lệ nghỉ việc hiện tại của chúng ta trong năm nay là bao nhiêu?", "q_vi": "Hỏi tỷ lệ nghỉ việc"},
+        {"q_en": "We should implement a new employee retention strategy.", "a_vi": "Chúng ta nên thực thi một chiến lược giữ chân nhân viên mới.", "q_vi": "Đề xuất chiến lược giữ người"},
+        {"q_en": "Are the new hires participating in the onboarding program?", "a_vi": "Các nhân viên mới có đang tham gia chương trình hội nhập không?", "q_vi": "Hỏi về hội nhập NV mới"},
+        {"q_en": "I am assigning a mentor to each new employee.", "a_vi": "Tôi đang phân công một người hướng dẫn cho mỗi nhân viên mới.", "q_vi": "Phân công người kèm cặp"},
+        {"q_en": "Have you evaluated the productivity of the morning shift?", "a_vi": "Bạn đã đánh giá năng suất của ca sáng chưa?", "q_vi": "Hỏi đánh giá năng suất"},
+        {"q_en": "We offer incentives for employees who exceed their targets.", "a_vi": "Chúng tôi cung cấp các khoản ưu đãi cho nhân viên vượt chỉ tiêu.", "q_vi": "Giới thiệu chính sách thưởng"},
+        {"q_en": "Please conduct an appraisal for the shift supervisor.", "a_vi": "Vui lòng tiến hành đánh giá năng lực cho giám sát ca.", "q_vi": "Yêu cầu đánh giá giám sát"},
+        {"q_en": "Disciplinary action is necessary for staff who violate the rules.", "a_vi": "Cần kỷ luật nhân viên vi phạm.", "q_vi": "Nhắc nhở xử lý kỷ luật"},
+        {"q_en": "Did you verify the payroll records before finalizing them?", "a_vi": "Bạn đã xác minh lại bảng lương trước khi hoàn tất chưa?", "q_vi": "Hỏi đối chiếu bảng lương"},
+        {"q_en": "We need to hire more staff to reduce overtime hours.", "a_vi": "Chúng ta cần tuyển thêm nhân viên để giảm bớt giờ làm thêm.", "q_vi": "Yêu cầu tuyển thêm để giảm OT"},
+        {"q_en": "Is the orientation schedule ready for next week?", "a_vi": "Lịch trình định hướng cho tuần tới đã sẵn sàng chưa?", "q_vi": "Hỏi lịch định hướng"},
+        {"q_en": "Leadership requires a strong sense of responsibility.", "a_vi": "Lãnh đạo đòi hỏi một tinh thần trách nhiệm mạnh mẽ.", "q_vi": "Châm ngôn lãnh đạo"},
+        {"q_en": "Let's organize a workshop to discuss our team synergy.", "a_vi": "Hãy tổ chức hội thảo thảo luận về sức mạnh nhóm.", "q_vi": "Đề xuất thảo luận team"},
+        {"q_en": "The training syllabus has been standardized for all departments.", "a_vi": "Giáo trình đào tạo đã được tiêu chuẩn hóa cho tất cả phòng ban.", "q_vi": "Báo cáo tiêu chuẩn giáo trình"},
+        {"q_en": "I am delegating the task of roster planning to you.", "a_vi": "Tôi ủy quyền nhiệm vụ lập lịch cho bạn.", "q_vi": "Ủy quyền làm lịch"},
+        {"q_en": "Empower your team members to solve minor problems.", "a_vi": "Trao quyền cho thành viên nhóm để tự giải quyết việc nhỏ.", "q_vi": "Khuyên trao quyền"},
+        {"q_en": "Motivation comes from within, but we can help inspire it.", "a_vi": "Động lực từ bên trong, nhưng chúng ta giúp truyền cảm hứng.", "q_vi": "Châm ngôn tạo động lực"},
+        {"q_en": "We provide cross-training to help staff develop new skills.", "a_vi": "Chúng tôi đào tạo chéo để giúp nhân viên phát triển kỹ năng.", "q_vi": "Báo cáo đào tạo chéo"},
+        {"q_en": "Your dedication to staff development is highly appreciated.", "a_vi": "Sự tận tâm của bạn với nhân viên rất đáng trân trọng.", "q_vi": "Khen sếp quan tâm đào tạo"}
+      ]
+    },
+    {
+      "id": 24,
+      "type": "sentence",
+      "description": "Level 24: Báo cáo Pháp lý, Hợp đồng & Tranh chấp",
+      "questions": [
+        {"q_en": "The supplier has breached our contract terms.", "a_vi": "Nhà cung cấp đã vi phạm điều khoản hợp đồng.", "q_vi": "Báo nhà cung cấp vi phạm"},
+        {"q_en": "I want to terminate the agreement with them immediately.", "a_vi": "Tôi muốn chấm dứt thỏa thuận với họ ngay lập tức.", "q_vi": "Lệnh chấm dứt hợp đồng"},
+        {"q_en": "We have clear proof of their breach in this document.", "a_vi": "Chúng ta có bằng chứng rõ ràng về sự vi phạm trong tài liệu này.", "q_vi": "Báo có bằng chứng"},
+        {"q_en": "Please include a penalty clause for future agreements.", "a_vi": "Vui lòng thêm điều khoản phạt cho các thỏa thuận tới.", "q_vi": "Nhắc gài điều khoản phạt"},
+        {"q_en": "The vendor is demanding a higher commission rate.", "a_vi": "Nhà cung cấp đang đòi hoa hồng cao hơn.", "q_vi": "Báo vendor đòi tăng hoa hồng"},
+        {"q_en": "We should negotiate better conditions before renewing.", "a_vi": "Chúng ta nên đàm phán điều kiện tốt hơn trước khi gia hạn.", "q_vi": "Chỉ đạo đàm phán lại"},
+        {"q_en": "The dispute over payment terms is still unresolved.", "a_vi": "Cuộc tranh chấp thanh toán vẫn chưa xong.", "q_vi": "Báo tranh chấp chưa xong"},
+        {"q_en": "Do we have the authority to settle this without lawyers?", "a_vi": "Ta có quyền tự giải quyết không cần luật sư không?", "q_vi": "Hỏi quyền tự xử"},
+        {"q_en": "We must strictly follow the non-disclosure agreement.", "a_vi": "Phải tuân thủ nghiêm ngặt thỏa thuận bảo mật.", "q_vi": "Nhắc bảo mật"},
+        {"q_en": "They made false allegations against our management.", "a_vi": "Họ đưa ra cáo buộc sai sự thật về quản lý của ta.", "q_vi": "Báo bị vu khống"},
+        {"q_en": "The copyright infringement case will go to arbitration.", "a_vi": "Vụ vi phạm bản quyền sẽ ra trọng tài.", "q_vi": "Báo đi phân xử"},
+        {"q_en": "Make sure the indemnity clause is included in the new contract.", "a_vi": "Đảm bảo điều khoản bồi thường có trong hợp đồng mới.", "q_vi": "Nhắc thêm điều khoản bồi thường"},
+        {"q_en": "This contract clause is null and void due to new legislation.", "a_vi": "Điều khoản này vô hiệu do luật mới.", "q_vi": "Báo điều khoản hết hiệu lực"},
+        {"q_en": "We need to ensure mutual benefit for both parties.", "a_vi": "Cần đảm bảo lợi ích chung cho đôi bên.", "q_vi": "Nhắc nguyên tắc đôi bên lợi"},
+        {"q_en": "I will authorize the discount to settle this dispute.", "a_vi": "Tôi phê duyệt giảm giá để hòa giải tranh chấp.", "q_vi": "Phê duyệt giảm giá hòa giải"},
+        {"q_en": "The legal department must review all contracts before signature.", "a_vi": "Pháp chế phải xem mọi hợp đồng trước khi ký.", "q_vi": "Nhắc pháp chế check hợp đồng"},
+        {"q_en": "Is the exclusive rights clause clear enough?", "a_vi": "Điều khoản độc quyền đã rõ chưa?", "q_vi": "Hỏi điều khoản độc quyền"},
+        {"q_en": "They are trying to bargain for a lower price.", "a_vi": "Họ đang cố mặc cả giá thấp hơn.", "q_vi": "Báo khách/vendor mặc cả"},
+        {"q_en": "Stand firm on the price; our value is superior.", "a_vi": "Giữ giá; giá trị của ta vượt trội hơn.", "q_vi": "Chỉ đạo giữ giá"},
+        {"q_en": "We are seeking a peaceful settlement for this legal issue.", "a_vi": "Ta đang tìm cách giải quyết trong hòa bình.", "q_vi": "Chốt mong muốn hòa bình"}
+      ]
+    },
+    {
+      "id": 25,
+      "type": "boss",
+      "description": "Level 25: BOSS Nhân Sự (Xử Lý Nhân Viên Nghỉ Việc & Đào Tạo)",
+      "questions": [
+        {"q_en": "HR, why is our turnover rate at 15%? This is unsustainable.", "a_vi": "(Boss) HR, tại sao tỷ lệ nghỉ việc là 15%? Không bền vững chút nào.", "q_vi": "Hỏi tỷ lệ nghỉ việc" },
+        {"q_en": "Sir, our staff are overworked. They feel their efforts aren't valued.", "a_vi": "Nhân viên kiệt sức, không được ghi nhận.", "q_en": "That is an HR failure. Why didn't you propose a retention strategy?", "a_vi": "Đó là lỗi của HR. Tại sao không đề xuất chiến lược giữ người?" },
+        {"q_en": "I have drafted a performance bonus plan, but it wasn't approved.", "a_vi": "Đổ lỗi ngân sách không duyệt", "q_en": "Fine. I will approve it. But I want 100% productivity for that cost.", "a_vi": "Được. Tôi duyệt. Nhưng tôi muốn năng suất 100%." },
+        {"q_en": "What about the 10 new hires for the banquets?", "a_vi": "Hỏi tiến độ tuyển dụng", "q_en": "Three candidates are starting probation on Monday. Seven are still pending.", "a_vi": "3 ứng viên thử việc vào thứ Hai. 7 người đang chờ." },
+        {"q_en": "Friday is the deadline! We have a wedding for 1000 guests.", "a_vi": "Ép deadline tuyển dụng", "q_en": "I will speed up the orientation. I'll assign mentors to them immediately.", "a_vi": "Tôi sẽ đẩy nhanh hội nhập. Tôi sẽ phân công cố vấn cho họ ngay." },
+        {"q_en": "Are they trained in our SOPs? I don't want mistakes.", "a_vi": "Hỏi về SOP", "q_en": "The syllabus is standardized. They will be fully compliant by Friday.", "a_vi": "Giáo trình đã chuẩn hóa. Họ sẽ tuân thủ đầy đủ trước thứ Sáu." },
+        {"q_en": "What about the supervisor who resigned? Who is leading the team?", "a_vi": "Hỏi người thay thế", "q_en": "I am delegating the leadership to our senior staff until we hire a new one.", "a_vi": "Tôi đang ủy quyền lãnh đạo cho nhân viên lâu năm cho tới khi tuyển được người mới." },
+        {"q_en": "Make sure the team synergy is not affected by this gap.", "a_vi": "Nhắc nhở về sức mạnh nhóm", "q_en": "Yes, I am organizing a team-building workshop to boost their morale.", "a_vi": "Vâng, tôi đang tổ chức hội thảo gắn kết để vực dậy tinh thần họ." },
+        {"q_en": "Good. I want to see a productivity increase in the next report.", "a_vi": "Đòi năng suất tăng", "q_en": "With the new incentives and training, productivity will certainly increase.", "a_vi": "Với các ưu đãi và đào tạo mới, năng suất chắc chắn sẽ tăng." },
+        {"q_en": "Send me the payroll audit for the overtime hours.", "q_vi": "Đòi audit bảng lương", "a_en": "I will have it on your desk by 4 PM. It is currently being processed.", "a_vi": "Tôi sẽ để trên bàn sếp lúc 4h chiều. Đang được xử lý ạ." },
+        {"q_en": "And the exit interview results for the ones who left?", "q_vi": "Đòi kết quả phỏng vấn nghỉ việc", "a_en": "They cited 'lack of career growth' as the main reason.", "a_vi": "Họ viện dẫn 'thiếu lộ trình phát triển' là lý do chính." },
+        {"q_en": "Fix the career path. We need to empower our staff.", "q_vi": "Lệnh sửa lộ trình", "a_en": "I will revamp the cross-training program to show them a future here.", "a_vi": "Tôi sẽ tân trang lại chương trình đào tạo chéo để cho họ thấy tương lai ở đây." },
+        {"q_en": "That is better. Is the compliance training done for everyone?", "q_vi": "Hỏi về đào tạo tuân thủ", "a_en": "Yes, 100% of staff completed the hygiene and conduct seminar.", "a_vi": "Vâng, 100% nhân viên đã hoàn thành hội thảo vệ sinh và hành xử." },
+        {"q_en": "And the legal training for the managers?", "q_vi": "Hỏi về đào tạo pháp lý", "a_en": "It is scheduled for next Tuesday. Legal counsel will lead the session.", "a_vi": "Nó được lên lịch thứ Ba tuần tới. Cố vấn pháp lý sẽ chủ trì buổi đó." },
+        {"q_en": "Good. I expect no lawsuits this quarter.", "q_vi": "Chốt chỉ tiêu pháp lý", "a_en": "We are operating with total compliance. No legal issues expected.", "a_vi": "Chúng ta đang vận hành với sự tuân thủ toàn diện. Không mong đợi rắc rối pháp lý." },
+        {"q_en": "Keep the recruitment funnel full. We can't afford gaps.", "q_vi": "Nhắc nhở khâu tuyển dụng", "a_en": "I am working with external headhunters to expand our talent pool.", "a_vi": "Tôi đang làm việc với các bên săn đầu người để mở rộng nguồn ứng viên." },
+        {"q_en": "What is the budget for these headhunters?", "q_vi": "Hỏi chi phí headhunt", "a_en": "It's within the recruitment budget, sir. It’s an investment in quality.", "a_vi": "Nằm trong ngân sách tuyển dụng thưa sếp. Đó là đầu tư cho chất lượng." },
+        {"q_en": "If they find a star employee, the cost is justified.", "q_vi": "Đồng ý nếu chất lượng tốt", "a_en": "We are specifically looking for candidates with a passion for hospitality.", "a_vi": "Chúng tôi đang đặc biệt tìm kiếm các ứng viên có niềm đam mê với dịch vụ hiếu khách." },
+        {"q_en": "Everything is riding on this. Do not disappoint me.", "q_vi": "Áp lực cuối", "a_en": "We will build a team that makes you proud, sir.", "a_vi": "Chúng tôi sẽ xây dựng một đội ngũ khiến sếp tự hào." },
+        {"q_en": "Meeting adjourned.", "q_vi": "Giải tán", "a_en": "Thank you, sir. I have a lot of work to do.", "a_vi": "Cảm ơn sếp. Tôi còn nhiều việc phải làm đây." }
+      ]
+    }
+]
+}
