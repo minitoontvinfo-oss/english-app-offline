@@ -1,45 +1,116 @@
 {
   "id": "topic_hotel",
-  "title": "🛎️ Giao Tiếp Khách Sạn",
+  "title": "🛎️ Giao Tiếp Lễ Tân Resort",
+  "icon": "🏨",
   "nodes": [
-    {
-      "id": 1,
-      "type": "vocab",
-      "questions": [
-        { "q_en": "Reservation", "a_vi": "Sự đặt phòng" },
-        { "q_en": "Passport", "a_vi": "Hộ chiếu" },
-        { "q_en": "Available", "a_vi": "Có sẵn / Trống" }
-      ]
-    },
-    {
-      "id": 2,
-      "type": "sentence",
-      "questions": [
-        { "q_en": "May I have your passport, please?", "q_vi": "Khách: Chào bạn.", "a_en": "Here it is.", "a_vi": "Tôi có thể mượn hộ chiếu của quý khách không?" },
-        { "q_en": "Here is your room key.", "q_vi": "Lễ tân: Của anh đây.", "a_en": "Thank you.", "a_vi": "Đây là chìa khóa phòng của quý khách." }
-      ]
-    },
-    {
-      "id": 3,
-      "type": "vocab",
-      "questions": [
-        { "q_en": "Luggage", "a_vi": "Hành lý" },
-        { "q_en": "Deposit", "a_vi": "Tiền cọc" }
-      ]
-    },
-    {
-      "id": 4,
-      "type": "sentence",
-      "questions": [
-        { "q_en": "Could you please fill out this registration form?", "q_vi": "Lễ tân: Thủ tục tiếp theo là gì?", "a_en": "Sure, no problem.", "a_vi": "Quý khách vui lòng điền vào phiếu đăng ký này nhé?" }
-      ]
-    },
-    {
-      "id": 5,
-      "type": "boss",
-      "questions": [
-        { "q_en": "Welcome to Ocean Dunes Resort! How can I help you today?", "q_vi": "(Boss Lễ Tân) Chào mừng quý khách!", "a_en": "I have a reservation under the name John.", "a_vi": "Tôi có đặt phòng tên là John." }
-      ]
-    }
+    {"id": 1, "type": "vocab", "questions": [{"q_en": "Reception", "a_vi": "Lễ tân"}, {"q_en": "Lobby", "a_vi": "Tiền sảnh"}]},
+    {"id": 2, "type": "vocab", "questions": [{"q_en": "Welcome", "a_vi": "Chào mừng"}, {"q_en": "Guest", "a_vi": "Khách hàng"}]},
+    {"id": 3, "type": "sentence", "questions": [{"q_en": "Welcome to Ocean Dunes Resort.", "q_vi": "Khách bước vào cửa", "a_en": "Thank you.", "a_vi": "Chào mừng đến với Ocean Dunes Resort."}]},
+    {"id": 4, "type": "vocab", "questions": [{"q_en": "Reservation", "a_vi": "Sự đặt phòng"}, {"q_en": "Check-in", "a_vi": "Nhận phòng"}]},
+    {"id": 5, "type": "sentence", "questions": [{"q_en": "Do you have a reservation?", "q_vi": "Khách: Tôi muốn nhận phòng", "a_en": "Yes, I booked online.", "a_vi": "Quý khách có đặt phòng trước không ạ?"}]},
+    {"id": 6, "type": "vocab", "questions": [{"q_en": "Name", "a_vi": "Tên"}, {"q_en": "Under", "a_vi": "Dưới tên"}]},
+    {"id": 7, "type": "sentence", "questions": [{"q_en": "May I have your name, please?", "q_vi": "Khách: Tôi có đặt trước.", "a_en": "My name is John.", "a_vi": "Tôi có thể xin tên của quý khách được không?"}]},
+    {"id": 8, "type": "vocab", "questions": [{"q_en": "Passport", "a_vi": "Hộ chiếu"}, {"q_en": "ID card", "a_vi": "Chứng minh thư"}]},
+    {"id": 9, "type": "sentence", "questions": [{"q_en": "Could I see your passport or ID card?", "q_vi": "Khách: Đây là tên tôi.", "a_en": "Here is my passport.", "a_vi": "Tôi có thể xem hộ chiếu hoặc CMND của quý khách không?"}]},
+    {"id": 10, "type": "boss", "questions": [{"q_en": "Hello! I would like to check in.", "q_vi": "(Boss) Xin chào! Tôi muốn nhận phòng.", "a_en": "Welcome! Do you have a reservation?", "a_vi": "Chào mừng! Quý khách có đặt phòng trước không ạ?"}]},
+    
+    {"id": 11, "type": "vocab", "questions": [{"q_en": "Form", "a_vi": "Biểu mẫu"}, {"q_en": "Sign", "a_vi": "Ký tên"}]},
+    {"id": 12, "type": "sentence", "questions": [{"q_en": "Please fill out this registration form.", "q_vi": "Khách đưa hộ chiếu", "a_en": "Sure, give me a pen.", "a_vi": "Vui lòng điền vào biểu mẫu đăng ký này ạ."}]},
+    {"id": 13, "type": "vocab", "questions": [{"q_en": "Deposit", "a_vi": "Tiền cọc"}, {"q_en": "Credit card", "a_vi": "Thẻ tín dụng"}]},
+    {"id": 14, "type": "sentence", "questions": [{"q_en": "We require a deposit for incidental charges.", "q_vi": "Khách: Cần gì nữa không?", "a_en": "How much is it?", "a_vi": "Chúng tôi cần thu tiền cọc cho các chi phí phát sinh."}]},
+    {"id": 15, "type": "vocab", "questions": [{"q_en": "Cash", "a_vi": "Tiền mặt"}, {"q_en": "Amount", "a_vi": "Số tiền"}]},
+    {"id": 16, "type": "sentence", "questions": [{"q_en": "You can pay by cash or credit card.", "q_vi": "Khách: Đóng cọc thế nào?", "a_en": "I will use my credit card.", "a_vi": "Quý khách có thể trả bằng tiền mặt hoặc thẻ tín dụng."}]},
+    {"id": 17, "type": "vocab", "questions": [{"q_en": "Room key", "a_vi": "Chìa khóa phòng"}, {"q_en": "Floor", "a_vi": "Tầng"}]},
+    {"id": 18, "type": "sentence", "questions": [{"q_en": "Here is your room key.", "q_vi": "Làm xong thủ tục", "a_en": "Thank you.", "a_vi": "Đây là chìa khóa phòng của quý khách."}]},
+    {"id": 19, "type": "sentence", "questions": [{"q_en": "Your room is on the fifth floor.", "q_vi": "Khách: Phòng tôi ở đâu?", "a_en": "Where is the elevator?", "a_vi": "Phòng của quý khách nằm ở tầng năm."}]},
+    {"id": 20, "type": "boss", "questions": [{"q_en": "Here is my passport and credit card.", "q_vi": "(Boss) Đây là hộ chiếu và thẻ của tôi.", "a_en": "Thank you. Please sign this form.", "a_vi": "Cảm ơn. Vui lòng ký vào biểu mẫu này."}]},
+    
+    {"id": 21, "type": "vocab", "questions": [{"q_en": "Elevator", "a_vi": "Thang máy"}, {"q_en": "Direction", "a_vi": "Hướng đi"}]},
+    {"id": 22, "type": "sentence", "questions": [{"q_en": "The elevator is on your right.", "q_vi": "Khách: Thang máy ở đâu?", "a_en": "Got it, thanks.", "a_vi": "Thang máy nằm ở bên tay phải của quý khách."}]},
+    {"id": 23, "type": "vocab", "questions": [{"q_en": "Luggage", "a_vi": "Hành lý"}, {"q_en": "Bellboy", "a_vi": "Nhân viên hành lý"}]},
+    {"id": 24, "type": "sentence", "questions": [{"q_en": "The bellboy will bring your luggage up.", "q_vi": "Khách: Hành lý nặng quá.", "a_en": "That is very helpful.", "a_vi": "Nhân viên sẽ mang hành lý lên cho quý khách."}]},
+    {"id": 25, "type": "vocab", "questions": [{"q_en": "Breakfast", "a_vi": "Bữa sáng"}, {"q_en": "Restaurant", "a_vi": "Nhà hàng"}]},
+    {"id": 26, "type": "sentence", "questions": [{"q_en": "Breakfast is served at the restaurant on the ground floor.", "q_vi": "Khách hỏi về ăn uống", "a_en": "What time?", "a_vi": "Bữa sáng được phục vụ tại nhà hàng ở tầng trệt."}]},
+    {"id": 27, "type": "vocab", "questions": [{"q_en": "Serve", "a_vi": "Phục vụ"}, {"q_en": "Until", "a_vi": "Cho đến khi"}]},
+    {"id": 28, "type": "sentence", "questions": [{"q_en": "It is open from 6 AM to 10 AM.", "q_vi": "Khách: Ăn sáng lúc mấy giờ?", "a_en": "I will be there.", "a_vi": "Nhà hàng mở cửa từ 6 giờ đến 10 giờ sáng."}]},
+    {"id": 29, "type": "sentence", "questions": [{"q_en": "Enjoy your stay!", "q_vi": "Khách chuẩn bị lên phòng", "a_en": "Thanks a lot.", "a_vi": "Chúc quý khách có một kỳ nghỉ vui vẻ!"}]},
+    {"id": 30, "type": "boss", "questions": [{"q_en": "Where and what time is breakfast?", "q_vi": "(Boss) Bữa sáng ăn ở đâu và lúc mấy giờ?", "a_en": "At the ground floor restaurant, from 6 to 10 AM.", "a_vi": "Ở nhà hàng tầng trệt, từ 6 đến 10 giờ sáng."}]},
+    
+    {"id": 31, "type": "vocab", "questions": [{"q_en": "Pool", "a_vi": "Hồ bơi"}, {"q_en": "Towel", "a_vi": "Khăn tắm"}]},
+    {"id": 32, "type": "sentence", "questions": [{"q_en": "The swimming pool is outside, behind the lobby.", "q_vi": "Khách: Hồ bơi ở đâu?", "a_en": "Is it open now?", "a_vi": "Hồ bơi ở bên ngoài, phía sau tiền sảnh."}]},
+    {"id": 33, "type": "vocab", "questions": [{"q_en": "Gym", "a_vi": "Phòng tập thể hình"}, {"q_en": "Free", "a_vi": "Miễn phí"}]},
+    {"id": 34, "type": "sentence", "questions": [{"q_en": "The gym is free for all hotel guests.", "q_vi": "Khách: Tập gym có tốn tiền không?", "a_en": "That is perfect.", "a_vi": "Phòng gym miễn phí cho tất cả khách lưu trú."}]},
+    {"id": 35, "type": "vocab", "questions": [{"q_en": "Wi-Fi", "a_vi": "Mạng không dây"}, {"q_en": "Password", "a_vi": "Mật khẩu"}]},
+    {"id": 36, "type": "sentence", "questions": [{"q_en": "The Wi-Fi password is on your key card envelope.", "q_vi": "Khách: Pass wifi là gì?", "a_en": "Let me check.", "a_vi": "Mật khẩu Wi-Fi nằm trên vỏ bao thẻ phòng của quý khách."}]},
+    {"id": 37, "type": "vocab", "questions": [{"q_en": "Air conditioner", "a_vi": "Máy lạnh"}, {"q_en": "Remote", "a_vi": "Điều khiển"}]},
+    {"id": 38, "type": "sentence", "questions": [{"q_en": "The AC remote is on the bedside table.", "q_vi": "Khách: Chỉnh máy lạnh sao?", "a_en": "I found it.", "a_vi": "Điều khiển máy lạnh ở trên tủ đầu giường."}]},
+    {"id": 39, "type": "sentence", "questions": [{"q_en": "Do you need any further assistance?", "q_vi": "Lễ tân hỏi thăm khách", "a_en": "No, I am good for now.", "a_vi": "Quý khách có cần hỗ trợ gì thêm không ạ?"}]},
+    {"id": 40, "type": "boss", "questions": [{"q_en": "I want to go swimming. Do I need to pay?", "q_vi": "(Boss) Tôi muốn đi bơi. Có phải trả tiền không?", "a_en": "No, the pool is free for guests.", "a_vi": "Không, hồ bơi miễn phí cho khách lưu trú."}]},
+    
+    {"id": 41, "type": "vocab", "questions": [{"q_en": "Request", "a_vi": "Yêu cầu"}, {"q_en": "Extra", "a_vi": "Thêm"}]},
+    {"id": 42, "type": "sentence", "questions": [{"q_en": "I need an extra pillow, please.", "q_vi": "Khách gọi xuống lễ tân", "a_en": "We will send one up right away.", "a_vi": "Cho tôi xin thêm một cái gối."}]},
+    {"id": 43, "type": "vocab", "questions": [{"q_en": "Blanket", "a_vi": "Chăn / Mền"}, {"q_en": "Bottle of water", "a_vi": "Chai nước"}]},
+    {"id": 44, "type": "sentence", "questions": [{"q_en": "Could you send two bottles of water to room 305?", "q_vi": "Khách xin nước uống", "a_en": "Certainly, sir.", "a_vi": "Bạn có thể gửi hai chai nước lên phòng 305 được không?"}]},
+    {"id": 45, "type": "vocab", "questions": [{"q_en": "Housekeeping", "a_vi": "Dọn phòng"}, {"q_en": "Clean", "a_vi": "Làm sạch"}]},
+    {"id": 46, "type": "sentence", "questions": [{"q_en": "Please make up my room.", "q_vi": "Khách yêu cầu dọn phòng", "a_en": "We will clean it soon.", "a_vi": "Vui lòng dọn phòng giúp tôi."}]},
+    {"id": 47, "type": "vocab", "questions": [{"q_en": "Laundry", "a_vi": "Giặt ủi"}, {"q_en": "Bag", "a_vi": "Túi"}]},
+    {"id": 48, "type": "sentence", "questions": [{"q_en": "The laundry bag is inside the wardrobe.", "q_vi": "Khách: Tôi muốn giặt đồ", "a_en": "I see it.", "a_vi": "Túi giặt ủi nằm ở trong tủ quần áo."}]},
+    {"id": 49, "type": "sentence", "questions": [{"q_en": "Please leave it outside your door.", "q_vi": "Lễ tân hướng dẫn giặt", "a_en": "Okay.", "a_vi": "Vui lòng để nó ở ngoài cửa phòng."}]},
+    {"id": 50, "type": "boss", "questions": [{"q_en": "Hello, can I get some extra towels for room 210?", "q_vi": "(Boss) Xin chào, cho phòng 210 thêm khăn tắm được không?", "a_en": "Of course, we will send them right up.", "a_vi": "Dĩ nhiên rồi, chúng tôi sẽ gửi lên ngay."}]},
+
+    {"id": 51, "type": "vocab", "questions": [{"q_en": "Broken", "a_vi": "Bị hỏng"}, {"q_en": "Work", "a_vi": "Hoạt động"}]},
+    {"id": 52, "type": "sentence", "questions": [{"q_en": "The air conditioner is not working.", "q_vi": "Khách báo hỏng", "a_en": "I apologize for the inconvenience.", "a_vi": "Máy lạnh không hoạt động."}]},
+    {"id": 53, "type": "vocab", "questions": [{"q_en": "Technician", "a_vi": "Kỹ thuật viên"}, {"q_en": "Immediately", "a_vi": "Ngay lập tức"}]},
+    {"id": 54, "type": "sentence", "questions": [{"q_en": "I will send a technician immediately.", "q_vi": "Lễ tân xử lý sự cố", "a_en": "Please be quick.", "a_vi": "Tôi sẽ cử kỹ thuật viên lên ngay lập tức."}]},
+    {"id": 55, "type": "vocab", "questions": [{"q_en": "Noisy", "a_vi": "Ồn ào"}, {"q_en": "Neighbor", "a_vi": "Hàng xóm / Phòng bên"}]},
+    {"id": 56, "type": "sentence", "questions": [{"q_en": "The room next door is very noisy.", "q_vi": "Khách phàn nàn", "a_en": "We will check on that.", "a_vi": "Phòng bên cạnh ồn ào quá."}]},
+    {"id": 57, "type": "vocab", "questions": [{"q_en": "Apologize", "a_vi": "Xin lỗi"}, {"q_en": "Change", "a_vi": "Đổi"}]},
+    {"id": 58, "type": "sentence", "questions": [{"q_en": "I am so sorry. Would you like to change rooms?", "q_vi": "Lễ tân đề xuất", "a_en": "Yes, please.", "a_vi": "Tôi rất xin lỗi. Quý khách có muốn đổi phòng không?"}]},
+    {"id": 59, "type": "sentence", "questions": [{"q_en": "We will upgrade you to a better room for free.", "q_vi": "Lễ tân đền bù", "a_en": "That is very kind of you.", "a_vi": "Chúng tôi sẽ nâng cấp quý khách lên phòng tốt hơn miễn phí."}]},
+    {"id": 60, "type": "boss", "questions": [{"q_en": "The TV in my room is broken. Can someone fix it?", "q_vi": "(Boss) TV phòng tôi hỏng rồi. Có ai sửa không?", "a_en": "I am sorry, I will send a technician right away.", "a_vi": "Xin lỗi quý khách, tôi sẽ cử kỹ thuật lên ngay."}]},
+
+    {"id": 61, "type": "vocab", "questions": [{"q_en": "Taxi", "a_vi": "Xe taxi"}, {"q_en": "Airport", "a_vi": "Sân bay"}]},
+    {"id": 62, "type": "sentence", "questions": [{"q_en": "Could you call a taxi for me?", "q_vi": "Khách nhờ xe", "a_en": "Where are you going?", "a_vi": "Bạn có thể gọi một chiếc taxi cho tôi được không?"}]},
+    {"id": 63, "type": "vocab", "questions": [{"q_en": "Wait", "a_vi": "Chờ đợi"}, {"q_en": "Minute", "a_vi": "Phút"}]},
+    {"id": 64, "type": "sentence", "questions": [{"q_en": "Please wait here for about five minutes.", "q_vi": "Lễ tân báo khách", "a_en": "Okay, no rush.", "a_vi": "Vui lòng đợi ở đây khoảng năm phút."}]},
+    {"id": 65, "type": "vocab", "questions": [{"q_en": "Map", "a_vi": "Bản đồ"}, {"q_en": "Recommend", "a_vi": "Gợi ý / Khuyên"}]},
+    {"id": 66, "type": "sentence", "questions": [{"q_en": "Can you recommend a good seafood restaurant?", "q_vi": "Khách hỏi chỗ ăn", "a_en": "Yes, there is one near the beach.", "a_vi": "Bạn có thể giới thiệu một nhà hàng hải sản ngon không?"}]},
+    {"id": 67, "type": "vocab", "questions": [{"q_en": "Turn right", "a_vi": "Rẽ phải"}, {"q_en": "Walk", "a_vi": "Đi bộ"}]},
+    {"id": 68, "type": "sentence", "questions": [{"q_en": "Walk straight and turn right at the traffic lights.", "q_vi": "Lễ tân chỉ đường", "a_en": "Is it far?", "a_vi": "Đi bộ thẳng và rẽ phải ở đèn giao thông."}]},
+    {"id": 69, "type": "sentence", "questions": [{"q_en": "It takes about ten minutes to walk there.", "q_vi": "Lễ tân ước lượng thời gian", "a_en": "That is close.", "a_vi": "Mất khoảng mười phút đi bộ để đến đó."}]},
+    {"id": 70, "type": "boss", "questions": [{"q_en": "I need to go to the airport now. Can you get a taxi?", "q_vi": "(Boss) Tôi cần ra sân bay. Gọi taxi giúp được không?", "a_en": "Sure, please wait in the lobby for five minutes.", "a_vi": "Chắc chắn rồi, vui lòng đợi ở sảnh 5 phút."}]},
+
+    {"id": 71, "type": "vocab", "questions": [{"q_en": "Checkout", "a_vi": "Trả phòng"}, {"q_en": "Time", "a_vi": "Thời gian"}]},
+    {"id": 72, "type": "sentence", "questions": [{"q_en": "What time is checkout?", "q_vi": "Khách hỏi giờ", "a_en": "Checkout is at 12 PM.", "a_vi": "Giờ trả phòng là mấy giờ?"}]},
+    {"id": 73, "type": "vocab", "questions": [{"q_en": "Late", "a_vi": "Trễ / Muộn"}, {"q_en": "Charge", "a_vi": "Phí"}]},
+    {"id": 74, "type": "sentence", "questions": [{"q_en": "Can I have a late checkout?", "q_vi": "Khách xin thêm giờ", "a_en": "Let me check the availability.", "a_vi": "Tôi có thể trả phòng muộn được không?"}]},
+    {"id": 75, "type": "vocab", "questions": [{"q_en": "Bill", "a_vi": "Hóa đơn"}, {"q_en": "Minibar", "a_vi": "Tủ lạnh nhỏ"}]},
+    {"id": 76, "type": "sentence", "questions": [{"q_en": "Did you consume anything from the minibar?", "q_vi": "Lễ tân hỏi lúc check-out", "a_en": "Just one bottle of water.", "a_vi": "Quý khách có dùng gì trong tủ lạnh minibar không?"}]},
+    {"id": 77, "type": "vocab", "questions": [{"q_en": "Total", "a_vi": "Tổng cộng"}, {"q_en": "Signature", "a_vi": "Chữ ký"}]},
+    {"id": 78, "type": "sentence", "questions": [{"q_en": "Here is your total bill. Please check it.", "q_vi": "Lễ tân đưa bill", "a_en": "It looks correct.", "a_vi": "Đây là tổng hóa đơn của quý khách. Vui lòng kiểm tra lại."}]},
+    {"id": 79, "type": "sentence", "questions": [{"q_en": "We will refund your deposit now.", "q_vi": "Lễ tân trả cọc", "a_en": "Thank you.", "a_vi": "Chúng tôi sẽ hoàn lại tiền cọc cho quý khách ngay bây giờ."}]},
+    {"id": 80, "type": "boss", "questions": [{"q_en": "I'm checking out. Here is the room key.", "q_vi": "(Boss) Tôi trả phòng. Đây là chìa khóa.", "a_en": "Thank you. Did you use the minibar?", "a_vi": "Cảm ơn quý khách. Quý khách có dùng minibar không ạ?"}]},
+
+    {"id": 81, "type": "vocab", "questions": [{"q_en": "Feedback", "a_vi": "Đánh giá / Phản hồi"}, {"q_en": "Stay", "a_vi": "Kỳ nghỉ"}]},
+    {"id": 82, "type": "sentence", "questions": [{"q_en": "How was your stay with us?", "q_vi": "Lễ tân hỏi thăm lúc về", "a_en": "It was fantastic.", "a_vi": "Kỳ nghỉ của quý khách tại đây như thế nào?"}]},
+    {"id": 83, "type": "vocab", "questions": [{"q_en": "Store", "a_vi": "Lưu trữ / Cất giữ"}, {"q_en": "Flight", "a_vi": "Chuyến bay"}]},
+    {"id": 84, "type": "sentence", "questions": [{"q_en": "Can I store my luggage here for a few hours?", "q_vi": "Khách muốn gửi hành lý", "a_en": "Yes, we have a storage room.", "a_vi": "Tôi có thể gửi hành lý ở đây vài giờ không?"}]},
+    {"id": 85, "type": "vocab", "questions": [{"q_en": "Safe", "a_vi": "An toàn"}, {"q_en": "Tag", "a_vi": "Thẻ / Nhãn"}]},
+    {"id": 86, "type": "sentence", "questions": [{"q_en": "Here is your luggage tag. Please keep it safe.", "q_vi": "Lễ tân đưa vé gửi đồ", "a_en": "I will put it in my pocket.", "a_vi": "Đây là thẻ hành lý của quý khách. Vui lòng giữ cẩn thận."}]},
+    {"id": 87, "type": "vocab", "questions": [{"q_en": "Enjoy", "a_vi": "Thưởng thức"}, {"q_en": "Trip", "a_vi": "Chuyến đi"}]},
+    {"id": 88, "type": "sentence", "questions": [{"q_en": "Have a safe flight back home.", "q_vi": "Lễ tân tiễn khách", "a_en": "Thank you for everything.", "a_vi": "Chúc quý khách có chuyến bay về nhà an toàn."}]},
+    {"id": 89, "type": "sentence", "questions": [{"q_en": "We hope to welcome you back to Ocean Dunes soon.", "q_vi": "Lễ tân chào tạm biệt", "a_en": "I will definitely come back.", "a_vi": "Chúng tôi hy vọng sớm được đón quý khách quay lại Ocean Dunes."}]},
+    {"id": 90, "type": "boss", "questions": [{"q_en": "Everything was perfect. Thank you!", "q_vi": "(Boss) Mọi thứ rất tuyệt. Cảm ơn bạn!", "a_en": "You're welcome! Have a safe trip home.", "a_vi": "Không có chi ạ! Chúc quý khách thượng lộ bình an."}]},
+
+    {"id": 91, "type": "vocab", "questions": [{"q_en": "Review", "a_vi": "Nhận xét"}, {"q_en": "Online", "a_vi": "Trực tuyến"}]},
+    {"id": 92, "type": "sentence", "questions": [{"q_en": "Please leave a review for us on Google.", "q_vi": "Xin review khách", "a_en": "I will do that.", "a_vi": "Vui lòng để lại nhận xét cho chúng tôi trên Google."}]},
+    {"id": 93, "type": "vocab", "questions": [{"q_en": "Discount", "a_vi": "Giảm giá"}, {"q_en": "Next time", "a_vi": "Lần sau"}]},
+    {"id": 94, "type": "sentence", "questions": [{"q_en": "We will give you a discount for your next booking.", "q_vi": "Hứa hẹn với khách", "a_en": "That sounds great.", "a_vi": "Chúng tôi sẽ giảm giá cho quý khách vào lần đặt phòng tới."}]},
+    {"id": 95, "type": "vocab", "questions": [{"q_en": "Lost", "a_vi": "Bị mất"}, {"q_en": "Found", "a_vi": "Tìm thấy"}]},
+    {"id": 96, "type": "sentence", "questions": [{"q_en": "Did anyone find a pair of sunglasses?", "q_vi": "Khách hỏi đồ bỏ quên", "a_en": "Let me check the lost and found.", "a_vi": "Có ai tìm thấy một cặp kính râm không?"}]},
+    {"id": 97, "type": "vocab", "questions": [{"q_en": "Memory", "a_vi": "Kỷ niệm"}, {"q_en": "Unforgettable", "a_vi": "Không thể quên"}]},
+    {"id": 98, "type": "sentence", "questions": [{"q_en": "Ocean Dunes always wants to bring you unforgettable memories.", "q_vi": "Câu slogan chia tay", "a_en": "It truly was.", "a_vi": "Ocean Dunes luôn muốn mang đến cho quý khách những kỷ niệm khó quên."}]},
+    {"id": 99, "type": "sentence", "questions": [{"q_en": "Goodbye and take care!", "q_vi": "Câu nói cuối cùng", "a_en": "Goodbye!", "a_vi": "Tạm biệt và bảo trọng nhé!"}]},
+    {"id": 100, "type": "boss", "questions": [{"q_en": "I will recommend this resort to my friends. Goodbye!", "q_vi": "(Final Boss) Tôi sẽ giới thiệu resort cho bạn bè. Tạm biệt!", "a_en": "Thank you so much! Goodbye and take care!", "a_vi": "Cảm ơn quý khách rất nhiều! Tạm biệt và bảo trọng!"}]}
   ]
 }
